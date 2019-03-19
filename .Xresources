@@ -37,7 +37,7 @@ URxvt*mouseWheelScrollPage:     true
 URxvt.foreground:                       #eeeeee
 URxvt.background:                       #000000
 URxvt*colorUL:                          yellow
-URxvt*underlineColor:           yellow
+URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        65535
 URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
@@ -47,7 +47,7 @@ URxvt.font:             xft:monospace:pixelsize=16:style=regular
 URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
-URxvt.urlLauncher:         chromium
+!URxvt.urlLauncher:         chromium
 ! Resize font
 !URxvt.resize-font.smaller:      C-j
 !URxvt.resize-font.bigger:       C-k 
@@ -58,7 +58,7 @@ URxvt.keysym.C-S-Down:          perl:font-size:decglobal
 URxvt.keysym.C-equal:           perl:font-size:reset
 URxvt.keysym.C-slash:           perl:font-size:show
 ! Matcher
-URxvt.url-launcher:             chromium
+!URxvt.url-launcher:             chromium
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
