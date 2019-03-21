@@ -214,3 +214,7 @@ bindsym Mod4+c exec chromium
 bindsym Mod4+f exec firefox
 bindsym Mod4+e exec nautilus
 bindsym Mod4+r exec urxvt -e ranger
+
+# ibus
+bindsym Mod4+i exec ibus-daemon -d
+bindsym Mod4+Shift+i exec ibus exit

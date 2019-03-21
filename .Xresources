@@ -34,7 +34,7 @@ URxvt*urgentOnBell:                     false
 URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
-URxvt.foreground:                       #eeeeee
+URxvt.foreground:                      white 
 URxvt.background:                       #000000
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
@@ -73,7 +73,7 @@ URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 ! Colors
 URxvt*background: #000000
-URxvt*foreground: #B2B2B2
+URxvt*foreground: #B2B2B2 
 ! black
 URxvt*color0:  #000000
 URxvt*color8:  #686868
@@ -98,3 +98,7 @@ URxvt*color14: #54FFFF
 ! white
 URxvt*color7:  #B2B2B2
 URxvt*color15: #FFFFFF
+
+! Enable ibus-unikey on URxvt
+! URxvt.inputMethod: ibus
+! URxvt.preeditType: OverTheSpot
