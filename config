@@ -189,8 +189,11 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Screeen shoot with scrot
-bindsym --release Mod1+Sys_Req exec scrot
-bindsym --release Mod1+Shift+Sys_Req exec scrot -s
+bindsym --release Mod1+Sys_Req exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
+bindsym --release Mod1+Shift+Sys_Req exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
+
+# Start rofi
+bindsym Mod1+Shift+d exec rofi -show run
 
 # Sreen brightness controls
 #bindsym XF86MonBrightnessUp exec xbacklight -inc 20
@@ -205,3 +208,9 @@ bindsym --release Mod1+Shift+Sys_Req exec scrot -s
 # Please remove the following exec line:
 #######################################################################
 #exec i3-config-wizard
+
+# Launch apps
+bindsym Mod4+c exec chromium 
+bindsym Mod4+f exec firefox
+bindsym Mod4+e exec nautilus
+bindsym Mod4+r exec urxvt -e ranger
