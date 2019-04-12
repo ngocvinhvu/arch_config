@@ -223,4 +223,4 @@ for_window [class="chromium"] floating_minimum_size 1024 x 720
 for_window [class="chromium"] floating_maximum_size 1024 x 720 
 for_window [class="chromium"] floating enable
 # floating_minimum_size 1024 x 720
-# floating_maximum_size 1024 x 720 
+ floating_maximum_size 1024 x 720 
