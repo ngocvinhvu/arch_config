@@ -214,13 +214,25 @@ bindsym Mod4+c exec chromium
 bindsym Mod4+f exec firefox
 bindsym Mod4+e exec nautilus
 bindsym Mod4+r exec urxvt -e ranger
+bindsym Mod4+l exec libreoffice
 
 # ibus
 bindsym Mod4+i exec ibus-daemon -d
 bindsym Mod4+Shift+i exec ibus exit
 
+# Chromium
 for_window [class="Chromium"] floating_minimum_size 1024 x 720
 for_window [class="Chromium"] floating_maximum_size 1024 x 720 
-for_window [class="Chromium"] floating enable
+# for_window [class="Chromium"] focus
+# for_window [class="Chromium"] floating enable
+for_window [class="Chromium"] move to workspace 2
 # floating_minimum_size 1024 x 720
- floating_maximum_size 1024 x 720 
+floating_maximum_size 1024 x 720 
+
+# Conky
+for_window [class="Conky"] floating enable
+
+# Libreoffice
+for_window [class="libreoffice"] move to workspace 4
+for_window [class="libreoffice"] floating enable 
+for_window [class="libreoffice"] resize set 1024 720 
