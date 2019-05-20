@@ -189,8 +189,8 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Screeen shoot with scrot
-bindsym --release Mod1+Sys_Req exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
-bindsym --release Mod1+Shift+Sys_Req exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
+bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
+bindsym  --release Shift+Print exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 
 # Start rofi
 bindsym Mod1+Shift+d exec rofi -show run
@@ -221,13 +221,13 @@ bindsym Mod4+i exec ibus-daemon -d
 bindsym Mod4+Shift+i exec ibus exit
 
 # Chromium
-for_window [class="Chromium"] floating_minimum_size 1024 x 720
-for_window [class="Chromium"] floating_maximum_size 1024 x 720 
+for_window [class="Chromium"] floating_minimum_size 1200 x 850
+for_window [class="Chromium"] floating_maximum_size 1200 x 850
 # for_window [class="Chromium"] focus
 # for_window [class="Chromium"] floating enable
 for_window [class="Chromium"] move to workspace 2
 # floating_minimum_size 1024 x 720
-floating_maximum_size 1024 x 720 
+floating_maximum_size 1200 x 850
 
 # Conky
 for_window [class="Conky"] floating enable
@@ -235,4 +235,4 @@ for_window [class="Conky"] floating enable
 # Libreoffice
 for_window [class="libreoffice"] move to workspace 4
 for_window [class="libreoffice"] floating enable 
-for_window [class="libreoffice"] resize set 1024 720 
+for_window [class="libreoffice"] resize set 1200 850 
