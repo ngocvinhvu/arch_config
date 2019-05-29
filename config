@@ -236,3 +236,21 @@ for_window [class="Conky"] floating enable
 for_window [class="libreoffice"] move to workspace 4
 for_window [class="libreoffice"] floating enable 
 for_window [class="libreoffice"] resize set 1200 850 
+
+# toggle touchpad /usr/local/bin/touchpad_toggle.sh
+bindsym Mod1+F8 exec touchpad_toggle.sh
+
+# WebCam
+bindsym XF86WebCam exec cheese
+
+# Pavucontrol
+bindsym Mod4+p exec pavucontrol -t 3 
+for_window [class="Pavucontrol"] floating enable
+
+# mpv
+for_window [class="mpv"] floating enable move absolute position 300px 50px 
+for_window [class="mpv"] resize set 1200 600
+
+# sxiv
+for_window [class="Sxiv"] floating enable move absolute position 300px 50px
+for_window [class="Sxiv"] resize set 800 600
