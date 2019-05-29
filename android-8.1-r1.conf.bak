@@ -1,0 +1,6 @@
+menuentry "Android" {
+set root='(hd0,*)'
+linux /android-8.1-rc1/kernel quiet root=/dev/ram0 androidboot.selinux=permissive vmalloc=192M video=LVDS-1:d video=VGA-0:e video=HDMI-0:e acpi_sleep=s3_bios,s3_mode SRC=/android-8.1-rc1
+initrd /android-8.1-rc1/initrd.img
+}
+
