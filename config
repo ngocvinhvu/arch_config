@@ -188,6 +188,9 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
+# Mic toggle
+bindsym XF86AudioMicMute exec amixer set Capture toggle
+
 # Screeen shoot with scrot
 bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 bindsym  --release Shift+Print exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
@@ -215,6 +218,7 @@ bindsym Mod4+f exec firefox
 bindsym Mod4+e exec nautilus
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
+bindsym Mod4+g exec goldendict 
 
 # ibus
 bindsym Mod4+i exec ibus-daemon -d
@@ -224,11 +228,11 @@ bindsym Mod4+Shift+i exec ibus exit
 for_window [class="Chromium"] floating_minimum_size 1200 x 870
 for_window [class="Chromium"] floating_maximum_size 1200 x 870
 # for_window [class="Chromium"] focus
-# for_window [class="Chromium"] floating enable
+for_window [class="Chromium"] floating enable
 for_window [class="Chromium"] move to workspace 2
 # floating_minimum_size 1024 x 720
 floating_maximum_size 1200 x 870
-for_window [class="Chromium"] move absolute position 290px 0px
+for_window [class="Chromium"] move absolute position 290px -20px
 
 # Conky
 for_window [class="Conky"] floating enable
@@ -258,3 +262,6 @@ for_window [class="Sxiv"] resize set 800 600
 
 # border of windows
 for_window [class="^.*"] border pixel 1
+
+# goldendict
+for_window [class="GoldenDict"] move to workspace 3
