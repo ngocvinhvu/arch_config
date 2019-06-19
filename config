@@ -12,7 +12,7 @@
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango: M+ 1m, FontAwesome, Ionicons, 8
+# font pango: M+ 1m, FontAwesome, Ionicons, 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -181,6 +181,7 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        font pango: M+ 1m, FontAwesome, Ionicons, 7
 }
 
 # Pulse Audio controls
@@ -214,7 +215,7 @@ bindsym Mod1+Shift+d exec rofi -show run
 
 # Launch apps
 bindsym Mod4+c exec chromium 
-bindsym Mod4+f exec firefox
+# bindsym Mod4+f exec firefox
 bindsym Mod4+e exec nautilus
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
@@ -228,11 +229,11 @@ bindsym Mod4+Shift+i exec ibus exit
 for_window [class="Chromium"] floating_minimum_size 1200 x 870
 for_window [class="Chromium"] floating_maximum_size 1200 x 870
 # for_window [class="Chromium"] focus
-for_window [class="Chromium"] floating enable
+# for_window [class="Chromium"] floating enable
 for_window [class="Chromium"] move to workspace 2
 # floating_minimum_size 1024 x 720
 floating_maximum_size 1200 x 870
-for_window [class="Chromium"] move absolute position 290px -20px
+for_window [class="Chromium"] move absolute position 290px 0px
 
 # Conky
 for_window [class="Conky"] floating enable
@@ -265,3 +266,9 @@ for_window [class="^.*"] border pixel 1
 
 # goldendict
 for_window [class="GoldenDict"] move to workspace 3
+
+# focus follow mouse
+focus_follows_mouse no
+
+# Automatic back-and-forth when switching to the current workspace
+workspace_auto_back_and_forth yes
