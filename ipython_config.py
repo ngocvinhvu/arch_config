@@ -1,3 +1,4 @@
+# ~/.ipython/profile_default/ipython_config.py
 # Configuration file for ipython.
 
 #------------------------------------------------------------------------------
