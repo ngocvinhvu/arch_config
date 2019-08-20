@@ -102,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
 # alias gvim='gvim -u NONE'
-set -o vi
+# set -o vi
+bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
-export KEYTIMEOUT=20
+export KEYTIMEOUT=15
+bindkey -M viins '^r' history-incremental-search-backward

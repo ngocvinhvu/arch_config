@@ -158,16 +158,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 5 px or 5 ppt
-        bindsym $down       resize grow height 5 px or 5 ppt
-        bindsym $up         resize shrink height 10 px or 5 ppt
-        bindsym $right      resize grow width 5 px or 5 ppt
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 5 px or 5 ppt
+        bindsym Down        resize grow height 5 px or 5 ppt
+        bindsym Up          resize shrink height 5 px or 5 ppt
+        bindsym Right       resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or Mod1+r
         bindsym Return mode "default"
@@ -216,7 +216,7 @@ bindsym Mod1+Shift+d exec rofi -show run
 
 # Launch apps
 bindsym Mod4+c exec chromium 
-# bindsym Mod4+f exec firefox
+bindsym Mod4+f exec firefox
 bindsym Mod4+e exec evince 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
@@ -276,3 +276,13 @@ focus_follows_mouse no
 
 # Turn off screen
 bindsym Mod1+Next exec --no-startup-id turnoff_screen.sh
+
+# ranger
+# for_window [title="ranger" class="URxvt"] floating enable
+
+# firefox
+for_window [class="firefox"] move absolute position 290px 0px
+for_window [class="firefox"] floating_minimum_size 1200 x 870
+for_window [class="firefox"] floating_maximum_size 1200 x 870
+for_window [class="firefox"] floating enable
+for_window [class="firefox"] move to workspace 2
