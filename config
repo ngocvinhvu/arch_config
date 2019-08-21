@@ -191,7 +191,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Mic toggle
-bindsym XF86AudioMicMute exec amixer set Capture toggle
+# bindsym XF86AudioMicMute exec amixer set Capture toggle
 
 # Screeen shoot with scrot
 bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
@@ -251,8 +251,10 @@ bindsym Mod1+F8 exec touchpad_toggle.sh
 bindsym XF86WebCam exec cheese
 
 # Pavucontrol
-bindsym Mod4+p exec pavucontrol -t 3 
+bindsym Mod4+p exec pavucontrol -t 4 
 for_window [class="Pavucontrol"] floating enable
+bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
+
 
 # mpv
 for_window [class="mpv"] floating enable move absolute position 300px 50px 
