@@ -98,12 +98,25 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export BROWSER="/usr/bin/firefox"
 
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
+alias rs='sudo systemctl restart NetworkManager'
+alias pmsyu='sudo pacman -Syu'
+alias pms='sudo pacman -S'
 # alias gvim='gvim -u NONE'
 # set -o vi
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 export KEYTIMEOUT=15
 bindkey -M viins '^r' history-incremental-search-backward
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export HISTFILE=~/.zsh_history
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups
+setopt hist_ignore_space

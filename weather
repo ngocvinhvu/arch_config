@@ -1,2 +1,2 @@
 #/bin/bash
-curl "wttr.in/?0"
+curl "vi.wttr.in/hanoi?0"
