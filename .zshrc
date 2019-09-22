@@ -109,6 +109,7 @@ alias pms='sudo pacman -S'
 # set -o vi
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
+bindkey '\C-x\C-e' edit-command-line
 export KEYTIMEOUT=15
 bindkey -M viins '^r' history-incremental-search-backward
 
