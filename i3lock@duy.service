@@ -1,3 +1,4 @@
+# lock screen
 #/etc/systemd/system/i3lock@duy.service
 [Unit]
 Description=i3lock
