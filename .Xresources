@@ -34,7 +34,7 @@ URxvt*urgentOnBell:                     false
 URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
-URxvt.foreground:                      white 
+URxvt.foreground:                       #18B218
 URxvt.background:                       #000000
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
@@ -47,7 +47,7 @@ URxvt.font:             xft:monospace:pixelsize=16:style=regular
 URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
-!URxvt.urlLauncher:         chromium
+!URxvt.urlLauncher:         /usr/bin/firefox
 ! Resize font
 !URxvt.resize-font.smaller:      C-j
 !URxvt.resize-font.bigger:       C-k 
@@ -58,11 +58,11 @@ URxvt.keysym.C-S-Down:          perl:font-size:decglobal
 URxvt.keysym.C-equal:           perl:font-size:reset
 URxvt.keysym.C-slash:           perl:font-size:show
 ! Matcher
-!URxvt.url-launcher:             chromium
+!URxvt.url-launcher:             /usr/bin/firefox
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      chromium
+URxvt.url-select.launcher:      /usr/bin/firefox
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate
@@ -100,5 +100,8 @@ URxvt*color7:  #B2B2B2
 URxvt*color15: #FFFFFF
 
 ! Enable ibus-unikey on URxvt
-! URxvt.inputMethod: ibus
-! URxvt.preeditType: OverTheSpot
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
+!URxvt.transparent: true
+!URxvt.shading:20
