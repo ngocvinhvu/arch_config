@@ -15,7 +15,7 @@
 # font pango: M+ 1m, FontAwesome, Ionicons, 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -189,6 +189,8 @@ bar {
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+ #Mic
+bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 
 # Mic toggle
 # bindsym XF86AudioMicMute exec amixer set Capture toggle
@@ -196,6 +198,9 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 # Screeen shoot with scrot
 bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 bindsym  --release Shift+Print exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
+# XF86ScreenSaver
+bindsym XF86ScreenSaver exec i3lock -i /home/duy/Pictures/cat.png
+
 
 # Start rofi
 bindsym Mod1+Shift+d exec rofi -show run
@@ -217,32 +222,33 @@ bindsym Mod1+Shift+d exec rofi -show run
 # Launch apps
 bindsym Mod4+c exec chromium 
 bindsym Mod4+f exec firefox
+bindsym Mod4+shift+f exec firefox --private-window
 bindsym Mod4+e exec evince 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
 bindsym Mod4+g exec goldendict 
-
-# ibus
 bindsym Mod4+i exec ibus-daemon -d
+# bindsym Mod4+i exec ibus-daemon -d --xim #ibus on Urxvt
 bindsym Mod4+Shift+i exec ibus exit
 
 # Chromium
-for_window [class="Chromium"] floating_minimum_size 1200 x 870
-for_window [class="Chromium"] floating_maximum_size 1200 x 870
 # for_window [class="Chromium"] focus
 # for_window [class="Chromium"] floating enable
+for_window [class="Chromium"] resize set 1200 870 
 for_window [class="Chromium"] move to workspace 2
-# floating_minimum_size 1024 x 720
-floating_maximum_size 1200 x 870
 for_window [class="Chromium"] move absolute position 290px 0px
 
+# set size for all floating windows
+# floating_minimum_size 1024 x 720
+# floating_maximum_size 1200 x 870
 # Conky
 for_window [class="Conky"] floating enable
 
 # Libreoffice
 for_window [class="libreoffice"] move to workspace 4
-for_window [class="libreoffice"] floating enable 
+# for_window [class="libreoffice"] floating enable 
 for_window [class="libreoffice"] resize set 1200 850 
+for_window [class="libreoffice"] move absolute position 290px 0px
 
 # toggle touchpad
 bindsym Mod1+F8 exec touchpad_toggle.sh
@@ -253,7 +259,6 @@ bindsym XF86WebCam exec cheese
 # Pavucontrol
 bindsym Mod4+p exec pavucontrol -t 4 
 for_window [class="Pavucontrol"] floating enable
-bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 
 
 # mpv
@@ -283,8 +288,7 @@ bindsym Mod1+Next exec --no-startup-id turnoff_screen.sh
 # for_window [title="ranger" class="URxvt"] floating enable
 
 # firefox
+for_window [class="firefox"] resize set 1200 870 
 for_window [class="firefox"] move absolute position 290px 0px
-for_window [class="firefox"] floating_minimum_size 1200 x 870
-for_window [class="firefox"] floating_maximum_size 1200 x 870
-for_window [class="firefox"] floating enable
+# for_window [class="firefox"] floating enable
 for_window [class="firefox"] move to workspace 2
