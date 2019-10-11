@@ -105,12 +105,18 @@ alias -s webm='mpv --loop=0'
 alias rs='sudo systemctl restart NetworkManager'
 alias pmsyu='sudo pacman -Syu'
 alias pms='sudo pacman -S'
+alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
+alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
 # set -o vi
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
-bindkey '\C-x\C-e' edit-command-line
-export KEYTIMEOUT=15
+bindkey '^e' edit-command-line
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
 
 
