@@ -158,10 +158,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+        bindsym $left       resize shrink width 15 px or 15 ppt
+        bindsym $down       resize grow height 15 px or 15 ppt
+        bindsym $up         resize shrink height 15 px or 15 ppt
+        bindsym $right      resize grow width 15 px or 15 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 5 px or 5 ppt
@@ -183,6 +183,7 @@ bar {
         # status_command i3status
         status_command py3status # -c /etc/i3status.conf
         font pango: M+ 1m, FontAwesome, Ionicons, 7
+        position bottom
 }
 
 # Pulse Audio controls
@@ -271,7 +272,8 @@ for_window [class="Sxiv"] resize set 800 600
 
 # border of windows
 for_window [class="^.*"] border pixel 1
-
+hide_edge_borders smart
+focus_on_window_activation smart
 # goldendict
 for_window [class="GoldenDict"] move to workspace 3
 
@@ -292,3 +294,15 @@ for_window [class="firefox"] resize set 1200 870
 for_window [class="firefox"] move absolute position 290px 0px
 # for_window [class="firefox"] floating enable
 for_window [class="firefox"] move to workspace 2
+
+# # cmus
+bindsym XF86AudioPlay exec "cmus-remote --pause"
+bindsym XF86AudioNext exec "cmus-remote --next"
+bindsym XF86AudioPrev exec "cmus-remote --prev"
+bindsym XF86AudioStop exec "cmus-remote --stop"
+bindsym Mod1+F10 exec "cmus-remote --pause"
+bindsym Mod1+F11 exec "cmus-remote --next"
+bindsym Mod1+F9 exec "cmus-remote --prev"
+
+# xterm
+# for_window [class="XTerm"] floating enable

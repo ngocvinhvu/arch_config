@@ -100,9 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 export BROWSER="/usr/bin/firefox"
 
+alias rs='sudo netctl restart wlp3s0-Tenda_106570'
+alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
-alias rs='sudo systemctl restart NetworkManager'
 alias pmsyu='sudo pacman -Syu'
 alias pms='sudo pacman -S'
 alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
