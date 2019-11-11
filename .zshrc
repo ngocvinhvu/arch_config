@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 export BROWSER="/usr/bin/firefox"
 
+alias wifi-menu='sudo wifi-menu'
 alias rs='sudo netctl restart wlp3s0-Tenda_106570'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
