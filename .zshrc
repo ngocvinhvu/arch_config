@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 alias wifi-menu='sudo wifi-menu'
-alias rs='sudo netctl restart wlp3s0-Tenda_106570'
+#alias rs='sudo netctl restart wlp3s0-Tenda_106570'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
@@ -112,6 +112,8 @@ alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
 # set -o vi
+setxkbmap -option ctrl:swapcaps
+export PATH="$PATH:$HOME/.local/bin"
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 bindkey '^e' edit-command-line
