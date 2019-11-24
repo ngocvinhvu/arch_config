@@ -98,7 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export BROWSER="/usr/bin/firefox"
+# export BROWSER="/usr/bin/firefox"
+# xdg-settings set default-web-browser firefox.desktop
 
 alias wifi-menu='sudo wifi-menu'
 alias rs='sudo netctl restart wlp3s0-Tenda_106570'
@@ -108,7 +109,7 @@ alias -s webm='mpv --loop=0'
 alias pmsyu='sudo pacman -Syu'
 alias pms='sudo pacman -S'
 alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
-alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
+# alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
 # set -o vi
 bindkey -v
