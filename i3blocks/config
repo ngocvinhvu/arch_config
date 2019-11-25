@@ -7,7 +7,7 @@
 
 
 command=~/.local/bin/statusbar/$BLOCK_NAME
-separator_block_width=15
+separator_block_width=8
 markup=pango
 
 # [record]
@@ -19,6 +19,48 @@ markup=pango
 label=🎼
 interval=once
 signal=11
+
+[ssid]
+command=echo $(iwgetid -r)
+#command=echo "$(iwconfig wlp3s0| grep ESSID | awk '{for(i=4;i<=NF;i++) print $i}' ORS=' '| tr -d 'ESSID:"')"
+interval=5
+
+[wifi]
+label=
+#interface=wlp3s0
+interval=60
+
+[iface]
+#LABEL=wlan0:
+#IFACE=wlan0
+#ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
+
+[bandwidth2]
+interval=persist
+markup=pango
+label=
+# WARN_RX=307200
+# WARN_TX=30720
+# CRIT_RX=512000
+# CRIT_TX=51200
+
+[memory]
+interval=30
+label=🧠
+
+[cpu_temp]
+interval=15
+label=💻
+
+[cpu_usage]
+interval=10
+label=
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
 
 # [news]
 # label=📰
@@ -46,36 +88,32 @@ signal=5
 # interval=180
 # signal=12
 
-[memory]
+#[volume]
+#interval=once
+#signal=10
+
+# [internet]
+# interval=10
+
+[disk]
+LABEL=
 interval=30
-label=🧠
 
-[cpu]
-interval=15
-label=💻
+# [battery]
+# command=~/.local/bin/statusbar/battery BAT0
+# interval=5
 
-[volume]
+[battery2]
+markup=pango
+interval=30
+
+[volume-pulseaudio]
 interval=once
 signal=10
-
-#[disk]
-#interval=60
-#command=disk /
-
-#[disk]
-#interval=60
-#command=disk /home 🏠
-
-[battery]
-command=~/.local/bin/statusbar/battery BAT0
-interval=5
 
 [clock]
 label=📅
 interval=30
-
-[internet]
-interval=10
 
 #[help]
 #interval=once
