@@ -1,4 +1,7 @@
 # setxkbmap -option ctrl:swapcaps
+sudo sh -c "echo '15' > /sys/devices/platform/i8042/serio1/serio2/drift_time"
+# ./.fehbg
+# xsetroot -solid black
 export VISUAL=vim
 export EDITOR=$VISUAL
 #./.fehbg
