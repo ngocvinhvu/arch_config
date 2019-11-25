@@ -24,6 +24,7 @@ signal=11
 command=echo $(iwgetid -r)
 #command=echo "$(iwconfig wlp3s0| grep ESSID | awk '{for(i=4;i<=NF;i++) print $i}' ORS=' '| tr -d 'ESSID:"')"
 interval=5
+separator=false
 
 [wifi]
 label=
