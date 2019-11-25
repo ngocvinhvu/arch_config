@@ -181,9 +181,12 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-        status_command py3status # -c /etc/i3status.conf
-        font pango: M+ 1m, FontAwesome, Ionicons, 7
+        # status_command py3status # -c /etc/i3status.conf
+        status_command i3blocks
+        font pango:M+ 1m, FontAwesome, Ionicons, 8
         position bottom
+        mode dock
+        modifier None
 }
 
 # Pulse Audio controls
@@ -224,7 +227,7 @@ bindsym Mod1+Shift+d exec rofi -show run
 bindsym Mod4+c exec chromium 
 bindsym Mod4+f exec firefox
 bindsym Mod4+shift+f exec firefox --private-window
-bindsym Mod4+e exec evince 
+# bindsym Mod4+e exec evince 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
 bindsym Mod4+g exec goldendict 
@@ -258,7 +261,7 @@ bindsym Mod1+F8 exec touchpad_toggle.sh
 bindsym XF86WebCam exec cheese
 
 # Pavucontrol
-bindsym Mod4+p exec pavucontrol -t 4 
+bindsym Mod4+p exec pavucontrol -t 3 
 for_window [class="Pavucontrol"] floating enable
 
 
@@ -295,14 +298,23 @@ for_window [class="firefox"] move absolute position 290px 0px
 # for_window [class="firefox"] floating enable
 for_window [class="firefox"] move to workspace 2
 
-# # cmus
-bindsym XF86AudioPlay exec "cmus-remote --pause"
-bindsym XF86AudioNext exec "cmus-remote --next"
-bindsym XF86AudioPrev exec "cmus-remote --prev"
-bindsym XF86AudioStop exec "cmus-remote --stop"
-bindsym Mod1+F10 exec "cmus-remote --pause"
-bindsym Mod1+F11 exec "cmus-remote --next"
-bindsym Mod1+F9 exec "cmus-remote --prev"
+## cmus
+# bindsym XF86AudioPlay exec "cmus-remote --pause"
+# bindsym XF86AudioNext exec "cmus-remote --next"
+# bindsym XF86AudioPrev exec "cmus-remote --prev"
+# bindsym XF86AudioStop exec "cmus-remote --stop"
+# bindsym Mod1+F10 exec "cmus-remote --pause"
+# bindsym Mod1+F11 exec "cmus-remote --next"
+# bindsym Mod1+F9 exec "cmus-remote --prev"
+
+# ncmpcpp/mpc
+bindsym Mod1+F10 exec "mpc toggle"
+bindsym Mod1+F11 exec "mpc next"
+bindsym Mod1+F9 exec "mpc prev"
+
 
 # xterm
 # for_window [class="XTerm"] floating enable
+
+# zathura
+for_window [class="Zathura"] move to workspace 9
