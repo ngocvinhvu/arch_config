@@ -62,6 +62,7 @@ label=
 #T_WARN=50
 #T_CRIT=80
 #DECIMALS=2
+#required sysstat
 
 # [news]
 # label=📰
