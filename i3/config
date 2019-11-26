@@ -181,8 +181,8 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-        # status_command py3status # -c /etc/i3status.conf
-        status_command i3blocks
+        status_command py3status # -c /etc/i3status.conf
+        # status_command i3blocks
         font pango:M+ 1m, FontAwesome, Ionicons, 8
         position bottom
         mode dock
@@ -226,7 +226,8 @@ bindsym Mod1+Shift+d exec rofi -show run
 # Launch apps
 bindsym Mod4+c exec chromium 
 bindsym Mod4+f exec firefox
-bindsym Mod4+shift+f exec firefox --private-window
+#bindsym Mod4+shift+f exec firefox --private-window
+bindsym Mod4+shift+f exec firefox --private-window && sleep 1 && i3-msg move container to workspace 10
 # bindsym Mod4+e exec evince 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
