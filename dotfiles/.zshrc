@@ -8,7 +8,8 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="maran"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,6 +110,8 @@ alias -s webm='mpv --loop=0'
 alias pmsyu='sudo pacman -Syu'
 alias pms='sudo pacman -S'
 alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
+alias d='~/Downloads'
+alias D='~/Documents'
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
 # set -o vi
