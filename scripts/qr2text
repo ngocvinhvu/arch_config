@@ -1,0 +1,2 @@
+read s
+curl qrenco.de/$s

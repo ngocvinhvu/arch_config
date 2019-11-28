@@ -1,0 +1,2 @@
+read h
+curl cheat.sh/$h
