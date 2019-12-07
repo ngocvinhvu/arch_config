@@ -112,6 +112,11 @@ alias pms='sudo pacman -S'
 alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
 alias d='~/Downloads'
 alias D='~/Documents'
+alias mv='mv -iv'
+alias cp='cp -iv'
+alias rm='rm -v'
+alias ka='killall'
+#
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
 # set -o vi

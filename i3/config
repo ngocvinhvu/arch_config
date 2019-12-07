@@ -182,11 +182,11 @@ bindsym Mod1+r mode "resize"
 bar {
         # status_command i3status
         status_command py3status # -c /etc/i3status.conf
-        # status_command i3blocks
+#        status_command i3blocks
         font pango:M+ 1m, FontAwesome, Ionicons, 8
         position bottom
-        mode dock
-        modifier None
+        # mode dock
+        # modifier None
 }
 
 # Pulse Audio controls
@@ -226,8 +226,7 @@ bindsym Mod1+Shift+d exec rofi -show run
 # Launch apps
 bindsym Mod4+c exec chromium 
 bindsym Mod4+f exec firefox
-#bindsym Mod4+shift+f exec firefox --private-window
-bindsym Mod4+shift+f exec firefox --private-window && sleep 1 && i3-msg move container to workspace 10
+bindsym Mod4+shift+f exec firefox --private-window && sleep 0.2  && i3-msg move container to workspace 10
 # bindsym Mod4+e exec evince 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
@@ -319,3 +318,6 @@ bindsym Mod1+F9 exec "mpc prev"
 
 # zathura
 for_window [class="Zathura"] move to workspace 9
+
+# ncmpcpp
+bindsym Mod4+n exec "i3 'focus output right;workspace 8;exec urxvt -e ncmpcpp'"
