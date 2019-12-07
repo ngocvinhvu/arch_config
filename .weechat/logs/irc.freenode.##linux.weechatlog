@@ -1,0 +1,45 @@
+2019-12-08 06:34:58	-->	laduyhaha (~duy@42.112.108.198) has joined ##linux
+2019-12-08 06:34:58	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 06:34:58	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 06:34:58	--	Channel ##linux: 1823 nicks (0 ops, 0 voices, 1823 normals)
+2019-12-08 06:34:58	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 06:34:58	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 06:35:01	Dagmar	The things rp_filter throws away shoudln't be there in the first place.
+2019-12-08 06:35:01	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 06:35:29	-->	kerframil (kerframil@gentoo/user/kerframil) has joined ##linux
+2019-12-08 06:35:37	<--	laduyhaha99 (2a706cc6@42.112.108.198) has quit (Remote host closed the connection)
+2019-12-08 06:35:45	<--	TabMasher (Euph0ria@gateway/vpn/privateinternetaccess/euph0ria) has quit (Ping timeout: 265 seconds)
+2019-12-08 06:35:52	Sappos	Hm, make localmodconfig is apparently supposed to only be turning stuff off, so it should give some sensible result. (That would, however, not include any devices I've inadvertently turned off.)
+2019-12-08 06:36:01	danieldg	Dagmar: I don't think anyone is saying it's better to have it off now
+2019-12-08 06:36:04	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 252 seconds)
+2019-12-08 06:36:12	<--	Arlion (~Arlion@unaffiliated/arlion) has quit
+2019-12-08 06:36:14	ayecee	more likely it lets asymmetric routing work
+2019-12-08 06:36:27	<--	Jantz (~IceChat9@2407:7000:8d04:100:8cc4:6197:974f:3676) has quit (Read error: Connection reset by peer)
+2019-12-08 06:36:37	<--	udni (~Thunderbi@78-134-58-123.v4.ngi.it) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:36:38	Dagmar	Except once again, we all get to suffer something stupid becasue of 0.03% of users
+2019-12-08 06:36:42	Dagmar	This is not a reasonable default
+2019-12-08 06:36:46	ayecee	i still wonder about that myself after reading the recent vpn thingy.
+2019-12-08 06:36:49	 *	pnbeast hates the .03%-ers.
+2019-12-08 06:36:53	--	irc: disconnected from server
+2019-12-08 06:37:11	-->	duy (~duy@42.112.108.198) has joined ##linux
+2019-12-08 06:37:11	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 06:37:11	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 06:37:11	--	Channel ##linux: 1818 nicks (0 ops, 0 voices, 1818 normals)
+2019-12-08 06:37:11	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 06:37:11	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 06:37:26	Dagmar	Then they could set it to loose mode and it would have been fine
+2019-12-08 06:37:31	ayecee	the cve description is pretty clear that rp_filter setting isn't the problem, but rather that the loose rp_filter setting allowed them to see the real problem.
+2019-12-08 06:37:32	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 06:37:35	-->	caecias (~caecias@unaffiliated/caecias) has joined ##linux
+2019-12-08 06:38:08	Dagmar	ayecee: Except it's not a setting that should have been adopted by systemd as their default
+2019-12-08 06:38:28	ayecee	sure, but that's not the cause of the vulnerability in the cve.
+2019-12-08 06:38:48	ayecee	still puzzling though.
+2019-12-08 06:39:02	Dagmar	These were expected behaviours prior to being declared a CVE
+2019-12-08 06:39:19	ayecee	nope
+2019-12-08 06:39:23	Dagmar	It's part of the reason I've been setting rp_filter to 1 on almost every multi-interface box I've made in the last 20+ years
+2019-12-08 06:39:50	ayecee	like, this problem also applies to ipv6, which rp_filter doesn't address
+2019-12-08 06:40:12	tds	nft and ip6tables can both do reverse path filtering for you if you want
+2019-12-08 06:40:13	-->	ledeni (~ledeni@c210-49-84-69.dandn3.vic.optusnet.com.au) has joined ##linux
+2019-12-08 06:40:22	--	You are now known as laduyhaha
+2019-12-08 06:40:29	ayecee	no doubt
+2019-12-08 06:40:30	Dagmar	rp_filter has been there for a very long time

@@ -1,0 +1,22 @@
+2019-12-08 06:35:15	-->	laduyhaha (~duy@42.112.108.198) has joined #python
+2019-12-08 06:35:15	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 06:35:15	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:58
+2019-12-08 06:35:16	--	Channel #python: 1810 nicks (0 ops, 0 voices, 1810 normals)
+2019-12-08 06:35:18	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:35:37	<--	laduyhaha99 (2a706cc6@42.112.108.198) has quit (Remote host closed the connection)
+2019-12-08 06:36:04	<--	adamholmberg (~adamholmb@69.80.114.2) has quit (Ping timeout: 252 seconds)
+2019-12-08 06:36:04	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 252 seconds)
+2019-12-08 06:36:27	<--	Jantz (~IceChat9@2407:7000:8d04:100:8cc4:6197:974f:3676) has quit (Read error: Connection reset by peer)
+2019-12-08 06:36:53	--	irc: disconnected from server
+2019-12-08 06:37:11	-->	duy (~duy@42.112.108.198) has joined #python
+2019-12-08 06:37:11	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 06:37:11	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-08 06:37:11	--	Channel #python: 1806 nicks (0 ops, 0 voices, 1806 normals)
+2019-12-08 06:37:30	-->	djapo (~archie@unaffiliated/djapo) has joined #python
+2019-12-08 06:37:34	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:38:09	-->	rkkk (41bf0bfc@cpe-65-191-11-252.nc.res.rr.com) has joined #python
+2019-12-08 06:38:21	rkkk	http://dpaste.com/2SGP02T, how do I get my helper function to update the result in my numpaths function?
+2019-12-08 06:38:36	rkkk	I return 0 in my numpaths function always
+2019-12-08 06:39:56	energizer	rkkk: return the new value?
+2019-12-08 06:40:06	rkkk	energizer where
+2019-12-08 06:40:22	--	You are now known as laduyhaha

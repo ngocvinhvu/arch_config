@@ -420,3 +420,266 @@
 2019-12-08 05:35:08		Options saved to tcl.conf
 2019-12-08 05:35:08		Options saved to script.conf
 2019-12-08 05:35:08		Options saved to fset.conf
+2019-12-08 05:58:31		python scripts loaded: autojoin
+2019-12-08 05:58:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 05:59:09		[core]
+2019-12-08 05:59:09		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2019-12-08 05:59:09		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2019-12-08 05:59:09		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2019-12-08 05:59:09		[relay]
+2019-12-08 05:59:09		  relay
+2019-12-08 05:59:09		[xfer]
+2019-12-08 05:59:09		  me  xfer
+2019-12-08 05:59:09		[exec]
+2019-12-08 05:59:09		  exec
+2019-12-08 05:59:09		[fifo]
+2019-12-08 05:59:09		  fifo
+2019-12-08 05:59:09		[logger]
+2019-12-08 05:59:09		  logger
+2019-12-08 05:59:09		[buflist]
+2019-12-08 05:59:09		  buflist
+2019-12-08 05:59:09		[irc]
+2019-12-08 05:59:09		  admin       dehalfop    join        motd        pong        sanick      time        wallops   
+2019-12-08 05:59:09		  allchan     deop        kick        msg         query       sapart      topic       who       
+2019-12-08 05:59:09		  allpv       devoice     kickban     names       quiet       saquit      trace       whois     
+2019-12-08 05:59:09		  allserv     die         kill        nick        quote       server      unban       whowas    
+2019-12-08 05:59:09		  ban         disconnect  links       notice      reconnect   service     unquiet   
+2019-12-08 05:59:09		  cap         halfop      list        notify      rehash      servlist    userhost  
+2019-12-08 05:59:09		  connect     ignore      lusers      op          remove      squery      users     
+2019-12-08 05:59:09		  ctcp        info        map         oper        restart     squit       version   
+2019-12-08 05:59:09		  cycle       invite      me          part        sajoin      stats       voice     
+2019-12-08 05:59:09		  dcc         ison        mode        ping        samode      summon      wallchops 
+2019-12-08 05:59:09		[alias]
+2019-12-08 05:59:09		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2019-12-08 05:59:09		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2019-12-08 05:59:09		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2019-12-08 05:59:09		[ruby]
+2019-12-08 05:59:09		  ruby
+2019-12-08 05:59:09		[charset]
+2019-12-08 05:59:09		  charset
+2019-12-08 05:59:09		[script]
+2019-12-08 05:59:09		  script
+2019-12-08 05:59:09		[python]
+2019-12-08 05:59:09		  autojoin  python
+2019-12-08 05:59:09		[perl]
+2019-12-08 05:59:09		  perl
+2019-12-08 05:59:09		[fset]
+2019-12-08 05:59:09		  fset
+2019-12-08 05:59:09		[trigger]
+2019-12-08 05:59:09		  trigger
+2019-12-08 05:59:09		[lua]
+2019-12-08 05:59:09		  lua
+2019-12-08 05:59:15	=!=	No help available, "login" is not a command or an option
+2019-12-08 05:59:54		[irc]  /server  list|listfull [<name>]
+2019-12-08 05:59:54		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 05:59:54		                copy|rename <name> <new_name>
+2019-12-08 05:59:54		                reorder <name> [<name>...]
+2019-12-08 05:59:54		                open <name>|-all [<name>...]
+2019-12-08 05:59:54		                del|keep <name>
+2019-12-08 05:59:54		                deloutq|jump|raw
+2019-12-08 05:59:54		list, add or remove IRC servers
+2019-12-08 05:59:54		    list: list servers (without argument, this list is displayed)
+2019-12-08 05:59:54		listfull: list servers with detailed info for each server
+2019-12-08 05:59:54		     add: add a new server
+2019-12-08 05:59:54		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 05:59:54		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 05:59:54		   -temp: add a temporary server (not saved)
+2019-12-08 05:59:54		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 05:59:54		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 05:59:54		    copy: duplicate a server
+2019-12-08 05:59:54		  rename: rename a server
+2019-12-08 05:59:54		 reorder: reorder list of servers
+2019-12-08 05:59:54		    open: open the server buffer without connecting
+2019-12-08 05:59:54		    keep: keep server in config file (for temporary servers only)
+2019-12-08 05:59:54		     del: delete a server
+2019-12-08 05:59:54		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 05:59:54		    jump: jump to server buffer
+2019-12-08 05:59:54		     raw: open buffer with raw IRC data
+2019-12-08 05:59:54		Examples:
+2019-12-08 05:59:54		  /server listfull
+2019-12-08 05:59:54		  /server add freenode chat.freenode.net
+2019-12-08 05:59:54		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 05:59:54		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 05:59:54		  /server copy freenode freenode-test
+2019-12-08 05:59:54		  /server rename freenode-test freenode2
+2019-12-08 05:59:54		  /server reorder freenode2 freenode
+2019-12-08 05:59:54		  /server del freenode
+2019-12-08 05:59:54		  /server deloutq
+2019-12-08 06:00:16	=!=	irc: server "freenode" already exists, can't add it!
+2019-12-08 06:02:22		python: scripts unloaded
+2019-12-08 06:02:25		python scripts loaded: autojoin
+2019-12-08 06:02:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:02:43	=!=	irc: unable to add temporary server "laduyhaha:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:02:43	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:05:34		python: scripts unloaded
+2019-12-08 06:05:37		python scripts loaded: autojoin
+2019-12-08 06:05:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "chat.freenode.net" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "6667" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "hotboyarsenal@gmail.com:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:34	=!=	irc: unable to add temporary server "6667" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:34	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:34	=!=	irc: unable to add temporary server "laduyhaha:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:34	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:13:07		[irc]  /msg  [-server <server>] <target>[,<target>...] <text>
+2019-12-08 06:13:07		send message to a nick or channel
+2019-12-08 06:13:07		server: send to this server (internal name)
+2019-12-08 06:13:07		target: nick or channel (may be mask, '*' = current channel)
+2019-12-08 06:13:07		  text: text to send
+2019-12-08 06:13:51	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2019-12-08 06:14:03	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2019-12-08 06:14:09	=!=	Error: unknown command "/clear" (type /help for help)
+2019-12-08 06:14:17		[irc]  /msg  [-server <server>] <target>[,<target>...] <text>
+2019-12-08 06:14:17		send message to a nick or channel
+2019-12-08 06:14:17		server: send to this server (internal name)
+2019-12-08 06:14:17		target: nick or channel (may be mask, '*' = current channel)
+2019-12-08 06:14:17		  text: text to send
+2019-12-08 06:14:30	=!=	No help available, "login" is not a command or an option
+2019-12-08 06:16:13		[irc]  /server  list|listfull [<name>]
+2019-12-08 06:16:13		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 06:16:13		                copy|rename <name> <new_name>
+2019-12-08 06:16:13		                reorder <name> [<name>...]
+2019-12-08 06:16:13		                open <name>|-all [<name>...]
+2019-12-08 06:16:13		                del|keep <name>
+2019-12-08 06:16:13		                deloutq|jump|raw
+2019-12-08 06:16:13		list, add or remove IRC servers
+2019-12-08 06:16:13		    list: list servers (without argument, this list is displayed)
+2019-12-08 06:16:13		listfull: list servers with detailed info for each server
+2019-12-08 06:16:13		     add: add a new server
+2019-12-08 06:16:13		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 06:16:13		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 06:16:13		   -temp: add a temporary server (not saved)
+2019-12-08 06:16:13		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 06:16:13		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 06:16:13		    copy: duplicate a server
+2019-12-08 06:16:13		  rename: rename a server
+2019-12-08 06:16:13		 reorder: reorder list of servers
+2019-12-08 06:16:13		    open: open the server buffer without connecting
+2019-12-08 06:16:13		    keep: keep server in config file (for temporary servers only)
+2019-12-08 06:16:13		     del: delete a server
+2019-12-08 06:16:13		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 06:16:13		    jump: jump to server buffer
+2019-12-08 06:16:13		     raw: open buffer with raw IRC data
+2019-12-08 06:16:13		Examples:
+2019-12-08 06:16:13		  /server listfull
+2019-12-08 06:16:13		  /server add freenode chat.freenode.net
+2019-12-08 06:16:13		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 06:16:13		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 06:16:13		  /server copy freenode freenode-test
+2019-12-08 06:16:13		  /server rename freenode-test freenode2
+2019-12-08 06:16:13		  /server reorder freenode2 freenode
+2019-12-08 06:16:13		  /server del freenode
+2019-12-08 06:16:13		  /server deloutq
+2019-12-08 06:21:16		python: scripts unloaded
+2019-12-08 06:21:18		python scripts loaded: autojoin
+2019-12-08 06:21:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:23:46		[core]  /set  [<option> [<value>]]
+2019-12-08 06:23:46		              diff [<option> [<option>...]]
+2019-12-08 06:23:46		              env [<variable> [<value>]]
+2019-12-08 06:23:46		set config options and environment variables
+2019-12-08 06:23:46		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2019-12-08 06:23:46		 value: new value for option, according to type:
+2019-12-08 06:23:46		          boolean: on, off or toggle
+2019-12-08 06:23:46		          integer: number, ++number or --number
+2019-12-08 06:23:46		           string: any string ("" for empty string)
+2019-12-08 06:23:46		            color: color name, ++number or --number
+2019-12-08 06:23:46		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2019-12-08 06:23:46		  diff: display only changed options
+2019-12-08 06:23:46		   env: display or set an environment variable (use value "" to unset a variable)
+2019-12-08 06:23:46		Examples:
+2019-12-08 06:23:46		  display options about highlight:
+2019-12-08 06:23:46		    /set *highlight*
+2019-12-08 06:23:46		  add a word to highlight:
+2019-12-08 06:23:46		    /set weechat.look.highlight "word"
+2019-12-08 06:23:46		  display changed options:
+2019-12-08 06:23:46		    /set diff
+2019-12-08 06:23:46		  display changed options in irc plugin:
+2019-12-08 06:23:46		    /set diff irc.*
+2019-12-08 06:23:46		  display value of environment variable LANG:
+2019-12-08 06:23:46		    /set env LANG
+2019-12-08 06:23:46		  set environment variable LANG and use it:
+2019-12-08 06:23:46		    /set env LANG fr_FR.UTF-8
+2019-12-08 06:23:46		    /upgrade
+2019-12-08 06:23:46		  unset environment variable ABC:
+2019-12-08 06:23:46		    /set env ABC ""
+2019-12-08 06:25:02		Option changed: irc.server.freenode.autoconnect = on  (default if null: off)
+2019-12-08 06:25:09		python: scripts unloaded
+2019-12-08 06:25:11		python scripts loaded: autojoin
+2019-12-08 06:25:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:26:10		Option changed: irc.server.freenode.sasl_username = "laduyhaha"  (default if null: "")
+2019-12-08 06:26:39		Option changed: irc.server.freenode.sasl_password = "Fnguy3nduynnd020895"  (default if null: "")
+2019-12-08 06:27:40		python: scripts unloaded
+2019-12-08 06:27:42		python scripts loaded: autojoin
+2019-12-08 06:27:42		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:28:05		[core]  /set  [<option> [<value>]]
+2019-12-08 06:28:05		              diff [<option> [<option>...]]
+2019-12-08 06:28:05		              env [<variable> [<value>]]
+2019-12-08 06:28:05		set config options and environment variables
+2019-12-08 06:28:05		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2019-12-08 06:28:05		 value: new value for option, according to type:
+2019-12-08 06:28:05		          boolean: on, off or toggle
+2019-12-08 06:28:05		          integer: number, ++number or --number
+2019-12-08 06:28:05		           string: any string ("" for empty string)
+2019-12-08 06:28:05		            color: color name, ++number or --number
+2019-12-08 06:28:05		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2019-12-08 06:28:05		  diff: display only changed options
+2019-12-08 06:28:05		   env: display or set an environment variable (use value "" to unset a variable)
+2019-12-08 06:28:05		Examples:
+2019-12-08 06:28:05		  display options about highlight:
+2019-12-08 06:28:05		    /set *highlight*
+2019-12-08 06:28:05		  add a word to highlight:
+2019-12-08 06:28:05		    /set weechat.look.highlight "word"
+2019-12-08 06:28:05		  display changed options:
+2019-12-08 06:28:05		    /set diff
+2019-12-08 06:28:05		  display changed options in irc plugin:
+2019-12-08 06:28:05		    /set diff irc.*
+2019-12-08 06:28:05		  display value of environment variable LANG:
+2019-12-08 06:28:05		    /set env LANG
+2019-12-08 06:28:05		  set environment variable LANG and use it:
+2019-12-08 06:28:05		    /set env LANG fr_FR.UTF-8
+2019-12-08 06:28:05		    /upgrade
+2019-12-08 06:28:05		  unset environment variable ABC:
+2019-12-08 06:28:05		    /set env ABC ""
+2019-12-08 06:28:30	=!=	Error: unknown command "/whoami" (type /help for help)
+2019-12-08 06:28:41	=!=	Error: unknown command "/whoami" (type /help for help)
+2019-12-08 06:28:44	=!=	No help available, "woh" is not a command or an option
+2019-12-08 06:28:48		[irc]  /who  [<mask> [o]]
+2019-12-08 06:28:48		generate a query which returns a list of information
+2019-12-08 06:28:48		mask: only information which match this mask
+2019-12-08 06:28:48		   o: only operators are returned according to the mask supplied
+2019-12-08 06:30:09		python: scripts unloaded
+2019-12-08 06:30:12		python scripts loaded: autojoin
+2019-12-08 06:30:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:30:19	=!=	Too few arguments for command "/nick" (help on command: /help nick)
+2019-12-08 06:31:24		[core]  /history  clear
+2019-12-08 06:31:24		                  <value>
+2019-12-08 06:31:24		show buffer command history
+2019-12-08 06:31:24		clear: clear history
+2019-12-08 06:31:24		value: number of history entries to show
+2019-12-08 06:36:41		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl,#opensusu-cn,#linuxac,##unavailable,#reddit,##linux,#python"  (default if null: "")
+2019-12-08 06:36:46		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 06:36:48		Options saved to sec.conf
+2019-12-08 06:36:48		Options saved to weechat.conf
+2019-12-08 06:36:48		Options saved to plugins.conf
+2019-12-08 06:36:48		Options saved to charset.conf
+2019-12-08 06:36:48		Options saved to logger.conf
+2019-12-08 06:36:48		Options saved to exec.conf
+2019-12-08 06:36:48		Options saved to trigger.conf
+2019-12-08 06:36:48		Options saved to alias.conf
+2019-12-08 06:36:48		Options saved to buflist.conf
+2019-12-08 06:36:48		Options saved to fifo.conf
+2019-12-08 06:36:48		Options saved to xfer.conf
+2019-12-08 06:36:48		Options saved to irc.conf
+2019-12-08 06:36:48		Options saved to relay.conf
+2019-12-08 06:36:48		Options saved to ruby.conf
+2019-12-08 06:36:48		Options saved to python.conf
+2019-12-08 06:36:48		Options saved to perl.conf
+2019-12-08 06:36:48		Options saved to lua.conf
+2019-12-08 06:36:48		Options saved to script.conf
+2019-12-08 06:36:48		Options saved to fset.conf
+2019-12-08 06:36:53		python: scripts unloaded
+2019-12-08 06:36:56		python scripts loaded: autojoin
+2019-12-08 06:36:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
