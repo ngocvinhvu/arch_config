@@ -683,3 +683,84 @@
 2019-12-08 06:36:53		python: scripts unloaded
 2019-12-08 06:36:56		python scripts loaded: autojoin
 2019-12-08 06:36:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:43:35		python: scripts unloaded
+2019-12-08 06:43:59		python scripts loaded: autojoin
+2019-12-08 06:43:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:54:23		Option changed: irc.server.freenode.autojoin = "#vnluser,#opensusu-cn,#reddit,##linux,#python,#archlinux,#ubuntu,#kali-linux,##C,#fsociety"  (default if null: "")
+2019-12-08 06:54:27		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 06:54:30		Options saved to sec.conf
+2019-12-08 06:54:30		Options saved to weechat.conf
+2019-12-08 06:54:30		Options saved to plugins.conf
+2019-12-08 06:54:30		Options saved to charset.conf
+2019-12-08 06:54:30		Options saved to logger.conf
+2019-12-08 06:54:30		Options saved to exec.conf
+2019-12-08 06:54:30		Options saved to trigger.conf
+2019-12-08 06:54:30		Options saved to alias.conf
+2019-12-08 06:54:30		Options saved to buflist.conf
+2019-12-08 06:54:30		Options saved to fifo.conf
+2019-12-08 06:54:30		Options saved to xfer.conf
+2019-12-08 06:54:30		Options saved to irc.conf
+2019-12-08 06:54:30		Options saved to relay.conf
+2019-12-08 06:54:30		Options saved to ruby.conf
+2019-12-08 06:54:30		Options saved to python.conf
+2019-12-08 06:54:30		Options saved to perl.conf
+2019-12-08 06:54:30		Options saved to lua.conf
+2019-12-08 06:54:30		Options saved to script.conf
+2019-12-08 06:54:30		Options saved to fset.conf
+2019-12-08 06:54:34		python: scripts unloaded
+2019-12-08 06:54:47		python scripts loaded: autojoin
+2019-12-08 06:54:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:59:52	=!=	Too few arguments for command "/ping" (help on command: /help ping)
+2019-12-08 06:59:58	=!=	Too few arguments for command "/ping" (help on command: /help ping)
+2019-12-08 07:00:02		[irc]  /ping  <target1> [<target2>]
+2019-12-08 07:00:02		send a ping to server
+2019-12-08 07:00:02		target1: server
+2019-12-08 07:00:02		target2: forward ping to this server
+2019-12-08 07:00:56		[irc]  /ping  <target1> [<target2>]
+2019-12-08 07:00:56		send a ping to server
+2019-12-08 07:00:56		target1: server
+2019-12-08 07:00:56		target2: forward ping to this server
+2019-12-08 07:08:16		python: scripts unloaded
+2019-12-08 07:08:43		python scripts loaded: autojoin
+2019-12-08 07:08:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 07:08:52	=!=	irc: command "nick" must be executed on irc buffer (server, channel or private)
+2019-12-08 07:09:59	=!=	irc: unable to add temporary server "efnet" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 07:09:59	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 07:09:59	=!=	irc: unable to add temporary server "irc.teksavvy.ca" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 07:09:59	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 07:10:18	=!=	Error: unknown command "/cler" (type /help for help)
+2019-12-08 07:10:21	=!=	Error: unknown command "/clear" (type /help for help)
+2019-12-08 07:10:47		irc: server efnet added
+2019-12-08 07:11:21		irc: server efnet has been deleted
+2019-12-08 07:16:28		irc: server efnet added
+2019-12-08 07:17:38		irc: server efnet has been deleted
+2019-12-08 07:17:44	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2019-12-08 07:17:59		irc: server efnet added
+2019-12-08 07:18:04		All servers:
+2019-12-08 07:18:04		 * freenode [connected], nick: laduyhaha, 10 channels, 0 pv
+2019-12-08 07:18:04		   efnet
+2019-12-08 07:18:51		python: scripts unloaded
+2019-12-08 07:18:58		python scripts loaded: autojoin
+2019-12-08 07:18:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 07:20:22		irc: server efnet has been deleted
+2019-12-08 09:07:23		Option changed: irc.server.freenode.autojoin = "#vnluser,#reddit,##linux,#python,#archlinux,#ubuntu,#kali-linux,##C,#fsociety"  (default if null: "")
+2019-12-08 09:07:27		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 09:07:29		Options saved to sec.conf
+2019-12-08 09:07:29		Options saved to weechat.conf
+2019-12-08 09:07:29		Options saved to plugins.conf
+2019-12-08 09:07:29		Options saved to charset.conf
+2019-12-08 09:07:29		Options saved to logger.conf
+2019-12-08 09:07:29		Options saved to exec.conf
+2019-12-08 09:07:29		Options saved to trigger.conf
+2019-12-08 09:07:29		Options saved to alias.conf
+2019-12-08 09:07:29		Options saved to buflist.conf
+2019-12-08 09:07:29		Options saved to fifo.conf
+2019-12-08 09:07:29		Options saved to xfer.conf
+2019-12-08 09:07:29		Options saved to irc.conf
+2019-12-08 09:07:29		Options saved to relay.conf
+2019-12-08 09:07:29		Options saved to ruby.conf
+2019-12-08 09:07:29		Options saved to python.conf
+2019-12-08 09:07:29		Options saved to perl.conf
+2019-12-08 09:07:29		Options saved to lua.conf
+2019-12-08 09:07:29		Options saved to script.conf
+2019-12-08 09:07:29		Options saved to fset.conf

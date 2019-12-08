@@ -1,0 +1,175 @@
+2019-12-08 06:49:14	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #ubuntu
+2019-12-08 06:49:14	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: https://ubottu.com/y/gl | #ubuntu supports Ubuntu and official flavors; versions 16.04, 18.04, 19.04, 19.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: https://ubottu.com/y/irc | Pastes to https://paste.ubuntu.com/ | Download: https://ubottu.com/y/dl"
+2019-12-08 06:49:14	--	Topic set by dax (dax@freenode/staff/dax) on Thu, 24 Oct 2019 21:40:13
+2019-12-08 06:49:14	--	Channel #ubuntu: 1164 nicks (1 op, 0 voices, 1163 normals)
+2019-12-08 06:49:14	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2019-12-08 06:49:14	--	URL for #ubuntu: https://www.ubuntu.com
+2019-12-08 06:49:17	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:49:17	<--	ExoUNX (~ExoUNX@unaffiliated/exounx) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:49:19	<--	bprompt (4943951c@c-73-67-149-28.hsd1.or.comcast.net) has quit (Quit: bprompt)
+2019-12-08 06:49:27	-->	khisanth__ (~Khisanth@pool-108-46-3-239.nycmny.east.verizon.net) has joined #ubuntu
+2019-12-08 06:53:17	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2019-12-08 06:54:35	--	irc: disconnected from server
+2019-12-08 06:55:05	-->	duy (~laduyhaha@42.112.108.198) has joined #ubuntu
+2019-12-08 06:55:05	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: https://ubottu.com/y/gl | #ubuntu supports Ubuntu and official flavors; versions 16.04, 18.04, 19.04, 19.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: https://ubottu.com/y/irc | Pastes to https://paste.ubuntu.com/ | Download: https://ubottu.com/y/dl"
+2019-12-08 06:55:05	--	Topic set by dax (dax@freenode/staff/dax) on Thu, 24 Oct 2019 21:40:13
+2019-12-08 06:55:07	--	Channel #ubuntu: 1162 nicks (1 op, 0 voices, 1161 normals)
+2019-12-08 06:55:07	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2019-12-08 06:55:07	--	URL for #ubuntu: https://www.ubuntu.com
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:19	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:56:12	<--	AlexBe (b279165c@mm-92-22-121-178.gomel.dynamic.pppoe.byfly.by) has quit (Remote host closed the connection)
+2019-12-08 06:58:39	<--	s3nd1v0g1us (patr0clus@gateway/vpn/protonvpn/patr0clus) has quit (Quit: WeeChat 2.6)
+2019-12-08 06:58:47	-->	melatonina (uid317528@gateway/web/irccloud.com/x-hytyifcndleyqtrd) has joined #ubuntu
+2019-12-08 07:01:33	<--	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:04:48	-->	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has joined #ubuntu
+2019-12-08 07:06:58	<--	Decobus (~quassel@c-76-112-88-95.hsd1.mi.comcast.net) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2019-12-08 07:07:12	-->	yelof (~yelof@2601:283:8003:a920:2123:115f:2ef1:a86a) has joined #ubuntu
+2019-12-08 07:07:59	-->	Sbur3 (~Sbur3@host-213-189-186-111.dynamic.voo.be) has joined #ubuntu
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined #ubuntu
+2019-12-08 07:09:02	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: https://ubottu.com/y/gl | #ubuntu supports Ubuntu and official flavors; versions 16.04, 18.04, 19.04, 19.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: https://ubottu.com/y/irc | Pastes to https://paste.ubuntu.com/ | Download: https://ubottu.com/y/dl"
+2019-12-08 07:09:02	--	Topic set by dax (dax@freenode/staff/dax) on Thu, 24 Oct 2019 21:40:13
+2019-12-08 07:09:02	--	Channel #ubuntu: 1162 nicks (1 op, 0 voices, 1161 normals)
+2019-12-08 07:09:02	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2019-12-08 07:09:02	--	URL for #ubuntu: https://www.ubuntu.com
+2019-12-08 07:09:15	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:11:07	-->	TanukiNoKintama (~TanukiNoK@c-68-44-98-8.hsd1.in.comcast.net) has joined #ubuntu
+2019-12-08 07:11:10	<--	TanukiNoKintama (~TanukiNoK@c-68-44-98-8.hsd1.in.comcast.net) has left #ubuntu
+2019-12-08 07:12:41	<--	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has quit (Remote host closed the connection)
+2019-12-08 07:14:32	-->	Bashing-om (~sysop@ubuntu/member/bashing-om) has joined #ubuntu
+2019-12-08 07:14:39	<--	mibo (~mibo@ip-89-103-84-86.net.upcbroadband.cz) has quit (Remote host closed the connection)
+2019-12-08 07:16:53	-->	jmw (~jmw@unaffiliated/jmw) has joined #ubuntu
+2019-12-08 07:17:56	<--	Sbur3 (~Sbur3@host-213-189-186-111.dynamic.voo.be) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined #ubuntu
+2019-12-08 07:20:47	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: https://ubottu.com/y/gl | #ubuntu supports Ubuntu and official flavors; versions 16.04, 18.04, 19.04, 19.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: https://ubottu.com/y/irc | Pastes to https://paste.ubuntu.com/ | Download: https://ubottu.com/y/dl"
+2019-12-08 07:20:47	--	Topic set by dax (dax@freenode/staff/dax) on Thu, 24 Oct 2019 21:40:13
+2019-12-08 07:20:47	--	Channel #ubuntu: 1161 nicks (1 op, 0 voices, 1160 normals)
+2019-12-08 07:20:48	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2019-12-08 07:20:48	--	URL for #ubuntu: https://www.ubuntu.com
+2019-12-08 07:21:00	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:22:18	-->	hatsu (~hatsu@c-71-204-108-229.hsd1.ga.comcast.net) has joined #ubuntu
+2019-12-08 07:22:36	hatsu	how come installing qemu-kvm installs the x server and other desktop related stuff?
+2019-12-08 07:22:36	<--	Ignacy (~Ignacy@188.113.68.31) has quit (Remote host closed the connection)
+2019-12-08 07:22:44	hatsu	i want to run qemu-kvm headlessly
+2019-12-08 07:23:11	-->	gimmel (~gavin@202.53.55.27) has joined #ubuntu
+2019-12-08 07:25:26	hatsu	ah if i pass --no-install-recommends it gets me what i want
+2019-12-08 07:26:17	<--	tieinv (~username@unaffiliated/tieinv) has quit (Quit: Leaving)
+2019-12-08 07:27:09	gimmel	Hi all, I thought I'd give openbox a spin. I installed through a simple apt install openbox, and I can log into it. However, the absolute basics aren't working - such as when a menu is opened, it won't close again. I've made no changes (yet).
+2019-12-08 07:27:57	<--	idwer (~idwer@unaffiliated/idwer) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:28:47	<--	Gnexally (~Gnexally@dockerhost.aes.pm) has quit (Read error: Connection reset by peer)
+2019-12-08 07:28:55	-->	courrier (~yoan@2pl44-h01-176-136-159-243.dsl.sta.abo.bbox.fr) has joined #ubuntu
+2019-12-08 07:29:25	<--	argonaut (~argonaut@2602:43:2f7:a900:b16e:f742:a315:6820) has quit (Quit: argonaut)
+2019-12-08 07:30:49	-->	drama (~drama___@172.58.59.223) has joined #ubuntu
+2019-12-08 07:31:01	<--	akk (~akk@75-161-90-59.albq.qwest.net) has quit (Quit: +++)
+2019-12-08 07:32:45	-->	indistylo (~aruns_@106.51.26.248) has joined #ubuntu
+2019-12-08 07:36:17	<--	pauljw (pauljw@gateway/vpn/privateinternetaccess/pauljw) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:37:37	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:38:09	<--	PoPpiLLs (~PoPpiLLs@2602:306:cfb5:aaf0::44) has left #ubuntu ("Leaving")
+2019-12-08 07:38:09	-->	wymillerlinux (~wymillerl@97-84-4-94.dhcp.aldl.mi.charter.com) has joined #ubuntu
+2019-12-08 07:39:13	-->	trekkie1701c (~trekkie17@ec2-52-15-173-116.us-east-2.compute.amazonaws.com) has joined #ubuntu
+2019-12-08 07:42:10	<--	dijitol (~Thunderbi@p200300D477217400DC239EC6C01C8D9F.dip0.t-ipconnect.de) has quit (Quit: dijitol)
+2019-12-08 07:42:47	-->	roskoe (~roskoe@host-92-6-11-191.as43234.net) has joined #ubuntu
+2019-12-08 07:44:02	-->	akemhp_ (akem@gateway/vpn/nordvpn/akem) has joined #ubuntu
+2019-12-08 07:44:05	<--	compdoc (~me@unaffiliated/compdoc) has quit
+2019-12-08 07:46:23	-->	bray90820 (~bray90820@50-83-216-195.client.mchsi.com) has joined #ubuntu
+2019-12-08 07:46:24	<--	akemhp (akem@gateway/vpn/nordvpn/akem) has quit (Ping timeout: 246 seconds)
+2019-12-08 07:47:38	-->	sp1ff (~sp1ff@c-73-158-58-119.hsd1.ca.comcast.net) has joined #ubuntu
+2019-12-08 07:48:57	<--	netz (netz@butt.boutique) has quit (Quit: ZNC - https://znc.in)
+2019-12-08 07:50:22	<--	jay-m_ (~jay-m@129.0.205.241) has quit (Read error: Connection reset by peer)
+2019-12-08 07:50:29	-->	netz (netz@butt.boutique) has joined #ubuntu
+2019-12-08 07:51:34	-->	pauljw (pauljw@gateway/vpn/privateinternetaccess/pauljw) has joined #ubuntu
+2019-12-08 07:53:28	<--	trekkie1701c (~trekkie17@ec2-52-15-173-116.us-east-2.compute.amazonaws.com) has quit (Quit: :P)
+2019-12-08 07:53:42	melatonina	Hello. Is placing a cron tab in cron.d enough to have it taken into consideration by cron?
+2019-12-08 07:54:25	<--	drama (~drama___@172.58.59.223) has quit (Quit: Leaving)
+2019-12-08 07:55:53	-->	DarkTrick (~DarkTrick@pl-768-132.bunbun.ne.jp) has joined #ubuntu
+2019-12-08 07:57:01	-->	coz_ (~coz_@unaffiliated/coz/x-1091998) has joined #ubuntu
+2019-12-08 08:01:07	<--	de-facto (~de-facto@gateway/tor-sasl/de-facto) has quit (Quit: See you around.)
+2019-12-08 08:01:35	cariveri	ducasse: thanks.
+2019-12-08 08:01:40	<--	cariveri (~tell@x4e36b5cb.dyn.telefonica.de) has quit (Quit: leaving)
+2019-12-08 08:02:56	-->	dcypher (~textual@ool-18bf1199.dyn.optonline.net) has joined #ubuntu
+2019-12-08 08:03:21	-->	de-facto (~de-facto@gateway/tor-sasl/de-facto) has joined #ubuntu
+2019-12-08 08:03:48	-->	indistylo (~aruns_@106.51.26.248) has joined #ubuntu
+2019-12-08 08:04:04	<--	coz_ (~coz_@unaffiliated/coz/x-1091998) has quit (Quit: Have a goo oned)
+2019-12-08 08:05:38	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
+2019-12-08 08:07:01	<--	AlexPortable (uid7568@gateway/web/irccloud.com/x-pkjhygrbgcojarzi) has quit (Quit: Connection closed for inactivity)
+2019-12-08 08:08:30	-->	shredding (~shredding@x4d0d1c34.dyn.telefonica.de) has joined #ubuntu
+2019-12-08 08:08:37	<--	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has quit (Read error: Connection reset by peer)
+2019-12-08 08:08:56	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:10:30	-->	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has joined #ubuntu
+2019-12-08 08:13:23	<--	shredding (~shredding@x4d0d1c34.dyn.telefonica.de) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:18:32	<--	michaelni (~michael@213-47-68-29.cable.dynamic.surfer.at) has quit (Quit: Leaving)
+2019-12-08 08:18:41	<--	hatsu (~hatsu@c-71-204-108-229.hsd1.ga.comcast.net) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:18:43	<--	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2019-12-08 08:19:02	-->	michaelni (~michael@213-47-68-29.cable.dynamic.surfer.at) has joined #ubuntu
+2019-12-08 08:20:42	-->	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has joined #ubuntu
+2019-12-08 08:21:04	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:21:26	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #ubuntu
+2019-12-08 08:22:10	<--	ShellyRoll (~ShellyRol@c-67-170-30-252.hsd1.wa.comcast.net) has quit (Read error: Connection reset by peer)
+2019-12-08 08:22:32	-->	LabMonkey (~LabMonkey@2602:306:cf62:e270:e451:10df:83fb:f9ee) has joined #ubuntu
+2019-12-08 08:22:37	-->	ShellyRoll (~ShellyRol@c-67-170-30-252.hsd1.wa.comcast.net) has joined #ubuntu
+2019-12-08 08:23:55	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:24:08	-->	Napsterbater_ (~quassel@unaffiliated/napsterbater) has joined #ubuntu
+2019-12-08 08:24:09	--	Napsterbater is now known as Guest95510
+2019-12-08 08:24:09	--	Napsterbater_ is now known as Napsterbater
+2019-12-08 08:25:09	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #ubuntu
+2019-12-08 08:25:38	<--	Mechanismus (~LabMonkey@2602:306:cf62:e270:dc18:32e:15fe:cd5e) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:25:42	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:26:00	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #ubuntu
+2019-12-08 08:27:21	<--	Guest95510 (~quassel@unaffiliated/napsterbater) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:29:22	-->	Helenah (~s98259@unaffiliated/iveeee) has joined #ubuntu
+2019-12-08 08:29:42	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:33:28	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #ubuntu
+2019-12-08 08:34:21	-->	indistylo (~aruns_@106.51.26.248) has joined #ubuntu
+2019-12-08 08:35:21	eamonnmr	You can use `lynx developer.mozilla.org`
+2019-12-08 08:36:37	eamonnmr	@Sbur3 https://unixblogger.com/how-to-easily-merge-pdf-documents-under-linux/
+2019-12-08 08:39:17	<--	mobutils (~mob@S0106ac9e17936b30.cg.shawcable.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:39:19	-->	drama (~drama___@172.58.59.223) has joined #ubuntu
+2019-12-08 08:39:28	-->	NeUx (~neux@gateway/tor-sasl/neux) has joined #ubuntu
+2019-12-08 08:39:29	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:41:42	--	milkt is now known as milkt_
+2019-12-08 08:42:04	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:42:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #ubuntu
+2019-12-08 08:42:32	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #ubuntu
+2019-12-08 08:42:45	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Disconnected by services)
+2019-12-08 08:43:03	--	milkt_ is now known as milkt
+2019-12-08 08:43:06	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Client Quit)
+2019-12-08 08:43:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #ubuntu
+2019-12-08 08:45:33	<--	kamdard (~kamdard@2605:6000:1526:4ca5:679a:5f1e:aa08:d3d2) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:46:13	<--	osse (~osse@zsh/user/osse) has quit (Quit: WeeChat 2.7-dev)
+2019-12-08 08:46:31	drama	hi milkt
+2019-12-08 08:47:27	-->	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has joined #ubuntu
+2019-12-08 08:47:28	<--	vlad-k (~vlad-k@78.137.6.35) has quit (Read error: Connection reset by peer)
+2019-12-08 08:49:01	<--	pauljw (pauljw@gateway/vpn/privateinternetaccess/pauljw) has quit (Quit: Later...)
+2019-12-08 08:50:48	<--	NeUx (~neux@gateway/tor-sasl/neux) has quit (Quit: Leaving)
+2019-12-08 08:52:04	<--	mr_paz (~mr_paz@24.14.251.223) has quit (Read error: Connection reset by peer)
+2019-12-08 08:52:13	-->	NeUx (~neux@gateway/tor-sasl/neux) has joined #ubuntu
+2019-12-08 08:54:03	-->	akem__ (~akem@185.217.171.51) has joined #ubuntu
+2019-12-08 08:54:05	<--	NeUx (~neux@gateway/tor-sasl/neux) has quit (Client Quit)
+2019-12-08 08:55:01	-->	pragmaticenigma (~pragmatic@unaffiliated/pragmaticenigma) has joined #ubuntu
+2019-12-08 08:56:23	<--	akemhp_ (akem@gateway/vpn/nordvpn/akem) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:56:27	-->	Wild_Man (~Wild_Man@ubuntu/member/wildmanne39) has joined #ubuntu
+2019-12-08 08:57:29	-->	hatsu (~hatsu@c-71-204-108-229.hsd1.ga.comcast.net) has joined #ubuntu
+2019-12-08 08:57:41	hatsu	so i am trying to get my VM setup online
+2019-12-08 08:57:51	hatsu	i'm wondering if it's a bad idea to do a storage-over-lan thing
+2019-12-08 08:58:02	hatsu	like, i have a NAS attached and I have my VM image on the NAS itself
+2019-12-08 08:58:20	hatsu	i'm wondering if it's a bad idea not to have a local image and serve the image up via samba
+2019-12-08 08:58:33	pragmaticenigma	hatsu: Do you have a specific Ubuntu OS question? System organization and recommendations should be asked in #ubuntu-discuss or #ubuntu-offtopic please
+2019-12-08 08:58:40	hatsu	:(
+2019-12-08 09:00:49	-->	Diagon (~DiagonalA@unaffiliated/diagonalarg) has joined #ubuntu
+2019-12-08 09:00:58	kinghat	is there an app that can cast a specific monitor to chromecast?
+2019-12-08 09:01:18	-->	jinmiaoluo (~Thunderbi@149.129.73.107) has joined #ubuntu
+2019-12-08 09:01:25	pragmaticenigma	kinghat: software recommendations, please ask in #ubuntu-offtopic
+2019-12-08 09:01:47	kinghat	👌
+2019-12-08 09:05:37	<--	mluser-home (~mluser-ho@cpe-107-11-253-108.columbus.res.rr.com) has quit (Quit: Yikes!)
+2019-12-08 09:05:42	ducasse	kinghat: iirc, vlc can cast to chromecast. maybe that helps?
+2019-12-08 09:06:16	<--	jmw (~jmw@unaffiliated/jmw) has quit (Quit: jmw)
+2019-12-08 09:06:55	kinghat	are you able to select a monitor as the source?
+2019-12-08 09:07:14	<--	jinmiaoluo (~Thunderbi@149.129.73.107) has quit (Remote host closed the connection)
+2019-12-08 09:07:51	<--	RadSurfer_ (~RadSurfer@unaffiliated/radsurfer) has quit (Quit: Leaving)
+2019-12-08 09:08:00	ducasse	i don't know, sorry. there is a #videolan channel, i think
+2019-12-08 09:08:33	ducasse	no, there isn't
+2019-12-08 09:08:39	pragmaticenigma	kinghat: The only way that I am aware to cast a monitor, is to use the Google Chrome browser's built in ability to cast a screen. You can consult the documentation for Google Chrome here: https://support.google.com/chromecast/answer/3228332?co=GENIE.Platform%3DDesktop&hl=en

@@ -1,0 +1,227 @@
+2019-12-08 06:48:04	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-08 06:48:04	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-08 06:48:04	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-08 06:48:04	--	Channel #archlinux: 1749 nicks (2 ops, 0 voices, 1747 normals)
+2019-12-08 06:48:07	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-08 06:48:12	<--	tradar (~tradar@gateway/tor-sasl/tradar) has quit (Quit: tradar)
+2019-12-08 06:48:19	<--	n0s0ul (~n0s0u1@92-52-2-35.dynamic.orange.sk) has quit (Remote host closed the connection)
+2019-12-08 06:48:55	-->	jemark (jemark@gateway/shell/blinkenshell.org/x-pmxvtbmsmkbakikz) has joined #archlinux
+2019-12-08 06:50:14	-->	nukeslion (~nukeslion@47.202.161.114) has joined #archlinux
+2019-12-08 06:53:17	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2019-12-08 06:54:34	--	irc: disconnected from server
+2019-12-08 06:55:05	-->	duy (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-08 06:55:05	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-08 06:55:05	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-08 06:55:05	--	Channel #archlinux: 1748 nicks (2 ops, 0 voices, 1746 normals)
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:17	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-08 06:55:51	Hello71	lol
+2019-12-08 06:56:47	<--	maccraft123 (~maccraft1@unaffiliated/maccraft123) has quit (Ping timeout: 276 seconds)
+2019-12-08 06:57:01	<--	jeweet_ (jeweet_@gateway/vpn/privateinternetaccess/jeweet/x-57115252) has quit (Quit: ...and he's gone)
+2019-12-08 06:57:01	<--	redbrain (~redbrain@124-155-N1.p43.customer.vsm.sh) has quit (Ping timeout: 265 seconds)
+2019-12-08 06:57:15	-->	jeweet_ (jeweet_@gateway/vpn/privateinternetaccess/jeweet/x-57115252) has joined #archlinux
+2019-12-08 06:57:41	dreisner	how did you get from "keylogger" to "i want my terminal to make sounds" ?
+2019-12-08 06:58:00	-->	hashworks (~hashworks@unaffiliated/hashworks) has joined #archlinux
+2019-12-08 06:58:22	desu	different sound per key press?
+2019-12-08 06:58:46	gehidore	!grab Soni
+2019-12-08 06:58:46	phrik	gehidore: Tada!
+2019-12-08 06:58:58	gehidore	for posterity cause we'll look back someday and still wnat to know wut
+2019-12-08 06:59:02	Soni	desu: exactly
+2019-12-08 06:59:05	dreisner	!wat
+2019-12-08 06:59:06	phrik	https://www.destroyallsoftware.com/talks/wat
+2019-12-08 06:59:13	Soni	ideally it'd also respect sudo's password hiding feature
+2019-12-08 06:59:27	Soni	(and not make sounds at that point)
+2019-12-08 06:59:39	<--	r4pr0n (~r4pr0n@gateway/tor-sasl/r4pr0n) has quit (Quit: r4pr0n)
+2019-12-08 06:59:47	gehidore	touch tone keyboard?
+2019-12-08 07:00:03	dreisner	electronic piano?
+2019-12-08 07:01:18	<--	SanskritFritz (~quassel@2E8B404F.catv.pool.telekom.hu) has quit (Quit: leaving...)
+2019-12-08 07:01:20	<--	random-nick (~random-ni@unaffiliated/random-nick) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:01:33	<--	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:01:37	<--	earnestly (~Earnestly@unaffiliated/earnestly) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:02:43	<--	thingfish (~thingfish@unaffiliated/thingfish) has quit (Quit: Leaving.)
+2019-12-08 07:03:44	-->	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has joined #archlinux
+2019-12-08 07:03:47	-->	ragouel (~crow11@adsl-15.37.6.3.tellas.gr) has joined #archlinux
+2019-12-08 07:04:04	<--	adrusi (uid407167@gateway/web/irccloud.com/x-mfgzzddxgisxcuin) has quit (Quit: Connection closed for inactivity)
+2019-12-08 07:05:42	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-12-08 07:06:30	<--	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has left #archlinux
+2019-12-08 07:07:25	-->	daz (root@gateway/vpn/privateinternetaccess/daz) has joined #archlinux
+2019-12-08 07:07:53	<--	d42 (root@gateway/vpn/privateinternetaccess/daz) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-08 07:09:02	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-08 07:09:02	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-08 07:09:02	--	Channel #archlinux: 1741 nicks (2 ops, 0 voices, 1739 normals)
+2019-12-08 07:09:08	<--	jstimm (~jstimm@unaffiliated/jstimm) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:09:10	-->	krabador (~krabador@unaffiliated/krabador) has joined #archlinux
+2019-12-08 07:09:13	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:10:33	<--	zerotech1 (~zerotech@BSN-182-125-49.dynamic.siol.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:13:25	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-12-08 07:13:43	<--	palasso (~palasso@unaffiliated/palasso) has quit (Read error: Connection reset by peer)
+2019-12-08 07:14:16	<--	Brocellous (~Brocellou@ip68-96-59-217.ph.ph.cox.net) has quit (Quit: WeeChat 2.6)
+2019-12-08 07:14:24	-->	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has joined #archlinux
+2019-12-08 07:14:45	-->	Brocellous (~Brocellou@2600:8800:1e00:97d:70be:6018:2565:e460) has joined #archlinux
+2019-12-08 07:14:46	-->	j12t (~j12t@2620:101:80fb:232:6505:3723:6bef:b1ed) has joined #archlinux
+2019-12-08 07:16:41	-->	fstd_ (~fstd@unaffiliated/fisted) has joined #archlinux
+2019-12-08 07:17:55	<--	sinaptik (sinaptik@gateway/vpn/protonvpn/sinaptik) has quit (Quit: WeeChat 2.6)
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-08 07:20:47	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-08 07:20:47	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-08 07:20:47	--	Channel #archlinux: 1739 nicks (2 ops, 0 voices, 1737 normals)
+2019-12-08 07:20:58	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:22:35	-->	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has joined #archlinux
+2019-12-08 07:23:15	<--	j12t (~j12t@2620:101:80fb:232:6505:3723:6bef:b1ed) has quit (Remote host closed the connection)
+2019-12-08 07:23:33	<--	collector1871 (~user@public-gprs375657.centertel.pl) has quit (Remote host closed the connection)
+2019-12-08 07:29:16	<--	shizy (~shizy@64.179.157.183) has quit (Read error: Connection reset by peer)
+2019-12-08 07:29:43	-->	shizy (~shizy@64.179.157.183) has joined #archlinux
+2019-12-08 07:31:15	-->	redbrain (~redbrain@124-155-N1.p43.customer.vsm.sh) has joined #archlinux
+2019-12-08 07:32:42	-->	Ruuchan_ (~Ruuchan@unaffiliated/ruuchan) has joined #archlinux
+2019-12-08 07:33:16	<--	transacid (~transacid@pdpc/supporter/professional/transacid) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:34:24	<--	Ruuchan (~Ruuchan@unaffiliated/ruuchan) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:34:34	<--	Suya (~Suya@gateway/tor-sasl/suya) has quit (Remote host closed the connection)
+2019-12-08 07:35:21	<--	muemo (~My_user_n@p57ACC494.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.6)
+2019-12-08 07:35:50	-->	Suya (~Suya@gateway/tor-sasl/suya) has joined #archlinux
+2019-12-08 07:36:17	-->	_illy_ (~illyohs@2605:a000:1317:3ac::8f6) has joined #archlinux
+2019-12-08 07:36:21	-->	Thra11 (Thra11@gateway/vpn/protonvpn/thra11) has joined #archlinux
+2019-12-08 07:37:37	<--	xsee (~extremulu@S0106001a8c58beab.vc.shawcable.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:37:40	<--	miiGii (~miiGii@81-197-3-210.elisa-laajakaista.fi) has quit (Ping timeout: 252 seconds)
+2019-12-08 07:40:01	-->	transacid (~transacid@pdpc/supporter/professional/transacid) has joined #archlinux
+2019-12-08 07:40:07	-->	j12t (~j12t@2620:101:80fb:232:a9ae:7cfc:c521:8bbc) has joined #archlinux
+2019-12-08 07:41:08	<--	shizy (~shizy@64.179.157.183) has quit (Remote host closed the connection)
+2019-12-08 07:41:45	<--	limona (5d676c60@93-103-108-96.dynamic.t-2.net) has quit (Remote host closed the connection)
+2019-12-08 07:43:39	-->	srslypascal__ (~hardfalco@x5d8469b1.dyn.telefonica.de) has joined #archlinux
+2019-12-08 07:44:08	-->	nbits (~nbits@200.162.251.15) has joined #archlinux
+2019-12-08 07:45:18	<--	reashlin (~reashlin@81.104.176.29) has quit (Ping timeout: 245 seconds)
+2019-12-08 07:45:30	<--	j12t (~j12t@2620:101:80fb:232:a9ae:7cfc:c521:8bbc) has quit (Remote host closed the connection)
+2019-12-08 07:46:25	-->	hardfalcon (~hardfalco@2a01:c22:b40e:2603:49c8:9671:ab3:ea0f) has joined #archlinux
+2019-12-08 07:47:03	<--	hardfalcon_ (~hardfalco@x4e3129e7.dyn.telefonica.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:47:24	-->	reashlin (~reashlin@81.104.176.29) has joined #archlinux
+2019-12-08 07:47:27	-->	j12t (~j12t@2620:101:80fb:232:3877:8da2:6e3f:2d7c) has joined #archlinux
+2019-12-08 07:48:18	<--	srslypascal__ (~hardfalco@x5d8469b1.dyn.telefonica.de) has quit (Ping timeout: 252 seconds)
+2019-12-08 07:49:11	<--	j12t (~j12t@2620:101:80fb:232:3877:8da2:6e3f:2d7c) has quit (Remote host closed the connection)
+2019-12-08 07:49:27	-->	sprocklem (~sprocklem@unaffiliated/sprocklem) has joined #archlinux
+2019-12-08 07:49:47	<--	krabador (~krabador@unaffiliated/krabador) has quit (Remote host closed the connection)
+2019-12-08 07:50:11	-->	ezzzc (~ezzzc@ool-44c5f653.dyn.optonline.net) has joined #archlinux
+2019-12-08 07:50:30	<--	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has left #archlinux
+2019-12-08 07:50:40	-->	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has joined #archlinux
+2019-12-08 07:50:45	--	AFsoSTFU is now known as buran
+2019-12-08 07:52:05	-->	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has joined #archlinux
+2019-12-08 07:52:39	-->	j12t (~j12t@2620:101:80fb:232:75b2:a36f:8041:df53) has joined #archlinux
+2019-12-08 07:53:00	-->	oatmealraisin (~ryan@2604:2000:14c5:c1e3:97bb:5e1e:226f:6c92) has joined #archlinux
+2019-12-08 07:58:50	-->	thingfish (~thingfish@unaffiliated/thingfish) has joined #archlinux
+2019-12-08 08:00:41	-->	[0x00] (~0x00@pool-108-30-215-173.nycmny.fios.verizon.net) has joined #archlinux
+2019-12-08 08:01:27	<--	inglor (~quassel@141.0.156.136) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2019-12-08 08:01:37	<--	ezzzc (~ezzzc@ool-44c5f653.dyn.optonline.net) has quit (Remote host closed the connection)
+2019-12-08 08:01:57	<--	kelnoky (~shao@ip5f5be497.dynamic.kabel-deutschland.de) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:02:06	<--	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has left #archlinux
+2019-12-08 08:02:16	-->	ezzzc (~ezzzc@ool-44c5f653.dyn.optonline.net) has joined #archlinux
+2019-12-08 08:02:45	-->	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has joined #archlinux
+2019-12-08 08:05:45	<--	mryandao (~mryandao@gateway/tor-sasl/mryandao) has quit (Remote host closed the connection)
+2019-12-08 08:08:37	<--	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has quit (Read error: Connection reset by peer)
+2019-12-08 08:08:50	-->	mryandao (~mryandao@gateway/tor-sasl/mryandao) has joined #archlinux
+2019-12-08 08:10:29	-->	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has joined #archlinux
+2019-12-08 08:10:58	<--	Net147 (~Net147@unaffiliated/net147) has quit (Quit: Quit)
+2019-12-08 08:11:24	<--	andril (~andril@c-66-229-99-96.hsd1.fl.comcast.net) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:11:50	<--	hemite (~hemite@unaffiliated/hemite) has quit (Read error: Connection reset by peer)
+2019-12-08 08:12:05	-->	sava__ (sava__@gateway/vpn/protonvpn/sava/x-02330156) has joined #archlinux
+2019-12-08 08:12:05	<--	ezzzc (~ezzzc@ool-44c5f653.dyn.optonline.net) has quit (Remote host closed the connection)
+2019-12-08 08:12:11	-->	hemite (~hemite@unaffiliated/hemite) has joined #archlinux
+2019-12-08 08:12:26	-->	Net147 (~Net147@unaffiliated/net147) has joined #archlinux
+2019-12-08 08:13:42	Betal	if I install all packages from "pacman -Qe" in another machine, can I assume it will have all packages were on the first machine?
+2019-12-08 08:13:43	<--	CCDelivery (~CCDeliver@107-179-233-239.cpe.teksavvy.com) has quit (Remote host closed the connection)
+2019-12-08 08:13:53	<--	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has left #archlinux
+2019-12-08 08:14:22	-->	inglor (~quassel@141.0.156.136) has joined #archlinux
+2019-12-08 08:14:25	Namarrgon	what about the orphans?
+2019-12-08 08:16:08	Betal	is it a good idea to keep orphans?
+2019-12-08 08:16:31	thrice	potentially not some optional packages, too
+2019-12-08 08:16:39	jellyb	Namarrgon: about building linux-hardened, when i changed pkgbase it tried to look for the new name on github when i did makepkg (404)
+2019-12-08 08:16:39	Namarrgon	maybe, maybe not. they will show up anyway.
+2019-12-08 08:16:41	-->	s7c (~samega7ca@92.250.89.30) has joined #archlinux
+2019-12-08 08:16:50	<--	freswa (~freswa@p200300C52F1BF600706F21FDE22FEA18.dip0.t-ipconnect.de) has quit (Quit: freswa)
+2019-12-08 08:17:25	<--	sava__ (sava__@gateway/vpn/protonvpn/sava/x-02330156) has quit (Remote host closed the connection)
+2019-12-08 08:17:31	Namarrgon	jellyb: unbork the $pkgbase variable in the source
+2019-12-08 08:18:01	jellyb	i went in and substituted some things yeah
+2019-12-08 08:18:13	jellyb	it worked in the end but its like some frankenstein situation
+2019-12-08 08:18:40	Namarrgon	in the grand scheme of things this is a rather minor modification
+2019-12-08 08:18:41	<--	feriman (~feriman@office.network.lviv.ua) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:18:57	jellyb	yeah
+2019-12-08 08:19:25	jellyb	was just playing with it anyways
+2019-12-08 08:19:28	<--	Forsaken87 (~quassel@2a02:908:1860:bec0:c179:63c7:fe6c:8293) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:19:48	Namarrgon	why are you rebuilding it anyway?
+2019-12-08 08:20:02	<--	joe4 (~joe@unaffiliated/th3-g0d5) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:22:04	<--	reductum (~weechat@cpe-104-32-77-28.socal.res.rr.com) has quit (Quit: WeeChat 2.6)
+2019-12-08 08:22:24	jellyb	so the linux-hardened kernel has sme as default
+2019-12-08 08:22:24	jellyb	this is memory encryption
+2019-12-08 08:22:25	jellyb	but nvidia doesnt work properly with that on
+2019-12-08 08:22:31	jellyb	so i had to go in and change the config
+2019-12-08 08:22:57	Namarrgon	i hope you have a good reason for using -hardened
+2019-12-08 08:23:55	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:24:00	jellyb	https://devtalk.nvidia.com/default/topic/1039297/linux/unable-to-start-x-failed-to-initialize-dma-/post/5281747/#5281747
+2019-12-08 08:24:00	jellyb	i do not
+2019-12-08 08:24:02	jellyb	whats wrong with -hardened
+2019-12-08 08:24:19	Namarrgon	well, there's the nvidia thing
+2019-12-08 08:25:08	jellyb	outside of that things seem to be working properly
+2019-12-08 08:25:09	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #archlinux
+2019-12-08 08:25:11	<--	Caleb (~Caleb@archlinux/user/caleb) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:25:38	callipygous	can I make a user account with no password?
+2019-12-08 08:25:51	dreisner	hardened doesn't support hibernate, if you care about that.
+2019-12-08 08:26:23	dreisner	callipygous: sure, but for what purpose?
+2019-12-08 08:26:31	callipygous	tired of typing it
+2019-12-08 08:27:08	callipygous	:P
+2019-12-08 08:27:11	<--	j12t (~j12t@2620:101:80fb:232:75b2:a36f:8041:df53) has quit (Remote host closed the connection)
+2019-12-08 08:27:20	Brocellous	Tired of typing it when?
+2019-12-08 08:27:24	<--	mohan43u (~mohan43u@49.207.183.73) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:27:35	Brocellous	Could give you user NOWPASSWD sudo
+2019-12-08 08:27:45	callipygous	yeah, I may do that too
+2019-12-08 08:27:47	Brocellous	or set automatic login
+2019-12-08 08:27:48	<--	infertux (~infertux@gateway/tor-sasl/infertux) has quit (Ping timeout: 260 seconds)
+2019-12-08 08:27:57	callipygous	okay, I'll do that...
+2019-12-08 08:28:09	-->	mohan43u (~mohan43u@49.207.183.73) has joined #archlinux
+2019-12-08 08:28:23	callipygous	automatic login requires a login manager?
+2019-12-08 08:28:27	callipygous	hmm, I think I have one set
+2019-12-08 08:28:35	callipygous	don't mind me, thinking aloud
+2019-12-08 08:28:40	<--	dale6998 (~dale6998@98.11.97.28) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:28:51	<--	q4t1 (~q4t1@209.ip-51-68-197.eu) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:29:26	Brocellous	You can log into console if you want
+2019-12-08 08:29:28	Brocellous	https://wiki.archlinux.org/index.php/Getty#Automatic_login_to_virtual_console
+2019-12-08 08:29:30	phrik	Title: getty - ArchWiki (at wiki.archlinux.org)
+2019-12-08 08:29:32	-->	q4t1 (~q4t1@209.ip-51-68-197.eu) has joined #archlinux
+2019-12-08 08:29:36	-->	Helenah (~s98259@unaffiliated/iveeee) has joined #archlinux
+2019-12-08 08:31:02	<--	ifreund (~ifreund@b2b-94-79-138-86.unitymedia.biz) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:32:57	-->	infertux (~infertux@gateway/tor-sasl/infertux) has joined #archlinux
+2019-12-08 08:33:06	callipygous	cool, thx
+2019-12-08 08:34:15	<--	[0x00] (~0x00@pool-108-30-215-173.nycmny.fios.verizon.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:36:35	<--	sprocklem (~sprocklem@unaffiliated/sprocklem) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:40:26	-->	rafasc (~rafasc@unaffiliated/rafasc) has joined #archlinux
+2019-12-08 08:40:37	<--	sudoforge (~sudoforge@cpepool9bcmts2-177.sanbrunocable.com) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:41:42	--	milkt is now known as milkt_
+2019-12-08 08:42:04	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:42:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #archlinux
+2019-12-08 08:42:31	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #archlinux
+2019-12-08 08:42:45	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Disconnected by services)
+2019-12-08 08:42:59	-->	UnknownEntity (Unknown@gateway/vpn/privateinternetaccess/unknownentity42) has joined #archlinux
+2019-12-08 08:43:03	--	milkt_ is now known as milkt
+2019-12-08 08:43:06	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Client Quit)
+2019-12-08 08:43:07	-->	lazlev_ (~lazlev@i59F5FA59.versanet.de) has joined #archlinux
+2019-12-08 08:43:23	<--	UnknownEntity42 (Unknown@gateway/vpn/privateinternetaccess/unknownentity42) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:43:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #archlinux
+2019-12-08 08:46:25	<--	lazlev (~lazlev@i59F5FDC8.versanet.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:47:03	<--	well_laid_lawn (~Jean-luc@c114-77-254-225.rochd21.qld.optusnet.com.au) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:47:42	<--	UnknownEntity (Unknown@gateway/vpn/privateinternetaccess/unknownentity42) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:49:11	-->	elfmacs (~elfmacs@2400:dd01:1020:150:1fff:d6e6:16ff:eb3f) has joined #archlinux
+2019-12-08 08:51:09	-->	charon77 (~Charon77@158.140.177.213) has joined #archlinux
+2019-12-08 08:53:08	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:53:23	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux
+2019-12-08 08:54:20	-->	clarjon1 (~clarjon1@unaffiliated/clarjon1) has joined #archlinux
+2019-12-08 08:54:44	--	Lord_of_Life_ is now known as Lord_of_Life
+2019-12-08 08:57:22	-->	sprocklem (~sprocklem@unaffiliated/sprocklem) has joined #archlinux
+2019-12-08 09:02:23	-->	HEX0_ (~HEX0@unaffiliated/hex0) has joined #archlinux
+2019-12-08 09:04:11	<--	HEX0 (~HEX0@unaffiliated/hex0) has quit (Ping timeout: 250 seconds)
+2019-12-08 09:04:32	<--	xtrWrithe (xtrWrithe@gateway/vpn/mullvad/v0idpattern) has quit (Quit: WeeChat 2.6)
+2019-12-08 09:04:37	<--	__himmijimmy (~himmijimm@a89-183-67-90.net-htp.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 09:05:12	-->	ShadowKyogre (7358dd25f8@gateway/shell/jabberfr/x-idfpnhcmqxvfkovn) has joined #archlinux
+2019-12-08 09:05:15	-->	__himmijimmy (~himmijimm@a89-183-112-171.net-htp.de) has joined #archlinux
+2019-12-08 09:05:37	<--	mluser-home (~mluser-ho@cpe-107-11-253-108.columbus.res.rr.com) has quit (Quit: Yikes!)
+2019-12-08 09:06:00	-->	UnknownEntity42 (Unknown@gateway/vpn/mullvad/unknownentity42) has joined #archlinux

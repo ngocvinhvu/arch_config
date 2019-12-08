@@ -1,0 +1,186 @@
+2019-12-08 06:52:10	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##C
+2019-12-08 06:52:10	--	Topic for ##C is "C Programming | PASTE (>3 lines): http://ideone.com/ | WIKI: http://www.iso-9899.info/ | BOOKS: http://www.iso-9899.info/wiki/Books | C2X Charter: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2086.htm | the current standard: http://iso-9899.info/wiki/The_Standard | Off-topic: ##c-offtopic"
+2019-12-08 06:52:10	--	Topic set by twkm on Wed, 20 Mar 2019 14:30:49
+2019-12-08 06:52:10	--	Channel ##C: 963 nicks (0 ops, 0 voices, 963 normals)
+2019-12-08 06:52:10	--	PvNotice(ChanServ): Welcome to ##c! We engage in C programming discussions at all levels of expertise; don't hesitate to ask your question. If applicable, please prepare a testcase and paste it at http://ideone.com. We don't know about C++ (##c++) or C# (##csharp).
+2019-12-08 06:52:10	--	URL for ##c: http://www.iso-9899.info/
+2019-12-08 06:52:12	--	Channel created on Sun, 26 Nov 2006 13:42:39
+2019-12-08 06:52:37	fizzie	Wee-ell. That really depends on what you're doing. I imagine most of the time when you care about days, you also care about local time. But that's super-inconvenient for calculating durations, because then not all days are of the same length.
+2019-12-08 06:52:47	lf94	I would not be implementing any time-based thing from scratch
+2019-12-08 06:52:52	<--	yoker (~Thunderbi@82.22.254.29) has quit (Quit: yoker)
+2019-12-08 06:53:00	lf94	calendars / times are broken by humans
+2019-12-08 06:53:45	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:54:35	--	irc: disconnected from server
+2019-12-08 06:55:07	-->	duy (~laduyhaha@42.112.108.198) has joined ##C
+2019-12-08 06:55:07	--	Topic for ##C is "C Programming | PASTE (>3 lines): http://ideone.com/ | WIKI: http://www.iso-9899.info/ | BOOKS: http://www.iso-9899.info/wiki/Books | C2X Charter: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2086.htm | the current standard: http://iso-9899.info/wiki/The_Standard | Off-topic: ##c-offtopic"
+2019-12-08 06:55:07	--	Topic set by twkm on Wed, 20 Mar 2019 14:30:49
+2019-12-08 06:55:07	--	Channel ##C: 961 nicks (0 ops, 0 voices, 961 normals)
+2019-12-08 06:55:07	--	PvNotice(ChanServ): Welcome to ##c! We engage in C programming discussions at all levels of expertise; don't hesitate to ask your question. If applicable, please prepare a testcase and paste it at http://ideone.com. We don't know about C++ (##c++) or C# (##csharp).
+2019-12-08 06:55:07	--	URL for ##c: http://www.iso-9899.info/
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:23	--	Channel created on Sun, 26 Nov 2006 13:42:39
+2019-12-08 06:55:28	fizzie	An opaque "instant" (which is what time_t is) plus a bunch of conversion functions to go to/from instants and broken-down calendar times (with time zones) is a pretty reasonable time API.
+2019-12-08 06:56:13	dave0	fizzie: i imagine it would be easier for the computer to say "yesterday" or "tomorrow" or "last monday" if you have the number of days
+2019-12-08 06:56:15	<--	i9zO5AP (~BQcdf9eiZ@41.248.163.183) has quit (Quit: WeeChat 2.5)
+2019-12-08 06:56:53	fizzie	dave0: Well, but what should "yesterday" mean at day N+1 at 3:30am, when on day N there was a daylight-savings time change and there *was* no 3:30am?
+2019-12-08 06:57:16	fizzie	Not that the API choice can do much about the sort of edge cases like that.
+2019-12-08 06:57:50	fizzie	Well, okay, "yesterday" probably has a definition, I meant to ask about "one day ago".
+2019-12-08 06:59:05	-->	sangriacobalt (sangriacob@gateway/vpn/protonvpn/houseoftards/x-33971078) has joined ##C
+2019-12-08 06:59:13	dave0	hmm i have to look it up!
+2019-12-08 07:00:02	<--	Crocodillian (~rkitover@unaffiliated/caelum) has quit (Quit: so long, and thanks for all the fish!)
+2019-12-08 07:00:23	-->	Crocodillian (~rkitover@unaffiliated/caelum) has joined ##C
+2019-12-08 07:00:23	-->	voices (~voices@unaffiliated/tjt263) has joined ##C
+2019-12-08 07:01:38	<--	nostar (~nostar@2600:1007:b12d:7b4a:de0f:3976:89f6:d18d) has quit (Read error: Connection reset by peer)
+2019-12-08 07:02:47	<--	artsi0m (~artsi0m@46.53.253.250) has quit (Remote host closed the connection)
+2019-12-08 07:02:51	fizzie	As far as C's time API is concerned, the closest it gets to that sort of calculations is that mktime accepts values that are outside the normal ranges, so you can just subtract one from tm_mday and call mktime on it, to get to "yesterday". (Though I'm not sure what it does for DST discontinuity.)
+2019-12-08 07:02:59	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:03:18	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:03:27	-->	sloanr (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:04:17	<--	liron_ (~liron@87.71.95.66) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:05:13	dave0	brb
+2019-12-08 07:06:41	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:06:44	<--	siiky (~siiky@2001:8a0:ff5b:fc00:78a5:3063:1a3e:3474) has quit (Remote host closed the connection)
+2019-12-08 07:06:59	-->	siiky (~siiky@2001:8a0:ff5b:fc00:78a5:3063:1a3e:3474) has joined ##C
+2019-12-08 07:07:10	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:07:12	-->	yelof (~yelof@2601:283:8003:a920:2123:115f:2ef1:a86a) has joined ##C
+2019-12-08 07:07:29	dave0	fizzie: how easy it would be to get the day of the week if all you had to do was     char*names[]={"monday","tuesday"..}; names[number_of_days % 7]    !
+2019-12-08 07:07:39	<--	sloanr1 (~Thunderbi@199.116.115.196) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined ##C
+2019-12-08 07:09:02	--	Topic for ##C is "C Programming | PASTE (>3 lines): http://ideone.com/ | WIKI: http://www.iso-9899.info/ | BOOKS: http://www.iso-9899.info/wiki/Books | C2X Charter: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2086.htm | the current standard: http://iso-9899.info/wiki/The_Standard | Off-topic: ##c-offtopic"
+2019-12-08 07:09:02	--	Topic set by twkm on Wed, 20 Mar 2019 14:30:49
+2019-12-08 07:09:02	--	Channel ##C: 957 nicks (0 ops, 0 voices, 957 normals)
+2019-12-08 07:09:02	--	PvNotice(ChanServ): Welcome to ##c! We engage in C programming discussions at all levels of expertise; don't hesitate to ask your question. If applicable, please prepare a testcase and paste it at http://ideone.com. We don't know about C++ (##c++) or C# (##csharp).
+2019-12-08 07:09:02	--	URL for ##c: http://www.iso-9899.info/
+2019-12-08 07:09:08	<--	jstimm (~jstimm@unaffiliated/jstimm) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:09:21	--	Channel created on Sun, 26 Nov 2006 13:42:39
+2019-12-08 07:09:56	fizzie	Proper Julian days are noon-to-noon rather than midnight-to-midnight (thanks, astronomers), which is a little weird.
+2019-12-08 07:10:33	<--	zerotech1 (~zerotech@BSN-182-125-49.dynamic.siol.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:10:48	fizzie	Looks like the c-faq answer glosses over that detail and uses a variant where they aren't.
+2019-12-08 07:12:49	<--	lm- (~lm-@178.43.180.245.ipv4.supernova.orange.pl) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:14:59	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:16:18	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:16:41	-->	fstd_ (~fstd@unaffiliated/fisted) has joined ##C
+2019-12-08 07:16:46	-->	voices (~voices@unaffiliated/tjt263) has joined ##C
+2019-12-08 07:16:56	<--	Samian (~s@65.127.236.102) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:17:05	-->	Samian (~s@172.58.46.252) has joined ##C
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined ##C
+2019-12-08 07:20:47	--	Topic for ##C is "C Programming | PASTE (>3 lines): http://ideone.com/ | WIKI: http://www.iso-9899.info/ | BOOKS: http://www.iso-9899.info/wiki/Books | C2X Charter: http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2086.htm | the current standard: http://iso-9899.info/wiki/The_Standard | Off-topic: ##c-offtopic"
+2019-12-08 07:20:47	--	Topic set by twkm on Wed, 20 Mar 2019 14:30:49
+2019-12-08 07:20:48	--	Channel ##C: 954 nicks (0 ops, 0 voices, 954 normals)
+2019-12-08 07:20:48	--	PvNotice(ChanServ): Welcome to ##c! We engage in C programming discussions at all levels of expertise; don't hesitate to ask your question. If applicable, please prepare a testcase and paste it at http://ideone.com. We don't know about C++ (##c++) or C# (##csharp).
+2019-12-08 07:20:48	--	URL for ##c: http://www.iso-9899.info/
+2019-12-08 07:21:04	--	Channel created on Sun, 26 Nov 2006 13:42:39
+2019-12-08 07:21:19	-->	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has joined ##C
+2019-12-08 07:21:25	-->	rtoo (~rtoo@c-73-162-155-19.hsd1.ca.comcast.net) has joined ##C
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:21:54	-->	Wulf4 (~Wulf@unaffiliated/wulf) has joined ##C
+2019-12-08 07:23:49	<--	rizwan_ (~rizwan@2a00:23c7:b001:3f00:6d56:f39a:2713:b378) has quit (Remote host closed the connection)
+2019-12-08 07:25:23	<--	Wulf (~Wulf@unaffiliated/wulf) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:25:24	--	Wulf4 is now known as Wulf
+2019-12-08 07:25:46	<--	CrazyPython (~crazypyth@71-135-5-88.lightspeed.rlghnc.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2019-12-08 07:26:36	-->	nostar (~nostar@c-69-244-137-171.hsd1.mi.comcast.net) has joined ##C
+2019-12-08 07:27:27	-->	sloanr (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:27:59	<--	rtoo (~rtoo@c-73-162-155-19.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:28:45	-->	rtoo (~rtoo@c-73-162-155-19.hsd1.ca.comcast.net) has joined ##C
+2019-12-08 07:28:47	<--	Gnexally (~Gnexally@dockerhost.aes.pm) has quit (Read error: Connection reset by peer)
+2019-12-08 07:29:00	-->	lm- (~lm-@178.43.183.13.ipv4.supernova.orange.pl) has joined ##C
+2019-12-08 07:31:49	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:32:37	-->	Exit42 (~textual@157-131-100-58.fiber.dynamic.sonic.net) has joined ##C
+2019-12-08 07:34:40	-->	bps2 (~bps@185.16.85.134) has joined ##C
+2019-12-08 07:35:47	<--	wroathe (~wroathe@c-73-164-95-82.hsd1.mn.comcast.net) has quit (Read error: Connection reset by peer)
+2019-12-08 07:36:02	-->	wroathe (~wroathe@c-73-164-95-82.hsd1.mn.comcast.net) has joined ##C
+2019-12-08 07:38:21	-->	cbearz (~cbearz@23.82.14.25) has joined ##C
+2019-12-08 07:38:59	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:39:41	-->	eremitah_ (~int@unaffiliated/eremitah) has joined ##C
+2019-12-08 07:40:20	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:40:31	cbearz	Hello
+2019-12-08 07:41:01	twkm	moo.
+2019-12-08 07:41:48	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:41:49	--	eremitah_ is now known as eremitah
+2019-12-08 07:41:56	cbearz	Anyone making anything cool?
+2019-12-08 07:42:30	twkm	i'm making poop, the slow, olde fashioned way.
+2019-12-08 07:42:32	-->	codercodi (~codercodi@2601:184:4880:17d0:2a3b:7628:3a99:ebc7) has joined ##C
+2019-12-08 07:42:54	<--	renn0xtk9 (~max@2a02:810d:1540:8ba:f837:5dad:e79e:2219) has quit (Ping timeout: 246 seconds)
+2019-12-08 07:43:07	<--	cbearz (~cbearz@23.82.14.25) has quit
+2019-12-08 07:43:15	-->	P_Money (~s@172.58.46.252) has joined ##C
+2019-12-08 07:43:25	<--	sloanr1 (~Thunderbi@199.116.115.196) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:43:26	-->	cbearz (~cbearz@23.82.14.25) has joined ##C
+2019-12-08 07:44:08	-->	nbits (~nbits@200.162.251.15) has joined ##C
+2019-12-08 07:44:37	<--	Samian (~s@172.58.46.252) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:45:44	<--	cbearz (~cbearz@23.82.14.25) has quit (Client Quit)
+2019-12-08 07:47:53	<--	codercodi (~codercodi@2601:184:4880:17d0:2a3b:7628:3a99:ebc7) has quit (Remote host closed the connection)
+2019-12-08 07:50:57	-->	sloanr (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:51:27	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 07:51:56	-->	muteki (~muteki@unaffiliated/muteki) has joined ##C
+2019-12-08 07:53:43	-->	Samian (~s@65.127.236.102) has joined ##C
+2019-12-08 07:54:57	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:54:57	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:55:00	--	sloanr1 is now known as sloanr
+2019-12-08 07:56:13	<--	null1337 (~WhoAmI@c-73-243-212-197.hsd1.co.comcast.net) has quit (Quit: For Sale: Intergalactic Proton Powered Electrical Tentacled Advertising Droids)
+2019-12-08 07:56:44	<--	P_Money (~s@172.58.46.252) has quit (Ping timeout: 252 seconds)
+2019-12-08 07:58:42	-->	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has joined ##C
+2019-12-08 07:59:46	<--	porky11 (~porky11@p200300F843C0E50EB6D5BDFFFE20A28D.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2019-12-08 08:01:31	<--	Benett (~Benett@unaffiliated/benett) has quit (Quit:  )
+2019-12-08 08:02:58	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 08:03:30	-->	snaund (~saundkim@pool-108-29-162-229.nycmny.fios.verizon.net) has joined ##C
+2019-12-08 08:03:42	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:03:56	-->	gargus (~user@124-170-247-187.dyn.iinet.net.au) has joined ##C
+2019-12-08 08:03:57	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:04:23	<--	tm (~sinnlos@unaffiliated/tm) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:05:38	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
+2019-12-08 08:06:45	-->	Benett (~Benett@unaffiliated/benett) has joined ##C
+2019-12-08 08:06:57	<--	sloanr1 (~Thunderbi@199.116.115.196) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:07:22	-->	tm (~sinnlos@unaffiliated/tm) has joined ##C
+2019-12-08 08:08:56	<--	gist (~jack@94.134.88.193) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:10:01	<--	Xatenev (~Xatenev@2a02:8108:9640:4455:e887:f53c:e44a:e58b) has quit (Read error: Connection reset by peer)
+2019-12-08 08:13:43	<--	CCDelivery (~CCDeliver@107-179-233-239.cpe.teksavvy.com) has quit (Remote host closed the connection)
+2019-12-08 08:13:56	-->	CrazyPython (~crazypyth@71-135-5-88.lightspeed.rlghnc.sbcglobal.net) has joined ##C
+2019-12-08 08:14:57	-->	sloanr (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 08:15:28	-->	sloanr1 (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 08:16:42	-->	xall (~xall@mx-ll-14.207.145-52.dynamic.3bb.co.th) has joined ##C
+2019-12-08 08:16:57	<--	wroathe (~wroathe@c-73-164-95-82.hsd1.mn.comcast.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:18:48	<--	CrazyPython (~crazypyth@71-135-5-88.lightspeed.rlghnc.sbcglobal.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:19:03	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:19:03	--	sloanr1 is now known as sloanr
+2019-12-08 08:22:04	<--	reductum (~weechat@cpe-104-32-77-28.socal.res.rr.com) has quit (Quit: WeeChat 2.6)
+2019-12-08 08:23:55	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:24:38	--	k is now known as taylor
+2019-12-08 08:25:05	-->	CrazyPython (~crazypyth@71-135-5-88.lightspeed.rlghnc.sbcglobal.net) has joined ##C
+2019-12-08 08:25:09	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined ##C
+2019-12-08 08:27:57	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:31:44	<--	CrazyPython (~crazypyth@71-135-5-88.lightspeed.rlghnc.sbcglobal.net) has quit
+2019-12-08 08:32:15	-->	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has joined ##C
+2019-12-08 08:34:23	-->	Church- (~aleph@lobsters/Auditor/Church-) has joined ##C
+2019-12-08 08:34:29	-->	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has joined ##C
+2019-12-08 08:36:06	<--	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has quit (Read error: Connection reset by peer)
+2019-12-08 08:36:32	<--	dave0 (~davezero@069.d.003.ncl.iprimus.net.au) has quit (Quit: dave's not here)
+2019-12-08 08:37:23	<--	MikeDebian (~none@bl12-167-178.dsl.telepac.pt) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:38:11	-->	di0_ (~di0_@unaffiliated/di0-/x-5053590) has joined ##C
+2019-12-08 08:38:13	<--	snaund (~saundkim@pool-108-29-162-229.nycmny.fios.verizon.net) has quit (Quit: snaund)
+2019-12-08 08:39:27	-->	sloanr (~Thunderbi@199.116.115.196) has joined ##C
+2019-12-08 08:41:42	--	milkt is now known as milkt_
+2019-12-08 08:42:04	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:42:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined ##C
+2019-12-08 08:42:32	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined ##C
+2019-12-08 08:42:38	<--	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has quit (Remote host closed the connection)
+2019-12-08 08:42:45	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Disconnected by services)
+2019-12-08 08:42:58	-->	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has joined ##C
+2019-12-08 08:43:03	--	milkt_ is now known as milkt
+2019-12-08 08:43:06	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Client Quit)
+2019-12-08 08:43:07	<--	port1024 (~port1024@178.79.92.85) has quit (Quit: Leaving)
+2019-12-08 08:43:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined ##C
+2019-12-08 08:43:29	<--	wroathe (~wroathe@c-68-54-25-135.hsd1.mn.comcast.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:49:19	-->	elfmacs (~elfmacs@2400:dd01:1020:150:1fff:d6e6:16ff:eb3f) has joined ##C
+2019-12-08 08:50:17	<--	sloanr (~Thunderbi@199.116.115.196) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:51:13	-->	voices (~voices@unaffiliated/tjt263) has joined ##C
+2019-12-08 08:52:29	<--	Arthuria (~user@82.42.54.101) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:53:26	-->	p4ns (~p4ns@46.197.208.203) has joined ##C
+2019-12-08 08:55:57	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:59:16	-->	beanzies (~beanz@65.129.32.28) has joined ##C
+2019-12-08 08:59:26	<--	ksft (~ksft@wikipedia/KSFT) has quit (Ping timeout: 252 seconds)
+2019-12-08 09:02:24	<--	os__ (~androirc@195.33.244.198) has quit (Read error: Connection reset by peer)
+2019-12-08 09:04:03	-->	os__ (~androirc@195.33.244.198) has joined ##C
+2019-12-08 09:07:57	<--	boB_K7IQ (~boB_K7IQ@152.44.129.202) has quit (Ping timeout: 240 seconds)

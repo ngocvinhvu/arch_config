@@ -20,3 +20,431 @@
 2019-12-08 06:39:56	energizer	rkkk: return the new value?
 2019-12-08 06:40:06	rkkk	energizer where
 2019-12-08 06:40:22	--	You are now known as laduyhaha
+2019-12-08 06:42:24	<--	somazero (~somazero@wsip-24-248-178-34.ph.ph.cox.net) has quit (Quit: Leaving)
+2019-12-08 06:43:06	<--	cecep (~weechat@x4e364a6c.dyn.telefonica.de) has quit (Quit: WeeChat 2.6)
+2019-12-08 06:43:13	birkoff	can I somehow customize the 'cmake' command arguments the 'pyarrow' pip installation runs ?
+2019-12-08 06:43:20	<--	dudek (~dudek@185.150.236.150) has quit (Quit: Leaving)
+2019-12-08 06:43:35	--	irc: disconnected from server
+2019-12-08 06:44:15	-->	duy (~laduyhaha@42.112.108.198) has joined #python
+2019-12-08 06:44:15	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 06:44:15	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-08 06:44:15	--	Channel #python: 1804 nicks (0 ops, 0 voices, 1804 normals)
+2019-12-08 06:44:32	birkoff	can I instruct pip to not remove or only grab the source ?
+2019-12-08 06:44:37	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:44:57	grym	birkoff: almost certainly easier to clone locally
+2019-12-08 06:45:04	-->	fflori (~fflori@194.230.155.243) has joined #python
+2019-12-08 06:45:30	rkkk	energizer im tryin to find all the paths with at most k turns and everytime I do find one i want to update the main result value
+2019-12-08 06:45:41	--	You are now known as laduyhaha
+2019-12-08 06:48:04	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 06:48:46	<--	treefrob (~treefrob@pD9E2DAAD.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2019-12-08 06:49:03	-->	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has joined #python
+2019-12-08 06:49:17	<--	ExoUNX (~ExoUNX@unaffiliated/exounx) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:49:43	birkoff	grym, as in how ?
+2019-12-08 06:50:24	<--	Exit42 (~textual@157-131-100-58.fiber.dynamic.sonic.net) has quit (Ping timeout: 246 seconds)
+2019-12-08 06:50:24	-->	renlol (lhoward@gateway/vpn/privateinternetaccess/renlo) has joined #python
+2019-12-08 06:51:15	[Tritium]	birkoff: as in clone the repo, edit the files, then "pip install ."
+2019-12-08 06:51:17	<--	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:51:52	-->	flighteng (~flighteng@c-66-235-25-210.sea.wa.customer.broadstripe.net) has joined #python
+2019-12-08 06:52:28	<--	renlo (~lhoward@pool-108-21-111-112.nycmny.fios.verizon.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 06:52:53	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 276 seconds)
+2019-12-08 06:53:45	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:53:53	-->	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has joined #python
+2019-12-08 06:53:55	<--	CookieM (~tomek@afay19.neoplus.adsl.tpnet.pl) has quit (Quit: Leaving)
+2019-12-08 06:54:34	--	irc: disconnected from server
+2019-12-08 06:55:05	-->	duy (~laduyhaha@42.112.108.198) has joined #python
+2019-12-08 06:55:05	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 06:55:05	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:58
+2019-12-08 06:55:05	--	Channel #python: 1802 nicks (0 ops, 0 voices, 1802 normals)
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:15	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 06:56:15	<--	i9zO5AP (~BQcdf9eiZ@41.248.163.183) has quit (Quit: WeeChat 2.5)
+2019-12-08 06:57:12	<--	AhmedAmerican (c52b5fcb@gateway/web/cgi-irc/kiwiirc.com/ip.197.43.95.203) has quit (Remote host closed the connection)
+2019-12-08 06:57:59	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Remote host closed the connection)
+2019-12-08 06:58:05	<--	lxer (~lx@ip5f5bd659.dynamic.kabel-deutschland.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:58:06	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 06:58:13	-->	haryv (400714dc@ip-64-7-20-220.sea.megapath.net) has joined #python
+2019-12-08 06:58:17	<--	nomic (~nomic@host86-182-158-121.range86-182.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:58:26	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined #python
+2019-12-08 06:58:39	<--	s3nd1v0g1us (patr0clus@gateway/vpn/protonvpn/patr0clus) has quit (Quit: WeeChat 2.6)
+2019-12-08 06:58:47	-->	melatonina (uid317528@gateway/web/irccloud.com/x-hytyifcndleyqtrd) has joined #python
+2019-12-08 06:59:41	haryv	hi all. I am having some issues with Pycharm 19.2 community version. I need to change the path where python is located and the path field cannot be erased or it cannot search for the folder where python is located. I is running in windows 10. ITs a great IDE just cannot fix this issue.
+2019-12-08 07:00:20	haryv	Just how active is this channel?
+2019-12-08 07:00:23	-->	voices (~voices@unaffiliated/tjt263) has joined #python
+2019-12-08 07:00:30	-->	TanukiNoKintama (~TanukiNoK@c-68-44-98-8.hsd1.in.comcast.net) has joined #python
+2019-12-08 07:00:58	[Tritium]	pretty active most of the time, but its supper hour for many of the members
+2019-12-08 07:01:13	-->	morenoh11 (~nope@ool-4350370b.dyn.optonline.net) has joined #python
+2019-12-08 07:01:33	<--	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:02:14	flighteng	haryv:  ctrl+alt+s, type 'interpreter' int he search box, you can update the paths for your environment there.  Is that where you're running into the issue?
+2019-12-08 07:02:17	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:02:20	[Tritium]	I'm active, but i cant really help you - i use vscode and vs2019...
+2019-12-08 07:02:54	-->	ackpacket (~ackpacket@unaffiliated/ackpacket) has joined #python
+2019-12-08 07:02:57	<--	JTa (~Thunderbi@unaffiliated/jta) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:03:09	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 07:03:17	-->	IRCNew (~Elrick@76-10-173-219.dsl.teksavvy.com) has joined #python
+2019-12-08 07:03:43	<--	trens (~trens@cpe-184-54-204-115.swo.res.rr.com) has quit (Quit: WeeChat 1.9.1)
+2019-12-08 07:04:05	<--	enoch85 (~enoch85@unaffiliated/enoch85) has quit (Quit: Tech And Me - ZNC server 1.6.3 - https://www.techandme.se)
+2019-12-08 07:04:34	-->	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has joined #python
+2019-12-08 07:04:53	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Client Quit)
+2019-12-08 07:05:05	-->	enoch85 (~enoch85@unaffiliated/enoch85) has joined #python
+2019-12-08 07:05:29	flighteng	haryv: ?
+2019-12-08 07:05:40	-->	raulp (~textual@unaffiliated/raulp) has joined #python
+2019-12-08 07:05:59	-->	iKarus987 (~ikarus807@85-220-22-204.dsl.dynamic.simnet.is) has joined #python
+2019-12-08 07:06:12	<--	morenoh11 (~nope@ool-4350370b.dyn.optonline.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:06:16	iKarus987	hi i am new to python wondering, how do i clear up my python shell
+2019-12-08 07:06:20	IRCNew	So I have a json file. I loaded it which a bit since the file is 800MB. It has a lot of extra information that I'm not using. I created a postgres db to store the information I want.
+2019-12-08 07:06:37	[Tritium]	iKarus987: exit() and relaunch typically.
+2019-12-08 07:06:41	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:06:52	IRCNew	I have just finished a loop to go through the JSON array of json objects which is what is in the file
+2019-12-08 07:07:10	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:07:11	IRCNew	I'm wondering how I can speed the process up
+2019-12-08 07:07:12	-->	yelof (~yelof@2601:283:8003:a920:2123:115f:2ef1:a86a) has joined #python
+2019-12-08 07:07:25	-->	daz (root@gateway/vpn/privateinternetaccess/daz) has joined #python
+2019-12-08 07:07:41	<--	govbotdotnet (~govbotdot@2605:a601:adff:fa00:45c2:c6d0:fd76:7180) has quit (Read error: Connection reset by peer)
+2019-12-08 07:07:53	<--	d42 (root@gateway/vpn/privateinternetaccess/daz) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined #python
+2019-12-08 07:09:02	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 07:09:02	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-08 07:09:02	--	Channel #python: 1801 nicks (0 ops, 0 voices, 1801 normals)
+2019-12-08 07:09:10	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:09:37	energizer	iKarus987: which operating system?
+2019-12-08 07:10:02	iKarus987	hi guys i did this after the >>>> fred = "pizza is food" then i pressed enter now it doesnt let me enter another command  i dont get ">>>>" this line
+2019-12-08 07:10:33	<--	zerotech1 (~zerotech@BSN-182-125-49.dynamic.siol.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:10:39	iKarus987	i am reading python for kids, that my material i am studying from
+2019-12-08 07:10:58	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:11:01	<--	TanukiNoKintama (~TanukiNoK@c-68-44-98-8.hsd1.in.comcast.net) has left #python
+2019-12-08 07:11:01	energizer	that is weird
+2019-12-08 07:11:13	iKarus987	what is weird?
+2019-12-08 07:11:14	energizer	how did you run python?
+2019-12-08 07:11:18	desu	forgot the closing "?
+2019-12-08 07:11:33	[Tritium]	desu: that would be a syntax error
+2019-12-08 07:11:41	<--	jil (~user@2001:41d0:52:cff::f2a) has quit (Read error: Connection reset by peer)
+2019-12-08 07:11:45	rkkk	how do I get a function to update a value outside
+2019-12-08 07:11:47	energizer	iKarus987: which operating system are you on?
+2019-12-08 07:12:03	desu	depending on the repl used
+2019-12-08 07:12:08	iKarus987	i shortcut the "python IDLE (Python 3.8 32-bit)" to desktop
+2019-12-08 07:12:10	energizer	rkkk: `foo = func()`
+2019-12-08 07:12:12	iKarus987	i am running from that
+2019-12-08 07:12:19	<--	fflori (~fflori@194.230.155.243) has quit (Remote host closed the connection)
+2019-12-08 07:12:20	iKarus987	windows 8
+2019-12-08 07:12:23	[Tritium]	iKarus987: never, ever use idle
+2019-12-08 07:12:25	iKarus987	sorry windows 10
+2019-12-08 07:12:41	<--	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has quit (Remote host closed the connection)
+2019-12-08 07:12:51	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 07:12:54	energizer	iKarus987: hmm. IDLE isn't really used by developers, it's mostly a first-day-of-python thing
+2019-12-08 07:13:08	iKarus987	hmm there is "python 3.8 32bit" but it gives me black screen
+2019-12-08 07:13:18	iKarus987	i dont like black screen
+2019-12-08 07:13:25	[Tritium]	the black screen is what you should use
+2019-12-08 07:13:33	-->	jil (~user@2001:41d0:52:cff::f2a) has joined #python
+2019-12-08 07:13:34	[Tritium]	thats what developers use
+2019-12-08 07:13:37	iKarus987	cant i change the color?
+2019-12-08 07:13:41	iKarus987	background
+2019-12-08 07:13:43	<--	palasso (~palasso@unaffiliated/palasso) has quit (Read error: Connection reset by peer)
+2019-12-08 07:13:53	[Tritium]	yeah, you can, but thats a windows setting, that has nothing to do with python
+2019-12-08 07:13:53	energizer	probably there is a menu for that
+2019-12-08 07:14:10	-->	st8less (~st8less@inet-167-224-197-181.isp.ozarksgo.net) has joined #python
+2019-12-08 07:14:13	iKarus987	ah i see
+2019-12-08 07:14:21	[Tritium]	I use conemu and a semi-transparent background
+2019-12-08 07:14:48	-->	tiwula (~lane@174-23-77-118.slkc.qwest.net) has joined #python
+2019-12-08 07:16:17	iKarus987	k thx done
+2019-12-08 07:16:44	-->	fstd_ (~fstd@unaffiliated/fisted) has joined #python
+2019-12-08 07:16:46	-->	voices (~voices@unaffiliated/tjt263) has joined #python
+2019-12-08 07:16:56	<--	Samian (~s@65.127.236.102) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:17:09	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:17:22	iKarus987	ehh
+2019-12-08 07:17:30	-->	Hanii (~Hanii@2a00:23c5:c587:a800:f82c:93e8:4685:f2a6) has joined #python
+2019-12-08 07:17:31	<--	haryv (400714dc@ip-64-7-20-220.sea.megapath.net) has quit (Remote host closed the connection)
+2019-12-08 07:17:36	iKarus987	now i dont get special color for thing like a strings
+2019-12-08 07:18:34	[Tritium]	If you need syntax highlighting, experiment in a module with something like vscode or pycharm
+2019-12-08 07:18:36	iKarus987	everything is black text now, no special color for builtin codes
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined #python
+2019-12-08 07:20:47	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-08 07:20:47	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-08 07:20:47	--	Channel #python: 1798 nicks (0 ops, 0 voices, 1798 normals)
+2019-12-08 07:20:48	desu	should install 64bit python too then
+2019-12-08 07:20:56	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-08 07:21:03	iKarus987	i only got offered windows installer
+2019-12-08 07:21:07	iKarus987	and it started downloading
+2019-12-08 07:21:10	[Tritium]	the bitedness doesn't REALLY matter for a beginner
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:21:49	-->	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has joined #python
+2019-12-08 07:21:54	-->	Wulf4 (~Wulf@unaffiliated/wulf) has joined #python
+2019-12-08 07:22:31	desu	iKarus987: the one named "windows x86-64 * installer" is 64bit
+2019-12-08 07:22:36	<--	Ignacy (~Ignacy@188.113.68.31) has quit (Remote host closed the connection)
+2019-12-08 07:23:17	<--	rkkk (41bf0bfc@cpe-65-191-11-252.nc.res.rr.com) has quit (Remote host closed the connection)
+2019-12-08 07:24:16	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 07:25:06	-->	xrogaan (~xrogaan@unaffiliated/xrogaan) has joined #python
+2019-12-08 07:25:23	<--	Wulf (~Wulf@unaffiliated/wulf) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:25:24	--	Wulf4 is now known as Wulf
+2019-12-08 07:25:37	<--	gar (~textual@pdpc/supporter/professional/gar) has quit (Quit: gar)
+2019-12-08 07:25:49	-->	killvenom (~killvenom@2a01:4b00:8631:8800:d928:5d44:e5e6:c9bd) has joined #python
+2019-12-08 07:26:39	iKarus987	i see
+2019-12-08 07:26:42	iKarus987	i feel so dumb
+2019-12-08 07:26:51	iKarus987	i am network engineer for a data center company
+2019-12-08 07:27:07	iKarus987	my boss told me, i should get my feet wet in this
+2019-12-08 07:27:10	-->	snowmanbamm (~snowmanba@2600:1700:abf0:1990:296b:7246:ff0a:653a) has joined #python
+2019-12-08 07:27:13	iKarus987	because i have to start writing scripts
+2019-12-08 07:28:47	<--	Gnexally (~Gnexally@dockerhost.aes.pm) has quit (Read error: Connection reset by peer)
+2019-12-08 07:28:55	-->	courrier (~yoan@2pl44-h01-176-136-159-243.dsl.sta.abo.bbox.fr) has joined #python
+2019-12-08 07:28:57	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:30:39	iKarus987	so with vscode, you will have to type everything?
+2019-12-08 07:30:52	iKarus987	it doesn't give you new line like >>>> ?
+2019-12-08 07:31:01	<--	akk (~akk@75-161-90-59.albq.qwest.net) has quit (Quit: +++)
+2019-12-08 07:31:10	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Read error: Connection reset by peer)
+2019-12-08 07:31:14	<--	tsaka__ (~torstein@94.66.73.249) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:31:26	[Tritium]	there is a way to run a repl in vscode, but you should be making modules anyways
+2019-12-08 07:31:49	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:32:34	<--	cURT (~Faux_Pseu@46.182.18.128) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:32:37	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:32:38	-->	adamholmberg (~adamholmb@69.80.114.2) has joined #python
+2019-12-08 07:32:46	-->	indistylo (~aruns_@106.51.26.248) has joined #python
+2019-12-08 07:33:29	iKarus987	why people are saying python is easy to learn..? i mean the intellisense is very important for a student and that's exactly "IDLE (Python 3.8 32-bit)" offers, but you guys are saying it's not ment for software engineers
+2019-12-08 07:34:11	nedbat	iKarus987: lots of IDEs can give you autocompletion.
+2019-12-08 07:34:24	nedbat	iKarus987: vscode will do autocompletion
+2019-12-08 07:34:36	iKarus987	vscode does that i know
+2019-12-08 07:34:41	iKarus987	just like notepad++
+2019-12-08 07:34:44	[Tritium]	iKarus987: use pretty much any ide, except idle.  Vs code will even do intelisense brand autocompletion
+2019-12-08 07:34:53	nedbat	iKarus987: right, so you don't need IDLE
+2019-12-08 07:35:05	iKarus987	i want this >>>>
+2019-12-08 07:35:07	[Tritium]	idle is actively bad
+2019-12-08 07:35:26	nedbat	iKarus987: vscode probably has a Python Console window like that.
+2019-12-08 07:36:02	iKarus987	k thx will try find out
+2019-12-08 07:37:08	<--	adamholmberg (~adamholmb@69.80.114.2) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:37:24	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 07:37:37	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:37:43	-->	tsaka__ (~torstein@94.66.73.249) has joined #python
+2019-12-08 07:38:18	-->	cURT (~Faux_Pseu@46.182.18.128) has joined #python
+2019-12-08 07:38:28	-->	wymillerlinux (~wymillerl@97-84-4-94.dhcp.aldl.mi.charter.com) has joined #python
+2019-12-08 07:39:27	-->	nabil_ (~nabil@105.99.49.5) has joined #python
+2019-12-08 07:39:50	<--	anotheryou (uid257186@gateway/web/irccloud.com/x-uhkpjqcgkatujisa) has quit (Quit: Connection closed for inactivity)
+2019-12-08 07:42:10	<--	dijitol (~Thunderbi@p200300D477217400DC239EC6C01C8D9F.dip0.t-ipconnect.de) has quit (Quit: dijitol)
+2019-12-08 07:42:25	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 07:43:02	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 07:45:29	<--	offbyone (~offbyone@c-67-160-47-66.hsd1.wa.comcast.net) has quit (Quit: ZNC 1.7.4+deb0+bionic0 - https://znc.in)
+2019-12-08 07:50:22	<--	jay-m_ (~jay-m@129.0.205.241) has quit (Read error: Connection reset by peer)
+2019-12-08 07:52:48	<--	tiwula (~lane@174-23-77-118.slkc.qwest.net) has quit (Quit: Leaving)
+2019-12-08 07:53:33	<--	snowmanbamm (~snowmanba@2600:1700:abf0:1990:296b:7246:ff0a:653a) has quit (Quit: snowmanbamm)
+2019-12-08 07:53:57	-->	gar (~textual@pdpc/supporter/professional/gar) has joined #python
+2019-12-08 07:54:57	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:55:23	-->	morenoh11 (~nope@ool-4350370b.dyn.optonline.net) has joined #python
+2019-12-08 07:55:51	-->	Beam_Inn (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has joined #python
+2019-12-08 07:55:59	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:56:39	-->	c0ns (~c0ns@dslb-084-059-178-135.084.059.pools.vodafone-ip.de) has joined #python
+2019-12-08 07:58:07	nedbat	on Windows, does the "py" launcher have a -m switch?  "py -m modulename" ?
+2019-12-08 07:58:21	[Tritium]	nedbat: yup.  use it all the time
+2019-12-08 07:58:28	[Tritium]	well... use it all the time to run venv
+2019-12-08 07:58:49	nedbat	[Tritium]: thanks
+2019-12-08 07:59:13	-->	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has joined #python
+2019-12-08 07:59:19	[Tritium]	py -m venv, py -3.7 -m venv ...etc.  after the python version specifier, all arguments are blindly passed to python
+2019-12-08 08:00:20	<--	morenoh11 (~nope@ool-4350370b.dyn.optonline.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:00:46	-->	blackleitus (~blackleit@200.92.30.11) has joined #python
+2019-12-08 08:01:07	<--	de-facto (~de-facto@gateway/tor-sasl/de-facto) has quit (Quit: See you around.)
+2019-12-08 08:01:09	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 08:02:05	blackleitus	I Had to change of parser, but how can I say if I tell max_results = 10 , then download 10 beside of content length https://dpaste.org/s9Ks ?
+2019-12-08 08:03:17	-->	dcypher (~textual@ool-18bf1199.dyn.optonline.net) has joined #python
+2019-12-08 08:03:22	-->	de-facto (~de-facto@gateway/tor-sasl/de-facto) has joined #python
+2019-12-08 08:03:35	-->	howyoubeen (~factotum@2600:6c4a:727f:e6b8:2187:fd1b:f7c2:3e55) has joined #python
+2019-12-08 08:03:48	-->	indistylo (~aruns_@106.51.26.248) has joined #python
+2019-12-08 08:03:57	<--	MrTorgo (~torgo@75-4-203-5.lightspeed.sntcca.sbcglobal.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:04:23	<--	tm (~sinnlos@unaffiliated/tm) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:04:37	ammar2	blackleitus: btw you can use requests.get(url, params={'num': ..., 'q': ...})
+2019-12-08 08:04:52	-->	czer0 (~toaster@170.199.140.20) has joined #python
+2019-12-08 08:05:38	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
+2019-12-08 08:06:13	-->	bpalmer (~user@unaffiliated/bpalmer) has joined #python
+2019-12-08 08:06:17	blackleitus	sure, but it is dynamic
+2019-12-08 08:06:21	<--	^Zer0^ (~toaster@170.199.140.20) has quit (Ping timeout: 246 seconds)
+2019-12-08 08:07:01	<--	AlexPortable (uid7568@gateway/web/irccloud.com/x-pkjhygrbgcojarzi) has quit (Quit: Connection closed for inactivity)
+2019-12-08 08:07:13	blackleitus	'q'means?
+2019-12-08 08:07:46	-->	tm (~sinnlos@unaffiliated/tm) has joined #python
+2019-12-08 08:08:01	ammar2	it just corresponds to the url params you want. e.g passing params={'hello': 'world', 'param2': 'value'} will turn into http://...?hello=world&param2=value
+2019-12-08 08:08:30	-->	shredding (~shredding@x4d0d1c34.dyn.telefonica.de) has joined #python
+2019-12-08 08:08:37	<--	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has quit (Read error: Connection reset by peer)
+2019-12-08 08:08:43	<--	framend (~framend@unaffiliated/framend) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:08:49	ammar2	blackleitus: so you want it to download 10 even if it skips over some because the content length is too big?
+2019-12-08 08:08:56	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:08:59	blackleitus	yeah
+2019-12-08 08:09:31	blackleitus	it skips 4 based on size , but how can I say my counter downloads 10 from max size?
+2019-12-08 08:10:09	-->	framend (~framend@unaffiliated/framend) has joined #python
+2019-12-08 08:10:30	-->	pacbard (~pacbard@68.237.202.35.bc.googleusercontent.com) has joined #python
+2019-12-08 08:12:04	-->	sand_dull (~theuser@ill.ductinmedi.com) has joined #python
+2019-12-08 08:12:33	ammar2	blackleitus: one solution would be to pass num=20 or something and then stop once you've downloaded 10
+2019-12-08 08:13:23	<--	shredding (~shredding@x4d0d1c34.dyn.telefonica.de) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:13:35	<--	s2013 (~textual@cpe-24-243-145-239.rgv.res.rr.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2019-12-08 08:14:26	-->	wordsToLiveBy (~wordsToLi@unaffiliated/wordstoliveby) has joined #python
+2019-12-08 08:14:39	<--	lemoldu_ (~lemoldu@arennes-654-1-210-193.w90-32.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2019-12-08 08:16:41	-->	xall (~xall@mx-ll-14.207.145-52.dynamic.3bb.co.th) has joined #python
+2019-12-08 08:17:38	-->	Kaedenn (~kaedenn@unaffiliated/kaedenn) has joined #python
+2019-12-08 08:18:02	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:18:23	<--	killvenom (~killvenom@2a01:4b00:8631:8800:d928:5d44:e5e6:c9bd) has quit (Quit: This computer has gone to sleep)
+2019-12-08 08:18:27	blackleitus	in this case how in code?
+2019-12-08 08:18:43	<--	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2019-12-08 08:19:00	ammar2	downloaded += 1; if downloaded >= 10: break
+2019-12-08 08:19:28	<--	Forsaken87 (~quassel@2a02:908:1860:bec0:c179:63c7:fe6c:8293) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:20:20	nedbat	blackleitus: btw, lines 62-63 are going to hide information from you if things go wrong.
+2019-12-08 08:20:23	-->	karmabeach24 (~ircap@pc-49-8-120-200.cm.vtr.net) has joined #python
+2019-12-08 08:20:30	<--	contingo (~textual@213.205.240.171) has quit (Quit: My supercomputing cluster has gone to sleep. ZZZzzz…)
+2019-12-08 08:20:39	<--	pulsar12 (~pulsar12@a79-169-193-36.cpe.netcabo.pt) has quit (Quit: Leaving)
+2019-12-08 08:20:42	-->	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has joined #python
+2019-12-08 08:21:00	<--	spiette (~spiette@216.98.60.148) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 08:21:04	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:21:15	<--	dctrud_ (~dctrud@2001:19f0:6401:16c7:5400:2ff:fe71:41c3) has quit (Quit: ZNC 1.7.4 - https://znc.in)
+2019-12-08 08:21:25	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #python
+2019-12-08 08:22:06	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 08:22:26	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined #python
+2019-12-08 08:22:29	-->	jaziz1 (~jaziz@unaffiliated/jaziz) has joined #python
+2019-12-08 08:22:32	-->	LabMonkey (~LabMonkey@2602:306:cf62:e270:e451:10df:83fb:f9ee) has joined #python
+2019-12-08 08:22:34	<--	TDT (~user@108.160.234.134) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:23:02	<--	jalalsfs_ (~jalalsfs@unaffiliated/jalalsfs) has quit (Remote host closed the connection)
+2019-12-08 08:23:23	-->	jalalsfs_ (~jalalsfs@unaffiliated/jalalsfs) has joined #python
+2019-12-08 08:23:27	<--	Jerrynicki (~niklas@p200300F573DA4800BB293BCAD95EF881.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:23:55	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:25:09	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #python
+2019-12-08 08:25:37	<--	jaziz (~jaziz@unaffiliated/jaziz) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:25:38	<--	Mechanismus (~LabMonkey@2602:306:cf62:e270:dc18:32e:15fe:cd5e) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:25:42	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:25:59	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #python
+2019-12-08 08:26:04	<--	theWhisper_ (~quassel@unaffiliated/thewhisper/x-7482734) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:26:07	<--	[itchyjunk] (~itchyjunk@unaffiliated/itchyjunk/x-1640057) has quit (Remote host closed the connection)
+2019-12-08 08:26:29	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:28:53	-->	cow[moo] (~asanger@c-69-244-155-110.hsd1.mi.comcast.net) has joined #python
+2019-12-08 08:29:17	<--	x35b35 (~x35b35@71.19.250.216) has quit (Quit: leaving)
+2019-12-08 08:29:34	-->	Helenah (~s98259@unaffiliated/iveeee) has joined #python
+2019-12-08 08:29:42	<--	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has quit (Remote host closed the connection)
+2019-12-08 08:30:08	<--	muflon_ (~muflon@89-76-0-98.dynamic.chello.pl) has quit (Quit: WeeChat 2.6)
+2019-12-08 08:30:51	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 08:31:26	-->	spacewook (~spacewook@ip24-253-130-175.hr.hr.cox.net) has joined #python
+2019-12-08 08:32:38	-->	Mat63 (ba8de35f@186.141.227.95) has joined #python
+2019-12-08 08:32:59	-->	adamholmberg (~adamholmb@69.80.114.2) has joined #python
+2019-12-08 08:33:08	-->	offbyone (~offbyone@c-67-160-47-66.hsd1.wa.comcast.net) has joined #python
+2019-12-08 08:33:28	-->	DanyC (~DanyC@cpc72331-sotn15-2-0-cust18.15-1.cable.virginm.net) has joined #python
+2019-12-08 08:33:33	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Remote host closed the connection)
+2019-12-08 08:34:21	-->	indistylo (~aruns_@106.51.26.248) has joined #python
+2019-12-08 08:34:29	Mat63	hi ThiefMaster
+2019-12-08 08:34:36	-->	Church- (~aleph@lobsters/Auditor/Church-) has joined #python
+2019-12-08 08:34:37	<--	sand_dull (~theuser@ill.ductinmedi.com) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:35:45	nedbat	Mat63: what's up?
+2019-12-08 08:36:58	Mat63	i want to install
+2019-12-08 08:37:19	Mat63	pycharm
+2019-12-08 08:37:23	<--	MikeDebian (~none@bl12-167-178.dsl.telepac.pt) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:37:58	-->	audioburn (~audioburn@unaffiliated/theology) has joined #python
+2019-12-08 08:38:02	<--	adamholmberg (~adamholmb@69.80.114.2) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:38:27	Mat63	I already have the program, but I wanted to know where I keep it in what location so that it is not messy
+2019-12-08 08:39:25	-->	oragadam (7aae3633@122.174.54.51) has joined #python
+2019-12-08 08:39:29	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:39:57	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:40:18	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:41:32	Mat63	it sounds a bit childish mine but I want to know
+2019-12-08 08:41:42	--	milkt is now known as milkt_
+2019-12-08 08:42:04	<--	milkt_ (~debian@gateway/tor-sasl/milkt) has quit (Quit: leaving)
+2019-12-08 08:42:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #python
+2019-12-08 08:42:32	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #python
+2019-12-08 08:42:45	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Disconnected by services)
+2019-12-08 08:42:59	-->	pedahzur (~jkugler@216-67-98-32.static.acsalaska.net) has joined #python
+2019-12-08 08:43:03	--	milkt_ is now known as milkt
+2019-12-08 08:43:06	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Client Quit)
+2019-12-08 08:43:27	-->	milkt (~debian@gateway/tor-sasl/milkt) has joined #python
+2019-12-08 08:44:02	-->	teksimian (~teksimian@172-97-139-243.cpe.distributel.net) has joined #python
+2019-12-08 08:44:25	teksimian	hoping someone can help me with a 2 dimensional list
+2019-12-08 08:45:26	teksimian	i'm using grid = [["." for x in range(20)] for y in range(20)] to create a 2 dimensional grid... but anytime i try to assign something to it via grid[x][y] the x and y dimension seems mixed up
+2019-12-08 08:46:13	-->	silverjam (~ubuntu@c-24-5-219-83.hsd1.ca.comcast.net) has joined #python
+2019-12-08 08:46:21	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 08:46:44	offby1	what does "mixed up" mean?
+2019-12-08 08:46:45	[Tritium]	teksimian: you are making an outer list of y's and inner lists of x's
+2019-12-08 08:47:03	[Tritium]	teksimian: so you would do grid[y][x]
+2019-12-08 08:47:07	offby1	[Tritium]: does the variable in the list comprehension matter?
+2019-12-08 08:47:17	<--	audioburn (~audioburn@unaffiliated/theology) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:47:19	energizer	no
+2019-12-08 08:47:26	offby1	didn't think so
+2019-12-08 08:47:26	-->	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has joined #python
+2019-12-08 08:47:26	[Tritium]	offby1: it is showing intent
+2019-12-08 08:47:38	offby1	🤔
+2019-12-08 08:47:43	offby1	ok I'll buy that
+2019-12-08 08:47:50	teksimian	[Tritium]: my intent was grid[x][y]
+2019-12-08 08:48:24	teksimian	how would i reverse swap them when creating the array
+2019-12-08 08:48:50	<--	prepend (~textual@99-1-32-197.lightspeed.tukrga.sbcglobal.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-12-08 08:48:53	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined #python
+2019-12-08 08:49:00	[Tritium]	teksimian: the outer listcomp is the grid object, the inner list comp are the items of the grid object.  so make the small listcomp your "y" listcomp, and the bigger one the "x"
+2019-12-08 08:49:18	[Tritium]	teksimian: or use numpy which has 2d arrays
+2019-12-08 08:49:47	teksimian	thank you for your help, much appreciated.
+2019-12-08 08:50:52	grym	teksimian: this is very, very much what numpy is for
+2019-12-08 08:50:52	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:50:58	grym	teksimian: so if this isn't homework, use that
+2019-12-08 08:51:12	-->	voices (~voices@unaffiliated/tjt263) has joined #python
+2019-12-08 08:51:21	teksimian	checking it out, thanks!
+2019-12-08 08:51:24	Mat63	It is a square matrix, where each position can be a variable or a constant?
+2019-12-08 08:51:32	teksimian	playing with this advent of code thing to learn python.
+2019-12-08 08:51:53	[Tritium]	Ah, games
+2019-12-08 08:52:04	<--	nitram_ (5457a39d@ip5457a39d.direct-adsl.nl) has quit (Remote host closed the connection)
+2019-12-08 08:52:04	<--	mr_paz (~mr_paz@24.14.251.223) has quit (Read error: Connection reset by peer)
+2019-12-08 08:52:13	grym	teksimian: ah, perfect!
+2019-12-08 08:52:16	grym	yeah, numpy is <3
+2019-12-08 08:52:24	<--	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has quit (Client Quit)
+2019-12-08 08:52:46	stealth_	Mat63, there is no constant in python
+2019-12-08 08:53:01	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 08:53:08	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:53:09	Mat63	?
+2019-12-08 08:53:15	offby1	!
+2019-12-08 08:53:23	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #python
+2019-12-08 08:53:35	offby1	Mat63: well, python doesn't really have constants; but sure.
+2019-12-08 08:53:36	Mat63	no?
+2019-12-08 08:53:38	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined #python
+2019-12-08 08:53:50	ammar2	depends on what you mean by constant
+2019-12-08 08:53:52	stealth_	Mat63, you just write is like `MY_CON = "something"`
+2019-12-08 08:54:05	ammar2	a name you can't reassign? then no
+2019-12-08 08:54:08	<--	blackleitus (~blackleit@200.92.30.11) has quit (Quit: Leaving)
+2019-12-08 08:54:20	-->	clarjon1 (~clarjon1@unaffiliated/clarjon1) has joined #python
+2019-12-08 08:54:44	--	Lord_of_Life_ is now known as Lord_of_Life
+2019-12-08 08:54:46	Mat63	an invariable independent fixed value
+2019-12-08 08:54:49	energizer	5 is a constant
+2019-12-08 08:54:56	stealth_	Mat63, https://stackoverflow.com/questions/2682745/how-do-i-create-a-constant-in-python
+2019-12-08 08:55:03	Mat63	like pi
+2019-12-08 08:55:11	[Tritium]	energizer: thats a literal for an immutable object.
+2019-12-08 08:55:11	bpalmer	a name you can't reassign? True.
+2019-12-08 08:55:15	bpalmer	(insert quibble about what a name is)
+2019-12-08 08:55:57	<--	voices (~voices@unaffiliated/tjt263) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:56:42	grym	bpalmer: something disjoint to the sweetness of flowers
+2019-12-08 08:56:49	-->	NeUx (~neux@gateway/tor-sasl/neux) has joined #python
+2019-12-08 08:56:54	energizer	https://docs.python.org/3/library/typing.html#typing.Final
+2019-12-08 08:57:17	<--	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:57:37	<--	dasher00 (~dasher00@2.221.109.249) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:57:48	silverjam	Anyone using PyScaffold?  Any idea how you'd add a dependency that uses git as source?
+2019-12-08 08:58:05	ammar2	energizer: your python static typing-fu is impressive
+2019-12-08 08:58:14	<--	Ariakenom (~Ariakenom@h-158-174-186-131.NA.cust.bahnhof.se) has quit (Quit: Leaving)
+2019-12-08 08:58:23	energizer	ammar2: :)
+2019-12-08 08:59:15	stealth_	its for mypy
+2019-12-08 08:59:26	<--	ksft (~ksft@wikipedia/KSFT) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:59:31	<--	holgersson (~quassel@unaffiliated/holgersson) has quit (Quit: “Format C:........[Done]“)
+2019-12-08 08:59:50	<--	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has quit (Quit: snowmanbamm)
+2019-12-08 08:59:54	offby1	silverjam: never heard of it, but perhaps PyScaffold uses the same syntax that pip does -- and if I recall correctly, pip indeed has a way to specify git repos
+2019-12-08 08:59:58	Mat63	Sorry, I'm new to Python and I only knew some java
+2019-12-08 09:00:14	grym	Mat63: lots of surprises await you
+2019-12-08 09:00:16	<--	pedahzur (~jkugler@216-67-98-32.static.acsalaska.net) has quit (Ping timeout: 265 seconds)
+2019-12-08 09:00:17	<--	tsaka__ (~torstein@94.66.73.249) has quit (Ping timeout: 240 seconds)
+2019-12-08 09:00:32	grym	Mat63: like first class functions and modules not classes as namespaces
+2019-12-08 09:00:47	-->	holgersson (~quassel@unaffiliated/holgersson) has joined #python
+2019-12-08 09:00:51	-->	dasher00 (~dasher00@2.221.109.249) has joined #python
+2019-12-08 09:01:57	silverjam	offby1: pyscaffold recommends using setup.cfg, so the syntax is a little different
+2019-12-08 09:03:29	ammar2	java8 has first class functions
+2019-12-08 09:03:55	grym	ammar2: you see c#9's attrs?
+2019-12-08 09:03:56	grym	:D
+2019-12-08 09:03:57	-->	owenc_ (~owen@79-65-119-111.host.pobb.as13285.net) has joined #python
+2019-12-08 09:04:03	<--	n3wborn (n3wborn@gateway/vpn/privateinternetaccess/n3wborn) has quit (Ping timeout: 245 seconds)
+2019-12-08 09:04:19	-->	MICROburst1 (~Thunderbi@x590e7f88.dyn.telefonica.de) has joined #python
+2019-12-08 09:04:32	-->	edlinde (~edlinde@183.83.146.106) has joined #python
+2019-12-08 09:04:33	ammar2	no, they do something interesting?
+2019-12-08 09:04:52	grym	ammar2: https://www.c-sharpcorner.com/article/deev-dive-into-c-sharp-9/  records
+2019-12-08 09:04:57	<--	br0lly (~doctor@ip-111-164.ip4.balmont.pl) has quit (Ping timeout: 240 seconds)
+2019-12-08 09:05:37	<--	mluser-home (~mluser-ho@cpe-107-11-253-108.columbus.res.rr.com) has quit (Quit: Yikes!)
+2019-12-08 09:05:40	grym	`with` instead of `attr.evolve`
+2019-12-08 09:05:49	grym	but it's very much in the same kind of headspace
+2019-12-08 09:05:56	grym	of which i wholeheartedly approve
+2019-12-08 09:06:04	<--	MICROburst (~Thunderbi@x590e21dd.dyn.telefonica.de) has quit (Ping timeout: 265 seconds)
+2019-12-08 09:06:04	--	MICROburst1 is now known as MICROburst
+2019-12-08 09:06:12	grym	(for the $0.05 that that's worth, heh)
+2019-12-08 09:06:52	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined #python
+2019-12-08 09:07:18	-->	haryv (400714dc@ip-64-7-20-220.sea.megapath.net) has joined #python
+2019-12-08 09:07:39	<--	sameerynho (~lxsameer@unaffiliated/lxsameer) has quit (Ping timeout: 250 seconds)
+2019-12-08 09:08:03	haryv	Who here know how arguments are entered from file names and are processed? Trying to understand some sample code and execute some external files?
+2019-12-08 09:08:35	grym	haryv: post the code that's troubling you to bpaste.net/+python3

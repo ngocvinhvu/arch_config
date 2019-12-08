@@ -1,0 +1,37 @@
+2019-12-08 06:49:56	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #kali-linux
+2019-12-08 06:49:56	--	Topic for #kali-linux is "Kali Rolling 2019.4 released - https://www.kali.org/news/kali-linux-2019-4-release/ || To get assistance: 1) Understand our support policy - https://offs.ec/1lzdIbN 2) Type: !irc 3) Type !helpme 4) THEN Ask in the IRC channel || Tools: https://tools.kali.org/ || Bug Tracker/Tool Request: https://bugs.kali.org/ || Docs: https://www.kali.org/docs/ || Training: https://kali.training/"
+2019-12-08 06:49:56	--	Topic set by g0tmi1k (~g0tmi1k@vulnhub/developer/pdpc.active.g0tmi1k) on Fri, 29 Nov 2019 23:59:04
+2019-12-08 06:49:56	--	Channel #kali-linux: 169 nicks (4 ops, 0 voices, 165 normals)
+2019-12-08 06:49:58	--	Channel created on Tue, 18 Oct 2011 00:08:39
+2019-12-08 06:53:17	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2019-12-08 06:54:35	--	irc: disconnected from server
+2019-12-08 06:55:07	-->	duy (~laduyhaha@42.112.108.198) has joined #kali-linux
+2019-12-08 06:55:07	--	Topic for #kali-linux is "Kali Rolling 2019.4 released - https://www.kali.org/news/kali-linux-2019-4-release/ || To get assistance: 1) Understand our support policy - https://offs.ec/1lzdIbN 2) Type: !irc 3) Type !helpme 4) THEN Ask in the IRC channel || Tools: https://tools.kali.org/ || Bug Tracker/Tool Request: https://bugs.kali.org/ || Docs: https://www.kali.org/docs/ || Training: https://kali.training/"
+2019-12-08 06:55:07	--	Topic set by g0tmi1k (~g0tmi1k@vulnhub/developer/pdpc.active.g0tmi1k) on Fri, 29 Nov 2019 23:59:04
+2019-12-08 06:55:07	--	Channel #kali-linux: 168 nicks (4 ops, 0 voices, 164 normals)
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:21	--	Channel created on Tue, 18 Oct 2011 00:08:39
+2019-12-08 06:58:39	<--	s3nd1v0g1us (patr0clus@gateway/vpn/protonvpn/patr0clus) has quit (Quit: WeeChat 2.6)
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined #kali-linux
+2019-12-08 07:09:02	--	Topic for #kali-linux is "Kali Rolling 2019.4 released - https://www.kali.org/news/kali-linux-2019-4-release/ || To get assistance: 1) Understand our support policy - https://offs.ec/1lzdIbN 2) Type: !irc 3) Type !helpme 4) THEN Ask in the IRC channel || Tools: https://tools.kali.org/ || Bug Tracker/Tool Request: https://bugs.kali.org/ || Docs: https://www.kali.org/docs/ || Training: https://kali.training/"
+2019-12-08 07:09:02	--	Topic set by g0tmi1k (~g0tmi1k@vulnhub/developer/pdpc.active.g0tmi1k) on Fri, 29 Nov 2019 23:59:04
+2019-12-08 07:09:02	--	Channel #kali-linux: 167 nicks (4 ops, 0 voices, 163 normals)
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:09:19	--	Channel created on Tue, 18 Oct 2011 00:08:39
+2019-12-08 07:13:34	-->	Anarchy99 (~androirc@85.255.236.120) has joined #kali-linux
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined #kali-linux
+2019-12-08 07:20:47	--	Topic for #kali-linux is "Kali Rolling 2019.4 released - https://www.kali.org/news/kali-linux-2019-4-release/ || To get assistance: 1) Understand our support policy - https://offs.ec/1lzdIbN 2) Type: !irc 3) Type !helpme 4) THEN Ask in the IRC channel || Tools: https://tools.kali.org/ || Bug Tracker/Tool Request: https://bugs.kali.org/ || Docs: https://www.kali.org/docs/ || Training: https://kali.training/"
+2019-12-08 07:20:47	--	Topic set by g0tmi1k (~g0tmi1k@vulnhub/developer/pdpc.active.g0tmi1k) on Fri, 29 Nov 2019 23:59:04
+2019-12-08 07:20:47	--	Channel #kali-linux: 168 nicks (4 ops, 0 voices, 164 normals)
+2019-12-08 07:21:02	--	Channel created on Tue, 18 Oct 2011 00:08:39
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:39:13	-->	trekkie1701c (~trekkie17@ec2-52-15-173-116.us-east-2.compute.amazonaws.com) has joined #kali-linux
+2019-12-08 07:45:09	<--	Chipdancer (~chip@prince-george.dreamhost.com) has quit (Remote host closed the connection)
+2019-12-08 07:50:33	-->	Chipdancer (~chip@2607:f298:5:101b::9eb:9839) has joined #kali-linux
+2019-12-08 07:53:28	<--	trekkie1701c (~trekkie17@ec2-52-15-173-116.us-east-2.compute.amazonaws.com) has quit (Quit: :P)
+2019-12-08 07:56:09	<--	Anarchy99 (~androirc@85.255.236.120) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:56:28	-->	Anarchy99 (~androirc@85.255.232.160) has joined #kali-linux
+2019-12-08 08:08:18	<--	veXx (~veXx@unaffiliated/vexx) has quit (Quit: Leaving)
+2019-12-08 08:33:33	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Remote host closed the connection)

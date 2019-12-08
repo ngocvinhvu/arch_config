@@ -43,3 +43,790 @@
 2019-12-08 06:40:22	--	You are now known as laduyhaha
 2019-12-08 06:40:29	ayecee	no doubt
 2019-12-08 06:40:30	Dagmar	rp_filter has been there for a very long time
+2019-12-08 06:40:59	Dagmar	Hosts have _always_ been allowed to take packets from _any_ interface
+2019-12-08 06:41:15	Dagmar	I got into an argument with Volkerding about this in like freakin 96
+2019-12-08 06:41:17	THE_GFR|WORK	desu: so stupid but CentOS 8.x works fine
+2019-12-08 06:41:18	<--	ledeni (~ledeni@c210-49-84-69.dandn3.vic.optusnet.com.au) has quit (Client Quit)
+2019-12-08 06:41:26	ayecee	you have a rich history of arguing with people
+2019-12-08 06:41:31	THE_GFR|WORK	lol
+2019-12-08 06:41:37	<--	slash_ (~slash_@030-245-128-083.dynamic.caiway.nl) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:41:57	 *	THE_GFR|WORK only argues with stupid computers!
+2019-12-08 06:41:59	Dagmar	ayecee: At the time I was under the impression an RFC about this had made it farther than it had
+2019-12-08 06:42:03	<--	caecias (~caecias@unaffiliated/caecias) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:42:10	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined ##linux
+2019-12-08 06:42:14	-->	Stolicus (~Stolicus@96-19-96-19-82-26.cpe.sparklight.net) has joined ##linux
+2019-12-08 06:42:28	snackoverflow	how do i set an environment variable? why does every resource have a different answer
+2019-12-08 06:42:29	Dagmar	See also, this patch http://ja.ssi.bg/#hidden
+2019-12-08 06:42:38	Tassium	snackoverflow: Depends on what shell you're using
+2019-12-08 06:42:38	Dagmar	snackoverflow: because there's more than one way to do ti
+2019-12-08 06:42:56	snackoverflow	im in linux mint
+2019-12-08 06:43:00	Dagmar	So, that patch was absolutely necessary when it was first developed
+2019-12-08 06:43:03	snackoverflow	Tassium: theres more than one shell?
+2019-12-08 06:43:08	Tassium	uh huh.
+2019-12-08 06:43:10	snackoverflow	can anyone help me?
+2019-12-08 06:43:19	ayecee	maybe. describe your problem.
+2019-12-08 06:43:20	<--	dudek (~dudek@185.150.236.150) has quit (Quit: Leaving)
+2019-12-08 06:43:29	Dagmar	If you had a box behaving as a firewall, someone could from the outside, pretty quickly determine what your internal network's interface had bound as it's IP address
+2019-12-08 06:43:30	snackoverflow	how do i set an environment variable?
+2019-12-08 06:43:35	--	irc: disconnected from server
+2019-12-08 06:44:14	-->	duy (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-08 06:44:14	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 06:44:14	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 06:44:15	--	Channel ##linux: 1819 nicks (0 ops, 0 voices, 1819 normals)
+2019-12-08 06:44:15	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 06:44:15	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 06:44:22	redsh	How are you calling this Python code?
+2019-12-08 06:44:31	snackoverflow	if os.environ.get('MY_VAR;) == True: do_something()
+2019-12-08 06:44:31	desu	snackoverflow: is this for configuration?
+2019-12-08 06:44:35	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 06:44:35	Dagmar	It would also wreak havoc if someone else was sloppy and leaked private network-addressed packets for the same address space you used on your internal segment
+2019-12-08 06:44:55	snackoverflow	redsh: it's a module used for processing images on a website
+2019-12-08 06:45:07	Dagmar	MOre than once I ran into cases where someones freakin printers wound up not working because a Linux machine would win the race to respond for ARP
+2019-12-08 06:45:09	snackoverflow	in a particular way. steganalysis
+2019-12-08 06:45:09	ayecee	snackoverflow: one of the differences you see is setting an environment variable for one program, for one user, for all users, or for all programs on the system.
+2019-12-08 06:45:39	redsh	snackoverflow: Okay. But how are you calling it? `python script.py` / `./script.py`? A crontab?
+2019-12-08 06:45:40	<--	Stolicus (~Stolicus@96-19-96-19-82-26.cpe.sparklight.net) has quit (Client Quit)
+2019-12-08 06:45:41	--	You are now known as laduyhaha
+2019-12-08 06:45:44	<--	cosimone_ (~cosimone@93-34-136-249.ip50.fastwebnet.it) has quit (Ping timeout: 276 seconds)
+2019-12-08 06:45:53	snackoverflow	ayecee: im trying to set globally. there are different answers for this. .bash_profile. /etc/environment (this did not work). .bashrc
+2019-12-08 06:45:55	snackoverflow	WHICH ONE
+2019-12-08 06:45:59	-->	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has joined ##linux
+2019-12-08 06:46:00	Dagmar	...but without rp_filter and ARP hiding, it becomes _trivial_ for someone in the broadcast domain of your external interface to talk to the _internal_ interface of your box
+2019-12-08 06:46:04	snackoverflow	fucks sake can someone just help me?
+2019-12-08 06:46:09	Dagmar	This is not a good state to be in
+2019-12-08 06:46:12	ayecee	mind the language and calm down
+2019-12-08 06:46:18	Dagmar	snackoverflow: Not with that attitude
+2019-12-08 06:46:33	desu	snackoverflow: fucks sake can you just answer the question?  :p
+2019-12-08 06:46:39	Tassium	If the webserver is calling this code, setting it in your shell won't do diddly
+2019-12-08 06:46:39	-->	sarthor (~sarthor@unaffiliated/sarthor) has joined ##linux
+2019-12-08 06:46:41	ayecee	/etc/environment works, but you may have to log out and log in for it to apply.
+2019-12-08 06:46:59	Dagmar	Your login method also has to care about /etc/environment
+2019-12-08 06:47:03	snackoverflow	Tassium: im not setting it in my shell nor do i intend to
+2019-12-08 06:47:10	snackoverflow	ayecee: oh ok
+2019-12-08 06:47:11	snackoverflow	brb
+2019-12-08 06:47:40	-->	linelevel (~linelevel@unaffiliated/linelevel) has joined ##linux
+2019-12-08 06:48:19	<--	n0s0ul (~n0s0u1@92-52-2-35.dynamic.orange.sk) has quit (Remote host closed the connection)
+2019-12-08 06:48:39	Sappos	"module joydev did not have configs CONFIG_INPUT_JOYSTICK"---I do have a joystick on this thing!?!?!?
+2019-12-08 06:48:45	redsh	If it's a simple commandline utility you're not calling from anything like a service or from crontab or from multiple different users, then just setting it in your shell rc file should be enough. With `export` in front, naturally.
+2019-12-08 06:48:46	<--	treefrob (~treefrob@pD9E2DAAD.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2019-12-08 06:48:50	ayecee	/etc/environment also has very limited syntax.
+2019-12-08 06:49:01	snackoverflow	ayecee: Dagmar: i did switch user, didnt work
+2019-12-08 06:49:08	ayecee	what did you add to the file?
+2019-12-08 06:49:14	Dagmar	snackoverflow: _How_ you're logging in matters
+2019-12-08 06:49:17	<--	ExoUNX (~ExoUNX@unaffiliated/exounx) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:49:18	snackoverflow	IS_SITE="True"
+2019-12-08 06:49:27	Tassium	When you say it's a module used to process images for a website, do you mean that the webserver is running this code, or you are running it yourself?
+2019-12-08 06:49:35	snackoverflow	Dagmar: im using linux mint. there is a logout button like any other OS
+2019-12-08 06:49:36	Dagmar	snackoverflow: Different mechanisms for logging in use different mechanisms for constructing the user's environment
+2019-12-08 06:49:46	<--	sangriacobalt (sangriacob@gateway/vpn/protonvpn/houseoftards/x-33971078) has quit (Ping timeout: 265 seconds)
+2019-12-08 06:49:55	snackoverflow	Tassium: both. running it myself for testing, and the website uses the code
+2019-12-08 06:49:56	ZombieChicken	snackoverflow: My OS doesn't have a logout button
+2019-12-08 06:49:58	Dagmar	snackoverflow: That's nice.  Doesn't mean a thing.
+2019-12-08 06:50:28	Tassium	Well your user environment and the webserver environment are two separate things
+2019-12-08 06:50:38	Dagmar	snackoverflow: If you're logging in at a text console, /bin/login is what's starting the session, and generally there you're expected to put something in /etc/profile.d
+2019-12-08 06:50:43	ayecee	is this python thing run by the webserver?
+2019-12-08 06:50:51	snackoverflow	is there any catch-all way to do this? i thought linux was supposed to be programmer-friendly. in windows you have an interface to set env vars. why is this so complicated?
+2019-12-08 06:50:55	redsh	I'd argue that polluting the environment of all processes just for one utility is a waste. You could just do `IS_SITE=True ./script.py` instead.
+2019-12-08 06:51:05	snackoverflow	ayecee: yes
+2019-12-08 06:51:05	Tassium	It's 'programmer friendly' in that all the tools are free and available for the asking
+2019-12-08 06:51:14	desu	snackoverflow: if this is for a webapp, just set it in the .service
+2019-12-08 06:51:15	ayecee	snackoverflow: then you'll likely have to reboot for that to apply.
+2019-12-08 06:51:17	<--	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 06:51:21	ayecee	or restart the service at least.
+2019-12-08 06:51:28	Dagmar	If you're logging in through a _graphical_ environment, then it's up to GDM, KDM, LightDM, or whatever the heck you're using there to deal with it, since bash isn't usually invoked
+2019-12-08 06:51:30	sauvin	I've seen this Windows thing for setting environment variables. It's NOT very convenient.
+2019-12-08 06:51:31	snackoverflow	desu: i also need to run the code locally
+2019-12-08 06:51:34	desu	or whatever init script your distro uses
+2019-12-08 06:51:38	snackoverflow	through local webserver
+2019-12-08 06:51:40	Dagmar	So it very much matters _how_ you're logging in
+2019-12-08 06:51:42	snackoverflow	for testing etc.
+2019-12-08 06:51:54	Dagmar	sauvin: The Windows method is a bit mad
+2019-12-08 06:51:58	desu	snackoverflow: FOOBAR=dongs ./servethething
+2019-12-08 06:52:11	snackoverflow	windows is so simple
+2019-12-08 06:52:17	ayecee	it's really not
+2019-12-08 06:52:19	desu	this is not any harder on gnu/linux
+2019-12-08 06:52:24	snackoverflow	there is an interface. yes it is
+2019-12-08 06:52:43	redsh	Anything is simple when you're used to it.
+2019-12-08 06:52:47	-->	Sappon (~xchat@p4FE1D293.dip0.t-ipconnect.de) has joined ##linux
+2019-12-08 06:52:48	desu	it is basically the same syntax on windows cmd/powershell as on gnu/linux
+2019-12-08 06:52:51	snackoverflow	bleh
+2019-12-08 06:52:53	<--	Sappos (~xchat@p5DE19C6E.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2019-12-08 06:53:03	Dagmar	There are many interfaces
+2019-12-08 06:53:03	--	Sappon is now known as Sappos
+2019-12-08 06:53:15	Dagmar	So, unless you can tell people specifically what you're using to login with, we can't help you
+2019-12-08 06:53:21	snackoverflow	if i log out ill lose all my chrome tabs and shell tabs
+2019-12-08 06:53:26	ayecee	snackoverflow: yup
+2019-12-08 06:53:26	snackoverflow	thats why i only switched user
+2019-12-08 06:53:34	snackoverflow	and it may not even work
+2019-12-08 06:53:34	Dagmar	Learn to use bookmarks
+2019-12-08 06:53:35	Sappos	[Resent] He's probably using the distro's default. No need to let him starve. :P
+2019-12-08 06:53:41	ayecee	snackoverflow: also it wouldn't change anything for your running webserver.
+2019-12-08 06:53:47	Sappos	snackoverflow: That won't work.
+2019-12-08 06:53:53	-->	Leonarbro (~Leonarbro@S01067824af93741c.cg.shawcable.net) has joined ##linux
+2019-12-08 06:53:56	snackoverflow	ayecee: i am using heroku. setting env vars is simple
+2019-12-08 06:54:03	ayecee	neat
+2019-12-08 06:54:04	Sappos	snackoverflow: Have you looked at the command 'export'?
+2019-12-08 06:54:30	-->	demoz (~demoz@178-221-69-184.dynamic.isp.telekom.rs) has joined ##linux
+2019-12-08 06:54:30	snackoverflow	Sappos: yes. isn't that for temporary env vars?
+2019-12-08 06:54:34	--	irc: disconnected from server
+2019-12-08 06:55:04	-->	duy (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-08 06:55:04	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 06:55:04	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 06:55:05	--	Channel ##linux: 1817 nicks (0 ops, 0 voices, 1817 normals)
+2019-12-08 06:55:07	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 06:55:07	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 06:55:07	--	You are now known as laduyhaha
+2019-12-08 06:55:07	Dagmar	The hubris is staggering
+2019-12-08 06:55:08	Sappos	(Like seriously, they do, I've already used them today.)
+2019-12-08 06:55:13	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 06:55:26	snackoverflow	oh, didnt know
+2019-12-08 06:55:34	Dagmar	...and export isn't for "temporary" things
+2019-12-08 06:55:34	Sappos	:D
+2019-12-08 06:55:35	snackoverflow	cant think of any use case
+2019-12-08 06:55:41	snackoverflow	dude
+2019-12-08 06:55:42	ayecee	snackoverflow: well, testing things for one.
+2019-12-08 06:55:46	desu	snackoverflow: you have one right now
+2019-12-08 06:56:02	redsh	Export makes it so that it's in the environment of called processes.
+2019-12-08 06:56:15	<--	i9zO5AP (~BQcdf9eiZ@41.248.163.183) has quit (Quit: WeeChat 2.5)
+2019-12-08 06:56:16	-->	MrMobius (~default@c-73-134-82-217.hsd1.va.comcast.net) has joined ##linux
+2019-12-08 06:56:18	snackoverflow	is setting env vars considered a difficult task in linux?
+2019-12-08 06:56:20	Dagmar	`CFLAGS=-O2 make` <-- I'm sure people have seen this before
+2019-12-08 06:56:26	ayecee	snackoverflow: no
+2019-12-08 06:56:33	snackoverflow	then why is this question taking 15 mins to answer?
+2019-12-08 06:56:37	Dagmar	snackoverflow: Not for adults
+2019-12-08 06:56:41	redsh	Because you're being overly difficult.
+2019-12-08 06:56:41	ayecee	because it's not the right question
+2019-12-08 06:56:51	Tassium	snackoverflow: Because you're not providing proper information, and doing things in the most difficult way possible (running your code in 2 different environments)
+2019-12-08 06:56:54	demoz	hello, does anyone have idea how could i match ":: Do you want to skip the above packages for this upgrade? [y/N] " with expect within bash script ? I pretty much tried everything, even to regex it with dots but i am unable to match it and pass "y"
+2019-12-08 06:57:01	<--	redbrain (~redbrain@124-155-N1.p43.customer.vsm.sh) has quit (Ping timeout: 265 seconds)
+2019-12-08 06:57:15	snackoverflow	local and production are common environments, im not worried about production
+2019-12-08 06:57:19	ayecee	demoz: yes | ./script
+2019-12-08 06:57:27	Dagmar	demoz: Don't bother trying to match on the "? [y/N]" part at all
+2019-12-08 06:57:30	ZombieChicken	demoz: man yes should cover you
+2019-12-08 06:57:32	snackoverflow	i can set an env var in one command in production (heroku)
+2019-12-08 06:57:34	desu	Dagmar: use expect
+2019-12-08 06:57:34	Sappos	snackoverflow: There are some people talking to you that do believe you might be about to do something in a bad way and they'd like to show you how to do better.
+2019-12-08 06:57:38	desu	er.. demoz
+2019-12-08 06:57:46	demoz	ayecee that doesn't work, as i have to pass \r within few promts
+2019-12-08 06:57:48	desu	or better, don't try to do unattended updates
+2019-12-08 06:57:54	Tassium	desu++
+2019-12-08 06:57:54	ayecee	demoz: weird
+2019-12-08 06:57:59	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Remote host closed the connection)
+2019-12-08 06:58:20	ZombieChicken	rage?
+2019-12-08 06:58:23	danieldg	demoz: maybe see if the upgrader has a non-interactive option? They usually do
+2019-12-08 06:58:23	Dagmar	There's some "rules" to the way a system works that you're clearly unaware of
+2019-12-08 06:58:37	Dagmar	One of them is that processes are not allowed to set environment variables in the environments of other processes
+2019-12-08 06:58:39	<--	s3nd1v0g1us (patr0clus@gateway/vpn/protonvpn/patr0clus) has quit (Quit: WeeChat 2.6)
+2019-12-08 06:58:47	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined ##linux
+2019-12-08 06:58:50	<--	MrMobius (~default@c-73-134-82-217.hsd1.va.comcast.net) has left ##linux
+2019-12-08 06:58:53	Tassium	Which is a GOOD THING
+2019-12-08 06:58:54	snackoverflow	logging out worked
+2019-12-08 06:58:54	demoz	danieldg that is nice idea, but non interactive option fail the update/upgrade process
+2019-12-08 06:58:55	Sappos	Dagmar: He missed that.
+2019-12-08 06:59:03	snackoverflow	thanks
+2019-12-08 06:59:05	desu	danieldg: usually makes it default to the uppercase answer
+2019-12-08 06:59:05	-->	sangriacobalt (sangriacob@gateway/vpn/protonvpn/houseoftards/x-33971078) has joined ##linux
+2019-12-08 06:59:07	snackoverflow	guy whose name starts with a
+2019-12-08 06:59:08	Dagmar	Sappos: It's clear he's missed a lot of stuff
+2019-12-08 06:59:09	snackoverflow	ayecee:
+2019-12-08 06:59:12	ayecee	snackoverflow: great
+2019-12-08 06:59:21	snackoverflow	:D
+2019-12-08 06:59:28	danieldg	desu, demoz: sometimes you can pass '-y' to override that
+2019-12-08 06:59:48	<--	frmus (~frmus@unaffiliated/frmus) has quit (Quit: Leaving)
+2019-12-08 06:59:52	danieldg	or explicitly call out the skipped packages
+2019-12-08 06:59:53	demoz	desu not with the pacman :) tried Syyu
+2019-12-08 06:59:54	snackoverflow	im using a train's wifi, omw to my sister's house for a birthday party
+2019-12-08 07:00:00	ZombieChicken	snackoverflow: Always remember: The only intuitive interface is the nipple; all else is learned. Life is better once you understand that.
+2019-12-08 07:00:01	Dagmar	Expect was probably treating the supplied [y/N] as a regexp
+2019-12-08 07:00:02	<--	Crocodillian (~rkitover@unaffiliated/caelum) has quit (Quit: so long, and thanks for all the fish!)
+2019-12-08 07:00:03	snackoverflow	trying to debug my site before i get there
+2019-12-08 07:00:23	-->	Crocodillian (~rkitover@unaffiliated/caelum) has joined ##linux
+2019-12-08 07:00:24	Sappos	ZombieChicken: Weird justaxposition.
+2019-12-08 07:00:25	demoz	Dagmar you might be right, i have no clue how to match the whole line :D
+2019-12-08 07:00:27	ayecee	snackoverflow: be sure to put that down so you can show up with a smile :)
+2019-12-08 07:00:47	Dagmar	demoz: You kinda have to be very careful about how you ask expect to match things
+2019-12-08 07:01:10	Dagmar	demoz: Usually I just avoid the whole regexp issue by making sure my string literals contain 0 special characters
+2019-12-08 07:01:10	demoz	Dagmar i was desperate,i tried to match the line even with dots :D
+2019-12-08 07:01:33	<--	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:01:46	Sappos	Hmm, localmodconfig has removed the SD card support ...
+2019-12-08 07:02:12	<--	redsh (kestrel@unaffiliated/redsh) has quit (Quit: "")
+2019-12-08 07:02:13	Dagmar	demoz: Yeah so the longer the string you use, the more computation it takes up.  I'm not saying you should try to shorten it to a five-character match, but just the sentence minus puctuation is going to be plenty unique ehough
+2019-12-08 07:02:15	desu	demoz: --noconfirm defaults to the capital letter
+2019-12-08 07:02:22	ZombieChicken	Sappos: Howso?
+2019-12-08 07:02:26	desu	for most things
+2019-12-08 07:02:54	-->	ackpacket (~ackpacket@unaffiliated/ackpacket) has joined ##linux
+2019-12-08 07:03:09	Dagmar	desu is definitely onto something with just telling the other tool in advance what the answers to its questions should be
+2019-12-08 07:03:30	demoz	desu you are right, and in this scenario it aborts update process :)
+2019-12-08 07:03:43	<--	trens (~trens@cpe-184-54-204-115.swo.res.rr.com) has quit (Quit: WeeChat 1.9.1)
+2019-12-08 07:04:16	snackoverflow	hat cat
+2019-12-08 07:04:18	-->	iam730 (~iam730@c-24-5-242-254.hsd1.ca.comcast.net) has joined ##linux
+2019-12-08 07:04:21	-->	redsh (kestrel@unaffiliated/redsh) has joined ##linux
+2019-12-08 07:04:35	<--	cosimone (~cosimone@2001:b07:ae5:db26:9520:741c:a5e9:2223) has quit (Ping timeout: 250 seconds)
+2019-12-08 07:04:50	demoz	Dagmar, for some reason matching part of the sentence is not working for me, at the moment i am clueless how i could send reply to this prompt :)
+2019-12-08 07:04:53	<--	ackpacket (~ackpacket@unaffiliated/ackpacket) has quit (Client Quit)
+2019-12-08 07:05:00	desu	man expect
+2019-12-08 07:05:49	<--	seven-eleven (~seven-ele@unaffiliated/seven-eleven) has left ##linux ("Leaving")
+2019-12-08 07:05:53	desu	man 1 expect even, else you will get the wrong man page if you have tlc/tk stuff installed
+2019-12-08 07:05:57	Dagmar	demoz: If it's not matching a boring literal like "the quick brown fox ate cheese" then you're doing something very wrong and need to check through the docs
+2019-12-08 07:06:33	Dagmar	Your tool might be writing to STDERR and you've only got expect listening to STDOUT
+2019-12-08 07:06:58	<--	Decobus (~quassel@c-76-112-88-95.hsd1.mi.comcast.net) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2019-12-08 07:07:10	<--	Gustavo6046 (~Gustavo60@unaffiliated/gustavo6046) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:07:11	-->	yelof (~yelof@2601:283:8003:a920:2123:115f:2ef1:a86a) has joined ##linux
+2019-12-08 07:07:21	Tassium	demoz: What's the tool that's causing that output?
+2019-12-08 07:07:31	demoz	Tassium pacman
+2019-12-08 07:08:16	--	irc: disconnected from server
+2019-12-08 07:09:02	-->	duy (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-08 07:09:02	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 07:09:02	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 07:09:02	--	Channel ##linux: 1809 nicks (0 ops, 0 voices, 1809 normals)
+2019-12-08 07:09:02	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 07:09:02	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 07:09:09	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 07:09:10	-->	krabador (~krabador@unaffiliated/krabador) has joined ##linux
+2019-12-08 07:09:16	--	You are now known as laduyhaha
+2019-12-08 07:09:19	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 07:09:30	desu	could also use pyalpm instead of trying to parse a tool expected to be used by humans
+2019-12-08 07:09:49	desu	or packagekit
+2019-12-08 07:10:25	desu	all three solutions will break your system with about the same chance
+2019-12-08 07:10:33	desu	chance/regularity
+2019-12-08 07:11:08	Dagmar	:)
+2019-12-08 07:12:41	<--	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has quit (Remote host closed the connection)
+2019-12-08 07:13:43	<--	palasso (~palasso@unaffiliated/palasso) has quit (Read error: Connection reset by peer)
+2019-12-08 07:14:03	<--	Aminder (~amine@modemcable137.62-177-173.mc.videotron.ca) has quit (Quit: Lost terminal)
+2019-12-08 07:14:32	-->	Bashing-om (~sysop@ubuntu/member/bashing-om) has joined ##linux
+2019-12-08 07:16:41	-->	fstd_ (~fstd@unaffiliated/fisted) has joined ##linux
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:20:47	-->	duy (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-08 07:20:47	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-08 07:20:47	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-08 07:20:47	--	Channel ##linux: 1809 nicks (0 ops, 0 voices, 1809 normals)
+2019-12-08 07:20:48	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-08 07:20:48	--	URL for ##linux: https://freenode.linux.community
+2019-12-08 07:20:54	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-08 07:21:26	--	You are now known as laduyhaha
+2019-12-08 07:22:36	<--	Ignacy (~Ignacy@188.113.68.31) has quit (Remote host closed the connection)
+2019-12-08 07:23:44	-->	redsh (kestrel@unaffiliated/redsh) has joined ##linux
+2019-12-08 07:25:06	-->	xrogaan (~xrogaan@unaffiliated/xrogaan) has joined ##linux
+2019-12-08 07:26:17	<--	tieinv (~username@unaffiliated/tieinv) has quit (Quit: Leaving)
+2019-12-08 07:26:26	-->	poontangmessiah (~poontangm@unaffiliated/poontangmessiah) has joined ##linux
+2019-12-08 07:26:54	-->	snowmanbamm (~snowmanba@2600:1700:abf0:1990:296b:7246:ff0a:653a) has joined ##linux
+2019-12-08 07:28:47	<--	Gnexally (~Gnexally@dockerhost.aes.pm) has quit (Read error: Connection reset by peer)
+2019-12-08 07:28:55	-->	courrier (~yoan@2pl44-h01-176-136-159-243.dsl.sta.abo.bbox.fr) has joined ##linux
+2019-12-08 07:28:57	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Ping timeout: 240 seconds)
+2019-12-08 07:30:49	<--	poontangmessiah (~poontangm@unaffiliated/poontangmessiah) has quit (Remote host closed the connection)
+2019-12-08 07:31:01	<--	akk (~akk@75-161-90-59.albq.qwest.net) has quit (Quit: +++)
+2019-12-08 07:31:10	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Read error: Connection reset by peer)
+2019-12-08 07:31:14	<--	tsaka__ (~torstein@94.66.73.249) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:31:16	-->	redbrain (~redbrain@124-155-N1.p43.customer.vsm.sh) has joined ##linux
+2019-12-08 07:31:16	-->	poontangmessiah (~poontangm@unaffiliated/poontangmessiah) has joined ##linux
+2019-12-08 07:31:30	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 07:31:51	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 07:31:58	<--	Pentode (~pentode@c-69-142-213-228.hsd1.nj.comcast.net) has quit (Ping timeout: 245 seconds)
+2019-12-08 07:32:46	-->	indistylo (~aruns_@106.51.26.248) has joined ##linux
+2019-12-08 07:37:37	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 07:37:43	-->	tsaka__ (~torstein@94.66.73.249) has joined ##linux
+2019-12-08 07:38:30	demoz	Dagmar just FYI, i managed to pass necessary options with "<<EOF" it might be dirty, but it is working :)
+2019-12-08 07:39:24	courrier	For some reason my IoT device does not manage to sync clock with NTP. I can only read systme logs and use their GUI to fix this. dmesg reports "Can't find host 0.ubuntu.pool.ntp.org: Name or service not known" but the DNS is set to 8.8.8.8 in the GUI. What other log could help understand why the ntp request fails?
+2019-12-08 07:39:28	-->	nabil_ (~nabil@105.99.49.5) has joined ##linux
+2019-12-08 07:40:21	<--	reanimus (~Organa@c-71-198-250-222.hsd1.ca.comcast.net) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:40:36	<--	NODE (~NODE@xnetx.de) has quit (Quit: Benett)
+2019-12-08 07:40:55	desu	wireshark and see what is going on?
+2019-12-08 07:41:31	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 07:41:53	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 07:42:08	courrier	I can't install anything on this device. Can I run wireshark from another computer on the same network?
+2019-12-08 07:42:10	<--	dijitol (~Thunderbi@p200300D477217400DC239EC6C01C8D9F.dip0.t-ipconnect.de) has quit (Quit: dijitol)
+2019-12-08 07:42:35	pnbeast	courrier, is this "device" a Linux device?
+2019-12-08 07:42:38	desu	that is the whole point, mitm and wireshark
+2019-12-08 07:42:39	-->	roskoe (~roskoe@host-92-6-11-191.as43234.net) has joined ##linux
+2019-12-08 07:43:11	-->	mo_bernd (~Thunderbi@2a02:8070:63b6:3c00::15a) has joined ##linux
+2019-12-08 07:43:11	-->	MacGayver (5f5be2eb@95.91.226.235) has joined ##linux
+2019-12-08 07:43:13	courrier	pnbeast: yes, apparently Ubuntu-based, but I have no ssh access
+2019-12-08 07:43:33	MacGayver	well that was an hard year :-/
+2019-12-08 07:43:52	pnbeast	What access do you have?  It doesn't sound very much like Linux if you can't install software nor get a shell.
+2019-12-08 07:44:03	-->	akemhp_ (akem@gateway/vpn/nordvpn/akem) has joined ##linux
+2019-12-08 07:44:05	<--	compdoc (~me@unaffiliated/compdoc) has quit
+2019-12-08 07:46:04	courrier	pnbeast: It is Linux. But locked since i'm not suppose to change any system parameter except from their GUI. So basically I only have the GUI in which I setup network config and export system logs (a zipped file with dmesg kern.log, syslog, networking.log and some other)
+2019-12-08 07:46:23	-->	bray90820 (~bray90820@50-83-216-195.client.mchsi.com) has joined ##linux
+2019-12-08 07:46:24	<--	akemhp (akem@gateway/vpn/nordvpn/akem) has quit (Ping timeout: 246 seconds)
+2019-12-08 07:46:57	<--	morfin (~morfin@80.83.253.84) has quit (Remote host closed the connection)
+2019-12-08 07:48:03	ayecee	had a netgear firewall like that. terribly frustrating.
+2019-12-08 07:48:44	ayecee	courrier: is it a router?
+2019-12-08 07:48:52	courrier	No it's a robot
+2019-12-08 07:48:59	ayecee	i see.
+2019-12-08 07:49:23	courrier	In particular I wonder wether the "set dns" option in the GUI actually works. Is there any Linux log that reports the selected DNS IP?
+2019-12-08 07:49:34	ayecee	nope
+2019-12-08 07:49:39	desu	just root the device
+2019-12-08 07:49:47	<--	krabador (~krabador@unaffiliated/krabador) has quit (Remote host closed the connection)
+2019-12-08 07:50:02	courrier	what is this: "Joining mDNS multicast group on interface net0.IPv4 with address 10.2.11.200"?
+2019-12-08 07:50:16	ayecee	joining a multicast group
+2019-12-08 07:50:25	ayecee	oh, wait
+2019-12-08 07:50:30	redsh	For mDNS.
+2019-12-08 07:50:38	ayecee	yup
+2019-12-08 07:50:41	-->	NODE (~NODE@xnetx.tk) has joined ##linux
+2019-12-08 07:51:49	ayecee	so queries work like "what is the address of <robotname>"
+2019-12-08 07:51:59	<--	MBS__ (~MBS@2601:282:a00:baa6::1009) has quit (Read error: Connection reset by peer)
+2019-12-08 07:52:24	-->	MBS__ (~MBS@2601:282:a00:baa6::1009) has joined ##linux
+2019-12-08 07:52:54	courrier	how is it different from avahi/zeroconf?
+2019-12-08 07:53:00	-->	oatmealraisin (~ryan@2604:2000:14c5:c1e3:97bb:5e1e:226f:6c92) has joined ##linux
+2019-12-08 07:53:08	<--	NODE (~NODE@xnetx.tk) has quit (Client Quit)
+2019-12-08 07:53:20	ayecee	it's the same
+2019-12-08 07:53:33	<--	snowmanbamm (~snowmanba@2600:1700:abf0:1990:296b:7246:ff0a:653a) has quit (Quit: snowmanbamm)
+2019-12-08 07:53:39	-->	NODE (~NODE@xnetx.tk) has joined ##linux
+2019-12-08 07:53:55	ayecee	or rather avahi and zeroconf are built on mdns
+2019-12-08 07:54:30	courrier	ah ok. The robot is meant to be contacted with itsname.local so I assume that's why this is installed
+2019-12-08 07:54:33	courrier	Anyway, that's not what I'm looking for
+2019-12-08 07:54:42	ayecee	right
+2019-12-08 07:55:52	-->	Beam_Inn (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has joined ##linux
+2019-12-08 07:56:03	<--	panosdev (~panosdev@2a02:587:9402:934:268d:6300:9043:6a6e) has quit (Quit: WeeChat 2.6)
+2019-12-08 07:56:13	<--	null1337 (~WhoAmI@c-73-243-212-197.hsd1.co.comcast.net) has quit (Quit: For Sale: Intergalactic Proton Powered Electrical Tentacled Advertising Droids)
+2019-12-08 07:56:40	-->	sw4y3r (~Android@net-2-45-250-126.cust.vodafonedsl.it) has joined ##linux
+2019-12-08 07:57:44	courrier	In a custom binary file of theirs, there's a "nameserver 10.2.11.1".... but 10.2.11.1 is my DHCP... not DNS
+2019-12-08 07:58:18	<--	sw4y3r (~Android@net-2-45-250-126.cust.vodafonedsl.it) has left ##linux
+2019-12-08 07:58:39	LevelDrain	courrier! if you use a browser, the DNS is useless...
+2019-12-08 07:58:59	MacGayver	why?
+2019-12-08 07:59:08	ayecee	is 10.2.11.1 a machine you could run tcpdump or wireshark on, to see if it's receiving dns requests?
+2019-12-08 07:59:11	<--	poontangmessiah (~poontangm@unaffiliated/poontangmessiah) has quit (Ping timeout: 276 seconds)
+2019-12-08 07:59:16	LevelDrain	MacGayver! you shut up! >:(
+2019-12-08 07:59:34	gry	that's not super helpful
+2019-12-08 07:59:37	ayecee	LevelDrain: what the hell man
+2019-12-08 07:59:58	LevelDrain	ayecee! MacGayver search by jokes... :P
+2019-12-08 08:00:03	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 08:00:15	gry	legitimate question, why is dns useless for web browsing
+2019-12-08 08:00:41	-->	[0x00] (~0x00@pool-108-30-215-173.nycmny.fios.verizon.net) has joined ##linux
+2019-12-08 08:00:41	courrier	ayecee: mmmh, that's a DHCP server from the uni so not so much. Maybe I could move this robot in a network on which I have more control though.
+2019-12-08 08:00:42	lupine	because it was designed long before the capitalists got their greasy mits on the internet
+2019-12-08 08:00:48	redsh	It's not useless. You need it to resolve domain names.
+2019-12-08 08:00:53	lupine	it's actually not bad for web browsing
+2019-12-08 08:00:53	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 08:00:55	LevelDrain	gry! I think I had already spoken this the other day, over HTTPs, through DoH, and maybe several other things.
+2019-12-08 08:01:04	lupine	for anything that needs security, on the other hand....
+2019-12-08 08:01:07	<--	de-facto (~de-facto@gateway/tor-sasl/de-facto) has quit (Quit: See you around.)
+2019-12-08 08:01:13	lupine	let's just say it was designed in a simpler, more innocent time
+2019-12-08 08:01:17	ayecee	LevelDrain: you're not making any goddamned sense.
+2019-12-08 08:01:26	akoana	courrier: is that "custom binary file of theirs" a backup of the robots config?
+2019-12-08 08:01:31	<--	NODE (~NODE@xnetx.tk) has quit
+2019-12-08 08:01:31	<--	Benett (~Benett@unaffiliated/benett) has quit (Quit:  )
+2019-12-08 08:01:37	LevelDrain	ayecee! ok. :)
+2019-12-08 08:01:52	akoana	robot's*
+2019-12-08 08:02:11	-->	pingfloyd (~pingfloyd@unaffiliated/pingfloyd) has joined ##linux
+2019-12-08 08:02:12	gry	and courrier is doing ntp clock sync not web browsing
+2019-12-08 08:02:33	gry	so i am not sure why web browsing came up as a new topic
+2019-12-08 08:03:10	-->	dcypher (~textual@ool-18bf1199.dyn.optonline.net) has joined ##linux
+2019-12-08 08:03:17	courrier	akoana: it's some file in the zip that I have exported as being "Robot's logs".... more especially a "ELF 64-bit LSB core file" from some process
+2019-12-08 08:03:22	-->	de-facto (~de-facto@gateway/tor-sasl/de-facto) has joined ##linux
+2019-12-08 08:03:48	-->	indistylo (~aruns_@106.51.26.248) has joined ##linux
+2019-12-08 08:04:15	 *	MacGayver *shuts* up loudly
+2019-12-08 08:04:32	akoana	courrier: so could it be you set the nameserver to 10.2.11.1 in the robot's config?
+2019-12-08 08:05:10	gry	MacGayver, pardon your silence, but what was hard in this year?
+2019-12-08 08:05:20	MacGayver	an 24hrs ban
+2019-12-08 08:05:28	ayecee	a core file suggests that something crashed, and that it also may not reflect the current configuration
+2019-12-08 08:05:30	gry	for yourself, or someone else?
+2019-12-08 08:05:36	MacGayver	my might
+2019-12-08 08:05:38	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Quit: Konversation terminated!)
+2019-12-08 08:06:06	MacGayver	and the hard stuff is, i dont know why exactly
+2019-12-08 08:06:18	MacGayver	some off-topic kind 'o thing
+2019-12-08 08:06:32	courrier	akoana: I've checked this so many times... definitely no. The GUI reports DNS is 8.8.8.8. I've also tried openDNS. It should not even request anything from the DHCP '10.2.11.1' since it's set to a static IP
+2019-12-08 08:06:45	-->	Benett (~Benett@unaffiliated/benett) has joined ##linux
+2019-12-08 08:06:47	-->	panosdev (~panosdev@2a02:587:9402:934:268d:6300:9043:6a6e) has joined ##linux
+2019-12-08 08:07:00	akoana	ayecee: hmm, they would "hardcode" the nameserver?
+2019-12-08 08:07:08	akoana	maybe...
+2019-12-08 08:07:14	MacGayver	why nameservers at all ?
+2019-12-08 08:07:23	MacGayver	mys tlephone number hasent changed in years
+2019-12-08 08:07:26	ayecee	akoana: no, a program crashed, and within its memory was a nameserver setting.
+2019-12-08 08:07:38	ayecee	it left a core file, and it may not be related to the current config at all.
+2019-12-08 08:07:41	akoana	ok, that
+2019-12-08 08:07:52	gry	MacGayver:  i think courrier has a robot device which has issues with clock sync over the internet because of domain resolution issues
+2019-12-08 08:08:25	gry	MacGayver: this is why he is concerned that the dns settings are not set correctly
+2019-12-08 08:08:29	MacGayver	use some battery-driven RTC, as old-school
+2019-12-08 08:08:49	MacGayver	i just meant, some kind of topic... why do we need nameservers at all ?
+2019-12-08 08:08:51	ayecee	nameservers are so we don't all have to have a file with all the hostnames on the internet
+2019-12-08 08:08:56	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:09:06	ayecee	it would be a pretty big file
+2019-12-08 08:09:07	MacGayver	it all would be easier if the ip stays the same like my telephone nunmber for decades now
+2019-12-08 08:09:14	lupine	not that big these days
+2019-12-08 08:09:34	ayecee	lupine: how do you figure
+2019-12-08 08:09:47	courrier	Yes. THe robot's doc reports it automatically udpates clock with NTP as soon as the device can reach NTP servers and the log line "Can't find host 0.ubuntu.pool.ntp.org: Name or service not known" shows it cannot... but it should because in the robot's GUI the config looks OK.
+2019-12-08 08:09:47	THE_GFR|WORK	hey everyone how do I tell which partition I want to load with grub2?  I can't tell which is my windows EFI partition is it HD0,gpt1 2 3 4 5 6 7 or 8?
+2019-12-08 08:09:50	THE_GFR|WORK	how do I tell?
+2019-12-08 08:09:51	lupine	my browser already comes with a long list of special domains that it treats differently
+2019-12-08 08:09:52	MacGayver	telephone book ?  ip adress book ?
+2019-12-08 08:09:54	MacGayver	woofo
+2019-12-08 08:09:57	THE_GFR|WORK	how do I chainload or boot it?
+2019-12-08 08:09:59	THE_GFR|WORK	I can't even tell
+2019-12-08 08:10:04	courrier	In case someone is curious here are all the system logs https://www.cjoint.com/data3/ILibh0EoRCR_log-export-2019-12-7T14-24-45.tar.gz
+2019-12-08 08:10:04	MacGayver	that is what dns is all about
+2019-12-08 08:10:04	pnbeast	MacGayver, it's hard to imagine that you'd be off topic.  Which psychotropic medication(s) are you currently using?
+2019-12-08 08:10:07	ayecee	lupine: that's still a small list compared to all the hosts.
+2019-12-08 08:10:19	lupine	which is, itself, not a very large list
+2019-12-08 08:10:27	ayecee	how do you figure
+2019-12-08 08:10:28	MacGayver	pnbeast: i can tell you that... or else i would be kicked just for the truth
+2019-12-08 08:10:34	lupine	with my fingers and toes
+2019-12-08 08:10:40	-->	NODE (~NODE@xnetx.tk) has joined ##linux
+2019-12-08 08:10:44	lupine	and also some good old-fashioned yorkshire counting words
+2019-12-08 08:10:58	lupine	but seriously, the internet's not what it was
+2019-12-08 08:10:58	<--	Net147 (~Net147@unaffiliated/net147) has quit (Quit: Quit)
+2019-12-08 08:11:10	ayecee	it sure ain't shrinking
+2019-12-08 08:11:16	lupine	but it sure is concentrating
+2019-12-08 08:11:17	MacGayver	WWW - world war web - that what it was invented for,
+2019-12-08 08:11:18	MacGayver	awww*
+2019-12-08 08:11:19	THE_GFR|WORK	how do I tell what one is correct for grub2 ?
+2019-12-08 08:11:24	THE_GFR|WORK	I am so lost and frustrated
+2019-12-08 08:11:39	lupine	I'm not *happy* about it, but I am able to see it
+2019-12-08 08:11:42	ayecee	lupine: maybe you're thinking of the list of hosts you visit, and not all the hosts on the internet.
+2019-12-08 08:11:49	lupine	no, I am definitely thinking of the latter
+2019-12-08 08:11:50	<--	hemite (~hemite@unaffiliated/hemite) has quit (Read error: Connection reset by peer)
+2019-12-08 08:11:52	jellyb	the gfr
+2019-12-08 08:11:55	jellyb	which distro?
+2019-12-08 08:11:56	ayecee	then you're bad at math.
+2019-12-08 08:12:05	-->	sand_dull (~theuser@ill.ductinmedi.com) has joined ##linux
+2019-12-08 08:12:09	lupine	that's why I use fingers and toes both
+2019-12-08 08:12:11	-->	hemite (~hemite@unaffiliated/hemite) has joined ##linux
+2019-12-08 08:12:20	sauvin	All 21 of them?
+2019-12-08 08:12:22	THE_GFR|WORK	nvme0n1p2 probably but what does grub2 think it is?
+2019-12-08 08:12:22	jellyb	what i do is install os-prober or something like this
+2019-12-08 08:12:24	lupine	:3
+2019-12-08 08:12:26	-->	Net147 (~Net147@unaffiliated/net147) has joined ##linux
+2019-12-08 08:12:36	jellyb	then grub-mkconfig scans your /boot partition
+2019-12-08 08:12:45	jellyb	it finds windows and linux kernels
+2019-12-08 08:12:45	-->	Pentode (~pentode@mobile-166-170-29-55.mycingular.net) has joined ##linux
+2019-12-08 08:12:51	jellyb	and sets up grub automagically
+2019-12-08 08:12:59	MacGayver	i look forward to some competition
+2019-12-08 08:13:11	MacGayver	they are doing the rubiks cube so fast...
+2019-12-08 08:13:26	MacGayver	i can type an bootloader+minikernel with 0 and 1 in just some minutes
+2019-12-08 08:13:48	THE_GFR|WORK	jelly: it didn't and didn't do it automatically
+2019-12-08 08:13:57	THE_GFR|WORK	I need some help
+2019-12-08 08:14:04	jellyb	what distro are you using
+2019-12-08 08:14:09	-->	wordsToLiveBy (~wordsToLi@unaffiliated/wordstoliveby) has joined ##linux
+2019-12-08 08:14:12	THE_GFR|WORK	jelly: centOS 8.x
+2019-12-08 08:14:17	jellyb	hmmm
+2019-12-08 08:14:21	MacGayver	THE_GFR|WORK , what do YOU think grub2 is ?
+2019-12-08 08:14:34	THE_GFR|WORK	MacGayver: bootloader
+2019-12-08 08:14:41	MacGayver	woot?
+2019-12-08 08:14:44	THE_GFR|WORK	what?
+2019-12-08 08:15:01	MacGayver	and it has to work out of the box for all your needs ?
+2019-12-08 08:15:13	MacGayver	sorry dude, some configuration is needed
+2019-12-08 08:15:17	gry	MacGayver, could you please add more focus?
+2019-12-08 08:15:36	THE_GFR|WORK	MacGayver: of course it does need configuration but I DO NOT KNOW WHAT GRUB IS CALLING THE PARTITION I NEED TO BOOT!
+2019-12-08 08:15:37	MacGayver	no you have to focus the question where you have ?
+2019-12-08 08:15:37	gry	he already knows that it needs more configuration - this is why he came here to ask for help
+2019-12-08 08:15:51	MacGayver	but i didnt read some question for sure
+2019-12-08 08:15:56	gry	MacGayver: so telling him "you need to configure it" is rather useless; please do not do that
+2019-12-08 08:16:06	ayecee	MacGayver has some severe packet loss
+2019-12-08 08:16:15	THE_GFR|WORK	I do not know how to tell what GRUB2 IS CALLING THE FECKING PARTITION I NEED TO BOOT!
+2019-12-08 08:16:20	THE_GFR|WORK	for Windows specifically
+2019-12-08 08:16:22	THE_GFR|WORK	how do I tell?
+2019-12-08 08:16:23	MacGayver	its because my roommate ps4'ing
+2019-12-08 08:16:25	sauvin	THE_GFR|WORK, can you identify or describe the partition you're trying to boot?
+2019-12-08 08:16:34	lupine	for windows? you might want ##windows or whatevs
+2019-12-08 08:16:42	-->	xall (~xall@mx-ll-14.207.145-52.dynamic.3bb.co.th) has joined ##linux
+2019-12-08 08:16:46	gry	THE_GFR|WORK: i know; sorry for the confusion, please see what sauvin said
+2019-12-08 08:16:47	THE_GFR|WORK	sauvin: just the Windows EFI partition so I can boot up Windows with Grub2
+2019-12-08 08:16:54	THE_GFR|WORK	gry: thanks
+2019-12-08 08:16:56	sauvin	lupine, what do eletron volts have to do with anything?
+2019-12-08 08:17:11	ayecee	...
+2019-12-08 08:17:18	THE_GFR|WORK	I don't know what grub2 is calling the partition it's HD0,GPTx and I don't know
+2019-12-08 08:17:20	MacGayver	more voltage does not mean more bits
+2019-12-08 08:17:21	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 08:17:28	ayecee	sure it does
+2019-12-08 08:17:29	sauvin	THE_GFR|WORK, does Centos boot properly?
+2019-12-08 08:17:37	-->	joebobjoe (~joebobjoe@unaffiliated/joebobjoe) has joined ##linux
+2019-12-08 08:17:42	THE_GFR|WORK	sauvin: yes
+2019-12-08 08:17:57	sauvin	THE_GFR|WORK, but not Windows?
+2019-12-08 08:18:15	MacGayver	LMAO
+2019-12-08 08:18:18	THE_GFR|WORK	sauvin: of course
+2019-12-08 08:18:24	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 08:18:29	THE_GFR|WORK	sauvin: since I do not know what grub2 is calling the partition
+2019-12-08 08:18:43	<--	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2019-12-08 08:18:46	sauvin	Hrm.... wonder what my configs say...
+2019-12-08 08:18:57	THE_GFR|WORK	it's hd0,gpt1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 but I DO NOT KNOW HOW TO TELL
+2019-12-08 08:19:00	MacGayver	no its not you, its just the problem we all have from time to dime, the loader is disabled !
+2019-12-08 08:19:20	ayecee	less caps lock please
+2019-12-08 08:19:26	ayecee	no one likes a shouter
+2019-12-08 08:19:28	<--	Forsaken87 (~quassel@2a02:908:1860:bec0:c179:63c7:fe6c:8293) has quit (Ping timeout: 252 seconds)
+2019-12-08 08:19:33	MacGayver	yikes
+2019-12-08 08:19:49	-->	kdmn (b2319ab4@178.49.154.180) has joined ##linux
+2019-12-08 08:20:06	ZombieChicken	THE_GFR|WORK: I realize it's an annoying answer, but why not try them all? Or take a good guess at which one is correct given the current disk layout. If Windows is on the first partition, I'd assume it would be hd0,gpt1, for instance
+2019-12-08 08:20:06	kdmn	are there analogs of windows search for linux?
+2019-12-08 08:20:07	ayecee	THE_GFR|WORK: which partition number is it in fdisk/gdisk/parted/gparted/etc ?
+2019-12-08 08:20:19	ZombieChicken	kdmn: What does windows search do exactly?
+2019-12-08 08:20:28	kdmn	fts
+2019-12-08 08:20:28	ZombieChicken	kdmn: and what are you wanting to do?
+2019-12-08 08:20:39	<--	pulsar12 (~pulsar12@a79-169-193-36.cpe.netcabo.pt) has quit (Quit: Leaving)
+2019-12-08 08:20:41	ayecee	kdmn: like the find command, or something else?
+2019-12-08 08:20:42	-->	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has joined ##linux
+2019-12-08 08:20:58	sauvin	THE_GFR|WORK, are you in Centos now?
+2019-12-08 08:21:01	ZombieChicken	find can work. grep -R could. Locate...
+2019-12-08 08:21:06	kdmn	windows search does text and metadata extraction, plus fts
+2019-12-08 08:21:38	sauvin	What's "fts"?
+2019-12-08 08:21:45	ZombieChicken	grep -R does a (recursive) text search. Find searches metadata. Not sure what fts is, though
+2019-12-08 08:21:46	ayecee	something rude
+2019-12-08 08:22:08	THE_GFR|WORK	sauvin: not at the moment
+2019-12-08 08:22:12	THE_GFR|WORK	hold on
+2019-12-08 08:22:15	ayecee	oh, maybe it's a different fts.
+2019-12-08 08:22:26	ayecee	i don't know what that fts is.
+2019-12-08 08:22:26	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined ##linux
+2019-12-08 08:22:39	THE_GFR|WORK	I just don't know what GRUB is calling the windows boot partition
+2019-12-08 08:22:57	kdmn	full text search
+2019-12-08 08:22:58	ayecee	THE_GFR|WORK: is it the first partition on the disk?
+2019-12-08 08:22:59	sauvin	I'm trying to find my grub configs to see if anything there might be suggestive.
+2019-12-08 08:23:02	MacGayver	its sequntial, (hd0,1)
+2019-12-08 08:23:12	ayecee	THE_GFR|WORK: if so, it's gpt1
+2019-12-08 08:23:32	-->	WesFranklin (~wesley@104.200.129.53) has joined ##linux
+2019-12-08 08:23:38	ZombieChicken	kdmn: grep does text search
+2019-12-08 08:23:44	THE_GFR|WORK	ayecee: I can't boot centOS anymore
+2019-12-08 08:23:46	THE_GFR|WORK	it brok and died
+2019-12-08 08:23:51	THE_GFR|WORK	dunno what to do
+2019-12-08 08:23:57	ayecee	neither do i
+2019-12-08 08:23:58	kdmn	grep is stupid
+2019-12-08 08:23:59	<--	MBS__ (~MBS@2601:282:a00:baa6::1009) has quit (Read error: Connection reset by peer)
+2019-12-08 08:24:01	<--	joebobjoe (~joebobjoe@unaffiliated/joebobjoe) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:24:05	ZombieChicken	kdmn: grep -Rl will give you a list of files that contain the string you're looking for
+2019-12-08 08:24:08	pnbeast	kdmn, just for your edification, people were using multiple tools to search UNIX systems long before Windows appeared.  The answer is "maybe, but who cares, because Linux has a complete set of tools plus the ability to make your own customized tools for less common needs".
+2019-12-08 08:24:26	-->	MBS__ (~MBS@2601:282:a00:baa6::1009) has joined ##linux
+2019-12-08 08:24:34	-->	Seto_Kaiba (~hunterkll@2001:470:8b06:400:215:5dff:fefb:c04) has joined ##linux
+2019-12-08 08:24:50	ayecee	kdmn: grep can do full text search, but there's no default program that does proactive full text indexing like windows search does.
+2019-12-08 08:24:50	MacGayver	if you say grep is stupid you are
+2019-12-08 08:24:54	THE_GFR|WORK	let me get back into centOS
+2019-12-08 08:25:04	<--	Hunterkll (~hunterkll@2001:470:8b06:400:215:5dff:fefb:c04) has quit (Disconnected by services)
+2019-12-08 08:25:06	kdmn	can grep look inside pdfs? don't think so
+2019-12-08 08:25:06	--	Seto_Kaiba is now known as Hunterkll
+2019-12-08 08:25:13	THE_GFR|WORK	ok so
+2019-12-08 08:25:18	THE_GFR|WORK	ayecee: how do you know?
+2019-12-08 08:25:19	ayecee	kdmn: yes, it can
+2019-12-08 08:25:20	THE_GFR|WORK	hold on
+2019-12-08 08:25:35	<--	WesFranklin (~wesley@104.200.129.53) has quit (Client Quit)
+2019-12-08 08:25:41	sauvin	Now I remember why I hated grub2.
+2019-12-08 08:25:44	pnbeast	kdmn, grep can look inside any file it can read.  So, you thought wrong.  Nice try, though - troll harder.
+2019-12-08 08:26:03	<--	Stormkeeper (~kvirc@cpc96296-lewi18-2-0-cust121.2-4.cable.virginm.net) has quit (Read error: Connection reset by peer)
+2019-12-08 08:26:12	THE_GFR|WORK	nvme0n1p2 is what fdisk -l says
+2019-12-08 08:26:15	--	MacGayver is now known as By_p
+2019-12-08 08:26:21	--	By_p is now known as By_OS_for_OS
+2019-12-08 08:26:32	THE_GFR|WORK	I do not know if that's GPT1 2 3 4 5 6 7 or 8
+2019-12-08 08:26:33	ayecee	THE_GFR|WORK: what else does fdisk -l say?
+2019-12-08 08:26:36	kdmn	do you know what is there inside a pdf file?
+2019-12-08 08:26:38	THE_GFR|WORK	or what
+2019-12-08 08:26:52	ayecee	THE_GFR|WORK: i'd think that would be gpt2
+2019-12-08 08:26:56	-->	Xenoslyce (6b4df513@gateway/web/cgi-irc/kiwiirc.com/ip.107.77.245.19) has joined ##linux
+2019-12-08 08:27:00	THE_GFR|WORK	ayecee it tells me the size of the drive and what it is but not what grub2 says it is
+2019-12-08 08:27:07	ZombieChicken	kdmn: You could also use string $FILE and grep the output of that. I'm sure that won't be annoying to work with
+2019-12-08 08:27:08	ayecee	THE_GFR|WORK: but i also wonder what's on gpt1 then
+2019-12-08 08:27:23	THE_GFR|WORK	how do you know?
+2019-12-08 08:27:29	THE_GFR|WORK	well IDK
+2019-12-08 08:27:31	ayecee	how do i know what?
+2019-12-08 08:27:40	Xenoslyce	Can someone do me a favor and help me compile the rtl8188eus driver and help enable my USB wifi adapter?
+2019-12-08 08:27:42	sauvin	That would be "I don't know", not "IDK".
+2019-12-08 08:27:45	THE_GFR|WORK	HOW DO YOU KNOW WHAT GPT1 or GPT2 or anything is?
+2019-12-08 08:27:52	ayecee	stop with the caps lock, buddy
+2019-12-08 08:27:56	THE_GFR|WORK	it does not tell you anywhere
+2019-12-08 08:27:59	ayecee	that is getting REALLY irritating.
+2019-12-08 08:28:13	gry	Xenoslyce: perhaps #linux-wireless can help?
+2019-12-08 08:28:24	Xenoslyce	there's literally a whole server for that?
+2019-12-08 08:28:25	Xenoslyce	wow
+2019-12-08 08:28:28	sauvin	I no longer have a Windows installed and so may not be very helpful here. :\
+2019-12-08 08:28:31	gry	whole channel, yes
+2019-12-08 08:28:35	ayecee	THE_GFR|WORK: gpt2 is the second gpt partition. the device name ends with p2, so it's the second partition.
+2019-12-08 08:28:39	ayecee	THE_GFR|WORK: that's how i know.
+2019-12-08 08:28:40	ZombieChicken	Xenoslyce: is it a module?
+2019-12-08 08:28:44	kdmn	pdf file contains a number of deflated text streams, and I doubt grep can deal with that
+2019-12-08 08:28:50	-->	Helenah (~s98259@unaffiliated/iveeee) has joined ##linux
+2019-12-08 08:29:03	THE_GFR|WORK	ayecee: fine
+2019-12-08 08:29:10	<--	gnupi (~gnupi@unaffiliated/gnupi) has quit (Quit: leaving)
+2019-12-08 08:29:10	sauvin	As I understood it, a PDF contains a pile of PostScript, which is a FORTH variant.
+2019-12-08 08:29:15	pnbeast	kdmn, you're deflated.
+2019-12-08 08:29:24	Xenoslyce	ZombieChicken: I assume it is but I don't know how to even compile it properly so I've been searching for a precompiled
+2019-12-08 08:29:36	sauvin	That doesn't make grep stupid, it just means grep isn't the right tool for searching PDFs.
+2019-12-08 08:29:46	kdmn	*plonk*
+2019-12-08 08:29:56	ZombieChicken	sauvin: No. PDF is derived from PS, but it isn't the same thing.
+2019-12-08 08:30:08	ZombieChicken	Xenoslyce: Do you know how to configure and compile a kernel?
+2019-12-08 08:30:10	pnbeast	Come on, he's not here for help - all he's doing is making provocative statements.
+2019-12-08 08:30:27	sauvin	Let him provoke. O:)
+2019-12-08 08:30:45	-->	puff (~user@pool-72-77-34-189.pitbpa.fios.verizon.net) has joined ##linux
+2019-12-08 08:30:53	ZombieChicken	pnbeast: You can never be turely sure of that. I prefer to assume someone is looking for legit advice and input
+2019-12-08 08:30:55	ayecee	what was provocative there?
+2019-12-08 08:30:58	Xenoslyce	ZombieChicken: I don't know much other than cross my fingers that the stock exchange answer works
+2019-12-08 08:31:02	<--	ifreund (~ifreund@b2b-94-79-138-86.unitymedia.biz) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:31:09	pnbeast	I did - I plonked him!
+2019-12-08 08:31:12	ayecee	aside from the "grep is stupid", which is mostly just stupid, not provocative.
+2019-12-08 08:31:29	THE_GFR|WORK	I guess I have to restore the hard drive to original state since apparently the Windows partition somehow got nuked
+2019-12-08 08:31:37	THE_GFR|WORK	so that's why it's all goofy
+2019-12-08 08:31:37	THE_GFR|WORK	I guess
+2019-12-08 08:31:38	Xenoslyce	inb4 #grepbad
+2019-12-08 08:31:44	pnbeast	ZombieChicken, thank you for your insightful wisdom.  I will become a better human being because of it.
+2019-12-08 08:31:52	ayecee	no one says that
+2019-12-08 08:32:14	-->	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has joined ##linux
+2019-12-08 08:32:30	ZombieChicken	Binary file the_complete_commodore_64_rom_disassembly.pdf matches <- Yep. Grep works on PDFs, though not cleanly.
+2019-12-08 08:32:52	sauvin	I believe grep would consider PDF a "binary file".
+2019-12-08 08:32:56	ZombieChicken	It does
+2019-12-08 08:33:02	<--	Flea86 (~Fleasyste@121-200-4-78.79c804.syd.nbn.aussiebb.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:33:24	THE_GFR|WORK	I guess the Windows got nuked off the drive
+2019-12-08 08:33:24	ZombieChicken	and it found a few matches out of the ~1100 PDFs I have in a certain directory
+2019-12-08 08:33:24	THE_GFR|WORK	for some fecked reason
+2019-12-08 08:33:33	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Remote host closed the connection)
+2019-12-08 08:33:33	THE_GFR|WORK	ayecee: thanks for the help
+2019-12-08 08:33:42	ZombieChicken	THE_GFR|WORK: Did you install Linux on a Windows machine?
+2019-12-08 08:34:08	-->	Ruttin_Mudder (~Ruttin_Mu@ip72-219-196-134.dc.dc.cox.net) has joined ##linux
+2019-12-08 08:34:09	-->	slack1256 (~slack1256@pc-56-153-44-190.cm.vtr.net) has joined ##linux
+2019-12-08 08:34:09	ZombieChicken	or on a drive with Windows on it?
+2019-12-08 08:34:12	THE_GFR|WORK	ZombieChicken: but I did the partitions manually in the free space apparently but it screwed up or something
+2019-12-08 08:34:15	<--	[0x00] (~0x00@pool-108-30-215-173.nycmny.fios.verizon.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:34:16	THE_GFR|WORK	I dont know
+2019-12-08 08:34:21	-->	indistylo (~aruns_@106.51.26.248) has joined ##linux
+2019-12-08 08:34:29	jim	THE_GFR|WORK, is there anything that allows you to know what anything is?
+2019-12-08 08:34:36	-->	Church- (~aleph@lobsters/Auditor/Church-) has joined ##linux
+2019-12-08 08:34:36	sauvin	You don't know?
+2019-12-08 08:34:37	<--	sand_dull (~theuser@ill.ductinmedi.com) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:34:40	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2019-12-08 08:34:52	THE_GFR|WORK	well apparently windows got nuked but IDK how
+2019-12-08 08:34:57	THE_GFR|WORK	so I will restore the drive to riginal state and start all over
+2019-12-08 08:35:05	ZombieChicken	THE_GFR|WORK: Double-check next time to make sure you don't accidently accept the 'use whole disk' option or something. If Windows is gone, that could be the reason. Not all UI are grat about protecting you
+2019-12-08 08:35:19	THE_GFR|WORK	ZombieChicken: I didn't I did the partitioning manually
+2019-12-08 08:35:26	-->	straub (~straub@unaffiliated/straub) has joined ##linux
+2019-12-08 08:35:36	THE_GFR|WORK	I'll restore the drive and fix it tomorrow
+2019-12-08 08:35:37	By_OS_for_OS	gone
+2019-12-08 08:35:38	THE_GFR|WORK	thanks everyone
+2019-12-08 08:35:54	sauvin	THE_GFR|WORK, "I don't know", not "IDK".
+2019-12-08 08:36:06	THE_GFR|WORK	-_-
+2019-12-08 08:36:06	<--	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has quit (Read error: Connection reset by peer)
+2019-12-08 08:36:12	-->	WesFranklin (~wesley@104.200.129.53) has joined ##linux
+2019-12-08 08:36:34	sauvin	When you did the partitioning, did you see that Windows was installed?
+2019-12-08 08:36:48	-->	poontangmessiah (~poontangm@unaffiliated/poontangmessiah) has joined ##linux
+2019-12-08 08:37:23	<--	MikeDebian (~none@bl12-167-178.dsl.telepac.pt) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:37:44	THE_GFR|WORK	yes but I will fix it
+2019-12-08 08:37:57	-->	audioburn (~audioburn@unaffiliated/theology) has joined ##linux
+2019-12-08 08:38:38	-->	caecias (~caecias@unaffiliated/caecias) has joined ##linux
+2019-12-08 08:38:50	akoana	courrier: this error is in your log file: system/upstart/intera-core.log:2019-12-07T13:20:23+0100: Error: _save_ntp_servers@config_window.cpp:475: invalid NTP server: 9999
+2019-12-08 08:38:51	sauvin	Did you resize the Windows partition before you created space for Linux?
+2019-12-08 08:39:25	kdmn	so any real answer?
+2019-12-08 08:39:29	<--	indistylo (~aruns_@106.51.26.248) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:39:30	-->	swex (~z@95.73.99.133) has joined ##linux
+2019-12-08 08:39:43	ayecee	kdmn: the real answer is no, there isn't something like that installed by default.
+2019-12-08 08:40:18	<--	snackoverflow (~audioburn@unaffiliated/theology) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:40:44	sauvin	kdmn, any "real answer" to what?
+2019-12-08 08:41:00	<--	WesFranklin (~wesley@104.200.129.53) has quit (Quit: WeeChat 2.6)
+2019-12-08 08:41:09	kdmn	to the file search utilities
+2019-12-08 08:41:25	<--	Xenoslyce (6b4df513@gateway/web/cgi-irc/kiwiirc.com/ip.107.77.245.19) has quit (Ping timeout: 265 seconds)
+2019-12-08 08:41:28	courrier	oh, interesting akoana, I used to setup random characters in the GUI in order to check if an error happened, let me see if this error is related to my tests, I assume so
+2019-12-08 08:41:30	ayecee	to whether there's something like windows search in linux that finds docs by full text search with handling for specific file types.
+2019-12-08 08:42:17	<--	neo4 (~Thunderbi@49-255-93-178.pool.ukrtel.net) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:42:38	<--	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has quit (Remote host closed the connection)
+2019-12-08 08:42:57	<--	caecias (~caecias@unaffiliated/caecias) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:42:57	-->	azwieg103 (~Thunderbi@66-168-56-10.static.mdsn.wi.charter.com) has joined ##linux
+2019-12-08 08:42:59	THE_GFR|WORK	thanks everyone for the help.  I did a backup of the drive first before I did anything.  I don't know why centOS didn't use the free space when I did specify it so I have to reinstall after restoring the drive so I can have Windows again...
+2019-12-08 08:43:07	<--	port1024 (~port1024@178.79.92.85) has quit (Quit: Leaving)
+2019-12-08 08:43:07	THE_GFR|WORK	not really sure but it did
+2019-12-08 08:43:13	THE_GFR|WORK	anyhow
+2019-12-08 08:43:13	THE_GFR|WORK	it'll get fixed
+2019-12-08 08:43:17	puff	I used this command to list my installed packages: sudo dpkg --get-selections > ~/packages.txt   But it listed a little under 5000 packages.  Is there a way to list just the packages that were deliberately installed, i.e. what I would do to re-create the system in a new install?
+2019-12-08 08:43:31	THE_GFR|WORK	I was having issues with Grub2 because Windows was missing anyway and I didn't know
+2019-12-08 08:43:36	By_OS_for_OS	THE_GFR|WORK.... check one thing !
+2019-12-08 08:43:42	By_OS_for_OS	linux OR windows
+2019-12-08 08:43:46	By_OS_for_OS	linux VS. Windows
+2019-12-08 08:43:51	By_OS_for_OS	chosoe your destiny
+2019-12-08 08:43:55	By_OS_for_OS	and keep up with !
+2019-12-08 08:43:57	ayecee	puff: i often use deborphan -a for that. deborphan must be installed first.
+2019-12-08 08:44:39	By_OS_for_OS	give each animal its own habit ! ond you will be fine visiting them
+2019-12-08 08:44:45	<--	kreyren[m] (~kreyrenm]@ip-62-245-98-101.net.upcbroadband.cz) has quit (Read error: Connection reset by peer)
+2019-12-08 08:44:49	ayecee	puff: it doesn't show exactly what you've described though, but pretty close
+2019-12-08 08:44:57	-->	kreyren[m] (~kreyrenm]@cst-prg-91-216.cust.vodafone.cz) has joined ##linux
+2019-12-08 08:45:35	Evidlo	can anyone tell me what terminal emulation mode I need to display this correctly? https://termbin.com/08ie
+2019-12-08 08:45:43	ayecee	ah neat, there's also apt-mark showmanual
+2019-12-08 08:45:46	By_OS_for_OS	if you have and boot windows, and them viruses can steadily open up your other partition, besides from bios-viruses was some topic some time
+2019-12-08 08:45:47	Evidlo	trying to connect to bbs.lunduke.com
+2019-12-08 08:45:57	<--	Pentode (~pentode@mobile-166-170-29-55.mycingular.net) has quit (Ping timeout: 240 seconds)
+2019-12-08 08:46:11	-->	Xenoslyce (6b4df513@gateway/web/cgi-irc/kiwiirc.com/ip.107.77.245.19) has joined ##linux
+2019-12-08 08:46:27	Xenoslyce	Anyone know how to use make on an external hard drive?
+2019-12-08 08:46:35	By_OS_for_OS	just use one disk for one os.... be nice to you !
+2019-12-08 08:46:40	ayecee	Xenoslyce: should be the same as using it on an internal drive
+2019-12-08 08:47:03	<--	well_laid_lawn (~Jean-luc@c114-77-254-225.rochd21.qld.optusnet.com.au) has quit (Ping timeout: 268 seconds)
+2019-12-08 08:47:05	By_OS_for_OS	he/she has to mount that first
+2019-12-08 08:47:17	<--	audioburn (~audioburn@unaffiliated/theology) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:47:27	-->	royal_screwup21 (89de72f9@gateway/web/cgi-irc/kiwiirc.com/ip.137.222.114.249) has joined ##linux
+2019-12-08 08:47:35	Xenoslyce	yeah I'm getting errors hold on I'm gonna build another driver instead
+2019-12-08 08:47:39	ayecee	did you just assume a binary gender? :o
+2019-12-08 08:47:54	By_OS_for_OS	void
+2019-12-08 08:48:01	puff	ayecee: Thanks.
+2019-12-08 08:48:08	Xenoslyce	I sexually identify as a Linus Torvapes >:(
+2019-12-08 08:48:38	<--	ravar5 (~ravar@2600:1700:9480:56f0:c4dd:13e:7b2f:ee37) has quit (Ping timeout: 245 seconds)
+2019-12-08 08:48:39	By_OS_for_OS	My prefered gender is Gaybrush_threepwood
+2019-12-08 08:48:42	Sappos	I don't need this yet, but I have to ask while people are available: Syslinux doesn't recognize the keyboard I have, probably because it's likely attached over USB. The system does have internal buttons on the tablet part. How likely is it that I'll be able to make Syslinux use them for selecting different boot options?
+2019-12-08 08:49:07	-->	elfmacs (~elfmacs@2400:dd01:1020:150:1fff:d6e6:16ff:eb3f) has joined ##linux
+2019-12-08 08:49:11	By_OS_for_OS	*fart*
+2019-12-08 08:49:11	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined ##linux
+2019-12-08 08:49:16	Xenoslyce	I'm really stupid though can someone hold my hand with this? https://github.com/aircrack-ng/rtl8188eus/blob/v5.3.9/README.md
+2019-12-08 08:49:20	ayecee	Sappos: pretty unlikely
+2019-12-08 08:49:27	<--	kreyren[m] (~kreyrenm]@cst-prg-91-216.cust.vodafone.cz) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:49:28	courrier	akoana: Yeah that looks like my tests. Otherwise the error should have happened several times
+2019-12-08 08:49:47	ayecee	Xenoslyce: no. how about you work through it, and ask questions about it as they come up?
+2019-12-08 08:50:02	akoana	courrier: was just a guess...
+2019-12-08 08:50:04	Xenoslyce	good idea
+2019-12-08 08:50:14	Sappos	ayecee: xev register one of the volume button as XF86AudioLowerVolume. The Windows button works by default in icewm.
+2019-12-08 08:50:15	By_OS_for_OS	if you can compile that kernel you use on some other machine, while menuconfi'gging the driver in, or manually code that
+2019-12-08 08:50:30	<--	wallfly (~wallfly@104.247.229.61) has quit (Remote host closed the connection)
+2019-12-08 08:50:45	Xenoslyce	Should I just git clone it?
+2019-12-08 08:50:47	By_OS_for_OS	touchscreen at grub screen ?
+2019-12-08 08:50:50	By_OS_for_OS	your crazy dude!
+2019-12-08 08:50:52	ayecee	clone what
+2019-12-08 08:50:58	Xenoslyce	The repo
+2019-12-08 08:50:59	courrier	akoana: good spot though :)
+2019-12-08 08:51:09	ayecee	Xenoslyce: seems like a good start
+2019-12-08 08:51:40	Xenoslyce	Alright let me drink something while it clones
+2019-12-08 08:52:05	Xenoslyce	poor guy while, must get pinged a thousand times a day
+2019-12-08 08:52:09	Xenoslyce	oh my god
+2019-12-08 08:52:24	<--	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has quit (Client Quit)
+2019-12-08 08:52:28	By_OS_for_OS	i like the times a thousand dimes
+2019-12-08 08:53:05	<--	phda (~piccaruse@mx.phda.io) has quit (Read error: Connection reset by peer)
+2019-12-08 08:53:08	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has quit (Ping timeout: 276 seconds)
+2019-12-08 08:53:23	-->	Lord_of_Life_ (~Lord@unaffiliated/lord-of-life/x-0885362) has joined ##linux
+2019-12-08 08:53:39	kdmn	you can use --depth=1 for faster cloning
+2019-12-08 08:54:03	-->	akem__ (~akem@185.217.171.51) has joined ##linux
+2019-12-08 08:54:08	-->	bbt (~sam@unaffiliated/bbt) has joined ##linux
+2019-12-08 08:54:09	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined ##linux
+2019-12-08 08:54:19	-->	clarjon1 (~clarjon1@unaffiliated/clarjon1) has joined ##linux
+2019-12-08 08:54:25	Xenoslyce	Too late
+2019-12-08 08:54:44	--	Lord_of_Life_ is now known as Lord_of_Life
+2019-12-08 08:54:57	<--	samthewildone (~sam@unaffiliated/samthewildone) has quit (Quit: WeeChat 2.2)
+2019-12-08 08:55:45	-->	phda (~piccaruse@mx.phda.io) has joined ##linux
+2019-12-08 08:55:58	puff	ayecee: This was helpful https://askubuntu.com/questions/2389/generating-list-of-manually-installed-packages-and-querying-individual-packages
+2019-12-08 08:56:06	ayecee	nice
+2019-12-08 08:56:23	<--	akemhp_ (akem@gateway/vpn/nordvpn/akem) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:56:29	Sappos	ayecee: OK, guess I'll still have to try when it's time for that, as it'd be very nice to actually have switchable boot config support. (Where switching it does not entail loading Windows and mounting the ESP there.)
+2019-12-08 08:56:59	ayecee	Sappos: would an external usb keyboard be an option?
+2019-12-08 08:57:07	-->	underkeelworkbox (singleuser@gateway/vpn/privateinternetaccess/underkeelworkbox) has joined ##linux
+2019-12-08 08:57:11	By_OS_for_OS	mounting the ESP ?
+2019-12-08 08:57:15	<--	underkeelworkbox (singleuser@gateway/vpn/privateinternetaccess/underkeelworkbox) has quit (Remote host closed the connection)
+2019-12-08 08:57:16	-->	rumpel (~rumpel@unaffiliated/rumpel) has joined ##linux
+2019-12-08 08:57:26	<--	Xenoslyce (6b4df513@gateway/web/cgi-irc/kiwiirc.com/ip.107.77.245.19) has quit (Remote host closed the connection)
+2019-12-08 08:57:41	<--	chchjesus (~chchjesus@unaffiliated/chchjesus) has quit (Ping timeout: 250 seconds)
+2019-12-08 08:59:07	Sappos	ayecee: I don't really want to grab a second keyboard. :D  Regardless, while I think we do have one somewhere, I'd likely also need to find an A to micro-B adapter for it.
+2019-12-08 08:59:18	-->	chchjesus (~chchjesus@unaffiliated/chchjesus) has joined ##linux
+2019-12-08 08:59:23	ayecee	i see
+2019-12-08 08:59:38	ayecee	would be nice to know if that option works though
+2019-12-08 08:59:38	By_OS_for_OS	fish, dont trust your cables
+2019-12-08 08:59:50	<--	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has quit (Quit: snowmanbamm)
+2019-12-08 08:59:51	ayecee	who you calling fish, fish
+2019-12-08 09:00:17	<--	tsaka__ (~torstein@94.66.73.249) has quit (Ping timeout: 240 seconds)
+2019-12-08 09:00:21	Sappos	ayecee: Well, Syslinux is very quick to install. :^D
+2019-12-08 09:00:32	ayecee	whatever works :)
+2019-12-08 09:00:33	<--	mo_bernd (~Thunderbi@2a02:8070:63b6:3c00::15a) has quit (Read error: Connection reset by peer)
+2019-12-08 09:00:35	By_OS_for_OS	so i have kinda the same problem, an old laptop with touchscreen... and i know i can only install/run some linux or own written system when haveing the keyboard first
+2019-12-08 09:00:54	By_OS_for_OS	or like having an full-blown unintended installation from windows it works
+2019-12-08 09:01:35	<--	rumpel (~rumpel@unaffiliated/rumpel) has quit (Ping timeout: 250 seconds)
+2019-12-08 09:02:13	-->	pl0nk (~pl0nk@blizzardofzeros.com) has joined ##linux
+2019-12-08 09:02:23	-->	HEX0_ (~HEX0@unaffiliated/hex0) has joined ##linux
+2019-12-08 09:02:49	By_OS_for_OS	but i havent found the right/(or have i), distribution for that old touchscreenable-laptop to install without input (unintended like in the windows version).... when its installed i have my touchscreen driver
+2019-12-08 09:03:38	-->	TheFatherMind (~TheFather@cpe-104-34-204-52.socal.res.rr.com) has joined ##linux
+2019-12-08 09:03:40	By_OS_for_OS	you have to design an unintended install for linux like possibel and a big topic on windows
+2019-12-08 09:04:08	-->	Flea86 (~Fleasyste@121-200-4-78.79c804.syd.nbn.aussiebb.net) has joined ##linux
+2019-12-08 09:04:11	<--	HEX0 (~HEX0@unaffiliated/hex0) has quit (Ping timeout: 250 seconds)
+2019-12-08 09:04:39	-->	Clarth (~Clarth@2a01:4f8:c2c:114e::1) has joined ##linux
+2019-12-08 09:04:42	-->	kreyren[m] (~kreyrenm]@ip-62-245-98-101.net.upcbroadband.cz) has joined ##linux
+2019-12-08 09:04:57	<--	br0lly (~doctor@ip-111-164.ip4.balmont.pl) has quit (Ping timeout: 240 seconds)
+2019-12-08 09:05:01	By_OS_for_OS	just hope that your bios boots up that device, and it automatically formats the first drive, and install there.... without any further input needed, like designed with all driver packegaes integrated.. and after that you can use your new Os/GUI/with that touchscreen
+2019-12-08 09:05:37	<--	mluser-home (~mluser-ho@cpe-107-11-253-108.columbus.res.rr.com) has quit (Quit: Yikes!)
+2019-12-08 09:07:00	-->	snowmanbamm (~snowmanba@2600:1700:7c00:10e0:a817:fa96:48cd:fc14) has joined ##linux
+2019-12-08 09:07:04	<--	NODE (~NODE@xnetx.tk) has quit (Quit: changing servers)
+2019-12-08 09:07:39	-->	NODE (~NODE@xnetx.tk) has joined ##linux
+2019-12-08 09:07:44	--	TheFatherMind is now known as TheFatherChristm
+2019-12-08 09:07:57	akoana	courrier: could you try to set the ntp server to 82.64.45.50 ? (that's one ip address of 0.pool.ntp.org)
+2019-12-08 09:08:05	--	TheFatherChristm is now known as TheFatherXMas
+2019-12-08 09:08:11	By_OS_for_OS	kind of linux-live-cd on usb with touchscreen-driver integrated, yes... but not on boot part... that has to be go automatically (boots in 10 seconds)
