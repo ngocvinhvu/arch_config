@@ -231,8 +231,8 @@ bindsym Mod4+shift+f exec firefox --private-window && sleep 0.2  && i3-msg move 
 bindsym Mod4+r exec urxvt -e ranger
 bindsym Mod4+l exec libreoffice
 bindsym Mod4+g exec goldendict 
-bindsym Mod4+i exec ibus-daemon -d
-# bindsym Mod4+i exec ibus-daemon -d --xim #ibus on Urxvt
+# bindsym Mod4+i exec ibus-daemon -d
+bindsym Mod4+i exec ibus-daemon -d --xim #ibus on Urxvt
 bindsym Mod4+Shift+i exec ibus exit
 
 # Chromium
@@ -287,7 +287,7 @@ focus_follows_mouse no
 # workspace_auto_back_and_forth yes
 
 # Turn off screen
-bindsym Mod1+Next exec --no-startup-id turnoff_screen.sh
+bindsym Mod4+Next exec --no-startup-id turnoff_screen.sh
 
 # ranger
 # for_window [title="ranger" class="URxvt"] floating enable
