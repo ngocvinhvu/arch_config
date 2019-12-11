@@ -1,3 +1,7 @@
+! for urxvt 
+! 
+!
+!
 rofi.color-window: argb:ee273238, #273238, argb:3a1e2529
 !rofi.color-window:      #000, #000, #000
 rofi.color-normal: argb:00273238, #c1c1c1, argb:3a273238, #394249, #ffffff
@@ -35,6 +39,9 @@ URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
 URxvt.foreground:                       #18B218
+!#b83d49
+!#B2B2B2
+!#18B218
 URxvt.background:                       #000000
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
@@ -103,5 +110,5 @@ URxvt*color15: #FFFFFF
 URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
-!URxvt.transparent: true
-!URxvt.shading:20
+! Rxvt.transparent: true
+! URxvt.shading:10
