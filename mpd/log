@@ -321,3 +321,3336 @@ Nov 25 20:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No suc
 Nov 25 20:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
 Nov 25 20:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
 Nov 25 20:05 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 20:08 : player: played "nightcore/「Nightcore」→  Just Give Me a Reason (Switching Vocals).mp3"
+Nov 25 20:10 : player: played "Hamilton/Ten Duel Commandments - Anthony Ramos_ L [Lossless_FLAC].flac"
+Nov 25 20:13 : player: played "nightcore/「Nightcore」→  Just Give Me a Reason (Switching Vocals).mp3"
+Nov 25 20:15 : player: played "Hamilton/Ten Duel Commandments - Anthony Ramos_ L [Lossless_FLAC].flac"
+Nov 25 20:17 : client: [2] opened from 127.0.0.1:45868
+Nov 25 20:17 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 20:21 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 20:21 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 20:25 : client: [2] closed
+Nov 25 20:25 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:29 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:30 : client: [1] closed
+Nov 25 20:30 : exception: Failed to play on "pulse audio" (pulse): suspended
+Nov 25 20:33 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:37 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:41 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:45 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 20:48 : client: [3] opened from 127.0.0.1:46802
+Nov 25 20:50 : client: [3] closed
+Nov 25 20:57 : client: [4] opened from 127.0.0.1:47314
+Nov 25 20:57 : client: [4] closed
+Nov 25 20:57 : client: [5] opened from 127.0.0.1:47320
+Nov 25 20:57 : client: [5] closed
+Nov 25 20:57 : client: [6] opened from 127.0.0.1:47324
+Nov 25 20:57 : client: [6] closed
+Nov 25 20:57 : client: [7] opened from 127.0.0.1:47328
+Nov 25 20:57 : client: [7] closed
+Nov 25 20:57 : client: [8] opened from 127.0.0.1:47332
+Nov 25 20:57 : client: [8] closed
+Nov 25 20:59 : client: [9] opened from 127.0.0.1:47342
+Nov 25 20:59 : client: [9] closed
+Nov 25 21:00 : client: [10] opened from 127.0.0.1:47348
+Nov 25 21:00 : client: [10] closed
+Nov 25 21:00 : client: [11] opened from 127.0.0.1:47354
+Nov 25 21:00 : client: [11] closed
+Nov 25 21:03 : client: [12] opened from 127.0.0.1:47370
+Nov 25 21:03 : client: [12] closed
+Nov 25 21:03 : client: [13] opened from 127.0.0.1:47376
+Nov 25 21:03 : client: [13] closed
+Nov 25 21:03 : client: [14] opened from 127.0.0.1:47382
+Nov 25 21:03 : client: [14] closed
+Nov 25 21:03 : client: [15] opened from 127.0.0.1:47388
+Nov 25 21:03 : client: [15] closed
+Nov 25 21:03 : client: [16] opened from 127.0.0.1:47394
+Nov 25 21:03 : client: [16] closed
+Nov 25 21:03 : client: [17] opened from 127.0.0.1:47398
+Nov 25 21:03 : client: [17] closed
+Nov 25 21:03 : client: [18] opened from 127.0.0.1:47402
+Nov 25 21:03 : client: [18] closed
+Nov 25 21:03 : client: [19] opened from 127.0.0.1:47406
+Nov 25 21:03 : client: [19] closed
+Nov 25 21:03 : client: [20] opened from 127.0.0.1:47410
+Nov 25 21:03 : client: [20] closed
+Nov 25 21:03 : client: [21] opened from 127.0.0.1:47414
+Nov 25 21:03 : client: [21] closed
+Nov 25 21:03 : client: [22] opened from 127.0.0.1:47418
+Nov 25 21:03 : client: [22] closed
+Nov 25 21:04 : client: [23] opened from 127.0.0.1:47446
+Nov 25 21:04 : client: [23] closed
+Nov 25 21:04 : client: [24] opened from 127.0.0.1:47456
+Nov 25 21:04 : client: [24] closed
+Nov 25 21:05 : client: [25] opened from 127.0.0.1:47462
+Nov 25 21:05 : client: [25] closed
+Nov 25 21:05 : client: [26] opened from 127.0.0.1:47468
+Nov 25 21:05 : client: [26] closed
+Nov 25 21:05 : client: [27] opened from 127.0.0.1:47474
+Nov 25 21:05 : client: [27] closed
+Nov 25 21:05 : client: [28] opened from 127.0.0.1:47480
+Nov 25 21:05 : client: [28] closed
+Nov 25 21:07 : client: [29] opened from 127.0.0.1:47506
+Nov 25 21:07 : client: [29] closed
+Nov 25 21:07 : client: [30] opened from 127.0.0.1:47512
+Nov 25 21:07 : client: [30] closed
+Nov 25 21:07 : client: [31] opened from 127.0.0.1:47518
+Nov 25 21:07 : client: [31] closed
+Nov 25 21:09 : client: [32] opened from 127.0.0.1:47526
+Nov 25 21:09 : client: [32] closed
+Nov 25 21:11 : client: [33] opened from 127.0.0.1:47562
+Nov 25 21:11 : client: [33] closed
+Nov 25 21:11 : client: [34] opened from 127.0.0.1:47568
+Nov 25 21:11 : client: [34] closed
+Nov 25 21:12 : client: [35] opened from 127.0.0.1:47574
+Nov 25 21:12 : client: [35] closed
+Nov 25 21:12 : client: [36] opened from 127.0.0.1:47580
+Nov 25 21:12 : client: [36] closed
+Nov 25 21:13 : client: [37] opened from 127.0.0.1:47584
+Nov 25 21:13 : client: [37] closed
+Nov 25 21:13 : client: [38] opened from 127.0.0.1:47590
+Nov 25 21:13 : client: [38] closed
+Nov 25 21:13 : client: [39] opened from 127.0.0.1:47596
+Nov 25 21:13 : client: [39] closed
+Nov 25 21:13 : client: [40] opened from 127.0.0.1:47602
+Nov 25 21:13 : client: [40] closed
+Nov 25 21:14 : client: [41] opened from 127.0.0.1:47630
+Nov 25 21:14 : client: [42] opened from 127.0.0.1:47640
+Nov 25 21:14 : client: [42] closed
+Nov 25 21:15 : client: [43] opened from 127.0.0.1:47646
+Nov 25 21:15 : client: [43] closed
+Nov 25 21:15 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 21:15 : client: [44] opened from 127.0.0.1:47652
+Nov 25 21:15 : client: [44] closed
+Nov 25 21:16 : client: [45] opened from 127.0.0.1:47658
+Nov 25 21:16 : client: [45] closed
+Nov 25 21:16 : client: [46] opened from 127.0.0.1:47664
+Nov 25 21:16 : client: [46] closed
+Nov 25 21:16 : client: [47] opened from 127.0.0.1:47670
+Nov 25 21:16 : client: [47] closed
+Nov 25 21:16 : client: [48] opened from 127.0.0.1:47676
+Nov 25 21:16 : client: [48] closed
+Nov 25 21:16 : client: [49] opened from 127.0.0.1:47682
+Nov 25 21:16 : client: [49] closed
+Nov 25 21:16 : client: [50] opened from 127.0.0.1:47686
+Nov 25 21:16 : client: [50] closed
+Nov 25 21:16 : client: [51] opened from 127.0.0.1:47690
+Nov 25 21:16 : client: [51] closed
+Nov 25 21:16 : client: [52] opened from 127.0.0.1:47694
+Nov 25 21:16 : client: [52] closed
+Nov 25 21:16 : client: [53] opened from 127.0.0.1:47698
+Nov 25 21:16 : client: [53] closed
+Nov 25 21:17 : client: [54] opened from 127.0.0.1:47702
+Nov 25 21:17 : client: [54] closed
+Nov 25 21:17 : client: [55] opened from 127.0.0.1:47708
+Nov 25 21:17 : client: [55] closed
+Nov 25 21:17 : client: [56] opened from 127.0.0.1:47712
+Nov 25 21:17 : client: [56] closed
+Nov 25 21:17 : client: [57] opened from 127.0.0.1:47716
+Nov 25 21:17 : client: [57] closed
+Nov 25 21:17 : client: [58] opened from 127.0.0.1:47720
+Nov 25 21:17 : client: [58] closed
+Nov 25 21:17 : client: [59] opened from 127.0.0.1:47724
+Nov 25 21:17 : client: [59] closed
+Nov 25 21:17 : client: [60] opened from 127.0.0.1:47730
+Nov 25 21:17 : client: [60] closed
+Nov 25 21:17 : client: [61] opened from 127.0.0.1:47736
+Nov 25 21:17 : client: [61] closed
+Nov 25 21:17 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 21:17 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 21:18 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 25 21:18 : client: [62] opened from 127.0.0.1:47742
+Nov 25 21:18 : client: [62] closed
+Nov 25 21:19 : client: [63] opened from 127.0.0.1:47748
+Nov 25 21:19 : client: [63] closed
+Nov 25 21:19 : client: [64] opened from 127.0.0.1:47754
+Nov 25 21:19 : client: [64] closed
+Nov 25 21:19 : client: [65] opened from 127.0.0.1:47758
+Nov 25 21:19 : client: [65] closed
+Nov 25 21:19 : client: [66] opened from 127.0.0.1:47762
+Nov 25 21:19 : client: [66] closed
+Nov 25 21:19 : client: [67] opened from 127.0.0.1:47770
+Nov 25 21:19 : client: [67] closed
+Nov 25 21:19 : client: [68] opened from 127.0.0.1:47774
+Nov 25 21:19 : client: [68] closed
+Nov 25 21:19 : client: [69] opened from 127.0.0.1:47778
+Nov 25 21:19 : client: [69] closed
+Nov 25 21:19 : client: [70] opened from 127.0.0.1:47782
+Nov 25 21:19 : client: [70] closed
+Nov 25 21:19 : client: [71] opened from 127.0.0.1:47786
+Nov 25 21:19 : client: [71] closed
+Nov 25 21:19 : client: [72] opened from 127.0.0.1:47790
+Nov 25 21:19 : client: [72] closed
+Nov 25 21:19 : client: [73] opened from 127.0.0.1:47794
+Nov 25 21:19 : client: [73] closed
+Nov 25 21:19 : client: [74] opened from 127.0.0.1:47798
+Nov 25 21:19 : client: [74] closed
+Nov 25 21:19 : client: [75] opened from 127.0.0.1:47802
+Nov 25 21:19 : client: [75] closed
+Nov 25 21:19 : client: [76] opened from 127.0.0.1:47806
+Nov 25 21:19 : client: [76] closed
+Nov 25 21:19 : client: [77] opened from 127.0.0.1:47810
+Nov 25 21:19 : client: [77] closed
+Nov 25 21:19 : client: [78] opened from 127.0.0.1:47814
+Nov 25 21:19 : client: [78] closed
+Nov 25 21:19 : client: [79] opened from 127.0.0.1:47818
+Nov 25 21:19 : client: [79] closed
+Nov 25 21:19 : client: [80] opened from 127.0.0.1:47822
+Nov 25 21:19 : client: [80] closed
+Nov 25 21:19 : client: [81] opened from 127.0.0.1:47826
+Nov 25 21:19 : client: [81] closed
+Nov 25 21:19 : client: [82] opened from 127.0.0.1:47830
+Nov 25 21:19 : client: [82] closed
+Nov 25 21:19 : client: [83] opened from 127.0.0.1:47834
+Nov 25 21:19 : client: [83] closed
+Nov 25 21:19 : client: [84] opened from 127.0.0.1:47838
+Nov 25 21:19 : client: [84] closed
+Nov 25 21:19 : client: [85] opened from 127.0.0.1:47842
+Nov 25 21:19 : client: [85] closed
+Nov 25 21:19 : client: [86] opened from 127.0.0.1:47846
+Nov 25 21:19 : client: [86] closed
+Nov 25 21:19 : client: [87] opened from 127.0.0.1:47850
+Nov 25 21:19 : client: [87] closed
+Nov 25 21:19 : client: [88] opened from 127.0.0.1:47854
+Nov 25 21:19 : client: [88] closed
+Nov 25 21:19 : client: [89] opened from 127.0.0.1:47858
+Nov 25 21:19 : client: [89] closed
+Nov 25 21:19 : client: [90] opened from 127.0.0.1:47862
+Nov 25 21:19 : client: [90] closed
+Nov 25 21:19 : client: [91] opened from 127.0.0.1:47866
+Nov 25 21:19 : client: [91] closed
+Nov 25 21:19 : client: [92] opened from 127.0.0.1:47870
+Nov 25 21:19 : client: [92] closed
+Nov 25 21:19 : client: [93] opened from 127.0.0.1:47874
+Nov 25 21:19 : client: [93] closed
+Nov 25 21:19 : client: [94] opened from 127.0.0.1:47878
+Nov 25 21:19 : client: [94] closed
+Nov 25 21:19 : client: [95] opened from 127.0.0.1:47882
+Nov 25 21:19 : client: [95] closed
+Nov 25 21:19 : client: [96] opened from 127.0.0.1:47886
+Nov 25 21:19 : client: [96] closed
+Nov 25 21:19 : client: [97] opened from 127.0.0.1:47890
+Nov 25 21:19 : client: [97] closed
+Nov 25 21:19 : client: [98] opened from 127.0.0.1:47894
+Nov 25 21:19 : client: [98] closed
+Nov 25 21:19 : client: [99] opened from 127.0.0.1:47898
+Nov 25 21:19 : client: [99] closed
+Nov 25 21:19 : client: [100] opened from 127.0.0.1:47902
+Nov 25 21:19 : client: [100] closed
+Nov 25 21:19 : client: [101] opened from 127.0.0.1:47906
+Nov 25 21:19 : client: [101] closed
+Nov 25 21:19 : client: [102] opened from 127.0.0.1:47910
+Nov 25 21:19 : client: [102] closed
+Nov 25 21:19 : client: [103] opened from 127.0.0.1:47914
+Nov 25 21:19 : client: [103] closed
+Nov 25 21:19 : client: [104] opened from 127.0.0.1:47918
+Nov 25 21:19 : client: [104] closed
+Nov 25 21:19 : client: [105] opened from 127.0.0.1:47922
+Nov 25 21:19 : client: [105] closed
+Nov 25 21:19 : client: [106] opened from 127.0.0.1:47926
+Nov 25 21:19 : client: [106] closed
+Nov 25 21:19 : client: [107] opened from 127.0.0.1:47930
+Nov 25 21:19 : client: [107] closed
+Nov 25 21:19 : client: [108] opened from 127.0.0.1:47934
+Nov 25 21:19 : client: [108] closed
+Nov 25 21:19 : client: [109] opened from 127.0.0.1:47938
+Nov 25 21:19 : client: [109] closed
+Nov 25 21:19 : client: [110] opened from 127.0.0.1:47942
+Nov 25 21:19 : client: [110] closed
+Nov 25 21:19 : client: [111] opened from 127.0.0.1:47946
+Nov 25 21:19 : client: [111] closed
+Nov 25 21:19 : client: [112] opened from 127.0.0.1:47950
+Nov 25 21:19 : client: [112] closed
+Nov 25 21:19 : client: [113] opened from 127.0.0.1:47954
+Nov 25 21:19 : client: [113] closed
+Nov 25 21:19 : client: [114] opened from 127.0.0.1:47958
+Nov 25 21:19 : client: [114] closed
+Nov 25 21:19 : client: [115] opened from 127.0.0.1:47962
+Nov 25 21:19 : client: [115] closed
+Nov 25 21:19 : client: [116] opened from 127.0.0.1:47966
+Nov 25 21:19 : client: [116] closed
+Nov 25 21:19 : client: [117] opened from 127.0.0.1:47970
+Nov 25 21:19 : client: [117] closed
+Nov 25 21:19 : client: [118] opened from 127.0.0.1:47974
+Nov 25 21:19 : client: [118] closed
+Nov 25 21:19 : client: [119] opened from 127.0.0.1:47978
+Nov 25 21:19 : client: [119] closed
+Nov 25 21:20 : client: [41] closed
+Nov 25 21:20 : client: [120] opened from 127.0.0.1:47982
+Nov 25 21:20 : client: [120] closed
+Nov 25 21:20 : client: [121] opened from 127.0.0.1:47986
+Nov 25 21:20 : client: [121] closed
+Nov 25 21:24 : player: played "Sia - The Best Songs/Sia - Broken Glass .mp3"
+Nov 25 21:24 : client: [122] opened from 127.0.0.1:48074
+Nov 25 21:24 : client: [122] closed
+Nov 25 21:24 : client: [123] opened from 127.0.0.1:48078
+Nov 25 21:24 : client: [123] closed
+Nov 25 21:27 : client: [124] opened from 127.0.0.1:48148
+Nov 25 21:27 : client: [124] closed
+Nov 25 21:27 : player: played "Sia - The Best Songs/Sia - California Dreamin' .mp3"
+Nov 25 21:29 : client: [125] opened from 127.0.0.1:48160
+Nov 25 21:29 : client: [125] closed
+Nov 25 21:29 : client: [126] opened from 127.0.0.1:48166
+Nov 25 21:29 : client: [126] closed
+Nov 25 21:29 : client: [127] opened from 127.0.0.1:48172
+Nov 25 21:29 : client: [127] closed
+Nov 25 21:29 : client: [128] opened from 127.0.0.1:48178
+Nov 25 21:29 : client: [128] closed
+Nov 25 21:29 : client: [129] opened from 127.0.0.1:48184
+Nov 25 21:29 : client: [129] closed
+Nov 25 21:29 : client: [130] opened from 127.0.0.1:48190
+Nov 25 21:29 : client: [130] closed
+Nov 25 21:29 : client: [131] opened from 127.0.0.1:48196
+Nov 25 21:29 : client: [131] closed
+Nov 25 21:29 : client: [132] opened from 127.0.0.1:48202
+Nov 25 21:29 : client: [132] closed
+Nov 25 21:29 : client: [133] opened from 127.0.0.1:48206
+Nov 25 21:29 : client: [133] closed
+Nov 25 21:30 : client: [134] opened from 127.0.0.1:48218
+Nov 25 21:30 : client: [134] closed
+Nov 25 21:30 : client: [135] opened from 127.0.0.1:48224
+Nov 25 21:30 : client: [135] closed
+Nov 25 21:30 : client: [136] opened from 127.0.0.1:48228
+Nov 25 21:30 : client: [136] closed
+Nov 25 21:31 : player: played "Sia - The Best Songs/Sia - Chandelier .mp3"
+Nov 25 21:35 : player: played "Sia - The Best Songs/Sia - Chandelier (Piano Version) .mp3"
+Nov 25 21:39 : player: played "Sia - The Best Songs/Sia - Cheap Thrills .mp3"
+Nov 25 21:41 : client: [137] opened from 127.0.0.1:48366
+Nov 25 21:41 : client: [137] closed
+Nov 25 21:42 : client: [138] opened from 127.0.0.1:48374
+Nov 25 21:42 : client: [138] closed
+Nov 25 21:42 : client: [139] opened from 127.0.0.1:48380
+Nov 25 21:42 : client: [139] closed
+Nov 25 21:42 : client: [140] opened from 127.0.0.1:48386
+Nov 25 21:42 : client: [140] closed
+Nov 25 21:43 : player: played "Sia - The Best Songs/Sia - Clap Your Hands .mp3"
+Nov 25 21:44 : client: [141] opened from 127.0.0.1:48444
+Nov 25 21:44 : client: [141] closed
+Nov 25 21:44 : client: [142] opened from 127.0.0.1:48450
+Nov 25 21:44 : client: [142] closed
+Nov 25 21:46 : client: [143] opened from 127.0.0.1:48518
+Nov 25 21:46 : client: [143] closed
+Nov 25 21:47 : client: [144] opened from 127.0.0.1:48524
+Nov 25 21:47 : client: [144] closed
+Nov 25 21:47 : player: played "Sia - The Best Songs/Sia - Elastic Heart .mp3"
+Nov 25 21:47 : client: [145] opened from 127.0.0.1:48534
+Nov 25 21:47 : client: [145] closed
+Nov 25 21:48 : client: [146] opened from 127.0.0.1:48540
+Nov 25 21:48 : client: [146] closed
+Nov 25 21:50 : client: [147] opened from 127.0.0.1:48556
+Nov 25 21:50 : client: [147] closed
+Nov 25 21:51 : client: [148] opened from 127.0.0.1:48562
+Nov 25 21:51 : client: [148] closed
+Nov 25 21:51 : player: played "Sia - The Best Songs/Sia - Elastic Heart (Piano Version) .mp3"
+Nov 25 21:51 : client: [149] opened from 127.0.0.1:48568
+Nov 25 21:51 : client: [149] closed
+Nov 25 21:51 : client: [150] opened from 127.0.0.1:48574
+Nov 25 21:51 : client: [150] closed
+Nov 25 21:52 : client: [151] opened from 127.0.0.1:48580
+Nov 25 21:52 : client: [151] closed
+Nov 25 21:54 : client: [152] opened from 127.0.0.1:48620
+Nov 25 21:54 : client: [152] closed
+Nov 25 21:55 : client: [153] opened from 127.0.0.1:48626
+Nov 25 21:55 : client: [153] closed
+Nov 25 21:55 : client: [154] opened from 127.0.0.1:48632
+Nov 25 21:55 : client: [154] closed
+Nov 25 21:55 : player: played "Sia - The Best Songs/Sia - Fire Meet Gasoline .mp3"
+Nov 25 21:58 : player: played "Sia - The Best Songs/Sia - Footprints .mp3"
+Nov 25 22:02 : player: played "Sia - The Best Songs/Sia - I Go To Sleep .mp3"
+Nov 25 22:05 : client: [155] opened from 127.0.0.1:48788
+Nov 25 22:05 : client: [155] closed
+Nov 25 22:06 : player: played "Sia - The Best Songs/Sia - Move Your Body .mp3"
+Nov 25 22:10 : player: played "Sia - The Best Songs/Sia - One Million Bullets .mp3"
+Nov 25 22:11 : client: [156] opened from 127.0.0.1:48882
+Nov 25 22:11 : client: [156] closed
+Nov 25 22:11 : client: [157] opened from 127.0.0.1:48886
+Nov 25 22:11 : client: [157] closed
+Nov 25 22:13 : client: [158] opened from 127.0.0.1:48994
+Nov 25 22:13 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 22:13 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 22:13 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 25 22:14 : player: played "Sia - The Best Songs/Sia - Reaper .mp3"
+Nov 25 22:18 : player: played "Sia - The Best Songs/Sia - Salted Wound (From The Fifty Shades Of Grey Soundtrack) .mp3"
+Nov 25 22:20 : player: played "Sia - The Best Songs/Sia - Sweet Design .mp3"
+Nov 25 22:21 : client: [159] opened from 127.0.0.1:49156
+Nov 25 22:21 : client: [159] closed
+Nov 25 22:22 : client: [160] opened from 127.0.0.1:49162
+Nov 25 22:22 : client: [160] closed
+Nov 25 22:22 : client: [161] opened from 127.0.0.1:49168
+Nov 25 22:22 : client: [161] closed
+Nov 25 22:22 : client: [162] opened from 127.0.0.1:49174
+Nov 25 22:22 : client: [162] closed
+Nov 25 22:26 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Nov 25 22:27 : client: [163] opened from 127.0.0.1:49294
+Nov 25 22:27 : client: [163] closed
+Nov 25 22:28 : client: [164] opened from 127.0.0.1:49300
+Nov 25 22:28 : client: [164] closed
+Nov 25 22:28 : client: [165] opened from 127.0.0.1:49306
+Nov 25 22:28 : client: [165] closed
+Nov 25 22:30 : client: [166] opened from 127.0.0.1:49330
+Nov 25 22:30 : client: [166] closed
+Nov 25 22:31 : player: played "curtainCall/Eminem - Criminal.mp3"
+Nov 25 22:34 : client: [167] opened from 127.0.0.1:49372
+Nov 25 22:34 : client: [167] closed
+Nov 25 22:35 : client: [168] opened from 127.0.0.1:49390
+Nov 25 22:35 : client: [168] closed
+Nov 25 22:37 : client: [169] opened from 127.0.0.1:49408
+Nov 25 22:37 : client: [169] closed
+Nov 25 22:37 : client: [170] opened from 127.0.0.1:49414
+Nov 25 22:37 : client: [170] closed
+Nov 25 22:37 : player: played "curtainCall/Eminem - Dead Wrong.mp3"
+Nov 25 22:40 : client: [171] opened from 127.0.0.1:49552
+Nov 25 22:40 : client: [171] closed
+Nov 25 22:40 : client: [172] opened from 127.0.0.1:49560
+Nov 25 22:40 : client: [172] closed
+Nov 25 22:40 : client: [173] opened from 127.0.0.1:49564
+Nov 25 22:40 : client: [173] closed
+Nov 25 22:40 : client: [174] opened from 127.0.0.1:49568
+Nov 25 22:40 : client: [174] closed
+Nov 25 22:40 : client: [175] opened from 127.0.0.1:49576
+Nov 25 22:40 : client: [175] closed
+Nov 25 22:40 : client: [176] opened from 127.0.0.1:49592
+Nov 25 22:40 : client: [176] closed
+Nov 25 22:40 : client: [177] opened from 127.0.0.1:49596
+Nov 25 22:40 : client: [177] closed
+Nov 25 22:40 : client: [178] opened from 127.0.0.1:49600
+Nov 25 22:40 : client: [178] closed
+Nov 25 22:40 : client: [179] opened from 127.0.0.1:49604
+Nov 25 22:40 : client: [179] closed
+Nov 25 22:40 : client: [180] opened from 127.0.0.1:49608
+Nov 25 22:40 : client: [180] closed
+Nov 25 22:41 : player: played "curtainCall/Eminem - FACK.mp3"
+Nov 25 22:45 : player: played "curtainCall/Eminem - Guilty Conscience.mp3"
+Nov 25 22:45 : client: [181] opened from 127.0.0.1:49720
+Nov 25 22:45 : client: [181] closed
+Nov 25 22:45 : player: played "curtainCall/Eminem - Intro.mp3"
+Nov 25 22:46 : client: [182] opened from 127.0.0.1:49726
+Nov 25 22:46 : client: [182] closed
+Nov 25 22:46 : client: [183] opened from 127.0.0.1:49732
+Nov 25 22:46 : client: [183] closed
+Nov 25 22:48 : client: [184] opened from 127.0.0.1:49748
+Nov 25 22:48 : client: [184] closed
+Nov 25 22:49 : player: played "curtainCall/Eminem - Just Don't Give a F_k.mp3"
+Nov 25 22:53 : player: played "curtainCall/Eminem - Just Lose It.mp3"
+Nov 25 22:57 : client: [185] opened from 127.0.0.1:49944
+Nov 25 22:57 : client: [185] closed
+Nov 25 22:57 : client: [186] opened from 127.0.0.1:49950
+Nov 25 22:57 : client: [186] closed
+Nov 25 22:57 : client: [187] opened from 127.0.0.1:49956
+Nov 25 22:57 : client: [187] closed
+Nov 25 22:57 : client: [188] opened from 127.0.0.1:49962
+Nov 25 22:57 : client: [188] closed
+Nov 25 22:58 : player: played "curtainCall/Eminem - Kill You.mp3"
+Nov 25 22:58 : client: [189] opened from 127.0.0.1:49974
+Nov 25 22:58 : client: [189] closed
+Nov 25 23:00 : client: [190] opened from 127.0.0.1:49992
+Nov 25 23:00 : client: [190] closed
+Nov 25 23:03 : player: played "curtainCall/Eminem - Like Toy Soldiers.mp3"
+Nov 25 23:08 : player: played "curtainCall/Eminem - Lose Yourself.mp3"
+Nov 25 23:11 : client: [191] opened from 127.0.0.1:50182
+Nov 25 23:11 : client: [191] closed
+Nov 25 23:12 : player: played "curtainCall/Eminem - Mockingbird.mp3"
+Nov 25 23:15 : client: [192] opened from 127.0.0.1:50226
+Nov 25 23:15 : client: [192] closed
+Nov 25 23:16 : client: [193] opened from 127.0.0.1:50232
+Nov 25 23:16 : client: [193] closed
+Nov 25 23:17 : client: [194] opened from 127.0.0.1:50242
+Nov 25 23:17 : client: [194] closed
+Nov 25 23:17 : player: played "curtainCall/Eminem - My Name Is.mp3"
+Nov 25 23:17 : client: [195] opened from 127.0.0.1:50256
+Nov 25 23:17 : client: [195] closed
+Nov 25 23:17 : client: [196] opened from 127.0.0.1:50262
+Nov 25 23:17 : client: [196] closed
+Nov 25 23:19 : client: [197] opened from 127.0.0.1:50276
+Nov 25 23:19 : client: [197] closed
+Nov 25 23:19 : client: [198] opened from 127.0.0.1:50286
+Nov 25 23:19 : client: [198] closed
+Nov 25 23:20 : player: played "curtainCall/Eminem - Role Model.mp3"
+Nov 25 23:24 : client: [199] opened from 127.0.0.1:50340
+Nov 25 23:24 : client: [199] closed
+Nov 25 23:25 : client: [200] opened from 127.0.0.1:50346
+Nov 25 23:25 : client: [200] closed
+Nov 25 23:26 : player: played "curtainCall/Eminem - S_t On You (Featuring D12).mp3"
+Nov 25 23:28 : client: [201] opened from 127.0.0.1:50368
+Nov 25 23:28 : client: [201] closed
+Nov 25 23:29 : client: [202] opened from 127.0.0.1:50380
+Nov 25 23:29 : client: [202] closed
+Nov 25 23:29 : client: [203] opened from 127.0.0.1:50386
+Nov 25 23:29 : client: [203] closed
+Nov 25 23:30 : client: [204] opened from 127.0.0.1:50392
+Nov 25 23:30 : client: [204] closed
+Nov 25 23:30 : client: [205] opened from 127.0.0.1:50398
+Nov 25 23:30 : client: [205] closed
+Nov 25 23:30 : client: [206] opened from 127.0.0.1:50408
+Nov 25 23:30 : client: [206] closed
+Nov 25 23:30 : player: played "curtainCall/Eminem - Shake That.mp3"
+Nov 25 23:31 : client: [207] opened from 127.0.0.1:50420
+Nov 25 23:31 : client: [207] closed
+Nov 25 23:31 : client: [208] opened from 127.0.0.1:50426
+Nov 25 23:31 : client: [208] closed
+Nov 25 23:33 : client: [209] opened from 127.0.0.1:50442
+Nov 25 23:33 : client: [209] closed
+Nov 25 23:33 : client: [210] opened from 127.0.0.1:50452
+Nov 25 23:33 : client: [210] closed
+Nov 25 23:33 : client: [211] opened from 127.0.0.1:50458
+Nov 25 23:33 : client: [211] closed
+Nov 25 23:34 : client: [212] opened from 127.0.0.1:50484
+Nov 25 23:34 : client: [212] closed
+Nov 25 23:34 : client: [213] opened from 127.0.0.1:50490
+Nov 25 23:34 : client: [213] closed
+Nov 25 23:35 : client: [214] opened from 127.0.0.1:50496
+Nov 25 23:35 : client: [214] closed
+Nov 25 23:35 : client: [215] opened from 127.0.0.1:50502
+Nov 25 23:35 : client: [215] closed
+Nov 25 23:36 : player: played "curtainCall/Eminem - Sing for the Moment.mp3"
+Nov 25 23:37 : client: [216] opened from 127.0.0.1:50528
+Nov 25 23:37 : client: [216] closed
+Nov 25 23:37 : client: [217] opened from 127.0.0.1:50534
+Nov 25 23:37 : client: [217] closed
+Nov 25 23:37 : client: [218] opened from 127.0.0.1:50548
+Nov 25 23:37 : client: [218] closed
+Nov 25 23:37 : client: [219] opened from 127.0.0.1:50554
+Nov 25 23:37 : client: [219] closed
+Nov 25 23:38 : client: [220] opened from 127.0.0.1:50560
+Nov 25 23:38 : client: [220] closed
+Nov 25 23:38 : client: [221] opened from 127.0.0.1:50566
+Nov 25 23:38 : client: [221] closed
+Nov 25 23:38 : client: [222] opened from 127.0.0.1:50572
+Nov 25 23:38 : client: [222] closed
+Nov 25 23:38 : client: [223] opened from 127.0.0.1:50578
+Nov 25 23:38 : client: [223] closed
+Nov 25 23:39 : client: [224] opened from 127.0.0.1:50584
+Nov 25 23:39 : client: [224] closed
+Nov 25 23:39 : client: [225] opened from 127.0.0.1:50590
+Nov 25 23:39 : client: [225] closed
+Nov 25 23:39 : client: [226] opened from 127.0.0.1:50596
+Nov 25 23:39 : client: [226] closed
+Nov 25 23:41 : client: [227] opened from 127.0.0.1:50618
+Nov 25 23:41 : client: [227] closed
+Nov 25 23:41 : client: [228] opened from 127.0.0.1:50624
+Nov 25 23:41 : client: [228] closed
+Nov 25 23:42 : client: [229] opened from 127.0.0.1:50630
+Nov 25 23:42 : client: [229] closed
+Nov 25 23:42 : client: [230] opened from 127.0.0.1:50636
+Nov 25 23:42 : client: [230] closed
+Nov 25 23:42 : client: [231] opened from 127.0.0.1:50642
+Nov 25 23:42 : client: [231] closed
+Nov 25 23:42 : player: played "curtainCall/Eminem - Stan (Featuring Elton John).mp3"
+Nov 25 23:45 : client: [232] opened from 127.0.0.1:50700
+Nov 25 23:45 : client: [232] closed
+Nov 25 23:47 : client: [233] opened from 127.0.0.1:50706
+Nov 25 23:47 : client: [233] closed
+Nov 25 23:47 : client: [234] opened from 127.0.0.1:50712
+Nov 25 23:47 : client: [234] closed
+Nov 25 23:48 : client: [235] opened from 127.0.0.1:50738
+Nov 25 23:48 : client: [235] closed
+Nov 25 23:49 : client: [236] opened from 127.0.0.1:50746
+Nov 25 23:49 : client: [236] closed
+Nov 25 23:49 : player: played "curtainCall/Eminem - Stan.mp3"
+Nov 25 23:51 : client: [237] opened from 127.0.0.1:50792
+Nov 25 23:51 : client: [237] closed
+Nov 25 23:51 : client: [238] opened from 127.0.0.1:50798
+Nov 25 23:51 : client: [238] closed
+Nov 25 23:51 : client: [239] opened from 127.0.0.1:50804
+Nov 25 23:51 : client: [239] closed
+Nov 25 23:52 : client: [240] opened from 127.0.0.1:50810
+Nov 25 23:52 : client: [240] closed
+Nov 25 23:52 : client: [241] opened from 127.0.0.1:50816
+Nov 25 23:52 : client: [241] closed
+Nov 25 23:52 : client: [242] opened from 127.0.0.1:50822
+Nov 25 23:52 : client: [242] closed
+Nov 25 23:52 : client: [243] opened from 127.0.0.1:50828
+Nov 25 23:52 : client: [243] closed
+Nov 25 23:53 : client: [244] opened from 127.0.0.1:50834
+Nov 25 23:53 : client: [244] closed
+Nov 25 23:53 : client: [245] opened from 127.0.0.1:50840
+Nov 25 23:53 : client: [245] closed
+Nov 25 23:53 : client: [246] opened from 127.0.0.1:50846
+Nov 25 23:53 : client: [246] closed
+Nov 25 23:53 : client: [247] opened from 127.0.0.1:50852
+Nov 25 23:53 : client: [247] closed
+Nov 25 23:54 : player: played "curtainCall/Eminem - The Real Slim Shady.mp3"
+Nov 25 23:55 : client: [248] opened from 127.0.0.1:50890
+Nov 25 23:55 : client: [248] closed
+Nov 25 23:56 : client: [249] opened from 127.0.0.1:50896
+Nov 25 23:56 : client: [249] closed
+Nov 25 23:56 : client: [250] opened from 127.0.0.1:50902
+Nov 25 23:56 : client: [250] closed
+Nov 25 23:56 : client: [251] opened from 127.0.0.1:50908
+Nov 25 23:56 : client: [251] closed
+Nov 25 23:58 : client: [252] opened from 127.0.0.1:50922
+Nov 25 23:58 : client: [252] closed
+Nov 25 23:58 : client: [253] opened from 127.0.0.1:50928
+Nov 25 23:58 : client: [253] closed
+Nov 25 23:58 : client: [254] opened from 127.0.0.1:50934
+Nov 25 23:58 : client: [254] closed
+Nov 25 23:59 : client: [255] opened from 127.0.0.1:50940
+Nov 25 23:59 : client: [255] closed
+Nov 25 23:59 : player: played "curtainCall/Eminem - The Way I Am.mp3"
+Nov 25 23:59 : client: [256] opened from 127.0.0.1:50950
+Nov 25 23:59 : client: [256] closed
+Nov 26 00:00 : client: [257] opened from 127.0.0.1:50962
+Nov 26 00:00 : client: [257] closed
+Nov 26 00:01 : client: [258] opened from 127.0.0.1:50968
+Nov 26 00:01 : client: [258] closed
+Nov 26 00:01 : client: [259] opened from 127.0.0.1:50974
+Nov 26 00:01 : client: [259] closed
+Nov 26 00:01 : client: [260] opened from 127.0.0.1:50980
+Nov 26 00:01 : client: [260] closed
+Nov 26 00:03 : player: played "curtainCall/Eminem - When I'm Gone.mp3"
+Nov 26 00:04 : client: [261] opened from 127.0.0.1:51010
+Nov 26 00:04 : client: [261] closed
+Nov 26 00:04 : client: [262] opened from 127.0.0.1:51020
+Nov 26 00:04 : client: [262] closed
+Nov 26 00:04 : client: [263] opened from 127.0.0.1:51026
+Nov 26 00:04 : client: [263] closed
+Nov 26 00:06 : client: [264] opened from 127.0.0.1:51032
+Nov 26 00:06 : client: [264] closed
+Nov 26 00:07 : client: [265] opened from 127.0.0.1:51038
+Nov 26 00:07 : client: [265] closed
+Nov 26 00:08 : client: [266] opened from 127.0.0.1:51114
+Nov 26 00:08 : client: [266] closed
+Nov 26 00:08 : client: [267] opened from 127.0.0.1:51120
+Nov 26 00:08 : client: [267] closed
+Nov 26 00:08 : client: [268] opened from 127.0.0.1:51126
+Nov 26 00:08 : client: [268] closed
+Nov 26 00:08 : client: [269] opened from 127.0.0.1:51132
+Nov 26 00:08 : client: [269] closed
+Nov 26 00:08 : client: [270] opened from 127.0.0.1:51138
+Nov 26 00:08 : client: [270] closed
+Nov 26 00:08 : player: played "curtainCall/Eminem - Without Me.mp3"
+Nov 26 00:09 : client: [271] opened from 127.0.0.1:51148
+Nov 26 00:09 : client: [271] closed
+Nov 26 00:09 : client: [272] opened from 127.0.0.1:51154
+Nov 26 00:09 : client: [272] closed
+Nov 26 00:09 : client: [273] opened from 127.0.0.1:51160
+Nov 26 00:09 : client: [273] closed
+Nov 26 00:09 : client: [274] opened from 127.0.0.1:51166
+Nov 26 00:09 : client: [274] closed
+Nov 26 00:10 : client: [275] opened from 127.0.0.1:51176
+Nov 26 00:10 : client: [275] closed
+Nov 26 00:10 : client: [276] opened from 127.0.0.1:51184
+Nov 26 00:10 : client: [276] closed
+Nov 26 00:11 : client: [277] opened from 127.0.0.1:51190
+Nov 26 00:11 : client: [277] closed
+Nov 26 00:11 : client: [278] opened from 127.0.0.1:51196
+Nov 26 00:11 : client: [278] closed
+Nov 26 00:11 : client: [279] opened from 127.0.0.1:51202
+Nov 26 00:11 : client: [279] closed
+Nov 26 00:12 : client: [280] opened from 127.0.0.1:51208
+Nov 26 00:12 : client: [280] closed
+Nov 26 00:14 : client: [281] opened from 127.0.0.1:51248
+Nov 26 00:14 : client: [281] closed
+Nov 26 00:14 : client: [282] opened from 127.0.0.1:51254
+Nov 26 00:14 : client: [282] closed
+Nov 26 00:16 : client: [283] opened from 127.0.0.1:51260
+Nov 26 00:16 : client: [283] closed
+Nov 26 00:16 : client: [284] opened from 127.0.0.1:51266
+Nov 26 00:16 : client: [284] closed
+Nov 26 00:17 : client: [285] opened from 127.0.0.1:51272
+Nov 26 00:17 : client: [285] closed
+Nov 26 00:17 : client: [286] opened from 127.0.0.1:51278
+Nov 26 00:17 : client: [286] closed
+Nov 26 00:20 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Nov 26 00:20 : client: [287] opened from 127.0.0.1:51312
+Nov 26 00:20 : client: [287] closed
+Nov 26 00:20 : client: [288] opened from 127.0.0.1:51318
+Nov 26 00:20 : client: [288] closed
+Nov 26 00:22 : client: [289] opened from 127.0.0.1:51346
+Nov 26 00:22 : client: [289] closed
+Nov 26 00:22 : client: [290] opened from 127.0.0.1:51352
+Nov 26 00:22 : client: [290] closed
+Nov 26 00:25 : player: played "curtainCall/Eminem - Criminal.mp3"
+Nov 26 00:26 : client: [291] opened from 127.0.0.1:51460
+Nov 26 00:26 : client: [291] closed
+Nov 26 00:26 : client: [292] opened from 127.0.0.1:51466
+Nov 26 00:26 : client: [292] closed
+Nov 26 00:27 : client: [293] opened from 127.0.0.1:51476
+Nov 26 00:27 : client: [293] closed
+Nov 26 00:29 : client: [294] opened from 127.0.0.1:51488
+Nov 26 00:29 : client: [294] closed
+Nov 26 00:30 : client: [295] opened from 127.0.0.1:51500
+Nov 26 00:30 : client: [295] closed
+Nov 26 00:30 : client: [296] opened from 127.0.0.1:51510
+Nov 26 00:30 : client: [296] closed
+Nov 26 00:31 : client: [297] opened from 127.0.0.1:51516
+Nov 26 00:31 : client: [297] closed
+Nov 26 00:32 : client: [298] opened from 127.0.0.1:51522
+Nov 26 00:32 : client: [298] closed
+Nov 26 00:32 : client: [299] opened from 127.0.0.1:51528
+Nov 26 00:32 : client: [299] closed
+Nov 26 00:32 : client: [300] opened from 127.0.0.1:51534
+Nov 26 00:32 : client: [300] closed
+Nov 26 00:44 : client: [301] opened from 127.0.0.1:52020
+Nov 26 00:44 : client: [301] closed
+Nov 26 00:46 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 26 01:05 : client: [302] opened from 127.0.0.1:52224
+Nov 26 01:05 : client: [302] closed
+Nov 26 01:09 : client: [303] opened from 127.0.0.1:52264
+Nov 26 01:09 : client: [303] malformed command "GET / HTTP/1.1"
+Nov 26 01:09 : client: [303] closed
+Nov 26 01:09 : client: [304] opened from 127.0.0.1:52266
+Nov 26 01:09 : client: [304] malformed command "GET /favicon.ico HTTP/1.1"
+Nov 26 01:09 : client: [304] closed
+Nov 26 01:10 : client: [305] opened from 127.0.0.1:52298
+Nov 26 01:10 : client: [305] malformed command "GET / HTTP/1.1"
+Nov 26 01:10 : client: [305] closed
+Nov 26 01:10 : client: [306] opened from 127.0.0.1:52310
+Nov 26 01:10 : client: [306] malformed command "GET /favicon.ico HTTP/1.1"
+Nov 26 01:10 : client: [306] closed
+Nov 26 01:11 : client: [307] opened from 127.0.0.1:52592
+Nov 26 01:11 : player: played "The Spirit Tree (Featuring Aeralie Brighton).mp3"
+Nov 26 01:11 : client: [307] closed
+Nov 26 01:12 : client: [308] opened from 127.0.0.1:52596
+Nov 26 01:12 : client: [308] closed
+Nov 26 01:12 : client: [309] opened from 127.0.0.1:52600
+Nov 26 01:12 : player: played "The Spirit Tree (Featuring Aeralie Brighton).mp3"
+Nov 26 01:12 : client: [309] closed
+Nov 26 01:12 : client: [310] opened from 127.0.0.1:52604
+Nov 26 01:12 : client: [310] closed
+Nov 26 01:13 : client: [311] opened from 127.0.0.1:52608
+Nov 26 01:13 : client: [311] closed
+Nov 26 01:13 : client: [312] opened from 127.0.0.1:52612
+Nov 26 01:13 : client: [312] closed
+Nov 26 01:13 : client: [313] opened from 127.0.0.1:52616
+Nov 26 01:13 : client: [313] closed
+Nov 26 01:14 : client: [314] opened from 127.0.0.1:52626
+Nov 26 01:14 : client: [314] closed
+Nov 26 01:14 : client: [315] opened from 127.0.0.1:52630
+Nov 26 01:14 : client: [315] closed
+Nov 26 01:14 : client: [316] opened from 127.0.0.1:52636
+Nov 26 01:14 : client: [316] closed
+Nov 26 01:14 : client: [317] opened from 127.0.0.1:52640
+Nov 26 01:14 : client: [317] closed
+Nov 26 01:14 : client: [318] opened from 127.0.0.1:52644
+Nov 26 01:14 : client: [318] closed
+Nov 26 01:14 : client: [319] opened from 127.0.0.1:52648
+Nov 26 01:14 : client: [319] closed
+Nov 26 01:15 : client: [320] opened from 127.0.0.1:52654
+Nov 26 01:15 : client: [320] closed
+Nov 26 01:15 : client: [321] opened from 127.0.0.1:52660
+Nov 26 01:15 : client: [321] closed
+Nov 26 01:15 : client: [322] opened from 127.0.0.1:52664
+Nov 26 01:15 : client: [322] closed
+Nov 26 01:15 : client: [323] opened from 127.0.0.1:52668
+Nov 26 01:15 : client: [323] closed
+Nov 26 01:15 : client: [324] opened from 127.0.0.1:52672
+Nov 26 01:15 : client: [324] closed
+Nov 26 01:15 : client: [325] opened from 127.0.0.1:52676
+Nov 26 01:15 : client: [325] closed
+Nov 26 01:15 : client: [326] opened from 127.0.0.1:52680
+Nov 26 01:15 : client: [326] closed
+Nov 26 01:15 : client: [327] opened from 127.0.0.1:52684
+Nov 26 01:15 : client: [327] closed
+Nov 26 01:15 : client: [328] opened from 127.0.0.1:52688
+Nov 26 01:15 : client: [328] closed
+Nov 26 01:15 : client: [329] opened from 127.0.0.1:52692
+Nov 26 01:15 : client: [329] closed
+Nov 26 01:15 : client: [330] opened from 127.0.0.1:52696
+Nov 26 01:15 : client: [330] closed
+Nov 26 01:16 : client: [331] opened from 127.0.0.1:52702
+Nov 26 01:16 : client: [331] closed
+Nov 26 01:16 : client: [332] opened from 127.0.0.1:52706
+Nov 26 01:16 : client: [332] closed
+Nov 26 01:20 : player: played "curtainCall/Eminem - Criminal.mp3"
+Nov 26 01:22 : client: [333] opened from 127.0.0.1:52950
+Nov 26 01:22 : client: [333] closed
+Nov 26 01:46 : client: [334] opened from 127.0.0.1:53112
+Nov 26 01:46 : client: [335] opened from 127.0.0.1:53116
+Nov 26 01:46 : client: [335] closed
+Nov 26 01:46 : client: [336] opened from 127.0.0.1:53120
+Nov 26 01:46 : client: [336] closed
+Nov 26 01:46 : client: [337] opened from 127.0.0.1:53124
+Nov 26 01:46 : client: [337] closed
+Nov 26 01:46 : client: [338] opened from 127.0.0.1:53128
+Nov 26 01:46 : client: [338] closed
+Nov 26 01:46 : client: [339] opened from 127.0.0.1:53134
+Nov 26 01:46 : client: [340] opened from 127.0.0.1:53138
+Nov 26 01:46 : client: [339] closed
+Nov 26 01:46 : client: [340] closed
+Nov 26 01:46 : client: [341] opened from 127.0.0.1:53142
+Nov 26 01:46 : client: [342] opened from 127.0.0.1:53146
+Nov 26 01:46 : client: [341] closed
+Nov 26 01:46 : client: [342] closed
+Nov 26 01:46 : client: [343] opened from 127.0.0.1:53150
+Nov 26 01:46 : client: [343] closed
+Nov 26 01:46 : client: [344] opened from 127.0.0.1:53154
+Nov 26 01:46 : client: [344] closed
+Nov 26 01:47 : client: [345] opened from 127.0.0.1:53158
+Nov 26 01:47 : client: [345] closed
+Nov 26 01:47 : client: [346] opened from 127.0.0.1:53162
+Nov 26 01:47 : client: [346] closed
+Nov 26 01:47 : client: [347] opened from 127.0.0.1:53168
+Nov 26 01:47 : client: [347] closed
+Nov 26 01:47 : client: [348] opened from 127.0.0.1:53172
+Nov 26 01:47 : client: [348] closed
+Nov 26 01:47 : client: [349] opened from 127.0.0.1:53176
+Nov 26 01:47 : client: [349] closed
+Nov 26 01:47 : client: [350] opened from 127.0.0.1:53180
+Nov 26 01:47 : client: [350] closed
+Nov 26 01:47 : client: [351] opened from 127.0.0.1:53184
+Nov 26 01:47 : client: [351] closed
+Nov 26 01:47 : client: [352] opened from 127.0.0.1:53188
+Nov 26 01:47 : player: played "nightcore/「Nightcore」- This is me (switching vocals).mp3"
+Nov 26 01:47 : client: [352] closed
+Nov 26 01:47 : client: [353] opened from 127.0.0.1:53192
+Nov 26 01:47 : client: [353] closed
+Nov 26 01:47 : client: [354] opened from 127.0.0.1:53196
+Nov 26 01:47 : client: [354] closed
+Nov 26 01:47 : client: [355] opened from 127.0.0.1:53200
+Nov 26 01:47 : client: [355] closed
+Nov 26 01:47 : client: [356] opened from 127.0.0.1:53204
+Nov 26 01:47 : client: [356] closed
+Nov 26 01:47 : client: [357] opened from 127.0.0.1:53208
+Nov 26 01:47 : client: [357] closed
+Nov 26 01:47 : client: [358] opened from 127.0.0.1:53212
+Nov 26 01:47 : client: [358] closed
+Nov 26 01:47 : client: [359] opened from 127.0.0.1:53216
+Nov 26 01:47 : client: [359] closed
+Nov 26 01:47 : client: [360] opened from 127.0.0.1:53220
+Nov 26 01:47 : client: [360] closed
+Nov 26 01:47 : client: [361] opened from 127.0.0.1:53224
+Nov 26 01:47 : client: [361] closed
+Nov 26 01:47 : client: [362] opened from 127.0.0.1:53228
+Nov 26 01:47 : client: [362] closed
+Nov 26 01:47 : client: [363] opened from 127.0.0.1:53232
+Nov 26 01:47 : client: [363] closed
+Nov 26 01:47 : client: [364] opened from 127.0.0.1:53236
+Nov 26 01:47 : client: [364] closed
+Nov 26 01:47 : client: [365] opened from 127.0.0.1:53240
+Nov 26 01:47 : client: [365] closed
+Nov 26 01:47 : client: [366] opened from 127.0.0.1:53244
+Nov 26 01:47 : client: [366] closed
+Nov 26 01:47 : client: [367] opened from 127.0.0.1:53248
+Nov 26 01:47 : client: [367] closed
+Nov 26 01:47 : client: [368] opened from 127.0.0.1:53252
+Nov 26 01:47 : client: [368] closed
+Nov 26 01:47 : client: [369] opened from 127.0.0.1:53256
+Nov 26 01:47 : client: [369] closed
+Nov 26 01:47 : client: [370] opened from 127.0.0.1:53260
+Nov 26 01:47 : client: [370] closed
+Nov 26 01:47 : client: [371] opened from 127.0.0.1:53264
+Nov 26 01:47 : client: [371] closed
+Nov 26 01:47 : client: [372] opened from 127.0.0.1:53268
+Nov 26 01:47 : client: [372] closed
+Nov 26 01:48 : client: [334] closed
+Nov 26 01:48 : client: [373] opened from 127.0.0.1:53272
+Nov 26 01:48 : client: [373] closed
+Nov 26 01:48 : client: [374] opened from 127.0.0.1:53276
+Nov 26 01:48 : client: [374] closed
+Nov 26 01:48 : client: [375] opened from 127.0.0.1:53280
+Nov 26 01:49 : client: [375] closed
+Nov 26 01:49 : client: [376] opened from 127.0.0.1:53284
+Nov 26 01:49 : client: [376] closed
+Nov 26 01:49 : client: [377] opened from 127.0.0.1:53288
+Nov 26 01:49 : client: [378] opened from 127.0.0.1:53292
+Nov 26 01:49 : client: [378] closed
+Nov 26 01:49 : client: [379] opened from 127.0.0.1:53296
+Nov 26 01:49 : client: [379] closed
+Nov 26 01:49 : client: [380] opened from 127.0.0.1:53300
+Nov 26 01:49 : client: [380] closed
+Nov 26 01:49 : client: [381] opened from 127.0.0.1:53304
+Nov 26 01:49 : client: [381] closed
+Nov 26 01:49 : client: [382] opened from 127.0.0.1:53308
+Nov 26 01:49 : client: [382] closed
+Nov 26 01:49 : client: [383] opened from 127.0.0.1:53312
+Nov 26 01:49 : client: [384] opened from 127.0.0.1:53316
+Nov 26 01:49 : client: [383] closed
+Nov 26 01:49 : client: [384] closed
+Nov 26 01:49 : client: [385] opened from 127.0.0.1:53320
+Nov 26 01:49 : client: [385] closed
+Nov 26 01:49 : client: [386] opened from 127.0.0.1:53324
+Nov 26 01:49 : client: [387] opened from 127.0.0.1:53328
+Nov 26 01:49 : client: [386] closed
+Nov 26 01:49 : client: [387] closed
+Nov 26 01:49 : client: [388] opened from 127.0.0.1:53332
+Nov 26 01:49 : client: [389] opened from 127.0.0.1:53336
+Nov 26 01:49 : client: [388] closed
+Nov 26 01:49 : client: [389] closed
+Nov 26 01:49 : client: [390] opened from 127.0.0.1:53340
+Nov 26 01:49 : client: [390] closed
+Nov 26 01:49 : client: [391] opened from 127.0.0.1:53344
+Nov 26 01:49 : client: [391] closed
+Nov 26 01:49 : client: [392] opened from 127.0.0.1:53348
+Nov 26 01:49 : client: [392] closed
+Nov 26 01:49 : client: [393] opened from 127.0.0.1:53352
+Nov 26 01:49 : client: [393] closed
+Nov 26 01:49 : client: [394] opened from 127.0.0.1:53356
+Nov 26 01:49 : client: [395] opened from 127.0.0.1:53360
+Nov 26 01:49 : client: [396] opened from 127.0.0.1:53364
+Nov 26 01:49 : client: [394] closed
+Nov 26 01:49 : client: [396] closed
+Nov 26 01:49 : client: [395] closed
+Nov 26 01:49 : client: [397] opened from 127.0.0.1:53368
+Nov 26 01:49 : client: [397] closed
+Nov 26 01:49 : client: [398] opened from 127.0.0.1:53372
+Nov 26 01:49 : client: [398] closed
+Nov 26 01:49 : client: [399] opened from 127.0.0.1:53376
+Nov 26 01:49 : client: [400] opened from 127.0.0.1:53380
+Nov 26 01:49 : client: [399] closed
+Nov 26 01:49 : client: [400] closed
+Nov 26 01:49 : client: [401] opened from 127.0.0.1:53384
+Nov 26 01:49 : client: [402] opened from 127.0.0.1:53388
+Nov 26 01:49 : client: [401] closed
+Nov 26 01:49 : client: [402] closed
+Nov 26 01:49 : client: [403] opened from 127.0.0.1:53392
+Nov 26 01:49 : client: [404] opened from 127.0.0.1:53396
+Nov 26 01:49 : client: [403] closed
+Nov 26 01:49 : client: [404] closed
+Nov 26 01:49 : client: [405] opened from 127.0.0.1:53400
+Nov 26 01:49 : client: [405] closed
+Nov 26 01:49 : client: [406] opened from 127.0.0.1:53404
+Nov 26 01:49 : client: [406] closed
+Nov 26 01:49 : client: [407] opened from 127.0.0.1:53408
+Nov 26 01:49 : client: [407] closed
+Nov 26 01:49 : client: [408] opened from 127.0.0.1:53412
+Nov 26 01:49 : client: [409] opened from 127.0.0.1:53416
+Nov 26 01:49 : client: [408] closed
+Nov 26 01:49 : client: [409] closed
+Nov 26 01:49 : client: [410] opened from 127.0.0.1:53420
+Nov 26 01:49 : client: [410] closed
+Nov 26 01:49 : client: [411] opened from 127.0.0.1:53424
+Nov 26 01:49 : client: [412] opened from 127.0.0.1:53428
+Nov 26 01:49 : client: [411] closed
+Nov 26 01:49 : client: [412] closed
+Nov 26 01:49 : client: [413] opened from 127.0.0.1:53432
+Nov 26 01:49 : client: [413] closed
+Nov 26 01:49 : client: [414] opened from 127.0.0.1:53436
+Nov 26 01:49 : client: [414] closed
+Nov 26 01:49 : client: [415] opened from 127.0.0.1:53440
+Nov 26 01:49 : client: [415] closed
+Nov 26 01:49 : client: [416] opened from 127.0.0.1:53444
+Nov 26 01:49 : client: [416] closed
+Nov 26 01:49 : client: [417] opened from 127.0.0.1:53448
+Nov 26 01:49 : client: [417] closed
+Nov 26 01:49 : client: [418] opened from 127.0.0.1:53452
+Nov 26 01:49 : client: [418] closed
+Nov 26 01:49 : client: [419] opened from 127.0.0.1:53456
+Nov 26 01:49 : client: [419] closed
+Nov 26 01:49 : client: [420] opened from 127.0.0.1:53460
+Nov 26 01:49 : client: [420] closed
+Nov 26 01:49 : client: [421] opened from 127.0.0.1:53464
+Nov 26 01:49 : client: [421] closed
+Nov 26 01:49 : client: [422] opened from 127.0.0.1:53468
+Nov 26 01:49 : client: [423] opened from 127.0.0.1:53472
+Nov 26 01:49 : client: [422] closed
+Nov 26 01:49 : client: [423] closed
+Nov 26 01:49 : client: [424] opened from 127.0.0.1:53476
+Nov 26 01:49 : client: [424] closed
+Nov 26 01:49 : client: [425] opened from 127.0.0.1:53480
+Nov 26 01:49 : client: [426] opened from 127.0.0.1:53484
+Nov 26 01:49 : client: [425] closed
+Nov 26 01:49 : client: [426] closed
+Nov 26 01:49 : client: [427] opened from 127.0.0.1:53488
+Nov 26 01:49 : client: [427] closed
+Nov 26 01:49 : client: [428] opened from 127.0.0.1:53492
+Nov 26 01:49 : client: [428] closed
+Nov 26 01:49 : client: [429] opened from 127.0.0.1:53496
+Nov 26 01:49 : client: [430] opened from 127.0.0.1:53500
+Nov 26 01:49 : client: [429] closed
+Nov 26 01:49 : client: [430] closed
+Nov 26 01:49 : client: [431] opened from 127.0.0.1:53504
+Nov 26 01:49 : client: [431] closed
+Nov 26 01:49 : client: [432] opened from 127.0.0.1:53508
+Nov 26 01:49 : client: [432] closed
+Nov 26 01:50 : client: [377] closed
+Nov 26 01:50 : client: [433] opened from 127.0.0.1:53532
+Nov 26 01:50 : client: [433] closed
+Nov 26 01:50 : client: [434] opened from 127.0.0.1:53538
+Nov 26 01:53 : client: [435] opened from 127.0.0.1:53546
+Nov 26 01:53 : client: [435] closed
+Nov 26 01:53 : client: [436] opened from 127.0.0.1:53550
+Nov 26 01:53 : client: [436] closed
+Nov 26 01:53 : client: [437] opened from 127.0.0.1:53558
+Nov 26 01:53 : client: [437] closed
+Nov 26 01:54 : client: [434] closed
+Nov 26 01:54 : client: [438] opened from 127.0.0.1:53564
+Nov 26 01:55 : client: [438] closed
+Nov 26 01:55 : client: [439] opened from 127.0.0.1:53580
+Nov 26 01:55 : client: [439] closed
+Nov 26 01:55 : client: [440] opened from 127.0.0.1:53586
+Nov 26 01:55 : client: [440] closed
+Nov 26 01:55 : client: [441] opened from 127.0.0.1:53590
+Nov 26 01:55 : client: [441] closed
+Nov 26 01:55 : client: [442] opened from 127.0.0.1:53594
+Nov 26 01:55 : client: [442] closed
+Nov 26 01:55 : client: [443] opened from 127.0.0.1:53598
+Nov 26 01:55 : client: [443] closed
+Nov 26 01:55 : client: [444] opened from 127.0.0.1:53602
+Nov 26 01:55 : client: [444] closed
+Nov 26 01:55 : client: [445] opened from 127.0.0.1:53606
+Nov 26 01:55 : client: [445] closed
+Nov 26 01:55 : client: [446] opened from 127.0.0.1:53610
+Nov 26 01:55 : client: [446] closed
+Nov 26 01:55 : client: [447] opened from 127.0.0.1:53614
+Nov 26 01:55 : client: [447] closed
+Nov 26 01:55 : client: [448] opened from 127.0.0.1:53618
+Nov 26 01:55 : client: [448] closed
+Nov 26 01:55 : client: [449] opened from 127.0.0.1:53622
+Nov 26 01:55 : client: [449] closed
+Nov 26 01:55 : client: [450] opened from 127.0.0.1:53626
+Nov 26 01:55 : client: [450] closed
+Nov 26 01:55 : client: [451] opened from 127.0.0.1:53630
+Nov 26 01:55 : client: [451] closed
+Nov 26 01:55 : client: [452] opened from 127.0.0.1:53634
+Nov 26 01:55 : client: [452] closed
+Nov 26 01:55 : client: [453] opened from 127.0.0.1:53638
+Nov 26 01:55 : client: [453] closed
+Nov 26 17:56 : client: [454] opened from 127.0.0.1:56136
+Nov 26 17:56 : client: [454] closed
+Nov 26 18:05 : client: [158] closed
+Nov 26 18:05 : client: [455] opened from 127.0.0.1:56180
+Nov 26 18:05 : client: [455] closed
+Nov 26 18:07 : client: [456] opened from 127.0.0.1:56184
+Nov 26 18:07 : client: [456] closed
+Nov 26 18:09 : client: [457] opened from 127.0.0.1:56194
+Nov 26 18:09 : client: [457] closed
+Nov 26 18:24 : client: [458] opened from 127.0.0.1:56226
+Nov 26 18:24 : client: [458] closed
+Nov 26 18:25 : client: [459] opened from 127.0.0.1:56240
+Nov 26 18:25 : client: [459] closed
+Nov 26 18:25 : client: [460] opened from 127.0.0.1:56244
+Nov 26 18:25 : client: [460] closed
+Nov 26 18:25 : client: [461] opened from 127.0.0.1:56250
+Nov 26 18:25 : client: [461] closed
+Nov 26 18:25 : client: [462] opened from 127.0.0.1:56254
+Nov 26 18:25 : client: [462] closed
+Nov 26 18:25 : client: [463] opened from 127.0.0.1:56258
+Nov 26 18:25 : client: [463] closed
+Nov 26 18:25 : client: [464] opened from 127.0.0.1:56262
+Nov 26 18:25 : client: [464] closed
+Nov 26 18:25 : client: [465] opened from 127.0.0.1:56266
+Nov 26 18:25 : client: [465] closed
+Nov 26 18:25 : client: [466] opened from 127.0.0.1:56270
+Nov 26 18:25 : client: [466] closed
+Nov 26 18:25 : client: [467] opened from 127.0.0.1:56274
+Nov 26 18:25 : client: [467] closed
+Nov 26 18:25 : client: [468] opened from 127.0.0.1:56278
+Nov 26 18:25 : client: [468] closed
+Nov 26 18:25 : client: [469] opened from 127.0.0.1:56282
+Nov 26 18:25 : client: [469] closed
+Nov 26 18:25 : client: [470] opened from 127.0.0.1:56286
+Nov 26 18:25 : client: [470] closed
+Nov 26 18:25 : client: [471] opened from 127.0.0.1:56610
+Nov 26 18:25 : client: [471] closed
+Nov 26 18:26 : client: [472] opened from 127.0.0.1:56628
+Nov 26 18:26 : client: [472] closed
+Nov 26 18:26 : client: [473] opened from 127.0.0.1:56632
+Nov 26 18:26 : client: [473] closed
+Nov 26 18:26 : client: [474] opened from 127.0.0.1:56636
+Nov 26 18:26 : client: [474] closed
+Nov 26 19:34 : client: [475] opened from 127.0.0.1:57016
+Nov 26 19:34 : client: [476] opened from 127.0.0.1:57020
+Nov 26 19:34 : client: [476] closed
+Nov 26 19:34 : client: [477] opened from 127.0.0.1:57024
+Nov 26 19:34 : client: [477] closed
+Nov 26 19:34 : client: [478] opened from 127.0.0.1:57028
+Nov 26 19:34 : client: [478] closed
+Nov 26 19:34 : client: [479] opened from 127.0.0.1:57032
+Nov 26 19:34 : client: [479] closed
+Nov 26 19:34 : client: [480] opened from 127.0.0.1:57036
+Nov 26 19:34 : client: [480] closed
+Nov 26 19:34 : client: [481] opened from 127.0.0.1:57040
+Nov 26 19:34 : player: played "nightcore/「Nightcore」- This is me (switching vocals).mp3"
+Nov 26 19:34 : client: [481] closed
+Nov 26 19:34 : client: [482] opened from 127.0.0.1:57046
+Nov 26 19:34 : client: [482] closed
+Nov 26 19:34 : client: [483] opened from 127.0.0.1:57050
+Nov 26 19:34 : client: [483] closed
+Nov 26 19:34 : client: [484] opened from 127.0.0.1:57074
+Nov 26 19:34 : client: [484] closed
+Nov 26 19:34 : client: [485] opened from 127.0.0.1:57078
+Nov 26 19:34 : client: [485] closed
+Nov 26 19:34 : client: [486] opened from 127.0.0.1:57082
+Nov 26 19:34 : client: [486] closed
+Nov 26 19:34 : client: [487] opened from 127.0.0.1:57086
+Nov 26 19:34 : client: [487] closed
+Nov 26 19:34 : client: [488] opened from 127.0.0.1:57090
+Nov 26 19:34 : client: [488] closed
+Nov 26 19:35 : client: [489] opened from 127.0.0.1:57094
+Nov 26 19:35 : client: [489] closed
+Nov 26 19:35 : client: [490] opened from 127.0.0.1:57098
+Nov 26 19:35 : client: [490] closed
+Nov 26 19:35 : client: [491] opened from 127.0.0.1:57102
+Nov 26 19:35 : client: [491] closed
+Nov 26 19:35 : client: [492] opened from 127.0.0.1:57106
+Nov 26 19:35 : client: [492] closed
+Nov 26 19:35 : client: [493] opened from 127.0.0.1:57110
+Nov 26 19:35 : client: [493] closed
+Nov 26 19:35 : client: [494] opened from 127.0.0.1:57114
+Nov 26 19:35 : client: [494] closed
+Nov 26 19:35 : client: [495] opened from 127.0.0.1:57118
+Nov 26 19:35 : client: [495] closed
+Nov 26 19:35 : client: [496] opened from 127.0.0.1:57122
+Nov 26 19:35 : client: [496] closed
+Nov 26 19:35 : client: [497] opened from 127.0.0.1:57126
+Nov 26 19:35 : client: [497] closed
+Nov 26 19:35 : client: [498] opened from 127.0.0.1:57130
+Nov 26 19:35 : client: [498] closed
+Nov 26 19:36 : client: [475] closed
+Nov 26 19:36 : client: [499] opened from 127.0.0.1:57140
+Nov 26 19:36 : client: [499] closed
+Nov 26 19:36 : client: [500] opened from 127.0.0.1:57144
+Nov 26 19:36 : client: [501] opened from 127.0.0.1:57180
+Nov 26 19:36 : player: played "curtainCall/Eminem - S_t On You (Featuring D12).mp3"
+Nov 26 19:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 26 19:37 : client: [502] opened from 127.0.0.1:57190
+Nov 26 19:37 : client: [502] closed
+Nov 26 19:37 : client: [503] opened from 127.0.0.1:57198
+Nov 26 19:37 : client: [503] closed
+Nov 26 19:37 : client: [504] opened from 127.0.0.1:57202
+Nov 26 19:37 : client: [504] closed
+Nov 26 19:37 : client: [505] opened from 127.0.0.1:57206
+Nov 26 19:37 : client: [505] closed
+Nov 26 19:37 : client: [506] opened from 127.0.0.1:57210
+Nov 26 19:37 : client: [506] closed
+Nov 26 19:37 : client: [507] opened from 127.0.0.1:57214
+Nov 26 19:37 : client: [507] closed
+Nov 26 19:37 : client: [508] opened from 127.0.0.1:57218
+Nov 26 19:37 : client: [508] closed
+Nov 26 19:37 : client: [509] opened from 127.0.0.1:57222
+Nov 26 19:37 : client: [509] closed
+Nov 26 19:37 : client: [510] opened from 127.0.0.1:57226
+Nov 26 19:37 : client: [510] closed
+Nov 26 19:37 : client: [511] opened from 127.0.0.1:57230
+Nov 26 19:37 : client: [511] closed
+Nov 26 19:37 : client: [512] opened from 127.0.0.1:57234
+Nov 26 19:37 : client: [512] closed
+Nov 26 19:37 : client: [513] opened from 127.0.0.1:57238
+Nov 26 19:37 : client: [513] closed
+Nov 26 19:37 : client: [514] opened from 127.0.0.1:57242
+Nov 26 19:37 : client: [514] closed
+Nov 26 19:37 : client: [515] opened from 127.0.0.1:57246
+Nov 26 19:37 : client: [516] opened from 127.0.0.1:57250
+Nov 26 19:37 : client: [517] opened from 127.0.0.1:57254
+Nov 26 19:37 : client: [515] closed
+Nov 26 19:37 : client: [518] opened from 127.0.0.1:57258
+Nov 26 19:37 : client: [516] closed
+Nov 26 19:37 : client: [517] closed
+Nov 26 19:37 : client: [518] closed
+Nov 26 19:37 : client: [519] opened from 127.0.0.1:57262
+Nov 26 19:37 : client: [520] opened from 127.0.0.1:57266
+Nov 26 19:37 : client: [521] opened from 127.0.0.1:57270
+Nov 26 19:37 : client: [522] opened from 127.0.0.1:57274
+Nov 26 19:37 : client: [523] opened from 127.0.0.1:57278
+Nov 26 19:37 : client: [519] closed
+Nov 26 19:37 : client: [521] closed
+Nov 26 19:37 : client: [523] closed
+Nov 26 19:37 : client: [520] closed
+Nov 26 19:37 : client: [522] closed
+Nov 26 19:37 : client: [524] opened from 127.0.0.1:57282
+Nov 26 19:37 : client: [525] opened from 127.0.0.1:57286
+Nov 26 19:37 : client: [526] opened from 127.0.0.1:57290
+Nov 26 19:37 : client: [527] opened from 127.0.0.1:57294
+Nov 26 19:37 : client: [528] opened from 127.0.0.1:57298
+Nov 26 19:37 : client: [524] closed
+Nov 26 19:37 : client: [527] closed
+Nov 26 19:37 : client: [525] closed
+Nov 26 19:37 : client: [526] closed
+Nov 26 19:37 : client: [528] closed
+Nov 26 19:37 : client: [529] opened from 127.0.0.1:57302
+Nov 26 19:37 : client: [530] opened from 127.0.0.1:57306
+Nov 26 19:37 : client: [531] opened from 127.0.0.1:57310
+Nov 26 19:37 : client: [532] opened from 127.0.0.1:57314
+Nov 26 19:37 : client: [533] opened from 127.0.0.1:57318
+Nov 26 19:37 : client: [529] closed
+Nov 26 19:37 : client: [534] opened from 127.0.0.1:57322
+Nov 26 19:37 : client: [535] opened from 127.0.0.1:57326
+Nov 26 19:37 : client: [531] closed
+Nov 26 19:37 : client: [536] opened from 127.0.0.1:57330
+Nov 26 19:37 : client: [530] closed
+Nov 26 19:37 : client: [533] closed
+Nov 26 19:37 : client: [532] closed
+Nov 26 19:37 : client: [535] closed
+Nov 26 19:37 : client: [534] closed
+Nov 26 19:37 : client: [536] closed
+Nov 26 19:37 : client: [537] opened from 127.0.0.1:57334
+Nov 26 19:37 : client: [538] opened from 127.0.0.1:57338
+Nov 26 19:37 : client: [539] opened from 127.0.0.1:57342
+Nov 26 19:37 : client: [540] opened from 127.0.0.1:57346
+Nov 26 19:37 : client: [537] closed
+Nov 26 19:37 : client: [538] closed
+Nov 26 19:37 : client: [539] closed
+Nov 26 19:37 : client: [540] closed
+Nov 26 19:37 : client: [541] opened from 127.0.0.1:57350
+Nov 26 19:37 : client: [542] opened from 127.0.0.1:57354
+Nov 26 19:37 : client: [543] opened from 127.0.0.1:57358
+Nov 26 19:37 : client: [541] closed
+Nov 26 19:37 : client: [543] closed
+Nov 26 19:37 : client: [542] closed
+Nov 26 19:37 : client: [544] opened from 127.0.0.1:57362
+Nov 26 19:37 : client: [545] opened from 127.0.0.1:57366
+Nov 26 19:37 : client: [546] opened from 127.0.0.1:57370
+Nov 26 19:37 : client: [547] opened from 127.0.0.1:57374
+Nov 26 19:37 : client: [548] opened from 127.0.0.1:57378
+Nov 26 19:37 : client: [549] opened from 127.0.0.1:57382
+Nov 26 19:37 : client: [550] opened from 127.0.0.1:57386
+Nov 26 19:37 : client: [544] closed
+Nov 26 19:37 : client: [551] opened from 127.0.0.1:57394
+Nov 26 19:37 : client: [550] closed
+Nov 26 19:37 : client: [547] closed
+Nov 26 19:37 : client: [546] closed
+Nov 26 19:37 : client: [549] closed
+Nov 26 19:37 : client: [545] closed
+Nov 26 19:37 : client: [552] opened from 127.0.0.1:57398
+Nov 26 19:37 : client: [548] closed
+Nov 26 19:37 : client: [553] opened from 127.0.0.1:57402
+Nov 26 19:37 : client: [554] opened from 127.0.0.1:57406
+Nov 26 19:37 : client: [555] opened from 127.0.0.1:57410
+Nov 26 19:37 : client: [556] opened from 127.0.0.1:57414
+Nov 26 19:37 : client: [557] opened from 127.0.0.1:57418
+Nov 26 19:37 : client: [558] opened from 127.0.0.1:57426
+Nov 26 19:37 : client: [551] closed
+Nov 26 19:37 : client: [552] closed
+Nov 26 19:37 : client: [553] closed
+Nov 26 19:37 : client: [556] closed
+Nov 26 19:37 : client: [555] closed
+Nov 26 19:37 : client: [554] closed
+Nov 26 19:37 : client: [559] opened from 127.0.0.1:57430
+Nov 26 19:37 : client: [557] closed
+Nov 26 19:37 : client: [560] opened from 127.0.0.1:57434
+Nov 26 19:37 : client: [558] closed
+Nov 26 19:37 : client: [561] opened from 127.0.0.1:57438
+Nov 26 19:37 : client: [562] opened from 127.0.0.1:57442
+Nov 26 19:37 : client: [563] opened from 127.0.0.1:57446
+Nov 26 19:37 : client: [559] closed
+Nov 26 19:37 : client: [564] opened from 127.0.0.1:57450
+Nov 26 19:37 : client: [565] opened from 127.0.0.1:57454
+Nov 26 19:37 : client: [566] opened from 127.0.0.1:57462
+Nov 26 19:37 : client: [560] closed
+Nov 26 19:37 : client: [563] closed
+Nov 26 19:37 : client: [562] closed
+Nov 26 19:37 : client: [561] closed
+Nov 26 19:37 : client: [564] closed
+Nov 26 19:37 : client: [567] opened from 127.0.0.1:57466
+Nov 26 19:37 : client: [565] closed
+Nov 26 19:37 : client: [566] closed
+Nov 26 19:37 : client: [567] closed
+Nov 26 19:37 : client: [568] opened from 127.0.0.1:57470
+Nov 26 19:37 : client: [569] opened from 127.0.0.1:57474
+Nov 26 19:37 : client: [570] opened from 127.0.0.1:57478
+Nov 26 19:37 : client: [571] opened from 127.0.0.1:57482
+Nov 26 19:37 : client: [568] closed
+Nov 26 19:37 : client: [572] opened from 127.0.0.1:57486
+Nov 26 19:37 : client: [573] opened from 127.0.0.1:57490
+Nov 26 19:37 : client: [574] opened from 127.0.0.1:57494
+Nov 26 19:37 : client: [569] closed
+Nov 26 19:37 : client: [570] closed
+Nov 26 19:37 : client: [572] closed
+Nov 26 19:37 : client: [571] closed
+Nov 26 19:37 : client: [573] closed
+Nov 26 19:37 : client: [574] closed
+Nov 26 19:37 : client: [575] opened from 127.0.0.1:57498
+Nov 26 19:37 : client: [576] opened from 127.0.0.1:57502
+Nov 26 19:37 : client: [577] opened from 127.0.0.1:57506
+Nov 26 19:37 : client: [578] opened from 127.0.0.1:57510
+Nov 26 19:37 : client: [579] opened from 127.0.0.1:57514
+Nov 26 19:37 : client: [580] opened from 127.0.0.1:57518
+Nov 26 19:37 : client: [575] closed
+Nov 26 19:37 : client: [581] opened from 127.0.0.1:57522
+Nov 26 19:37 : client: [576] closed
+Nov 26 19:37 : client: [578] closed
+Nov 26 19:37 : client: [577] closed
+Nov 26 19:37 : client: [579] closed
+Nov 26 19:37 : client: [581] closed
+Nov 26 19:37 : client: [580] closed
+Nov 26 19:37 : client: [582] opened from 127.0.0.1:57390
+Nov 26 19:37 : client: [582] closed
+Nov 26 19:37 : client: [583] opened from 127.0.0.1:57422
+Nov 26 19:37 : client: [583] closed
+Nov 26 19:37 : client: [584] opened from 127.0.0.1:57458
+Nov 26 19:37 : client: [584] closed
+Nov 26 19:37 : client: [585] opened from 127.0.0.1:57526
+Nov 26 19:37 : client: [585] closed
+Nov 26 19:38 : player: played "curtainCall/Eminem - Kill You.mp3"
+Nov 26 19:38 : client: [586] opened from 127.0.0.1:57534
+Nov 26 19:38 : client: [586] closed
+Nov 26 20:48 : client: [500] closed
+Nov 26 21:32 : client: [587] opened from 127.0.0.1:58130
+Nov 26 21:37 : client: [587] closed
+Nov 26 21:38 : client: [588] opened from 127.0.0.1:58192
+Nov 26 22:06 : client: [589] opened from 127.0.0.1:58506
+Nov 26 22:06 : client: [589] closed
+Nov 26 22:10 : player: played "curtainCall/Eminem - Like Toy Soldiers.mp3"
+Nov 26 22:15 : client: [501] closed
+Nov 26 22:15 : client: [590] opened from 127.0.0.1:58590
+Nov 26 22:15 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 26 22:16 : player: played "curtainCall/Eminem - Lose Yourself.mp3"
+Nov 26 22:20 : player: played "curtainCall/Eminem - Mockingbird.mp3"
+Nov 26 22:24 : player: played "curtainCall/Eminem - My Name Is.mp3"
+Nov 26 22:28 : player: played "curtainCall/Eminem - Role Model.mp3"
+Nov 26 22:33 : player: played "curtainCall/Eminem - S_t On You (Featuring D12).mp3"
+Nov 26 22:34 : client: [588] closed
+Nov 26 22:36 : client: [591] opened from 127.0.0.1:58956
+Nov 26 22:38 : player: played "curtainCall/Eminem - Shake That.mp3"
+Nov 26 22:43 : exception: Failed to play on "pulse audio" (pulse): suspended
+Nov 26 22:43 : player: played "curtainCall/Eminem - Sing for the Moment.mp3"
+Nov 26 22:43 : exception: Failed to play on "pulse audio" (pulse): suspended
+Nov 26 22:50 : player: played "curtainCall/Eminem - Stan (Featuring Elton John).mp3"
+Nov 26 22:50 : client: [592] opened from 127.0.0.1:59348
+Nov 26 22:50 : client: [592] closed
+Nov 26 23:04 : client: [591] closed
+Nov 26 23:06 : client: [593] opened from 127.0.0.1:59482
+Nov 26 23:13 : client: [593] closed
+Nov 26 23:13 : client: [594] opened from 127.0.0.1:59530
+Nov 26 23:18 : client: [595] opened from 127.0.0.1:59568
+Nov 26 23:18 : client: [595] closed
+Nov 26 23:19 : client: [596] opened from 127.0.0.1:59678
+Nov 26 23:19 : client: [596] closed
+Nov 26 23:23 : client: [594] closed
+Nov 26 23:24 : client: [597] opened from 127.0.0.1:59786
+Nov 26 23:25 : client: [597] closed
+Nov 26 23:32 : client: [598] opened from 127.0.0.1:59856
+Nov 26 23:33 : client: [598] closed
+Nov 26 23:39 : client: [599] opened from 127.0.0.1:59960
+Nov 27 06:01 : client: [599] closed
+Nov 27 06:01 : client: [600] opened from 127.0.0.1:60064
+Nov 27 06:03 : client: [600] closed
+Nov 27 06:03 : client: [601] opened from 127.0.0.1:60078
+Nov 27 06:04 : client: [601] closed
+Nov 27 06:04 : client: [602] opened from 127.0.0.1:60082
+Nov 27 06:04 : client: [603] opened from 127.0.0.1:60086
+Nov 27 06:04 : player: played "curtainCall/Eminem - Stan.mp3"
+Nov 27 06:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 06:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 06:06 : client: [603] closed
+Nov 27 06:06 : client: [604] opened from 127.0.0.1:60110
+Nov 27 06:09 : client: [604] closed
+Nov 27 06:10 : client: [590] closed
+Nov 27 06:10 : client: [605] opened from 127.0.0.1:60422
+Nov 27 06:24 : client: [602] closed
+Nov 27 06:24 : client: [606] opened from 127.0.0.1:60816
+Nov 27 06:24 : client: [606] closed
+Nov 27 06:24 : client: [607] opened from 127.0.0.1:60822
+Nov 27 06:27 : client: [607] closed
+Nov 27 06:27 : client: [608] opened from 127.0.0.1:60884
+Nov 27 06:27 : client: [608] closed
+Nov 27 06:27 : client: [609] opened from 127.0.0.1:60888
+Nov 27 06:28 : client: [609] closed
+Nov 27 06:28 : client: [610] opened from 127.0.0.1:60892
+Nov 27 06:28 : client: [610] closed
+Nov 27 06:28 : client: [611] opened from 127.0.0.1:60896
+Nov 27 06:29 : client: [611] closed
+Nov 27 06:29 : client: [612] opened from 127.0.0.1:60934
+Nov 27 06:30 : client: [613] opened from 127.0.0.1:60964
+Nov 27 06:30 : client: [613] closed
+Nov 27 06:30 : client: [614] opened from 127.0.0.1:60968
+Nov 27 06:30 : client: [614] closed
+Nov 27 06:30 : client: [615] opened from 127.0.0.1:60972
+Nov 27 06:30 : client: [615] closed
+Nov 27 06:30 : client: [616] opened from 127.0.0.1:60976
+Nov 27 06:30 : client: [616] closed
+Nov 27 06:30 : client: [617] opened from 127.0.0.1:60980
+Nov 27 06:30 : client: [617] closed
+Nov 27 06:30 : client: [618] opened from 127.0.0.1:60984
+Nov 27 06:30 : client: [618] closed
+Nov 27 06:30 : client: [619] opened from 127.0.0.1:60988
+Nov 27 06:30 : client: [619] closed
+Nov 27 06:30 : client: [620] opened from 127.0.0.1:60992
+Nov 27 06:30 : client: [620] closed
+Nov 27 06:31 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 06:33 : client: [621] opened from 127.0.0.1:33306
+Nov 27 06:33 : client: [621] closed
+Nov 27 16:35 : client: [622] opened from 127.0.0.1:33870
+Nov 27 16:35 : client: [622] closed
+Nov 27 16:35 : client: [623] opened from 127.0.0.1:33958
+Nov 27 16:35 : client: [623] closed
+Nov 27 16:41 : client: [624] opened from 127.0.0.1:34020
+Nov 27 16:41 : client: [624] closed
+Nov 27 16:45 : player: played "Sia - The Best Songs/Sia - Elastic Heart (Piano Version) .mp3"
+Nov 27 16:50 : player: played "Sia - The Best Songs/Sia - Alive .mp3"
+Nov 27 16:54 : player: played "Sia - The Best Songs/Sia - Bird Set Free .mp3"
+Nov 27 16:57 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 16:57 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 16:57 : player: played "Sia - The Best Songs/Sia - Cheap Thrills .mp3"
+Nov 27 17:01 : player: played "Sia - The Best Songs/Sia - Clap Your Hands .mp3"
+Nov 27 17:02 : update: removing nightcore/[ AMV ] - I am a MESS-.mp3
+Nov 27 17:02 : update: added nightcore/Bebe Rexha-I am a mess.mp3
+Nov 27 17:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:03 : update: removing nightcore/Castle On The Hill - Nightcore (Ed Sheeran) Lyrics_Amv-NbpzD8gdIp8.mp3
+Nov 27 17:03 : update: added nightcore/Castle On The Hill-Ed Sheeran.mp3
+Nov 27 17:03 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:03 : client: [605] closed
+Nov 27 17:03 : client: [625] opened from 127.0.0.1:34202
+Nov 27 17:03 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:03 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:03 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:05 : update: updating nightcore/Bebe Rexha-I am a mess.mp3
+Nov 27 17:05 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:07 : player: played "nightcore/Bebe Rexha-I am a mess.mp3"
+Nov 27 17:10 : client: [626] opened from 127.0.0.1:34262
+Nov 27 17:10 : client: [626] malformed command "GET / HTTP/1.1"
+Nov 27 17:10 : client: [626] closed
+Nov 27 17:10 : client: [627] opened from 127.0.0.1:34264
+Nov 27 17:10 : client: [627] malformed command "GET /favicon.ico HTTP/1.1"
+Nov 27 17:10 : client: [627] closed
+Nov 27 17:14 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:14 : client: [625] closed
+Nov 27 17:15 : client: [628] opened from 127.0.0.1:34320
+Nov 27 17:15 : client: [628] closed
+Nov 27 17:18 : client: [629] opened from 127.0.0.1:34330
+Nov 27 17:18 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:18 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:20 : update: updating nightcore/Nightcore - Cheap Thrills.mp3
+Nov 27 17:20 : update: updating nightcore/Adele - Set Fire to the Rain (Nightcore Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Radioactive (Female Version) - Lyrics.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Rewrite The Stars (Switching Vocals) Anne-Marie & James Arthur.mp3
+Nov 27 17:20 : update: updating nightcore/Meg & Dia - Monster (Nightcore Dubstep Remix)-DYS_qFWx7-M.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Everytime We Touch (Piano Version) - (Lyrics.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」- This is me (switching vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Girls Like You (Switching Vocals) - (Lyrics)-zY.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Little Do You Know (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Tears of an Angel - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Middle Finger.mp3
+Nov 27 17:20 : update: updating nightcore/you can be king again.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Anxiety.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Kids Again (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Under ♬.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Safe And Sound (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/◤Nightcore◢ ↬ Just Like Fire (Warriors Light Em Up) [Switching Vocals _ Mashup].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - You Belong With Me - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Paralyzed - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore → Don't Watch Me Cry (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - FRIENDS (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Impossible (Rock Version) _ Lyrics「I Am King」.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ I Need Your Love.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Please Don't Go.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore You're Gonna Go Far, Kid.mp3
+Nov 27 17:20 : update: updating nightcore/◤Nightcore◢ ↬ MEGAMIX House of Memories [Switching Vocals _ Megamix].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - God Is A Girl.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Titanium (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→Despacito ✗ Havana ✗ Shape of You ✗ The Middle ✗ Stressed Out ✗ MORE (Switching Vocal).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ IDGAF ✗ God's Plan ✗ SAD! ✗Delicate ✗ Thank U Next ✗ MORE (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/◤Nightcore◢ ↬ Genius [Switching Vocals].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Panic Room (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - But i'm only human - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→  Just Give Me a Reason (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Lost My Mind (Lyrics)-Ij.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore- Glad You Came.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I'm an albatraoz.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ We Don't Talk Anymore ✗ Attention ✗ Animals ✗ Sugar ✗ See You Again (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I Fell In Love With My Best Friend - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Closer ✗ Changes ✗ Anxiety (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - You Don't Know (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Havana ✗ Despacito ✗ Believer ✗ Shape of you ✗ Rockabye and MORE (Switching Vocal).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Twenty One Pilots l THE MEGAMIX (Switching Vocals) - Heathens, Ride, Polarize and MORE.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - The Sound Of Silence (Disturbed) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ It Girl It Boy ( Switching Vocal ).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I Choose You - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ See You Again_ Sugar_ Love Me Like You Do (Acoustic Mashup) ( Switching Vocal ).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore~ Another Empty bottle.mp3
+Nov 27 17:20 : update: updating nightcore/Castle On The Hill-Ed Sheeran.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ All I Want For Christmas Is You (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Dont Deserve You - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - If I Die Young [HD].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Pretty Little Psycho.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Cold Water_Let Me Love You (Mashup) (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Infected (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - They Don't Know About Us.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - After The Heartbreak - (Lyrics)-rPKj2kQgBL8.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I Want You Here - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I Won't Give Up (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Hate Me (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - In The End _ (Lyrics)-tOoVFIr.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Bad boy.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Listen to your heart-ftvWVV4.mp3
+Nov 27 17:20 : update: updating nightcore/◤Nightcore◢ ↬ Royalty [Switching Vocals].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - This Little Girl-c0mX.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore → Top Songs of 2018 (Switching Vocals_Mashup) - [Lyrics] 乂.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Bring Me To Life.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Sorry (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/✧Nightcore - Kiss Me Before I Fucking Lose My Mind (lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Zombie (Rock Version).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Unbreakable (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I Want It That Way (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Angel With A Shotgun.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Story Of My Life (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore ~ A Thousand Years ( Lyrics ).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Grenade.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Demons (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I'm Not Her - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Poison.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Thunder ✗ Radioactive ✗ Believer ✗ Whatever It Takes and MORE (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/✤ Nightcore 〜 Dusk Till Dawn 「Zayn  ft. Sia」「Lyrics」.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Stay (Piano Version) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - I See Fire (Female Version) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore lyrics - Can I have this dance.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Apologize.mp3
+Nov 27 17:20 : update: updating nightcore/Bebe Rexha-I am a mess.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」Centuries_Welcome To The Black Parade_Bring Me To Life (Switching Vocals) #Mashup.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Perfect (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Sad Song (Switching Vocals) - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Be Alright.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Symphony - (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ The Chainsmokers Megamix (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Too Good At Goodbyes (female version).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Little Me.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore ↪ Believer ✗ Gasoline  {Switching Vocals}.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore ↬ Walls Could Talk [Switching Vocals].mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Dam Dadi Do.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore Timber.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore → Undo (Lyrics)-eHW5Z3.mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ I Built A Friend.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Legends Never Die.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Stereo heart-DizPgDu4s.mp3
+Nov 27 17:20 : update: updating nightcore/【Nightcore】→ Rise (cover) _ Lyrics.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Daughters of Darkness.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - Stand By You.mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore →  What Love Really Means (Lyrics).mp3
+Nov 27 17:20 : update: updating nightcore/「Nightcore」→ Radioactive ✗ Dollhouse ✗ Gasoline ✗ Light Em Up (Switching Vocals).mp3
+Nov 27 17:20 : update: updating nightcore/Nightcore - What Hurts The Most - (Lyrics).mp3
+Nov 27 17:20 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:21 : client: [629] closed
+Nov 27 17:21 : client: [630] opened from 127.0.0.1:34338
+Nov 27 17:21 : client: [630] closed
+Nov 27 17:21 : client: [631] opened from 127.0.0.1:34342
+Nov 27 17:21 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:22 : client: [631] closed
+Nov 27 17:22 : client: [632] opened from 127.0.0.1:34346
+Nov 27 17:22 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:22 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:22 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:22 : update: updating davidmaximmicic/David Maxim Micic - Bilo part II-15327887.mp3
+Nov 27 17:22 : update: updating davidmaximmicic/David Maxim Micic - 500 Seconds Before Sunset-349852204.mp3
+Nov 27 17:22 : update: updating davidmaximmicic/David Maxim Micic - Bilo part IV-15223463.mp3
+Nov 27 17:22 : update: updating davidmaximmicic/David Maxim Micic - Bilo part I-15328406.mp3
+Nov 27 17:22 : update: updating davidmaximmicic/David Maxim Micic - Bilo part III-15247203.mp3
+Nov 27 17:22 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 27 17:24 : player: played "nightcore/「Nightcore」- This is me (switching vocals).mp3"
+Nov 27 17:27 : player: played "nightcore/「Nightcore」→  Just Give Me a Reason (Switching Vocals).mp3"
+Nov 27 17:30 : player: played "nightcore/「Nightcore」→ All I Want For Christmas Is You (Switching Vocals).mp3"
+Nov 27 17:33 : player: played "nightcore/「Nightcore」→ Closer ✗ Changes ✗ Anxiety (Switching Vocals).mp3"
+Nov 27 17:37 : player: played "nightcore/「Nightcore」→ Havana ✗ Despacito ✗ Believer ✗ Shape of you ✗ Rockabye and MORE (Switching Vocal).mp3"
+Nov 27 17:39 : player: played "nightcore/「Nightcore」→ I Built A Friend.mp3"
+Nov 27 17:42 : player: played "nightcore/「Nightcore」→ I Need Your Love.mp3"
+Nov 27 17:47 : player: played "nightcore/「Nightcore」→ IDGAF ✗ God's Plan ✗ SAD! ✗Delicate ✗ Thank U Next ✗ MORE (Switching Vocals).mp3"
+Nov 27 17:50 : player: played "nightcore/「Nightcore」→ It Girl It Boy ( Switching Vocal ).mp3"
+Nov 27 17:53 : player: played "nightcore/「Nightcore」→ Kids Again (Switching Vocals).mp3"
+Nov 27 17:56 : player: played "nightcore/「Nightcore」→ Radioactive ✗ Dollhouse ✗ Gasoline ✗ Light Em Up (Switching Vocals).mp3"
+Nov 27 17:59 : client: [633] opened from 127.0.0.1:35024
+Nov 27 17:59 : client: [633] closed
+Nov 27 17:59 : client: [612] closed
+Nov 27 17:59 : client: [634] opened from 127.0.0.1:35028
+Nov 27 18:03 : player: played "nightcore/「Nightcore」→ Story Of My Life (Switching Vocals).mp3"
+Nov 27 18:06 : player: played "nightcore/「Nightcore」→ The Chainsmokers Megamix (Switching Vocals).mp3"
+Nov 27 18:11 : player: played "nightcore/「Nightcore」→ Thunder ✗ Radioactive ✗ Believer ✗ Whatever It Takes and MORE (Switching Vocals).mp3"
+Nov 27 18:19 : player: played "nightcore/「Nightcore」→ Twenty One Pilots l THE MEGAMIX (Switching Vocals) - Heathens, Ride, Polarize and MORE.mp3"
+Nov 27 18:21 : player: played "nightcore/「Nightcore」→ We Don't Talk Anymore ✗ Attention ✗ Animals ✗ Sugar ✗ See You Again (Switching Vocals).mp3"
+Nov 27 18:25 : player: played "nightcore/「Nightcore」→Despacito ✗ Havana ✗ Shape of You ✗ The Middle ✗ Stressed Out ✗ MORE (Switching Vocal).mp3"
+Nov 27 18:30 : player: played "nightcore/「Nightcore」Centuries_Welcome To The Black Parade_Bring Me To Life (Switching Vocals) #Mashup.mp3"
+Nov 27 18:32 : client: [634] closed
+Nov 27 18:32 : client: [635] opened from 127.0.0.1:35538
+Nov 27 18:33 : player: played "nightcore/【Nightcore】→ Rise (cover) _ Lyrics.mp3"
+Nov 27 18:33 : client: [632] closed
+Nov 27 18:33 : client: [636] opened from 127.0.0.1:35542
+Nov 27 18:33 : client: [636] closed
+Nov 27 18:36 : player: played "nightcore/◤Nightcore◢ ↬ Genius [Switching Vocals].mp3"
+Nov 27 18:38 : client: [635] closed
+Nov 27 18:38 : client: [637] opened from 127.0.0.1:35608
+Nov 27 18:39 : player: played "nightcore/◤Nightcore◢ ↬ Just Like Fire (Warriors Light Em Up) [Switching Vocals _ Mashup].mp3"
+Nov 27 18:45 : player: played "nightcore/◤Nightcore◢ ↬ MEGAMIX House of Memories [Switching Vocals _ Megamix].mp3"
+Nov 27 18:48 : player: played "nightcore/◤Nightcore◢ ↬ Royalty [Switching Vocals].mp3"
+Nov 27 18:51 : player: played "nightcore/✤ Nightcore 〜 Dusk Till Dawn 「Zayn  ft. Sia」「Lyrics」.mp3"
+Nov 27 18:54 : player: played "nightcore/✧Nightcore - Kiss Me Before I Fucking Lose My Mind (lyrics).mp3"
+Nov 27 18:57 : client: [638] opened from 127.0.0.1:35732
+Nov 27 18:58 : player: played "nightcore/Adele - Set Fire to the Rain (Nightcore Lyrics).mp3"
+Nov 27 19:01 : player: played "nightcore/Bebe Rexha-I am a mess.mp3"
+Nov 27 19:04 : player: played "nightcore/Castle On The Hill-Ed Sheeran.mp3"
+Nov 27 19:05 : client: [639] opened from 127.0.0.1:35772
+Nov 27 19:05 : client: [639] closed
+Nov 27 19:08 : player: played "nightcore/Nightcore - After The Heartbreak - (Lyrics)-rPKj2kQgBL8.mp3"
+Nov 27 19:11 : player: played "nightcore/Nightcore - Angel With A Shotgun.mp3"
+Nov 27 19:13 : player: played "nightcore/Nightcore - Anxiety.mp3"
+Nov 27 19:16 : player: played "nightcore/Nightcore - Apologize.mp3"
+Nov 27 19:19 : player: played "nightcore/Nightcore - Bad boy.mp3"
+Nov 27 19:21 : player: played "nightcore/Nightcore - Be Alright.mp3"
+Nov 27 19:25 : player: played "nightcore/Nightcore - Bring Me To Life.mp3"
+Nov 27 19:28 : player: played "nightcore/Nightcore - But i'm only human - (Lyrics).mp3"
+Nov 27 19:31 : player: played "nightcore/Nightcore - Cheap Thrills.mp3"
+Nov 27 19:34 : player: played "nightcore/Nightcore - Cold Water_Let Me Love You (Mashup) (Switching Vocals) - (Lyrics).mp3"
+Nov 27 19:36 : player: played "nightcore/Nightcore - Dam Dadi Do.mp3"
+Nov 27 19:40 : player: played "nightcore/Nightcore - Daughters of Darkness.mp3"
+Nov 27 19:42 : player: played "nightcore/Nightcore - Demons (Switching Vocals) - (Lyrics).mp3"
+Nov 27 19:46 : player: played "nightcore/Nightcore - Dont Deserve You - (Lyrics).mp3"
+Nov 27 19:48 : player: played "nightcore/Nightcore - Everytime We Touch (Piano Version) - (Lyrics.mp3"
+Nov 27 19:52 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Nov 27 19:55 : player: played "nightcore/Nightcore - FRIENDS (Switching Vocals) - (Lyrics).mp3"
+Nov 27 19:58 : player: played "nightcore/Nightcore - Girls Like You (Switching Vocals) - (Lyrics)-zY.mp3"
+Nov 27 20:02 : player: played "nightcore/Nightcore - God Is A Girl.mp3"
+Nov 27 20:04 : player: played "nightcore/Nightcore - Grenade.mp3"
+Nov 27 20:09 : player: played "nightcore/Nightcore - Hate Me (Lyrics).mp3"
+Nov 27 20:12 : player: played "nightcore/Nightcore - I Choose You - (Lyrics).mp3"
+Nov 27 20:15 : player: played "nightcore/Nightcore - I Fell In Love With My Best Friend - (Lyrics).mp3"
+Nov 27 20:20 : player: played "nightcore/Nightcore - I See Fire (Female Version) - (Lyrics).mp3"
+Nov 27 20:22 : player: played "nightcore/Nightcore - I Want It That Way (Switching Vocals) - (Lyrics).mp3"
+Nov 27 20:26 : player: played "nightcore/Nightcore - I Want You Here - (Lyrics).mp3"
+Nov 27 20:29 : player: played "nightcore/Nightcore - I Won't Give Up (Switching Vocals) - (Lyrics).mp3"
+Nov 27 20:31 : player: played "nightcore/Nightcore - I'm an albatraoz.mp3"
+Nov 27 20:34 : player: played "nightcore/Nightcore - I'm Not Her - (Lyrics).mp3"
+Nov 27 20:37 : player: played "nightcore/Nightcore - If I Die Young [HD].mp3"
+Nov 27 20:40 : player: played "nightcore/Nightcore - Impossible (Rock Version) _ Lyrics「I Am King」.mp3"
+Nov 27 20:44 : client: [640] opened from 127.0.0.1:36622
+Nov 27 20:44 : client: [640] closed
+Nov 27 20:49 : client: [637] closed
+Nov 27 21:07 : client: [641] opened from 127.0.0.1:36794
+Nov 27 22:12 : client: [641] closed
+Nov 27 22:12 : client: [642] opened from 127.0.0.1:38980
+Nov 28 02:00 : client: [642] closed
+Nov 28 02:00 : client: [643] opened from 127.0.0.1:41942
+Nov 28 15:59 : client: [643] closed
+Nov 28 15:59 : client: [644] opened from 127.0.0.1:42336
+Nov 28 17:41 : client: [645] opened from 127.0.0.1:44376
+Nov 28 17:41 : client: [645] closed
+Nov 28 17:41 : player: played "nightcore/Nightcore - In The End _ (Lyrics)-tOoVFIr.mp3"
+Nov 28 17:44 : player: played "nightcore/Nightcore - Infected (Lyrics).mp3"
+Nov 28 17:45 : client: [646] opened from 127.0.0.1:44420
+Nov 28 17:45 : client: [646] closed
+Nov 28 17:48 : player: played "nightcore/「Nightcore」- This is me (switching vocals).mp3"
+Nov 28 17:50 : client: [647] opened from 127.0.0.1:44550
+Nov 28 17:50 : client: [647] closed
+Nov 28 17:54 : player: played "nightcore/「Nightcore」→ Havana ✗ Despacito ✗ Believer ✗ Shape of you ✗ Rockabye and MORE (Switching Vocal).mp3"
+Nov 28 17:57 : client: [648] opened from 127.0.0.1:44608
+Nov 28 17:57 : client: [648] closed
+Nov 28 17:58 : client: [649] opened from 127.0.0.1:44656
+Nov 28 17:58 : client: [649] closed
+Nov 28 18:01 : player: played "nightcore/「Nightcore」→ IDGAF ✗ God's Plan ✗ SAD! ✗Delicate ✗ Thank U Next ✗ MORE (Switching Vocals).mp3"
+Nov 28 18:02 : client: [650] opened from 127.0.0.1:44748
+Nov 28 18:02 : client: [650] closed
+Nov 28 18:05 : player: played "nightcore/【Nightcore】→ Rise (cover) _ Lyrics.mp3"
+Nov 28 18:06 : client: [651] opened from 127.0.0.1:44800
+Nov 28 18:06 : client: [651] closed
+Nov 28 18:06 : client: [652] opened from 127.0.0.1:44804
+Nov 28 18:06 : client: [652] closed
+Nov 28 18:10 : client: [653] opened from 127.0.0.1:44850
+Nov 28 18:10 : client: [653] closed
+Nov 28 18:10 : client: [654] opened from 127.0.0.1:44854
+Nov 28 18:10 : client: [654] closed
+Nov 28 18:14 : player: played "nightcore/Nightcore - Zombie (Rock Version).mp3"
+Nov 28 18:17 : player: played "nightcore/「Nightcore」→ Story Of My Life (Switching Vocals).mp3"
+Nov 28 18:20 : player: played "nightcore/「Nightcore」→ The Chainsmokers Megamix (Switching Vocals).mp3"
+Nov 28 18:23 : player: played "nightcore/Nightcore - Little Me.mp3"
+Nov 28 18:26 : player: played "nightcore/Nightcore - They Don't Know About Us.mp3"
+Nov 28 18:29 : player: played "nightcore/Nightcore → Undo (Lyrics)-eHW5Z3.mp3"
+Nov 28 18:31 : player: played "nightcore/Nightcore - Radioactive (Female Version) - Lyrics.mp3"
+Nov 28 18:34 : player: played "nightcore/「Nightcore」→ I Need Your Love.mp3"
+Nov 28 18:38 : player: played "nightcore/Nightcore - Paralyzed - (Lyrics).mp3"
+Nov 28 18:40 : player: played "nightcore/「Nightcore」→ It Girl It Boy ( Switching Vocal ).mp3"
+Nov 28 18:45 : player: played "nightcore/「Nightcore」Centuries_Welcome To The Black Parade_Bring Me To Life (Switching Vocals) #Mashup.mp3"
+Nov 28 18:47 : player: played "nightcore/Nightcore- Glad You Came.mp3"
+Nov 28 18:50 : player: played "nightcore/Nightcore - Please Don't Go.mp3"
+Nov 28 18:53 : player: played "nightcore/Nightcore - Lost My Mind (Lyrics)-Ij.mp3"
+Nov 28 18:55 : player: played "nightcore/Nightcore - Too Good At Goodbyes (female version).mp3"
+Nov 28 19:00 : player: played "nightcore/Nightcore - Unbreakable (Lyrics).mp3"
+Nov 28 19:03 : player: played "nightcore/◤Nightcore◢ ↬ Genius [Switching Vocals].mp3"
+Nov 28 19:07 : player: played "nightcore/Nightcore ↪ Believer ✗ Gasoline  {Switching Vocals}.mp3"
+Nov 28 19:09 : player: played "nightcore/「Nightcore」→ We Don't Talk Anymore ✗ Attention ✗ Animals ✗ Sugar ✗ See You Again (Switching Vocals).mp3"
+Nov 28 19:13 : player: played "nightcore/Nightcore - The Sound Of Silence (Disturbed) - (Lyrics).mp3"
+Nov 28 19:16 : player: played "nightcore/「Nightcore」→ All I Want For Christmas Is You (Switching Vocals).mp3"
+Nov 28 19:16 : player: played "nightcore/Nightcore ↬ Walls Could Talk [Switching Vocals].mp3"
+Nov 28 19:16 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 28 19:16 : client: [655] opened from 127.0.0.1:45352
+Nov 28 19:16 : client: [655] closed
+Nov 28 19:17 : client: [656] opened from 127.0.0.1:45356
+Nov 28 19:17 : client: [656] closed
+Nov 28 19:20 : player: played "Sia - The Best Songs/Sia - Reaper .mp3"
+Nov 28 19:22 : player: played "epicmusic/Surrounded By Love - Synthphonia [FLAC Lossless].flac"
+Nov 28 19:26 : player: played "nightcore/you can be king again.mp3"
+Nov 28 19:29 : player: played "epicmusic/Together In The Empty - Dexter Britain [FLAC Lossless].flac"
+Nov 28 19:32 : player: played "nightcore/Nightcore - Apologize.mp3"
+Nov 28 19:34 : player: played "nightcore/「Nightcore」→ Closer ✗ Changes ✗ Anxiety (Switching Vocals).mp3"
+Nov 28 19:37 : player: played "nightcore/Nightcore - Tears of an Angel - (Lyrics).mp3"
+Nov 28 19:41 : player: played "nightcore/「Nightcore」→ Radioactive ✗ Dollhouse ✗ Gasoline ✗ Light Em Up (Switching Vocals).mp3"
+Nov 28 19:43 : player: played "nightcore/Nightcore - They Don't Know About Us.mp3"
+Nov 28 19:46 : player: played "nightcore/Nightcore - Sad Song (Switching Vocals) - (Lyrics).mp3"
+Nov 28 19:49 : player: played "nightcore/Nightcore - Little Me.mp3"
+Nov 28 19:53 : player: played "nightcore/「Nightcore」→ Havana ✗ Despacito ✗ Believer ✗ Shape of you ✗ Rockabye and MORE (Switching Vocal).mp3"
+Nov 28 19:56 : player: played "nightcore/Nightcore- Glad You Came.mp3"
+Nov 28 20:00 : player: played "Sia - The Best Songs/Sia - Elastic Heart .mp3"
+Nov 28 20:06 : player: played "Hamilton/Satisfied - Renee Elise Goldsberry_ Comp [Lossless_FLAC].flac"
+Nov 28 20:09 : player: played "rapViet/MC ILL - Truyen co grimm.mp3"
+Nov 28 20:12 : player: played "epicmusic/Beneath the Horizon - Silver Screen [FLAC Lossless].flac"
+Nov 28 20:15 : player: played "nightcore/Nightcore - The Sound Of Silence (Disturbed) - (Lyrics).mp3"
+Nov 28 20:20 : player: played "Hamilton/The World Was Wide Enough - Leslie Odom_ [Lossless_FLAC].flac"
+Nov 28 20:22 : player: played "Hamilton/The Story Of Tonight - Lin-Manuel Mirand [Lossless_FLAC].flac"
+Nov 28 20:25 : player: played "epicmusic/When The Spring Comes - Sergey Saliev [MP3 320kbps].mp3"
+Nov 28 20:28 : player: played "Sia - The Best Songs/Sia - Footprints .mp3"
+Nov 28 20:30 : client: [657] opened from 127.0.0.1:45704
+Nov 28 20:30 : client: [657] closed
+Nov 28 20:33 : player: played "epicmusic/Meant To Be - Two Steps From Hell [FLAC Lossless].flac"
+Nov 28 20:35 : player: played "epicmusic/Equinox - Audiomachine [FLAC Lossless].flac"
+Nov 28 20:40 : player: played "curtainCall/Eminem - The Way I Am.mp3"
+Nov 28 20:42 : player: played "Hamilton/Congratulations - Hamilton Workshop Cast.mp3"
+Nov 28 20:45 : player: played "nightcore/Nightcore - You Belong With Me - (Lyrics).mp3"
+Nov 28 20:49 : player: played "Sia - The Best Songs/Sia - Unstoppable .mp3"
+Nov 28 20:50 : client: [658] opened from 127.0.0.1:45994
+Nov 28 20:50 : client: [658] closed
+Nov 28 22:56 : client: [644] closed
+Nov 28 22:56 : client: [659] opened from 127.0.0.1:48404
+Nov 28 22:57 : client: [659] closed
+Nov 28 22:57 : client: [660] opened from 127.0.0.1:48414
+Nov 28 22:58 : client: [660] closed
+Nov 28 22:58 : client: [661] opened from 127.0.0.1:48418
+Nov 28 22:58 : client: [661] closed
+Nov 28 22:58 : client: [662] opened from 127.0.0.1:48422
+Nov 28 22:59 : client: [662] closed
+Nov 28 22:59 : client: [663] opened from 127.0.0.1:48426
+Nov 28 22:59 : client: [663] closed
+Nov 28 22:59 : client: [664] opened from 127.0.0.1:48430
+Nov 28 23:51 : client: [664] closed
+Nov 28 23:51 : client: [665] opened from 127.0.0.1:48966
+Nov 28 23:51 : client: [665] closed
+Nov 28 23:51 : client: [666] opened from 127.0.0.1:48994
+Nov 28 23:51 : client: [666] closed
+Nov 28 23:51 : client: [667] opened from 127.0.0.1:48998
+Nov 29 06:25 : client: [667] closed
+Nov 29 06:25 : player: played "epicmusic/New Beginnings - Future World Music [FLAC Lossless].flac"
+Nov 29 06:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 06:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 06:35 : client: [0] opened from 127.0.0.1:44334
+Nov 29 06:35 : client: [1] opened from 127.0.0.1:44338
+Nov 29 06:35 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 06:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:38 : client: [2] opened from 127.0.0.1:44390
+Nov 29 06:38 : client: [2] closed
+Nov 29 06:38 : update: removing The Spirit Tree (Featuring Aeralie Brighton).mp3
+Nov 29 06:38 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:41 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:41 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 06:41 : player: played "Sia - The Best Songs/Sia - Reaper .mp3"
+Nov 29 06:50 : client: [3] opened from 127.0.0.1:44728
+Nov 29 06:50 : client: [4] opened from 127.0.0.1:44732
+Nov 29 06:50 : client: [5] opened from 127.0.0.1:44736
+Nov 29 06:50 : client: [3] closed
+Nov 29 06:50 : client: [5] closed
+Nov 29 06:50 : client: [4] closed
+Nov 29 06:50 : client: [6] opened from 127.0.0.1:44740
+Nov 29 06:50 : client: [7] opened from 127.0.0.1:44744
+Nov 29 06:50 : client: [8] opened from 127.0.0.1:44748
+Nov 29 06:50 : client: [9] opened from 127.0.0.1:44752
+Nov 29 06:50 : client: [10] opened from 127.0.0.1:44756
+Nov 29 06:50 : client: [11] opened from 127.0.0.1:44760
+Nov 29 06:50 : client: [6] closed
+Nov 29 06:50 : client: [12] opened from 127.0.0.1:44764
+Nov 29 06:50 : client: [9] closed
+Nov 29 06:50 : client: [8] closed
+Nov 29 06:50 : client: [7] closed
+Nov 29 06:50 : client: [10] closed
+Nov 29 06:50 : client: [11] closed
+Nov 29 06:50 : client: [12] closed
+Nov 29 06:50 : client: [13] opened from 127.0.0.1:44768
+Nov 29 06:50 : client: [14] opened from 127.0.0.1:44772
+Nov 29 06:50 : client: [15] opened from 127.0.0.1:44776
+Nov 29 06:50 : client: [16] opened from 127.0.0.1:44780
+Nov 29 06:50 : client: [17] opened from 127.0.0.1:44784
+Nov 29 06:50 : client: [18] opened from 127.0.0.1:44788
+Nov 29 06:50 : client: [13] closed
+Nov 29 06:50 : client: [19] opened from 127.0.0.1:44792
+Nov 29 06:50 : client: [20] opened from 127.0.0.1:44796
+Nov 29 06:50 : client: [14] closed
+Nov 29 06:50 : client: [16] closed
+Nov 29 06:50 : client: [15] closed
+Nov 29 06:50 : client: [17] closed
+Nov 29 06:50 : client: [19] closed
+Nov 29 06:50 : client: [18] closed
+Nov 29 06:50 : client: [21] opened from 127.0.0.1:44800
+Nov 29 06:50 : client: [20] closed
+Nov 29 06:50 : client: [21] closed
+Nov 29 06:50 : client: [22] opened from 127.0.0.1:44804
+Nov 29 06:50 : client: [23] opened from 127.0.0.1:44808
+Nov 29 06:50 : client: [24] opened from 127.0.0.1:44812
+Nov 29 06:50 : client: [25] opened from 127.0.0.1:44816
+Nov 29 06:50 : client: [26] opened from 127.0.0.1:44820
+Nov 29 06:50 : client: [22] closed
+Nov 29 06:50 : client: [23] closed
+Nov 29 06:50 : client: [24] closed
+Nov 29 06:50 : client: [26] closed
+Nov 29 06:50 : client: [25] closed
+Nov 29 06:50 : client: [27] opened from 127.0.0.1:44824
+Nov 29 06:50 : client: [27] closed
+Nov 29 06:50 : client: [28] opened from 127.0.0.1:44828
+Nov 29 06:50 : client: [28] closed
+Nov 29 06:50 : client: [29] opened from 127.0.0.1:44832
+Nov 29 06:50 : client: [29] closed
+Nov 29 06:50 : client: [30] opened from 127.0.0.1:44836
+Nov 29 06:50 : client: [30] closed
+Nov 29 06:50 : client: [31] opened from 127.0.0.1:44840
+Nov 29 06:50 : client: [31] closed
+Nov 29 06:50 : client: [32] opened from 127.0.0.1:44844
+Nov 29 06:50 : client: [32] closed
+Nov 29 06:50 : client: [33] opened from 127.0.0.1:44848
+Nov 29 06:50 : client: [33] closed
+Nov 29 06:50 : client: [34] opened from 127.0.0.1:44852
+Nov 29 06:50 : client: [35] opened from 127.0.0.1:44856
+Nov 29 06:50 : client: [36] opened from 127.0.0.1:44860
+Nov 29 06:50 : client: [37] opened from 127.0.0.1:44864
+Nov 29 06:50 : client: [38] opened from 127.0.0.1:44868
+Nov 29 06:50 : client: [34] closed
+Nov 29 06:50 : client: [39] opened from 127.0.0.1:44872
+Nov 29 06:50 : client: [40] opened from 127.0.0.1:44876
+Nov 29 06:50 : client: [35] closed
+Nov 29 06:50 : client: [41] opened from 127.0.0.1:44880
+Nov 29 06:50 : client: [36] closed
+Nov 29 06:50 : client: [37] closed
+Nov 29 06:50 : client: [38] closed
+Nov 29 06:50 : client: [41] closed
+Nov 29 06:50 : client: [39] closed
+Nov 29 06:50 : client: [40] closed
+Nov 29 06:50 : client: [42] opened from 127.0.0.1:44884
+Nov 29 06:50 : client: [42] closed
+Nov 29 06:50 : client: [43] opened from 127.0.0.1:44888
+Nov 29 06:50 : client: [43] closed
+Nov 29 06:50 : client: [44] opened from 127.0.0.1:44892
+Nov 29 06:50 : client: [44] closed
+Nov 29 06:50 : client: [45] opened from 127.0.0.1:44896
+Nov 29 06:50 : client: [45] closed
+Nov 29 06:50 : client: [46] opened from 127.0.0.1:44900
+Nov 29 06:50 : client: [46] closed
+Nov 29 06:51 : client: [47] opened from 127.0.0.1:45160
+Nov 29 06:51 : client: [47] closed
+Nov 29 06:51 : client: [48] opened from 127.0.0.1:45164
+Nov 29 06:51 : client: [48] closed
+Nov 29 06:54 : client: [0] closed
+Nov 29 06:54 : player: played "davidmaximmicic/David Maxim Micic - Bilo part III-15247203.mp3"
+Nov 29 19:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 19:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 19:06 : client: [0] opened from 127.0.0.1:41500
+Nov 29 19:06 : client: [1] opened from 127.0.0.1:41504
+Nov 29 19:13 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 19:57 : client: [0] closed
+Nov 29 19:57 : client: [1] closed
+Nov 29 19:57 : client: [2] opened from 127.0.0.1:42282
+Nov 29 20:46 : client: [3] opened from 127.0.0.1:43852
+Nov 29 20:46 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 20:46 : player: played "davidmaximmicic/David Maxim Micic - Bilo part III-15247203.mp3"
+Nov 29 20:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 29 20:47 : client: [2] closed
+Nov 29 20:47 : client: [4] opened from 127.0.0.1:43856
+Nov 29 20:49 : player: played "nightcore/「Nightcore」→ I Built A Friend.mp3"
+Nov 29 20:53 : player: played "nightcore/Nightcore - Infected (Lyrics).mp3"
+Nov 29 20:57 : player: played "nightcore/Nightcore - You Don't Know (Lyrics).mp3"
+Nov 29 20:59 : client: [4] closed
+Nov 29 20:59 : client: [5] opened from 127.0.0.1:44014
+Nov 29 21:01 : player: played "nightcore/「Nightcore」Centuries_Welcome To The Black Parade_Bring Me To Life (Switching Vocals) #Mashup.mp3"
+Nov 29 21:02 : client: [5] closed
+Nov 29 21:02 : client: [3] closed
+Nov 29 21:02 : client: [6] opened from 127.0.0.1:44036
+Nov 29 21:29 : client: [6] closed
+Nov 29 21:29 : client: [7] opened from 127.0.0.1:44490
+Nov 29 21:30 : client: [7] closed
+Nov 29 21:30 : client: [8] opened from 127.0.0.1:44494
+Nov 29 21:31 : client: [8] closed
+Nov 29 21:31 : client: [9] opened from 127.0.0.1:44498
+Nov 29 21:31 : client: [10] opened from 127.0.0.1:44502
+Nov 29 21:31 : client: [10] closed
+Nov 29 21:31 : client: [9] closed
+Nov 29 21:31 : client: [11] opened from 127.0.0.1:44506
+Nov 29 21:31 : client: [12] opened from 127.0.0.1:44510
+Nov 29 21:31 : client: [12] closed
+Nov 29 21:34 : client: [13] opened from 127.0.0.1:44608
+Nov 29 21:34 : client: [13] closed
+Nov 29 21:34 : client: [14] opened from 127.0.0.1:44612
+Nov 29 21:35 : client: [14] closed
+Nov 29 21:35 : client: [11] closed
+Nov 29 21:35 : client: [15] opened from 127.0.0.1:44616
+Nov 29 21:35 : client: [16] opened from 127.0.0.1:44620
+Nov 29 21:35 : client: [16] closed
+Nov 29 21:36 : client: [15] closed
+Nov 29 21:36 : client: [17] opened from 127.0.0.1:44632
+Nov 29 21:37 : client: [17] closed
+Nov 29 21:37 : client: [18] opened from 127.0.0.1:44638
+Nov 29 21:38 : client: [18] closed
+Nov 29 21:38 : client: [19] opened from 127.0.0.1:44648
+Nov 29 21:39 : client: [19] closed
+Nov 29 21:39 : client: [20] opened from 127.0.0.1:44658
+Nov 29 21:39 : client: [20] closed
+Nov 29 21:39 : client: [21] opened from 127.0.0.1:44666
+Nov 29 21:40 : client: [21] closed
+Nov 29 21:40 : client: [22] opened from 127.0.0.1:44670
+Nov 29 21:40 : client: [22] closed
+Nov 29 21:40 : client: [23] opened from 127.0.0.1:44674
+Nov 29 21:40 : client: [23] closed
+Nov 29 21:40 : client: [24] opened from 127.0.0.1:44678
+Nov 29 21:41 : client: [24] closed
+Nov 29 21:41 : client: [25] opened from 127.0.0.1:44692
+Nov 29 21:42 : client: [26] opened from 127.0.0.1:44696
+Nov 29 21:42 : client: [25] closed
+Nov 29 21:42 : client: [27] opened from 127.0.0.1:44700
+Nov 29 21:42 : client: [26] closed
+Nov 29 21:42 : client: [27] closed
+Nov 29 21:42 : client: [28] opened from 127.0.0.1:44704
+Nov 29 21:42 : client: [29] opened from 127.0.0.1:44708
+Nov 29 21:43 : client: [29] closed
+Nov 29 21:44 : client: [28] closed
+Nov 29 21:44 : client: [30] opened from 127.0.0.1:44952
+Nov 29 21:44 : client: [30] closed
+Nov 29 21:44 : client: [31] opened from 127.0.0.1:44956
+Nov 29 21:45 : client: [31] closed
+Nov 29 21:45 : client: [32] opened from 127.0.0.1:44964
+Nov 29 21:45 : client: [32] closed
+Nov 29 21:45 : client: [33] opened from 127.0.0.1:44968
+Nov 29 21:46 : client: [33] closed
+Nov 29 21:46 : client: [34] opened from 127.0.0.1:44972
+Nov 29 21:46 : client: [34] closed
+Nov 29 21:46 : client: [35] opened from 127.0.0.1:44976
+Nov 29 21:46 : client: [36] opened from 127.0.0.1:44980
+Nov 29 21:47 : client: [36] closed
+Nov 29 21:47 : client: [35] closed
+Nov 29 21:47 : client: [37] opened from 127.0.0.1:44984
+Nov 29 21:47 : client: [38] opened from 127.0.0.1:44988
+Nov 29 21:47 : client: [38] closed
+Nov 29 21:51 : client: [39] opened from 127.0.0.1:45030
+Nov 29 21:51 : client: [39] closed
+Nov 29 21:51 : client: [40] opened from 127.0.0.1:45034
+Nov 29 21:51 : client: [40] closed
+Nov 29 21:52 : client: [41] opened from 127.0.0.1:45038
+Nov 29 21:52 : client: [41] closed
+Nov 29 21:53 : client: [37] closed
+Nov 29 21:53 : client: [42] opened from 127.0.0.1:45062
+Nov 29 21:53 : client: [42] closed
+Nov 29 21:54 : client: [43] opened from 127.0.0.1:45066
+Nov 29 21:54 : client: [44] opened from 127.0.0.1:45070
+Nov 29 21:54 : client: [44] closed
+Nov 29 21:54 : client: [43] closed
+Nov 29 21:54 : client: [45] opened from 127.0.0.1:45074
+Nov 29 21:54 : client: [45] closed
+Nov 29 21:54 : client: [46] opened from 127.0.0.1:45078
+Nov 29 21:54 : client: [46] closed
+Nov 29 21:54 : client: [47] opened from 127.0.0.1:45082
+Nov 29 21:55 : client: [47] closed
+Nov 29 21:55 : client: [48] opened from 127.0.0.1:45094
+Nov 29 21:55 : client: [48] closed
+Nov 29 21:55 : client: [49] opened from 127.0.0.1:45098
+Nov 29 21:55 : client: [50] opened from 127.0.0.1:45102
+Nov 29 21:55 : client: [50] closed
+Nov 29 21:55 : client: [51] opened from 127.0.0.1:45106
+Nov 29 21:55 : client: [51] closed
+Nov 29 21:55 : client: [52] opened from 127.0.0.1:45110
+Nov 29 21:55 : client: [52] closed
+Nov 29 21:55 : client: [53] opened from 127.0.0.1:45114
+Nov 29 21:55 : client: [53] closed
+Nov 29 21:56 : client: [54] opened from 127.0.0.1:45118
+Nov 29 21:56 : client: [54] closed
+Nov 29 21:56 : client: [49] closed
+Nov 29 21:56 : client: [55] opened from 127.0.0.1:45122
+Nov 29 21:56 : client: [56] opened from 127.0.0.1:45126
+Nov 29 21:56 : client: [56] closed
+Nov 29 21:56 : client: [55] closed
+Nov 29 21:56 : client: [57] opened from 127.0.0.1:45130
+Nov 29 21:56 : client: [58] opened from 127.0.0.1:45134
+Nov 29 21:56 : client: [58] closed
+Nov 29 21:57 : client: [57] closed
+Nov 29 21:57 : client: [59] opened from 127.0.0.1:45138
+Nov 29 21:57 : client: [60] opened from 127.0.0.1:45142
+Nov 29 21:57 : client: [60] closed
+Nov 29 21:57 : client: [59] closed
+Nov 29 21:57 : client: [61] opened from 127.0.0.1:45146
+Nov 29 21:57 : client: [62] opened from 127.0.0.1:45150
+Nov 29 21:57 : client: [62] closed
+Nov 29 21:57 : client: [61] closed
+Nov 29 21:57 : client: [63] opened from 127.0.0.1:45154
+Nov 29 21:57 : client: [64] opened from 127.0.0.1:45158
+Nov 29 21:57 : client: [64] closed
+Nov 29 21:58 : client: [63] closed
+Nov 29 21:58 : client: [65] opened from 127.0.0.1:45162
+Nov 29 21:58 : client: [66] opened from 127.0.0.1:45166
+Nov 29 21:58 : client: [66] closed
+Nov 29 21:58 : client: [65] closed
+Nov 29 21:58 : client: [67] opened from 127.0.0.1:45170
+Nov 29 21:58 : client: [68] opened from 127.0.0.1:45176
+Nov 29 21:58 : client: [68] closed
+Nov 29 21:58 : client: [67] closed
+Nov 29 21:58 : client: [69] opened from 127.0.0.1:45180
+Nov 29 21:58 : client: [70] opened from 127.0.0.1:45184
+Nov 29 21:58 : client: [70] closed
+Nov 29 21:59 : client: [69] closed
+Nov 29 21:59 : client: [71] opened from 127.0.0.1:45188
+Nov 29 21:59 : client: [72] opened from 127.0.0.1:45192
+Nov 29 21:59 : client: [72] closed
+Nov 29 21:59 : client: [71] closed
+Nov 29 21:59 : client: [73] opened from 127.0.0.1:45196
+Nov 29 22:00 : client: [73] closed
+Nov 29 22:00 : client: [74] opened from 127.0.0.1:45200
+Nov 29 22:00 : client: [74] closed
+Nov 29 22:00 : client: [75] opened from 127.0.0.1:45204
+Nov 29 22:00 : client: [76] opened from 127.0.0.1:45208
+Nov 29 22:00 : client: [76] closed
+Nov 29 22:01 : client: [75] closed
+Nov 29 22:01 : client: [77] opened from 127.0.0.1:45212
+Nov 29 22:01 : client: [78] opened from 127.0.0.1:45216
+Nov 29 22:01 : client: [78] closed
+Nov 29 22:01 : client: [79] opened from 127.0.0.1:45220
+Nov 29 22:01 : client: [77] closed
+Nov 29 22:01 : client: [80] opened from 127.0.0.1:45224
+Nov 29 22:01 : client: [81] opened from 127.0.0.1:45228
+Nov 29 22:01 : client: [81] closed
+Nov 29 22:01 : client: [80] closed
+Nov 29 22:01 : client: [82] opened from 127.0.0.1:45232
+Nov 29 22:02 : client: [82] closed
+Nov 29 22:02 : client: [83] opened from 127.0.0.1:45236
+Nov 29 22:02 : client: [79] closed
+Nov 29 22:02 : client: [84] opened from 127.0.0.1:45240
+Nov 29 22:02 : client: [84] closed
+Nov 29 22:02 : client: [83] closed
+Nov 29 22:02 : client: [85] opened from 127.0.0.1:45244
+Nov 29 22:02 : client: [86] opened from 127.0.0.1:45248
+Nov 29 22:02 : client: [86] closed
+Nov 29 22:02 : client: [85] closed
+Nov 29 22:02 : client: [87] opened from 127.0.0.1:45252
+Nov 29 22:02 : client: [88] opened from 127.0.0.1:45256
+Nov 29 22:03 : client: [88] closed
+Nov 29 22:03 : client: [89] opened from 127.0.0.1:45260
+Nov 29 22:03 : client: [90] opened from 127.0.0.1:45264
+Nov 29 22:03 : client: [91] opened from 127.0.0.1:45268
+Nov 29 22:03 : client: [92] opened from 127.0.0.1:45272
+Nov 29 22:03 : client: [93] opened from 127.0.0.1:45276
+Nov 29 22:03 : client: [92] closed
+Nov 29 22:03 : client: [93] closed
+Nov 29 22:03 : client: [91] closed
+Nov 29 22:03 : client: [90] closed
+Nov 29 22:03 : client: [94] opened from 127.0.0.1:45280
+Nov 29 22:03 : client: [95] opened from 127.0.0.1:45284
+Nov 29 22:03 : client: [96] opened from 127.0.0.1:45288
+Nov 29 22:03 : client: [96] closed
+Nov 29 22:03 : client: [95] closed
+Nov 29 22:03 : client: [94] closed
+Nov 29 22:03 : client: [89] closed
+Nov 29 22:03 : client: [87] closed
+Nov 29 22:03 : client: [97] opened from 127.0.0.1:45312
+Nov 29 22:03 : client: [98] opened from 127.0.0.1:45316
+Nov 29 22:03 : client: [98] closed
+Nov 29 22:03 : client: [97] closed
+Nov 29 22:03 : client: [99] opened from 127.0.0.1:45320
+Nov 29 22:03 : client: [99] closed
+Nov 29 22:03 : client: [100] opened from 127.0.0.1:45324
+Nov 29 22:04 : client: [100] closed
+Nov 29 22:04 : client: [101] opened from 127.0.0.1:45328
+Nov 29 22:04 : client: [102] opened from 127.0.0.1:45332
+Nov 29 22:04 : client: [102] closed
+Nov 29 22:04 : client: [101] closed
+Nov 29 22:04 : client: [103] opened from 127.0.0.1:45336
+Nov 29 22:04 : client: [104] opened from 127.0.0.1:45340
+Nov 29 22:04 : client: [104] closed
+Nov 29 22:05 : client: [103] closed
+Nov 29 22:05 : client: [105] opened from 127.0.0.1:45350
+Nov 29 22:05 : client: [106] opened from 127.0.0.1:45354
+Nov 29 22:06 : client: [106] closed
+Nov 29 22:06 : client: [107] opened from 127.0.0.1:45362
+Nov 29 22:06 : client: [107] closed
+Nov 29 22:07 : client: [105] closed
+Nov 29 22:07 : client: [108] opened from 127.0.0.1:45366
+Nov 29 22:07 : client: [108] closed
+Nov 29 22:07 : client: [109] opened from 127.0.0.1:45370
+Nov 29 22:11 : client: [109] closed
+Nov 29 22:11 : client: [110] opened from 127.0.0.1:45378
+Nov 29 22:12 : client: [110] closed
+Nov 29 22:12 : client: [111] opened from 127.0.0.1:45390
+Nov 29 22:16 : client: [111] closed
+Nov 29 22:16 : client: [112] opened from 127.0.0.1:45414
+Nov 29 22:17 : client: [112] closed
+Nov 29 22:17 : client: [113] opened from 127.0.0.1:45418
+Nov 29 22:18 : client: [113] closed
+Nov 29 22:18 : client: [114] opened from 127.0.0.1:45422
+Nov 29 22:18 : client: [115] opened from 127.0.0.1:45428
+Nov 29 22:18 : client: [115] closed
+Nov 29 22:20 : client: [114] closed
+Nov 29 22:20 : client: [116] opened from 127.0.0.1:45432
+Nov 29 22:23 : client: [116] closed
+Nov 29 22:23 : client: [117] opened from 127.0.0.1:45462
+Nov 29 22:24 : client: [117] closed
+Nov 29 22:24 : client: [118] opened from 127.0.0.1:45466
+Nov 29 22:24 : client: [118] closed
+Nov 29 22:24 : client: [119] opened from 127.0.0.1:45470
+Nov 29 22:24 : client: [119] closed
+Nov 29 22:24 : client: [120] opened from 127.0.0.1:45474
+Nov 29 22:26 : client: [120] closed
+Nov 29 22:26 : client: [121] opened from 127.0.0.1:45706
+Nov 29 22:26 : client: [121] closed
+Nov 29 22:26 : client: [122] opened from 127.0.0.1:45716
+Nov 29 22:27 : client: [122] closed
+Nov 29 22:27 : client: [123] opened from 127.0.0.1:46042
+Nov 29 22:27 : client: [124] opened from 127.0.0.1:46236
+Nov 29 22:27 : client: [124] closed
+Nov 29 22:29 : client: [125] opened from 127.0.0.1:46322
+Nov 29 22:29 : client: [125] closed
+Nov 29 22:45 : client: [123] closed
+Nov 29 22:50 : client: [126] opened from 127.0.0.1:46652
+Nov 29 22:56 : client: [127] opened from 127.0.0.1:46816
+Nov 29 22:57 : client: [127] closed
+Nov 29 22:57 : client: [128] opened from 127.0.0.1:46852
+Nov 29 22:58 : flac: FLAC__STREAM_DECODER_ERROR_STATUS_LOST_SYNC
+Nov 29 22:58 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : player: played "epicmusic/I_m Happy - Florian Bur [FLAC Lossless].flac"
+Nov 29 22:59 : client: [129] opened from 127.0.0.1:46856
+Nov 29 22:59 : client: [130] opened from 127.0.0.1:46860
+Nov 29 22:59 : client: [130] closed
+Nov 29 22:59 : client: [129] closed
+Nov 29 22:59 : client: [128] closed
+Nov 29 22:59 : client: [131] opened from 127.0.0.1:46864
+Nov 29 22:59 : client: [132] opened from 127.0.0.1:46868
+Nov 29 22:59 : client: [133] opened from 127.0.0.1:46872
+Nov 29 22:59 : client: [133] closed
+Nov 29 22:59 : client: [132] closed
+Nov 29 22:59 : client: [131] closed
+Nov 29 22:59 : client: [134] opened from 127.0.0.1:46876
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 22:59 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:00 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:00 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:01 : update: updating epicmusic/Epic Music Mix   Epic Piano Collection Vol.mp3
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:03 : update: updating davidmaximmicic/David Maxim Micic - 500 Seconds Before Sunset-349852204.mp3
+Nov 29 23:03 : update: updating davidmaximmicic/David Maxim Micic - Bilo part II-15327887.mp3
+Nov 29 23:04 : update: updating davidmaximmicic/David Maxim Micic - Bilo part III-15247203.mp3
+Nov 29 23:04 : update: updating davidmaximmicic/David Maxim Micic - Bilo part IV-15223463.mp3
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 29 23:06 : client: [135] opened from 127.0.0.1:46918
+Nov 29 23:06 : client: [135] closed
+Nov 29 23:07 : client: [126] closed
+Nov 29 23:21 : client: [136] opened from 127.0.0.1:47020
+Nov 29 23:22 : client: [136] closed
+Nov 29 23:27 : client: [137] opened from 127.0.0.1:47038
+Nov 29 23:55 : client: [138] opened from 127.0.0.1:47288
+Nov 29 23:55 : client: [138] closed
+Nov 30 00:45 : client: [137] closed
+Nov 30 00:45 : client: [139] opened from 127.0.0.1:47686
+Nov 30 01:00 : client: [140] opened from 127.0.0.1:47850
+Nov 30 01:00 : client: [140] closed
+Nov 30 05:10 : client: [139] closed
+Nov 30 05:23 : client: [141] opened from 127.0.0.1:48224
+Nov 30 05:24 : client: [141] closed
+Nov 30 05:48 : client: [142] opened from 127.0.0.1:48398
+Nov 30 19:06 : player: played "epicmusic/Epic Music Mix   Epic Piano Collection Vol.mp3"
+Nov 30 19:10 : client: [134] closed
+Nov 30 19:10 : client: [143] opened from 127.0.0.1:49076
+Nov 30 19:10 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:10 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:11 : update: updating curtainCall/Eminem - Just Don't Give a F_k.mp3
+Nov 30 19:11 : player: played "curtainCall/Eminem - Like Toy Soldiers.mp3"
+Nov 30 19:11 : update: updating curtainCall/Eminem - S_t On You (Featuring D12).mp3
+Nov 30 19:12 : update: updating curtainCall/Eminem - S_t On You (Featuring D12).mp3
+Nov 30 19:14 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:15 : player: played "curtainCall/Eminem - Mockingbird.mp3"
+Nov 30 19:16 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:16 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:16 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 19:21 : player: played "curtainCall/Eminem - Lose Yourself.mp3"
+Nov 30 19:24 : player: played "curtainCall/Eminem - Guilty Conscience.mp3"
+Nov 30 19:29 : player: played "curtainCall/Eminem - My Name Is.mp3"
+Nov 30 19:34 : player: played "curtainCall/Eminem - Criminal.mp3"
+Nov 30 19:34 : player: played "curtainCall/Eminem - Intro.mp3"
+Nov 30 19:41 : player: played "curtainCall/Eminem - Stan (Featuring Elton John).mp3"
+Nov 30 19:46 : player: played "curtainCall/Eminem - When I'm Gone.mp3"
+Nov 30 19:49 : player: played "curtainCall/Eminem - Role Model.mp3"
+Nov 30 19:53 : player: played "curtainCall/Eminem - Just Don't Give a F_k.mp3"
+Nov 30 19:58 : player: played "curtainCall/Eminem - The Way I Am.mp3"
+Nov 30 20:03 : player: played "curtainCall/Eminem - The Real Slim Shady.mp3"
+Nov 30 20:09 : player: played "curtainCall/Eminem - Stan.mp3"
+Nov 30 20:14 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Nov 30 20:18 : player: played "curtainCall/Eminem - Just Lose It.mp3"
+Nov 30 20:23 : player: played "curtainCall/Eminem - Kill You.mp3"
+Nov 30 20:28 : player: played "curtainCall/Eminem - S_t On You (Featuring D12).mp3"
+Nov 30 20:29 : client: [144] opened from 127.0.0.1:51450
+Nov 30 20:29 : client: [144] closed
+Nov 30 21:36 : player: played "curtainCall/Eminem - Without Me.mp3"
+Nov 30 21:36 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 22:14 : client: [142] closed
+Nov 30 22:14 : client: [143] closed
+Nov 30 22:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 30 22:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 30 22:15 : client: [0] opened from 127.0.0.1:33582
+Nov 30 22:15 : client: [1] opened from 127.0.0.1:33586
+Nov 30 22:40 : client: [2] opened from 127.0.0.1:35444
+Nov 30 22:40 : client: [2] closed
+Nov 30 22:40 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Nov 30 22:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Nov 30 22:50 : player: played "rapViet/TuPhuongBatBai - VD.mp3"
+Nov 30 22:55 : player: played "rapViet/Dick - Neu mot ngay chung ta khong con gap.mp3"
+Nov 30 22:59 : player: played "rapViet/MC ILL - Nha vo dich cua nhan dan.mp3"
+Nov 30 23:01 : player: played "rapViet/Phuc Du - Anh khong the gi dau anh lam.mp3"
+Nov 30 23:03 : player: played "rapViet/Phuc Du - DMTRUNGVIET.mp3"
+Nov 30 23:08 : player: played "rapViet/MC ILL - qlc.mp3"
+Nov 30 23:12 : player: played "rapViet/MC ILL - Cuoi.mp3"
+Nov 30 23:14 : player: played "rapViet/Phuc Du - SHYN_HERA FREEVERSE (BANK ACCOUNT REMIX).mp3"
+Nov 30 23:18 : player: played "rapViet/MC ILL - Tho rap.mp3"
+Nov 30 23:20 : client: [3] opened from 127.0.0.1:39548
+Nov 30 23:20 : client: [3] closed
+Nov 30 23:37 : client: [0] closed
+Nov 30 23:37 : client: [4] opened from 127.0.0.1:40154
+Nov 30 23:38 : client: [4] closed
+Dec 01 00:05 : client: [5] opened from 127.0.0.1:40278
+Dec 01 00:07 : client: [5] closed
+Dec 01 00:18 : client: [6] opened from 127.0.0.1:40428
+Dec 01 00:26 : client: [6] closed
+Dec 01 00:43 : client: [7] opened from 127.0.0.1:40670
+Dec 01 00:44 : client: [7] closed
+Dec 01 01:11 : client: [8] opened from 127.0.0.1:40852
+Dec 01 01:32 : player: played "rapViet/Phuc Du - HLDMM.mp3"
+Dec 01 01:32 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 02:49 : client: [9] opened from 127.0.0.1:41934
+Dec 01 02:49 : client: [9] closed
+Dec 01 02:51 : client: [8] closed
+Dec 01 02:52 : client: [10] opened from 127.0.0.1:41944
+Dec 01 17:54 : client: [11] opened from 127.0.0.1:44602
+Dec 01 17:54 : player: played "epicmusic/Epic Music Mix   Epic Piano Collection Vol.mp3"
+Dec 01 17:54 : client: [11] closed
+Dec 01 18:15 : client: [10] closed
+Dec 01 18:15 : client: [12] opened from 127.0.0.1:45392
+Dec 01 18:51 : client: [13] opened from 127.0.0.1:45934
+Dec 01 18:51 : client: [13] closed
+Dec 01 18:51 : client: [12] closed
+Dec 01 18:51 : client: [1] closed
+Dec 01 18:51 : client: [14] opened from 127.0.0.1:45938
+Dec 01 18:58 : player: played "epicmusic/Epic Music Mix   Epic Piano Collection Vol.mp3"
+Dec 01 19:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 01 19:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 01 19:38 : client: [0] opened from 127.0.0.1:46786
+Dec 01 19:38 : client: [1] opened from 127.0.0.1:46792
+Dec 01 19:38 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 19:38 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 19:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 01 19:41 : player: played "nightcore/Nightcore - Apologize.mp3"
+Dec 01 19:44 : player: played "nightcore/「Nightcore」→ It Girl It Boy ( Switching Vocal ).mp3"
+Dec 01 19:49 : player: played "nightcore/「Nightcore」→ IDGAF ✗ God's Plan ✗ SAD! ✗Delicate ✗ Thank U Next ✗ MORE (Switching Vocals).mp3"
+Dec 01 19:51 : player: played "nightcore/Nightcore - They Don't Know About Us.mp3"
+Dec 01 19:55 : player: played "nightcore/Castle On The Hill-Ed Sheeran.mp3"
+Dec 01 19:58 : player: played "nightcore/「Nightcore」→  Just Give Me a Reason (Switching Vocals).mp3"
+Dec 01 20:01 : player: played "nightcore/Nightcore - Everytime We Touch (Piano Version) - (Lyrics.mp3"
+Dec 01 20:02 : update: updating nightcore/Nightcore - Everytime We Touch (Piano Version) - (Lyrics.mp3
+Dec 01 20:02 : client: [1] closed
+Dec 01 20:02 : client: [2] opened from 127.0.0.1:46962
+Dec 01 20:02 : player: played "nightcore/Nightcore - Angel With A Shotgun.mp3"
+Dec 01 20:02 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:06 : player: played "rapViet/Phuc Du - Anh van yeu em ma.mp3"
+Dec 01 20:08 : player: played "rapViet/Phuc Du - DMTRUNGVIET.mp3"
+Dec 01 20:13 : player: played "rapViet/MC ILL - qlc.mp3"
+Dec 01 20:17 : player: played "rapViet/MC ILL - Tho rap.mp3"
+Dec 01 20:19 : player: played "rapViet/Phuc Du - Anh khong the gi dau anh lam.mp3"
+Dec 01 20:22 : player: played "rapViet/MC ILL - Con cao va trum nho. By Jay Bach)-205137696.mp3"
+Dec 01 20:28 : player: played "rapViet/Dick - Song cho het doi thanh xuan.mp3"
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : player: played "rapViet/Phuc Du - SHYN_HERA FREEVERSE (BANK ACCOUNT REMIX).mp3"
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:30 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 01 20:32 : client: [0] closed
+Dec 01 20:32 : client: [3] opened from 127.0.0.1:47144
+Dec 01 20:32 : client: [3] closed
+Dec 01 20:32 : client: [4] opened from 127.0.0.1:47148
+Dec 01 20:33 : player: played "rapViet/MC ILL - Truyen co grimm.mp3"
+Dec 01 20:41 : client: [5] opened from 127.0.0.1:47196
+Dec 01 20:41 : client: [5] closed
+Dec 01 20:43 : client: [6] opened from 127.0.0.1:47204
+Dec 01 20:43 : client: [6] closed
+Dec 01 20:45 : player: played "rapViet/TuPhuongBatBai - VD.mp3"
+Dec 01 20:48 : player: played "rapViet/MC ILL - Nha vo dich cua nhan dan.mp3"
+Dec 01 20:49 : player: played "rapViet/Phuc Du - Vo Hoc.mp3"
+Dec 01 20:50 : client: [7] opened from 127.0.0.1:47350
+Dec 01 20:50 : client: [7] closed
+Dec 01 21:20 : client: [4] closed
+Dec 01 21:21 : client: [8] opened from 127.0.0.1:47746
+Dec 01 21:40 : client: [8] closed
+Dec 01 21:40 : client: [9] opened from 127.0.0.1:47944
+Dec 01 21:53 : client: [10] opened from 127.0.0.1:49954
+Dec 01 21:53 : client: [10] closed
+Dec 01 21:53 : client: [11] opened from 127.0.0.1:49958
+Dec 01 21:53 : client: [11] closed
+Dec 01 21:53 : client: [12] opened from 127.0.0.1:49964
+Dec 01 21:53 : client: [12] closed
+Dec 01 21:53 : client: [13] opened from 127.0.0.1:49968
+Dec 01 21:53 : client: [13] closed
+Dec 01 21:53 : client: [14] opened from 127.0.0.1:49972
+Dec 01 21:53 : client: [15] opened from 127.0.0.1:49976
+Dec 01 21:53 : client: [14] closed
+Dec 01 21:53 : client: [15] closed
+Dec 01 21:53 : client: [16] opened from 127.0.0.1:49980
+Dec 01 21:53 : client: [16] closed
+Dec 01 21:53 : client: [17] opened from 127.0.0.1:49984
+Dec 01 21:53 : client: [18] opened from 127.0.0.1:49988
+Dec 01 21:53 : client: [17] closed
+Dec 01 21:53 : client: [18] closed
+Dec 01 21:53 : client: [19] opened from 127.0.0.1:49992
+Dec 01 21:53 : client: [19] closed
+Dec 01 21:53 : client: [20] opened from 127.0.0.1:49996
+Dec 01 21:53 : client: [20] closed
+Dec 01 21:53 : client: [21] opened from 127.0.0.1:50000
+Dec 01 21:53 : client: [21] closed
+Dec 01 21:53 : client: [22] opened from 127.0.0.1:50004
+Dec 01 21:53 : client: [22] closed
+Dec 01 21:53 : client: [23] opened from 127.0.0.1:50008
+Dec 01 21:53 : client: [23] closed
+Dec 01 21:53 : client: [24] opened from 127.0.0.1:50012
+Dec 01 21:53 : client: [24] closed
+Dec 01 21:53 : client: [25] opened from 127.0.0.1:50016
+Dec 01 21:53 : client: [25] closed
+Dec 01 21:53 : client: [26] opened from 127.0.0.1:50020
+Dec 01 21:53 : client: [26] closed
+Dec 01 21:53 : client: [27] opened from 127.0.0.1:50024
+Dec 01 21:53 : client: [27] closed
+Dec 01 21:53 : client: [28] opened from 127.0.0.1:50028
+Dec 01 21:53 : client: [28] closed
+Dec 01 21:53 : client: [29] opened from 127.0.0.1:50032
+Dec 01 21:53 : client: [29] closed
+Dec 01 21:53 : client: [30] opened from 127.0.0.1:50036
+Dec 01 21:53 : client: [31] opened from 127.0.0.1:50040
+Dec 01 21:53 : client: [30] closed
+Dec 01 21:53 : client: [31] closed
+Dec 01 21:53 : client: [32] opened from 127.0.0.1:50044
+Dec 01 21:53 : client: [33] opened from 127.0.0.1:50048
+Dec 01 21:53 : client: [32] closed
+Dec 01 21:53 : client: [33] closed
+Dec 01 21:53 : client: [34] opened from 127.0.0.1:50052
+Dec 01 21:53 : client: [34] closed
+Dec 01 21:53 : client: [35] opened from 127.0.0.1:50056
+Dec 01 21:53 : client: [36] opened from 127.0.0.1:50060
+Dec 01 21:53 : client: [35] closed
+Dec 01 21:53 : client: [36] closed
+Dec 01 21:53 : client: [37] opened from 127.0.0.1:50064
+Dec 01 21:53 : client: [38] opened from 127.0.0.1:50068
+Dec 01 21:53 : client: [37] closed
+Dec 01 21:53 : client: [38] closed
+Dec 01 21:53 : client: [39] opened from 127.0.0.1:50072
+Dec 01 21:53 : client: [39] closed
+Dec 01 21:53 : client: [40] opened from 127.0.0.1:50076
+Dec 01 21:53 : client: [40] closed
+Dec 01 21:53 : client: [41] opened from 127.0.0.1:50080
+Dec 01 21:53 : client: [42] opened from 127.0.0.1:50084
+Dec 01 21:53 : client: [41] closed
+Dec 01 21:53 : client: [42] closed
+Dec 01 21:53 : client: [43] opened from 127.0.0.1:50088
+Dec 01 21:53 : client: [43] closed
+Dec 01 21:53 : client: [44] opened from 127.0.0.1:50092
+Dec 01 21:53 : client: [45] opened from 127.0.0.1:50096
+Dec 01 21:53 : client: [44] closed
+Dec 01 21:53 : client: [45] closed
+Dec 01 21:53 : client: [46] opened from 127.0.0.1:50100
+Dec 01 21:53 : client: [46] closed
+Dec 01 21:53 : client: [47] opened from 127.0.0.1:50104
+Dec 01 21:53 : client: [47] closed
+Dec 01 21:53 : client: [48] opened from 127.0.0.1:50108
+Dec 01 21:53 : client: [49] opened from 127.0.0.1:50112
+Dec 01 21:53 : client: [48] closed
+Dec 01 21:53 : client: [50] opened from 127.0.0.1:50116
+Dec 01 21:53 : client: [49] closed
+Dec 01 21:53 : client: [51] opened from 127.0.0.1:50120
+Dec 01 21:53 : client: [52] opened from 127.0.0.1:50124
+Dec 01 21:53 : client: [50] closed
+Dec 01 21:53 : client: [53] opened from 127.0.0.1:50128
+Dec 01 21:53 : client: [51] closed
+Dec 01 21:53 : client: [53] closed
+Dec 01 21:53 : client: [52] closed
+Dec 01 21:53 : client: [54] opened from 127.0.0.1:50136
+Dec 01 21:53 : client: [55] opened from 127.0.0.1:50138
+Dec 01 21:53 : client: [56] opened from 127.0.0.1:50146
+Dec 01 21:53 : client: [57] opened from 127.0.0.1:50148
+Dec 01 21:53 : client: [55] closed
+Dec 01 21:53 : client: [58] opened from 127.0.0.1:50152
+Dec 01 21:53 : client: [54] closed
+Dec 01 21:53 : client: [59] opened from 127.0.0.1:50156
+Dec 01 21:53 : client: [57] closed
+Dec 01 21:53 : client: [56] closed
+Dec 01 21:53 : client: [58] closed
+Dec 01 21:53 : client: [59] closed
+Dec 01 21:53 : client: [60] opened from 127.0.0.1:50160
+Dec 01 21:53 : client: [60] closed
+Dec 01 21:53 : client: [61] opened from 127.0.0.1:50164
+Dec 01 21:53 : client: [62] opened from 127.0.0.1:50168
+Dec 01 21:53 : client: [61] closed
+Dec 01 21:53 : client: [63] opened from 127.0.0.1:50172
+Dec 01 21:53 : client: [64] opened from 127.0.0.1:50176
+Dec 01 21:53 : client: [62] closed
+Dec 01 21:53 : client: [64] closed
+Dec 01 21:53 : client: [63] closed
+Dec 01 21:53 : client: [65] opened from 127.0.0.1:50180
+Dec 01 21:53 : client: [65] closed
+Dec 01 21:53 : client: [66] opened from 127.0.0.1:50184
+Dec 01 21:53 : client: [67] opened from 127.0.0.1:50188
+Dec 01 21:53 : client: [68] opened from 127.0.0.1:50192
+Dec 01 21:53 : client: [66] closed
+Dec 01 21:53 : client: [67] closed
+Dec 01 21:53 : client: [68] closed
+Dec 01 21:53 : client: [69] opened from 127.0.0.1:50196
+Dec 01 21:53 : client: [69] closed
+Dec 01 21:53 : client: [70] opened from 127.0.0.1:50200
+Dec 01 21:53 : client: [71] opened from 127.0.0.1:50204
+Dec 01 21:53 : client: [70] closed
+Dec 01 21:53 : client: [72] opened from 127.0.0.1:50208
+Dec 01 21:53 : client: [71] closed
+Dec 01 21:53 : client: [72] closed
+Dec 01 21:53 : client: [73] opened from 127.0.0.1:50212
+Dec 01 21:53 : client: [74] opened from 127.0.0.1:50216
+Dec 01 21:53 : client: [73] closed
+Dec 01 21:53 : client: [75] opened from 127.0.0.1:50220
+Dec 01 21:53 : client: [75] closed
+Dec 01 21:53 : client: [74] closed
+Dec 01 21:53 : client: [76] opened from 127.0.0.1:50224
+Dec 01 21:53 : client: [76] closed
+Dec 01 21:53 : client: [77] opened from 127.0.0.1:50228
+Dec 01 21:53 : client: [78] opened from 127.0.0.1:50232
+Dec 01 21:53 : client: [79] opened from 127.0.0.1:50236
+Dec 01 21:53 : client: [77] closed
+Dec 01 21:53 : client: [80] opened from 127.0.0.1:50240
+Dec 01 21:53 : client: [78] closed
+Dec 01 21:53 : client: [80] closed
+Dec 01 21:53 : client: [79] closed
+Dec 01 21:53 : client: [81] opened from 127.0.0.1:50244
+Dec 01 21:53 : client: [81] closed
+Dec 01 21:53 : client: [82] opened from 127.0.0.1:50248
+Dec 01 21:53 : client: [82] closed
+Dec 01 21:53 : client: [83] opened from 127.0.0.1:50252
+Dec 01 21:53 : client: [84] opened from 127.0.0.1:50256
+Dec 01 21:53 : client: [83] closed
+Dec 01 21:53 : client: [84] closed
+Dec 01 21:53 : client: [85] opened from 127.0.0.1:50260
+Dec 01 21:53 : client: [85] closed
+Dec 01 21:53 : client: [86] opened from 127.0.0.1:50264
+Dec 01 21:53 : client: [86] closed
+Dec 01 21:53 : client: [87] opened from 127.0.0.1:50268
+Dec 01 21:53 : client: [87] closed
+Dec 01 21:53 : client: [88] opened from 127.0.0.1:50272
+Dec 01 21:53 : client: [88] closed
+Dec 01 21:53 : client: [89] opened from 127.0.0.1:50276
+Dec 01 21:53 : client: [89] closed
+Dec 01 21:53 : client: [90] opened from 127.0.0.1:50280
+Dec 01 21:53 : client: [91] opened from 127.0.0.1:50284
+Dec 01 21:53 : client: [90] closed
+Dec 01 21:53 : client: [91] closed
+Dec 01 21:53 : client: [92] opened from 127.0.0.1:50288
+Dec 01 21:53 : client: [92] closed
+Dec 01 21:53 : client: [93] opened from 127.0.0.1:50292
+Dec 01 21:53 : client: [93] closed
+Dec 01 21:53 : client: [94] opened from 127.0.0.1:50296
+Dec 01 21:53 : client: [95] opened from 127.0.0.1:50300
+Dec 01 21:53 : client: [94] closed
+Dec 01 21:53 : client: [95] closed
+Dec 01 21:53 : client: [96] opened from 127.0.0.1:50304
+Dec 01 21:53 : client: [96] closed
+Dec 01 21:53 : client: [97] opened from 127.0.0.1:50308
+Dec 01 21:53 : client: [97] closed
+Dec 01 21:53 : client: [98] opened from 127.0.0.1:50312
+Dec 01 21:53 : client: [98] closed
+Dec 01 21:53 : client: [99] opened from 127.0.0.1:50316
+Dec 01 21:53 : client: [99] closed
+Dec 01 21:53 : client: [100] opened from 127.0.0.1:50320
+Dec 01 21:53 : client: [100] closed
+Dec 01 21:53 : client: [101] opened from 127.0.0.1:50324
+Dec 01 21:53 : client: [101] closed
+Dec 01 21:53 : client: [102] opened from 127.0.0.1:50328
+Dec 01 21:53 : client: [102] closed
+Dec 01 21:53 : client: [103] opened from 127.0.0.1:50332
+Dec 01 21:53 : client: [103] closed
+Dec 01 21:53 : client: [104] opened from 127.0.0.1:50336
+Dec 01 21:53 : client: [105] opened from 127.0.0.1:50340
+Dec 01 21:53 : client: [104] closed
+Dec 01 21:53 : client: [105] closed
+Dec 01 21:53 : client: [106] opened from 127.0.0.1:50344
+Dec 01 21:53 : client: [106] closed
+Dec 01 21:53 : client: [107] opened from 127.0.0.1:50348
+Dec 01 21:53 : client: [108] opened from 127.0.0.1:50352
+Dec 01 21:53 : client: [107] closed
+Dec 01 21:53 : client: [108] closed
+Dec 01 21:53 : client: [109] opened from 127.0.0.1:50356
+Dec 01 21:53 : client: [109] closed
+Dec 01 21:53 : client: [110] opened from 127.0.0.1:50360
+Dec 01 21:53 : client: [110] closed
+Dec 01 21:53 : client: [111] opened from 127.0.0.1:50364
+Dec 01 21:53 : client: [111] closed
+Dec 01 21:53 : client: [112] opened from 127.0.0.1:50368
+Dec 01 21:53 : client: [112] closed
+Dec 01 21:53 : client: [113] opened from 127.0.0.1:50372
+Dec 01 21:53 : client: [113] closed
+Dec 01 21:53 : client: [114] opened from 127.0.0.1:50376
+Dec 01 21:53 : client: [114] closed
+Dec 01 21:53 : client: [115] opened from 127.0.0.1:50380
+Dec 01 21:53 : client: [115] closed
+Dec 01 21:53 : client: [116] opened from 127.0.0.1:50384
+Dec 01 21:53 : client: [116] closed
+Dec 01 21:53 : client: [117] opened from 127.0.0.1:50388
+Dec 01 21:53 : client: [117] closed
+Dec 01 21:53 : client: [118] opened from 127.0.0.1:50392
+Dec 01 21:53 : client: [118] closed
+Dec 01 21:53 : client: [119] opened from 127.0.0.1:50396
+Dec 01 21:53 : client: [120] opened from 127.0.0.1:50400
+Dec 01 21:53 : client: [119] closed
+Dec 01 21:53 : client: [120] closed
+Dec 01 21:53 : client: [121] opened from 127.0.0.1:50404
+Dec 01 21:53 : client: [121] closed
+Dec 01 21:53 : client: [122] opened from 127.0.0.1:50408
+Dec 01 21:53 : client: [123] opened from 127.0.0.1:50412
+Dec 01 21:53 : client: [123] closed
+Dec 01 21:53 : client: [122] closed
+Dec 01 21:53 : client: [124] opened from 127.0.0.1:50416
+Dec 01 21:53 : client: [124] closed
+Dec 01 21:53 : client: [125] opened from 127.0.0.1:50420
+Dec 01 21:53 : client: [125] closed
+Dec 01 21:53 : client: [126] opened from 127.0.0.1:50424
+Dec 01 21:53 : client: [126] closed
+Dec 01 21:53 : client: [127] opened from 127.0.0.1:50430
+Dec 01 21:53 : client: [128] opened from 127.0.0.1:50434
+Dec 01 21:53 : client: [127] closed
+Dec 01 21:53 : client: [128] closed
+Dec 01 21:53 : client: [129] opened from 127.0.0.1:50438
+Dec 01 21:53 : client: [129] closed
+Dec 01 21:53 : client: [130] opened from 127.0.0.1:50442
+Dec 01 21:53 : client: [131] opened from 127.0.0.1:50446
+Dec 01 21:53 : client: [130] closed
+Dec 01 21:53 : client: [131] closed
+Dec 01 21:53 : client: [132] opened from 127.0.0.1:50450
+Dec 01 21:53 : client: [132] closed
+Dec 01 21:53 : client: [133] opened from 127.0.0.1:50454
+Dec 01 21:53 : client: [134] opened from 127.0.0.1:50458
+Dec 01 21:53 : client: [133] closed
+Dec 01 21:53 : client: [134] closed
+Dec 01 21:53 : client: [135] opened from 127.0.0.1:50462
+Dec 01 21:53 : client: [135] closed
+Dec 01 21:53 : client: [136] opened from 127.0.0.1:50466
+Dec 01 21:53 : client: [136] closed
+Dec 01 21:53 : client: [137] opened from 127.0.0.1:50470
+Dec 01 21:53 : client: [138] opened from 127.0.0.1:50474
+Dec 01 21:53 : client: [137] closed
+Dec 01 21:53 : client: [138] closed
+Dec 01 21:53 : client: [139] opened from 127.0.0.1:50478
+Dec 01 21:53 : client: [139] closed
+Dec 01 21:53 : client: [140] opened from 127.0.0.1:50482
+Dec 01 21:53 : client: [140] closed
+Dec 01 21:53 : client: [141] opened from 127.0.0.1:50486
+Dec 01 21:53 : client: [142] opened from 127.0.0.1:50490
+Dec 01 21:53 : client: [142] closed
+Dec 01 21:53 : client: [141] closed
+Dec 01 21:53 : client: [143] opened from 127.0.0.1:50494
+Dec 01 21:53 : client: [144] opened from 127.0.0.1:50498
+Dec 01 21:53 : client: [143] closed
+Dec 01 21:53 : client: [144] closed
+Dec 01 21:53 : client: [145] opened from 127.0.0.1:50502
+Dec 01 21:53 : client: [146] opened from 127.0.0.1:50506
+Dec 01 21:53 : client: [145] closed
+Dec 01 21:53 : client: [147] opened from 127.0.0.1:50510
+Dec 01 21:53 : client: [146] closed
+Dec 01 21:53 : client: [147] closed
+Dec 01 21:53 : client: [148] opened from 127.0.0.1:50514
+Dec 01 21:53 : client: [149] opened from 127.0.0.1:50518
+Dec 01 21:53 : client: [148] closed
+Dec 01 21:53 : client: [149] closed
+Dec 01 21:53 : client: [150] opened from 127.0.0.1:50522
+Dec 01 21:53 : client: [150] closed
+Dec 01 21:53 : client: [151] opened from 127.0.0.1:50528
+Dec 01 21:53 : client: [151] closed
+Dec 01 21:53 : client: [152] opened from 127.0.0.1:50532
+Dec 01 21:53 : client: [152] closed
+Dec 01 21:53 : client: [153] opened from 127.0.0.1:50536
+Dec 01 21:53 : client: [153] closed
+Dec 01 21:53 : client: [154] opened from 127.0.0.1:50540
+Dec 01 21:53 : client: [154] closed
+Dec 01 21:53 : client: [155] opened from 127.0.0.1:50544
+Dec 01 21:53 : client: [155] closed
+Dec 01 21:53 : client: [156] opened from 127.0.0.1:50548
+Dec 01 21:53 : client: [156] closed
+Dec 01 21:53 : client: [157] opened from 127.0.0.1:50552
+Dec 01 21:53 : client: [157] closed
+Dec 01 21:53 : client: [158] opened from 127.0.0.1:50556
+Dec 01 21:53 : client: [158] closed
+Dec 01 21:53 : client: [159] opened from 127.0.0.1:50560
+Dec 01 21:53 : client: [160] opened from 127.0.0.1:50564
+Dec 01 21:53 : client: [160] closed
+Dec 01 21:53 : client: [159] closed
+Dec 01 21:53 : client: [161] opened from 127.0.0.1:50568
+Dec 01 21:53 : client: [161] closed
+Dec 01 21:53 : client: [162] opened from 127.0.0.1:50572
+Dec 01 21:53 : client: [163] opened from 127.0.0.1:50576
+Dec 01 21:53 : client: [162] closed
+Dec 01 21:53 : client: [163] closed
+Dec 01 21:53 : client: [164] opened from 127.0.0.1:50580
+Dec 01 21:53 : client: [164] closed
+Dec 01 21:53 : client: [165] opened from 127.0.0.1:50584
+Dec 01 21:53 : client: [165] closed
+Dec 01 21:53 : client: [166] opened from 127.0.0.1:50588
+Dec 01 21:53 : client: [166] closed
+Dec 01 21:53 : client: [167] opened from 127.0.0.1:50592
+Dec 01 21:53 : client: [168] opened from 127.0.0.1:50596
+Dec 01 21:53 : client: [167] closed
+Dec 01 21:53 : client: [168] closed
+Dec 01 21:53 : client: [169] opened from 127.0.0.1:50600
+Dec 01 21:53 : client: [169] closed
+Dec 01 21:53 : client: [170] opened from 127.0.0.1:50604
+Dec 01 21:53 : client: [170] closed
+Dec 01 21:53 : client: [171] opened from 127.0.0.1:50608
+Dec 01 21:53 : client: [171] closed
+Dec 01 21:53 : client: [172] opened from 127.0.0.1:50612
+Dec 01 21:53 : client: [173] opened from 127.0.0.1:50616
+Dec 01 21:53 : client: [174] opened from 127.0.0.1:50620
+Dec 01 21:53 : client: [172] closed
+Dec 01 21:53 : client: [174] closed
+Dec 01 21:53 : client: [173] closed
+Dec 01 21:53 : client: [175] opened from 127.0.0.1:50624
+Dec 01 21:53 : client: [175] closed
+Dec 01 21:53 : client: [176] opened from 127.0.0.1:50628
+Dec 01 21:53 : client: [176] closed
+Dec 01 21:53 : client: [177] opened from 127.0.0.1:50632
+Dec 01 21:53 : client: [178] opened from 127.0.0.1:50636
+Dec 01 21:53 : client: [179] opened from 127.0.0.1:50640
+Dec 01 21:53 : client: [177] closed
+Dec 01 21:53 : client: [178] closed
+Dec 01 21:53 : client: [179] closed
+Dec 01 21:53 : client: [180] opened from 127.0.0.1:50644
+Dec 01 21:53 : client: [181] opened from 127.0.0.1:50648
+Dec 01 21:53 : client: [180] closed
+Dec 01 21:53 : client: [181] closed
+Dec 01 21:53 : client: [182] opened from 127.0.0.1:50654
+Dec 01 21:53 : client: [182] closed
+Dec 01 21:53 : client: [183] opened from 127.0.0.1:50658
+Dec 01 21:53 : client: [183] closed
+Dec 01 21:53 : client: [184] opened from 127.0.0.1:50662
+Dec 01 21:53 : client: [185] opened from 127.0.0.1:50666
+Dec 01 21:53 : client: [184] closed
+Dec 01 21:53 : client: [185] closed
+Dec 01 21:53 : client: [186] opened from 127.0.0.1:50670
+Dec 01 21:53 : client: [186] closed
+Dec 01 21:53 : client: [187] opened from 127.0.0.1:50674
+Dec 01 21:53 : client: [188] opened from 127.0.0.1:50678
+Dec 01 21:53 : client: [187] closed
+Dec 01 21:53 : client: [188] closed
+Dec 01 21:53 : client: [189] opened from 127.0.0.1:50682
+Dec 01 21:53 : client: [189] closed
+Dec 01 21:53 : client: [190] opened from 127.0.0.1:50686
+Dec 01 21:53 : client: [190] closed
+Dec 01 21:53 : client: [191] opened from 127.0.0.1:50690
+Dec 01 21:53 : client: [192] opened from 127.0.0.1:50694
+Dec 01 21:53 : client: [191] closed
+Dec 01 21:53 : client: [193] opened from 127.0.0.1:50700
+Dec 01 21:53 : client: [194] opened from 127.0.0.1:50706
+Dec 01 21:53 : client: [192] closed
+Dec 01 21:53 : client: [195] opened from 127.0.0.1:50710
+Dec 01 21:53 : client: [193] closed
+Dec 01 21:53 : client: [195] closed
+Dec 01 21:53 : client: [194] closed
+Dec 01 21:53 : client: [196] opened from 127.0.0.1:50714
+Dec 01 21:53 : client: [196] closed
+Dec 01 21:53 : client: [197] opened from 127.0.0.1:50718
+Dec 01 21:53 : client: [197] closed
+Dec 01 21:53 : client: [198] opened from 127.0.0.1:50722
+Dec 01 21:53 : client: [198] closed
+Dec 01 21:53 : client: [199] opened from 127.0.0.1:50726
+Dec 01 21:53 : client: [199] closed
+Dec 01 21:53 : client: [200] opened from 127.0.0.1:50730
+Dec 01 21:53 : client: [200] closed
+Dec 01 21:53 : client: [201] opened from 127.0.0.1:50734
+Dec 01 21:53 : client: [201] closed
+Dec 01 21:53 : client: [202] opened from 127.0.0.1:50738
+Dec 01 21:53 : client: [202] closed
+Dec 01 21:53 : client: [203] opened from 127.0.0.1:50742
+Dec 01 21:53 : client: [203] closed
+Dec 01 21:53 : client: [204] opened from 127.0.0.1:50746
+Dec 01 21:53 : client: [204] closed
+Dec 01 21:53 : client: [205] opened from 127.0.0.1:50750
+Dec 01 21:53 : client: [205] closed
+Dec 01 21:57 : player: played "rapViet/Dick - Ghe Qua.mp3"
+Dec 01 22:02 : player: played "rapViet/MC ILL - Hong lau mong.mp3"
+Dec 01 22:04 : client: [206] opened from 127.0.0.1:52734
+Dec 01 22:04 : client: [206] closed
+Dec 01 22:32 : client: [207] opened from 192.168.5.142:53396
+Dec 01 22:33 : client: [9] closed
+Dec 02 19:36 : client: [208] opened from 127.0.0.1:54240
+Dec 02 19:37 : client: [207] closed
+Dec 02 19:49 : client: [208] closed
+Dec 02 19:50 : client: [209] opened from 127.0.0.1:54474
+Dec 02 19:53 : client: [209] closed
+Dec 02 19:54 : client: [210] opened from 127.0.0.1:54540
+Dec 02 19:55 : client: [210] closed
+Dec 02 19:56 : client: [211] opened from 127.0.0.1:54544
+Dec 02 19:58 : client: [211] closed
+Dec 02 20:04 : client: [212] opened from 127.0.0.1:54644
+Dec 02 20:10 : client: [212] closed
+Dec 02 20:12 : client: [213] opened from 127.0.0.1:54678
+Dec 02 20:51 : client: [213] closed
+Dec 02 20:51 : client: [214] opened from 127.0.0.1:55310
+Dec 02 21:39 : client: [214] closed
+Dec 02 21:39 : client: [215] opened from 127.0.0.1:56764
+Dec 03 01:31 : client: [216] opened from 127.0.0.1:60242
+Dec 03 01:31 : client: [216] closed
+Dec 03 01:35 : player: played "rapViet/MC ILL - Cuoi.mp3"
+Dec 03 02:23 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 02:23 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 03:22 : client: [215] closed
+Dec 03 03:58 : client: [217] opened from 127.0.0.1:42586
+Dec 03 04:28 : client: [217] closed
+Dec 03 04:37 : client: [218] opened from 127.0.0.1:46526
+Dec 03 04:38 : client: [218] closed
+Dec 03 04:51 : client: [219] opened from 127.0.0.1:47914
+Dec 03 05:00 : client: [219] closed
+Dec 03 05:08 : client: [220] opened from 127.0.0.1:49996
+Dec 03 19:06 : client: [220] closed
+Dec 03 19:07 : client: [221] opened from 127.0.0.1:51798
+Dec 03 19:33 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 19:34 : update: updating nightcore/Nightcore - They Don't Know About Us.mp3
+Dec 03 19:36 : player: played "nightcore/Nightcore - They Don't Know About Us.mp3"
+Dec 03 19:36 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 19:36 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 19:36 : player: played "nightcore/Nightcore - Poison.mp3"
+Dec 03 19:39 : player: played "nightcore/Nightcore - They Don't Know About Us.mp3"
+Dec 03 19:42 : update: updating nightcore/Nightcore - This Little Girl-c0mX.mp3
+Dec 03 19:42 : update: updating nightcore/Nightcore - This Little Girl-c0mX.mp3
+Dec 03 19:44 : player: played "nightcore/Nightcore - This Little Girl-c0mX.mp3"
+Dec 03 19:45 : update: updating nightcore/Nightcore - Be Alright.mp3
+Dec 03 19:47 : player: played "nightcore/Nightcore - Be Alright.mp3"
+Dec 03 19:47 : client: [222] opened from 127.0.0.1:52262
+Dec 03 19:47 : client: [222] closed
+Dec 03 19:47 : client: [223] opened from 127.0.0.1:52266
+Dec 03 19:47 : client: [223] closed
+Dec 03 19:47 : client: [224] opened from 127.0.0.1:52270
+Dec 03 19:47 : client: [224] closed
+Dec 03 19:50 : player: played "nightcore/「Nightcore」- This is me (switching vocals).mp3"
+Dec 03 19:53 : player: played "nightcore/Nightcore - Under ♬.mp3"
+Dec 03 19:56 : player: played "nightcore/Nightcore - Safe And Sound (Lyrics).mp3"
+Dec 03 19:59 : client: [221] closed
+Dec 03 19:59 : client: [225] opened from 127.0.0.1:52494
+Dec 03 19:59 : player: played "nightcore/✧Nightcore - Kiss Me Before I Fucking Lose My Mind (lyrics).mp3"
+Dec 03 20:01 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 03 20:03 : player: played "nightcore/Nightcore - Faded _ Cheap Thrills _ Alive _ Airplanes (Switching Vocals) _ Lyrics.mp3"
+Dec 03 20:04 : update: updating nightcore/Nightcore → Don't Watch Me Cry (Lyrics).mp3
+Dec 03 20:06 : player: played "nightcore/Nightcore → Don't Watch Me Cry (Lyrics).mp3"
+Dec 03 20:09 : player: played "nightcore/Castle On The Hill-Ed Sheeran.mp3"
+Dec 03 20:12 : player: played "nightcore/Nightcore - I Want It That Way (Switching Vocals) - (Lyrics).mp3"
+Dec 03 20:15 : player: played "nightcore/「Nightcore」→ Story Of My Life (Switching Vocals).mp3"
+Dec 03 20:18 : player: played "nightcore/Nightcore - Little Do You Know (Switching Vocals) - (Lyrics).mp3"
+Dec 03 20:22 : player: played "nightcore/Nightcore - I Want You Here - (Lyrics).mp3"
+Dec 03 20:25 : player: played "nightcore/Nightcore - Stereo heart-DizPgDu4s.mp3"
+Dec 03 20:28 : player: played "nightcore/Nightcore Timber.mp3"
+Dec 03 20:33 : player: played "nightcore/Nightcore - I See Fire (Female Version) - (Lyrics).mp3"
+Dec 03 20:35 : player: played "nightcore/Nightcore - FRIENDS (Switching Vocals) - (Lyrics).mp3"
+Dec 03 20:39 : player: played "nightcore/「Nightcore」→ Kids Again (Switching Vocals).mp3"
+Dec 03 20:41 : player: played "nightcore/Nightcore - Stay (Piano Version) - (Lyrics).mp3"
+Dec 03 20:49 : player: played "nightcore/「Nightcore」→ Twenty One Pilots l THE MEGAMIX (Switching Vocals) - Heathens, Ride, Polarize and MORE.mp3"
+Dec 03 20:52 : player: played "nightcore/Adele - Set Fire to the Rain (Nightcore Lyrics).mp3"
+Dec 03 20:55 : player: played "nightcore/Nightcore~ Another Empty bottle.mp3"
+Dec 03 20:58 : client: [226] opened from 127.0.0.1:54198
+Dec 03 20:58 : client: [226] closed
+Dec 03 21:10 : client: [225] closed
+Dec 03 21:13 : client: [227] opened from 127.0.0.1:54444
+Dec 03 21:14 : client: [227] closed
+Dec 03 21:24 : client: [228] opened from 127.0.0.1:54506
+Dec 03 21:25 : client: [228] closed
+Dec 03 21:34 : client: [229] opened from 127.0.0.1:54552
+Dec 03 21:43 : client: [229] closed
+Dec 03 21:46 : client: [230] opened from 127.0.0.1:55042
+Dec 04 18:39 : client: [230] closed
+Dec 04 18:39 : client: [231] opened from 127.0.0.1:56958
+Dec 05 04:19 : client: [231] closed
+Dec 05 04:19 : client: [232] opened from 127.0.0.1:35154
+Dec 05 04:37 : client: [232] closed
+Dec 05 04:37 : client: [233] opened from 127.0.0.1:35756
+Dec 05 05:09 : client: [233] closed
+Dec 05 05:16 : client: [234] opened from 127.0.0.1:36588
+Dec 05 05:17 : client: [234] closed
+Dec 05 05:20 : client: [235] opened from 127.0.0.1:37088
+Dec 05 05:22 : client: [235] closed
+Dec 05 05:26 : client: [236] opened from 127.0.0.1:37732
+Dec 05 05:28 : client: [236] closed
+Dec 05 05:28 : client: [237] opened from 127.0.0.1:37856
+Dec 05 05:31 : client: [237] closed
+Dec 05 05:36 : client: [238] opened from 127.0.0.1:38730
+Dec 05 05:39 : client: [238] closed
+Dec 05 05:40 : client: [239] opened from 127.0.0.1:39018
+Dec 05 05:42 : client: [239] closed
+Dec 05 05:46 : client: [240] opened from 127.0.0.1:39134
+Dec 05 05:52 : client: [240] closed
+Dec 05 05:58 : client: [241] opened from 127.0.0.1:39578
+Dec 05 09:26 : client: [2] closed
+Dec 05 09:47 : client: [241] closed
+Dec 05 09:51 : client: [242] opened from 127.0.0.1:41316
+Dec 05 10:18 : client: [242] closed
+Dec 05 10:18 : client: [243] opened from 127.0.0.1:42340
+Dec 05 10:21 : client: [243] closed
+Dec 05 10:23 : client: [244] opened from 127.0.0.1:42846
+Dec 05 10:45 : player: played "nightcore/Nightcore - Hate Me (Lyrics).mp3"
+Dec 05 10:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 10:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 10:47 : client: [0] opened from 127.0.0.1:46640
+Dec 05 10:47 : client: [1] opened from 127.0.0.1:46644
+Dec 05 10:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 10:47 : client: [1] closed
+Dec 05 10:49 : player: played "nightcore/Nightcore - Hate Me (Lyrics).mp3"
+Dec 05 10:51 : client: [0] closed
+Dec 05 10:51 : exception: Failed to play on "pulse audio" (pulse): suspended
+Dec 05 10:51 : client: [2] opened from 127.0.0.1:47050
+Dec 05 10:51 : player: played "nightcore/「Nightcore」→ I Need Your Love.mp3"
+Dec 05 10:52 : client: [3] opened from 127.0.0.1:47054
+Dec 05 10:52 : client: [3] closed
+Dec 05 10:52 : client: [4] opened from 127.0.0.1:47138
+Dec 05 10:52 : client: [4] closed
+Dec 05 10:52 : client: [5] opened from 127.0.0.1:47416
+Dec 05 10:52 : client: [5] closed
+Dec 05 10:52 : player: played "nightcore/Nightcore - Sad Song (Switching Vocals) - (Lyrics).mp3"
+Dec 05 20:36 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 20:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 20:36 : client: [0] opened from 127.0.0.1:47314
+Dec 05 21:37 : client: [0] closed
+Dec 05 22:02 : client: [1] opened from 127.0.0.1:48834
+Dec 05 22:03 : client: [1] closed
+Dec 05 22:06 : client: [2] opened from 127.0.0.1:48862
+Dec 05 22:08 : client: [3] opened from 127.0.0.1:48926
+Dec 05 22:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 05 22:08 : client: [3] closed
+Dec 05 22:11 : player: played "nightcore/Nightcore - Sad Song (Switching Vocals) - (Lyrics).mp3"
+Dec 05 22:14 : player: played "nightcore/◤Nightcore◢ ↬ Royalty [Switching Vocals].mp3"
+Dec 05 22:17 : player: played "nightcore/Nightcore - Middle Finger.mp3"
+Dec 05 22:21 : player: played "nightcore/Nightcore - You Don't Know (Lyrics).mp3"
+Dec 05 22:24 : player: played "nightcore/Nightcore - Sorry (Lyrics).mp3"
+Dec 05 22:29 : player: played "nightcore/Nightcore - Unbreakable (Lyrics).mp3"
+Dec 05 22:32 : player: played "nightcore/「Nightcore」→ All I Want For Christmas Is You (Switching Vocals).mp3"
+Dec 05 22:34 : client: [4] opened from 127.0.0.1:49028
+Dec 05 22:34 : client: [4] closed
+Dec 05 22:49 : client: [2] closed
+Dec 05 22:54 : client: [5] opened from 127.0.0.1:49340
+Dec 05 23:06 : client: [5] closed
+Dec 05 23:42 : client: [6] opened from 127.0.0.1:49886
+Dec 06 20:38 : client: [6] closed
+Dec 06 20:41 : client: [7] opened from 127.0.0.1:50544
+Dec 07 01:04 : client: [7] closed
+Dec 07 01:07 : client: [8] opened from 127.0.0.1:52044
+Dec 07 01:16 : client: [8] closed
+Dec 07 01:32 : client: [9] opened from 127.0.0.1:52286
+Dec 07 19:45 : client: [9] closed
+Dec 07 19:45 : client: [10] opened from 127.0.0.1:53640
+Dec 07 20:56 : client: [10] closed
+Dec 07 20:59 : client: [11] opened from 127.0.0.1:55814
+Dec 07 21:54 : client: [12] opened from 127.0.0.1:56292
+Dec 07 21:54 : client: [12] closed
+Dec 07 21:54 : client: [13] opened from 127.0.0.1:56296
+Dec 07 21:54 : client: [14] opened from 127.0.0.1:56300
+Dec 07 21:54 : client: [13] closed
+Dec 07 21:54 : client: [14] closed
+Dec 07 21:54 : client: [15] opened from 127.0.0.1:56304
+Dec 07 21:54 : client: [15] closed
+Dec 07 21:54 : client: [16] opened from 127.0.0.1:56308
+Dec 07 21:54 : client: [16] closed
+Dec 07 23:14 : client: [11] closed
+Dec 07 23:17 : client: [17] opened from 127.0.0.1:60808
+Dec 07 23:18 : client: [17] closed
+Dec 07 23:19 : client: [18] opened from 127.0.0.1:60828
+Dec 07 23:20 : client: [18] closed
+Dec 07 23:23 : client: [19] opened from 127.0.0.1:60870
+Dec 08 04:11 : client: [19] closed
+Dec 08 04:13 : client: [20] opened from 127.0.0.1:34236
+Dec 08 15:57 : client: [21] opened from 127.0.0.1:36270
+Dec 08 15:57 : client: [21] closed
+Dec 08 15:59 : player: played "nightcore/◤Nightcore◢ ↬ Just Like Fire (Warriors Light Em Up) [Switching Vocals _ Mashup].mp3"
+Dec 08 16:03 : player: played "nightcore/Nightcore - Paralyzed - (Lyrics).mp3"
+Dec 08 16:06 : player: played "nightcore/Nightcore - Daughters of Darkness.mp3"
+Dec 08 16:08 : player: played "nightcore/Nightcore - Anxiety.mp3"
+Dec 08 16:11 : player: played "nightcore/Nightcore - Angel With A Shotgun.mp3"
+Dec 08 16:14 : player: played "nightcore/Nightcore - I Fell In Love With My Best Friend - (Lyrics).mp3"
+Dec 08 16:18 : player: played "nightcore/Nightcore - Dont Deserve You - (Lyrics).mp3"
+Dec 08 16:20 : player: played "nightcore/「Nightcore」→ It Girl It Boy ( Switching Vocal ).mp3"
+Dec 08 16:24 : player: played "nightcore/Bebe Rexha-I am a mess.mp3"
+Dec 08 16:27 : player: played "nightcore/「Nightcore」→ The Chainsmokers Megamix (Switching Vocals).mp3"
+Dec 08 16:28 : client: [22] opened from 127.0.0.1:36448
+Dec 08 16:28 : update: updating nightcore/Nightcore - Titanium (Lyrics).mp3
+Dec 08 16:29 : client: [22] closed
+Dec 08 16:29 : player: played "nightcore/Nightcore - Titanium (Lyrics).mp3"
+Dec 08 16:32 : player: played "nightcore/Nightcore - Symphony - (Lyrics).mp3"
+Dec 08 16:35 : player: played "nightcore/Nightcore - Infected (Lyrics).mp3"
+Dec 08 16:38 : player: played "nightcore/Nightcore - Legends Never Die.mp3"
+Dec 08 16:41 : player: played "nightcore/Nightcore - Stand By You.mp3"
+Dec 08 16:44 : player: played "nightcore/Nightcore - Little Me.mp3"
+Dec 08 16:47 : player: played "nightcore/Nightcore - Too Good At Goodbyes (female version).mp3"
+Dec 08 16:48 : client: [23] opened from 127.0.0.1:36546
+Dec 08 16:48 : client: [23] closed
+Dec 08 16:49 : client: [24] opened from 127.0.0.1:36552
+Dec 08 16:49 : client: [25] opened from 127.0.0.1:36556
+Dec 08 16:49 : client: [25] closed
+Dec 08 16:52 : player: played "nightcore/Nightcore - The Sound Of Silence (Disturbed) - (Lyrics).mp3"
+Dec 08 16:55 : player: played "nightcore/Nightcore - Cold Water_Let Me Love You (Mashup) (Switching Vocals) - (Lyrics).mp3"
+Dec 08 16:59 : player: played "nightcore/Nightcore - Zombie (Rock Version).mp3"
+Dec 08 17:02 : player: played "nightcore/Nightcore - Please Don't Go.mp3"
+Dec 08 17:08 : player: played "nightcore/◤Nightcore◢ ↬ MEGAMIX House of Memories [Switching Vocals _ Megamix].mp3"
+Dec 08 17:10 : player: played "nightcore/「Nightcore」→ I Built A Friend.mp3"
+Dec 08 17:13 : player: played "nightcore/Nightcore - Bring Me To Life.mp3"
+Dec 08 17:17 : player: played "nightcore/◤Nightcore◢ ↬ Genius [Switching Vocals].mp3"
+Dec 08 17:19 : player: played "nightcore/「Nightcore」→ Closer ✗ Changes ✗ Anxiety (Switching Vocals).mp3"
+Dec 08 17:22 : player: played "nightcore/【Nightcore】→ Rise (cover) _ Lyrics.mp3"
+Dec 08 17:26 : player: played "nightcore/Nightcore - After The Heartbreak - (Lyrics)-rPKj2kQgBL8.mp3"
+Dec 08 17:28 : player: played "nightcore/Nightcore - Lost My Mind (Lyrics)-Ij.mp3"
+Dec 08 17:31 : player: played "nightcore/Nightcore - Cheap Thrills.mp3"
+Dec 08 17:34 : player: played "nightcore/Nightcore - I Won't Give Up (Switching Vocals) - (Lyrics).mp3"
+Dec 08 17:39 : player: played "nightcore/Nightcore ~ A Thousand Years ( Lyrics ).mp3"
+Dec 08 17:44 : player: played "nightcore/「Nightcore」→ Thunder ✗ Radioactive ✗ Believer ✗ Whatever It Takes and MORE (Switching Vocals).mp3"
+Dec 08 17:48 : player: played "nightcore/Nightcore →  What Love Really Means (Lyrics).mp3"
+Dec 08 17:50 : player: played "nightcore/Nightcore - I'm Not Her - (Lyrics).mp3"
+Dec 08 17:53 : player: played "nightcore/Nightcore - Grenade.mp3"
+Dec 08 17:58 : player: played "nightcore/「Nightcore」→ IDGAF ✗ God's Plan ✗ SAD! ✗Delicate ✗ Thank U Next ✗ MORE (Switching Vocals).mp3"
+Dec 08 18:02 : player: played "nightcore/Nightcore ↪ Believer ✗ Gasoline  {Switching Vocals}.mp3"
+Dec 08 18:04 : player: played "nightcore/Nightcore - Demons (Switching Vocals) - (Lyrics).mp3"
+Dec 08 18:06 : client: [26] opened from 127.0.0.1:37092
+Dec 08 18:06 : client: [26] closed
+Dec 08 18:06 : client: [27] opened from 127.0.0.1:37096
+Dec 08 18:06 : client: [27] closed
+Dec 08 18:06 : client: [28] opened from 127.0.0.1:37100
+Dec 08 18:06 : client: [28] closed
+Dec 08 18:06 : client: [29] opened from 127.0.0.1:37104
+Dec 08 18:06 : client: [29] closed
+Dec 08 18:11 : player: played "nightcore/「Nightcore」→Despacito ✗ Havana ✗ Shape of You ✗ The Middle ✗ Stressed Out ✗ MORE (Switching Vocal).mp3"
+Dec 08 18:14 : player: played "nightcore/Nightcore - Apologize.mp3"
+Dec 08 18:17 : player: played "nightcore/Nightcore - Girls Like You (Switching Vocals) - (Lyrics)-zY.mp3"
+Dec 08 18:19 : player: played "nightcore/Nightcore - Radioactive (Female Version) - Lyrics.mp3"
+Dec 08 18:22 : player: played "nightcore/Nightcore - Dam Dadi Do.mp3"
+Dec 08 18:24 : player: played "nightcore/Nightcore - Pretty Little Psycho.mp3"
+Dec 08 18:28 : player: played "nightcore/✤ Nightcore 〜 Dusk Till Dawn 「Zayn  ft. Sia」「Lyrics」.mp3"
+Dec 08 18:32 : player: played "nightcore/「Nightcore」→ Havana ✗ Despacito ✗ Believer ✗ Shape of you ✗ Rockabye and MORE (Switching Vocal).mp3"
+Dec 08 18:34 : player: played "nightcore/Nightcore- Glad You Came.mp3"
+Dec 08 18:39 : player: played "nightcore/Nightcore → Top Songs of 2018 (Switching Vocals_Mashup) - [Lyrics] 乂.mp3"
+Dec 08 18:42 : player: played "nightcore/Meg & Dia - Monster (Nightcore Dubstep Remix)-DYS_qFWx7-M.mp3"
+Dec 08 18:46 : player: played "nightcore/Nightcore - But i'm only human - (Lyrics).mp3"
+Dec 08 18:48 : player: played "nightcore/Nightcore You're Gonna Go Far, Kid.mp3"
+Dec 08 18:51 : player: played "nightcore/Nightcore - Tears of an Angel - (Lyrics).mp3"
+Dec 08 18:54 : player: played "nightcore/Nightcore - In The End _ (Lyrics)-tOoVFIr.mp3"
+Dec 08 18:57 : player: played "nightcore/Nightcore - You Belong With Me - (Lyrics).mp3"
+Dec 08 18:57 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 08 18:57 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 08 18:58 : client: [24] closed
+Dec 08 18:58 : client: [30] opened from 127.0.0.1:37430
+Dec 08 19:01 : player: played "rapViet/Dick - Ghe Qua.mp3"
+Dec 08 19:01 : client: [31] opened from 127.0.0.1:37478
+Dec 08 19:01 : client: [31] closed
+Dec 08 19:01 : client: [32] opened from 127.0.0.1:37482
+Dec 08 19:01 : client: [32] closed
+Dec 08 19:01 : client: [33] opened from 127.0.0.1:37486
+Dec 08 19:01 : client: [33] closed
+Dec 08 19:05 : player: played "rapViet/MC ILL - Con cao va trum nho. By Jay Bach)-205137696.mp3"
+Dec 08 19:10 : player: played "rapViet/Dick - Song cho het doi thanh xuan.mp3"
+Dec 08 19:13 : player: played "rapViet/MC ILL - Truyen co grimm.mp3"
+Dec 08 19:18 : player: played "rapViet/MC ILL - Cuoi.mp3"
+Dec 08 19:23 : player: played "rapViet/Dick - Neu mot ngay chung ta khong con gap.mp3"
+Dec 08 19:27 : player: played "rapViet/Phuc Du - Anh van yeu em ma.mp3"
+Dec 08 19:36 : player: played "rapViet/TuPhuongBatBai - VD.mp3"
+Dec 08 19:40 : player: played "rapViet/MC ILL - Nha vo dich cua nhan dan.mp3"
+Dec 08 20:00 : player: played "rapViet/Phuc Du - TuMa.mp3"
+Dec 08 20:02 : player: played "rapViet/Phuc Du - SHYN_HERA FREEVERSE (BANK ACCOUNT REMIX).mp3"
+Dec 08 20:03 : player: played "rapViet/Phuc Du - Vo Hoc.mp3"
+Dec 08 20:05 : client: [34] opened from 127.0.0.1:38016
+Dec 08 20:05 : client: [35] opened from 127.0.0.1:38020
+Dec 08 20:05 : client: [36] opened from 127.0.0.1:38024
+Dec 08 20:05 : client: [37] opened from 127.0.0.1:38028
+Dec 08 20:05 : client: [38] opened from 127.0.0.1:38032
+Dec 08 20:05 : client: [39] opened from 127.0.0.1:38036
+Dec 08 20:05 : client: [40] opened from 127.0.0.1:38040
+Dec 08 20:05 : client: [34] closed
+Dec 08 20:05 : client: [41] opened from 127.0.0.1:38072
+Dec 08 20:05 : client: [38] closed
+Dec 08 20:05 : client: [36] closed
+Dec 08 20:05 : client: [39] closed
+Dec 08 20:05 : client: [35] closed
+Dec 08 20:05 : client: [37] closed
+Dec 08 20:05 : client: [40] closed
+Dec 08 20:05 : client: [41] closed
+Dec 08 20:05 : client: [42] opened from 127.0.0.1:38076
+Dec 08 20:05 : client: [43] opened from 127.0.0.1:38080
+Dec 08 20:05 : client: [44] opened from 127.0.0.1:38084
+Dec 08 20:05 : client: [45] opened from 127.0.0.1:38088
+Dec 08 20:05 : client: [46] opened from 127.0.0.1:38092
+Dec 08 20:05 : client: [47] opened from 127.0.0.1:38096
+Dec 08 20:05 : client: [48] opened from 127.0.0.1:38100
+Dec 08 20:05 : client: [42] closed
+Dec 08 20:05 : client: [45] closed
+Dec 08 20:05 : client: [47] closed
+Dec 08 20:05 : client: [46] closed
+Dec 08 20:05 : client: [44] closed
+Dec 08 20:05 : client: [43] closed
+Dec 08 20:05 : client: [48] closed
+Dec 08 20:05 : client: [49] opened from 127.0.0.1:38048
+Dec 08 20:05 : client: [50] opened from 127.0.0.1:38052
+Dec 08 20:05 : client: [51] opened from 127.0.0.1:38044
+Dec 08 20:05 : client: [52] opened from 127.0.0.1:38056
+Dec 08 20:05 : client: [53] opened from 127.0.0.1:38060
+Dec 08 20:05 : client: [54] opened from 127.0.0.1:38068
+Dec 08 20:05 : client: [55] opened from 127.0.0.1:38064
+Dec 08 20:05 : client: [56] opened from 127.0.0.1:38104
+Dec 08 20:05 : client: [49] closed
+Dec 08 20:05 : client: [51] closed
+Dec 08 20:05 : client: [50] closed
+Dec 08 20:05 : client: [52] closed
+Dec 08 20:05 : client: [54] closed
+Dec 08 20:05 : client: [53] closed
+Dec 08 20:05 : client: [55] closed
+Dec 08 20:05 : client: [56] closed
+Dec 08 20:05 : client: [57] opened from 127.0.0.1:38108
+Dec 08 20:05 : client: [57] closed
+Dec 08 20:09 : player: played "rapViet/MC ILL - Hong lau mong.mp3"
+Dec 08 20:11 : player: played "rapViet/Phuc Du - DMTRUNGVIET.mp3"
+Dec 08 20:14 : player: played "rapViet/MC ILL - Biet khong em.mp3"
+Dec 08 20:17 : client: [58] opened from 127.0.0.1:38228
+Dec 08 20:17 : client: [58] closed
+Dec 08 20:22 : player: played "rapViet/MC ILL - qlc.mp3"
+Dec 08 20:24 : player: played "rapViet/Phuc Du - Anh khong the gi dau anh lam.mp3"
+Dec 08 20:28 : player: played "rapViet/MC ILL - Tho rap.mp3"
+Dec 09 09:13 : client: [20] closed
+Dec 09 09:13 : client: [59] opened from 127.0.0.1:39316
+Dec 09 10:43 : client: [30] closed
+Dec 09 10:44 : client: [59] closed
+Dec 09 10:44 : client: [60] opened from 127.0.0.1:40038
+Dec 09 11:17 : client: [60] closed
+Dec 09 11:17 : client: [61] opened from 127.0.0.1:40158
+Dec 09 11:18 : client: [61] closed
+Dec 09 11:18 : client: [62] opened from 127.0.0.1:40164
+Dec 09 11:19 : client: [62] closed
+Dec 09 11:19 : client: [63] opened from 127.0.0.1:40190
+Dec 09 11:19 : client: [63] closed
+Dec 09 11:19 : client: [64] opened from 127.0.0.1:40194
+Dec 10 06:45 : client: [64] closed
+Dec 10 06:45 : client: [65] opened from 127.0.0.1:43890
+Dec 10 19:02 : client: [65] closed
+Dec 10 19:14 : client: [66] opened from 127.0.0.1:45512
+Dec 10 22:28 : client: [67] opened from 127.0.0.1:48442
+Dec 10 22:29 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 10 22:37 : player: played "davidmaximmicic/David Maxim Micic - 500 Seconds Before Sunset-349852204.mp3"
+Dec 10 22:45 : player: played "davidmaximmicic/David Maxim Micic - Bilo part III-15247203.mp3"
+Dec 10 22:47 : client: [68] opened from 127.0.0.1:48734
+Dec 10 22:47 : client: [68] closed
+Dec 11 03:02 : client: [66] closed
+Dec 11 03:03 : client: [69] opened from 127.0.0.1:50682
+Dec 11 03:05 : client: [69] closed
+Dec 11 03:27 : client: [70] opened from 127.0.0.1:51100
+Dec 11 18:43 : client: [70] closed
+Dec 11 18:43 : client: [71] opened from 127.0.0.1:52392
+Dec 11 19:05 : client: [71] closed
+Dec 11 19:06 : client: [72] opened from 127.0.0.1:52818
+Dec 11 19:55 : client: [72] closed
+Dec 11 19:56 : client: [73] opened from 127.0.0.1:53118
+Dec 11 20:36 : client: [73] closed
+Dec 11 20:37 : client: [74] opened from 127.0.0.1:53392
+Dec 11 20:38 : client: [74] closed
+Dec 11 20:40 : client: [75] opened from 127.0.0.1:53402
+Dec 11 20:42 : client: [75] closed
+Dec 11 20:43 : client: [76] opened from 127.0.0.1:53412
+Dec 11 20:44 : client: [76] closed
+Dec 11 20:44 : client: [77] opened from 127.0.0.1:53422
+Dec 11 20:49 : client: [77] closed
+Dec 11 21:02 : client: [78] opened from 127.0.0.1:53448
+Dec 11 21:04 : client: [78] closed
+Dec 11 21:09 : client: [79] opened from 127.0.0.1:53454
+Dec 11 21:21 : client: [79] closed
+Dec 11 21:37 : client: [80] opened from 127.0.0.1:53468
+Dec 11 21:39 : client: [80] closed
+Dec 11 21:45 : client: [81] opened from 127.0.0.1:53484
+Dec 11 21:48 : client: [81] closed
+Dec 11 21:48 : client: [82] opened from 127.0.0.1:53488
+Dec 11 21:50 : client: [82] closed
+Dec 11 22:07 : client: [83] opened from 127.0.0.1:53496
+Dec 11 22:37 : client: [83] closed
+Dec 11 22:37 : client: [84] opened from 127.0.0.1:54054
+Dec 11 22:44 : client: [84] closed
+Dec 11 22:44 : client: [85] opened from 127.0.0.1:54100
+Dec 11 22:44 : client: [67] closed
+Dec 11 22:45 : client: [86] opened from 127.0.0.1:54104
+Dec 11 22:56 : client: [85] closed
+Dec 11 22:56 : client: [87] opened from 127.0.0.1:54182
+Dec 11 23:00 : client: [88] opened from 127.0.0.1:54230
+Dec 11 23:00 : client: [88] closed
+Dec 11 23:00 : client: [89] opened from 127.0.0.1:54234
+Dec 11 23:00 : client: [89] closed
+Dec 11 23:01 : client: [87] closed
+Dec 11 23:01 : client: [90] opened from 127.0.0.1:54238
+Dec 11 23:05 : client: [90] closed
+Dec 11 23:05 : client: [91] opened from 127.0.0.1:54280
+Dec 11 23:06 : client: [91] closed
+Dec 11 23:06 : client: [92] opened from 127.0.0.1:54292
+Dec 11 23:07 : client: [92] closed
+Dec 11 23:07 : client: [93] opened from 127.0.0.1:54302
+Dec 11 23:14 : client: [94] opened from 127.0.0.1:54396
+Dec 11 23:14 : client: [94] closed
+Dec 11 23:14 : client: [95] opened from 127.0.0.1:54400
+Dec 11 23:14 : client: [95] closed
+Dec 11 23:14 : client: [96] opened from 127.0.0.1:54404
+Dec 11 23:14 : client: [96] closed
+Dec 11 23:14 : client: [97] opened from 127.0.0.1:54408
+Dec 11 23:14 : client: [97] closed
+Dec 11 23:25 : client: [93] closed
+Dec 11 23:25 : client: [98] opened from 127.0.0.1:54598
+Dec 12 00:11 : client: [98] closed
+Dec 12 00:11 : client: [99] opened from 127.0.0.1:55132
+Dec 12 00:17 : client: [99] closed
+Dec 12 00:17 : client: [100] opened from 127.0.0.1:55160
+Dec 12 00:43 : client: [100] closed
+Dec 12 00:43 : client: [101] opened from 127.0.0.1:55280
+Dec 12 00:44 : client: [101] closed
+Dec 12 00:45 : client: [102] opened from 127.0.0.1:55292
+Dec 12 00:46 : client: [102] closed
+Dec 12 00:46 : client: [103] opened from 127.0.0.1:55298
+Dec 12 00:51 : client: [103] closed
+Dec 12 00:52 : client: [104] opened from 127.0.0.1:55332
+Dec 12 01:46 : client: [104] closed
+Dec 12 01:46 : client: [105] opened from 127.0.0.1:56018
+Dec 12 01:50 : client: [105] closed
+Dec 12 01:50 : client: [86] closed
+Dec 12 01:50 : client: [106] opened from 127.0.0.1:56066
+Dec 12 01:52 : client: [106] closed
+Dec 12 01:52 : client: [107] opened from 127.0.0.1:56070
+Dec 12 01:55 : client: [107] closed
+Dec 12 01:56 : client: [108] opened from 127.0.0.1:56152
+Dec 12 02:11 : client: [108] closed
+Dec 12 02:11 : client: [109] opened from 127.0.0.1:57872
+Dec 12 02:11 : client: [109] closed
+Dec 12 02:11 : client: [110] opened from 127.0.0.1:57876
+Dec 12 18:46 : client: [110] closed
+Dec 12 18:46 : client: [111] opened from 127.0.0.1:58638
+Dec 12 18:48 : client: [111] closed
+Dec 12 18:48 : client: [112] opened from 127.0.0.1:58648
+Dec 12 18:58 : client: [112] closed
+Dec 12 18:58 : client: [113] opened from 127.0.0.1:58968
+Dec 12 18:58 : client: [113] closed
+Dec 12 18:58 : client: [114] opened from 127.0.0.1:58972
+Dec 12 19:01 : client: [114] closed
+Dec 12 19:01 : client: [115] opened from 127.0.0.1:59006
+Dec 12 19:03 : client: [115] closed
+Dec 12 19:03 : client: [116] opened from 127.0.0.1:59016
+Dec 12 19:06 : client: [116] closed
+Dec 12 19:06 : client: [117] opened from 127.0.0.1:59038
+Dec 12 19:19 : client: [117] closed
+Dec 12 19:19 : client: [118] opened from 127.0.0.1:59602
+Dec 12 19:20 : client: [118] closed
+Dec 12 19:20 : client: [119] opened from 127.0.0.1:59628
+Dec 12 19:21 : client: [119] closed
+Dec 12 19:21 : client: [120] opened from 127.0.0.1:59688
+Dec 12 20:12 : client: [121] opened from 127.0.0.1:35106
+Dec 12 20:12 : player: played "davidmaximmicic/David Maxim Micic - Bilo part I-15328406.mp3"
+Dec 12 20:12 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 12 20:16 : player: played "Sia - The Best Songs/Sia - Big Girls Cry .mp3"
+Dec 12 20:19 : player: played "Sia - The Best Songs/Sia - Unstoppable .mp3"
+Dec 12 20:23 : player: played "Sia - The Best Songs/Sia - California Dreamin' .mp3"
+Dec 12 20:26 : player: played "Sia - The Best Songs/Sia - Reaper .mp3"
+Dec 12 20:30 : player: played "Sia - The Best Songs/Sia - Footprints .mp3"
+Dec 12 20:34 : player: played "Sia - The Best Songs/Sia - Chandelier (Piano Version) .mp3"
+Dec 12 20:38 : player: played "Sia - The Best Songs/Sia - Fire Meet Gasoline .mp3"
+Dec 12 20:42 : player: played "Sia - The Best Songs/Sia - One Million Bullets .mp3"
+Dec 12 20:46 : player: played "Sia - The Best Songs/Sia - I Go To Sleep .mp3"
+Dec 12 20:50 : player: played "Sia - The Best Songs/Sia - Move Your Body .mp3"
+Dec 12 20:54 : player: played "Sia - The Best Songs/Sia - Breathe Me .mp3"
+Dec 12 20:58 : player: played "Sia - The Best Songs/Sia - Chandelier .mp3"
+Dec 12 21:02 : player: played "Sia - The Best Songs/Sia - Broken Glass .mp3"
+Dec 12 21:06 : player: played "Sia - The Best Songs/Sia - Cheap Thrills .mp3"
+Dec 12 21:06 : client: [120] closed
+Dec 12 21:06 : client: [122] opened from 127.0.0.1:35736
+Dec 12 21:10 : player: played "Sia - The Best Songs/Sia - Salted Wound (From The Fifty Shades Of Grey Soundtrack) .mp3"
+Dec 12 21:13 : player: played "Sia - The Best Songs/Sia - Sweet Design .mp3"
+Dec 12 21:17 : player: played "Sia - The Best Songs/Sia - Alive .mp3"
+Dec 12 21:20 : client: [121] closed
+Dec 12 21:21 : player: played "Sia - The Best Songs/Sia - Elastic Heart .mp3"
+Dec 12 21:25 : client: [123] opened from 127.0.0.1:36038
+Dec 12 21:26 : player: played "Sia - The Best Songs/Sia - Elastic Heart (Piano Version) .mp3"
+Dec 12 21:26 : client: [122] closed
+Dec 12 21:26 : client: [124] opened from 127.0.0.1:36042
+Dec 12 21:26 : client: [125] opened from 127.0.0.1:36046
+Dec 12 21:26 : client: [125] closed
+Dec 12 21:26 : client: [123] closed
+Dec 12 21:26 : client: [126] opened from 127.0.0.1:36050
+Dec 12 21:26 : client: [126] closed
+Dec 12 21:27 : client: [124] closed
+Dec 12 21:27 : client: [127] opened from 127.0.0.1:36056
+Dec 12 21:30 : player: played "Sia - The Best Songs/Sia - Bird Set Free .mp3"
+Dec 12 21:34 : player: played "Sia - The Best Songs/Sia - Clap Your Hands .mp3"
+Dec 12 21:34 : client: [128] opened from 127.0.0.1:36118
+Dec 12 21:34 : client: [129] opened from 127.0.0.1:36122
+Dec 12 21:34 : client: [129] closed
+Dec 12 21:35 : client: [128] closed
+Dec 12 21:39 : client: [130] opened from 127.0.0.1:36132
+Dec 12 21:40 : client: [131] opened from 127.0.0.1:36136
+Dec 12 21:40 : client: [131] closed
+Dec 12 21:40 : client: [132] opened from 127.0.0.1:36140
+Dec 12 21:40 : client: [133] opened from 127.0.0.1:36144
+Dec 12 21:40 : client: [134] opened from 127.0.0.1:36148
+Dec 12 21:40 : client: [135] opened from 127.0.0.1:36152
+Dec 12 21:40 : client: [136] opened from 127.0.0.1:36156
+Dec 12 21:40 : client: [137] opened from 127.0.0.1:36160
+Dec 12 21:40 : client: [137] closed
+Dec 12 21:40 : client: [136] closed
+Dec 12 21:40 : client: [134] closed
+Dec 12 21:40 : client: [135] closed
+Dec 12 21:40 : client: [133] closed
+Dec 12 21:40 : client: [132] closed
+Dec 12 21:40 : client: [138] opened from 127.0.0.1:36164
+Dec 12 21:40 : client: [138] closed
+Dec 12 21:40 : client: [127] closed
+Dec 12 21:40 : client: [139] opened from 127.0.0.1:36188
+Dec 12 21:40 : client: [130] closed
+Dec 12 21:40 : client: [140] opened from 127.0.0.1:36192
+Dec 12 21:40 : client: [140] closed
+Dec 12 21:41 : client: [141] opened from 127.0.0.1:36202
+Dec 12 21:41 : client: [141] closed
+Dec 12 21:41 : client: [139] closed
+Dec 12 21:41 : client: [142] opened from 127.0.0.1:36206
+Dec 12 21:42 : client: [142] closed
+Dec 12 21:42 : client: [143] opened from 127.0.0.1:36216
+Dec 12 21:42 : client: [143] closed
+Dec 12 21:43 : client: [144] opened from 127.0.0.1:36220
+Dec 12 21:43 : client: [145] opened from 127.0.0.1:36232
+Dec 12 21:43 : client: [145] closed
+Dec 12 21:45 : client: [144] closed
+Dec 12 21:45 : client: [146] opened from 127.0.0.1:36236
+Dec 12 21:45 : client: [147] opened from 127.0.0.1:36240
+Dec 12 21:45 : client: [147] closed
+Dec 12 21:49 : client: [146] closed
+Dec 12 21:49 : client: [148] opened from 127.0.0.1:36506
+Dec 12 21:49 : client: [149] opened from 127.0.0.1:36510
+Dec 12 21:49 : client: [150] opened from 127.0.0.1:36514
+Dec 12 21:49 : client: [149] closed
+Dec 12 21:49 : client: [148] closed
+Dec 12 21:49 : client: [150] closed
+Dec 12 21:49 : client: [151] opened from 127.0.0.1:36518
+Dec 12 21:49 : client: [152] opened from 127.0.0.1:36522
+Dec 12 21:50 : client: [152] closed
+Dec 12 21:50 : client: [151] closed
+Dec 12 21:50 : client: [153] opened from 127.0.0.1:36526
+Dec 12 21:50 : client: [153] closed
+Dec 12 21:50 : client: [154] opened from 127.0.0.1:36530
+Dec 12 21:52 : client: [154] closed
+Dec 12 21:52 : client: [155] opened from 127.0.0.1:36534
+Dec 12 21:53 : client: [156] opened from 127.0.0.1:36538
+Dec 12 21:53 : client: [156] closed
+Dec 12 21:53 : client: [157] opened from 127.0.0.1:36542
+Dec 12 21:53 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 12 21:53 : client: [157] closed
+Dec 12 21:54 : client: [155] closed
+Dec 12 21:54 : client: [158] opened from 127.0.0.1:36546
+Dec 12 21:54 : client: [159] opened from 127.0.0.1:36550
+Dec 12 21:54 : client: [159] closed
+Dec 12 21:54 : client: [160] opened from 127.0.0.1:36554
+Dec 12 21:54 : client: [160] closed
+Dec 12 21:54 : client: [161] opened from 127.0.0.1:36558
+Dec 12 21:54 : client: [161] closed
+Dec 12 21:54 : client: [162] opened from 127.0.0.1:36562
+Dec 12 21:54 : client: [162] closed
+Dec 12 21:54 : client: [163] opened from 127.0.0.1:36566
+Dec 12 21:54 : client: [163] closed
+Dec 12 21:54 : client: [164] opened from 127.0.0.1:36570
+Dec 12 21:54 : client: [164] closed
+Dec 12 21:54 : client: [165] opened from 127.0.0.1:36574
+Dec 12 21:54 : client: [165] closed
+Dec 12 21:54 : client: [166] opened from 127.0.0.1:36578
+Dec 12 21:55 : client: [166] closed
+Dec 12 21:55 : client: [167] opened from 127.0.0.1:36582
+Dec 12 21:55 : client: [167] closed
+Dec 12 21:55 : client: [168] opened from 127.0.0.1:36586
+Dec 12 21:55 : client: [168] closed
+Dec 12 21:55 : client: [169] opened from 127.0.0.1:36590
+Dec 12 21:55 : client: [169] closed
+Dec 12 21:55 : client: [170] opened from 127.0.0.1:36594
+Dec 12 21:55 : client: [170] closed
+Dec 12 21:55 : client: [171] opened from 127.0.0.1:36598
+Dec 12 21:55 : client: [171] closed
+Dec 12 21:55 : client: [172] opened from 127.0.0.1:36602
+Dec 12 21:55 : client: [172] closed
+Dec 12 21:55 : client: [173] opened from 127.0.0.1:36606
+Dec 12 21:55 : client: [173] closed
+Dec 12 21:56 : client: [174] opened from 127.0.0.1:36610
+Dec 12 21:56 : client: [174] closed
+Dec 12 21:56 : client: [158] closed
+Dec 12 21:56 : client: [175] opened from 127.0.0.1:36614
+Dec 12 21:56 : client: [176] opened from 127.0.0.1:36618
+Dec 12 21:56 : client: [176] closed
+Dec 12 22:01 : client: [177] opened from 127.0.0.1:36636
+Dec 12 22:24 : client: [175] closed
+Dec 12 22:24 : client: [178] opened from 127.0.0.1:37212
+Dec 12 22:27 : client: [179] opened from 127.0.0.1:37250
+Dec 12 22:27 : client: [179] closed
+Dec 12 22:27 : client: [177] closed
+Dec 12 22:27 : client: [180] opened from 127.0.0.1:37254
+Dec 12 22:27 : client: [180] closed
+Dec 12 22:32 : client: [178] closed
+Dec 12 22:32 : client: [181] opened from 127.0.0.1:37302
+Dec 12 22:34 : client: [181] closed
+Dec 12 22:34 : client: [182] opened from 127.0.0.1:37310
+Dec 12 22:35 : client: [182] closed
+Dec 12 22:37 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:37 : client: [0] opened from 127.0.0.1:40454
+Dec 12 22:37 : client: [1] opened from 127.0.0.1:40458
+Dec 12 22:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 12 22:37 : client: [1] closed
+Dec 12 22:37 : client: [2] opened from 127.0.0.1:40462
+Dec 12 22:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:37 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 12 22:37 : client: [3] opened from 127.0.0.1:40466
+Dec 12 22:37 : client: [3] closed
+Dec 12 22:37 : client: [0] closed
+Dec 12 22:37 : client: [2] closed
+Dec 12 22:37 : client: [4] opened from 127.0.0.1:40470
+Dec 12 22:37 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Dec 12 22:38 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:38 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:38 : client: [0] opened from 127.0.0.1:49778
+Dec 12 22:41 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Dec 12 22:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:44 : client: [0] opened from 127.0.0.1:60182
+Dec 12 22:47 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Dec 12 22:50 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:50 : client: [0] opened from 127.0.0.1:42252
+Dec 12 22:50 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"
+Dec 12 22:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 12 22:51 : client: [0] opened from 127.0.0.1:60982
+Dec 12 22:52 : client: [1] opened from 127.0.0.1:60986
+Dec 12 22:52 : client: [1] closed
+Dec 12 22:58 : client: [0] closed
+Dec 12 22:58 : client: [2] opened from 127.0.0.1:33022
+Dec 12 22:59 : client: [2] closed
+Dec 12 22:59 : client: [3] opened from 127.0.0.1:33036
+Dec 12 23:01 : client: [3] closed
+Dec 12 23:01 : client: [4] opened from 127.0.0.1:33040
+Dec 12 23:02 : client: [4] closed
+Dec 12 23:02 : client: [5] opened from 127.0.0.1:33044
+Dec 12 23:03 : client: [5] closed
+Dec 12 23:03 : client: [6] opened from 127.0.0.1:33074
+Dec 12 23:04 : client: [7] opened from 127.0.0.1:33286
+Dec 12 23:04 : exception: Failed to open /home/duy/.config/mpd/playlists: No such file or directory
+Dec 12 23:04 : client: [7] closed
+Dec 12 23:07 : client: [6] closed
+Dec 12 23:07 : client: [8] opened from 127.0.0.1:33706
+Dec 12 23:42 : client: [8] closed
+Dec 12 23:42 : client: [9] opened from 127.0.0.1:34064
+Dec 12 23:45 : client: [10] opened from 127.0.0.1:34096
+Dec 12 23:46 : client: [9] closed
+Dec 12 23:46 : client: [10] closed
+Dec 12 23:46 : client: [11] opened from 127.0.0.1:34100
+Dec 12 23:46 : client: [12] opened from 127.0.0.1:34104
+Dec 12 23:46 : client: [12] closed
+Dec 12 23:47 : client: [11] closed
+Dec 12 23:47 : client: [13] opened from 127.0.0.1:34114
+Dec 12 23:48 : client: [13] closed
+Dec 12 23:48 : player: played "curtainCall/Eminem - Cleanin' Out My Closet.mp3"

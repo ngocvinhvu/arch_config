@@ -1,5 +1,5 @@
 ! Disable F10 because of broken
-keycode 76=
+! keycode 76=  
 ! Swap Caps_Lock and Control_L
 remove Lock = Caps_Lock
 remove Control = Control_L

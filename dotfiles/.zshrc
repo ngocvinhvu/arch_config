@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
-alias wifi-menu='sudo wifi-menu'
+alias wifi='sudo wifi-menu'
 alias rs='sudo netctl restart wlp3s0-Tenda_106570'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
@@ -116,6 +116,7 @@ alias mv='mv -iv'
 alias cp='cp -iv'
 alias rm='rm -v'
 alias ka='killall'
+alias cf='cd ~/.config'
 #
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 # alias gvim='gvim -u NONE'
