@@ -41,7 +41,7 @@ URxvt.foreground:                       #18B218
 URxvt.background:                       #000000
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
-URxvt.saveLines:                        99999999999999
+URxvt.saveLines:                        99999
 URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
