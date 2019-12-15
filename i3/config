@@ -327,3 +327,6 @@ bindsym Mod4+n exec "i3 'focus output right;workspace 8;exec urxvt -e ncmpcpp'"
 
 # qutebrowser
 bindsym Mod4+q exec qutebrowser
+
+
+# exec_always --no-startup-id /home/duy/.config/polybar/launch_polybar
