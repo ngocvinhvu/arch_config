@@ -65,7 +65,7 @@ filetype plugin indent on
 
 " ==== Colors and other basic settings
 "colorscheme gruvbox
-set guifont=Monospace\ 10
+" set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
 set background=dark
@@ -77,7 +77,7 @@ set smartindent
 set st=4 sw=4 et
 set shiftwidth=4
 set tabstop=4
-let &colorcolumn="80"
+" let &colorcolumn="80"
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
