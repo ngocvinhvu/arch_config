@@ -43,7 +43,7 @@ umount -R /mnt
 reboot
 
 
-#Install graphical enviroment:
+# Install graphical enviroment:
 pacman -Syu
 pacman -S xorg-server xorg-apps xorg-xinit i3 numlockx
 pacman -S lightdm lightdm-gtk-greeter
@@ -54,7 +54,7 @@ pacman -S atool highlight mediainfo w3m ffmpegthumbnailer zathura
 pacman -S firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip
 pip install --user python-mpd2 
 
-#config audio
+# config audio
 vim /etc/modprobe.d/alsa-base.conf
 options snd_mia index=0
 options snd_hda_intel index=1
@@ -62,10 +62,10 @@ options snd_hda_intel index=1
 systemctl enable lightdm
 systemctl start lightdm
 
-create user:
+# create user:
 useradd -m -g wheel duy
 
-install yay:
+# install yay:
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
@@ -80,7 +80,7 @@ git clone https://github.com/laduygaga/arch_config
 pacman -S mtpfs ifuse android-file-transfer
 yay -S jmtpfs
 
-#vimvuldle
+# vimvuldle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # docker-ce
