@@ -102,14 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
-alias wifi='sudo wifi-menu'
-alias rs='sudo netctl restart wlp3s0-Tenda_106570'
+alias wifi='sudo wifi-menu wlp3s0'
+alias rs='sudo netctl stop-all && sudo netctl restart wlp3s0-Tenda_106570'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
 alias pmsyu='sudo pacman -Syu'
 alias pms='sudo pacman -S'
-alias i3lock='i3lock -i /home/duy/Pictures/cat.png'
+alias i3lock='i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png'
 alias d='~/Downloads'
 alias D='~/Documents'
 alias mv='mv -iv'

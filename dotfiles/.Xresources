@@ -38,7 +38,7 @@ URxvt.foreground:                       #18B218
 !#b83d49
 !#B2B2B2
 !#18B218
-URxvt.background:                       #000000
+URxvt.background:                       #181818
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        99999
@@ -46,8 +46,11 @@ URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
-URxvt.font:             xft:monospace:pixelsize=16:style=regular
-URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
+URxvt.font:                 xft:DejaVu Sans Mono:size=10,xft:Emojione Color:size=10 
+URxvt.boldFont:             xft:DejaVu Sans Mono:size=10,xft:Emojione Color:size=10,style=bold
+! URxvt.font:             xft:monospace:pixelsize=16:style=regular
+! URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
+! URxvt.font: -*-fixed-medium-r-*-*-14-*-*-*-*-*-iso8859-*
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
 !URxvt.urlLauncher:         /usr/bin/firefox
@@ -75,8 +78,8 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 ! Colors
-URxvt*background: #000000
-URxvt*foreground: #B2B2B2 
+! URxvt*background: #282828
+! URxvt*foreground: #B2B2B2 
 ! black
 URxvt*color0:  #000000
 URxvt*color8:  #686868
