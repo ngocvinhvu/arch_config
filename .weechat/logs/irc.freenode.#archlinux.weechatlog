@@ -3143,3 +3143,109 @@
 2019-12-13 03:38:39	--	Channel #archlinux: 1776 nicks (1 op, 0 voices, 1775 normals)
 2019-12-13 03:38:46	--	Channel created on Sun, 15 Feb 2004 12:08:31
 2019-12-13 03:39:06	--	irc: disconnected from server
+2019-12-17 04:49:18	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-17 04:49:18	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-17 04:49:18	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-17 04:49:18	--	Channel #archlinux: 1709 nicks (1 op, 0 voices, 1708 normals)
+2019-12-17 04:49:22	alschaapman	I also need 2> /dev/null just about any time I do find as sudo
+2019-12-17 04:49:26	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-17 04:49:26	alschaapman	Or, with sudo
+2019-12-17 04:49:28	<--	r4pr0n (~r4pr0n@gateway/tor-sasl/r4pr0n) has quit (Quit: r4pr0n)
+2019-12-17 04:49:53	alschaapman	I don't think an alias would be suitable. Aliases are only for first word
+2019-12-17 04:50:06	earnestly	alschaapman: You could clean up that find command
+2019-12-17 04:50:34	earnestly	But you could also generate a file list and then just grep that file.  Update the file list every now and then
+2019-12-17 04:50:41	earnestly	Faster than locate(1) :p
+2019-12-17 04:50:54	alschaapman	earnestly: Yeah, I was just looking in the manpage to see if there was something like -quiet. Would eliminate the need to 2> /dev/null
+2019-12-17 04:51:46	alschaapman	earnestly: greping a file list wouldn't do for find operations like -exec shasum {} \;
+2019-12-17 04:52:48	alschaapman	Actually I guess an alias would be fine if I just used something other than "find" for the alias. Most of my aliases are the same as the command they invoke, because I use them for cases where I need the same options 100% of the time
+2019-12-17 04:52:49	earnestly	alschaapman: Well
+2019-12-17 04:52:59	earnestly	xargs exists ._.
+2019-12-17 04:53:02	earnestly	But yes
+2019-12-17 04:53:12	earnestly	It's a shame that btrfs is ruining find for you
+2019-12-17 04:53:16	alschaapman	Lol
+2019-12-17 04:53:33	alschaapman	btrfs is great
+2019-12-17 04:54:15	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-12-17 04:55:39	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-17 04:55:39	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-17 04:55:39	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-17 04:55:39	--	Channel #archlinux: 1707 nicks (1 op, 0 voices, 1706 normals)
+2019-12-17 04:55:42	earnestly	alschaapman: `find ... \( -path a -o -path b ... \) -prune -o -print' is the general idiom
+2019-12-17 04:55:44	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-17 04:56:07	-->	beest (~root@2601:480:4003:37e0::f50b) has joined #archlinux
+2019-12-17 04:56:25	<--	oatmealraisin (~ryan@144.121.221.218) has quit (Ping timeout: 268 seconds)
+2019-12-17 04:56:56	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-17 04:56:56	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-17 04:56:56	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-17 04:56:56	--	Channel #archlinux: 1708 nicks (1 op, 0 voices, 1707 normals)
+2019-12-17 04:56:58	alschaapman	Probably just some quick online tutorial when I was searching about this
+2019-12-17 04:57:01	alschaapman	And I've been using it since
+2019-12-17 04:57:03	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-17 04:57:19	<--	snql (~snql@unaffiliated/snql) has quit (Quit: snql)
+2019-12-17 04:57:22	earnestly	alschaapman: the example used in the manual is: ` find . -path ./src/emacs -prune -o -print'
+2019-12-17 04:57:38	<--	kaben (~kaben@37.120.144.196) has quit (Remote host closed the connection)
+2019-12-17 04:57:53	earnestly	It's a bit weird tbh, it's not exactly expressing "exclude these directories from output", it's more roundabout
+2019-12-17 04:58:20	alschaapman	It is. Also the way logical operators are used in find tends to confuse me
+2019-12-17 04:58:54	<--	kageru (~kageru@2a04:4540:6f18:c500:1823:273d:8d7d:dcf6) has quit (Ping timeout: 246 seconds)
+2019-12-17 04:59:13	earnestly	It's an expression that returns True if the file is a directory, while also not desending into it as a result.  The prune is needed to make the expression "true" so that you can then -o -print (or print)
+2019-12-17 04:59:31	<--	ghostbox (~ghostbox@unaffiliated/ghostbox) has quit (Quit: WeeChat 2.7)
+2019-12-17 04:59:59	<--	cmx (~cmx@p200300E16F28D20090339D049E63B06F.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.7)
+2019-12-17 05:00:04	earnestly	It's almost like saying: "Generate me a list of files.  Okay good, now give me everything that wasn't in that list."
+2019-12-17 05:00:18	<--	Standalone (~weissi199@mail.n0de.biz) has quit (Ping timeout: 246 seconds)
+2019-12-17 05:00:28	earnestly	Rather than being able to directly express: "Provide a list of files excluding a, b, c, ...}
+2019-12-17 05:00:48	<--	fyrgebraec (~enceladus@i16-les03-ntr-31-36-51-39.sfr.lns.abo.bbox.fr) has quit (Ping timeout: 250 seconds)
+2019-12-17 05:00:59	earnestly	Also I find the find(1) manual hilarious.  "-or: like -o except not POSIX".  So why did you add it you fucking numpties
+2019-12-17 05:01:39	-->	urraka (~urraka@181.228.28.182) has joined #archlinux
+2019-12-17 05:01:40	<--	carbonchauvinist (171f6364@unaffiliated/carbonchauvinist) has quit (Remote host closed the connection)
+2019-12-17 05:01:49	-->	Standalone (~weissi199@mail.n0de.biz) has joined #archlinux
+2019-12-17 05:02:19	alschaapman	Numpties gonna numpty
+2019-12-17 05:02:30	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Quit: WeeChat 2.6)
+2019-12-17 05:02:42	earnestly	alschaapman: Now guess what this does: find . -name foo -prine -o \( ! -name '*' -print \)
+2019-12-17 05:02:58	--	irc: disconnected from server
+2019-12-17 05:03:14	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-17 05:03:14	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-17 05:03:14	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-17 05:03:14	--	Channel #archlinux: 1701 nicks (1 op, 0 voices, 1700 normals)
+2019-12-17 05:03:22	-->	xlx (~xlx@unaffiliated/xlx) has joined #archlinux
+2019-12-17 05:03:26	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-17 05:03:27	alschaapman	Print everything?
+2019-12-17 05:03:36	earnestly	the parens aren't needed actually
+2019-12-17 05:03:38	alschaapman	Wait, no. Print nothing
+2019-12-17 05:04:04	alschaapman	Is -prine supposed to be -prune or -print
+2019-12-17 05:04:13	earnestly	prune yeah
+2019-12-17 05:04:33	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-17 05:04:33	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-17 05:04:33	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-17 05:04:33	--	Channel #archlinux: 1701 nicks (1 op, 0 voices, 1700 normals)
+2019-12-17 05:04:38	earnestly	alschaapman: It's the same command, it just as an extra predicate after the -o
+2019-12-17 05:04:39	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-17 05:05:27	-->	agregory (~agregory@c-98-248-53-184.hsd1.ca.comcast.net) has joined #archlinux
+2019-12-17 05:06:04	alschaapman	Yeah that prints nothing
+2019-12-17 05:06:05	alschaapman	Right?
+2019-12-17 05:06:08	alschaapman	Also y tho
+2019-12-17 05:06:24	earnestly	Because ! -name '*'
+2019-12-17 05:06:36	mingdao	What does this indicate needs to be rebuilt? I thought everything was the same as on another host where it works: https://0x0.st/z0qf.txt
+2019-12-17 05:07:09	mingdao	Oops ... incomplete file.
+2019-12-17 05:07:15	earnestly	alschaapman: The more interesting case is when using `-print -prune' to prevent find from wasting time looking in directories
+2019-12-17 05:08:01	haagch	does anyone else have the terminal in konsole/yakuake freeze when running a command that is longer than 227 characters?
+2019-12-17 05:08:34	alschaapman	haagch: wat
+2019-12-17 05:08:45	<--	icebit_ (~marco@178.128.41.34) has quit (Ping timeout: 268 seconds)
+2019-12-17 05:08:49	earnestly	alschaapman: Basically -prune just tests if the expression matches a directory, and if so, doesn't descend into it.  So find / -prine -prune should just return /
+2019-12-17 05:08:56	earnestly	sigh
+2019-12-17 05:08:57	haagch	running this freezes the terminal:
+2019-12-17 05:08:59	haagch	                                                                                                                                                                                                                                  ls
+2019-12-17 05:09:00	earnestly	-print -prune*
+2019-12-17 05:09:04	haagch	but when removing one of the spaces, it works
+2019-12-17 05:10:03	-->	_Justice_ (~commander@31-208-149-254.cust.bredband2.com) has joined #archlinux
+2019-12-17 05:10:53	alschaapman	haagch: echo 'Hello world!' works fine for me in Konsole with ~225 leading spaces
+2019-12-17 05:11:13	alschaapman	Actually any amount of leading spaces by the look of it
+2019-12-17 05:11:19	haagch	interesting, so it's not a general problem
+2019-12-17 05:11:29	alschaapman	When did that start? KDE applications got a bunch of updates a few days ago
+2019-12-17 05:11:34	earnestly	It would be how the shell inteprets it
+2019-12-17 05:11:41	earnestly	But there are limits to the size of each command
+2019-12-17 05:11:43	haagch	very recently, could be related to the recent kf5 update
+2019-12-17 05:12:05	earnestly	But for example it might be 2091184 bytes per-argument
+2019-12-17 05:12:06	 *	haagch tries another kde theme
+2019-12-17 05:12:21	earnestly	Sorry, 131072
+2019-12-17 05:12:38	andril	o/
+2019-12-17 05:12:43	earnestly	--so,a,single,argument="like this" could not be larger than that in bytes
+2019-12-17 05:12:51	earnestly	chromium has reached that limit before

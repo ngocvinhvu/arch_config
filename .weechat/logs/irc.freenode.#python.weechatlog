@@ -3634,3 +3634,95 @@
 2019-12-13 03:38:38	--	Channel #python: 1843 nicks (0 ops, 0 voices, 1843 normals)
 2019-12-13 03:38:44	--	Channel created on Sun, 26 Nov 2006 13:42:41
 2019-12-13 03:39:06	--	irc: disconnected from server
+2019-12-17 04:49:18	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #python
+2019-12-17 04:49:18	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-17 04:49:18	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:58
+2019-12-17 04:49:18	--	Channel #python: 1758 nicks (0 ops, 0 voices, 1758 normals)
+2019-12-17 04:49:24	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-17 04:49:48	SnoopJeDi	zumba_addict, the best way to learn about the import system is to read the official docs: https://docs.python.org/3/reference/import.html
+2019-12-17 04:50:28	zumba_addict	i messed up energizer. It's not setup. It was functions.py that was importing another python file
+2019-12-17 04:53:09	-->	italic (~italic@unaffiliated/italic/x-8958156) has joined #python
+2019-12-17 04:53:26	<--	dnlserrano (~dnlserran@bl11-143-200.dsl.telepac.pt) has quit (Ping timeout: 250 seconds)
+2019-12-17 04:53:47	-->	dnlserrano (~dnlserran@bl11-143-200.dsl.telepac.pt) has joined #python
+2019-12-17 04:54:12	-->	wyclif (~daniel@unaffiliated/wyclif) has joined #python
+2019-12-17 04:55:39	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #python
+2019-12-17 04:55:39	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-17 04:55:39	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-17 04:55:39	--	Channel #python: 1761 nicks (0 ops, 0 voices, 1761 normals)
+2019-12-17 04:55:42	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-17 04:55:49	eck0	this is a good site with all kinds of useful python stuff
+2019-12-17 04:55:52	eck0	https://realpython.com/absolute-vs-relative-python-imports/
+2019-12-17 04:55:53	matsaman	hi luke
+2019-12-17 04:56:13	-->	jay-m_ (~jay-m@129.0.205.31) has joined #python
+2019-12-17 04:56:56	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #python
+2019-12-17 04:56:56	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-17 04:56:56	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:58
+2019-12-17 04:56:56	--	Channel #python: 1761 nicks (0 ops, 0 voices, 1761 normals)
+2019-12-17 04:57:01	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-17 04:57:09	<--	ertiportline (~ertiportl@unaffiliated/ertiportline) has quit (Ping timeout: 246 seconds)
+2019-12-17 04:58:17	<--	MmeQuignon (~matthieu@94.209.182.93.rev.sfr.net) has quit (Quit: WeeChat 2.6)
+2019-12-17 04:58:35	-->	JaredSchooley (~Sech@24-178-227-107.dhcp.stls.mo.charter.com) has joined #python
+2019-12-17 04:58:38	<--	wyclif (~daniel@unaffiliated/wyclif) has quit (Ping timeout: 245 seconds)
+2019-12-17 04:58:54	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Quit: No Ping reply in 180 seconds.)
+2019-12-17 04:58:55	-->	Left_Turn (~Matthew@unaffiliated/turn-left/x-3739067) has joined #python
+2019-12-17 05:00:23	-->	Haudegen (~quassel@178.115.237.87.static.drei.at) has joined #python
+2019-12-17 05:01:26	bjs	wenxin: because when you do `def f(L=[])` then that [] is shared between all calls
+2019-12-17 05:01:37	<--	jonesy (~textual@70-91-15-1-panjde.hfc.comcastbusiness.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2019-12-17 05:01:45	-->	mat001_ (~mat001@198.151.206.196) has joined #python
+2019-12-17 05:02:07	zumba_addict	what does f mean here? f"{repo_path}/{target_file}"
+2019-12-17 05:02:13	SnoopJeDi	zumba_addict, that's an f-string
+2019-12-17 05:02:37	zumba_addict	looks like the .format() is more readable
+2019-12-17 05:02:45	zumba_addict	or do they have different usage?
+2019-12-17 05:02:53	bjs	zumba_addict: that's pretty much what it is, it's .format() but nicer and newer
+2019-12-17 05:02:58	--	irc: disconnected from server
+2019-12-17 05:03:14	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #python
+2019-12-17 05:03:14	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-17 05:03:14	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-17 05:03:14	--	Channel #python: 1760 nicks (0 ops, 0 voices, 1760 normals)
+2019-12-17 05:03:14	<--	wenxin (~wenxin@2408:84e1:c8:568d:fdf4:5022:a085:2) has quit (Ping timeout: 245 seconds)
+2019-12-17 05:03:15	zumba_addict	cool
+2019-12-17 05:03:24	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-17 05:03:31	zumba_addict	looks like it's part of python
+2019-12-17 05:03:38	bjs	yes...
+2019-12-17 05:03:42	zumba_addict	sweet!
+2019-12-17 05:03:53	bjs	(but so was .format() ?)
+2019-12-17 05:04:01	luke_66	Uploaded file: https://uploads.kiwiirc.com/files/eaec69d999f3305f6225e122514b0f13/pasted.txt
+2019-12-17 05:04:33	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #python
+2019-12-17 05:04:33	--	Topic for #python is "Anything about Python is on-topic. Don't paste, use https://bpaste.net/+python | bit.ly/psf-survey-2019 | Be nice: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Local user groups: https://j.mp/1Mq06bF | #python-fr #python.de #python-uk #python-es #python.tw #python-br #python-nl #python-ir #python.it #python-ro #python-india #python-hu"
+2019-12-17 05:04:33	--	Topic set by Yhg1s (uid387777@python/psf/thomas) on Fri, 01 Nov 2019 04:55:57
+2019-12-17 05:04:33	--	Channel #python: 1758 nicks (0 ops, 0 voices, 1758 normals)
+2019-12-17 05:04:37	--	Channel created on Sun, 26 Nov 2006 13:42:41
+2019-12-17 05:04:46	zumba_addict	at first, it was hard since there was no meaning in letter "f"
+2019-12-17 05:04:48	-->	benjwadams (~badams_lo@wsip-184-180-13-92.ri.ri.cox.net) has joined #python
+2019-12-17 05:05:20	zumba_addict	i mean, not hard to use but figuring out what it was for though I have an assumption it was for formatting strings
+2019-12-17 05:05:25	<--	dnlserrano (~dnlserran@bl11-143-200.dsl.telepac.pt) has quit (Ping timeout: 248 seconds)
+2019-12-17 05:05:28	zumba_addict	have/had
+2019-12-17 05:05:29	SnoopJeDi	FWIW, I think f-strings are a *lot* more legible
+2019-12-17 05:05:58	zumba_addict	btw, this syntax always annoys me. Let me share a snippet
+2019-12-17 05:06:43	-->	atnakus (~atnakus@101.100.184.12) has joined #python
+2019-12-17 05:06:50	<--	DTZUZO (~DTZUZO@S0106bcd165662a4d.vs.shawcable.net) has quit (Read error: Connection reset by peer)
+2019-12-17 05:07:12	zumba_addict	I'm annoyed how far the succeeding lines are. It's almost centered - https://pastebin.com/K7jQQMuW
+2019-12-17 05:07:13	infobob	https://bpaste.net/show/ZTRUW (repasted for zumba_addict)
+2019-12-17 05:07:35	<--	aslicedbanjo (~aslicedba@host86-160-19-113.range86-160.btcentralplus.com) has quit (Quit: Leaving.)
+2019-12-17 05:07:46	zumba_addict	how would you beautify it?
+2019-12-17 05:07:50	-->	tgamblin (~tgamblin@CPE64777de11593-CM64777de11590.cpe.net.cable.rogers.com) has joined #python
+2019-12-17 05:08:07	-->	lakiluki (~lakiluki@unaffiliated/lakiluki) has joined #python
+2019-12-17 05:08:10	<--	Beanzilla (~Beanzilla@unaffiliated/beanzilla) has quit (Quit: Leaving)
+2019-12-17 05:08:17	-->	maxsu (~maxsu@2600:8801:1e05:400:fda1:227e:e783:2445) has joined #python
+2019-12-17 05:08:51	-->	ed_peguillan (~ed_peguil@wsip-184-176-6-219.ok.ok.cox.net) has joined #python
+2019-12-17 05:09:03	<--	fphilipe_ (~phil@2a02:168:f7b6:0:1135:3b88:d127:db7c) has quit (Ping timeout: 245 seconds)
+2019-12-17 05:09:17	lakiluki	Hey, I'm trying to implement a PriorityQueue, but when I "put" an item in the queue in the form of (priority_integer, data), I get a TypeError as it's trying to compare the data, rather than the priority_integer. What am I getting wrong?
+2019-12-17 05:09:17	energizer	i would use black, as always
+2019-12-17 05:09:19	-->	badhatter (~hatsareba@gateway/tor-sasl/badhatter) has joined #python
+2019-12-17 05:09:37	SnoopJeDi	lakiluki, can you show us the code and traceback?
+2019-12-17 05:09:57	zig	Joeboy: tx!
+2019-12-17 05:10:02	-->	wyclif (~daniel@unaffiliated/wyclif) has joined #python
+2019-12-17 05:10:16	zumba_addict	oh yeah, let me try it. Almost forgot i have black
+2019-12-17 05:10:43	energizer	zumba_addict: you can configure your editor to do it with a keyboard shortcut or automatically on save
+2019-12-17 05:10:46	zumba_addict	nice! It looks way better
+2019-12-17 05:10:56	-->	indistylo (~aruns_@106.51.26.248) has joined #python
+2019-12-17 05:11:03	lakiluki	SnoopJeDi: http://ix.io/24Ds
+2019-12-17 05:11:33	papna	lakiluki: It would compare the items in case of ties on priority_integer
+2019-12-17 05:11:40	papna	lakiluki: That's how tuples owrk.
+2019-12-17 05:12:17	-->	dnlserrano (~dnlserran@bl11-143-200.dsl.telepac.pt) has joined #python
+2019-12-17 05:12:39	SnoopJeDi	ah, yes, I was having trouble parsing the question as asked, but that's very likely what's happening

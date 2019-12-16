@@ -3926,3 +3926,170 @@
 2019-12-13 03:38:41	BadBob	the big problems are when you try to mix python2 and python3.   i don't think the package manager is written 'in 2.7.7' - it's written in python2, with some minimum version requirements.  should work for python2.7.x fox x>=7
 2019-12-13 03:38:42	--	Channel created on Sat, 10 Feb 2001 06:16:24
 2019-12-13 03:39:06	--	irc: disconnected from server
+2019-12-17 04:49:18	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-17 04:49:18	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-17 04:49:18	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-17 04:49:18	--	Channel ##linux: 1829 nicks (0 ops, 0 voices, 1829 normals)
+2019-12-17 04:49:18	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-17 04:49:18	--	URL for ##linux: https://freenode.linux.community
+2019-12-17 04:49:22	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-17 04:49:27	nifker	and without?
+2019-12-17 04:49:32	hexnewbie	nifker: screen
+2019-12-17 04:49:48	twainwek	and with?
+2019-12-17 04:50:18	hexnewbie	nifker: script here refers to the 'script' command, not a shell script
+2019-12-17 04:50:34	twofifths	tmux can also save a buffer to a file
+2019-12-17 04:50:38	hexnewbie	script and screen can record (script is better)
+2019-12-17 04:52:31	nifker	but how do I save it there? :script doesnt seem to be a command
+2019-12-17 04:52:55	ayecee	might need to install it first
+2019-12-17 04:53:21	hexnewbie	nifker: apt-get install script; script --timing=~/mysession.timing mysession.script
+2019-12-17 04:53:23	twofifths	nifker: tmux capture-pane then tmux save-buffer /path/to/file
+2019-12-17 04:53:37	<--	InspectorCluseau (~Inspector@97-127-22-6.mpls.qwest.net) has quit (Quit: InspectorCluseau)
+2019-12-17 04:55:38	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-17 04:55:38	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-17 04:55:38	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-17 04:55:39	--	Channel ##linux: 1825 nicks (0 ops, 0 voices, 1825 normals)
+2019-12-17 04:55:39	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-17 04:55:39	--	URL for ##linux: https://freenode.linux.community
+2019-12-17 04:55:39	matsaman	should come with util-linux, which should already be installed
+2019-12-17 04:55:40	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-17 04:56:00	rud0lf	is .mp4 an container? i noticed it can have subtitles track
+2019-12-17 04:56:17	matsaman	yes
+2019-12-17 04:56:21	rud0lf	thank you
+2019-12-17 04:56:25	<--	oatmealraisin (~ryan@144.121.221.218) has quit (Ping timeout: 268 seconds)
+2019-12-17 04:56:26	matsaman	well actually it's merely a filename extention
+2019-12-17 04:56:31	matsaman	but MPEG-4 is, yes
+2019-12-17 04:56:56	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-17 04:56:56	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-17 04:56:56	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-17 04:56:56	--	Channel ##linux: 1823 nicks (0 ops, 0 voices, 1823 normals)
+2019-12-17 04:56:56	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-17 04:56:56	--	URL for ##linux: https://freenode.linux.community
+2019-12-17 04:56:57	matsaman	extension* weird typo
+2019-12-17 04:56:59	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-17 04:57:05	hexnewbie	rud0lf: All video formats are kind of containers, as they need to contain a muxed video and audio codec data
+2019-12-17 04:57:09	<--	ertiportline (~ertiportl@unaffiliated/ertiportline) has quit (Ping timeout: 246 seconds)
+2019-12-17 04:57:12	matsaman	not really
+2019-12-17 04:57:13	matsaman	but most are
+2019-12-17 04:57:27	matsaman	most that poeple actually encounter in their daily lives
+2019-12-17 04:57:32	matsaman	p-e-ople
+2019-12-17 04:57:36	 *	matsaman adjusts keyboard
+2019-12-17 04:57:57	johnjay	is there something smaller than gimp to do a quick crop or rotate?
+2019-12-17 04:57:59	matsaman	there is little point in using MKV just to have an MP4 with subtitles, for example
+2019-12-17 04:58:01	johnjay	i.e. mspaint but for linux?
+2019-12-17 04:58:14	matsaman	though MKV is still more popular in that realm for that reason
+2019-12-17 04:58:32	matsaman	johnjay: yes, but gimp isn't that big...
+2019-12-17 04:58:35	-->	JaredSchooley (~Sech@24-178-227-107.dhcp.stls.mo.charter.com) has joined ##linux
+2019-12-17 04:58:37	hexnewbie	johnjay: Pinta but I'm not sure it's smaller
+2019-12-17 04:58:49	umbSublime	johnjay: is cli ok for you ? this can be achieved with imagemagick suite
+2019-12-17 04:58:54	<--	Haudegen (~quassel@178.115.237.87.static.drei.at) has quit (Quit: No Ping reply in 180 seconds.)
+2019-12-17 04:59:00	johnjay	gimp takes 4 seconds to start on my i5 computer
+2019-12-17 04:59:11	matsaman	boo hoo
+2019-12-17 04:59:15	matsaman	you could try 'display' from imagemagick
+2019-12-17 04:59:25	hexnewbie	Well, Pinta is technically smaller, but it depends on Mono, so it might be not really be. But it starts faster than GIMP
+2019-12-17 04:59:31	<--	ghostbox (~ghostbox@unaffiliated/ghostbox) has quit (Quit: WeeChat 2.7)
+2019-12-17 04:59:34	matsaman	Transform > Crop
+2019-12-17 04:59:38	twofifths	johnjay: seconded imagemagick if CLI is OK, krita otherwise
+2019-12-17 04:59:51	matsaman	imagemagick actually has a GUI
+2019-12-17 04:59:54	matsaman	it's just not as pretty as GIMP's
+2019-12-17 04:59:55	<--	humanBird (265b7f73@38.91.127.115) has quit (Remote host closed the connection)
+2019-12-17 04:59:56	<--	retractt1 (~my_user_n@ec2-52-10-239-71.us-west-2.compute.amazonaws.com) has quit (Ping timeout: 250 seconds)
+2019-12-17 05:00:18	<--	Standalone (~weissi199@mail.n0de.biz) has quit (Ping timeout: 246 seconds)
+2019-12-17 05:00:23	-->	Haudegen (~quassel@178.115.237.87.static.drei.at) has joined ##linux
+2019-12-17 05:00:28	twainwek	how does screen not terminate after closing a terminal window
+2019-12-17 05:00:42	-->	retractt1 (~my_user_n@136.35.188.174) has joined ##linux
+2019-12-17 05:00:44	hexnewbie	Krita starts twice as slow as GIMP. Here Krita is something like 10 seconds, GIMP - 5, and Pinta - 2 (didn't time it)
+2019-12-17 05:00:59	twofifths	it creates/attaches to a pseudo terminal then adds a trap for the HUP signal
+2019-12-17 05:01:01	johnjay	matsaman: it has a GUI?
+2019-12-17 05:01:05	johnjay	i didn't know that
+2019-12-17 05:01:15	matsaman	yeah, 'display whatever.jpg', then click the image
+2019-12-17 05:01:19	matsaman	Transform > Crop
+2019-12-17 05:01:29	<--	MassDebates (~MassDebat@unaffiliated/massdebates) has quit (Read error: Connection reset by peer)
+2019-12-17 05:01:36	matsaman	it's probably just Xlib or something
+2019-12-17 05:01:39	akik	twainwek: why should it terminate and kill your processes?
+2019-12-17 05:01:49	-->	Standalone (~weissi199@mail.n0de.biz) has joined ##linux
+2019-12-17 05:02:07	johnjay	matsaman: indeed it is
+2019-12-17 05:02:12	johnjay	thanks
+2019-12-17 05:02:14	codeaholic	twainwek: are you asking what the mechanism it uses to do that or why it behaves that way?
+2019-12-17 05:02:15	johnjay	that's... something i didn't know
+2019-12-17 05:02:17	-->	`Koyaanisqatsi (~xyzone@unaffiliated/xyzone) has joined ##linux
+2019-12-17 05:02:24	hexnewbie	KolourPaint can also crop and rotate
+2019-12-17 05:02:30	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Quit: WeeChat 2.6)
+2019-12-17 05:02:39	codeaholic	image/graphicsmagick can crop and rotate
+2019-12-17 05:02:41	twainwek	twofifths: and what does it do with the hup signal
+2019-12-17 05:02:43	twofifths	I forgot about IM having a GUI, haven't used it since the 90s when gimp came along
+2019-12-17 05:02:49	twofifths	twainwek: ignores it
+2019-12-17 05:02:55	akik	screen's purpose is to keep your stuff running. if you don't need that, why use it?
+2019-12-17 05:02:58	--	irc: disconnected from server
+2019-12-17 05:03:13	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-17 05:03:13	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-17 05:03:13	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-17 05:03:14	--	Channel ##linux: 1820 nicks (0 ops, 0 voices, 1820 normals)
+2019-12-17 05:03:14	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-17 05:03:14	--	URL for ##linux: https://freenode.linux.community
+2019-12-17 05:03:16	johnjay	hexnewbie: pinta is what i wanted thanks
+2019-12-17 05:03:17	<--	purnifire (~purnifire@92-38-76-87.cgn-pool-mnz.iptv.by) has quit (Ping timeout: 248 seconds)
+2019-12-17 05:03:18	twainwek	twofifths: who becomes its pid then
+2019-12-17 05:03:22	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-17 05:03:23	-->	xlx (~xlx@unaffiliated/xlx) has joined ##linux
+2019-12-17 05:03:41	twofifths	it keeps the same PID
+2019-12-17 05:03:41	twainwek	codeaholic: >how. of course i understand why
+2019-12-17 05:03:43	matsaman	that's not screen's purpose
+2019-12-17 05:03:49	matsaman	it's just a lovely bonus
+2019-12-17 05:04:04	twainwek	what about its ppid?
+2019-12-17 05:04:32	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-17 05:04:32	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-17 05:04:32	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-17 05:04:33	--	Channel ##linux: 1820 nicks (0 ops, 0 voices, 1820 normals)
+2019-12-17 05:04:33	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-17 05:04:33	--	URL for ##linux: https://freenode.linux.community
+2019-12-17 05:04:35	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-17 05:04:36	ayecee	well unless it's an irc client
+2019-12-17 05:04:57	twofifths	twainwek: it becomes the child of init/PID 1
+2019-12-17 05:05:02	codeaholic	twainwek: so when you disconnect your just killing the client attached to the screen server process.
+2019-12-17 05:05:02	matsaman	yeah, that's a special use case, though
+2019-12-17 05:05:08	matsaman	of people who feel the need to be online when they aren't
+2019-12-17 05:05:23	codeaholic	twainwek: the screen server is the process group leader for all the processes it spawns., eg bash
+2019-12-17 05:05:25	-->	purnifire (~purnifire@92-38-76-87.cgn-pool-mnz.iptv.by) has joined ##linux
+2019-12-17 05:05:27	twofifths	i.e. it daemonizes/double forks
+2019-12-17 05:06:26	codeaholic	twainwek: look in your process listing you'll see a process named SCREEN, that's the server process
+2019-12-17 05:06:29	twofifths	pstree is a useful visualization
+2019-12-17 05:06:41	akik	i run screen 24/7 since years
+2019-12-17 05:06:49	matsaman	and why wouldn't you indeed
+2019-12-17 05:06:50	<--	DTZUZO (~DTZUZO@S0106bcd165662a4d.vs.shawcable.net) has quit (Read error: Connection reset by peer)
+2019-12-17 05:06:54	<--	supersixone (~super6one@unaffiliated/supersixone) has quit (Ping timeout: 268 seconds)
+2019-12-17 05:07:02	codeaholic	tmux is like screen but better
+2019-12-17 05:07:12	akik	haha there we go again :)
+2019-12-17 05:07:15	twofifths	same here, single Terminal.app/xterm with tmux
+2019-12-17 05:07:20	matsaman	tmux is like screen but with more features than I use on top of the more features I already don't use from screen
+2019-12-17 05:07:20	codeaholic	akik: i had to
+2019-12-17 05:07:29	WeThree	matsaman: here here
+2019-12-17 05:07:30	nifker	hexnewbie: Does the timing file need to exist for the session to be played?
+2019-12-17 05:07:33	matsaman	plus that terrible license that will ensure it doesn't last
+2019-12-17 05:07:49	matsaman	better name, though
+2019-12-17 05:07:54	WeThree	what I know about screen.       screen.  screen -x... ctrl-a-d
+2019-12-17 05:08:14	twofifths	I use vsplits and layout saving on a daily basis
+2019-12-17 05:08:18	twainwek	oh i see. i do SCREEN with ppid 1
+2019-12-17 05:08:21	hexnewbie	nifker: For it to be played in a sane manner, it needs to exist. Otherwise, you can just cat the session file and you'd see the session
+2019-12-17 05:08:39	codeaholic	twainwek: yup. aka it's a process group leader
+2019-12-17 05:08:45	<--	icebit_ (~marco@178.128.41.34) has quit (Ping timeout: 268 seconds)
+2019-12-17 05:08:51	-->	ed_peguillan (~ed_peguil@wsip-184-176-6-219.ok.ok.cox.net) has joined ##linux
+2019-12-17 05:08:54	matsaman	twofifths: those are things screen does, too, no?
+2019-12-17 05:09:11	codeaholic	screen does.
+2019-12-17 05:09:25	twofifths	now, yes. it didn't for decades, and once I'd switched away, there was no reason to go back
+2019-12-17 05:09:32	matsaman	tmux is not copyleft
+2019-12-17 05:09:40	codeaholic	the biggest difference i see between screen and tmux is that tmux is infinitely more scriptable. and tmux doesn't need setuid root
+2019-12-17 05:09:43	matsaman	so it can jump in a lake, life's too short to waste time on software that will certainly die
+2019-12-17 05:09:49	nifker	hexnewbie: so it will just show me the session but not get back into it?
+2019-12-17 05:10:16	noahmg123	Ok, so I got a new laptop and I want to install Linux on it. But I wanted to test out a few things first. So I took a USB stick and put Debian Live on it. However, it doesn't really work well. I got it to boot once, but when I tried to shut down, I got a error that said "soft lockup - cpu#5 suck for 22s" or something like that.
+2019-12-17 05:10:25	hexnewbie	nifker: It's just recording the output that you see on the screen
+2019-12-17 05:10:34	nifker	oh
+2019-12-17 05:10:43	noahmg123	The error repeated a couple times, until I held down the power button to force it to turn off
+2019-12-17 05:10:57	-->	indistylo (~aruns_@106.51.26.248) has joined ##linux
+2019-12-17 05:11:02	`Koyaanisqatsi	noahmg123, try ubuntu
+2019-12-17 05:11:04	nifker	I was hoping for a utility that will save me the whole terminal session including getting back access to it to a file
+2019-12-17 05:11:09	hexnewbie	nifker: I just realized you want to resume the session
+2019-12-17 05:11:21	twofifths	it's maintained in-tree with OpenBSD, if it dies, it's dying with openssh, openntpd, openbgpd, etc, etc
+2019-12-17 05:11:23	<--	chillysurfer (~chillysur@qubcpq0957w-lp130-01-174-89-78-105.dsl.bell.ca) has quit (Quit: leaving)
+2019-12-17 05:11:30	noahmg123	`Koyaanisqatsi: I... don't see how that would be any different
+2019-12-17 05:12:22	matsaman	twofifths: not really; there are alternatives to openssh that people use, but not the way people use tmux & screen
+2019-12-17 05:12:49	hexnewbie	nifker: There seem to be plugins for that, like tmux-resurrect. I cannot attest to how they work

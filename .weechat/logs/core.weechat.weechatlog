@@ -834,3 +834,56 @@
 2019-12-13 03:38:21		python scripts loaded: autojoin
 2019-12-13 03:38:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
 2019-12-13 03:39:05		python: scripts unloaded
+2019-12-17 04:49:03	=!=	Warning: /home/duy/.weechat/irc.conf, line 91: unknown option for section "network": channel_encode = off
+2019-12-17 04:49:03		python scripts loaded: autojoin
+2019-12-17 04:49:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 04:54:21		fifo: pipe closed
+2019-12-17 04:55:23		python scripts loaded: autojoin
+2019-12-17 04:55:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 04:56:33		fifo: pipe closed
+2019-12-17 04:56:38		python scripts loaded: autojoin
+2019-12-17 04:56:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 05:00:01		irc: server undernet added
+2019-12-17 05:00:32	=!=	Error: unknown command "/clise" (type /help for help)
+2019-12-17 05:00:39		irc: server undernet has been deleted
+2019-12-17 05:00:43		All servers:
+2019-12-17 05:00:43		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-17 05:02:48	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:03:31	=!=	You can not write text in this buffer
+2019-12-17 05:03:44	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:03:55	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:04:02	=!=	irc: already connected to server "freenode"!
+2019-12-17 05:04:07	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:04:14		fifo: pipe closed
+2019-12-17 05:04:19		python scripts loaded: autojoin
+2019-12-17 05:04:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 05:06:26		irc: server undernet added
+2019-12-17 05:06:31	=!=	Error: unknown command "/sever" (type /help for help)
+2019-12-17 05:06:37		All servers:
+2019-12-17 05:06:37		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-17 05:06:37		   undernet
+2019-12-17 05:08:16		Option changed: irc.server.freenode.autojoin = "#reddit,##linux,#python,#archlinux,##C"  (default if null: "")
+2019-12-17 05:08:16		Option changed: irc.server.undernet.autojoin = "#vietnamese"  (default if null: "")
+2019-12-17 05:08:19		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-17 05:08:22		Options saved to sec.conf
+2019-12-17 05:08:22		Options saved to weechat.conf
+2019-12-17 05:08:22		Options saved to plugins.conf
+2019-12-17 05:08:22		Options saved to charset.conf
+2019-12-17 05:08:22		Options saved to logger.conf
+2019-12-17 05:08:22		Options saved to exec.conf
+2019-12-17 05:08:22		Options saved to trigger.conf
+2019-12-17 05:08:22		Options saved to alias.conf
+2019-12-17 05:08:22		Options saved to buflist.conf
+2019-12-17 05:08:22		Options saved to fifo.conf
+2019-12-17 05:08:22		Options saved to xfer.conf
+2019-12-17 05:08:22		Options saved to irc.conf
+2019-12-17 05:08:22		Options saved to relay.conf
+2019-12-17 05:08:22		Options saved to tcl.conf
+2019-12-17 05:08:22		Options saved to guile.conf
+2019-12-17 05:08:22		Options saved to ruby.conf
+2019-12-17 05:08:22		Options saved to python.conf
+2019-12-17 05:08:22		Options saved to lua.conf
+2019-12-17 05:08:22		Options saved to perl.conf
+2019-12-17 05:08:22		Options saved to script.conf
+2019-12-17 05:08:22		Options saved to fset.conf
+2019-12-17 05:12:51		fifo: pipe closed
