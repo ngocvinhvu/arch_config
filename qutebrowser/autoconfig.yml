@@ -18,19 +18,22 @@ settings:
   bindings.commands:
     global:
       normal:
+        ',<Ctrl+c>': :open -t trans {clipboard}
         ',M': hint links spawn mpv {hint-url}
         <Ctrl+h>: :history -t
   content.geolocation:
     https://www.google.com: true
   content.notifications:
+    https://localdates4.com: false
     https://www.facebook.com: false
     https://www.reddit.com: false
-    https://www.w88top.com: false
     https://www.youtube.com: false
   content.plugins:
     global: true
   content.proxy:
-      global: none
+    global: none
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: false
   url.default_page:
     global: https://google.com/search
   url.searchengines:
@@ -41,12 +44,16 @@ settings:
       dp: https://www.dongphim.net/content/search?t=kw&q={}
       eb: https://www.ebay.com/sch/{}
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
+      gi: https://github.com/search?q={}
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
       pr: https://thepiratebay.org/search/{}/0/0/0
       re: https://reddit.com/r/{}
+      res: https://www.reddit.com/search/?q={}
       sp: https://shopee.vn/search?keyword={}
+      spo: https://open.spotify.com/search/{}
+      sto: https://stackoverflow.com/search?q={}
       trans: https://translate.google.com/#view=home&op=translate&sl=en&tl=vi&text={}
       tw: https://twitter.com/search?q={}&src=typed_query
       vs: https://vietsubtv.org/full-hd/{}
@@ -54,4 +61,4 @@ settings:
       wvi: https://vi.wikipedia.org/wiki/{}
       yo: https://www.youtube.com/results?search_query={}
   url.start_pages:
-    global: /home/duy/Pictures/gnu_linux.png
+    global: /home/duy/Pictures/gnu_linux_1280x800.png
