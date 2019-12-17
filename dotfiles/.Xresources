@@ -34,11 +34,11 @@ URxvt*urgentOnBell:                     false
 URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
-URxvt.foreground:                       #18B218
+*.foreground:                       #18B218
 !#b83d49
 !#B2B2B2
 !#18B218
-URxvt.background:                       #181818
+*.background:                       #282828
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        99999
@@ -46,8 +46,14 @@ URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
-URxvt.font:                 xft:DejaVu Sans Mono:size=10,xft:Emojione Color:size=10 
-URxvt.boldFont:             xft:DejaVu Sans Mono:size=10,xft:Emojione Color:size=10,style=bold
+st.font:	Liberation Mono:pixelsize=15:antialias=true:autohint=true;
+st.foreground: white
+st.cursorColor: white
+st.alpha: 0.9
+XTerm.vt100.faceName: Liberation Mono:size=9:antialias=true
+XTerm.vt100.font: 7x13
+URxvt.font:                 xft:DejaVu Sans Mono:size=9,xft:emojione Color:size=9 
+URxvt.boldFont:             xft:DejaVu Sans Mono:size=8,xft:emojione Color:size=8
 ! URxvt.font:             xft:monospace:pixelsize=16:style=regular
 ! URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
 ! URxvt.font: -*-fixed-medium-r-*-*-14-*-*-*-*-*-iso8859-*
@@ -68,7 +74,7 @@ URxvt.keysym.C-slash:           perl:font-size:show
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/firefox
+URxvt.url-select.launcher:      /usr/bin/qutebrowser
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate
