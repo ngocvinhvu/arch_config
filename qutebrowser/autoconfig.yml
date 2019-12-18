@@ -19,10 +19,12 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t trans {clipboard}
-        ',Y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',s': spawn streamlink --player mpv {clipboard} 720p
+        ',Y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
+          --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
         ',a': hint links spawn mpv {hint-url}
-        ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]' {hint-url}
+        ',s': spawn streamlink --player mpv {clipboard} 720p
+        ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
+          {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
   content.geolocation:
@@ -36,6 +38,8 @@ settings:
     global: true
   content.proxy:
     global: none
+  tabs.background:
+    global: true
   url.default_page:
     global: https://google.com/search
   url.searchengines:
@@ -59,4 +63,6 @@ settings:
       wvi: https://vi.wikipedia.org/wiki/{}
       yo: https://www.youtube.com/results?search_query={}
   url.start_pages:
-    global: /home/duy/Pictures/gnu_linux.png
+    global: /home/duy/Pictures/gnu_linux_1280x800.png
+  zoom.default:
+    global: 115%

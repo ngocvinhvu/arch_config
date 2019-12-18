@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/duy/.oh-my-zsh"
+export ZSH="/home/duy/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,7 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
+alias p='cd /home/duy/gits/python'
+alias t='cd /home/duy/.trash'
+alias a='cd /home/duy/gits//arch_config'
+alias start='systemctl start'
+alias status='systemctl status'
+alias stop='systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
+alias wifi-menu='sudo wifi-menu'
 alias rs='sudo netctl stop-all && sudo netctl restart wlp3s0-Tenda_106570'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
@@ -119,6 +126,7 @@ alias ka='killall'
 alias cf='cd ~/.config'
 #
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
+alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
 # alias gvim='gvim -u NONE'
 # set -o vi
 bindkey -v
@@ -136,6 +144,7 @@ bindkey -M viins '^r' history-incremental-search-backward
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
+export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
