@@ -887,3 +887,47 @@
 2019-12-17 05:08:22		Options saved to script.conf
 2019-12-17 05:08:22		Options saved to fset.conf
 2019-12-17 05:12:51		fifo: pipe closed
+2019-12-20 05:27:59		python scripts loaded: autojoin
+2019-12-20 05:27:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:28:44	=!=	No help available, "ssl" is not a command or an option
+2019-12-20 05:28:50	=!=	No help available, "sasl" is not a command or an option
+2019-12-20 05:32:50		fifo: pipe closed
+2019-12-20 05:32:52		python scripts loaded: autojoin
+2019-12-20 05:32:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:33:52		Option changed: irc.server.freenode.ssl_priorities = "NORMAL:-VERS-TLS-ALL:+VERS-TLS1.0:+VERS-SSL3.0:%COMPAT"  (default if null: "NORMAL:-VERS-SSL3.0")
+2019-12-20 05:34:05		Option changed: irc.server.freenode.ssl_cert = "%h/certs/freenode.pem"  (default if null: "")
+2019-12-20 05:34:11		Option changed: irc.server.freenode.sasl_mechanism = external  (default if null: plain)
+2019-12-20 05:34:17		Option changed: irc.server.freenode.ssl = on  (default if null: off)
+2019-12-20 05:34:33		Option changed: irc.server.freenode.addresses = "chat.freenode.net/6667"  (default if null: "")
+2019-12-20 05:35:26		Option changed: irc.server.freenode.addresses = "chat.freenode.net/6697"  (default if null: "")
+2019-12-20 05:36:03		All servers:
+2019-12-20 05:36:03		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-20 05:36:03		   undernet
+2019-12-20 05:36:36		Option changed: irc.server.freenode.autojoin = "#reddit,##linux,#python,#archlinux,##C"  (default if null: "")
+2019-12-20 05:36:40	=!=	Error with command "/layout save" (help on command: /help layout)
+2019-12-20 05:36:45		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-20 05:36:47		Options saved to sec.conf
+2019-12-20 05:36:47		Options saved to weechat.conf
+2019-12-20 05:36:47		Options saved to plugins.conf
+2019-12-20 05:36:47		Options saved to charset.conf
+2019-12-20 05:36:47		Options saved to logger.conf
+2019-12-20 05:36:47		Options saved to exec.conf
+2019-12-20 05:36:47		Options saved to trigger.conf
+2019-12-20 05:36:47		Options saved to alias.conf
+2019-12-20 05:36:47		Options saved to buflist.conf
+2019-12-20 05:36:47		Options saved to fifo.conf
+2019-12-20 05:36:47		Options saved to xfer.conf
+2019-12-20 05:36:47		Options saved to irc.conf
+2019-12-20 05:36:47		Options saved to relay.conf
+2019-12-20 05:36:47		Options saved to tcl.conf
+2019-12-20 05:36:47		Options saved to guile.conf
+2019-12-20 05:36:47		Options saved to ruby.conf
+2019-12-20 05:36:47		Options saved to python.conf
+2019-12-20 05:36:47		Options saved to lua.conf
+2019-12-20 05:36:47		Options saved to perl.conf
+2019-12-20 05:36:47		Options saved to script.conf
+2019-12-20 05:36:47		Options saved to fset.conf
+2019-12-20 05:37:15		fifo: pipe closed
+2019-12-20 05:37:34		python scripts loaded: autojoin
+2019-12-20 05:37:34		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:39:19		fifo: pipe closed

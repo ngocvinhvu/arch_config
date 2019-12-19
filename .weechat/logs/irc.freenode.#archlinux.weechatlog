@@ -3249,3 +3249,62 @@
 2019-12-17 05:12:38	andril	o/
 2019-12-17 05:12:43	earnestly	--so,a,single,argument="like this" could not be larger than that in bytes
 2019-12-17 05:12:51	earnestly	chromium has reached that limit before
+2019-12-20 05:28:17	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-20 05:28:17	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-20 05:28:17	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-20 05:28:18	--	Channel #archlinux: 1659 nicks (1 op, 0 voices, 1658 normals)
+2019-12-20 05:28:24	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-20 05:29:13	-->	Gentoochild (~blub@2001:16b8:50e7:5b00:8298:d7fb:3b3c:da90) has joined #archlinux
+2019-12-20 05:29:24	<--	vishwin_ (~gehlot@wikimedia/O) has quit (Ping timeout: 248 seconds)
+2019-12-20 05:29:39	Gentoochild	Hello dear gurus. For a little while now, I’ve been having a problem opening attachments in mutt.
+2019-12-20 05:29:40	-->	shoogz (~shoogz@unaffiliated/shoogz) has joined #archlinux
+2019-12-20 05:29:42	-->	lunik1 (~lunik1@cpc77341-stav19-2-0-cust318.17-3.cable.virginm.net) has joined #archlinux
+2019-12-20 05:30:11	Gentoochild	instead of opening an image, the image viewer opens and tells me it could not find the file it was given in /tmp
+2019-12-20 05:30:12	earnestly	IaMnEwHeRe: Don't use that though, uses curses
+2019-12-20 05:30:37	Gentoochild	and on the terminal, the help text of bash is written over mutt.
+2019-12-20 05:30:43	<--	downtrip (~downtrip@188.166.151.198) has quit (Ping timeout: 245 seconds)
+2019-12-20 05:30:47	<--	dbarrett (~dbarrett@unaffiliated/dbarrett) has quit (Ping timeout: 246 seconds)
+2019-12-20 05:31:01	Gentoochild	It seems like mutt is using a wrong command line. Does that ring a bell with anyone?
+2019-12-20 05:31:08	<--	thejsa (~jsa@2a03:b0c0:1:a1::53e:1) has quit (Ping timeout: 246 seconds)
+2019-12-20 05:31:16	IaMnEwHeRe	earnestly, noted, I am most likely not writing code that low level but it is still nice to look outside one's area of expertise, hence, when I got time and feel like it
+2019-12-20 05:31:18	<--	Mevlock (~IRCIdent@linebox.xyz) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:31:27	<--	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has quit (Quit: WeeChat 2.7)
+2019-12-20 05:31:49	-->	al2o3-cr (~al2o3-cr@unaffiliated/gr33n7007h) has joined #archlinux
+2019-12-20 05:32:02	<--	zaco (zach@46.101.93.251) has quit (Ping timeout: 240 seconds)
+2019-12-20 05:32:03	earnestly	There was another nice one, but using python
+2019-12-20 05:32:21	<--	saltpepp3r (~saltpepp3@91.207.173.118) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:32:32	<--	cpebble (~root@138.68.162.5) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:32:32	<--	haavard (root@haavard.me) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:32:34	<--	Miblo (~Miblo@178.62.78.113) has quit (Ping timeout: 265 seconds)
+2019-12-20 05:32:49	earnestly	Probably the terminal whispering pycon thing, idk
+2019-12-20 05:33:11	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-20 05:33:11	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-20 05:33:11	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-20 05:33:11	--	Channel #archlinux: 1653 nicks (1 op, 0 voices, 1652 normals)
+2019-12-20 05:33:13	-->	vishwin_ (~gehlot@wikimedia/O) has joined #archlinux
+2019-12-20 05:33:16	-->	Corubba (~Corubba@2001:16b8:554a:ccff:c9b9:72b3:a940:204a) has joined #archlinux
+2019-12-20 05:33:17	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-20 05:33:26	<--	audiopath (~audiopath@2a02:8388:6a84:3700:f14d:6902:5373:1347) has quit (Quit: Leaving)
+2019-12-20 05:33:34	-->	cpebble (~root@138.68.162.5) has joined #archlinux
+2019-12-20 05:33:45	-->	thejsa (~jsa@2a03:b0c0:1:a1::53e:1) has joined #archlinux
+2019-12-20 05:33:55	-->	downtrip (~downtrip@188.166.151.198) has joined #archlinux
+2019-12-20 05:34:08	john_dee	What's the best way to get classic system tray in Gnome 3? Assuming I already installed libappindicator.
+2019-12-20 05:34:22	-->	saltpepp3r (~saltpepp3@91.207.173.118) has joined #archlinux
+2019-12-20 05:34:24	-->	Miblo (~Miblo@178.62.78.113) has joined #archlinux
+2019-12-20 05:34:29	<--	user844842 (user@gateway/vpn/mullvad/user844842) has quit (Quit: WeeChat 2.6)
+2019-12-20 05:34:42	--	irc: disconnected from server
+2019-12-20 05:35:56	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-20 05:35:56	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-20 05:35:56	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-20 05:35:57	--	Channel #archlinux: 1659 nicks (1 op, 0 voices, 1658 normals)
+2019-12-20 05:35:59	earnestly	styl1te: Oh specifically. https://git-annex.branchable.com/assistant/
+2019-12-20 05:36:00	phrik	Title: assistant (at git-annex.branchable.com)
+2019-12-20 05:36:08	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-20 05:36:19	-->	haavard (root@haavard.me) has joined #archlinux
+2019-12-20 05:37:51	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined #archlinux
+2019-12-20 05:37:51	--	Topic for #archlinux is "Welcome to Arch Linux, Good Luck: https://archlinux.org | Rules: https://goo.gl/XWFreH | Pastebins: see !paste | pacman 5.2 is out; check your .pacnews http://allanmcrae.com/2019/10/pacman-5-2-release/ | Installing? New `base` package; read the install guide carefully | You are now being helped by: https://i.imgur.com/2bDqnYZ.jpg"
+2019-12-20 05:37:51	--	Topic set by evilop on Sun, 10 Nov 2019 05:52:49
+2019-12-20 05:37:51	--	Channel #archlinux: 1660 nicks (1 op, 0 voices, 1659 normals)
+2019-12-20 05:37:56	--	Channel created on Sun, 15 Feb 2004 12:08:31
+2019-12-20 05:38:19	-->	witquicked (~witquicke@2603:3024:149f:e000::b8c5) has joined #archlinux
+2019-12-20 05:38:41	<--	mtn (~mtn@unaffiliated/mtn) has quit (Quit: Konversation terminated!)

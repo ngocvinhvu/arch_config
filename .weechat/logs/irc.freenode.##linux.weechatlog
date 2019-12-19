@@ -4093,3 +4093,78 @@
 2019-12-17 05:11:30	noahmg123	`Koyaanisqatsi: I... don't see how that would be any different
 2019-12-17 05:12:22	matsaman	twofifths: not really; there are alternatives to openssh that people use, but not the way people use tmux & screen
 2019-12-17 05:12:49	hexnewbie	nifker: There seem to be plugins for that, like tmux-resurrect. I cannot attest to how they work
+2019-12-20 05:28:17	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-20 05:28:17	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-20 05:28:17	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-20 05:28:17	--	Channel ##linux: 1757 nicks (0 ops, 0 voices, 1757 normals)
+2019-12-20 05:28:18	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-20 05:28:18	--	URL for ##linux: https://freenode.linux.community
+2019-12-20 05:28:19	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-20 05:28:37	-->	Cache_Money (~mas@50.231.28.58) has joined ##linux
+2019-12-20 05:29:31	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Remote host closed the connection)
+2019-12-20 05:29:40	-->	shoogz (~shoogz@unaffiliated/shoogz) has joined ##linux
+2019-12-20 05:29:45	ayecee	varjack: if you don't, you'll see a message about a failed firmware load in dmesg output
+2019-12-20 05:29:51	-->	Arlion (~Arlion@unaffiliated/arlion) has joined ##linux
+2019-12-20 05:30:11	redsh	With the name of the missing firmware file too.
+2019-12-20 05:30:12	<--	Thedarkb1 (~beno@45.76.128.8) has quit (Ping timeout: 260 seconds)
+2019-12-20 05:30:16	-->	Skripter (~Skripter@unaffiliated/skripter) has joined ##linux
+2019-12-20 05:30:27	varjack	hm, alright let's see
+2019-12-20 05:30:43	<--	downtrip (~downtrip@188.166.151.198) has quit (Ping timeout: 245 seconds)
+2019-12-20 05:31:03	<--	mebmc (~cgeF3jMSd@2a03:b0c0:1:d0::30d6:7001) has quit (Ping timeout: 252 seconds)
+2019-12-20 05:31:09	-->	Xaldafax (~Xaldafax@cpe-104-34-193-119.socal.res.rr.com) has joined ##linux
+2019-12-20 05:31:18	<--	Dev0n (~Dev0n@unaffiliated/dev0n) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:31:18	<--	J_C (~jc@unaffiliated/j-c) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:31:29	<--	Squarism (~someone@178.62.91.8) has quit (Ping timeout: 246 seconds)
+2019-12-20 05:31:36	<--	qassim (~me@s.qassim.uk) has quit (Ping timeout: 265 seconds)
+2019-12-20 05:31:36	<--	adamus1red (~MrR@unaffiliated/adamus1red) has quit (Ping timeout: 265 seconds)
+2019-12-20 05:31:57	<--	roskoe (~roskoe@host-2-97-13-31.as13285.net) has quit (Ping timeout: 260 seconds)
+2019-12-20 05:32:05	<--	gurrkiin (~irc@unaffiliated/gurrkiin) has quit (Ping timeout: 265 seconds)
+2019-12-20 05:32:21	<--	saltpepp3r (~saltpepp3@91.207.173.118) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:32:23	<--	moniker-- (~mon@unaffiliated/moniker-) has quit (Remote host closed the connection)
+2019-12-20 05:33:10	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-20 05:33:10	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-20 05:33:10	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-20 05:33:11	--	Channel ##linux: 1752 nicks (0 ops, 0 voices, 1752 normals)
+2019-12-20 05:33:11	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-20 05:33:11	--	URL for ##linux: https://freenode.linux.community
+2019-12-20 05:33:13	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-20 05:33:13	ayecee	paraphrased log messages are difficult to work with
+2019-12-20 05:33:20	varjack	wificond: Failed to find expected wiphy info from NL80211_CMD_GET_WIPHY responses
+2019-12-20 05:33:40	-->	Bashing-om (~sysop@ubuntu/member/bashing-om) has joined ##linux
+2019-12-20 05:33:44	-->	crypticode (5f5be2eb@95.91.226.235) has joined ##linux
+2019-12-20 05:33:56	ayecee	what's saying that
+2019-12-20 05:34:09	-->	downtrip (~downtrip@188.166.151.198) has joined ##linux
+2019-12-20 05:34:13	-->	qassim (~me@s.qassim.uk) has joined ##linux
+2019-12-20 05:34:18	-->	J_C (~jc@unaffiliated/j-c) has joined ##linux
+2019-12-20 05:34:18	varjack	logcat from adb
+2019-12-20 05:34:21	-->	saltpepp3r (~saltpepp3@91.207.173.118) has joined ##linux
+2019-12-20 05:34:29	<--	user844842 (user@gateway/vpn/mullvad/user844842) has quit (Quit: WeeChat 2.6)
+2019-12-20 05:34:36	ayecee	what program is that log from
+2019-12-20 05:34:37	lakitu	sometimes when i do something a level or two higher than normal executions of *nix shells, like say in crontab or via kde's shortcuts, it requires that i change all custom shell-script invokations in my shell scripts to full sourced / absolute path'd scripts, e.g `/usr/bin/myne/blah $1 $2` instead of `blah $1 $2` - can i anchor these (right now my hotkey shell scripts) to my user environment or w/e somehow? - at the top of the script maybe?
+2019-12-20 05:34:41	--	irc: disconnected from server
+2019-12-20 05:35:55	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-20 05:35:55	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-20 05:35:55	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-20 05:35:56	--	Channel ##linux: 1759 nicks (0 ops, 0 voices, 1759 normals)
+2019-12-20 05:35:56	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-20 05:35:56	--	URL for ##linux: https://freenode.linux.community
+2019-12-20 05:36:04	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-20 05:36:18	<--	Dr_Coke (~Dr_Coke@unaffiliated/dr-coke/x-0875422) has quit (Ping timeout: 260 seconds)
+2019-12-20 05:36:32	-->	CodeMouse92 (~JasonMc92@unaffiliated/codemouse) has joined ##linux
+2019-12-20 05:37:15	RayTracer	lakitu: you could put your scripts into ~/bin/ - some distros include ~/bin in PATH if it exists
+2019-12-20 05:37:50	-->	laduyhaha (~laduyhaha@42.112.108.198) has joined ##linux
+2019-12-20 05:37:50	--	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: https://paste.linux.community | Need an op? Join ##linux-ops | CoC? ##linux-offtopic, please."
+2019-12-20 05:37:50	--	Topic set by sauvin on Wed, 19 Sep 2018 02:14:08
+2019-12-20 05:37:51	--	Channel ##linux: 1760 nicks (0 ops, 0 voices, 1760 normals)
+2019-12-20 05:37:51	--	PvNotice(ChanServ): Please see https://freenode.linux.community/how-to-connect/ on how to register or identify your nick. By joining this channel you agree to abide by the channel rules and guidelines laid out at https://freenode.linux.community/channel-rules/.
+2019-12-20 05:37:51	--	URL for ##linux: https://freenode.linux.community
+2019-12-20 05:37:52	varjack	ayecee, what context do you mean 'what program is that from'
+2019-12-20 05:37:52	--	Channel created on Sat, 10 Feb 2001 06:16:24
+2019-12-20 05:37:53	twofifths	lakitu: but it's often better to specify PATH in the script
+2019-12-20 05:38:05	<--	JaredSchooley (~Sech@24-178-227-107.dhcp.stls.mo.charter.com) has quit (Ping timeout: 268 seconds)
+2019-12-20 05:38:13	--	gitpushtackeff is now known as effprime
+2019-12-20 05:38:32	ayecee	varjack: the program that emits this message that you're reading with logcat.
+2019-12-20 05:38:36	-->	JaredSchooley (~Sech@2600:6c42:7400:c86:2112:fd1a:6b56:ea41) has joined ##linux
+2019-12-20 05:38:38	varjack	I'm trying to get an external wifi card to work with my android phone, I compiled the kernel to have support for it's chipset but I'm not sure if I need the firmware because I never put it in
+2019-12-20 05:38:54	ayecee	varjack: that's out of scope for this channel.
+2019-12-20 05:39:13	varjack	it's a driver issue in the linux kernel, no?
