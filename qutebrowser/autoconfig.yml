@@ -21,12 +21,15 @@ settings:
         ',<Ctrl+c>': :open -t trans {clipboard}
         ',Y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
           --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',a': hint links spawn mpv {hint-url}
-        ',s': spawn streamlink --player mpv {clipboard} 720p
+        ',a': spawn streamlink --player mpv {clipboard} audio_webm
+        ',m': hint links spawn mpv {hint-url}
+        ',b': spawn streamlink --player mpv {clipboard} best
+        ',w': spawn streamlink --player mpv {clipboard} worst
         ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
           {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
+        <Ctrl+m>: :messages -t
   content.geolocation:
     https://www.google.com: true
   content.notifications:
@@ -53,7 +56,7 @@ settings:
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
-      pr: https://thepiratebay.org/search/{}/0/0/0
+      pr: https://www1.thepiratebay3.to/s/?q={}
       re: https://reddit.com/r/{}
       sp: https://shopee.vn/search?keyword={}
       trans: https://translate.google.com/#view=home&op=translate&sl=en&tl=vi&text={}
@@ -63,6 +66,6 @@ settings:
       wvi: https://vi.wikipedia.org/wiki/{}
       yo: https://www.youtube.com/results?search_query={}
   url.start_pages:
-    global: /home/duy/Pictures/gnu_linux_1280x800.png
+    global: about:blank
   zoom.default:
     global: 115%
