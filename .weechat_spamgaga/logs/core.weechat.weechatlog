@@ -1141,3 +1141,6 @@
 2019-12-17 04:13:00		Options saved to script.conf
 2019-12-17 04:13:00		Options saved to fset.conf
 2019-12-17 04:13:03		fifo: pipe closed
+2019-12-20 11:46:27		python scripts loaded: autojoin
+2019-12-20 11:46:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-20 11:48:47		python: scripts unloaded
