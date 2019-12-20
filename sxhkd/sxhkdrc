@@ -43,7 +43,7 @@ alt + g
 #
 
 # set the window state
-alt + {t,shift + t,space,f}
+alt + {f,shift + f,space,t}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
@@ -150,13 +150,47 @@ Print
     scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png
 # ncmpcpp
 super + n
-    urxvt -e ncmpcpp
+    bspc desktop --focus ^8 && urxvt -e ncmpcpp
 # zathura
 super + z
-    zathura
+    bspc desktop --focus ^9 && zathura
 # goldendict
 super + g
-    goldendict
+    bspc desktop --focus ^3 && goldendict
 # ranger
 super + r
     urxvt -e ranger
+# toggle touchpad
+alt + F8
+    touchpad_toggle.sh
+# i3lock
+XF86ScreenSaver
+    i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
+# scratchpad
+alt + shift + minus
+	id=$(bspc query -N -n "focused");\
+	if [ -n "$id" ];then \
+		xprop -id $id -f _SCRATCH 32ii -set _SCRATCH $(date +%s,%N);\
+		bspc node -t "floating";\
+		xdotool windowunmap $id;\
+	fi
+
+alt + minus
+	i=$(bspc query -N -n "focused.floating");\
+	if [ -n "$i" ];then \
+		xprop -id $i -f _SCRATCH 32ii -set _SCRATCH $(date +%s,%N);\
+		xdotool windowunmap $i;\
+	else;\
+		i=$(for w in $(xwininfo -root -children | grep -e "^\s*0x[0-9a-f]\+" -o);do \
+			t=$(xprop -id $w _SCRATCH | grep ' = \(.*\)');\
+			if [ -n "$t" ];then \
+				echo $t $w;\
+			fi;\
+		done|sort -n|head -n1|cut -d" " -f 5);\
+		if [ -n "$i" ];then \
+			xprop -id $i -remove _SCRATCH;\
+			bspc rule -a \* state=floating center=on --one-shot;\
+			xdotool windowmap $i;\
+			bspc node -f $i;\
+		fi;\
+	fi

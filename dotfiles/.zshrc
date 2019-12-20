@@ -102,11 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
+# alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
 alias a='cd /home/duy/gits//arch_config'
 alias start='systemctl start'
-alias restart='systemctl restart'
 alias status='systemctl status'
 alias stop='systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
@@ -144,6 +144,7 @@ bindkey -M viins '^r' history-incremental-search-backward
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
 export HISTFILE=~/.zsh_history
