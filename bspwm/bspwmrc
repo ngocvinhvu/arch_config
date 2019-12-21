@@ -16,7 +16,9 @@ bspc rule -a Gimp desktop='^10' state=follow=on
 # bspc rule -a mplayer2 state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
-bspc rule -a mpv state=tilted follow=true
+bspc rule -a mpv state=floating follow=true rectangle=800x600+200+0
 bspc rule -a qutebrowser desktop='^2' follow=false
-bspc rule -a scratchpad sticky=on state=tilted hidden=on
+bspc rule -a Zathura desktop='^9' state=tiled follow=true
+bspc rule -a GoldenDict desktop='^3' follow=false
+bspc rule -a scratchpad sticky=on state=floating hidden=on
 st -c scratchpad -e ~/bin/scratch &

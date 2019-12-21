@@ -43,7 +43,7 @@ alt + g
 #
 
 # set the window state
-alt + {f,shift + f,space,t}
+alt + {f,shift + f,shift+space,t}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
@@ -153,10 +153,12 @@ super + n
     bspc desktop --focus ^8 && urxvt -e ncmpcpp
 # zathura
 super + z
-    bspc desktop --focus ^9 && zathura
+    zathura
+# bspc desktop --focus ^9 && 
 # goldendict
 super + g
-    bspc desktop --focus ^3 && goldendict
+    goldendict
+# bspc desktop --focus ^3 && 
 # ranger
 super + r
     urxvt -e ranger
@@ -165,7 +167,7 @@ alt + F8
     touchpad_toggle.sh
 # i3lock
 XF86ScreenSaver
-    i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
+    i3lock -i /home/duy/Pictures/gnu_linux.png
 # scratchpad
 alt + shift + minus
 	id=$(bspc query -N -n "focused");\
@@ -194,3 +196,6 @@ alt + minus
 			bspc node -f $i;\
 		fi;\
 	fi
+# restart polybar
+alt + shift + b
+    polybar -r example > /dev/null 2>&1
