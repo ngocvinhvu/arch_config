@@ -24,6 +24,8 @@ settings:
         ',a': spawn streamlink --player mpv {clipboard} audio_webm
         ',b': spawn streamlink --player mpv {clipboard} best
         ',m': hint links spawn mpv {hint-url}
+        ',n': config-cycle content.user_stylesheets /home/duy/gits/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css
+          ""
         ',w': spawn streamlink --player mpv {clipboard} worst
         ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
           {hint-url}
@@ -35,7 +37,9 @@ settings:
   content.host_blocking.enabled:
     global: true
   content.notifications:
+    https://sbgamehacker.download: false
     https://shopee.vn: false
+    https://webchat.freenode.net: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
     https://www.reddit.com: false
@@ -47,6 +51,8 @@ settings:
     global: none
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: false
+  content.user_stylesheets:
+    global: null
   tabs.background:
     global: true
   url.default_page:
