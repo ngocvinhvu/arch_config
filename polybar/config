@@ -427,7 +427,7 @@ interval = 5000
 ;format-underline =
 [module/ping]
 type = custom/script
-exec = ping.sh
+exec = ~/bin/ping.sh
 interval=1
 
 ; vim:ft=dosini
