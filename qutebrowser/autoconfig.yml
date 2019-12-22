@@ -32,6 +32,9 @@ settings:
         <Ctrl+m>: :messages -t
   content.geolocation:
     https://www.google.com: true
+  content.headers.user_agent:
+    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/76.0.3809.132 Safari/537.36
   content.host_blocking.enabled:
     global: true
   content.notifications:
@@ -74,4 +77,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: 115%
+    global: 100%
