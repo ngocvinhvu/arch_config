@@ -150,7 +150,7 @@ bindsym Mod1+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # exit i3 without confirm by mouse
-bindsym Mod1+Shift+e exec i3-msg exit
+bindsym Mod1+Shift+e exec i3-msg exit logout
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -183,7 +183,7 @@ bindsym Mod1+r mode "resize"
 bar {
         # status_command i3status
         status_command py3status # -c /etc/i3status.conf
-#        status_command i3blocks
+        # status_command i3blocks
         font pango:M+ 1m, FontAwesome, Ionicons, 8
         position bottom
         # mode dock
@@ -204,7 +204,8 @@ bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 bindsym  --release Shift+Print exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 # XF86ScreenSaver
-bindsym XF86ScreenSaver exec i3lock -i /home/duy/Pictures/cat.png
+bindsym XF86ScreenSaver exec i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
+bindsym Mod4+Shift+l exec i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
 
 
 # Start rofi
@@ -244,7 +245,7 @@ for_window [class="Chromium"] move to workspace 2
 for_window [class="Chromium"] move absolute position 290px 0px
 
 # set size for all floating windows
-# floating_minimum_size 1024 x 720
+# floating_minimum_size 600x600
 # floating_maximum_size 1200 x 870
 # Conky
 for_window [class="Conky"] floating enable
@@ -328,5 +329,5 @@ bindsym Mod4+n exec "i3 'focus output right;workspace 8;exec urxvt -e ncmpcpp'"
 # qutebrowser
 bindsym Mod4+q exec qutebrowser
 
-
 # exec_always --no-startup-id /home/duy/.config/polybar/launch_polybar
+
