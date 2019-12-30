@@ -103,10 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 # alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias lsf="ls -ap | grep -v '/'"
+alias lsd="ls -p | grep '/'"
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
 alias a='cd /home/duy/gits//arch_config'
 alias start='systemctl start'
+alias restart='systemctl restart'
 alias status='systemctl status'
 alias stop='systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
@@ -128,6 +131,9 @@ alias cf='cd ~/.config'
 #
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
+alias mpvh="mpv --ytdl-format='bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]'"
+alias mpvm="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
+
 # alias gvim='gvim -u NONE'
 # set -o vi
 bindkey -v
