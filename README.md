@@ -126,7 +126,3 @@
 #pacman -S docker
 
 ### q1
-    fdsfdsdf
-    sdfs
-    dfdsfdsfs
-
