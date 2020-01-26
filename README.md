@@ -1,3 +1,4 @@
+[abc.xyz](#q1)
 ## Setup USB boot:
 #dd if=/ARCHLINUX.iso  of=/dev/sdb status="progress" bs=4M
 #
