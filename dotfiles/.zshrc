@@ -145,6 +145,26 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
+echo -ne '\e[5 q' # Cursor is beam instead of Block
+# echo -ne "\033]12;Orange\007" # Change cursor color
+
+# Show vim mode
+# Updates editor information when the keymap changes.
+# function zle-keymap-select() {
+#   zle reset-prompt
+#   zle -R
+# }
+# 
+# zle -N zle-keymap-select
+# 
+# function vi_mode_prompt_info() {
+#   echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
+# }
+# 
+# # define right prompt, regardless of whether the theme defined it
+# RPS1='$(vi_mode_prompt_info)'
+# RPS2=$RPS1
+
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
