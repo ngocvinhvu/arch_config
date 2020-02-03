@@ -38,7 +38,8 @@ URxvt*mouseWheelScrollPage:     true
 !#b83d49
 !#B2B2B2
 !#18B218
-*.background:                       #282828
+! URxvt.background:                       #181818
+*.background:                       #181818
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        99999
@@ -46,20 +47,14 @@ URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
-st.font:	Liberation Mono:pixelsize=15:antialias=true:autohint=true;
-st.foreground: white
-st.cursorColor: red
-st.alpha: 0.9
-XTerm.vt100.faceName: Liberation Mono:size=9:antialias=true
-XTerm.vt100.font: 7x13
-URxvt.font:                 xft:DejaVu Sans Mono:size=9,xft:emojione Color:size=9 
-URxvt.boldFont:             xft:DejaVu Sans Mono:size=8,xft:emojione Color:size=8
-! URxvt.font:             xft:monospace:pixelsize=16:style=regular
-! URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
+! *.font:                 xft:DejaVu Sans Mono:size=10,xft:noto-fonts-emoji Color:size=10 
+! *.boldFont:             xft:DejaVu Sans Mono:size=9,xft:noto-fonts-emoji Color:size=9
+URxvt.font:             xft:monospace:pixelsize=16:style=regular
+URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
 ! URxvt.font: -*-fixed-medium-r-*-*-14-*-*-*-*-*-iso8859-*
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
-!URxvt.urlLauncher:         /usr/bin/firefox
+!URxvt.urlLauncher:         /usr/bin/
 ! Resize font
 !URxvt.resize-font.smaller:      C-j
 !URxvt.resize-font.bigger:       C-k 
@@ -74,7 +69,7 @@ URxvt.keysym.C-slash:           perl:font-size:show
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/qutebrowser
+URxvt.url-select.launcher:      /usr/bin/firefox
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate
@@ -117,3 +112,10 @@ URxvt.preeditType: OverTheSpot
 
 ! Rxvt.transparent: true
 ! URxvt.shading:10
+!
+!
+! XTerm Font
+XTerm.vt100.faceName:-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-?:size=10
+! Disable bold
+XTerm.vt100.colorBDMode: true
+XTerm.vt100.colorBD: rgb:82/a4/d3
