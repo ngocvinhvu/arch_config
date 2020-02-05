@@ -165,9 +165,15 @@ augroup END
 "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
 autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
 autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!gcc %;clear;./a.out<CR>
+autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!gcc %;clear;./a.out<CR>
+autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!g++ %;clear;./a.out<CR>
+autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!g++ %;clear;./a.out<CR>
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn
-":set cursorline
+:set cursorline
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>c :set cursorline!
 :set nrformats-=octal "fix when <c-a> auto add 07 to 10
 
 " Protect large files from sourcing and other overhead.
@@ -187,3 +193,15 @@ if !exists("my_auto_commands_loaded")
         autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload buftype=nowrite undolevels=-1 | else | set eventignore-=FileType | endif
     augroup END
 endif
+
+set path+=**
+set wildmenu
+"command! MakeTags !ctags -R .
+let g:netrw_banner=0 " disable banner
+let g:netrw_browser_split=4 " open in prior window
+let g:netrw_altv=1 " open split to the right
+let g:netrw_liststyle=3 " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+nnoremap ,py :0read ~/gits/python/
+
