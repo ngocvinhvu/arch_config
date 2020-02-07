@@ -126,3 +126,6 @@
 #pacman -S docker
 
 ### q1
+# fastest way transfe file 
+sender:     tar c filename | netcat -l -p port -vvv -c
+reciever:   netcat host port | tar x
