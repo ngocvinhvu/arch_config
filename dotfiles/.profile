@@ -9,4 +9,4 @@ export BROWSER=qutebrowser
 ./.fehbg
 # [ ! -s ~/.config/mpd/pid ] && mpd
 sh -c mpd > /dev/null
-./.config/polybar/launch_polybar > /dev/null 2>&1 
+# ./.config/polybar/launch_polybar > /dev/null 2>&1 

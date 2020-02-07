@@ -165,10 +165,10 @@ augroup END
 "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
 autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
 autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!gcc %;clear;./a.out<CR>
-autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!gcc %;clear;./a.out<CR>
-autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!g++ %;clear;./a.out<CR>
-autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!g++ %;clear;./a.out<CR>
+autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn
 :set cursorline
