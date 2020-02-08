@@ -78,6 +78,9 @@ bindsym Mod1+g split h
 # split in vertical orientation
 bindsym Mod1+v split v
 
+# Include 2 above things
+# bindsym Mod1+v split toggle
+
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
 
@@ -85,6 +88,9 @@ bindsym Mod1+f fullscreen toggle
 bindsym Mod1+s layout stacking
 bindsym Mod1+w layout tabbed
 bindsym Mod1+e layout toggle split
+
+#toggles split at each new window
+# for_window [class=".*"] split toggle 
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
@@ -330,4 +336,8 @@ bindsym Mod4+n exec "i3 'focus output right;workspace 8;exec urxvt -e ncmpcpp'"
 bindsym Mod4+q exec qutebrowser
 
 # exec_always --no-startup-id /home/duy/.config/polybar/launch_polybar
+#
+bindsym Mod4+t gaps inner all toggle 10 
+bindsym Mod4+Shift+minus gaps inner all plus 5
+bindsym Mod4+Shift+equal gaps inner all minus 5
 
