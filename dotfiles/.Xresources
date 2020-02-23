@@ -34,7 +34,7 @@ URxvt*urgentOnBell:                     false
 URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
-*.foreground:                       white
+*.foreground:                       green
 !#b83d49
 !#B2B2B2
 !#18B218
@@ -114,11 +114,11 @@ URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 ! Rxvt.transparent: true
-! URxvt.shading:4
+! URxvt.shading: 10
 ! scroll-up, scroll-down
 URxvt.keysym.S-F9: command:\033]720;1\007
 URxvt.keysym.S-F11: command:\033]721;1\007
 
 ! keysym page up/down key
-URxvt.keysym.C-F9:         \033[5~
-URxvt.keysym.C-F11:          \033[6~
+!URxvt.keysym.C-F9:         \033[5~
+!URxvt.keysym.C-F11:          \033[6~
