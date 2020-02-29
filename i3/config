@@ -211,7 +211,7 @@ bindsym  --release Print exec "scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 bindsym  --release Shift+Print exec "scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png"
 # XF86ScreenSaver
 bindsym XF86ScreenSaver exec i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
-bindsym Mod4+Shift+l exec i3lock -i /home/duy/Pictures/gnu_linux_1600x900.png
+bindsym Mod4+Shift+l exec i3lock -i /home/duy/Pictures/libreboot.png
 
 
 # Start rofi
@@ -295,6 +295,7 @@ focus_follows_mouse no
 
 # Automatic back-and-forth when switching to the current workspace
 # workspace_auto_back_and_forth yes
+bindsym Mod1+Tab workspace back_and_forth
 
 # Turn off screen
 bindsym Mod4+Next exec --no-startup-id turnoff_screen.sh
