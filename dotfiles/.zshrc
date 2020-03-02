@@ -178,3 +178,7 @@ export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
+
+
+autoload -Uz tetriscurses
+alias tetris='tetriscurses'
