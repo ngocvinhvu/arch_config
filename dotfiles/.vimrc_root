@@ -1,5 +1,5 @@
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " ==== Completion
 " Plugin 'Valloric/YouCompleteMe'
 
@@ -10,10 +10,15 @@
 " Plugin 'scrooloose/nerdtree'
 
 " ==== plugin manager
-" Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 " call vundle#end()
+"===== Delay srt(sub)
+Plugin 'pamacs/vim-srt-sync'
+
+call vundle#end()
 
 inoremap jk <esc>
+set t_Co=256
 set number
 set hlsearch incsearch
 set showmatch
@@ -37,3 +42,12 @@ let g:netrw_liststyle=3 " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap ,py :0read ~/gits/python/
+:set cursorline
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
+autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>

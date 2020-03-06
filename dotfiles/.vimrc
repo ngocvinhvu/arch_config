@@ -68,6 +68,7 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
+set t_Co=256
 set background=dark
 set ruler
 set hidden
