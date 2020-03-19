@@ -13,7 +13,7 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const int vertpad            = 0;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 static const char *fonts[]          = { "monospace:size=8" };
-static const char dmenufont[]       = "monospace:size=8";
+static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
@@ -136,21 +136,21 @@ static Key keys[] = {
 	{ MODKEY,			XK_backslash,		view,		{0} },
 	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
 
-	{ MODKEY,			XK_a,		spawn,		SHCMD("st -e alsamixer ; pkill -RTMIN+10 dwmblocks") },
+	// { MODKEY,			XK_a,		spawn,		SHCMD("st -e alsamixer ; pkill -RTMIN+10 dwmblocks") },
 	/* { MODKEY|ShiftMask,		XK_a,		spawn,		SHCMD("") }, */
-	{ MODKEY,                       XK_s,      togglesticky,   {0} },
+	// { MODKEY,                       XK_s,      togglesticky,   {0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          {.v = dmenucmd } },
+	{ MOD1KEY,			XK_d,		spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,		XK_d,		togglegaps,	{0} },
-	{ MODKEY,			XK_f,		togglefullscr,	{0} },
+	{ MOD1KEY,			XK_f,		togglefullscr,	{0} },
 	/* { MODKEY|ShiftMask,		XK_f,		togglefullscr,	{0} }, */
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
 	/* { MODKEY|ShiftMask,		XK_g,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
-	/* { MODKEY,			XK_j,		focusstack,    	{.i = +1 } }, */
+	// { MOD1KEY,			XK_j,		focusstack,    	{.i = +1 } },
+	// { MOD1KEY,			XK_k,		focusstack,    	{.i = -1 } },
 	/* { MOD1KEY|ShiftMask,		XK_j,		movestack,     	{.i = +1 } },*/
-	/* { MODKEY,			XK_k,		focusstack,    	{.i = -1 } }, */
 	/* { MOD1KEY|ShiftMask,		XK_k,		movestack,     	{.i = -1 } },*/
+	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_semicolon,	shiftview,	{ .i = 1 } },
 	/* { MODKEY|ShiftMask,		XK_semicolon,	shiftview,	SHCMD("") }, */
@@ -162,7 +162,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_z,		incrgaps,	{.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -1 } },
 	{ MODKEY,			XK_x,		spawn,		SHCMD("slock & xset dpms force off; mpc pause ; pauseallmpv") },
-	{ MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
+	// { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title=mpvfloat /dev/video0") },
 	/* { MODKEY,			XK_v,		spawn,		SHCMD("") }, */
@@ -182,32 +182,33 @@ static Key keys[] = {
 	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = 1 } },
 	{ MODKEY,			XK_Insert,		spawn,		SHCMD("showclip") },
 
-	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -") },
+	// { MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		quit,		{0} },
-	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
-	{ MODKEY,			XK_F4,		spawn,		SHCMD("prompt \"Hibernate computer?\" \"sudo -A zzz -Z\"") },
-	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
-	{ MODKEY,			XK_F7,		spawn,		SHCMD("td-toggle") },
-	{ MODKEY,			XK_F8,		spawn,		SHCMD("mailsync") },
-	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
-	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
+	// { MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
+	// { MODKEY,			XK_F4,		spawn,		SHCMD("prompt \"Hibernate computer?\" \"sudo -A zzz -Z\"") },
+	// { MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
+	// { MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
+	// { MODKEY,			XK_F7,		spawn,		SHCMD("td-toggle") },
+	// { MODKEY,			XK_F8,		spawn,		SHCMD("mailsync") },
+	// { MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
+	// { MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
 	/* { MODKEY,			XK_F11,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_F12,		spawn,		SHCMD("st -e sudo nmtui") },
+	// { MODKEY,			XK_F12,		spawn,		SHCMD("st -e sudo nmtui") },
 
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 
 
-	{ MODKEY,			XK_space,	zoom,		{0} },
-	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
+	{ MOD1KEY,			XK_space,	zoom,		{0} },
+	{ MOD1KEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
 
 	/* { XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m\\%d-%H%M-\\%S').png") }, */
-	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
-	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
-	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
+	// { ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
+	// { MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
+	// { MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
+	// { MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
 
+	{ 0,	XF86XK_AudioMicMute,	spawn,		SHCMD("pactl set-source-mute 1 toggle") },
 	{ 0,	XF86XK_AudioMute,	spawn,		SHCMD("pactl set-sink-mute 0 toggle") },
 	{ 0,	XF86XK_AudioRaiseVolume,	spawn,		SHCMD("pactl set-sink-volume 0 +5%") },
 	{ 0,	XF86XK_AudioLowerVolume,	spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
@@ -218,22 +219,26 @@ static Key keys[] = {
 	{ 0,	XF86XK_AudioStop,	spawn,		SHCMD("mpc stop") },
 	{ 0,	XF86XK_AudioRewind,	spawn,		SHCMD("mpc seek -10") },
 	{ 0,	XF86XK_AudioForward,	spawn,		SHCMD("mpc seek +10") },
-	{ 0,	XF86XK_AudioMedia,	spawn,		SHCMD("st -e ncmpcpp") },
-	{ 0,	XF86XK_PowerOff,	spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
-	{ 0,	XF86XK_Calculator,	spawn,		SHCMD("st -e bc -l") },
-	{ 0,	XF86XK_Sleep,		spawn,		SHCMD("prompt \"Hibernate computer?\" \"sudo -A zzz -Z\"") },
-	{ 0,	XF86XK_WWW,		spawn,		SHCMD("$BROWSER") },
-	{ 0,	XF86XK_DOS,		spawn,		SHCMD("st") },
-	{ 0,	XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
-	{ 0,	XF86XK_TaskPane,	spawn,		SHCMD("st -e htop") },
-	{ 0,	XF86XK_Mail,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks") },
-	{ 0,	XF86XK_MyComputer,	spawn,		SHCMD("st -e $FILE /") },
-	{ 0,	XF86XK_Battery,		spawn,		SHCMD("notify-send \"Battery status\" \"$(batstat)\"") },
-	{ 0,	XF86XK_Launch1,		spawn,		SHCMD("xset dpms force off") },
+	{ MOD1KEY,			XK_F8,	spawn,		SHCMD("touchpad_toggle.sh") },
+	{ MOD1KEY,			XK_r,	spawn,		SHCMD("st -e ranger") },
+	{ MODKEY,			XK_d,	spawn,		SHCMD("zathura") },
+	{ MODKEY,			XK_f,	spawn,		SHCMD("firefox") },
+	// { 0,	XF86XK_AudioMedia,	spawn,		SHCMD("st -e ncmpcpp") },
+	// { 0,	XF86XK_PowerOff,	spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
+	// { 0,	XF86XK_Calculator,	spawn,		SHCMD("st -e bc -l") },
+	// { 0,	XF86XK_Sleep,		spawn,		SHCMD("prompt \"Hibernate computer?\" \"sudo -A zzz -Z\"") },
+	// { 0,	XF86XK_WWW,		spawn,		SHCMD("$BROWSER") },
+	// { 0,	XF86XK_DOS,		spawn,		SHCMD("st") },
+	// { 0,	XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
+	// { 0,	XF86XK_TaskPane,	spawn,		SHCMD("st -e htop") },
+	// { 0,	XF86XK_Mail,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks") },
+	// { 0,	XF86XK_MyComputer,	spawn,		SHCMD("st -e $FILE /") },
+	// { 0,	XF86XK_Battery,		spawn,		SHCMD("notify-send \"Battery status\" \"$(batstat)\"") },
+	// { 0,	XF86XK_Launch1,		spawn,		SHCMD("xset dpms force off") },
 
-	{ 0,	XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
-	{ 0,	XF86XK_TouchpadOff,	spawn,		SHCMD("synclient TouchpadOff=1") },
-	{ 0,	XF86XK_TouchpadOn,	spawn,		SHCMD("synclient TouchpadOff=0") },
+	// { 0,	XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
+	// { 0,	XF86XK_TouchpadOff,	spawn,		SHCMD("synclient TouchpadOff=1") },
+	// { 0,	XF86XK_TouchpadOn,	spawn,		SHCMD("synclient TouchpadOff=0") },
 
 	/* { MODKEY,                       XK_space,  setlayout,      {0} }, */
 
