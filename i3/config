@@ -188,10 +188,11 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 bar {
         # status_command i3status
-        status_command py3status # -c /etc/i3status.conf
         # status_command i3blocks
+        status_command py3status # -c /etc/i3status.conf
         font pango:M+ 1m, FontAwesome, Ionicons, 8
         position bottom
+        # position top
         # mode dock
         # modifier None
 }
@@ -266,7 +267,7 @@ for_window [class="libreoffice"] move absolute position 290px 0px
 bindsym Mod1+F8 exec touchpad_toggle.sh
 
 # WebCam
-bindsym XF86WebCam exec cheese
+bindsym XF86WebCam exec ffplay -s 1600x900 /dev/video0
 
 # Pavucontrol
 bindsym Mod4+p exec pavucontrol -t 3 

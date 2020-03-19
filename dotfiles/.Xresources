@@ -1,25 +1,5 @@
-rofi.color-window: argb:ee273238, #273238, argb:3a1e2529
-!rofi.color-window:      #000, #000, #000
-rofi.color-normal: argb:00273238, #c1c1c1, argb:3a273238, #394249, #ffffff
-rofi.color-active: argb:00273238, #80cbc4, argb:3a273238, #394249, #80cbc4
-rofi.color-urgent: argb:00273238, #ff1844, argb:3a273238, #394249, #ff1844
-rofi.hide-scrollbar:    true
-!---------------------------------
-! Xft settings
-! --------------------------------
-!Xft.dpi:        110
-Xft.dpi:        109
-Xft.antialias:  true
-Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.autohint:   false
-Xft.lcdfilter:  lcddefault
-!---------------------------------
-! URXVT Terminal config
-! --------------------------------
 URxvt.depth:                            32
-URxvt*termName:                         rxvt-unicode-256color 
+URxvt*termName:                         rxvt-unicode
 URxvt*geometry:                         80x24
 URxvt.loginShell:                       true
 URxvt*scrollColor:                      #777777
@@ -34,11 +14,8 @@ URxvt*urgentOnBell:                     false
 URxvt*visualBell:                       true
 URxvt*mapAlert:                         true
 URxvt*mouseWheelScrollPage:     true
-*.foreground:                       green
-!#b83d49
-!#B2B2B2
-!#18B218
-*.background:                       #282828
+URxvt.foreground:                       green
+URxvt.background:                       #282828
 URxvt*colorUL:                          yellow
 URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        99999
@@ -46,33 +23,20 @@ URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
-st.font:	Liberation Mono:pixelsize=15:antialias=true:autohint=true;
-st.foreground: white
-st.cursorColor: red
-st.alpha: 0.9
-XTerm.vt100.faceName: Liberation Mono:size=9:antialias=true
-XTerm.vt100.font: 7x13
 URxvt.font:             xft:monospace:pixelsize=16:style=regular
 URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
-! URxvt.font: -*-fixed-medium-r-*-*-14-*-*-*-*-*-iso8859-*
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
-!URxvt.urlLauncher:         /usr/bin/firefox
-! Resize font
-!URxvt.resize-font.smaller:      C-j
-!URxvt.resize-font.bigger:       C-k 
 URxvt.keysym.C-Up:              perl:font-size:increase
 URxvt.keysym.C-Down:            perl:font-size:decrease
 URxvt.keysym.C-S-Up:            perl:font-size:incglobal
 URxvt.keysym.C-S-Down:          perl:font-size:decglobal
 URxvt.keysym.C-equal:           perl:font-size:reset
 URxvt.keysym.C-slash:           perl:font-size:show
-! Matcher
-!URxvt.url-launcher:             /usr/bin/firefox
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/firefox
+URxvt.url-select.launcher:      /usr/bin/chromium
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate
@@ -82,8 +46,6 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 ! Colors
-! URxvt*background: #282828
-! URxvt*foreground: #B2B2B2 
 ! black
 URxvt*color0:  #000000
 URxvt*color8:  #686868
@@ -110,15 +72,35 @@ URxvt*color7:  #B2B2B2
 URxvt*color15: #FFFFFF
 
 ! Enable ibus-unikey on URxvt
-URxvt.inputMethod: ibus
-URxvt.preeditType: OverTheSpot
+! URxvt.inputMethod: ibus
+! URxvt.preeditType: OverTheSpot
 
-! Rxvt.transparent: true
+! URxvt.transparent: true
 ! URxvt.shading: 10
+
 ! scroll-up, scroll-down
 URxvt.keysym.S-F9: command:\033]720;1\007
 URxvt.keysym.S-F11: command:\033]721;1\007
 
-! keysym page up/down key
-!URxvt.keysym.C-F9:         \033[5~
-!URxvt.keysym.C-F11:          \033[6~
+
+
+
+
+
+XTerm.vt100.background: #282828
+XTerm.vt100.foreground: green
+! XTerm.termName: xterm-256color
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+XTerm.vt100.saveLines: 9000
+XTerm.vt100.faceName: monospace:size=10:antialias=true
+XTerm.vt100.font: 7x13
+! XTerm.vt100.bellIsUrgent: false
+! XTerm*visualBell:  true
+XTerm*selectToClipboard: true
+XTerm.vt100.translations: #override \n\
+    Meta Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+    Meta Ctrl <Key>V: insert-selection(CLIPBOARD)
+

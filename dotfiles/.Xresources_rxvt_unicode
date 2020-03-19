@@ -23,8 +23,8 @@ URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
-URxvt.font:             xft:monospace:pixelsize=15:style=regular
-URxvt.boldFont:         xft:monospace:pixelsize=13:style=bold
+URxvt.font:             xft:monospace:pixelsize=16:style=regular
+URxvt.boldFont:         xft:monospace:pixelsize=14:style=bold
 ! Perl extensions
 URxvt.perl-ext-common:     default,matcher,font-size,url-select,keyboard-select
 URxvt.keysym.C-Up:              perl:font-size:increase
@@ -36,7 +36,7 @@ URxvt.keysym.C-slash:           perl:font-size:show
 URxvt.matcher.button:           1
 ! Url-select
 URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/firefox
+URxvt.url-select.launcher:      /usr/bin/chromium
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate
@@ -72,8 +72,8 @@ URxvt*color7:  #B2B2B2
 URxvt*color15: #FFFFFF
 
 ! Enable ibus-unikey on URxvt
-URxvt.inputMethod: ibus
-URxvt.preeditType: OverTheSpot
+! URxvt.inputMethod: ibus
+! URxvt.preeditType: OverTheSpot
 
 ! URxvt.transparent: true
 ! URxvt.shading: 10
@@ -82,26 +82,25 @@ URxvt.preeditType: OverTheSpot
 URxvt.keysym.S-F9: command:\033]720;1\007
 URxvt.keysym.S-F11: command:\033]721;1\007
 
+
+
+
+
+
 XTerm.vt100.background: #282828
 XTerm.vt100.foreground: green
 ! XTerm.termName: xterm-256color
-! XTerm.vt100.locale: true
+XTerm.vt100.locale: true
 XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.backarrowKey: false
 XTerm.ttyModes: erase ^?
-XTerm.vt100.translations: #override \n\
-!     Ctrl <Key>M: maximize() \n\
-!     Ctrl <Key>R: restore()
-    Shift <KeyPress> Prior : scroll-back(1,halfpage) \n\
-    Shift <KeyPress> Next  : scroll-forw(1,halfpage) \n\
-
 XTerm.vt100.saveLines: 9000
-! XTerm.vt100.geometry: 80x32
-! XTerm*rightScrollBar: true
-! XTerm*ScrollBar: true
-XTerm.vt100.faceName: monospace:size=9:antialias=true
+XTerm.vt100.faceName: monospace:size=10:antialias=true
 XTerm.vt100.font: 7x13
 ! XTerm.vt100.bellIsUrgent: false
 ! XTerm*visualBell:  true
-! XTerm*selectToClipboard: true
+XTerm*selectToClipboard: true
+XTerm.vt100.translations: #override \n\
+    Meta Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+    Meta Ctrl <Key>V: insert-selection(CLIPBOARD)
 

@@ -1,4 +1,4 @@
 . ~/.profile
 xmodmap ~/.Xmodmap
 xrdb ~/.Xresources
-exec bspwm
+exec i3
