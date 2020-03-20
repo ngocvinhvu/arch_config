@@ -1,0 +1,5 @@
+. ~/.profile
+xmodmap ~/.Xmodmap
+xrdb ~/.Xresources
+(conky | while read LINE; do xsetroot -name "$LINE"; done) & > /dev/null 2>&1
+exec dwm
