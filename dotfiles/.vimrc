@@ -68,6 +68,8 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
+set smartcase
+set ignorecase
 set t_Co=256
 set background=dark
 set ruler
@@ -146,10 +148,11 @@ command! JsonPretty execute ":%!python -m json.tool"
 set secure
 
 
-:let maplocalleader = "\\"
+:let leader = "\\"
 let g:slime_target = "tmux"
 
 :inoremap jk <esc>
+:vnoremap <leader>y "+y
 augroup filetype_all
     autocmd!
     "    autocmd BufWritePre,BufRead *.html :normal gg=G
