@@ -173,6 +173,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:$HOME/gits/arch_config/scripts"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE

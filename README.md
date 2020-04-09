@@ -3,6 +3,9 @@
 #dd if=/ARCHLINUX.iso  of=/dev/sdb status="progress" bs=4M
 #
 ## Format and partition:
+# if UEFI:
+    > gpt
+    > create /dev/sdxY (~250-512mb) for EFI filesystem ( fdisk -t) (FAT32 format (mkfs.fat -F32 /dev/sdxY( require dosfstools))
 #mkfs.ext4 /dev/sdaX    - Arch linux partition
 
 #mkswap /dev/sdaY       - Swap partition
@@ -46,9 +49,13 @@
 
 #mkinitcpio -P
 
-#pacman -S grub
+#pacman -S grub efibootmgr
 
-#grub-install --target=i386-pc /dev/sdX
+# mkdir /boot/EFI
+# mount /dev/sdaX /boot/EFI  #Mount FAT32 EFI partition 
+
+#grub-install --target=i386-pc /dev/sdX # legacy boot
+# grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck #UEFI boot
 
 #grub-mkconfig -o /boot/grub/grub.cfg
 #
