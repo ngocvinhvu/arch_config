@@ -1,22 +1,3 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" ==== Completion
-" Plugin 'Valloric/YouCompleteMe'
-
-" ==== vim-surround
-" Plugin 'tpope/vim-surround'
-
-" ==== File tree
-" Plugin 'scrooloose/nerdtree'
-
-" ==== plugin manager
-Plugin 'VundleVim/Vundle.vim'
-" call vundle#end()
-"===== Delay srt(sub)
-Plugin 'pamacs/vim-srt-sync'
-
-call vundle#end()
-
 inoremap jk <esc>
 set t_Co=256
 set number
