@@ -27,8 +27,7 @@ settings:
         ',n': config-cycle content.user_stylesheets /home/duy/gits/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css
           ""
         ',w': spawn streamlink --player mpv {clipboard} worst
-        ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
-          {hint-url}
+        ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
         <Ctrl+m>: :messages -t

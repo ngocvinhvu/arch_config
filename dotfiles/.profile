@@ -9,7 +9,7 @@ sudo sh -c "echo 200 > /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 export VISUAL=vim
 export EDITOR=$VISUAL
 export BROWSER=/usr/bin/firefox
-./.fehbg
+# ./.fehbg
 # [ ! -s ~/.config/mpd/pid ] && mpd
 sh -c mpd > /dev/null
 # ./.config/polybar/launch_polybar > /dev/null 2>&1 

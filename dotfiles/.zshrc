@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 # alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias t/sh="cd ~/.trash/sh"
+alias t/p="cd ~/.trash/p"
+alias t/c="cd ~/.trash/c"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias p='cd /home/duy/gits/python'
@@ -146,7 +149,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
 echo -ne '\e[5 q' # Cursor is beam instead of Block
-# echo -ne "\033]12;Orange\007" # Change cursor color
+echo -ne "\033]12;white\007" # Change cursor color
 
 # Show vim mode
 # Updates editor information when the keymap changes.
@@ -172,7 +175,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
-export PATH="$PATH:$HOME/.gem/ruby/2.6.0/bin"
+export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:$HOME/gits/arch_config/scripts"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
