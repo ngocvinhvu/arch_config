@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 alias t/sh="cd ~/.trash/sh"
 alias t/p="cd ~/.trash/p"
 alias t/c="cd ~/.trash/c"
+alias sdb/v="cd ~/sdb/videos/"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias p='cd /home/duy/gits/python'
@@ -186,3 +187,12 @@ setopt hist_ignore_space
 
 autoload -Uz tetriscurses
 alias tetris='tetriscurses'
+
+ytv()
+{
+    mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]' ytdl://ytsearch:"$*"
+}
+yta()
+{
+    mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
