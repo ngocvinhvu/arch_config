@@ -136,3 +136,5 @@
 # fastest way transfe file 
 sender:     tar c filename | netcat -l -p port -vvv -c
 reciever:   netcat host port | tar x
+##  misc
+# aria2c --bt-metadata-only=true --bt-save-metadate=true
