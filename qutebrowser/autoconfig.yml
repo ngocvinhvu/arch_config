@@ -18,7 +18,7 @@ settings:
   bindings.commands:
     global:
       normal:
-        ',<Ctrl+c>': :open -t trans {clipboard}
+        ',<Ctrl+c>': :open -t t {clipboard}
         ',M': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]'
           --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
         ',Y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
@@ -42,6 +42,7 @@ settings:
     global: true
   content.notifications:
     https://dnschecker.org: false
+    https://hatde.tv: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://v.qq.com: false
@@ -75,12 +76,11 @@ settings:
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
-      # pr: https://www1.thepiratebay3.to/s/?q={}
       pr: https://www.pirate-bay.net/search?q={}
       re: https://reddit.com/r/{}
       sp: https://shopee.vn/search?keyword={}
-      t : https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
-      transpage: https://www.translatetheweb.com/?from=&to=en&a={}
+      t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
+      tp: https://www.translatetheweb.com/?from=&to=en&a={}
       tw: https://twitter.com/search?q={}&src=typed_query
       vs: https://vietsubtv.org/full-hd/{}
       wen: https://en.wikipedia.org/wiki/{}

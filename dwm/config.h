@@ -159,8 +159,8 @@ static Key keys[] = {
 	{ MOD1KEY,			XK_Return,	spawn,		{.v = termcmd } },
 	{ MOD1KEY,		XK_minus,	togglescratch,	{.v = scratchpadcmd } },
 
-	{ MODKEY,			XK_z,		incrgaps,	{.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -1 } },
+	{ MODKEY,			XK_z,		incrgaps,	{.i = +2 } },
+	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -2 } },
 	{ MODKEY,			XK_x,		spawn,		SHCMD("slock & xset dpms force off; mpc pause ; pauseallmpv") },
 	// { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
@@ -198,7 +198,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 
 
-	{ MOD1KEY,			XK_space,	zoom,		{0} },
+	{ MOD1KEY,			XK_h,	zoom,		{0} },
 	{ MOD1KEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
 
