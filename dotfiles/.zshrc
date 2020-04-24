@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 # alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias push="git pull && git add . && git commit -m 'update' && git push"
 alias t/sh="cd ~/.trash/sh"
 alias t/p="cd ~/.trash/p"
 alias t/c="cd ~/.trash/c"
@@ -137,6 +138,7 @@ alias cf='cd ~/.config'
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
 alias mpvh="mpv --ytdl-format='bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]'"
 alias mpvm="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
+alias mpvl="mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]'"
 
 # alias gvim='gvim -u NONE'
 # set -o vi
@@ -175,9 +177,9 @@ echo -ne "\033]12;white\007" # Change cursor color
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:$HOME/gits/arch_config/scripts"
+export PATH="$PATH:$HOME/gits/arch_config/.local/bin/statusbar"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
