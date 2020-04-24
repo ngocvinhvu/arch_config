@@ -19,19 +19,15 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t t {clipboard}
-        ',M': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]'
-          --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',Y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
-          --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
         ',a': spawn streamlink --player mpv {clipboard} audio_webm
         ',b': spawn streamlink --player mpv {clipboard} best
-        ',m': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]'
-          {hint-url}
+        ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
         ',n': config-cycle content.user_stylesheets /home/duy/gits/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css
           ""
         ',w': spawn streamlink --player mpv {clipboard} worst
-        ',y': hint links spawn mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'
-          {hint-url}
+        ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
         <Ctrl+m>: :messages -t
@@ -61,6 +57,8 @@ settings:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
     global: null
+  content.windowed_fullscreen:
+    global: true
   tabs.background:
     global: true
   url.default_page:
