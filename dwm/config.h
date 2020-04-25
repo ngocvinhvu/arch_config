@@ -7,7 +7,7 @@ static const unsigned int gappih    = 0;       /* horiz inner gap between window
 static const unsigned int gappiv    = 0;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 0;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 0;       /* vert outer gap between windows and screen edge */
-static const int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
+static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ionicons:size=9", "FontAwesome:size=9"};
@@ -157,6 +157,10 @@ static Key keys[] = {
 	{ 0,	XF86XK_AudioLowerVolume,	spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
     { MODKEY,           XK_F8,	spawn,	SHCMD("touchpad_toggle.sh") },
 	{ MODKEY,			XK_r,	spawn,		SHCMD("st -e ranger") },
+	{ Mod4Mask,			XK_g,	spawn,		SHCMD("goldendict") },
+	{ Mod4Mask,			XK_z,	spawn,		SHCMD("zathura") },
+	{ Mod4Mask,			XK_i,	spawn,		SHCMD("ibus-daemon -d") },
+	{ Mod4Mask|ShiftMask,			XK_i,	spawn,		SHCMD("ibus exit") },
 	{ MODKEY,			XK_n,		spawn,		SHCMD("xterm -e ncmpcpp") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
