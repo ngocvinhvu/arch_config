@@ -32,9 +32,15 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
-	{ "Gimp",     NULL,       NULL,       1 << 8,       0,           0,         0,        -1 },
-	{ "St",       NULL,       NULL,       0,            0,           1,         0,        -1 },
+	/* class             instance    title              tags mask     isfloating   isterminal noswallow monitor */
+	{ "Gimp",            NULL,       NULL,              1 << 8,       0,           0,         0,        -1 },
+	{ "qutebrowser",     NULL,       NULL,              1 << 1,       0,           0,         0,        -1 },
+	{ "GoldenDict",      NULL,       NULL,              1 << 2,       0,           0,         0,        -1 },
+	{ "Zathura",         NULL,       NULL,              1 << 8,       0,           0,         0,        -1 },
+	{ "libreoffice",     NULL,       NULL,              1 << 3,       0,           0,         0,        -1 },
+    { "firefox",         NULL,       NULL,              1 << 1,       0,           0,         0,        -1 },
+	{ "St",              NULL,       NULL,              0,            0,           1,         0,        -1 },
+	{ "XTerm",           NULL,       NULL,              1 << 7,       0,           1,         0,        -1 },
 };
 
 /* layout(s) */
@@ -115,9 +121,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	/* { MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
-    { MODKEY|ShiftMask,		XK_r,		quit,		{0} }, 
-	{ MODKEY,			XK_e,		setlayout,	{.v = &layouts[0]} },
-	{ MODKEY|ShiftMask,		XK_e,		setlayout,	{.v = &layouts[1]} },
+    { MODKEY|ShiftMask,		XK_e,		quit,		{0} }, 
+	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} },
+	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} },
 	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,		XK_y,		setlayout,	{.v = &layouts[3]} },
 	{ MODKEY,			XK_u,		setlayout,	{.v = &layouts[4]} },
@@ -132,39 +138,26 @@ static Key keys[] = {
 	{ MODKEY,			XK_bracketright,	spawn,		SHCMD("mpc seek +10") },
 	{ MODKEY|ShiftMask,		XK_bracketright,	spawn,		SHCMD("mpc seek +120") },
 	{ MODKEY,			XK_backslash,		view,		{0} },
-	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
-
-	/* { MODKEY|ShiftMask,		XK_a,		spawn,		SHCMD("") }, */
-	// { MODKEY,			XK_s,		togglesticky,	{0} },
-	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,		XK_d,		togglegaps,	{0} },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
-	/* { MODKEY|ShiftMask,		XK_g,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
-	/* J and K are automatically bound above in STACKEYS */
-	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_semicolon,	shiftview,	{ .i = 1 } },
-	/* { MODKEY|ShiftMask,		XK_semicolon,	shiftview,	SHCMD("") }, */
-	/* { MODKEY,			XK_apostrophe,	spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") }, */
+	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
+	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	{ MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.v = scratchpadcmd } },
-
 	{ MODKEY,			XK_z,		incrgaps,	{.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -1 } },
-	/* { MODKEY,			XK_x,		spawn,		SHCMD("") }, */
-	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
-    	{ 0,	XF86XK_AudioMicMute,	spawn,		SHCMD("pactl set-source-mute 1 toggle") },
+    { 0,	XF86XK_AudioMicMute,	spawn,		SHCMD("pactl set-source-mute 1 toggle") },
 	{ 0,	XF86XK_AudioMute,	spawn,		SHCMD("pactl set-sink-mute 0 toggle") },
 	{ 0,	XF86XK_AudioRaiseVolume,	spawn,		SHCMD("pactl set-sink-volume 0 +5%") },
 	{ 0,	XF86XK_AudioLowerVolume,	spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
     { MODKEY,           XK_F8,	spawn,	SHCMD("touchpad_toggle.sh") },
 	{ MODKEY,			XK_r,	spawn,		SHCMD("st -e ranger") },
-	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e ncmpcpp") },
+	{ MODKEY,			XK_n,		spawn,		SHCMD("xterm -e ncmpcpp") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc seek 0%") },
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
@@ -174,11 +167,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_Left,	tagmon,		{.i = -1 } },
 	{ MODKEY,			XK_Right,	focusmon,	{.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_Right,	tagmon,		{.i = +1 } },
-
 	{ MODKEY,			XK_Page_Up,	shiftview,	{ .i = -1 } },
 	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = 1 } },
 	{ MODKEY,			XK_Insert,	spawn,		SHCMD("notify-send \"📋 Clipboard contents:\" \"$(xclip -o -selection clipboard)\"") },
-
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/larbs.mom -Tpdf | zathura -") },
 	// { MODKEY,			XK_F2,		quit,		{0} },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },

@@ -72,7 +72,8 @@ settings:
       eb: https://www.ebay.com/sch/{}
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
       ph: https://www.pornhub.com/video/search?search={}
-      pm: http://www.phimmoi.net/tim-kiem/{}/
+      pm: http://www.phimmoi.net/tim-kiem/{}
+      vp: https://vphim.net/tim-kiem/{}
       pn: https://phimnhe.net/search/{}
       pr: https://www.pirate-bay.net/search?q={}
       re: https://reddit.com/r/{}
