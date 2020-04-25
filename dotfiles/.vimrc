@@ -68,6 +68,7 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
+set pastetoggle=<F2>
 set smartcase
 set ignorecase
 set t_Co=256
