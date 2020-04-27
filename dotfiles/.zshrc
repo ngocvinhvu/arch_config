@@ -136,9 +136,9 @@ alias cf='cd ~/.config'
 #
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
-alias mpvh="mpv --ytdl-format='bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]'"
-alias mpvm="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
-alias mpvl="mpv --ytdl-format='bestvideo[ext=mp4][height<=?360]+bestaudio[ext=m4a]'"
+alias mpvh="mpv --ytdl-format='[height<=1080]'"
+alias mpvm="mpv --ytdl-format='[height<=720]'"
+alias mpvl="mpv --ytdl-format='[height<=360]'"
 
 # alias gvim='gvim -u NONE'
 # set -o vi
@@ -198,3 +198,17 @@ yta()
 {
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
+
+# Ibus fix
+# export GTK_IM_MODULE=ibus
+# export XMODIFIERS=@im=ibus
+# export QT_IM_MODULE=ibus
+#
+# Color for manpages
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'

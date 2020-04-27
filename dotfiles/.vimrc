@@ -13,7 +13,6 @@ Plugin 'jpalardy/vim-slime'
 
 " ==== plugin vim-table-mode
 Plugin 'dhruvasagar/vim-table-mode'
-
 " ==== helpers
 Plugin 'vim-scripts/L9'
 " ==== excel
@@ -68,7 +67,8 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\$
 syntax enable
-set pastetoggle=<F2>
+set lazyredraw
+set pastetoggle=<F3>
 set smartcase
 set ignorecase
 set t_Co=256
@@ -78,9 +78,10 @@ set hidden
 set number
 set laststatus=2
 set smartindent
-set st=4 sw=4 et
 set shiftwidth=4
-set tabstop=4
+set softtabstop=4
+set expandtab
+" set tabstop=4
 " let &colorcolumn="80"
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
@@ -139,7 +140,7 @@ nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
 " ==== disable mouse
-set mouse=a
+set mouse=c
 
 " ==== disable swap file warning
 set shortmess+=A
@@ -214,3 +215,12 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap ,py :0read ~/gits/python/
 
+" auto pastetoggle
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction

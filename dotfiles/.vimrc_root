@@ -4,7 +4,7 @@ set number
 set hlsearch incsearch
 set showmatch
 set expandtab
-set autoindent
+"set autoindent
 set shiftwidth=4
 set encoding=UTF-8
 set st=4 sw=4 et
@@ -32,3 +32,12 @@ autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
 autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
 autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+" auto pastetoggle
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+function! XTermPasteBegin()
+    set pastetoggle=<Esc>[201~
+    set paste
+    return ""
+endfunction

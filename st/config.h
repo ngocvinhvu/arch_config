@@ -64,7 +64,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-/*char *termname = "st-256color";*/
+// char *termname = "st-256color";
 char *termname = "st";
 
 /*
@@ -194,9 +194,9 @@ ResourcePref resources[] = {
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* button               mask            string */
-	{ Button4,              XK_NO_MOD,      "\031" },
-	{ Button5,              XK_NO_MOD,      "\005" },
+// 	/* button               mask            string */
+// 	{ Button4,              XK_NO_MOD,      "\031" },
+// 	{ Button5,              XK_NO_MOD,      "\005" },
 };
 
 /* Internal keyboard shortcuts. */
@@ -205,12 +205,12 @@ static MouseShortcut mshortcuts[] = {
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
-	{ Button4,              MODKEY,         kscrollup,      {.i =  1} },
-	{ Button5,              MODKEY,         kscrolldown,    {.i =  1} },
-	{ Button4,              TERMMOD,        zoom,           {.f =  +1} },
-	{ Button5,              TERMMOD,        zoom,           {.f =  -1} },
+	{ Button4,              0,	            kscrollup,      {.i =  1} },
+	{ Button5,              0,              kscrolldown,    {.i =  1} },
+	// { Button4,              MODKEY,         kscrollup,      {.i =  1} },
+	// { Button5,              MODKEY,         kscrolldown,    {.i =  1} },
+	// { Button4,              TERMMOD,        zoom,           {.f =  +1} },
+	// { Button5,              TERMMOD,        zoom,           {.f =  -1} },
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
