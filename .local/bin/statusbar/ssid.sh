@@ -17,5 +17,5 @@ SSID=$(iw "$INTERFACE" info | awk '/ssid/ {print $2}')
 #------------------------------------------------------------------------
 
 echo "$SSID" # full text
-echo "$SSID" # short text
-echo "#00FF00" # color
+# echo "$SSID" # short text
+# echo "#00FF00" # color

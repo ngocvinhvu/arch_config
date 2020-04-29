@@ -4,7 +4,7 @@ set number
 set hlsearch incsearch
 set showmatch
 set expandtab
-"set autoindent
+set autoindent
 set shiftwidth=4
 set encoding=UTF-8
 set st=4 sw=4 et

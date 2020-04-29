@@ -49,6 +49,7 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 #define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
 #include "vanitygaps.c"
+#include "grid.c"
 static const Layout layouts[] = {
     /* symbol     arrange function */
     { "[]=",	tile },			        /* Default: Master on left, slaves on right */
@@ -59,6 +60,7 @@ static const Layout layouts[] = {
     { "[M]",	monocle },		        /* All windows on top of eachother */
     { "|M|",	centeredmaster },		/* Master in middle, slaves on sides */
     { ">M>",	centeredfloatingmaster },	/* Same but master floats */
+    { "HHH",    grid},
     { "><>",	NULL },			        /* no layout function means floating behavior */
     { NULL,     NULL },
 };
@@ -111,10 +113,11 @@ static Key keys[] = {
         { MODKEY|ShiftMask,		XK_y,		            setlayout,	        {.v = &layouts[3]} },
         { MODKEY,			XK_u,		            setlayout,	        {.v = &layouts[4]} },
         { MODKEY|ShiftMask,		XK_u,		            setlayout,	        {.v = &layouts[5]} },
-        { MODKEY,			XK_i,		            setlayout,	        {.v = &layouts[6]} },
-        { MODKEY|ShiftMask,		XK_i,		            setlayout,	        {.v = &layouts[7]} },
-        { MODKEY,			XK_o,		            incnmaster,         {.i = +1 } },
-        { MODKEY|ShiftMask,		XK_o,		            incnmaster,         {.i = -1 } },
+        { MODKEY,			XK_o,		            setlayout,	        {.v = &layouts[6]} },
+        { MODKEY|ShiftMask,		XK_o,		            setlayout,	        {.v = &layouts[7]} },
+        { MODKEY,		        XK_m,		            setlayout,	        {.v = &layouts[8]} },
+        { MODKEY,			XK_i,		            incnmaster,         {.i = +1 } },
+        { MODKEY|ShiftMask,		XK_i,		            incnmaster,         {.i = -1 } },
         { MODKEY,			XK_p,			    spawn,		SHCMD("mpc toggle") },
         { MODKEY,			XK_bracketleft,		    spawn,		SHCMD("mpc seek -10") },
         { MODKEY|ShiftMask,		XK_bracketleft,		    spawn,		SHCMD("mpc seek -120") },
