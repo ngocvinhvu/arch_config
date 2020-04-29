@@ -56,8 +56,8 @@ static const Layout layouts[] = {
     { "TTT",	bstack },		        /* Master on top, slaves on bottom */
     { "[@]",	spiral },		        /* Fibonacci spiral */
     { "[\\]",	dwindle },		        /* Decreasing in size right and leftward */
-    { "H[]",	deck },			        /* Master on left, slaves in monocle-like mode on right */
-    { "[M]",	monocle },		        /* All windows on top of eachother */
+    // { "H[]",	deck },			        /* Master on left, slaves in monocle-like mode on right */
+    // { "[M]",	monocle },		        /* All windows on top of eachother */
     { "|M|",	centeredmaster },		/* Master in middle, slaves on sides */
     { ">M>",	centeredfloatingmaster },	/* Same but master floats */
     { "HHH",    grid},
@@ -111,11 +111,11 @@ static Key keys[] = {
         { MODKEY|ShiftMask,		XK_t,		            setlayout,	        {.v = &layouts[1]} },
         { MODKEY,			XK_y,		            setlayout,	        {.v = &layouts[2]} },
         { MODKEY|ShiftMask,		XK_y,		            setlayout,	        {.v = &layouts[3]} },
-        { MODKEY,			XK_u,		            setlayout,	        {.v = &layouts[4]} },
-        { MODKEY|ShiftMask,		XK_u,		            setlayout,	        {.v = &layouts[5]} },
-        { MODKEY,			XK_o,		            setlayout,	        {.v = &layouts[6]} },
-        { MODKEY|ShiftMask,		XK_o,		            setlayout,	        {.v = &layouts[7]} },
-        { MODKEY,		        XK_m,		            setlayout,	        {.v = &layouts[8]} },
+        // { MODKEY,			XK_u,		            setlayout,	        {.v = &layouts[4]} },
+        // { MODKEY|ShiftMask,		XK_u,		            setlayout,	        {.v = &layouts[5]} },
+        { MODKEY,			XK_o,		            setlayout,	        {.v = &layouts[4]} },
+        { MODKEY|ShiftMask,		XK_o,		            setlayout,	        {.v = &layouts[5]} },
+        { MODKEY,		        XK_u,		            setlayout,	        {.v = &layouts[6]} },
         { MODKEY,			XK_i,		            incnmaster,         {.i = +1 } },
         { MODKEY|ShiftMask,		XK_i,		            incnmaster,         {.i = -1 } },
         { MODKEY,			XK_p,			    spawn,		SHCMD("mpc toggle") },
