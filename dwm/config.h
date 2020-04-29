@@ -142,6 +142,7 @@ static Key keys[] = {
         { 0,	                        XF86XK_AudioRaiseVolume,    spawn,		SHCMD("pactl set-sink-volume 0 +5%") },
         { 0,	                        XF86XK_AudioLowerVolume,    spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
         { MODKEY,                       XK_F8,	                    spawn,	        SHCMD("touchpad_toggle.sh") },
+        { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { Mod4Mask,			XK_g,	                    spawn,		SHCMD("goldendict") },
         { Mod4Mask,			XK_z,	                    spawn,		SHCMD("zathura") },

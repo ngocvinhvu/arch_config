@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 # alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
 alias push="git pull && git add . && git commit -m 'update' && git push"
 alias t/sh="cd ~/.trash/sh"
 alias t/p="cd ~/.trash/p"
@@ -152,7 +153,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
 echo -ne '\e[5 q' # Cursor is beam instead of Block
-echo -ne "\033]12;white\007" # Change cursor color
+# echo -ne "\033]12;Black\007" # Change cursor color
 
 # Show vim mode
 # Updates editor information when the keymap changes.
@@ -199,16 +200,22 @@ yta()
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
 
-# Ibus fix
-# export GTK_IM_MODULE=ibus
-# export XMODIFIERS=@im=ibus
-# export QT_IM_MODULE=ibus
-#
-# Color for manpages
-export LESS_TERMCAP_mb=$'\e[1;32m'
-export LESS_TERMCAP_md=$'\e[1;32m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[01;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+# color for manpages
+# export LESS_TERMCAP_mb=$'\e[1;32m'
+# export LESS_TERMCAP_md=$'\e[1;32m'
+# export LESS_TERMCAP_me=$'\e[0m'
+# export LESS_TERMCAP_se=$'\e[0m'
+# export LESS_TERMCAP_so=$'\e[01;33m'
+# export LESS_TERMCAP_ue=$'\e[0m'
+# export LESS_TERMCAP_us=$'\e[1;4;31m'
+ 
+# Manpages in vim
+vman() {
+  /usr/bin/man $@ | \
+    col -b | \
+    vim -R -c 'set ft=man nomod nolist' -
+}
