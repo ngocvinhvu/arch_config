@@ -10,7 +10,7 @@ static const unsigned int gappov    = 0;       /* vert outer gap between windows
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Ionicons:size=9", "FontAwesome:size=9"};
+static const char *fonts[]          = { "Ionicons:size=8", "FontAwesome:size=8"};
 static char dmenufont[]       = "monospace:size=9";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
@@ -133,7 +133,7 @@ static Key keys[] = {
         { MODKEY,			XK_h,		            setmfact,	        {.f = -0.05} },
         { MODKEY,			XK_l,		            setmfact,      	{.f = +0.05} },
         { MODKEY,			XK_Return,	            spawn,		{.v = termcmd } },
-        { MODKEY|ShiftMask,		XK_Return,	            togglescratch,	{.v = scratchpadcmd } },
+        { MODKEY,		        XK_minus,	            togglescratch,	{.v = scratchpadcmd } },
         { MODKEY,			XK_z,		            incrgaps,	        {.i = +1 } },
         { MODKEY|ShiftMask,		XK_z,		            incrgaps,	        {.i = -1 } },
         { MODKEY,			XK_b,		            togglebar,	        {0} },
@@ -142,6 +142,8 @@ static Key keys[] = {
         { 0,	                        XF86XK_AudioRaiseVolume,    spawn,		SHCMD("pactl set-sink-volume 0 +5%") },
         { 0,	                        XF86XK_AudioLowerVolume,    spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
         { MODKEY,                       XK_F8,	                    spawn,	        SHCMD("touchpad_toggle.sh") },
+        { 0,				XK_Print,	            spawn,		SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
+        { ShiftMask,			XK_Print,	            spawn,		SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
         { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { Mod4Mask,			XK_g,	                    spawn,		SHCMD("goldendict") },
