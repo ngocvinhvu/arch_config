@@ -152,7 +152,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
-echo -ne '\e[5 q' # Cursor is beam instead of Block
+ echo -ne '\e[5 q' # Cursor is beam instead of Block
 # echo -ne "\033]12;Black\007" # Change cursor color
 
 # Show vim mode
@@ -200,10 +200,10 @@ yta()
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
 
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
+# export GTK_IM_MODULE=ibus
+# export XMODIFIERS=@im=ibus
+# export QT_IM_MODULE=ibus
+# 
 # color for manpages
 # export LESS_TERMCAP_mb=$'\e[1;32m'
 # export LESS_TERMCAP_md=$'\e[1;32m'

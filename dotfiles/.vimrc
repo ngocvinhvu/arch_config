@@ -63,9 +63,9 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== Colors and other basic settings
-"colorscheme gruvbox
+colorscheme gruvbox
 " set guifont=Monospace\ 10
-set fillchars+=vert:\$
+set fillchars+=vert:\|
 syntax enable
 set lazyredraw
 set pastetoggle=<F3>
@@ -105,6 +105,7 @@ let g:syntastic_check_on_wq = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
 "let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
@@ -182,7 +183,7 @@ autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn
 :set cursorline
-:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorLine   cterm=NONE ctermbg=16
 :nnoremap <Leader>c :set cursorline!
 :set nrformats-=octal "fix when <c-a> auto add 07 to 10
 

@@ -148,7 +148,7 @@ static Key keys[] = {
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { Mod4Mask,			XK_g,	                    spawn,		SHCMD("goldendict") },
         { Mod4Mask,			XK_z,	                    spawn,		SHCMD("zathura") },
-        { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -d") },
+        { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -drx") },
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
         { MODKEY,			XK_n,		            spawn,		SHCMD("xterm -e ncmpcpp") },
         { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
