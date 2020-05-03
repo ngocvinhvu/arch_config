@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #------------------------------------------------------------------------
-ssid=$(iw wlp3s0 info | awk '/ssid/ {print $2}')
+ssid=$(iw wlp3s0 info | awk '/ssid/ {print $2" "$3" "$4}')
 ip="$(ip route | awk '/^default/ { print $9 ; exit }')"
 if [[ -z "$INTERFACE" ]] ; then
     INTERFACE="${BLOCK_INSTANCE:-wlp3s0}"
@@ -38,4 +38,4 @@ QUALITY=$(grep $INTERFACE /proc/net/wireless | awk '{ print int($3 * 100 / 70) }
 
 #------------------------------------------------------------------------
 
-echo $ssid[$QUALITY%] at $ip # full text
+echo "$ssid[$QUALITY%] at $ip" # full text
