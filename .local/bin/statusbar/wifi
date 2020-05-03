@@ -15,6 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #------------------------------------------------------------------------
+ssid=$(iw wlp3s0 info | awk '/ssid/ {print $2}')
+ip="$(ip route | awk '/^default/ { print $9 ; exit }')"
 if [[ -z "$INTERFACE" ]] ; then
     INTERFACE="${BLOCK_INSTANCE:-wlp3s0}"
 fi
@@ -27,8 +29,6 @@ fi
 # If the wifi interface exists but no connection is active, "down" shall be displayed.
 if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]; then
     echo "down"
-    echo "down"
-    echo "#FF0000"
     exit
 fi
 
@@ -38,16 +38,4 @@ QUALITY=$(grep $INTERFACE /proc/net/wireless | awk '{ print int($3 * 100 / 70) }
 
 #------------------------------------------------------------------------
 
-echo $QUALITY% # full text
-echo $QUALITY% # short text
-
-# color
-if [[ $QUALITY -ge 80 ]]; then
-    echo "#00FF00"
-elif [[ $QUALITY -ge 60 ]]; then
-    echo "#FFF600"
-elif [[ $QUALITY -ge 40 ]]; then
-    echo "#FFAE00"
-else
-    echo "#FF0000"
-fi
+echo $ssid[$QUALITY%] at $ip # full text
