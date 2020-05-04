@@ -24,7 +24,7 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap ,py :0read ~/gits/python/
 :set cursorline
-:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorLine   cterm=NONE ctermbg=237
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
 autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>

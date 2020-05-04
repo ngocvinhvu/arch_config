@@ -63,7 +63,7 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== Colors and other basic settings
-colorscheme gruvbox
+:colorscheme gruvbox
 " set guifont=Monospace\ 10
 set fillchars+=vert:\|
 syntax enable
@@ -183,7 +183,7 @@ autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn
 :set cursorline
-:hi CursorLine   cterm=NONE ctermbg=16
+:hi CursorLine   cterm=none ctermbg=237
 :nnoremap <Leader>c :set cursorline!
 :set nrformats-=octal "fix when <c-a> auto add 07 to 10
 
