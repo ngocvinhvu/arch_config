@@ -13,7 +13,8 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ionicons:size=8", "FontAwesome:size=8"};
 static char dmenufont[]       = "monospace:size=9";
 static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
+static char normbordercolor[]       = "#000000";
+// static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
 static char selfgcolor[]            = "#eeeeee";
 static char selbordercolor[]        = "#005577";

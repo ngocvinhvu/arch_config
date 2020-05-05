@@ -19,22 +19,31 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t t {clipboard}
-        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
+        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
         ',a': spawn streamlink --player mpv {clipboard} audio_webm
         ',b': spawn streamlink --player mpv {clipboard} best
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
-        ',n': config-cycle content.user_stylesheets /home/duy/gits/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css
+        ',n': config-cycle content.user_stylesheets /home/duy/.config/qutebrowser/userContent.css
           ""
         ',w': spawn streamlink --player mpv {clipboard} worst
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
         <Ctrl+m>: :messages -t
+        j: scroll-px 0 400
+        k: scroll-px 0 -400
+  content.fullscreen.window:
+    global: true
   content.geolocation:
+    global: true
     https://www.google.com: true
     https://www.now.vn: true
   content.host_blocking.enabled:
+    global: true
+  content.javascript.enabled:
     global: true
   content.notifications:
     https://dnschecker.org: false
@@ -45,6 +54,7 @@ settings:
     https://webchat.freenode.net: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
+    https://www.onworks.net: false
     https://www.reddit.com: false
     https://www.w88top.com: false
     https://www.weibo.com: false
@@ -56,9 +66,7 @@ settings:
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
-    global: null
-  content.windowed_fullscreen:
-    global: true
+    global: /home/duy/.config/qutebrowser/userContent.css
   tabs.background:
     global: true
   url.default_page:
@@ -72,8 +80,7 @@ settings:
       eb: https://www.ebay.com/sch/{}
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
       ph: https://www.pornhub.com/video/search?search={}
-      pm: http://www.phimmoi.net/tim-kiem/{}
-      vp: https://vphim.net/tim-kiem/{}
+      pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
       pr: https://www.pirate-bay.net/search?q={}
       re: https://reddit.com/r/{}
@@ -81,6 +88,7 @@ settings:
       t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
       tp: https://www.translatetheweb.com/?from=&to=en&a={}
       tw: https://twitter.com/search?q={}&src=typed_query
+      vp: https://vphim.net/tim-kiem/{}
       vs: https://vietsubtv.org/full-hd/{}
       wen: https://en.wikipedia.org/wiki/{}
       wvi: https://vi.wikipedia.org/wiki/{}

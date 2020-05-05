@@ -16,7 +16,7 @@
 
 #------------------------------------------------------------------------
 ssid=$(iw wlp3s0 info | awk '/ssid/ {print $2" "$3" "$4}')
-ip="$(ip route | awk '/^default/ { print $9 ; exit }')"
+ip="$(ip route | sed -n 2p | awk  '{ print $9 ; exit }')"
 if [[ -z "$INTERFACE" ]] ; then
     INTERFACE="${BLOCK_INSTANCE:-wlp3s0}"
 fi

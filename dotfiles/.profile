@@ -8,8 +8,11 @@ sudo sh -c "echo 200 > /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 
 export VISUAL=vim
 export EDITOR=$VISUAL
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/qutebrowser
+
 # ./.fehbg
-# [ ! -s ~/.config/mpd/pid ] && mpd
-sh -c mpd > /dev/null
+[ ! -s ~/.config/mpd/pid ] && mpd
+# sh -c mpd > /dev/null
 # ./.config/polybar/launch_polybar > /dev/null 2>&1 
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
