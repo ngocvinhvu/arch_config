@@ -1,7 +1,14 @@
 XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CONFIG_HOME
 export $(dbus-launch)
+
+export XMODIFIERS="@im=ibus"
+export GTK_IM_MODULE="ibus"
+export QT4_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
+
 # setxkbmap -option ctrl:swapcaps
+
 sudo sh -c "echo 15 >  /sys/devices/platform/i8042/serio1/serio2/drift_time"
 sudo sh -c "echo 200 > /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 # sudo sh -c "echo 150 > /sys/devices/platform/i8042/serio1/serio2/speed"
