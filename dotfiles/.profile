@@ -1,7 +1,7 @@
 XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CONFIG_HOME
 export $(dbus-launch)
-
+ibus-daemon -drx
 export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT4_IM_MODULE="ibus"

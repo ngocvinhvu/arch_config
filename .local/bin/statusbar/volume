@@ -2,5 +2,5 @@
 icon=" "
 volstat="$(pactl list sinks)"
 vol=$(pactl list sinks | awk '/^\tVolume/ {print $5}')
-echo "$volstat" | grep -q "Mute: yes" && printf " " && exit
+echo "$volstat" | grep -q "Mute: yes" && printf "" && exit
 printf "%s %s\n" "$icon""$vol"
