@@ -50,6 +50,7 @@ settings:
     https://hatde.tv: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
+    https://slutmesh.com: false
     https://v.qq.com: false
     https://webchat.freenode.net: false
     https://www.facebook.com: false
@@ -82,7 +83,7 @@ settings:
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
-      pr: https://www.pirate-bay.net/search?q={}
+      pr: https://thepiratebay.org/search.php?q={}&cat=0
       re: https://reddit.com/r/{}
       sp: https://shopee.vn/search?keyword={}
       t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
@@ -96,4 +97,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: 100%
+    global: 115%
