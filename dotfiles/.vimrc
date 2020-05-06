@@ -71,7 +71,7 @@ set lazyredraw
 set pastetoggle=<F3>
 set smartcase
 set ignorecase
-set t_Co=256
+" set t_Co=256
 set background=dark
 set ruler
 set hidden
@@ -180,10 +180,11 @@ autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn
 :set cursorline
-:hi CursorLine   cterm=none ctermbg=237
+:hi CursorLine cterm=none ctermbg=237
 :nnoremap <Leader>c :set cursorline!
 :set nrformats-=octal "fix when <c-a> auto add 07 to 10
 
