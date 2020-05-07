@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+cpu_usage=$(mpstat 1 1 | awk '/^Average/ {print 100 -  $NF}')
+cpu_temp=$(sensors | awk '/Core 0/ {print $3}')
+
+# Print short_text, full_text
+printf "%s  %s%%" $cpu_temp $cpu_usage
