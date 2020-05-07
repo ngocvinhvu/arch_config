@@ -54,7 +54,7 @@ Plugin 'pamacs/vim-srt-sync'
 "Usage :DelaySrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
 
 " ==== PLUGIN THEMES
-Plugin 'morhetz/gruvbox'
+" Plugin 'morhetz/gruvbox'
 
 "===== PYTHON-MODE
 "Plugin 'klen/python-mode'
@@ -63,7 +63,7 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== Colors and other basic settings
-:colorscheme gruvbox
+" :colorscheme gruvbox
 " set guifont=Monospace\ 10
 set fillchars+=vert:\|
 syntax enable
@@ -71,8 +71,8 @@ set lazyredraw
 set pastetoggle=<F3>
 set smartcase
 set ignorecase
-" set t_Co=256
-set background=dark
+set t_Co=16
+" set background=dark
 set ruler
 set hidden
 set number
@@ -156,12 +156,23 @@ let g:slime_target = "tmux"
 
 :inoremap jk <esc>
 :vnoremap <leader>y "+y
-augroup filetype_all
+augroup vim_autocmd
     autocmd!
     "    autocmd BufWritePre,BufRead *.html :normal gg=G
     "    autocmd BufWritePre,BufRead *.py :normal gg=G
     autocmd FileType python nnoremap <buffer> \\c I# <esc>
     autocmd FileType javascript nnoremap <buffer> \\c I//<esc>
+    "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
+    autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
+    autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
+    autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+    autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 augroup END
 
 :set hlsearch incsearch
@@ -169,17 +180,6 @@ augroup END
 :nnoremap <C-l> <esc>ggVGd
 :inoremap <C-a> <esc>ggVG
 
-"autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
-autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
-autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 
 :hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
 ":set cursorcolumn

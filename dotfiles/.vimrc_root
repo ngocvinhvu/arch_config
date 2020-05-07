@@ -1,5 +1,5 @@
 inoremap jk <esc>
-set t_Co=256
+set t_Co=16
 set number
 set hlsearch incsearch
 set showmatch
@@ -25,13 +25,15 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 nnoremap ,py :0read ~/gits/python/
 :set cursorline
 :hi CursorLine   cterm=NONE ctermbg=237
-:hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
-autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+:hi CursorLineNr term=none cterm=none ctermfg=202 
+augroup vim_autocmd
+    autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+augroup END
 " auto pastetoggle
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
