@@ -21,4 +21,4 @@ sed '13q;d' "$HOME/.local/share/weatherreport" | grep -o "m\\(-\\)*[0-9]\\+" | s
 # 	then getforecast && showweather
 # 	else showweather
 # fi
-getforecast && showweather
+getforecast && showweather 
