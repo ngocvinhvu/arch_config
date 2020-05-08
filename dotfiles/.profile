@@ -7,6 +7,9 @@ export GTK_IM_MODULE="ibus"
 export QT4_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
 
+# From .zshrc
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/gits/arch_config/scripts:$HOME/gits/arch_config/.local/bin/statusbar"
+
 # setxkbmap -option ctrl:swapcaps
 
 sudo sh -c "echo 15 >  /sys/devices/platform/i8042/serio1/serio2/drift_time"

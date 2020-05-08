@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
-# alias youtube-dl="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias youtube-dl="youtube-dl --write-auto-sub --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
 alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
 alias push="git pull && git add . && git commit -m 'update' && git push"
 alias t/sh="cd ~/.trash/sh"
@@ -120,7 +120,8 @@ alias status='systemctl status'
 alias stop='systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
 alias wifi-menu='sudo wifi-menu'
-alias rs='sudo netctl stop-all && sudo netctl restart wlp3s0-Tenda_106570'
+alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
+alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
@@ -134,6 +135,8 @@ alias cp='cp -iv'
 alias rm='rm -v'
 alias ka='killall'
 alias cf='cd ~/.config'
+alias aircrack="aircrack-ng -w ~/gits/wordlists/wifi-chua.txt"
+
 #
 # alias mpv="mpv --ytdl-format='bestvideo[ext=mp4][height<=?720]+bestaudio[ext=m4a]'"
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
@@ -175,12 +178,11 @@ bindkey -M viins '^r' history-incremental-search-backward
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$PATH:$HOME/.local/bin"
-export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
-export PATH="$PATH:$HOME/gits/arch_config/scripts"
-export PATH="$PATH:$HOME/gits/arch_config/.local/bin/statusbar"
+# export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.local/bin"
+# export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
+# export PATH="$PATH:$HOME/gits/arch_config/scripts"
+# export PATH="$PATH:$HOME/gits/arch_config/.local/bin/statusbar"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
@@ -200,10 +202,6 @@ yta()
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
 
-# export GTK_IM_MODULE=ibus
-# export XMODIFIERS=@im=ibus
-# export QT_IM_MODULE=ibus
-# 
 # color for manpages
 # export LESS_TERMCAP_mb=$'\e[1;32m'
 # export LESS_TERMCAP_md=$'\e[1;32m'
