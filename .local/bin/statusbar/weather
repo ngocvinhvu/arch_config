@@ -1,14 +1,12 @@
 #!/bin/sh
-curl -s "vi.wttr.in/hanoi?0?T" | sed -n 4p  > /tmp/gettemp && 
-a=`cat /tmp/gettemp | cut -d "." -f2`
-b=`cat /tmp/gettemp | cut -d "." -f4`
+curl -s "vi.wttr.in/?1hanoi?T" > /tmp/getweather
+low=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f3 | rev ` # | cut -d " " -f1 | rev `
+high=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f1 | rev `
 
-getforecast() { curl -s "vi.wttr.in/?1hanoi?T" > "/tmp/getrain" || exit 1 ;}
 
-getrain() { printf "%s" "$(sed '16q;d' "/tmp/getrain" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔/g" | tr -d '\n')"
+getrain() { printf "%s" "$(sed '16q;d' "/tmp/getweather" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔/g" | tr -d '\n')"
 }
-c=$(getforecast && getrain)
+rain=$(getrain)
 
-curl -s "vi.wttr.in/?1hanoi?T" | sed -n 3p > /tmp/getstate
-d=`cat /tmp/getstate | awk -F " " '{for (i=2;i<=NF;i++) print $i}'`
-echo $d:  $c ❄️ $a°C 🌞$b
+state=`cat /tmp/getweather | sed -n 3p | rev | cut -d " " -f1-3 | rev`
+echo$state:  $rain ❄️ $low °C 🌞$high
