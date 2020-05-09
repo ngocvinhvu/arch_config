@@ -143,7 +143,7 @@ static Key keys[] = {
         { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { Mod4Mask,			XK_g,	                    spawn,		SHCMD("goldendict") },
-        { Mod4Mask,			XK_z,	                    spawn,		SHCMD("zathura") },
+        { MODKEY,			XK_z,	                    spawn,		SHCMD("zathura") },
         { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -drx") },
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
         { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
