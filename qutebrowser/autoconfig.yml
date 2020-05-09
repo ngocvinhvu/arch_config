@@ -27,11 +27,10 @@ settings:
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
         ',n': config-cycle content.user_stylesheets /home/duy/.config/qutebrowser/userContent.css
           ""
-        ',w': spawn streamlink --player mpv {clipboard} worst
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
-        # ',p': hint links spawn mpv --loop=inf {hint-url}
         ',d': hint links spawn aria2c -x8 {hint-url} --dir /tmp
         ',p': spawn bash -c sxivurl.sh
+        ",w": spawn bash -c weather_notify.sh
 
 
         ',z': hint links spawn zathura {hint-url}

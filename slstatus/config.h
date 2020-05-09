@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "";
 
 /* maximum output string length */
-#define MAXLEN 2048
+#define MAXLEN 150
 
 /*
  * function            description                     argument (example)
@@ -63,21 +63,21 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function         format          argument */
-        { run_command,      " %s |",        "ping.sh"                               }, 
-        { cpu_perc,         "%s%%: ",       "NULL"                                  }, 
-        { temp,             "%s°C | ",      "/sys/class/thermal/thermal_zone0/temp" }, 
+        { run_command,      "%s|",        "ping.sh"                               }, 
+        { cpu_perc,         "%s%%:",       "NULL"                                  }, 
+        { temp,             "%s°C|",      "/sys/class/thermal/thermal_zone0/temp" }, 
         { wifi_essid,       " [%s",         "wlp3s0"                                },
-        { wifi_perc,        ": %s%%] ",     "wlp3s0"                                },
-        { ipv4,             " %s ",         "wlp3s0"                                },
-        { netspeed_rx,      " [%s/",         "wlp3s0"                                },
-        { netspeed_tx,      "%s] | ",        "wlp3s0"                                },
-        { ram_used,         " %s/",         "NULL"                                  },
-        { ram_total,        "%s | ",        "NULL"                                  },
-        { battery_state,    " %s: ",        "BAT0"                                  },
-        { battery_perc,     "%s | ",        "BAT0"                                  },
+        { wifi_perc,        ":%s%%]",     "wlp3s0"                                },
+        { ipv4,             "%s",         "wlp3s0"                                },
+        { netspeed_rx,      "[%s/",         "wlp3s0"                                },
+        { netspeed_tx,      "%s]|",        "wlp3s0"                                },
+        { ram_used,         "%s/",         "NULL"                                  },
+        { ram_total,        "%s|",        "NULL"                                  },
+        { battery_state,    "%s:",        "BAT0"                                  },
+        { battery_perc,     "%s|",        "BAT0"                                  },
         // { battery_remaining, "%s | ",    "BAT0"                                     },
         // { run_command,      " %s |",        "weather"                               },
-	{ datetime,         " %s | ",       "%Y %b %d (%a) %T%p"                                 },
+	{ datetime,         " %s|",       "%Y %b %d (%a) %T%p"                                 },
         { vol_perc,         " ♪:%s ",         "/dev/mixer1"},
-        { run_command,      " %s ",        "music"                                 },
+        { run_command,      "%s",        "music"                                 },
 };

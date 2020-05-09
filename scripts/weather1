@@ -1,2 +1,2 @@
-#/bin/bash
-curl "vi.wttr.in/hanoi?0"
+#!/bin/bash
+curl "vi.wttr.in/hanoi?0?T" 

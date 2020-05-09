@@ -1,2 +1,2 @@
 !#/bin/sh
-sxiv -b `ls -t /tmp/*.jpg`
+sxiv -b `ls -t /tmp/*.*g`

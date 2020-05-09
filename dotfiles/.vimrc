@@ -67,6 +67,10 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\|
 syntax enable
+set history=1000
+set viminfo+=:10000
+set splitbelow
+set splitright
 set lazyredraw
 set pastetoggle=<F3>
 set smartcase
