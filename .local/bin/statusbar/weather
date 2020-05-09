@@ -1,3 +1,14 @@
 #!/bin/sh
-curl -s "wttr.in/hanoi?0?T" | sed -n 4p | tr -d '.-' | awk '{print $1}' > /tmp/weather && a=`cat /tmp/weather | awk '$1 > 0 {print substr($1,1,2)}'`; b=`cat /tmp/weather | awk '$1 > 0 {print substr($1,3,4)}'` 
-echo ❄️ $a°C 🌞$b°C
+curl -s "vi.wttr.in/hanoi?0?T" | sed -n 4p  > /tmp/gettemp && 
+a=`cat /tmp/gettemp | cut -d "." -f2`
+b=`cat /tmp/gettemp | cut -d "." -f4`
+
+getforecast() { curl -s "vi.wttr.in/?1hanoi?T" > "/tmp/getrain" || exit 1 ;}
+
+getrain() { printf "%s" "$(sed '16q;d' "/tmp/getrain" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔/g" | tr -d '\n')"
+}
+c=$(getforecast && getrain)
+
+curl -s "vi.wttr.in/?1hanoi?T" | sed -n 3p > /tmp/getstate
+d=`cat /tmp/getstate | awk -F " " '{for (i=2;i<=NF;i++) print $i}'`
+echo $d:  $c ❄️ $a°C 🌞$b

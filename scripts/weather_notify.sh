@@ -1,2 +1,2 @@
 #!/bin/sh
-notify-send "Thời Tiết" "`weather`"
+notify-send "Thời Tiết " "`weather`"
