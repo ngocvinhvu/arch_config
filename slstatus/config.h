@@ -65,7 +65,7 @@ static const struct arg args[] = {
 	/* function         format          argument */
         { run_command,      "%s|",        "ping.sh"                               }, 
         { cpu_perc,         "%s%%:",       "NULL"                                 }, 
-        { temp,             "%s°C|",      "/sys/class/thermal/thermal_zone0/temp" }, 
+        { temp,             "%s°C|",      "/sys/class/thermal/thermal_zone1/temp" }, 
         { ram_used,         "%s/",         "NULL"                                 },
         { ram_total,        "%s|",        "NULL"                                  },
         { disk_free,        "%s|",        "/"                                     },
