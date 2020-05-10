@@ -201,7 +201,7 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod4Mask
-#define TERMMOD (Mod4Mask|ShiftMask)
+#define TERMMOD (Mod1Mask|ControlMask)
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
@@ -225,7 +225,7 @@ static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NUL
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-     	{ Mod1Mask|ShiftMask,   XK_Return,      newterm,        {.i =  0} },
+     	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
@@ -233,28 +233,20 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ MODKEY,               XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_G,           zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_h,           zoomreset,      {.f =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
-	{ Mod1Mask|ControlMask, XK_c,           clipcopy,       {.i =  0} },
-	{ Mod1Mask|ControlMask, XK_v,           clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_c,           clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_v,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_p,           selpaste,       {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
-	{ TERMMOD,              XK_U,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_D,           zoom,           {.f = -1} },
-	{ MODKEY,               XK_u,           externalpipe,   {.v = openurlcmd } },
-	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
-	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
+	{ TERMMOD,              XK_k,           zoom,           {.f = +1} },
+	{ TERMMOD,              XK_j,           zoom,           {.f = -1} },
+	{ TERMMOD,               XK_u,           externalpipe,   {.v = openurlcmd } },
+	{ TERMMOD,               XK_o,           externalpipe,   {.v = copyoutput } },
 };
 
 /*
