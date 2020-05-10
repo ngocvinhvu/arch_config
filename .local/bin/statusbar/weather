@@ -4,9 +4,24 @@ low=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f3 | cut -d " " -f1 | re
 high=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f1 | rev `
 
 
-getrain() { printf "%s" "$(sed '16q;d' "/tmp/getweather" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔/g" | tr -d '\n')"
-}
-rain=$(getrain)
+# getrain() { printf "%s" "$(sed '16q;d' "/tmp/getweather" | grep -wo "[0-9]*%" | sort -n | sed -e '$!d' | sed -e "s/^/☔/g" | tr -d '\n')"}
+# rain=$(getrain)
 
 state=`cat /tmp/getweather | sed -n 3p | rev | cut -d " " -f1-3 | rev`
-echo$state:  $rain ❄️ $low °C 🌞$high
+
+
+# morning=6-12
+# noon=12-18
+# evening=18-24
+# night=0-6
+morning=`sed -n 16p /tmp/getweather | awk -F '│' '{print $2}' | cut -d '|' -f2`
+noon=`sed -n 16p /tmp/getweather | awk -F '│' '{print $3}' | cut -d '|' -f2`
+evening=`sed -n 16p /tmp/getweather | awk -F '│' '{print $4}' | cut -d '|' -f2`
+night=`sed -n 16p /tmp/getweather | awk -F '│' '{print $5}' | cut -d '|' -f2`
+
+time=`date '+%H'`
+# for i in {6..11}; do if [ $time -eq $i ]; then echo "$state ☔$morning ❄️ $low °C 🌞$high"; fi; done;
+# for i in {12..17}; do if [ $time -eq $i ]; then echo "$state ☔$noon ❄️ $low °C 🌞$high"; fi; done;
+# for i in {18..23}; do if [ $time -eq $i ]; then echo "$state ☔$evening ❄️ $low °C 🌞$high"; fi; done;
+# for i in {0..5}; do if [ $time -eq $i ]; then echo "$state ☔$night ❄️ $low °C 🌞$high"; fi; done;
+echo -ne "$state ❄️ $low °C 🌞$high \nMorning:☔$morning Noon:☔$noon\nEvening:☔$evening Night:☔$night" 
