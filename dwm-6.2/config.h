@@ -127,7 +127,7 @@ static Key keys[] = {
         { 0,	                        XF86XK_AudioLowerVolume,    spawn,		SHCMD("amixer -D pulse -q set Master 5%-    ") },
         { MODKEY,                       XK_F8,	                    spawn,	        SHCMD("touchpad_toggle.sh") },
         { 0,				XK_Print,	            spawn,		SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
-        { ShiftMask,			XK_Print,	            spawn,		SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
+        { MODKEY,			XK_Print,	            spawn,		SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
         { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { Mod4Mask,			XK_g,	                    spawn,		SHCMD("goldendict") },
