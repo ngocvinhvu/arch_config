@@ -48,7 +48,7 @@ Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 
 " Status bar on bottom
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
 "===== Delay srt(sub)
 Plugin 'pamacs/vim-srt-sync'
 "Usage :DelaySrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
@@ -106,9 +106,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+set statusline=%F
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"

@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-[ -f /tmp/*.gif ] && mpv /tmp/*.gif
+[ -f /tmp/*.gif ] && mpv `ls -t /tmp/*.gif`
