@@ -1,4 +1,6 @@
 inoremap jk <esc>
+let leader = "\\"
+vnoremap <leader>y "+y
 set t_Co=16
 set number
 set hlsearch incsearch
@@ -33,6 +35,8 @@ augroup vim_autocmd
     autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
     autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
     autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+    autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 augroup END
 " auto pastetoggle
 let &t_SI .= "\<Esc>[?2004h"
