@@ -33,6 +33,8 @@ settings:
         ',g': spawn bash -c mpvgif.sh
         ',w': spawn bash -c weather_notify.sh
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
+        ',V': spawn vlc {clipboard}
+        ',v': hint links spawn vlc {hint-url}
         ',h': hint links spawn mpv --ytdl-format='[height<=?1080]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
