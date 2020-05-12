@@ -54,7 +54,7 @@ Plugin 'pamacs/vim-srt-sync'
 "Usage :DelaySrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
 
 " ==== PLUGIN THEMES
-" Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 
 "===== PYTHON-MODE
 "Plugin 'klen/python-mode'
@@ -63,7 +63,7 @@ call vundle#end()
 filetype plugin indent on
 
 " ==== Colors and other basic settings
-" :colorscheme gruvbox
+:colorscheme gruvbox
 " set guifont=Monospace\ 10
 set fillchars+=vert:\|
 syntax enable
@@ -75,8 +75,8 @@ set lazyredraw
 set pastetoggle=<F3>
 set smartcase
 set ignorecase
-set t_Co=16
-" set background=dark
+set t_Co=256
+set background=dark
 set ruler
 set hidden
 set number
