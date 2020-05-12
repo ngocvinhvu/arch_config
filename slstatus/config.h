@@ -63,7 +63,7 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function         format          argument */
-        { run_command,      " %s|",        "ping.sh"                               }, 
+        { run_command,      " %s|",        "ping.sh"                              }, 
         { cpu_perc,         "%s%%:",       "NULL"                                 }, 
         { temp,             "%s°C|",      "/sys/class/thermal/thermal_zone1/temp" }, 
         { ram_used,         "%s/",         "NULL"                                 },
@@ -78,7 +78,7 @@ static const struct arg args[] = {
         { battery_perc,     "%s|",        "BAT0"                                  },
         // { battery_remaining, "%s | ",    "BAT0"                                     },
         // { run_command,      " %s |",        "weather"                               },
-	{ datetime,         " %s|",       "%Y %b %d (%a) %T%p"                                 },
-        { vol_perc,         " ♪:%s ",         "/dev/mixer1"},
+        { datetime,         " %s|",       "%Y %b %d (%a) %T%p"                    },
+        { vol_perc,         " ♪:%s ",         "/dev/mixer1"                       },
         { run_command,      "%s",        "music"                                  },
 };
