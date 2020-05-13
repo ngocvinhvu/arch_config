@@ -1,0 +1,4 @@
+sudo moused -p /dev/sysmouse auto                   # enable mouse
+echo moused_enable="YES" >> /etc/rc.conf
+
+sudo service restart devfs                          # enable sound
