@@ -1,7 +1,17 @@
+syntax enable
+filetype plugin indent on
+
 inoremap jk <esc>
-let leader = "\\"
+
+nnoremap ,py :0read ~/gits/python/
+
 vnoremap <leader>y "+y
-set t_Co=16
+
+set smartcase
+set ignorecase
+set splitbelow
+set splitright
+set t_Co=256
 set number
 set hlsearch incsearch
 set showmatch
@@ -12,22 +22,27 @@ set encoding=UTF-8
 set st=4 sw=4 et
 set tabstop=4
 set nocompatible
-syntax enable
-filetype plugin on
 set path+=**
 set wildmenu
-set statusline=%f\ -\ FileType:\ %y
+set statusline=%F
+set laststatus=2
+set cursorline
+set nrformats-=octal "fix when <c-a> auto add 07 to 10
+set background=dark
+
+
 "command! MakeTags !ctags -R .
+let leader = "\\"
 let g:netrw_banner=0 " disable banner
 let g:netrw_browser_split=4 " open in prior window
 let g:netrw_altv=1 " open split to the right
 let g:netrw_liststyle=3 " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-nnoremap ,py :0read ~/gits/python/
-:set cursorline
-:hi CursorLine   cterm=NONE ctermbg=237
-:hi CursorLineNr term=none cterm=none ctermfg=202 
+
+hi CursorLine   cterm=NONE ctermbg=237
+hi CursorLineNr term=none cterm=none ctermfg=202 
+
 augroup vim_autocmd
     autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
     autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
@@ -38,6 +53,26 @@ augroup vim_autocmd
     autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
     autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
 augroup END
+
+ 
+" Protect large files from sourcing and other overhead.
+" Files become read only
+if !exists("my_auto_commands_loaded")
+    let my_auto_commands_loaded = 1
+    " Large files are > 10M
+    " Set options:
+    " eventignore+=FileType (no syntax highlighting etc
+    " assumes FileType always on)
+    " noswapfile (save copy of file)
+    " bufhidden=unload (save memory when other file is viewed)
+    " buftype=nowrite (file is read-only)
+    " undolevels=-1 (no undo possible)
+    let g:LargeFile = 1024 * 1024 * 10
+    augroup LargeFile
+        autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload buftype=nowrite undolevels=-1 | else | set eventignore-=FileType | endif
+    augroup END
+endif
+
 " auto pastetoggle
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
