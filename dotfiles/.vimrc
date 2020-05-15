@@ -214,6 +214,7 @@ endif
 
 set path+=~/**
 set path+=~/.trash/**
+set path+=~/gits/arch_config/.local/bin/statusbar/**
 set wildmenu
 "command! MakeTags !ctags -R .
 let g:netrw_banner=0 " disable banner
