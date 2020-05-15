@@ -26,8 +26,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 
 " ==== Git
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'tpope/vim-fugitive'
 
 " ==== syntax helpers
 Plugin 'scrooloose/syntastic'
@@ -41,7 +41,7 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 
 " ==== moving / searching
 Plugin 'easymotion/vim-easymotion'
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 
 " ==== snippets
@@ -160,6 +160,7 @@ set secure
 let g:slime_target = "tmux"
 
 :inoremap jk <esc>
+:nnoremap <c-p> :find 
 :vnoremap <leader>y "+y
 augroup vim_autocmd
     autocmd!
