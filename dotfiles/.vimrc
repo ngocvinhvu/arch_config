@@ -211,7 +211,8 @@ if !exists("my_auto_commands_loaded")
     augroup END
 endif
 
-set path+=**
+set path+=~/**
+set path+=~/.trash/**
 set wildmenu
 "command! MakeTags !ctags -R .
 let g:netrw_banner=0 " disable banner
