@@ -16,5 +16,5 @@ else
 #     fi
 # 
 #     echo "$icon $rtt ms"
-    echo "$rtt ms"
+    echo "${rtt}ms"
 fi
