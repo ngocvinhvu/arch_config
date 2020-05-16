@@ -19,28 +19,30 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t t {clipboard}
-        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
-          {hint-url}
-        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
         ',H': hint links spawn mpv --ytdl-format='[height<=?1080]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
           {hint-url}
+        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
+        ',V': spawn vlc {clipboard}
+        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
         ',a': hint links spawn mpv --ytdl-format=bestaudio {hint-url}
         ',d': hint links spawn aria2c -x8 {hint-url} --dir /tmp
+        ',g': spawn bash -c mpvgif.sh
+        ',h': hint links spawn mpv {hint-url}
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
         ',n': config-cycle content.user_stylesheets /home/duy/.config/qutebrowser/userContent.css
           ""
         ',p': spawn bash -c sxivurl.sh
-        ',g': spawn bash -c mpvgif.sh
+        ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
-        ',V': spawn vlc {clipboard}
-        ',v': hint links spawn vlc {hint-url}
-        ',h': hint links spawn mpv --ytdl-format='[height<=?1080]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
+        <Ctrl+j>: run-with-count 15 scroll down
+        <Ctrl+k>: run-with-count 15 scroll up
         <Ctrl+m>: :messages -t
-        j: scroll-px 0 400
-        k: scroll-px 0 -400
+        j: scroll-page 0 0.8
+        k: scroll-page 0 -0.8
   content.autoplay:
     global: false
   content.fullscreen.window:
@@ -63,6 +65,7 @@ settings:
     https://webchat.freenode.net: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
+    https://www.macworld.co.uk: false
     https://www.onworks.net: false
     https://www.reddit.com: false
     https://www.w88top.com: false
@@ -77,6 +80,8 @@ settings:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
     global: /home/duy/.config/qutebrowser/userContent.css
+  scrolling.smooth:
+    global: false
   tabs.background:
     global: true
   url.default_page:
@@ -86,9 +91,11 @@ settings:
       DEFAULT: https://google.com/search?q={}
       ar: https://wiki.archlinux.org/index.php?search={}&title=Special%3ASearch&go=Go
       dd: https://duckduckgo.com/?q={}
+      dir: https://www.google.com/maps/dir/{}
       dp: https://www.dongphim.net/content/search?t=kw&q={}
       eb: https://www.ebay.com/sch/{}
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
+      maps: https://www.google.com/maps/place/{}
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
@@ -103,8 +110,6 @@ settings:
       wen: https://en.wikipedia.org/wiki/{}
       wvi: https://vi.wikipedia.org/wiki/{}
       yo: https://www.youtube.com/results?search_query={}
-      maps: https://www.google.com/maps/place/{}
-      dir:  https://www.google.com/maps/dir/{}
   url.start_pages:
     global: about:blank
   zoom.default:
