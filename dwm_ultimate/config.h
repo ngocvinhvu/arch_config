@@ -119,7 +119,7 @@ static Key keys[] = {
         { MODKEY|ShiftMask,		XK_bracketleft,		    spawn,		SHCMD("mpc seek -120") },
         { MODKEY,			XK_bracketright,	    spawn,		SHCMD("mpc seek +10") },
         { MODKEY|ShiftMask,		XK_bracketright,	    spawn,		SHCMD("mpc seek +120") },
-        { MODKEY,			XK_n,		            spawn,		SHCMD("st -e ncmpcpp") },
+        { MODKEY,			XK_n,		            spawn,		SHCMD("xterm -e ncmpcpp") },
         { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
         { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
         { MODKEY,			XK_period,	            spawn,		SHCMD("mpc next") },
