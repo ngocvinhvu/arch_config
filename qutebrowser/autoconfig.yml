@@ -41,8 +41,8 @@ settings:
         <Ctrl+j>: run-with-count 15 scroll down
         <Ctrl+k>: run-with-count 15 scroll up
         <Ctrl+m>: :messages -t
-        j: scroll-page 0 0.8
-        k: scroll-page 0 -0.8
+        j: scroll-page 0 0.5
+        k: scroll-page 0 -0.5
   content.autoplay:
     global: false
   content.fullscreen.window:
@@ -55,6 +55,9 @@ settings:
     global: true
   content.javascript.enabled:
     global: true
+  content.media_capture:
+    https://studio.youtube.com: false
+    https://www.facebook.com: false
   content.notifications:
     https://dnschecker.org: false
     https://hatde.tv: false
