@@ -1,0 +1,14 @@
+# qemu-img create -f qcow2 freebsd.qcow2 15G                # create disk 
+
+# installer
+# qemu-system-x86_64 -m 2048 \
+#  -hda freebsd.qcow2 -enable-kvm \
+#  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22 \
+#  -device e1000,netdev=mynet0 \
+#  -cdrom FreeBSD-12.1-RELEASE-amd64-disc1.iso
+
+# run
+qemu-system-x86_64 -m 2048 \
+ -hda /mnt/sdb3/os/freebsd.qcow2 -enable-kvm \
+ -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22 \
+ -device e1000,netdev=mynet0
