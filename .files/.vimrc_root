@@ -7,6 +7,8 @@ nnoremap ,py :0read ~/gits/python/
 
 vnoremap <leader>y "+y
 
+nnoremap <c-p> :find 
+
 set smartcase
 set ignorecase
 set splitbelow
