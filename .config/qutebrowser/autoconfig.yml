@@ -41,6 +41,15 @@ settings:
         <Ctrl+j>: run-with-count 15 scroll down
         <Ctrl+k>: run-with-count 15 scroll up
         <Ctrl+m>: :messages -t
+        g1: tab-focus 1
+        g2: tab-focus 2
+        g3: tab-focus 3
+        g4: tab-focus 4
+        g5: tab-focus 5
+        g6: tab-focus 6
+        g7: tab-focus 7
+        g8: tab-focus 8
+        g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
   content.autoplay:

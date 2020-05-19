@@ -1,8 +1,8 @@
 # local port forwarding
     ssh -L localIP:localPort:remoteIP:remotePort -N -f remoteUser@remoteIP
-# remote port forwarding
+# remote port forwarding ( GatewayPorts Yes in /etc/ssh/sshd_config and open port 8889 on route is reqired)
     ssh -R remoteIP:remotePort:localIP:localPort -N -f remoteUser@remoteIP
-    Example: ssh -R 14.162.135.142:8080:localhost:80 -N -f duy@14.162.135.142
-#      when go: 14.162.135.142:8080 => forwarding to localhost:80
+    Example: ssh -R 14.162.135.142:8889:localhost:80 -N -f duy@14.162.135.142
+#      when go: 14.162.135.142:8889 => forwarding to localhost:80
 # dynamic port forwarding
     ssh -D localIP:localPort remoteUser@remoteIP
