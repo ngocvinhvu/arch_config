@@ -116,4 +116,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: 115%
+    global: 120%
