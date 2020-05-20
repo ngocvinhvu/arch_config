@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "";
 
 /* maximum output string length */
-#define MAXLEN 150
+#define MAXLEN 165
 
 /*
  * function            description                     argument (example)
@@ -64,22 +64,22 @@ static const char unknown_str[] = "";
 static const struct arg args[] = {
 	/* function         format          argument */
         { run_command,      " %s|",        "ping.sh"                              }, 
-        { cpu_perc,         "%s%%:",       "NULL"                                 }, 
+        { cpu_perc,         " %s%%:",       "NULL"                                 }, 
         { temp,             "%s°C|",      "/sys/class/thermal/thermal_zone1/temp" }, 
-        { ram_used,         "%s/",         "NULL"                                 },
+        { ram_used,         " %s/",         "NULL"                                 },
         { ram_total,        "%s|",        "NULL"                                  },
         { disk_free,        "%s|",        "/"                                     },
-        { wifi_essid,       "[%s",         "wlp3s0"                               },
+        { wifi_essid,       " [%s",         "wlp3s0"                               },
         { wifi_perc,        " :%s%%]",     "wlp3s0"                               },
         { ipv4,             "%s",         "wlp3s0"                                },
         { netspeed_rx,      "[%s/",         "wlp3s0"                              },
         { netspeed_tx,      "%s]|",        "wlp3s0"                               },
-        { battery_state,    "%s:",        "BAT0"                                  },
+        { battery_state,    " %s:",        "BAT0"                                  },
         { battery_perc,     "%s|",        "BAT0"                                  },
         // { battery_remaining, "%s | ",    "BAT0"                                   },
         // { run_command,      " %s |",        "weather"                             },
         { datetime,         " %s|",       "%Y %b %d (%a) %r"                      },
         // { vol_perc,         " ♪:%s ",         "/dev/mixer1"                       },
-        { run_command,      " ♪:%s ",         "volume"                            },
+        { run_command,      " %s",         "volume"                            },
         { run_command,      "%s",        "music"                                  },
 };
