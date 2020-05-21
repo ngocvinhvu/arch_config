@@ -25,4 +25,4 @@ time=`date '+%H'`
 # [ $time -gt 17 -a $time -lt 24 ] && echo -e "$state ☔$evening ❄️ $low °C 🌞$high"
 # ([ $time -gt 1 -a $time -lt 11 ] || [ $time -eq 0 ]) && echo -e "$state ☔$night ❄️ $low °C 🌞$high" 
 
-echo  -ne "$state ❄️ $low °C 🌞$high \nMorning:☔$morning Afteroon:☔$noon\nEvening:☔$evening Night:☔$night\n" 
+echo  -ne "$state ❄️ $low °C 🌞$high\nMorning:☔$morning Afteroon:☔$noon\nEvening:☔$evening Night:☔$night\n" 

@@ -132,9 +132,17 @@
 
 #pacman -S docker
 
-### q1
+# ohmyzsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # fastest way transfe file 
 sender:     tar c filename | netcat -l -p port -vvv -c
 reciever:   netcat host port | tar x
 ##  misc
 # aria2c --bt-metadata-only=true --bt-save-metadata=true
+
+# scp
+scp user@server:/path /path or scp /path user@server:/path
+# ssh with tar
+tar c | ssh user@server "tar x"                                 # or 
+tar c | ssh user@server "tar x -C /path"                        # -C: changedir to /path
