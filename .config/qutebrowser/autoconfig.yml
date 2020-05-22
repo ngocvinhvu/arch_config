@@ -30,8 +30,8 @@ settings:
         ',g': spawn bash -c mpvgif.sh
         ',h': hint links spawn mpv {hint-url}
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
-        ',n': config-cycle content.user_stylesheets /home/duy/.config/qutebrowser/userContent.css
-          ""
+        ',s': hint links spawn streamlink -p mpv {hint-url}  best
+        ',S': hint links spawn streamlink -p mpv {hint-url}  480p
         ',p': spawn bash -c sxivurl.sh
         ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
@@ -91,7 +91,7 @@ settings:
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
-    global: /home/duy/.config/qutebrowser/userContent.css
+    global: null
   scrolling.smooth:
     global: false
   tabs.background:

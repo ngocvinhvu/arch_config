@@ -33,6 +33,8 @@ static const Rule rules[] = {
         { "libreoffice",     NULL,       NULL,       1 << 3,       0,           -1 },
         { "firefox",         NULL,       NULL,       1 << 1,       0,           -1 },
         { "St",              NULL,       NULL,       0,            0,           -1 },
+        // { "Sxiv",            NULL,       NULL,       0,            1,           -1 },
+        // { "mpv",             NULL,       NULL,       0,            1,           -1 },
         { NULL,              NULL,       "ncmpcpp",  1 << 7,       0,           -1 },
 
 };

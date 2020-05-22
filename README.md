@@ -146,3 +146,9 @@ scp user@server:/path /path or scp /path user@server:/path
 # ssh with tar
 tar c | ssh user@server "tar x"                                 # or 
 tar c | ssh user@server "tar x -C /path"                        # -C: changedir to /path
+
+## weechat
+/python autoload # to load the script
+/autojoin --run  # to store the channels to join
+/layout store    # to store the order of the channels
+/save            # to save your setting
