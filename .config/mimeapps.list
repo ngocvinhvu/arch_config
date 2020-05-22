@@ -7,3 +7,7 @@ x-scheme-handler/www=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
+image/jpeg=sxiv.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+video/x-matroska=mpv.desktop;
+image/png=sxiv.desktop;
