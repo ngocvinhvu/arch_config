@@ -14,7 +14,7 @@ export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin:$HO
 
 sudo sh -c "echo 15 >  /sys/devices/platform/i8042/serio1/serio2/drift_time"
 sudo sh -c "echo 200 > /sys/devices/platform/i8042/serio1/serio2/sensitivity"
-# sudo sh -c "echo 150 > /sys/devices/platform/i8042/serio1/serio2/speed"
+sudo sh -c "echo 150 > /sys/devices/platform/i8042/serio1/serio2/speed"
 
 export VISUAL=vim
 export EDITOR=$VISUAL
