@@ -26,16 +26,15 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class             instance    title       tags mask     isfloating   monitor */
-        { "qutebrowser",     NULL,       NULL,       1 << 1,       0,           -1 },
-        { "GoldenDict",      NULL,       NULL,       1 << 2,       0,           -1 },
-        { "Zathura",         NULL,       NULL,       1 << 8,       0,           -1 },
-        { "libreoffice",     NULL,       NULL,       1 << 3,       0,           -1 },
-        { "firefox",         NULL,       NULL,       1 << 1,       0,           -1 },
-        { "St",              NULL,       NULL,       0,            0,           -1 },
-        // { "Sxiv",            NULL,       NULL,       0,            1,           -1 },
-        // { "mpv",             NULL,       NULL,       0,            1,           -1 },
-        { NULL,              NULL,       "ncmpcpp",  1 << 7,       0,           -1 },
+	/* class                     instance    title       tags mask     isfloating   monitor */
+        { "qutebrowser",             NULL,       NULL,       1 << 1,       0,           -1 },
+        { "GoldenDict",              NULL,       NULL,       1 << 2,       0,           -1 },
+        { "Zathura",                 NULL,       NULL,       1 << 8,       0,           -1 },
+        { "firefox",                 NULL,       NULL,       1 << 1,       0,           -1 },
+        { "St",                      NULL,       NULL,       0,            0,           -1 },
+        // { "Sxiv",                 NULL,       NULL,       0,            1,           -1 },
+        // { "mpv",                  NULL,       NULL,       0,            1,           -1 },
+        { NULL,                      NULL,       "ncmpcpp",  1 << 7,       0,           -1 },
 
 };
 

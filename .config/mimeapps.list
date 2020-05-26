@@ -1,3 +1,6 @@
+# mimetype file            # get type of file
+# mimeopen -d file          # set default app to open this type file
+
 [Default Applications]
 
 text/html=org.qutebrowser.qutebrowser.desktop
