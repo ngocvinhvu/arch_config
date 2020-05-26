@@ -49,9 +49,10 @@ Plugin 'SirVer/ultisnips'
 
 " Status bar on bottom
 " Plugin 'bling/vim-airline'
+
 "===== Delay srt(sub)
 Plugin 'pamacs/vim-srt-sync'
-"Usage :DelaySrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
+"Usage :ShiftSrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
 
 " ==== PLUGIN THEMES
 Plugin 'morhetz/gruvbox'
@@ -118,7 +119,7 @@ let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 
 " === flake8
-let g:flake8_show_in_file=1
+" let g:flake8_show_in_file=1
 
 " ==== snippets
 " If you want :UltiSnipsEdit to split your window.
