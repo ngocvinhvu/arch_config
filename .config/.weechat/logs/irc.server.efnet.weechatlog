@@ -1,0 +1,178 @@
+2019-12-08 07:10:52	--	irc: connecting to server irc.teksavvy.ca/6667...
+2019-12-08 07:10:52	=!=	irc: connection refused
+2019-12-08 07:10:52	--	irc: reconnecting to server in 10 seconds
+2019-12-08 07:11:02	--	irc: reconnecting to server...
+2019-12-08 07:11:02	--	irc: connecting to server irc.teksavvy.ca/6667...
+2019-12-08 07:11:02	=!=	irc: connection refused
+2019-12-08 07:11:02	--	irc: reconnecting to server in 20 seconds
+2019-12-08 07:11:05		irc: auto-reconnection is cancelled
+2019-12-08 07:11:05	--	irc: disconnected from server
+2019-12-08 07:16:39	--	irc: connecting to server efnet.port80.se/6667...
+2019-12-08 07:16:39	--	irc: connected to efnet.port80.se/6667 (195.140.202.142)
+2019-12-08 07:16:40	--	*** Processing connection to efnet.port80.se
+2019-12-08 07:16:40	--	*** Looking up your hostname...
+2019-12-08 07:16:40	--	*** Checking Ident
+2019-12-08 07:16:40	--	*** Couldn't look up your hostname
+2019-12-08 07:16:55	--	*** No Ident response
+2019-12-08 07:16:55	--	Welcome to the EFnet Internet Relay Chat Network duy
+2019-12-08 07:16:55	--	Your host is efnet.port80.se[195.140.202.142/6667], running version ircd-ratbox-3.0.9
+2019-12-08 07:16:55	--	This server was created Thu Dec 17 2015 at 22:29:56 CET
+2019-12-08 07:16:55	--	efnet.port80.se ircd-ratbox-3.0.9 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2019-12-08 07:16:55	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:50 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFnet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2019-12-08 07:16:55	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=80 :are supported by this server
+2019-12-08 07:16:55	--	FNC ACCEPT=20 MAP TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:10,NOTICE:10,ACCEPT:,MONITOR: :are supported by this server
+2019-12-08 07:16:55	--	There are 5648 users and 10249 invisible on 23 servers
+2019-12-08 07:16:55	--	119 :IRC Operators online
+2019-12-08 07:16:55	--	1 :unknown connection(s)
+2019-12-08 07:16:55	--	9083 :channels formed
+2019-12-08 07:16:55	--	I have 4795 clients and 1 servers
+2019-12-08 07:16:55	--	4795 5574 :Current local users 4795, max 5574
+2019-12-08 07:16:55	--	15897 24636 :Current global users 15897, max 24636
+2019-12-08 07:16:55	--	Highest connection count: 5575 (5574 clients) (1805357 connections received)
+2019-12-08 07:16:55	--	- efnet.port80.se Message of the Day - 
+2019-12-08 07:16:55	--	-  
+2019-12-08 07:16:55	--	- WE'RE KIND OF A BIG DEAL.
+2019-12-08 07:16:55	--	-  
+2019-12-08 07:16:55	--	- ET VOILA!
+2019-12-08 07:16:55	--	-  
+2019-12-08 07:16:55	--	End of /MOTD command.
+2019-12-08 07:16:55	--	CTCP requested by p80drone: VERSION
+2019-12-08 07:16:55	--	CTCP reply to p80drone: VERSION WeeChat 2.6 (Nov 12 2019 10:27:59)
+2019-12-08 07:16:55	--	You are banned from this server- Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.16)
+2019-12-08 07:16:55	=!=	Closing Link: 42.112.108.198 (Connection closed)
+2019-12-08 07:16:55	--	irc: disconnected from server
+2019-12-08 07:16:55	--	irc: reconnecting to server in 10 seconds
+2019-12-08 07:17:05	--	irc: reconnecting to server...
+2019-12-08 07:17:05	--	irc: connecting to server efnet.port80.se/6667...
+2019-12-08 07:17:06	--	irc: connected to efnet.port80.se/6667 (195.140.202.142)
+2019-12-08 07:17:06	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.16)
+2019-12-08 07:17:06	=!=	irc: reading data on socket: error 4 (connection closed by peer)
+2019-12-08 07:17:06	--	irc: disconnecting from server...
+2019-12-08 07:17:06	--	irc: disconnected from server
+2019-12-08 07:17:06	--	irc: reconnecting to server in 20 seconds
+2019-12-08 07:17:26	--	irc: reconnecting to server...
+2019-12-08 07:17:26	--	irc: connecting to server efnet.port80.se/6667...
+2019-12-08 07:17:27	--	irc: connected to efnet.port80.se/6667 (195.140.202.142)
+2019-12-08 07:17:27	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.16)
+2019-12-08 07:17:27	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2019-12-08 07:17:27	--	irc: disconnecting from server...
+2019-12-08 07:17:27	--	irc: disconnected from server
+2019-12-08 07:17:27	--	irc: reconnecting to server in 40 seconds
+2019-12-08 07:17:32		irc: auto-reconnection is cancelled
+2019-12-08 07:17:32	--	irc: disconnected from server
+2019-12-08 07:18:09	--	irc: connecting to server efnet.portlane.se/6667...
+2019-12-08 07:18:10	--	irc: connected to efnet.portlane.se/6667 (91.217.189.5)
+2019-12-08 07:18:10	--	*** Processing connection to efnet.portlane.se
+2019-12-08 07:18:11	--	*** Looking up your hostname...
+2019-12-08 07:18:11	--	*** Checking Ident
+2019-12-08 07:18:13	--	*** Couldn't look up your hostname
+2019-12-08 07:18:25	--	*** No Ident response
+2019-12-08 07:18:25	--	Welcome to the EFNet Internet Relay Chat Network duy
+2019-12-08 07:18:25	--	Your host is efnet.portlane.se[91.217.189.5/6667], running version ircd-ratbox-3.0.8
+2019-12-08 07:18:25	--	This server was created Sun Oct 19 2014 at 21:55:41 CEST
+2019-12-08 07:18:25	--	efnet.portlane.se ircd-ratbox-3.0.8 oiwszcrkfydnxbauglZCD biklmnopstveIrS bkloveI
+2019-12-08 07:18:25	--	CHANTYPES=&# EXCEPTS INVEX CHANMODES=eIb,k,l,imnpstS CHANLIMIT=&#:40 PREFIX=(ov)@+ MAXLIST=beI:100 MODES=4 NETWORK=EFNet KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+2019-12-08 07:18:25	--	SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=9 CHANNELLEN=50 TOPICLEN=160 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=60 :are supported by this server
+2019-12-08 07:18:25	--	FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+2019-12-08 07:18:25	--	There are 5649 users and 10253 invisible on 23 servers
+2019-12-08 07:18:25	--	119 :IRC Operators online
+2019-12-08 07:18:25	--	1 :unknown connection(s)
+2019-12-08 07:18:25	--	9068 :channels formed
+2019-12-08 07:18:25	--	I have 661 clients and 1 servers
+2019-12-08 07:18:25	--	661 1455 :Current local users 661, max 1455
+2019-12-08 07:18:25	--	15902 17024 :Current global users 15902, max 17024
+2019-12-08 07:18:25	--	Highest connection count: 1456 (1455 clients) (54369 connections received)
+2019-12-08 07:18:25	--	- efnet.portlane.se Message of the Day - 
+2019-12-08 07:18:25	--	-                                              _______________________
+2019-12-08 07:18:25	--	-                                              \                     /
+2019-12-08 07:18:25	--	-      ______   _____      ________    _     _  \  ___           _  / ____
+2019-12-08 07:18:25	--	- ____/____  \_/  _  \_____\___   /___/ \___/ \___/   \_______  / \__/  _//______
+2019-12-08 07:18:25	--	- \___   _/   __  Y   ____   _/   ____   __     __  _  ___    \/   __   __/   __/
+2019-12-08 07:18:25	--	-   /    \____/   :    \/    |     \/    \/     /   _   \/  _  \    \_  |/    /
+2019-12-08 07:18:25	--	-   \____/   \_________/\____|     /\____/\____/\___Y    \___\       /__     /
+2019-12-08 07:18:25	--	-  +----------------------- \_____/ /_/--h7/dS!--+- |_____/-- \_____/- \____/--+
+2019-12-08 07:18:25	--	-  |                                              \\   ___    /                |
+2019-12-08 07:18:25	--	-  |   <<  e F N E T . p O R T L A N E . s E  >>   \ _ \   _ /                 |
+2019-12-08 07:18:25	--	-  |                                                \/  \  //                  |
+2019-12-08 07:18:25	--	-  +---------------------------------------------------- \// ------------------+
+2019-12-08 07:18:25	--	-                                                         Y
+2019-12-08 07:18:25	--	-       Welcome to efnet.portlane.se
+2019-12-08 07:18:25	--	-       Hosted by Portlane Networks <www.portlane.com>
+2019-12-08 07:18:25	--	-       Server is located somewhere in Stockholm, Sweden.
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       .news
+2019-12-08 07:18:25	--	-        20111228 - Linked to EFNet under new name, efnet.portlane.se.
+2019-12-08 07:18:25	--	-        20121013 - Tero joins staff as Oper.
+2019-12-08 07:18:25	--	-        20121201 - Da_P joins staff as Oper.
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       .nfo
+2019-12-08 07:18:25	--	-        This server is renamed from efnet.bredband2.se and is no
+2019-12-08 07:18:25	--	-        longer hosted by Bredband2.
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       .connect
+2019-12-08 07:18:25	--	-        You can connect to the server with both IPv4 and IPv6.
+2019-12-08 07:18:25	--	-        Ports you can use for normal connection is: 6665 - 6669
+2019-12-08 07:18:25	--	-        If you want to use SSL you may use: 6697, 7000 & 9999
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       .rules
+2019-12-08 07:18:25	--	-        No cloning
+2019-12-08 07:18:25	--	-        No spam
+2019-12-08 07:18:25	--	-        No flooding
+2019-12-08 07:18:25	--	-        Be nice!
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       .staff
+2019-12-08 07:18:25	--	-        Ahnberg   <mattias@ahnberg.pp.se>
+2019-12-08 07:18:25	--	-        suom1     <suom1@underworld.no>
+2019-12-08 07:18:25	--	-        Tero
+2019-12-08 07:18:25	--	-        Da_P
+2019-12-08 07:18:25	--	-        esp
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-       We reserve the right to remove your access to this server at
+2019-12-08 07:18:25	--	-       any time at our staffs discretion.
+2019-12-08 07:18:25	--	-  
+2019-12-08 07:18:25	--	-  +------------------------------------------------------- efnet.portlane.se -+
+2019-12-08 07:18:25	--	End of /MOTD command.
+2019-12-08 07:18:25	--	PEopm (raphidae@pe.bopm): You are now being scanned for open proxies by the efnet.portlane.se local and EFNet global open proxy monitors.
+2019-12-08 07:18:25	--	CTCP requested by PEdrone: VERSION
+2019-12-08 07:18:25	--	CTCP reply to PEdrone: VERSION WeeChat 2.6 (Nov 12 2019 10:27:59)
+2019-12-08 07:18:25	--	You are banned from this server- Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.18)
+2019-12-08 07:18:25	=!=	Closing Link: 42.112.108.198 (Connection closed)
+2019-12-08 07:18:25	--	irc: disconnected from server
+2019-12-08 07:18:25	--	irc: reconnecting to server in 10 seconds
+2019-12-08 07:18:35	--	irc: reconnecting to server...
+2019-12-08 07:18:35	--	irc: connecting to server efnet.portlane.se/6667...
+2019-12-08 07:18:36	--	irc: connected to efnet.portlane.se/6667 (91.217.189.5)
+2019-12-08 07:18:36	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.18)
+2019-12-08 07:18:36	=!=	irc: reading data on socket: error 4 (connection closed by peer)
+2019-12-08 07:18:36	--	irc: disconnecting from server...
+2019-12-08 07:18:36	--	irc: disconnected from server
+2019-12-08 07:18:36	--	irc: reconnecting to server in 20 seconds
+2019-12-08 07:18:44		irc: auto-reconnection is cancelled
+2019-12-08 07:18:44	--	irc: disconnected from server
+2019-12-08 07:18:48	=!=	irc: this buffer is not a channel!
+2019-12-08 07:18:51	--	irc: disconnected from server
+2019-12-08 07:19:15	--	irc: connecting to server efnet.portlane.se/6667...
+2019-12-08 07:19:15	--	irc: connected to efnet.portlane.se/6667 (91.217.189.5)
+2019-12-08 07:19:16	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.18)
+2019-12-08 07:19:16	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2019-12-08 07:19:16	--	irc: disconnecting from server...
+2019-12-08 07:19:16	--	irc: disconnected from server
+2019-12-08 07:19:16	--	irc: reconnecting to server in 10 seconds
+2019-12-08 07:19:26	--	irc: reconnecting to server...
+2019-12-08 07:19:26	--	irc: connecting to server efnet.portlane.se/6667...
+2019-12-08 07:19:27	--	irc: connected to efnet.portlane.se/6667 (91.217.189.5)
+2019-12-08 07:19:27	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.18)
+2019-12-08 07:19:27	=!=	irc: reading data on socket: error 4 (connection closed by peer)
+2019-12-08 07:19:27	--	irc: disconnecting from server...
+2019-12-08 07:19:27	--	irc: disconnected from server
+2019-12-08 07:19:27	--	irc: reconnecting to server in 20 seconds
+2019-12-08 07:19:47	--	irc: reconnecting to server...
+2019-12-08 07:19:47	--	irc: connecting to server efnet.portlane.se/6667...
+2019-12-08 07:19:48	--	irc: connected to efnet.portlane.se/6667 (91.217.189.5)
+2019-12-08 07:19:48	=!=	*** Banned: Temporary D-line 14400 min. - host is DNSBL listed - see: http://www.spamhaus.org/query/ip/42.112.108.198 (2019/12/8 00.18)
+2019-12-08 07:19:48	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2019-12-08 07:19:48	--	irc: disconnecting from server...
+2019-12-08 07:19:48	--	irc: disconnected from server
+2019-12-08 07:19:48	--	irc: reconnecting to server in 40 seconds
+2019-12-08 07:20:16		irc: auto-reconnection is cancelled
+2019-12-08 07:20:16	--	irc: disconnected from server

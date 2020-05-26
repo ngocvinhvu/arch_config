@@ -1,0 +1,56 @@
+[2020-05-22 23:48:47] WeeChat 2.8 (compiled on Apr 29 2020 14:29:35)
+[2020-05-22 23:48:47] Reading configuration file sec.conf
+[2020-05-22 23:48:47] Reading configuration file weechat.conf
+[2020-05-22 23:48:47] Reading configuration file plugins.conf
+[2020-05-22 23:48:48] Reading configuration file charset.conf
+[2020-05-22 23:48:48] Reading configuration file logger.conf
+[2020-05-22 23:48:48] Reading configuration file exec.conf
+[2020-05-22 23:48:48] Reading configuration file trigger.conf
+[2020-05-22 23:48:48] Reading configuration file spell.conf
+[2020-05-22 23:48:48] Reading configuration file alias.conf
+[2020-05-22 23:48:48] Reading configuration file buflist.conf
+[2020-05-22 23:48:48] Reading configuration file fifo.conf
+[2020-05-22 23:48:48] Reading configuration file xfer.conf
+[2020-05-22 23:48:48] Reading configuration file irc.conf
+[2020-05-22 23:48:48] Reading configuration file relay.conf
+[2020-05-22 23:48:48] Reading configuration file tcl.conf
+[2020-05-22 23:48:48] Reading configuration file perl.conf
+[2020-05-22 23:48:48] Reading configuration file python.conf
+[2020-05-22 23:48:48] Reading configuration file guile.conf
+[2020-05-22 23:48:48] Reading configuration file lua.conf
+[2020-05-22 23:48:48] Reading configuration file ruby.conf
+[2020-05-22 23:48:48] Reading configuration file script.conf
+[2020-05-22 23:48:48] Reading configuration file fset.conf
+[2020-05-22 23:48:48] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-22 23:48:58] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-22 23:49:18] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-22 23:50:47] irc: connecting to server irc.snoonet.org/6667...
+[2020-05-23 04:06:56] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-23 04:07:00] irc: connecting to server irc.snoonet.org/6667...
+[2020-05-23 04:08:16] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-23 05:09:13] irc: connecting to server irc.snoonet.org/6667...
+[2020-05-23 07:30:16] Connecting to server freenodeok2gncmy.onion/7000 (SSL) via socks5 proxy 127.0.0.1/9050...
+[2020-05-23 07:35:16] irc: connecting to server irc.snoonet.org/6667...
+[2020-05-23 17:57:22] Signal SIGHUP received, exiting WeeChat...
+[2020-05-23 17:57:22] Writing configuration file plugins.conf
+[2020-05-23 17:57:22] Writing configuration file charset.conf
+[2020-05-23 17:57:22] Writing configuration file ruby.conf
+[2020-05-23 17:57:22] Writing configuration file xfer.conf
+[2020-05-23 17:57:22] Writing configuration file irc.conf
+[2020-05-23 17:57:22] Writing configuration file fset.conf
+[2020-05-23 17:57:22] Writing configuration file logger.conf
+[2020-05-23 17:57:22] Writing configuration file alias.conf
+[2020-05-23 17:57:22] Writing configuration file lua.conf
+[2020-05-23 17:57:22] Writing configuration file fifo.conf
+[2020-05-23 17:57:22] Writing configuration file buflist.conf
+[2020-05-23 17:57:22] Writing configuration file spell.conf
+[2020-05-23 17:57:22] Writing configuration file script.conf
+[2020-05-23 17:57:22] Writing configuration file guile.conf
+[2020-05-23 17:57:23] Writing configuration file python.conf
+[2020-05-23 17:57:23] Writing configuration file relay.conf
+[2020-05-23 17:57:23] Writing configuration file exec.conf
+[2020-05-23 17:57:23] Writing configuration file perl.conf
+[2020-05-23 17:57:23] Writing configuration file trigger.conf
+[2020-05-23 17:57:23] Writing configuration file tcl.conf
+[2020-05-23 17:57:23] Writing configuration file weechat.conf
+[2020-05-23 17:57:23] Writing configuration file sec.conf

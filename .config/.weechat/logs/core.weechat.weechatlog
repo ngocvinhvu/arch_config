@@ -1,0 +1,933 @@
+2019-12-08 04:21:34		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2019-12-08 04:21:34		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2019-12-08 04:21:34		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2019-12-08 04:21:34		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2019-12-08 04:21:34		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2019-12-08 04:21:34		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2019-12-08 04:21:34		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2019-12-08 04:21:34		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2019-12-08 04:21:34		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2019-12-08 04:21:34		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2019-12-08 04:21:34		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2019-12-08 04:21:34		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2019-12-08 04:21:34		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2019-12-08 04:21:34		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2019-12-08 04:21:34		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2019-12-08 04:21:37		[core]
+2019-12-08 04:21:37		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2019-12-08 04:21:37		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2019-12-08 04:21:37		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2019-12-08 04:21:37		[python]
+2019-12-08 04:21:37		  python
+2019-12-08 04:21:37		[perl]
+2019-12-08 04:21:37		  perl
+2019-12-08 04:21:37		[relay]
+2019-12-08 04:21:37		  relay
+2019-12-08 04:21:37		[spell]
+2019-12-08 04:21:37		  spell
+2019-12-08 04:21:37		[ruby]
+2019-12-08 04:21:37		  ruby
+2019-12-08 04:21:37		[script]
+2019-12-08 04:21:37		  script
+2019-12-08 04:21:37		[buflist]
+2019-12-08 04:21:37		  buflist
+2019-12-08 04:21:37		[xfer]
+2019-12-08 04:21:37		  me  xfer
+2019-12-08 04:21:37		[charset]
+2019-12-08 04:21:37		  charset
+2019-12-08 04:21:37		[irc]
+2019-12-08 04:21:37		  admin       ctcp        disconnect  kick        me          notify      quiet       samode      squery      unban       wallops   
+2019-12-08 04:21:37		  allchan     cycle       halfop      kickban     mode        op          quote       sanick      squit       unquiet     who       
+2019-12-08 04:21:37		  allpv       dcc         ignore      kill        motd        oper        reconnect   sapart      stats       userhost    whois     
+2019-12-08 04:21:37		  allserv     dehalfop    info        links       msg         part        rehash      saquit      summon      users       whowas    
+2019-12-08 04:21:37		  ban         deop        invite      list        names       ping        remove      server      time        version   
+2019-12-08 04:21:37		  cap         devoice     ison        lusers      nick        pong        restart     service     topic       voice     
+2019-12-08 04:21:37		  connect     die         join        map         notice      query       sajoin      servlist    trace       wallchops 
+2019-12-08 04:21:37		[fifo]
+2019-12-08 04:21:37		  fifo
+2019-12-08 04:21:37		[logger]
+2019-12-08 04:21:37		  logger
+2019-12-08 04:21:37		[lua]
+2019-12-08 04:21:37		  lua
+2019-12-08 04:21:37		[fset]
+2019-12-08 04:21:37		  fset
+2019-12-08 04:21:37		[alias]
+2019-12-08 04:21:37		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2019-12-08 04:21:37		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2019-12-08 04:21:37		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2019-12-08 04:21:37		[trigger]
+2019-12-08 04:21:37		  trigger
+2019-12-08 04:21:37		[tcl]
+2019-12-08 04:21:37		  tcl
+2019-12-08 04:21:37		[exec]
+2019-12-08 04:21:37		  exec
+2019-12-08 04:21:46	=!=	Error: unknown command "/clear" (type /help for help)
+2019-12-08 04:24:09		[core]
+2019-12-08 04:24:09		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2019-12-08 04:24:09		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2019-12-08 04:24:09		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2019-12-08 04:24:09		[python]
+2019-12-08 04:24:09		  python
+2019-12-08 04:24:09		[perl]
+2019-12-08 04:24:09		  perl
+2019-12-08 04:24:09		[relay]
+2019-12-08 04:24:09		  relay
+2019-12-08 04:24:09		[spell]
+2019-12-08 04:24:09		  spell
+2019-12-08 04:24:09		[ruby]
+2019-12-08 04:24:09		  ruby
+2019-12-08 04:24:09		[script]
+2019-12-08 04:24:09		  script
+2019-12-08 04:24:09		[buflist]
+2019-12-08 04:24:09		  buflist
+2019-12-08 04:24:09		[xfer]
+2019-12-08 04:24:09		  me  xfer
+2019-12-08 04:24:09		[charset]
+2019-12-08 04:24:09		  charset
+2019-12-08 04:24:09		[irc]
+2019-12-08 04:24:09		  admin       ctcp        disconnect  kick        me          notify      quiet       samode      squery      unban       wallops   
+2019-12-08 04:24:09		  allchan     cycle       halfop      kickban     mode        op          quote       sanick      squit       unquiet     who       
+2019-12-08 04:24:09		  allpv       dcc         ignore      kill        motd        oper        reconnect   sapart      stats       userhost    whois     
+2019-12-08 04:24:09		  allserv     dehalfop    info        links       msg         part        rehash      saquit      summon      users       whowas    
+2019-12-08 04:24:09		  ban         deop        invite      list        names       ping        remove      server      time        version   
+2019-12-08 04:24:09		  cap         devoice     ison        lusers      nick        pong        restart     service     topic       voice     
+2019-12-08 04:24:09		  connect     die         join        map         notice      query       sajoin      servlist    trace       wallchops 
+2019-12-08 04:24:09		[fifo]
+2019-12-08 04:24:09		  fifo
+2019-12-08 04:24:09		[logger]
+2019-12-08 04:24:09		  logger
+2019-12-08 04:24:09		[lua]
+2019-12-08 04:24:09		  lua
+2019-12-08 04:24:09		[fset]
+2019-12-08 04:24:09		  fset
+2019-12-08 04:24:09		[alias]
+2019-12-08 04:24:09		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2019-12-08 04:24:09		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2019-12-08 04:24:09		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2019-12-08 04:24:09		[trigger]
+2019-12-08 04:24:09		  trigger
+2019-12-08 04:24:09		[tcl]
+2019-12-08 04:24:09		  tcl
+2019-12-08 04:24:09		[exec]
+2019-12-08 04:24:09		  exec
+2019-12-08 04:24:18	=!=	No help available, "|less" is not a command or an option
+2019-12-08 04:24:47	=!=	Too few arguments for command "/query" (help on command: /help query)
+2019-12-08 04:28:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2019-12-08 04:28:21		[core]
+2019-12-08 04:28:21		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2019-12-08 04:28:21		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2019-12-08 04:28:21		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2019-12-08 04:28:21		[python]
+2019-12-08 04:28:21		  python
+2019-12-08 04:28:21		[perl]
+2019-12-08 04:28:21		  perl
+2019-12-08 04:28:21		[relay]
+2019-12-08 04:28:21		  relay
+2019-12-08 04:28:21		[spell]
+2019-12-08 04:28:21		  spell
+2019-12-08 04:28:21		[ruby]
+2019-12-08 04:28:21		  ruby
+2019-12-08 04:28:21		[script]
+2019-12-08 04:28:21		  script
+2019-12-08 04:28:21		[buflist]
+2019-12-08 04:28:21		  buflist
+2019-12-08 04:28:21		[xfer]
+2019-12-08 04:28:21		  me  xfer
+2019-12-08 04:28:21		[charset]
+2019-12-08 04:28:21		  charset
+2019-12-08 04:28:21		[irc]
+2019-12-08 04:28:21		  admin       ctcp        disconnect  kick        me          notify      quiet       samode      squery      unban       wallops   
+2019-12-08 04:28:21		  allchan     cycle       halfop      kickban     mode        op          quote       sanick      squit       unquiet     who       
+2019-12-08 04:28:21		  allpv       dcc         ignore      kill        motd        oper        reconnect   sapart      stats       userhost    whois     
+2019-12-08 04:28:21		  allserv     dehalfop    info        links       msg         part        rehash      saquit      summon      users       whowas    
+2019-12-08 04:28:21		  ban         deop        invite      list        names       ping        remove      server      time        version   
+2019-12-08 04:28:21		  cap         devoice     ison        lusers      nick        pong        restart     service     topic       voice     
+2019-12-08 04:28:21		  connect     die         join        map         notice      query       sajoin      servlist    trace       wallchops 
+2019-12-08 04:28:21		[fifo]
+2019-12-08 04:28:21		  fifo
+2019-12-08 04:28:21		[logger]
+2019-12-08 04:28:21		  logger
+2019-12-08 04:28:21		[lua]
+2019-12-08 04:28:21		  lua
+2019-12-08 04:28:21		[fset]
+2019-12-08 04:28:21		  fset
+2019-12-08 04:28:21		[alias]
+2019-12-08 04:28:21		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2019-12-08 04:28:21		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2019-12-08 04:28:21		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2019-12-08 04:28:21		[trigger]
+2019-12-08 04:28:21		  trigger
+2019-12-08 04:28:21		[tcl]
+2019-12-08 04:28:21		  tcl
+2019-12-08 04:28:21		[exec]
+2019-12-08 04:28:21		  exec
+2019-12-08 04:28:32		[irc]  /server  list|listfull [<name>]
+2019-12-08 04:28:32		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 04:28:32		                copy|rename <name> <new_name>
+2019-12-08 04:28:32		                reorder <name> [<name>...]
+2019-12-08 04:28:32		                open <name>|-all [<name>...]
+2019-12-08 04:28:32		                del|keep <name>
+2019-12-08 04:28:32		                deloutq|jump|raw
+2019-12-08 04:28:32		list, add or remove IRC servers
+2019-12-08 04:28:32		    list: list servers (without argument, this list is displayed)
+2019-12-08 04:28:32		listfull: list servers with detailed info for each server
+2019-12-08 04:28:32		     add: add a new server
+2019-12-08 04:28:32		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 04:28:32		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 04:28:32		   -temp: add a temporary server (not saved)
+2019-12-08 04:28:32		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 04:28:32		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 04:28:32		    copy: duplicate a server
+2019-12-08 04:28:32		  rename: rename a server
+2019-12-08 04:28:32		 reorder: reorder list of servers
+2019-12-08 04:28:32		    open: open the server buffer without connecting
+2019-12-08 04:28:32		    keep: keep server in config file (for temporary servers only)
+2019-12-08 04:28:32		     del: delete a server
+2019-12-08 04:28:32		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 04:28:32		    jump: jump to server buffer
+2019-12-08 04:28:32		     raw: open buffer with raw IRC data
+2019-12-08 04:28:32		Examples:
+2019-12-08 04:28:32		  /server listfull
+2019-12-08 04:28:32		  /server add freenode chat.freenode.net
+2019-12-08 04:28:32		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 04:28:32		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 04:28:32		  /server copy freenode freenode-test
+2019-12-08 04:28:32		  /server rename freenode-test freenode2
+2019-12-08 04:28:32		  /server reorder freenode2 freenode
+2019-12-08 04:28:32		  /server del freenode
+2019-12-08 04:28:32		  /server deloutq
+2019-12-08 04:28:39		No server
+2019-12-08 04:28:45	=!=	irc: command "list" must be executed on irc buffer (server, channel or private)
+2019-12-08 04:28:51		No server
+2019-12-08 04:29:12		irc: server freenode added
+2019-12-08 04:29:37	=!=	No help available, "connec" is not a command or an option
+2019-12-08 04:29:41		[irc]  /connect  [<server> [<server>...]] [-<option>[=<value>]] [-no<option>] [-nojoin] [-switch]
+2019-12-08 04:29:41		                 -all|-auto|-open [-nojoin] [-switch]
+2019-12-08 04:29:41		connect to IRC server(s)
+2019-12-08 04:29:41		    server: server name, which can be:
+2019-12-08 04:29:41		            - internal server name (added by /server add, recommended usage)
+2019-12-08 04:29:41		            - hostname/port or IP/port, port is 6667 by default
+2019-12-08 04:29:41		            - URL with format: irc[6][s]://[nickname[:password]@]irc.example.org[:port][/#channel1][,#channel2[...]]
+2019-12-08 04:29:41		            Note: for an address/IP/URL, a temporary server is added (NOT SAVED), see /help irc.look.temporary_servers
+2019-12-08 04:29:41		    option: set option for server (for boolean option, value can be omitted)
+2019-12-08 04:29:41		  nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 04:29:41		      -all: connect to all servers defined in configuration
+2019-12-08 04:29:41		     -auto: connect to servers with autoconnect enabled
+2019-12-08 04:29:41		     -open: connect to all opened servers that are not currently connected
+2019-12-08 04:29:41		   -nojoin: do not join any channel (even if autojoin is enabled on server)
+2019-12-08 04:29:41		   -switch: switch to next server address
+2019-12-08 04:29:41		To disconnect from a server or stop any connection attempt, use command /disconnect.
+2019-12-08 04:29:41		Examples:
+2019-12-08 04:29:41		  /connect freenode
+2019-12-08 04:29:41		  /connect irc.oftc.net/6667
+2019-12-08 04:29:41		  /connect irc6.oftc.net/6667 -ipv6
+2019-12-08 04:29:41		  /connect irc6.oftc.net/6697 -ipv6 -ssl
+2019-12-08 04:29:41		  /connect my.server.org/6697 -ssl -password=test
+2019-12-08 04:29:41		  /connect irc://nick@irc.oftc.net/#channel
+2019-12-08 04:29:41		  /connect -switch
+2019-12-08 04:31:27		[irc]  /server  list|listfull [<name>]
+2019-12-08 04:31:27		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 04:31:27		                copy|rename <name> <new_name>
+2019-12-08 04:31:27		                reorder <name> [<name>...]
+2019-12-08 04:31:27		                open <name>|-all [<name>...]
+2019-12-08 04:31:27		                del|keep <name>
+2019-12-08 04:31:27		                deloutq|jump|raw
+2019-12-08 04:31:27		list, add or remove IRC servers
+2019-12-08 04:31:27		    list: list servers (without argument, this list is displayed)
+2019-12-08 04:31:27		listfull: list servers with detailed info for each server
+2019-12-08 04:31:27		     add: add a new server
+2019-12-08 04:31:27		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 04:31:27		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 04:31:27		   -temp: add a temporary server (not saved)
+2019-12-08 04:31:27		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 04:31:27		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 04:31:27		    copy: duplicate a server
+2019-12-08 04:31:27		  rename: rename a server
+2019-12-08 04:31:27		 reorder: reorder list of servers
+2019-12-08 04:31:27		    open: open the server buffer without connecting
+2019-12-08 04:31:27		    keep: keep server in config file (for temporary servers only)
+2019-12-08 04:31:27		     del: delete a server
+2019-12-08 04:31:27		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 04:31:27		    jump: jump to server buffer
+2019-12-08 04:31:27		     raw: open buffer with raw IRC data
+2019-12-08 04:31:27		Examples:
+2019-12-08 04:31:27		  /server listfull
+2019-12-08 04:31:27		  /server add freenode chat.freenode.net
+2019-12-08 04:31:27		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 04:31:27		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 04:31:27		  /server copy freenode freenode-test
+2019-12-08 04:31:27		  /server rename freenode-test freenode2
+2019-12-08 04:31:27		  /server reorder freenode2 freenode
+2019-12-08 04:31:27		  /server del freenode
+2019-12-08 04:31:27		  /server deloutq
+2019-12-08 04:31:33		All servers:
+2019-12-08 04:31:33		Server: freenode [connected], nick: duy1
+2019-12-08 04:31:33		  addresses. . . . . . : 'chat.freenode.net'
+2019-12-08 04:31:33		  proxy. . . . . . . . :   ('')
+2019-12-08 04:31:33		  ipv6 . . . . . . . . :   (on)
+2019-12-08 04:31:33		  ssl. . . . . . . . . :   (off)
+2019-12-08 04:31:33		  ssl_cert . . . . . . :   ('')
+2019-12-08 04:31:33		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2019-12-08 04:31:33		  ssl_dhkey_size . . . :   (2048)
+2019-12-08 04:31:33		  ssl_fingerprint. . . :   ('')
+2019-12-08 04:31:33		  ssl_verify . . . . . :   (on)
+2019-12-08 04:31:33		  password . . . . . . :   (hidden)
+2019-12-08 04:31:33		  capabilities . . . . :   ('')
+2019-12-08 04:31:33		  sasl_mechanism . . . :   ('plain')
+2019-12-08 04:31:33		  sasl_username. . . . :   ('')
+2019-12-08 04:31:33		  sasl_password. . . . :   (hidden)
+2019-12-08 04:31:33		  sasl_key. .  . . . . :   ('')
+2019-12-08 04:31:33		  sasl_timeout . . . . :   (15 seconds)
+2019-12-08 04:31:33		  sasl_fail. . . . . . :   ('continue')
+2019-12-08 04:31:33		  autoconnect. . . . . :   (off)
+2019-12-08 04:31:33		  autoreconnect. . . . :   (on)
+2019-12-08 04:31:33		  autoreconnect_delay. :   (10 seconds)
+2019-12-08 04:31:33		  nicks. . . . . . . . :   ('duy,duy1,duy2,duy3,duy4')
+2019-12-08 04:31:33		  nicks_alternate. . . :   (on)
+2019-12-08 04:31:33		  username . . . . . . :   ('duy')
+2019-12-08 04:31:33		  realname . . . . . . :   ('')
+2019-12-08 04:31:33		  local_hostname . . . :   ('')
+2019-12-08 04:31:33		  usermode . . . . . . :   ('')
+2019-12-08 04:31:33		  command. . . . . . . :   ('')
+2019-12-08 04:31:33		  command_delay. . . . :   (0 seconds)
+2019-12-08 04:31:33		  autojoin . . . . . . :   ('')
+2019-12-08 04:31:33		  autorejoin . . . . . :   (off)
+2019-12-08 04:31:33		  autorejoin_delay . . :   (30 seconds)
+2019-12-08 04:31:33		  connection_timeout . :   (60 seconds)
+2019-12-08 04:31:33		  anti_flood_prio_high :   (2 seconds)
+2019-12-08 04:31:33		  anti_flood_prio_low. :   (2 seconds)
+2019-12-08 04:31:33		  away_check . . . . . :   (0 minutes)
+2019-12-08 04:31:33		  away_check_max_nicks :   (25)
+2019-12-08 04:31:33		  msg_kick . . . . . . :   ('')
+2019-12-08 04:31:33		  msg_part . . . . . . :   ('WeeChat ${info:version}')
+2019-12-08 04:31:33		  msg_quit . . . . . . :   ('WeeChat ${info:version}')
+2019-12-08 04:31:33		  notify . . . . . . . :   ('')
+2019-12-08 04:31:33		  split_msg_max_length :   (512)
+2019-12-08 04:32:34	=!=	irc: already connected to server "freenode"!
+2019-12-08 04:47:42		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2019-12-08 04:48:54	=!=	No help available, "shortcut" is not a command or an option
+2019-12-08 04:59:01		irc: server DALnet added
+2019-12-08 04:59:17	=!=	irc: unable to add temporary server "/DALnet" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 04:59:17	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 04:59:28		irc: server DALnet has been deleted
+2019-12-08 04:59:32		All servers:
+2019-12-08 04:59:32		 * freenode [connected], nick: duy1, 5 channels, 0 pv
+2019-12-08 05:04:57		irc: server kampungchat added
+2019-12-08 05:07:36		irc: server kampungchat has been deleted
+2019-12-08 05:08:35		python: loading script "/home/duy/.weechat/python/autoload/autojoin.py"
+2019-12-08 05:08:35		python: registered script "autojoin", version 0.3.1 (Configure autojoin for all servers according to currently joined channels)
+2019-12-08 05:08:49		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl"  (default if null: "")
+2019-12-08 05:09:10		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 05:09:16		Options saved to sec.conf
+2019-12-08 05:09:16		Options saved to weechat.conf
+2019-12-08 05:09:16		Options saved to plugins.conf
+2019-12-08 05:09:16		Options saved to charset.conf
+2019-12-08 05:09:16		Options saved to logger.conf
+2019-12-08 05:09:16		Options saved to exec.conf
+2019-12-08 05:09:16		Options saved to trigger.conf
+2019-12-08 05:09:16		Options saved to spell.conf
+2019-12-08 05:09:16		Options saved to alias.conf
+2019-12-08 05:09:16		Options saved to buflist.conf
+2019-12-08 05:09:16		Options saved to fifo.conf
+2019-12-08 05:09:16		Options saved to xfer.conf
+2019-12-08 05:09:16		Options saved to irc.conf
+2019-12-08 05:09:16		Options saved to relay.conf
+2019-12-08 05:09:16		Options saved to python.conf
+2019-12-08 05:09:16		Options saved to perl.conf
+2019-12-08 05:09:16		Options saved to ruby.conf
+2019-12-08 05:09:16		Options saved to lua.conf
+2019-12-08 05:09:16		Options saved to tcl.conf
+2019-12-08 05:09:16		Options saved to script.conf
+2019-12-08 05:09:16		Options saved to fset.conf
+2019-12-08 05:09:27		python scripts loaded: autojoin
+2019-12-08 05:09:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2019-12-08 05:09:35		python: loading script "/home/duy/.weechat/python/autoload/autojoin.py"
+2019-12-08 05:09:35	=!=	python: unable to register script "autojoin" (another script already exists with this name)
+2019-12-08 05:09:35	=!=	python: unable to call function "config_get_plugin", script is not initialized (script: -)
+2019-12-08 05:09:35	=!=	python: function "register" not found (or failed) in file "/home/duy/.weechat/python/autoload/autojoin.py"
+2019-12-08 05:10:21		python: loading script "/home/duy/.weechat/python/autoload/autojoin.py"
+2019-12-08 05:10:21	=!=	python: unable to register script "autojoin" (another script already exists with this name)
+2019-12-08 05:10:21	=!=	python: unable to call function "config_get_plugin", script is not initialized (script: -)
+2019-12-08 05:10:21	=!=	python: function "register" not found (or failed) in file "/home/duy/.weechat/python/autoload/autojoin.py"
+2019-12-08 05:17:53		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl,#satnogs,#opensusu-cn,#linuxac"  (default if null: "")
+2019-12-08 05:18:05		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 05:18:08		Options saved to sec.conf
+2019-12-08 05:18:08		Options saved to weechat.conf
+2019-12-08 05:18:08		Options saved to plugins.conf
+2019-12-08 05:18:08		Options saved to charset.conf
+2019-12-08 05:18:08		Options saved to logger.conf
+2019-12-08 05:18:08		Options saved to exec.conf
+2019-12-08 05:18:08		Options saved to trigger.conf
+2019-12-08 05:18:08		Options saved to spell.conf
+2019-12-08 05:18:08		Options saved to alias.conf
+2019-12-08 05:18:08		Options saved to buflist.conf
+2019-12-08 05:18:08		Options saved to fifo.conf
+2019-12-08 05:18:08		Options saved to xfer.conf
+2019-12-08 05:18:08		Options saved to irc.conf
+2019-12-08 05:18:08		Options saved to relay.conf
+2019-12-08 05:18:08		Options saved to python.conf
+2019-12-08 05:18:08		Options saved to perl.conf
+2019-12-08 05:18:08		Options saved to ruby.conf
+2019-12-08 05:18:08		Options saved to lua.conf
+2019-12-08 05:18:08		Options saved to tcl.conf
+2019-12-08 05:18:08		Options saved to script.conf
+2019-12-08 05:18:08		Options saved to fset.conf
+2019-12-08 05:18:14		python scripts loaded: autojoin
+2019-12-08 05:18:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2019-12-08 05:26:36		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl,#satnogs,#opensusu-cn,#linuxac,##unavailable"  (default if null: "")
+2019-12-08 05:26:44		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 05:26:45		Options saved to sec.conf
+2019-12-08 05:26:45		Options saved to weechat.conf
+2019-12-08 05:26:45		Options saved to plugins.conf
+2019-12-08 05:26:45		Options saved to charset.conf
+2019-12-08 05:26:45		Options saved to logger.conf
+2019-12-08 05:26:45		Options saved to exec.conf
+2019-12-08 05:26:45		Options saved to trigger.conf
+2019-12-08 05:26:45		Options saved to spell.conf
+2019-12-08 05:26:45		Options saved to alias.conf
+2019-12-08 05:26:45		Options saved to buflist.conf
+2019-12-08 05:26:45		Options saved to fifo.conf
+2019-12-08 05:26:45		Options saved to xfer.conf
+2019-12-08 05:26:45		Options saved to irc.conf
+2019-12-08 05:26:45		Options saved to relay.conf
+2019-12-08 05:26:45		Options saved to python.conf
+2019-12-08 05:26:45		Options saved to perl.conf
+2019-12-08 05:26:45		Options saved to ruby.conf
+2019-12-08 05:26:45		Options saved to lua.conf
+2019-12-08 05:26:45		Options saved to tcl.conf
+2019-12-08 05:26:45		Options saved to script.conf
+2019-12-08 05:26:45		Options saved to fset.conf
+2019-12-08 05:34:52		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl,#opensusu-cn,#linuxac,##unavailable,#reddit"  (default if null: "")
+2019-12-08 05:35:03		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 05:35:08		Options saved to sec.conf
+2019-12-08 05:35:08		Options saved to weechat.conf
+2019-12-08 05:35:08		Options saved to plugins.conf
+2019-12-08 05:35:08		Options saved to charset.conf
+2019-12-08 05:35:08		Options saved to logger.conf
+2019-12-08 05:35:08		Options saved to exec.conf
+2019-12-08 05:35:08		Options saved to trigger.conf
+2019-12-08 05:35:08		Options saved to spell.conf
+2019-12-08 05:35:08		Options saved to alias.conf
+2019-12-08 05:35:08		Options saved to buflist.conf
+2019-12-08 05:35:08		Options saved to fifo.conf
+2019-12-08 05:35:08		Options saved to xfer.conf
+2019-12-08 05:35:08		Options saved to irc.conf
+2019-12-08 05:35:08		Options saved to relay.conf
+2019-12-08 05:35:08		Options saved to python.conf
+2019-12-08 05:35:08		Options saved to perl.conf
+2019-12-08 05:35:08		Options saved to ruby.conf
+2019-12-08 05:35:08		Options saved to lua.conf
+2019-12-08 05:35:08		Options saved to tcl.conf
+2019-12-08 05:35:08		Options saved to script.conf
+2019-12-08 05:35:08		Options saved to fset.conf
+2019-12-08 05:58:31		python scripts loaded: autojoin
+2019-12-08 05:58:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 05:59:09		[core]
+2019-12-08 05:59:09		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2019-12-08 05:59:09		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2019-12-08 05:59:09		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2019-12-08 05:59:09		[relay]
+2019-12-08 05:59:09		  relay
+2019-12-08 05:59:09		[xfer]
+2019-12-08 05:59:09		  me  xfer
+2019-12-08 05:59:09		[exec]
+2019-12-08 05:59:09		  exec
+2019-12-08 05:59:09		[fifo]
+2019-12-08 05:59:09		  fifo
+2019-12-08 05:59:09		[logger]
+2019-12-08 05:59:09		  logger
+2019-12-08 05:59:09		[buflist]
+2019-12-08 05:59:09		  buflist
+2019-12-08 05:59:09		[irc]
+2019-12-08 05:59:09		  admin       dehalfop    join        motd        pong        sanick      time        wallops   
+2019-12-08 05:59:09		  allchan     deop        kick        msg         query       sapart      topic       who       
+2019-12-08 05:59:09		  allpv       devoice     kickban     names       quiet       saquit      trace       whois     
+2019-12-08 05:59:09		  allserv     die         kill        nick        quote       server      unban       whowas    
+2019-12-08 05:59:09		  ban         disconnect  links       notice      reconnect   service     unquiet   
+2019-12-08 05:59:09		  cap         halfop      list        notify      rehash      servlist    userhost  
+2019-12-08 05:59:09		  connect     ignore      lusers      op          remove      squery      users     
+2019-12-08 05:59:09		  ctcp        info        map         oper        restart     squit       version   
+2019-12-08 05:59:09		  cycle       invite      me          part        sajoin      stats       voice     
+2019-12-08 05:59:09		  dcc         ison        mode        ping        samode      summon      wallchops 
+2019-12-08 05:59:09		[alias]
+2019-12-08 05:59:09		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2019-12-08 05:59:09		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2019-12-08 05:59:09		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2019-12-08 05:59:09		[ruby]
+2019-12-08 05:59:09		  ruby
+2019-12-08 05:59:09		[charset]
+2019-12-08 05:59:09		  charset
+2019-12-08 05:59:09		[script]
+2019-12-08 05:59:09		  script
+2019-12-08 05:59:09		[python]
+2019-12-08 05:59:09		  autojoin  python
+2019-12-08 05:59:09		[perl]
+2019-12-08 05:59:09		  perl
+2019-12-08 05:59:09		[fset]
+2019-12-08 05:59:09		  fset
+2019-12-08 05:59:09		[trigger]
+2019-12-08 05:59:09		  trigger
+2019-12-08 05:59:09		[lua]
+2019-12-08 05:59:09		  lua
+2019-12-08 05:59:15	=!=	No help available, "login" is not a command or an option
+2019-12-08 05:59:54		[irc]  /server  list|listfull [<name>]
+2019-12-08 05:59:54		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 05:59:54		                copy|rename <name> <new_name>
+2019-12-08 05:59:54		                reorder <name> [<name>...]
+2019-12-08 05:59:54		                open <name>|-all [<name>...]
+2019-12-08 05:59:54		                del|keep <name>
+2019-12-08 05:59:54		                deloutq|jump|raw
+2019-12-08 05:59:54		list, add or remove IRC servers
+2019-12-08 05:59:54		    list: list servers (without argument, this list is displayed)
+2019-12-08 05:59:54		listfull: list servers with detailed info for each server
+2019-12-08 05:59:54		     add: add a new server
+2019-12-08 05:59:54		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 05:59:54		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 05:59:54		   -temp: add a temporary server (not saved)
+2019-12-08 05:59:54		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 05:59:54		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 05:59:54		    copy: duplicate a server
+2019-12-08 05:59:54		  rename: rename a server
+2019-12-08 05:59:54		 reorder: reorder list of servers
+2019-12-08 05:59:54		    open: open the server buffer without connecting
+2019-12-08 05:59:54		    keep: keep server in config file (for temporary servers only)
+2019-12-08 05:59:54		     del: delete a server
+2019-12-08 05:59:54		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 05:59:54		    jump: jump to server buffer
+2019-12-08 05:59:54		     raw: open buffer with raw IRC data
+2019-12-08 05:59:54		Examples:
+2019-12-08 05:59:54		  /server listfull
+2019-12-08 05:59:54		  /server add freenode chat.freenode.net
+2019-12-08 05:59:54		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 05:59:54		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 05:59:54		  /server copy freenode freenode-test
+2019-12-08 05:59:54		  /server rename freenode-test freenode2
+2019-12-08 05:59:54		  /server reorder freenode2 freenode
+2019-12-08 05:59:54		  /server del freenode
+2019-12-08 05:59:54		  /server deloutq
+2019-12-08 06:00:16	=!=	irc: server "freenode" already exists, can't add it!
+2019-12-08 06:02:22		python: scripts unloaded
+2019-12-08 06:02:25		python scripts loaded: autojoin
+2019-12-08 06:02:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:02:43	=!=	irc: unable to add temporary server "laduyhaha:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:02:43	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:05:34		python: scripts unloaded
+2019-12-08 06:05:37		python scripts loaded: autojoin
+2019-12-08 06:05:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "chat.freenode.net" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "6667" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:03	=!=	irc: unable to add temporary server "hotboyarsenal@gmail.com:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:34	=!=	irc: unable to add temporary server "6667" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:34	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:06:34	=!=	irc: unable to add temporary server "laduyhaha:Fnguy3nduynnd020895" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 06:06:34	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 06:13:07		[irc]  /msg  [-server <server>] <target>[,<target>...] <text>
+2019-12-08 06:13:07		send message to a nick or channel
+2019-12-08 06:13:07		server: send to this server (internal name)
+2019-12-08 06:13:07		target: nick or channel (may be mask, '*' = current channel)
+2019-12-08 06:13:07		  text: text to send
+2019-12-08 06:13:51	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2019-12-08 06:14:03	=!=	Too few arguments for command "/msg" (help on command: /help msg)
+2019-12-08 06:14:09	=!=	Error: unknown command "/clear" (type /help for help)
+2019-12-08 06:14:17		[irc]  /msg  [-server <server>] <target>[,<target>...] <text>
+2019-12-08 06:14:17		send message to a nick or channel
+2019-12-08 06:14:17		server: send to this server (internal name)
+2019-12-08 06:14:17		target: nick or channel (may be mask, '*' = current channel)
+2019-12-08 06:14:17		  text: text to send
+2019-12-08 06:14:30	=!=	No help available, "login" is not a command or an option
+2019-12-08 06:16:13		[irc]  /server  list|listfull [<name>]
+2019-12-08 06:16:13		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2019-12-08 06:16:13		                copy|rename <name> <new_name>
+2019-12-08 06:16:13		                reorder <name> [<name>...]
+2019-12-08 06:16:13		                open <name>|-all [<name>...]
+2019-12-08 06:16:13		                del|keep <name>
+2019-12-08 06:16:13		                deloutq|jump|raw
+2019-12-08 06:16:13		list, add or remove IRC servers
+2019-12-08 06:16:13		    list: list servers (without argument, this list is displayed)
+2019-12-08 06:16:13		listfull: list servers with detailed info for each server
+2019-12-08 06:16:13		     add: add a new server
+2019-12-08 06:16:13		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2019-12-08 06:16:13		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2019-12-08 06:16:13		   -temp: add a temporary server (not saved)
+2019-12-08 06:16:13		  option: set option for server (for boolean option, value can be omitted)
+2019-12-08 06:16:13		nooption: set boolean option to 'off' (for example: -nossl)
+2019-12-08 06:16:13		    copy: duplicate a server
+2019-12-08 06:16:13		  rename: rename a server
+2019-12-08 06:16:13		 reorder: reorder list of servers
+2019-12-08 06:16:13		    open: open the server buffer without connecting
+2019-12-08 06:16:13		    keep: keep server in config file (for temporary servers only)
+2019-12-08 06:16:13		     del: delete a server
+2019-12-08 06:16:13		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2019-12-08 06:16:13		    jump: jump to server buffer
+2019-12-08 06:16:13		     raw: open buffer with raw IRC data
+2019-12-08 06:16:13		Examples:
+2019-12-08 06:16:13		  /server listfull
+2019-12-08 06:16:13		  /server add freenode chat.freenode.net
+2019-12-08 06:16:13		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2019-12-08 06:16:13		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2019-12-08 06:16:13		  /server copy freenode freenode-test
+2019-12-08 06:16:13		  /server rename freenode-test freenode2
+2019-12-08 06:16:13		  /server reorder freenode2 freenode
+2019-12-08 06:16:13		  /server del freenode
+2019-12-08 06:16:13		  /server deloutq
+2019-12-08 06:21:16		python: scripts unloaded
+2019-12-08 06:21:18		python scripts loaded: autojoin
+2019-12-08 06:21:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:23:46		[core]  /set  [<option> [<value>]]
+2019-12-08 06:23:46		              diff [<option> [<option>...]]
+2019-12-08 06:23:46		              env [<variable> [<value>]]
+2019-12-08 06:23:46		set config options and environment variables
+2019-12-08 06:23:46		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2019-12-08 06:23:46		 value: new value for option, according to type:
+2019-12-08 06:23:46		          boolean: on, off or toggle
+2019-12-08 06:23:46		          integer: number, ++number or --number
+2019-12-08 06:23:46		           string: any string ("" for empty string)
+2019-12-08 06:23:46		            color: color name, ++number or --number
+2019-12-08 06:23:46		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2019-12-08 06:23:46		  diff: display only changed options
+2019-12-08 06:23:46		   env: display or set an environment variable (use value "" to unset a variable)
+2019-12-08 06:23:46		Examples:
+2019-12-08 06:23:46		  display options about highlight:
+2019-12-08 06:23:46		    /set *highlight*
+2019-12-08 06:23:46		  add a word to highlight:
+2019-12-08 06:23:46		    /set weechat.look.highlight "word"
+2019-12-08 06:23:46		  display changed options:
+2019-12-08 06:23:46		    /set diff
+2019-12-08 06:23:46		  display changed options in irc plugin:
+2019-12-08 06:23:46		    /set diff irc.*
+2019-12-08 06:23:46		  display value of environment variable LANG:
+2019-12-08 06:23:46		    /set env LANG
+2019-12-08 06:23:46		  set environment variable LANG and use it:
+2019-12-08 06:23:46		    /set env LANG fr_FR.UTF-8
+2019-12-08 06:23:46		    /upgrade
+2019-12-08 06:23:46		  unset environment variable ABC:
+2019-12-08 06:23:46		    /set env ABC ""
+2019-12-08 06:25:02		Option changed: irc.server.freenode.autoconnect = on  (default if null: off)
+2019-12-08 06:25:09		python: scripts unloaded
+2019-12-08 06:25:11		python scripts loaded: autojoin
+2019-12-08 06:25:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:26:10		Option changed: irc.server.freenode.sasl_username = "laduyhaha"  (default if null: "")
+2019-12-08 06:26:39		Option changed: irc.server.freenode.sasl_password = "Fnguy3nduynnd020895"  (default if null: "")
+2019-12-08 06:27:40		python: scripts unloaded
+2019-12-08 06:27:42		python scripts loaded: autojoin
+2019-12-08 06:27:42		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:28:05		[core]  /set  [<option> [<value>]]
+2019-12-08 06:28:05		              diff [<option> [<option>...]]
+2019-12-08 06:28:05		              env [<variable> [<value>]]
+2019-12-08 06:28:05		set config options and environment variables
+2019-12-08 06:28:05		option: name of an option (wildcard "*" is allowed to list options, if no value is specified)
+2019-12-08 06:28:05		 value: new value for option, according to type:
+2019-12-08 06:28:05		          boolean: on, off or toggle
+2019-12-08 06:28:05		          integer: number, ++number or --number
+2019-12-08 06:28:05		           string: any string ("" for empty string)
+2019-12-08 06:28:05		            color: color name, ++number or --number
+2019-12-08 06:28:05		        Note: for all types, you can use null to remove option value (undefined value). This works only for some special plugin variables.
+2019-12-08 06:28:05		  diff: display only changed options
+2019-12-08 06:28:05		   env: display or set an environment variable (use value "" to unset a variable)
+2019-12-08 06:28:05		Examples:
+2019-12-08 06:28:05		  display options about highlight:
+2019-12-08 06:28:05		    /set *highlight*
+2019-12-08 06:28:05		  add a word to highlight:
+2019-12-08 06:28:05		    /set weechat.look.highlight "word"
+2019-12-08 06:28:05		  display changed options:
+2019-12-08 06:28:05		    /set diff
+2019-12-08 06:28:05		  display changed options in irc plugin:
+2019-12-08 06:28:05		    /set diff irc.*
+2019-12-08 06:28:05		  display value of environment variable LANG:
+2019-12-08 06:28:05		    /set env LANG
+2019-12-08 06:28:05		  set environment variable LANG and use it:
+2019-12-08 06:28:05		    /set env LANG fr_FR.UTF-8
+2019-12-08 06:28:05		    /upgrade
+2019-12-08 06:28:05		  unset environment variable ABC:
+2019-12-08 06:28:05		    /set env ABC ""
+2019-12-08 06:28:30	=!=	Error: unknown command "/whoami" (type /help for help)
+2019-12-08 06:28:41	=!=	Error: unknown command "/whoami" (type /help for help)
+2019-12-08 06:28:44	=!=	No help available, "woh" is not a command or an option
+2019-12-08 06:28:48		[irc]  /who  [<mask> [o]]
+2019-12-08 06:28:48		generate a query which returns a list of information
+2019-12-08 06:28:48		mask: only information which match this mask
+2019-12-08 06:28:48		   o: only operators are returned according to the mask supplied
+2019-12-08 06:30:09		python: scripts unloaded
+2019-12-08 06:30:12		python scripts loaded: autojoin
+2019-12-08 06:30:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:30:19	=!=	Too few arguments for command "/nick" (help on command: /help nick)
+2019-12-08 06:31:24		[core]  /history  clear
+2019-12-08 06:31:24		                  <value>
+2019-12-08 06:31:24		show buffer command history
+2019-12-08 06:31:24		clear: clear history
+2019-12-08 06:31:24		value: number of history entries to show
+2019-12-08 06:36:41		Option changed: irc.server.freenode.autojoin = "#vnluser,##overflow,##rpicschat,#guitar,#archlinux.org.pl,#opensusu-cn,#linuxac,##unavailable,#reddit,##linux,#python"  (default if null: "")
+2019-12-08 06:36:46		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 06:36:48		Options saved to sec.conf
+2019-12-08 06:36:48		Options saved to weechat.conf
+2019-12-08 06:36:48		Options saved to plugins.conf
+2019-12-08 06:36:48		Options saved to charset.conf
+2019-12-08 06:36:48		Options saved to logger.conf
+2019-12-08 06:36:48		Options saved to exec.conf
+2019-12-08 06:36:48		Options saved to trigger.conf
+2019-12-08 06:36:48		Options saved to alias.conf
+2019-12-08 06:36:48		Options saved to buflist.conf
+2019-12-08 06:36:48		Options saved to fifo.conf
+2019-12-08 06:36:48		Options saved to xfer.conf
+2019-12-08 06:36:48		Options saved to irc.conf
+2019-12-08 06:36:48		Options saved to relay.conf
+2019-12-08 06:36:48		Options saved to ruby.conf
+2019-12-08 06:36:48		Options saved to python.conf
+2019-12-08 06:36:48		Options saved to perl.conf
+2019-12-08 06:36:48		Options saved to lua.conf
+2019-12-08 06:36:48		Options saved to script.conf
+2019-12-08 06:36:48		Options saved to fset.conf
+2019-12-08 06:36:53		python: scripts unloaded
+2019-12-08 06:36:56		python scripts loaded: autojoin
+2019-12-08 06:36:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:43:35		python: scripts unloaded
+2019-12-08 06:43:59		python scripts loaded: autojoin
+2019-12-08 06:43:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:54:23		Option changed: irc.server.freenode.autojoin = "#vnluser,#opensusu-cn,#reddit,##linux,#python,#archlinux,#ubuntu,#kali-linux,##C,#fsociety"  (default if null: "")
+2019-12-08 06:54:27		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 06:54:30		Options saved to sec.conf
+2019-12-08 06:54:30		Options saved to weechat.conf
+2019-12-08 06:54:30		Options saved to plugins.conf
+2019-12-08 06:54:30		Options saved to charset.conf
+2019-12-08 06:54:30		Options saved to logger.conf
+2019-12-08 06:54:30		Options saved to exec.conf
+2019-12-08 06:54:30		Options saved to trigger.conf
+2019-12-08 06:54:30		Options saved to alias.conf
+2019-12-08 06:54:30		Options saved to buflist.conf
+2019-12-08 06:54:30		Options saved to fifo.conf
+2019-12-08 06:54:30		Options saved to xfer.conf
+2019-12-08 06:54:30		Options saved to irc.conf
+2019-12-08 06:54:30		Options saved to relay.conf
+2019-12-08 06:54:30		Options saved to ruby.conf
+2019-12-08 06:54:30		Options saved to python.conf
+2019-12-08 06:54:30		Options saved to perl.conf
+2019-12-08 06:54:30		Options saved to lua.conf
+2019-12-08 06:54:30		Options saved to script.conf
+2019-12-08 06:54:30		Options saved to fset.conf
+2019-12-08 06:54:34		python: scripts unloaded
+2019-12-08 06:54:47		python scripts loaded: autojoin
+2019-12-08 06:54:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 06:59:52	=!=	Too few arguments for command "/ping" (help on command: /help ping)
+2019-12-08 06:59:58	=!=	Too few arguments for command "/ping" (help on command: /help ping)
+2019-12-08 07:00:02		[irc]  /ping  <target1> [<target2>]
+2019-12-08 07:00:02		send a ping to server
+2019-12-08 07:00:02		target1: server
+2019-12-08 07:00:02		target2: forward ping to this server
+2019-12-08 07:00:56		[irc]  /ping  <target1> [<target2>]
+2019-12-08 07:00:56		send a ping to server
+2019-12-08 07:00:56		target1: server
+2019-12-08 07:00:56		target2: forward ping to this server
+2019-12-08 07:08:16		python: scripts unloaded
+2019-12-08 07:08:43		python scripts loaded: autojoin
+2019-12-08 07:08:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 07:08:52	=!=	irc: command "nick" must be executed on irc buffer (server, channel or private)
+2019-12-08 07:09:59	=!=	irc: unable to add temporary server "efnet" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 07:09:59	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 07:09:59	=!=	irc: unable to add temporary server "irc.teksavvy.ca" because the addition of temporary servers with command /connect is currently disabled
+2019-12-08 07:09:59	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2019-12-08 07:10:18	=!=	Error: unknown command "/cler" (type /help for help)
+2019-12-08 07:10:21	=!=	Error: unknown command "/clear" (type /help for help)
+2019-12-08 07:10:47		irc: server efnet added
+2019-12-08 07:11:21		irc: server efnet has been deleted
+2019-12-08 07:16:28		irc: server efnet added
+2019-12-08 07:17:38		irc: server efnet has been deleted
+2019-12-08 07:17:44	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2019-12-08 07:17:59		irc: server efnet added
+2019-12-08 07:18:04		All servers:
+2019-12-08 07:18:04		 * freenode [connected], nick: laduyhaha, 10 channels, 0 pv
+2019-12-08 07:18:04		   efnet
+2019-12-08 07:18:51		python: scripts unloaded
+2019-12-08 07:18:58		python scripts loaded: autojoin
+2019-12-08 07:18:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-08 07:20:22		irc: server efnet has been deleted
+2019-12-08 09:07:23		Option changed: irc.server.freenode.autojoin = "#vnluser,#reddit,##linux,#python,#archlinux,#ubuntu,#kali-linux,##C,#fsociety"  (default if null: "")
+2019-12-08 09:07:27		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-08 09:07:29		Options saved to sec.conf
+2019-12-08 09:07:29		Options saved to weechat.conf
+2019-12-08 09:07:29		Options saved to plugins.conf
+2019-12-08 09:07:29		Options saved to charset.conf
+2019-12-08 09:07:29		Options saved to logger.conf
+2019-12-08 09:07:29		Options saved to exec.conf
+2019-12-08 09:07:29		Options saved to trigger.conf
+2019-12-08 09:07:29		Options saved to alias.conf
+2019-12-08 09:07:29		Options saved to buflist.conf
+2019-12-08 09:07:29		Options saved to fifo.conf
+2019-12-08 09:07:29		Options saved to xfer.conf
+2019-12-08 09:07:29		Options saved to irc.conf
+2019-12-08 09:07:29		Options saved to relay.conf
+2019-12-08 09:07:29		Options saved to ruby.conf
+2019-12-08 09:07:29		Options saved to python.conf
+2019-12-08 09:07:29		Options saved to perl.conf
+2019-12-08 09:07:29		Options saved to lua.conf
+2019-12-08 09:07:29		Options saved to script.conf
+2019-12-08 09:07:29		Options saved to fset.conf
+2019-12-08 20:36:05		python scripts loaded: autojoin
+2019-12-08 20:36:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-09 14:21:51		Option changed: irc.server.freenode.autojoin = "#vnluser,#reddit,##linux,#python,#archlinux,#kali-linux,##C,#fsociety"  (default if null: "")
+2019-12-09 14:21:57		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-09 14:21:59		Options saved to sec.conf
+2019-12-09 14:21:59		Options saved to weechat.conf
+2019-12-09 14:21:59		Options saved to plugins.conf
+2019-12-09 14:21:59		Options saved to charset.conf
+2019-12-09 14:21:59		Options saved to logger.conf
+2019-12-09 14:21:59		Options saved to exec.conf
+2019-12-09 14:21:59		Options saved to trigger.conf
+2019-12-09 14:21:59		Options saved to alias.conf
+2019-12-09 14:21:59		Options saved to buflist.conf
+2019-12-09 14:21:59		Options saved to fifo.conf
+2019-12-09 14:21:59		Options saved to xfer.conf
+2019-12-09 14:21:59		Options saved to irc.conf
+2019-12-09 14:21:59		Options saved to relay.conf
+2019-12-09 14:21:59		Options saved to ruby.conf
+2019-12-09 14:21:59		Options saved to python.conf
+2019-12-09 14:21:59		Options saved to perl.conf
+2019-12-09 14:21:59		Options saved to lua.conf
+2019-12-09 14:21:59		Options saved to script.conf
+2019-12-09 14:21:59		Options saved to fset.conf
+2019-12-09 15:03:41		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-09 15:03:47		Options saved to sec.conf
+2019-12-09 15:03:47		Options saved to weechat.conf
+2019-12-09 15:03:47		Options saved to plugins.conf
+2019-12-09 15:03:47		Options saved to charset.conf
+2019-12-09 15:03:47		Options saved to logger.conf
+2019-12-09 15:03:47		Options saved to exec.conf
+2019-12-09 15:03:47		Options saved to trigger.conf
+2019-12-09 15:03:47		Options saved to alias.conf
+2019-12-09 15:03:47		Options saved to buflist.conf
+2019-12-09 15:03:47		Options saved to fifo.conf
+2019-12-09 15:03:47		Options saved to xfer.conf
+2019-12-09 15:03:47		Options saved to irc.conf
+2019-12-09 15:03:47		Options saved to relay.conf
+2019-12-09 15:03:47		Options saved to ruby.conf
+2019-12-09 15:03:47		Options saved to python.conf
+2019-12-09 15:03:47		Options saved to perl.conf
+2019-12-09 15:03:47		Options saved to lua.conf
+2019-12-09 15:03:47		Options saved to script.conf
+2019-12-09 15:03:47		Options saved to fset.conf
+2019-12-09 21:57:37		python scripts loaded: autojoin
+2019-12-09 21:57:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-09 21:58:42		Option changed: irc.server.freenode.autojoin = "#vnluser,#reddit,##linux,#python,#archlinux,##C"  (default if null: "")
+2019-12-09 21:58:46		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-09 21:58:48		Options saved to sec.conf
+2019-12-09 21:58:48		Options saved to weechat.conf
+2019-12-09 21:58:48		Options saved to plugins.conf
+2019-12-09 21:58:48		Options saved to charset.conf
+2019-12-09 21:58:48		Options saved to logger.conf
+2019-12-09 21:58:48		Options saved to exec.conf
+2019-12-09 21:58:48		Options saved to trigger.conf
+2019-12-09 21:58:48		Options saved to alias.conf
+2019-12-09 21:58:48		Options saved to buflist.conf
+2019-12-09 21:58:48		Options saved to fifo.conf
+2019-12-09 21:58:48		Options saved to xfer.conf
+2019-12-09 21:58:48		Options saved to irc.conf
+2019-12-09 21:58:48		Options saved to relay.conf
+2019-12-09 21:58:48		Options saved to ruby.conf
+2019-12-09 21:58:48		Options saved to python.conf
+2019-12-09 21:58:48		Options saved to perl.conf
+2019-12-09 21:58:48		Options saved to lua.conf
+2019-12-09 21:58:48		Options saved to script.conf
+2019-12-09 21:58:48		Options saved to fset.conf
+2019-12-10 00:32:06		python: scripts unloaded
+2019-12-13 03:38:21		python scripts loaded: autojoin
+2019-12-13 03:38:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-13 03:39:05		python: scripts unloaded
+2019-12-17 04:49:03	=!=	Warning: /home/duy/.weechat/irc.conf, line 91: unknown option for section "network": channel_encode = off
+2019-12-17 04:49:03		python scripts loaded: autojoin
+2019-12-17 04:49:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 04:54:21		fifo: pipe closed
+2019-12-17 04:55:23		python scripts loaded: autojoin
+2019-12-17 04:55:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 04:56:33		fifo: pipe closed
+2019-12-17 04:56:38		python scripts loaded: autojoin
+2019-12-17 04:56:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 05:00:01		irc: server undernet added
+2019-12-17 05:00:32	=!=	Error: unknown command "/clise" (type /help for help)
+2019-12-17 05:00:39		irc: server undernet has been deleted
+2019-12-17 05:00:43		All servers:
+2019-12-17 05:00:43		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-17 05:02:48	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:03:31	=!=	You can not write text in this buffer
+2019-12-17 05:03:44	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:03:55	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:04:02	=!=	irc: already connected to server "freenode"!
+2019-12-17 05:04:07	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2019-12-17 05:04:14		fifo: pipe closed
+2019-12-17 05:04:19		python scripts loaded: autojoin
+2019-12-17 05:04:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-17 05:06:26		irc: server undernet added
+2019-12-17 05:06:31	=!=	Error: unknown command "/sever" (type /help for help)
+2019-12-17 05:06:37		All servers:
+2019-12-17 05:06:37		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-17 05:06:37		   undernet
+2019-12-17 05:08:16		Option changed: irc.server.freenode.autojoin = "#reddit,##linux,#python,#archlinux,##C"  (default if null: "")
+2019-12-17 05:08:16		Option changed: irc.server.undernet.autojoin = "#vietnamese"  (default if null: "")
+2019-12-17 05:08:19		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-17 05:08:22		Options saved to sec.conf
+2019-12-17 05:08:22		Options saved to weechat.conf
+2019-12-17 05:08:22		Options saved to plugins.conf
+2019-12-17 05:08:22		Options saved to charset.conf
+2019-12-17 05:08:22		Options saved to logger.conf
+2019-12-17 05:08:22		Options saved to exec.conf
+2019-12-17 05:08:22		Options saved to trigger.conf
+2019-12-17 05:08:22		Options saved to alias.conf
+2019-12-17 05:08:22		Options saved to buflist.conf
+2019-12-17 05:08:22		Options saved to fifo.conf
+2019-12-17 05:08:22		Options saved to xfer.conf
+2019-12-17 05:08:22		Options saved to irc.conf
+2019-12-17 05:08:22		Options saved to relay.conf
+2019-12-17 05:08:22		Options saved to tcl.conf
+2019-12-17 05:08:22		Options saved to guile.conf
+2019-12-17 05:08:22		Options saved to ruby.conf
+2019-12-17 05:08:22		Options saved to python.conf
+2019-12-17 05:08:22		Options saved to lua.conf
+2019-12-17 05:08:22		Options saved to perl.conf
+2019-12-17 05:08:22		Options saved to script.conf
+2019-12-17 05:08:22		Options saved to fset.conf
+2019-12-17 05:12:51		fifo: pipe closed
+2019-12-20 05:27:59		python scripts loaded: autojoin
+2019-12-20 05:27:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:28:44	=!=	No help available, "ssl" is not a command or an option
+2019-12-20 05:28:50	=!=	No help available, "sasl" is not a command or an option
+2019-12-20 05:32:50		fifo: pipe closed
+2019-12-20 05:32:52		python scripts loaded: autojoin
+2019-12-20 05:32:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:33:52		Option changed: irc.server.freenode.ssl_priorities = "NORMAL:-VERS-TLS-ALL:+VERS-TLS1.0:+VERS-SSL3.0:%COMPAT"  (default if null: "NORMAL:-VERS-SSL3.0")
+2019-12-20 05:34:05		Option changed: irc.server.freenode.ssl_cert = "%h/certs/freenode.pem"  (default if null: "")
+2019-12-20 05:34:11		Option changed: irc.server.freenode.sasl_mechanism = external  (default if null: plain)
+2019-12-20 05:34:17		Option changed: irc.server.freenode.ssl = on  (default if null: off)
+2019-12-20 05:34:33		Option changed: irc.server.freenode.addresses = "chat.freenode.net/6667"  (default if null: "")
+2019-12-20 05:35:26		Option changed: irc.server.freenode.addresses = "chat.freenode.net/6697"  (default if null: "")
+2019-12-20 05:36:03		All servers:
+2019-12-20 05:36:03		 * freenode [connected], nick: laduyhaha, 5 channels, 0 pv
+2019-12-20 05:36:03		   undernet
+2019-12-20 05:36:36		Option changed: irc.server.freenode.autojoin = "#reddit,##linux,#python,#archlinux,##C"  (default if null: "")
+2019-12-20 05:36:40	=!=	Error with command "/layout save" (help on command: /help layout)
+2019-12-20 05:36:45		Layout of buffers+windows stored in "default" (current layout: default)
+2019-12-20 05:36:47		Options saved to sec.conf
+2019-12-20 05:36:47		Options saved to weechat.conf
+2019-12-20 05:36:47		Options saved to plugins.conf
+2019-12-20 05:36:47		Options saved to charset.conf
+2019-12-20 05:36:47		Options saved to logger.conf
+2019-12-20 05:36:47		Options saved to exec.conf
+2019-12-20 05:36:47		Options saved to trigger.conf
+2019-12-20 05:36:47		Options saved to alias.conf
+2019-12-20 05:36:47		Options saved to buflist.conf
+2019-12-20 05:36:47		Options saved to fifo.conf
+2019-12-20 05:36:47		Options saved to xfer.conf
+2019-12-20 05:36:47		Options saved to irc.conf
+2019-12-20 05:36:47		Options saved to relay.conf
+2019-12-20 05:36:47		Options saved to tcl.conf
+2019-12-20 05:36:47		Options saved to guile.conf
+2019-12-20 05:36:47		Options saved to ruby.conf
+2019-12-20 05:36:47		Options saved to python.conf
+2019-12-20 05:36:47		Options saved to lua.conf
+2019-12-20 05:36:47		Options saved to perl.conf
+2019-12-20 05:36:47		Options saved to script.conf
+2019-12-20 05:36:47		Options saved to fset.conf
+2019-12-20 05:37:15		fifo: pipe closed
+2019-12-20 05:37:34		python scripts loaded: autojoin
+2019-12-20 05:37:34		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2019-12-20 05:39:19		fifo: pipe closed
