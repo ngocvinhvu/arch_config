@@ -38,7 +38,7 @@ cmd open ${{
         text/html) $BROWSER $fx >/dev/null 2>&1 &;;
         text/*) $EDITOR $fx;;
         audio/*) mplayer $fx >/dev/null 2>&1 &;;
-        video/*) mpv $fx;;
+        video/*) mpv $fx >/dev/null 2>&1 &;;
         image/gif) mpv --loop=inf $fx;;
         image/*) sxiv -b $fx;;
         application/pdf) zathura $fx >/dev/null 2>&1 &;;
