@@ -78,7 +78,7 @@ set smartcase
 set ignorecase
 set t_Co=256
 set background=dark
-set ruler
+" set ruler
 set hidden
 set number
 set laststatus=2
@@ -108,6 +108,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 set statusline=%F
+set statusline+=%=%y\ L:%l/%L\ C:%c
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
