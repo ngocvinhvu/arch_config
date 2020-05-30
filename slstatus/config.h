@@ -79,7 +79,7 @@ static const struct arg args[] = {
         // { battery_remaining, "%s | ",    "BAT0"                                   },
         // { run_command,      " %s |",        "weather"                             },
         { datetime,         " %s|",       "%Y %b %d (%a) %r"                      },
-        // { vol_perc,         " ♪:%s ",         "/dev/mixer1"                       },
+        // { vol_perc,         " ♪:%s ",         "/dev/mixer"                       },
         { run_command,      " %s",         "volume"                            },
         { run_command,      "%s",        "music"                                  },
 };
