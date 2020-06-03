@@ -26,7 +26,7 @@
 #/etc/pacman.d/mirrorlist
 #
 ## Install base linux linux-firmware 
-#pacstrap /mnt base linux linux-firmware 
+#pacstrap /mnt base base-devel linux linux-firmware 
 #
 ## Create fstab partition:
 #genfstab -U /mnt >> /mnt/etc/fstab

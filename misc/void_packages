@@ -1,4 +1,15 @@
 SDL
+dbus
+dbus-glib
+dbus-libs
+dbus-x11
+libXft
+libXft-devel
+libXi
+libXinerama
+libXinerama-devel
+pulseaudio
+libpulseaudio
 SDL2
 a52dec
 aalib
@@ -66,10 +77,6 @@ curl
 dash
 dav1d
 db
-dbus
-dbus-glib
-dbus-libs
-dbus-x11
 dconf
 dejavu-fonts-ttf
 desktop-file-utils
@@ -277,11 +284,6 @@ libXext-devel
 libXfixes
 libXfont2
 libXfontcache
-libXft
-libXft-devel
-libXi
-libXinerama
-libXinerama-devel
 libXmu
 libXpm
 libXrandr
@@ -496,7 +498,6 @@ libprotobuf22-lite
 libprotoc22
 libproxy
 libpsl
-libpulseaudio
 libqxp
 libraptor
 libraqm
@@ -725,7 +726,6 @@ ppp
 procps-ng
 protobuf
 psmisc
-pulseaudio
 py3status
 python
 python-appdirs
