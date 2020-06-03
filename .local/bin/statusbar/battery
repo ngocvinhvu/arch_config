@@ -1,5 +1,0 @@
-status=$(cat /sys/class/power_supply/BAT0/status)
-charge_now=$(cat /sys/class/power_supply/BAT0/charge_now)
-charge_full_design=$(cat /sys/class/power_supply/BAT0/charge_full_design)
-state=$(awk "BEGIN {printf \"%.2f\",${charge_now}*100/${charge_full_design}}")
-printf "%s:%s%s%% " "$status" "$state"

@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 a=$(free | awk '/Mem:/ {print $3}')
 b=1024
 c=$(free | awk '/Mem:/ {print $2}')

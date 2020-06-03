@@ -102,7 +102,6 @@ else:
     fulltext += timeleft
 
 print(fulltext)
-print(fulltext)
 if percentleft < 10:
     exit(33)
 
