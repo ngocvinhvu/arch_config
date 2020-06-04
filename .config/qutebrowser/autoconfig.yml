@@ -124,5 +124,3 @@ settings:
       yo: https://www.youtube.com/results?search_query={}
   url.start_pages:
     global: about:blank
-  zoom.default:
-    global: 120%
