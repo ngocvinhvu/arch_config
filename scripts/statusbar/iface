@@ -1,0 +1,2 @@
+IF="$(ip route | awk '/^default/ { print $9 ; exit }')"
+echo "$IF"
