@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 _aria2c() {
-    aria2c -x 8 --seed-time=0 $1
+    aria2c -x 8 --seed-time=0 "$*"
 }
 alias t/vpn="cd ~/.trash/vpn"
 alias sdb5="cd /mnt/sdb5"

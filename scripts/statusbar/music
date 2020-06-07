@@ -1,5 +1,0 @@
-#!/bin/sh
-
-song=$(mpc status | sed -n 1p)
-status=$(mpc status | awk '/^\[/ {print $1}')
-[ `mpc status | wc -l` -eq 3 ] && echo "$status $song"
