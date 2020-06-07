@@ -1,4 +1,6 @@
 sudo moused -p /dev/sysmouse auto                   # enable mouse
 echo moused_enable="YES" >> /etc/rc.conf
+ehco keymap="keyboardname" >> /etc/rc.conf          # change console keyboard layout
+    # keyboardname in /usr/share/vt/keymaps/
 
 sudo service restart devfs                          # enable sound
