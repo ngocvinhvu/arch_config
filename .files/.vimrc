@@ -1,3 +1,17 @@
+
+"Mode Settings
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[1 q" "SR = REPLACE mode
+let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
+"Cursor settings:
+"  1 -> blinking block
+"  2 -> solid block 
+"  3 -> blinking underscore
+"  4 -> solid underscore
+"  5 -> blinking vertical bar
+"  6 -> solid vertical bar
+
+
 set nocompatible  " be iMproved, required
 filetype off  " required
 set exrc
@@ -68,7 +82,7 @@ filetype plugin indent on
 " set guifont=Monospace\ 10
 set fillchars+=vert:\|
 syntax enable
-set history=1000
+set history=10000
 set viminfo+=:10000
 set splitbelow
 set splitright
@@ -107,13 +121,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-set statusline=%F\ \ %y\ L:%l/%L\ C:%c
+set statusline=%F\ \ %y\ L:%l/%L\ C:%c\ 
+" set statusline=%{_size()}
 " set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
 "let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'

@@ -102,9 +102,20 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
+_aria2c() {
+    aria2c -x 8 --seed-time=0 $1
+}
+alias t/vpn="cd ~/.trash/vpn"
+alias sdb5="cd /mnt/sdb5"
+alias sdb3="cd /mnt/sdb3"
+alias pscpu=" ps -eo cmd,%mem,%cpu --sort=-%cpu| less"
+alias psmem=" ps -eo cmd,%mem,%cpu --sort=-%mem| less"
+alias vi="vim -u NONE"
 alias youtube-dl="youtube-dl --write-auto-sub --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
 alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
-alias push="git pull && git add . && git commit -m 'update' && git push"
+push(){
+    git pull && git add . && git commit -m "$*"  && git push;
+}
 alias t/sh="cd ~/.trash/sh"
 alias t/p="cd ~/.trash/p"
 alias t/c="cd ~/.trash/c"
@@ -113,7 +124,7 @@ alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
-alias a='cd /home/duy/gits//arch_config'
+alias a='cd /home/duy/gits/arch_config'
 alias start='systemctl start'
 alias restart='systemctl restart'
 alias status='systemctl status'
@@ -129,7 +140,7 @@ alias pmsyu='sudo pacman -Syu'
 alias pmsy='sudo pacman -Sy'
 alias pms='sudo pacman -S'
 alias pmr='sudo pacman -R'
-alias i3lock="i3lock -ti /home/duy/Pictures/gnu_linux1.png"
+alias i3lock="i3lock -ti /home/duy/Pictures/my_liberty.png"
 alias d='~/Downloads'
 alias D='~/Documents'
 alias mv='mv -iv'
@@ -157,8 +168,17 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
- echo -ne '\e[5 q' # Cursor is beam instead of Block
-# echo -ne "\033]12;Black\007" # Change cursor color
+echo -ne '\e[4 q' # Cursor is underscore instead of Block
+# Cursor settings:
+#   1 -> blinking block
+#   2 -> solid block 
+#   3 -> blinking underscore
+#   4 -> solid underscore
+#   5 -> blinking vertical bar
+#   6 -> solid vertical bar
+
+# Change cursor color
+# echo -ne "\033]12;Black\007" 
 
 # Show vim mode
 # Updates editor information when the keymap changes.
@@ -219,3 +239,4 @@ vman() {
     col -b | \
     vim -R -c 'set ft=man nomod nolist' -
 }
+
