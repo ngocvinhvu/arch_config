@@ -152,3 +152,5 @@ tar c | ssh user@server "tar x -C /path"                        # -C: changedir 
 /autojoin --run  # to store the channels to join
 /layout store    # to store the order of the channels
 /save            # to save your setting
+## qemu boot from usb
+sudo qemu-system-x86_64 -m 4096 -enable-kvm -usb -device usb-host,hostbus=1,hostaddr=21

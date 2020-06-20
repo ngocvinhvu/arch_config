@@ -3,6 +3,7 @@
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=8", "Ionicons:size=8" };
@@ -28,15 +29,15 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                     instance    title       tags mask     isfloating   monitor */
-        { "qutebrowser",             NULL,       NULL,       1 << 1,       0,           -1 },
-        { "GoldenDict",              NULL,       NULL,       1 << 2,       0,           -1 },
-        { "Zathura",                 NULL,       NULL,       1 << 8,       0,           -1 },
-        { "firefox",                 NULL,       NULL,       1 << 1,       0,           -1 },
-        { "St",                      NULL,       NULL,       0,            0,           -1 },
-        // { "Sxiv",                 NULL,       NULL,       0,            1,           -1 },
-        // { "mpv",                  NULL,       NULL,       0,            1,           -1 },
-        { NULL,                      NULL,       "ncmpcpp",  1 << 7,       0,           -1 },
+	/* class                     instance    title       tags mask     isfloating  isterminal  noswallow   monitor */
+        { "qutebrowser",             NULL,       NULL,       1 << 1,       0,           0,           1,            -1 },
+        { "GoldenDict",              NULL,       NULL,       1 << 2,       0,           0,           1,            -1 },
+        { "Zathura",                 NULL,       NULL,       1 << 8,       0,           0,           0,            -1 },
+        { "firefox",                 NULL,       NULL,       1 << 1,       0,           0,           1,            -1 },
+        { "St",                      NULL,       NULL,       0,            0,           1,           0,            -1 },
+        // { "Sxiv",                    NULL,       NULL,       0,            0,           0,           0,            -1 },
+        // { "mpv",                     NULL,       NULL,       0,            0,           0,           0,            -1 },
+        { NULL,                      NULL,       "ncmpcpp",  1 << 7,       0,           0,           1,            -1 },
 
 };
 
@@ -138,7 +139,6 @@ static Key keys[] = {
         { MODKEY,                       XK_F8,	                    spawn,	        SHCMD("touchpad_toggle.sh") },
         { 0,				XK_Print,	            spawn,		SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
         { MODKEY,			XK_Print,	            spawn,		SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
-        { MODKEY,			XK_F2,	                    spawn,		SHCMD("i3lock -i ~/Pictures/gnu_linux1.png") },
         { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { MODKEY,			XK_g,	                    spawn,		SHCMD("goldendict") },
