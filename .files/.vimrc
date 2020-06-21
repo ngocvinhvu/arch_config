@@ -192,6 +192,7 @@ augroup vim_autocmd
     autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
     autocmd Filetype php nnoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
     autocmd Filetype php inoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
+    autocmd Filetype php vnoremap <F9> !php <CR>
     autocmd Filetype php nnoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
     autocmd Filetype php inoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
     autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
@@ -200,6 +201,7 @@ augroup vim_autocmd
     autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
     autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
     autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+    autocmd Filetype sh vnoremap <F9> !sh <CR>
 augroup END
 
 :set hlsearch incsearch
