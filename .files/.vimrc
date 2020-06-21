@@ -72,7 +72,7 @@ Plugin 'pamacs/vim-srt-sync'
 Plugin 'morhetz/gruvbox'
 
 "===== PYTHON-MODE
-"Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 call vundle#end()
 filetype plugin indent on
@@ -129,7 +129,7 @@ set statusline=%F\ \ %y\ L:%l/%L\ C:%c\
 
 " let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
-"let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
+" let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 
@@ -187,8 +187,13 @@ augroup vim_autocmd
     "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
     autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
     autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python vnoremap <F9> !python <CR>
     autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
     autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
+    autocmd Filetype php nnoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
+    autocmd Filetype php inoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
+    autocmd Filetype php nnoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
+    autocmd Filetype php inoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
     autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
     autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
     autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
