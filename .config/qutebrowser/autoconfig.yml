@@ -23,6 +23,7 @@ settings:
           {hint-url}
         ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
           {hint-url}
+        ',S': spawn streamlink -p mpv {clipboard} best
         ',V': spawn vlc {clipboard}
         ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
         ',a': hint links spawn mpv --ytdl-format=bestaudio {hint-url}
@@ -30,9 +31,8 @@ settings:
         ',g': spawn bash -c mpvgif.sh
         ',h': hint links spawn mpv {hint-url}
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
-        ',s': hint links spawn streamlink -p mpv {hint-url}  best
-        ',S': hint links spawn streamlink -p mpv {hint-url}  480p
         ',p': spawn bash -c sxivurl.sh
+        ',s': hint links spawn streamlink -p mpv {hint-url}  best
         ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
@@ -52,6 +52,8 @@ settings:
         g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
+  colors.webpage.darkmode.enabled:
+    global: false
   content.autoplay:
     global: false
   content.fullscreen.window:
@@ -68,17 +70,23 @@ settings:
     https://studio.youtube.com: false
     https://www.facebook.com: false
   content.notifications:
+    https://binhluan.tv: false
+    https://bizfly.vn: false
     https://dnschecker.org: false
     https://hatde.tv: false
+    https://helpex.vn: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://slutmesh.com: false
+    https://tuyencongnhan.vn: false
     https://v.qq.com: false
+    https://vn-z.vn: false
     https://webchat.freenode.net: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
     https://www.macworld.co.uk: false
     https://www.onworks.net: false
+    https://www.pcworld.com: false
     https://www.reddit.com: false
     https://www.w88top.com: false
     https://www.weibo.com: false
@@ -122,5 +130,8 @@ settings:
       wen: https://en.wikipedia.org/wiki/{}
       wvi: https://vi.wikipedia.org/wiki/{}
       yo: https://www.youtube.com/results?search_query={}
+      git: https://github.com/search?q={}
   url.start_pages:
     global: about:blank
+  zoom.default:
+    global: 100%
