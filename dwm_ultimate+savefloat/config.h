@@ -37,6 +37,8 @@ static const Rule rules[] = {
         // { "Sxiv",                 NULL,       NULL,       0,            1,           -1 },
         // { "mpv",                  NULL,       NULL,       0,            1,           -1 },
         { NULL,                      NULL,       "ncmpcpp",  1 << 7,       0,           -1 },
+        { NULL,          NULL,        "Event Tester",   0,            1,           0,           1,         -1 }, /*xev*/
+
 
 };
 

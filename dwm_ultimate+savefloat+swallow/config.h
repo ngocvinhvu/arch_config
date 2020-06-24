@@ -38,6 +38,8 @@ static const Rule rules[] = {
         // { "Sxiv",                    NULL,       NULL,       0,            0,           0,           0,            -1 },
         // { "mpv",                     NULL,       NULL,       0,            0,           0,           0,            -1 },
         { NULL,                      NULL,       "ncmpcpp",  1 << 7,       0,           0,           1,            -1 },
+        { NULL,          NULL,        "Event Tester",   0,            1,           0,           1,         -1 }, /*xev*/
+
 
 };
 
@@ -132,6 +134,7 @@ static Key keys[] = {
         // { 0,	                        XF86XK_AudioMute,	    spawn,		SHCMD("pactl set-sink-mute 0 toggle") },
         // { 0,	                        XF86XK_AudioRaiseVolume,    spawn,		SHCMD("pactl set-sink-volume 0 +5%") },
         // { 0,	                        XF86XK_AudioLowerVolume,    spawn,		SHCMD("pactl set-sink-volume 0 -5%") },
+        { 0,			        XF86XK_ScreenSaver,	    spawn,		SHCMD("i3lock -i ~/Pictures/gnu_linux1.png") },
         { 0,	                        XF86XK_AudioMicMute,	    spawn,		SHCMD("amixer -D pulse -q set Capture toggle") },
         { 0,	                        XF86XK_AudioMute,	    spawn,		SHCMD("amixer -D pulse -q set Master toggle" ) },
         { 0,	                        XF86XK_AudioRaiseVolume,    spawn,		SHCMD("amixer -D pulse -q set Master 5%+    ") },
