@@ -226,6 +226,8 @@ augroup vim_autocmd
     autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
     autocmd Filetype sh vnoremap <F9> !sh <CR>
 augroup END
+set smartcase
+set ignorecase
 set path+=**
 set hlsearch incsearch
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
