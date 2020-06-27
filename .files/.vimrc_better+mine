@@ -63,14 +63,14 @@ imap <S-Right> <Esc><Right>wi
 nmap <S-Right> w
 
 " indent/unindent with tab/shift-tab
-nmap <Tab> >>
-imap <S-Tab> <Esc><<i
-nmap <S-tab> <<
+" nmap <Tab> >>
+" imap <S-Tab> <Esc><<i
+" nmap <S-tab> <<
 
 " mouse
 set mouse=a
 let g:is_mouse_enabled = 1
-noremap <silent> <Leader>m :call ToggleMouse()<CR>
+noremap <silent> <leader>m :call ToggleMouse()<CR>
 function ToggleMouse()
     if g:is_mouse_enabled == 1
         echo "Mouse OFF"
@@ -82,6 +82,7 @@ function ToggleMouse()
         let g:is_mouse_enabled = 1
     endif
 endfunction
+
 
 " color scheme
 syntax on
@@ -99,7 +100,7 @@ set foldlevel=99
 
 " wrap toggle
 setlocal nowrap
-noremap <silent> <Leader>w :call ToggleWrap()<CR>
+noremap <silent> ,w :call ToggleWrap()<CR>
 function ToggleWrap()
     if &wrap
         echo "Wrap OFF"
@@ -147,7 +148,7 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeMinimalUI = 1
 let g:nerdtree_open = 0
-map <leader>n :call NERDTreeToggle()<CR>
+map <C-b> :call NERDTreeToggle()<CR>
 function NERDTreeToggle()
     NERDTreeTabsToggle
     if g:nerdtree_open == 1
@@ -169,7 +170,7 @@ map <leader>e :lnext<CR>
 map <leader>r :lprev<CR>
 
 " tag list
-map <leader>t :TagbarToggle<CR>
+map <C-t> :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <C-c> "+y
@@ -208,23 +209,23 @@ let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
 inoremap jk <esc>
 nnoremap <c-p> :find 
 augroup vim_autocmd
-    autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-    autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-    autocmd Filetype python vnoremap <F9> !python <CR>
-    autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-    autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-    autocmd Filetype php nnoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
-    autocmd Filetype php inoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
-    autocmd Filetype php vnoremap <F9> !php <CR>
-    autocmd Filetype php nnoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
-    autocmd Filetype php inoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
-    autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
-    autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
-    autocmd Filetype sh vnoremap <F9> !sh <CR>
+    autocmd Filetype python inoremap <buffer> <F9> <Esc> :%w !python<CR>
+    autocmd Filetype python nnoremap <buffer> <F9> <Esc> :%w !python<CR>
+    autocmd Filetype python vnoremap <buffer> <F9> !python<CR>
+    autocmd Filetype python inoremap <buffer> <F8> <Esc>:%w !sudo python<CR>
+    autocmd Filetype python nnoremap <buffer> <F8> <Esc>:%w !sudo python<CR>
+    autocmd Filetype php nnoremap <buffer> <F9> <Esc>:%w !php <CR>
+    autocmd Filetype php inoremap <buffer> <F9> <Esc>:%w !php <CR>
+    autocmd Filetype php vnoremap <buffer> <F9> !php <CR>
+    autocmd Filetype php nnoremap <buffer> <F8> <Esc>:%w !sudo php<CR>
+    autocmd Filetype php inoremap <buffer> <F8> <Esc>:%w !sudo php<CR>
+    autocmd Filetype sh inoremap <buffer> <F9> <Esc>:%w !bash ;<CR>
+    autocmd Filetype sh nnoremap <buffer> <F9> <Esc>:%w !bash ;<CR>
+    autocmd Filetype sh vnoremap <buffer> <F9> !sh <CR>
+    autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype c nnoremap  <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype cpp nnoremap  <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
 set smartcase
 set ignorecase
@@ -234,3 +235,19 @@ set nrformats-=octal "fix when <c-a> auto add 07 to 10
 set cursorline
 hi CursorLine   cterm=NONE ctermbg=237
 hi CursorLineNr term=none cterm=none ctermfg=202 
+
+let g:is_expandtab_enabled = 1
+map <F2> :call ToggleExpandTab()<CR>
+function ToggleExpandTab()
+	if g:is_expandtab_enabled == 1
+		echo "tab to spaces OFF"
+		set noexpandtab
+		%retab!
+		let g:is_expandtab_enabled = 0
+	else
+		echo "tab to spaces ON"
+		set expandtab
+		retab
+		let g:is_expandtab_enabled = 1
+	endif
+endfunction
