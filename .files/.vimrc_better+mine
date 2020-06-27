@@ -131,15 +131,15 @@ function ToggleWrap()
 endfunction
 
 " move through split windows
-nmap <leader><Up> :wincmd k<CR>
-nmap <leader><Down> :wincmd j<CR>
-nmap <leader><Left> :wincmd h<CR>
-nmap <leader><Right> :wincmd l<CR>
+" nmap <leader><Up> :wincmd k<CR>
+" nmap <leader><Down> :wincmd j<CR>
+" nmap <leader><Left> :wincmd h<CR>
+" nmap <leader><Right> :wincmd l<CR>
 
 " move through buffers
-nmap <leader>[ :bp!<CR>
-nmap <leader>] :bn!<CR>
-nmap <leader>x :bd<CR>
+" nmap <leader>[ :bp!<CR>
+" nmap <leader>] :bn!<CR>
+" nmap <leader>x :bd<CR>
 
 " restore place in file from previous session
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -173,10 +173,10 @@ map <leader>r :lprev<CR>
 map <C-t> :TagbarToggle<CR>
 
 " copy, cut and paste
-vmap <C-c> "+y
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
+vmap <leader>c "+y
+vmap <leader>x "+c
+vmap <C-A-v> <ESC>"+p
+imap <C-A-v> <ESC>"+pa
 
 " disable autoindent when pasting text
 " source: https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
