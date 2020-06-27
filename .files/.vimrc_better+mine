@@ -204,7 +204,7 @@ let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
 
-vnoremap <leader>y "+y
+" vnoremap <leader>y "+y
 inoremap jk <esc>
 nnoremap <c-p> :find 
 augroup vim_autocmd
