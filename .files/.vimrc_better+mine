@@ -210,7 +210,7 @@ inoremap jk <esc>
 nnoremap <c-p> :find 
 augroup vim_autocmd
     autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
-    autocmd Filetype python nnoremap <silent> <buffer> <F9 :%w !python<CR>
+    autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
     autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
     autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
     autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
@@ -222,11 +222,15 @@ augroup vim_autocmd
     autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
     autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
     autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
+    autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
+    autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
+    autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
     autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
     autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
     autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
     autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
+set so=999999
 set smartcase
 set ignorecase
 set path+=**
