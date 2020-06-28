@@ -1,10 +1,10 @@
 " plugins
 let need_to_install_plugins = 0
 if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    "autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-    let need_to_install_plugins = 1
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	"autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	let need_to_install_plugins = 1
 endif
 
 call plug#begin()
@@ -21,16 +21,17 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 filetype plugin indent on
 syntax on
 
 if need_to_install_plugins == 1
-    echo "Installing plugins..."
-    silent! PlugInstall
-    echo "Done!"
-    q
+	echo "Installing plugins..."
+	silent! PlugInstall
+	echo "Done!"
+	q
 endif
 
 " always show the status bar
@@ -49,11 +50,11 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set colorcolumn=80
-set expandtab
 set viminfo='25,\"50,n~/.viminfo
 
 " word movement
@@ -72,15 +73,15 @@ set mouse=a
 let g:is_mouse_enabled = 1
 noremap <silent> <leader>m :call ToggleMouse()<CR>
 function ToggleMouse()
-    if g:is_mouse_enabled == 1
-        echo "Mouse OFF"
-        set mouse=
-        let g:is_mouse_enabled = 0
-    else
-        echo "Mouse ON"
-        set mouse=a
-        let g:is_mouse_enabled = 1
-    endif
+	if g:is_mouse_enabled == 1
+		echo "Mouse OFF"
+		set mouse=
+		let g:is_mouse_enabled = 0
+	else
+		echo "Mouse ON"
+		set mouse=a
+		let g:is_mouse_enabled = 1
+	endif
 endfunction
 
 
@@ -102,32 +103,32 @@ set foldlevel=99
 setlocal nowrap
 noremap <silent> ,w :call ToggleWrap()<CR>
 function ToggleWrap()
-    if &wrap
-        echo "Wrap OFF"
-        setlocal nowrap
-        set virtualedit=all
-        silent! nunmap <buffer> <Up>
-        silent! nunmap <buffer> <Down>
-        silent! nunmap <buffer> <Home>
-        silent! nunmap <buffer> <End>
-        silent! iunmap <buffer> <Up>
-        silent! iunmap <buffer> <Down>
-        silent! iunmap <buffer> <Home>
-        silent! iunmap <buffer> <End>
-    else
-        echo "Wrap ON"
-        setlocal wrap linebreak nolist
-        set virtualedit=
-        setlocal display+=lastline
-        noremap  <buffer> <silent> <Up>   gk
-        noremap  <buffer> <silent> <Down> gj
-        noremap  <buffer> <silent> <Home> g<Home>
-        noremap  <buffer> <silent> <End>  g<End>
-        inoremap <buffer> <silent> <Up>   <C-o>gk
-        inoremap <buffer> <silent> <Down> <C-o>gj
-        inoremap <buffer> <silent> <Home> <C-o>g<Home>
-        inoremap <buffer> <silent> <End>  <C-o>g<End>
-    endif
+	if &wrap
+		echo "Wrap OFF"
+		setlocal nowrap
+		set virtualedit=all
+		silent! nunmap <buffer> <Up>
+		silent! nunmap <buffer> <Down>
+		silent! nunmap <buffer> <Home>
+		silent! nunmap <buffer> <End>
+		silent! iunmap <buffer> <Up>
+		silent! iunmap <buffer> <Down>
+		silent! iunmap <buffer> <Home>
+		silent! iunmap <buffer> <End>
+	else
+		echo "Wrap ON"
+		setlocal wrap linebreak nolist
+		set virtualedit=
+		setlocal display+=lastline
+		noremap  <buffer> <silent> <Up>   gk
+		noremap  <buffer> <silent> <Down> gj
+		noremap  <buffer> <silent> <Home> g<Home>
+		noremap  <buffer> <silent> <End>  g<End>
+		inoremap <buffer> <silent> <Up>   <C-o>gk
+		inoremap <buffer> <silent> <Down> <C-o>gj
+		inoremap <buffer> <silent> <Home> <C-o>g<Home>
+		inoremap <buffer> <silent> <End>  <C-o>g<End>
+	endif
 endfunction
 
 " move through split windows
@@ -150,13 +151,13 @@ let NERDTreeMinimalUI = 1
 let g:nerdtree_open = 0
 map <C-b> :call NERDTreeToggle()<CR>
 function NERDTreeToggle()
-    NERDTreeTabsToggle
-    if g:nerdtree_open == 1
-        let g:nerdtree_open = 0
-    else
-        let g:nerdtree_open = 1
-        wincmd p
-    endif
+	NERDTreeTabsToggle
+	if g:nerdtree_open == 1
+		let g:nerdtree_open = 0
+	else
+		let g:nerdtree_open = 1
+		wincmd p
+	endif
 endfunction
 
 " syntastic
@@ -184,9 +185,9 @@ let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
 function! XTermPasteBegin()
-    set pastetoggle=<Esc>[201~
-    set paste
-    return ""
+	set pastetoggle=<Esc>[201~
+	set paste
+	return ""
 endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
@@ -209,26 +210,26 @@ let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
 inoremap jk <esc>
 nnoremap <c-p> :find 
 augroup vim_autocmd
-    autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
-    autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
-    autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
-    autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
-    autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
-    autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
-    autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
-    autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
-    autocmd Filetype php inoremap <silent> <buffer> <F8> <Esc>:%w !sudo php<CR>
-    autocmd Filetype php nnoremap <silent> <buffer> <F8> :%w !sudo php<CR>
-    autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
-    autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
-    autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
-    autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
-    autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
-    autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
-    autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
+	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
+	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
+	autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
+	autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
+	autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
+	autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
+	autocmd Filetype php inoremap <silent> <buffer> <F8> <Esc>:%w !sudo php<CR>
+	autocmd Filetype php nnoremap <silent> <buffer> <F8> :%w !sudo php<CR>
+	autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
+	autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
+	autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
+	autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
+	autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
+	autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
+	autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+	autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
+	autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+	autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
 set so=999999
 set smartcase
@@ -237,7 +238,7 @@ set path+=**
 set hlsearch incsearch
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
 set cursorline
-hi CursorLine   cterm=NONE ctermbg=237
+hi CursorLine	cterm=NONE ctermbg=237
 hi CursorLineNr term=none cterm=none ctermfg=202 
 
 let g:is_expandtab_enabled = 1
@@ -255,3 +256,7 @@ function ToggleExpandTab()
 		let g:is_expandtab_enabled = 1
 	endif
 endfunction
+
+" close scratch buffer YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
