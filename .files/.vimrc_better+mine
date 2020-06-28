@@ -173,7 +173,7 @@ map <leader>r :lprev<CR>
 map <C-t> :TagbarToggle<CR>
 
 " copy, cut and paste
-vmap <leader>c "+y
+vmap <leader>y "+y
 vmap <leader>x "+c
 vmap <C-A-v> <ESC>"+p
 imap <C-A-v> <ESC>"+pa
@@ -209,23 +209,23 @@ let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
 inoremap jk <esc>
 nnoremap <c-p> :find 
 augroup vim_autocmd
-    autocmd Filetype python inoremap <buffer> <F9> <Esc> :%w !python<CR>
-    autocmd Filetype python nnoremap <buffer> <F9> <Esc> :%w !python<CR>
-    autocmd Filetype python vnoremap <buffer> <F9> !python<CR>
-    autocmd Filetype python inoremap <buffer> <F8> <Esc>:%w !sudo python<CR>
-    autocmd Filetype python nnoremap <buffer> <F8> <Esc>:%w !sudo python<CR>
-    autocmd Filetype php nnoremap <buffer> <F9> <Esc>:%w !php <CR>
-    autocmd Filetype php inoremap <buffer> <F9> <Esc>:%w !php <CR>
-    autocmd Filetype php vnoremap <buffer> <F9> !php <CR>
-    autocmd Filetype php nnoremap <buffer> <F8> <Esc>:%w !sudo php<CR>
-    autocmd Filetype php inoremap <buffer> <F8> <Esc>:%w !sudo php<CR>
-    autocmd Filetype sh inoremap <buffer> <F9> <Esc>:%w !bash ;<CR>
-    autocmd Filetype sh nnoremap <buffer> <F9> <Esc>:%w !bash ;<CR>
-    autocmd Filetype sh vnoremap <buffer> <F9> !sh <CR>
-    autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype c nnoremap  <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype cpp nnoremap  <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
+    autocmd Filetype python nnoremap <silent> <buffer> <F9 :%w !python<CR>
+    autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
+    autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
+    autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
+    autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
+    autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
+    autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
+    autocmd Filetype php inoremap <silent> <buffer> <F8> <Esc>:%w !sudo php<CR>
+    autocmd Filetype php nnoremap <silent> <buffer> <F8> :%w !sudo php<CR>
+    autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
+    autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
+    autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
+    autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
 set smartcase
 set ignorecase
