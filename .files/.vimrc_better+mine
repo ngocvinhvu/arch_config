@@ -21,7 +21,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 call plug#end()
 
 filetype plugin indent on
