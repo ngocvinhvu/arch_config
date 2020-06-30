@@ -1,5 +1,5 @@
 #!/bin/sh
-curl -s "vi.wttr.in/hanoi?1?T" > /tmp/getweather
+curl -s "http://vi.wttr.in/hanoi?1?T" > /tmp/getweather
 low=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f3 | cut -d " " -f1 | rev `
 high=`cat /tmp/getweather| sed -n 4p | rev | cut -d "." -f1 | rev `
 
