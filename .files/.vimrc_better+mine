@@ -232,6 +232,11 @@ augroup vim_autocmd
 	autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
 set so=999999
+" set ttymouse=sgr
+" if !has('nvim')
+"     set mouse=a
+"     set ttymouse=xterm2
+" endif
 set smartcase
 set ignorecase
 set path+=**
