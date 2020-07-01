@@ -147,7 +147,7 @@ static Key keys[] = {
         { MODKEY,                       XK_F8,	                    spawn,	        SHCMD("touchpad_toggle.sh") },
         { 0,				XK_Print,	            spawn,		SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
         { MODKEY,			XK_Print,	            spawn,		SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
-        { MODKEY,                       XK_x,	                    spawn,	        SHCMD("turnoff_screen.sh") },
+        { MODKEY,                       XK_Delete,	                    spawn,	        SHCMD("turnoff_screen.sh") },
         { MODKEY,			XK_r,	                    spawn,		SHCMD("st -e ranger") },
         { MODKEY,			XK_g,	                    spawn,		SHCMD("goldendict") },
         { MODKEY,			XK_z,	                    spawn,		SHCMD("zathura") },

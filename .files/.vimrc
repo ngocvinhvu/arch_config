@@ -98,7 +98,7 @@ let g:lightline = { 'colorscheme': 'onedark' }
 
 " code folding
 set foldmethod=indent
-set foldlevel=0
+set foldlevel=99
 " zM close all and set foldlevel to 0
 " zR open all and set highest foldlevel
 nnoremap <space> za
