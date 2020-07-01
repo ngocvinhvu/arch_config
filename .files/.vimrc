@@ -97,7 +97,8 @@ let g:lightline = { 'colorscheme': 'onedark' }
 
 " code folding
 set foldmethod=indent
-set foldlevel=99
+set foldlevel=1
+nnoremap <space> za
 
 " wrap toggle
 setlocal nowrap
