@@ -271,12 +271,3 @@ endfunction
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
-
-let s:lynxPath = 'c:\lynx'
-let s:lynxExe = s:lynxPath . 'lynx.exe'
-let s:lynxCfg = '-cfg=' . s:lynxPath . 'lynx.cfg'
-let s:lynxLss = '-lss=' . s:lynxPath . 'lynx.lss'
-let s:lynxCmd = s:lynxExe . ' ' . s:lynxCfg . ' ' . s:lynxLss
-let s:lynxDumpPath = 'c:\lynx\dump'
-let s:lynxToolsPath = 'c:\lynx\tools'
-
