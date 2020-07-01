@@ -22,7 +22,6 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
-Plug 'yuratomo/w3m.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -70,6 +69,7 @@ nmap <S-Right> w
 " nmap <S-tab> <<
 
 " mouse
+set ttymouse=sgr
 set mouse=a
 let g:is_mouse_enabled = 1
 noremap <silent> <leader>m :call ToggleMouse()<CR>
@@ -226,6 +226,9 @@ augroup vim_autocmd
 	autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
 	autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
 	autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
+	autocmd Filetype javascript inoremap <silent> <buffer> <F9> <Esc>:%w !node<CR>
+	autocmd Filetype javascript nnoremap <silent> <buffer> <F9> :%w !node<CR>
+	autocmd Filetype javascript vnoremap <silent> <buffer> <F9> !node<CR>
 	autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
 	autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
 	autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
@@ -234,8 +237,7 @@ augroup vim_autocmd
 	autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
 	autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
 augroup END
-set so=999999
-" set ttymouse=sgr
+set scrolloff=999999
 " if !has('nvim')
 "     set mouse=a
 "     set ttymouse=xterm2
@@ -268,3 +270,13 @@ endfunction
 " close scratch buffer YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+
+let s:lynxPath = 'c:\lynx'
+let s:lynxExe = s:lynxPath . 'lynx.exe'
+let s:lynxCfg = '-cfg=' . s:lynxPath . 'lynx.cfg'
+let s:lynxLss = '-lss=' . s:lynxPath . 'lynx.lss'
+let s:lynxCmd = s:lynxExe . ' ' . s:lynxCfg . ' ' . s:lynxLss
+let s:lynxDumpPath = 'c:\lynx\dump'
+let s:lynxToolsPath = 'c:\lynx\tools'
+
