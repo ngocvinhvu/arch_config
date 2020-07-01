@@ -22,6 +22,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+Plug 'yuratomo/w3m.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -97,9 +98,10 @@ let g:lightline = { 'colorscheme': 'onedark' }
 
 " code folding
 set foldmethod=indent
-set foldlevel=1
+set foldlevel=0
+" zM close all and set foldlevel to 0
+" zR open all and set highest foldlevel
 nnoremap <space> za
-
 " wrap toggle
 setlocal nowrap
 noremap <silent> ,w :call ToggleWrap()<CR>
