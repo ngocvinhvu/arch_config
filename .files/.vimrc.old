@@ -1,0 +1,259 @@
+
+"Mode Settings
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[1 q" "SR = REPLACE mode
+let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
+"Cursor settings:
+"  1 -> blinking block
+"  2 -> solid block 
+"  3 -> blinking underscore
+"  4 -> solid underscore
+"  5 -> blinking vertical bar
+"  6 -> solid vertical bar
+
+
+set nocompatible  " be iMproved, required
+filetype off  " required
+set exrc
+set encoding=UTF-8
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" ==== plugin manager
+Plugin 'VundleVim/Vundle.vim'
+
+" ==== plugin vim-slime
+Plugin 'jpalardy/vim-slime'
+
+" ==== plugin vim-table-mode
+Plugin 'dhruvasagar/vim-table-mode'
+" ==== helpers
+Plugin 'vim-scripts/L9'
+" ==== excel
+"Plugin  'vim-scripts/excel.vim'
+let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
+
+" ==== File tree
+Plugin 'scrooloose/nerdtree'
+
+" ==== Completion
+Plugin 'Valloric/YouCompleteMe'
+
+" ==== Git
+" Plugin 'airblade/vim-gitgutter'
+" Plugin 'tpope/vim-fugitive'
+
+" ==== syntax helpers
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'mitsuhiko/vim-jinja'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'ap/vim-css-color'
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+" ==== moving / searching
+Plugin 'easymotion/vim-easymotion'
+" Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+
+" ==== snippets
+Plugin 'SirVer/ultisnips'
+
+" Status bar on bottom
+" Plugin 'bling/vim-airline'
+
+"===== Delay srt(sub)
+Plugin 'pamacs/vim-srt-sync'
+"Usage :ShiftSrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
+
+" ==== PLUGIN THEMES
+Plugin 'morhetz/gruvbox'
+
+"===== PYTHON-MODE
+" Plugin 'klen/python-mode'
+
+call vundle#end()
+filetype plugin indent on
+
+" ==== Colors and other basic settings
+:colorscheme gruvbox
+" set guifont=Monospace\ 10
+set fillchars+=vert:\|
+syntax enable
+set history=10000
+set viminfo+=:10000
+set splitbelow
+set splitright
+set lazyredraw
+set pastetoggle=<F3>
+set smartcase
+set ignorecase
+set t_Co=256
+set background=dark
+" set ruler
+set hidden
+set number
+set laststatus=2
+set smartindent
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+" set tabstop=4
+" let &colorcolumn="80"
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
+":set lines=999 columns=999
+
+" ==== NERDTREE
+let NERDTreeIgnore = ['__pycache__', '\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '.DS_Store']
+
+let NERDTreeShowHidden=1
+let g:NERDTreeWinPos="left"
+let g:NERDTreeDirArrows=0
+map <C-t> :NERDTreeToggle<CR>
+
+" ==== Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+set statusline=%F\ \ %y\ L:%l/%L\ C:%c\ 
+" set statusline=%{_size()}
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
+" let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
+let g:syntastic_yaml_checkers = ['jsyaml']
+let g:syntastic_html_tidy_exec = 'tidy5'
+
+" === flake8
+" let g:flake8_show_in_file=1
+
+" ==== snippets
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" ==== Easymotion
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap f <Plug>(easymotion-s)
+
+" ==== moving around
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
+" ==== disable mouse
+set mouse=c
+
+" ==== disable swap file warning
+set shortmess+=A
+
+" ==== custom commands
+command! JsonPretty execute ":%!python -m json.tool"
+set secure
+
+
+:let leader = "\\"
+let g:slime_target = "tmux"
+
+:inoremap jk <esc>
+:nnoremap <c-p> :find 
+:vnoremap <leader>y "+y
+augroup vim_autocmd
+    autocmd!
+    "    autocmd BufWritePre,BufRead *.html :normal gg=G
+    "    autocmd BufWritePre,BufRead *.py :normal gg=G
+    autocmd FileType python nnoremap <buffer> \\c I# <esc>
+    autocmd FileType javascript nnoremap <buffer> \\c I//<esc>
+    "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
+    autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
+    autocmd Filetype python vnoremap <F9> !python <CR>
+    autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
+    autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
+    autocmd Filetype php nnoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
+    autocmd Filetype php inoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
+    autocmd Filetype php vnoremap <F9> !php <CR>
+    autocmd Filetype php nnoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
+    autocmd Filetype php inoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
+    autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+    autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+    autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+    autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
+    autocmd Filetype sh vnoremap <F9> !sh <CR>
+augroup END
+
+:set hlsearch incsearch
+:inoremap <C-l> <esc>ggVGd
+:nnoremap <C-l> <esc>ggVGd
+:inoremap <C-a> <esc>ggVG
+
+
+:hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
+":set cursorcolumn
+:set cursorline
+:hi CursorLine cterm=none ctermbg=237
+:nnoremap <Leader>c :set cursorline!
+:set nrformats-=octal "fix when <c-a> auto add 07 to 10
+
+" Protect large files from sourcing and other overhead.
+" Files become read only
+if !exists("my_auto_commands_loaded")
+    let my_auto_commands_loaded = 1
+    " Large files are > 10M
+    " Set options:
+    " eventignore+=FileType (no syntax highlighting etc
+    " assumes FileType always on)
+    " noswapfile (save copy of file)
+    " bufhidden=unload (save memory when other file is viewed)
+    " buftype=nowrite (file is read-only)
+    " undolevels=-1 (no undo possible)
+    let g:LargeFile = 1024 * 1024 * 10
+    augroup LargeFile
+        autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload buftype=nowrite undolevels=-1 | else | set eventignore-=FileType | endif
+    augroup END
+endif
+
+set path+=~/**
+set path+=~/.trash/**
+set path+=~/gits/arch_config/.local/bin/statusbar/**
+set wildmenu
+"command! MakeTags !ctags -R .
+let g:netrw_banner=0 " disable banner
+let g:netrw_browser_split=4 " open in prior window
+let g:netrw_altv=1 " open split to the right
+let g:netrw_liststyle=3 " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+nnoremap ,py :0read ~/gits/python/
+
+" auto pastetoggle
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction

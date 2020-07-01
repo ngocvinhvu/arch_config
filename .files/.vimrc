@@ -1,4 +1,199 @@
+" plugins
+let need_to_install_plugins = 0
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	"autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	let need_to_install_plugins = 1
+endif
 
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'ap/vim-buftabline'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-scripts/The-NERD-tree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'lepture/vim-jinja'
+Plug 'pangloss/vim-javascript'
+Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+call plug#end()
+
+filetype plugin indent on
+syntax on
+
+if need_to_install_plugins == 1
+	echo "Installing plugins..."
+	silent! PlugInstall
+	echo "Done!"
+	q
+endif
+
+" always show the status bar
+set laststatus=2
+
+" enable 256 colors
+set t_Co=256
+set t_ut=
+
+" turn on line numbering
+set relativenumber
+
+" sane text files
+set fileformat=unix
+set encoding=utf-8
+set fileencoding=utf-8
+
+" sane editing
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set colorcolumn=80
+set viminfo='25,\"50,n~/.viminfo
+
+" word movement
+imap <S-Left> <Esc>bi
+nmap <S-Left> b
+imap <S-Right> <Esc><Right>wi
+nmap <S-Right> w
+
+" indent/unindent with tab/shift-tab
+" nmap <Tab> >>
+" imap <S-Tab> <Esc><<i
+" nmap <S-tab> <<
+
+" mouse
+set mouse=a
+let g:is_mouse_enabled = 1
+noremap <silent> <leader>m :call ToggleMouse()<CR>
+function ToggleMouse()
+	if g:is_mouse_enabled == 1
+		echo "Mouse OFF"
+		set mouse=
+		let g:is_mouse_enabled = 0
+	else
+		echo "Mouse ON"
+		set mouse=a
+		let g:is_mouse_enabled = 1
+	endif
+endfunction
+
+
+" color scheme
+syntax on
+colorscheme onedark
+filetype on
+filetype plugin indent on
+
+" lightline
+set noshowmode
+let g:lightline = { 'colorscheme': 'onedark' }
+
+" code folding
+set foldmethod=indent
+set foldlevel=99
+
+" wrap toggle
+setlocal nowrap
+noremap <silent> ,w :call ToggleWrap()<CR>
+function ToggleWrap()
+	if &wrap
+		echo "Wrap OFF"
+		setlocal nowrap
+		set virtualedit=all
+		silent! nunmap <buffer> <Up>
+		silent! nunmap <buffer> <Down>
+		silent! nunmap <buffer> <Home>
+		silent! nunmap <buffer> <End>
+		silent! iunmap <buffer> <Up>
+		silent! iunmap <buffer> <Down>
+		silent! iunmap <buffer> <Home>
+		silent! iunmap <buffer> <End>
+	else
+		echo "Wrap ON"
+		setlocal wrap linebreak nolist
+		set virtualedit=
+		setlocal display+=lastline
+		noremap  <buffer> <silent> <Up>   gk
+		noremap  <buffer> <silent> <Down> gj
+		noremap  <buffer> <silent> <Home> g<Home>
+		noremap  <buffer> <silent> <End>  g<End>
+		inoremap <buffer> <silent> <Up>   <C-o>gk
+		inoremap <buffer> <silent> <Down> <C-o>gj
+		inoremap <buffer> <silent> <Home> <C-o>g<Home>
+		inoremap <buffer> <silent> <End>  <C-o>g<End>
+	endif
+endfunction
+
+" move through split windows
+" nmap <leader><Up> :wincmd k<CR>
+" nmap <leader><Down> :wincmd j<CR>
+" nmap <leader><Left> :wincmd h<CR>
+" nmap <leader><Right> :wincmd l<CR>
+
+" move through buffers
+" nmap <leader>[ :bp!<CR>
+" nmap <leader>] :bn!<CR>
+" nmap <leader>x :bd<CR>
+
+" restore place in file from previous session
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" file browser
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let NERDTreeMinimalUI = 1
+let g:nerdtree_open = 0
+map <C-b> :call NERDTreeToggle()<CR>
+function NERDTreeToggle()
+	NERDTreeTabsToggle
+	if g:nerdtree_open == 1
+		let g:nerdtree_open = 0
+	else
+		let g:nerdtree_open = 1
+		wincmd p
+	endif
+endfunction
+
+" syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+map <leader>s :SyntasticCheck<CR>
+map <leader>d :SyntasticReset<CR>
+map <leader>e :lnext<CR>
+map <leader>r :lprev<CR>
+
+" tag list
+map <C-t> :TagbarToggle<CR>
+
+" copy, cut and paste
+vmap <leader>y "+y
+vmap <leader>x "+c
+vmap <C-A-v> <ESC>"+p
+imap <C-A-v> <ESC>"+pa
+
+" disable autoindent when pasting text
+" source: https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+function! XTermPasteBegin()
+	set pastetoggle=<Esc>[201~
+	set paste
+	return ""
+endfunction
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+
+"""" mine
 "Mode Settings
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[1 q" "SR = REPLACE mode
@@ -11,249 +206,62 @@ let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
 
-
-set nocompatible  " be iMproved, required
-filetype off  " required
-set exrc
-set encoding=UTF-8
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" ==== plugin manager
-Plugin 'VundleVim/Vundle.vim'
-
-" ==== plugin vim-slime
-Plugin 'jpalardy/vim-slime'
-
-" ==== plugin vim-table-mode
-Plugin 'dhruvasagar/vim-table-mode'
-" ==== helpers
-Plugin 'vim-scripts/L9'
-" ==== excel
-"Plugin  'vim-scripts/excel.vim'
-let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
-
-" ==== File tree
-Plugin 'scrooloose/nerdtree'
-
-" ==== Completion
-Plugin 'Valloric/YouCompleteMe'
-
-" ==== Git
-" Plugin 'airblade/vim-gitgutter'
-" Plugin 'tpope/vim-fugitive'
-
-" ==== syntax helpers
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'othree/yajs.vim'
-Plugin 'mitsuhiko/vim-jinja'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'ap/vim-css-color'
-Plugin 'Vimjas/vim-python-pep8-indent'
-
-" ==== moving / searching
-Plugin 'easymotion/vim-easymotion'
-" Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
-
-" ==== snippets
-Plugin 'SirVer/ultisnips'
-
-" Status bar on bottom
-" Plugin 'bling/vim-airline'
-
-"===== Delay srt(sub)
-Plugin 'pamacs/vim-srt-sync'
-"Usage :ShiftSrt [delay time in milliseconds or timecode format (HH:MM:SS,MIL)]
-
-" ==== PLUGIN THEMES
-Plugin 'morhetz/gruvbox'
-
-"===== PYTHON-MODE
-" Plugin 'klen/python-mode'
-
-call vundle#end()
-filetype plugin indent on
-
-" ==== Colors and other basic settings
-:colorscheme gruvbox
-" set guifont=Monospace\ 10
-set fillchars+=vert:\|
-syntax enable
-set history=10000
-set viminfo+=:10000
-set splitbelow
-set splitright
-set lazyredraw
-set pastetoggle=<F3>
+" vnoremap <leader>y "+y
+inoremap jk <esc>
+nnoremap <c-p> :find 
+augroup vim_autocmd
+	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
+	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
+	autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
+	autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
+	autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
+	autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
+	autocmd Filetype php inoremap <silent> <buffer> <F8> <Esc>:%w !sudo php<CR>
+	autocmd Filetype php nnoremap <silent> <buffer> <F8> :%w !sudo php<CR>
+	autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
+	autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
+	autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
+	autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
+	autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
+	autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
+	autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
+	autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
+	autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
+	autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
+augroup END
+set so=999999
+" set ttymouse=sgr
+" if !has('nvim')
+"     set mouse=a
+"     set ttymouse=xterm2
+" endif
 set smartcase
 set ignorecase
-set t_Co=256
-set background=dark
-" set ruler
-set hidden
-set number
-set laststatus=2
-set smartindent
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-" set tabstop=4
-" let &colorcolumn="80"
-:set guioptions-=m  "remove menu bar
-:set guioptions-=T  "remove toolbar
-:set guioptions-=r  "remove right-hand scroll bar
-:set guioptions-=L  "remove left-hand scroll bar
-":set lines=999 columns=999
+set path+=**
+set hlsearch incsearch
+set nrformats-=octal "fix when <c-a> auto add 07 to 10
+set cursorline
+hi CursorLine	cterm=NONE ctermbg=237
+hi CursorLineNr term=none cterm=none ctermfg=202 
 
-" ==== NERDTREE
-let NERDTreeIgnore = ['__pycache__', '\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '.DS_Store']
-
-let NERDTreeShowHidden=1
-let g:NERDTreeWinPos="left"
-let g:NERDTreeDirArrows=0
-map <C-t> :NERDTreeToggle<CR>
-
-" ==== Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-set statusline=%F\ \ %y\ L:%l/%L\ C:%c\ 
-" set statusline=%{_size()}
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_javascript_mri_args = "--config=$HOME/.jshintrc"
-" let g:syntastic_python_checkers = [ 'pylint', 'flake8', 'pep8', 'pyflakes', 'python3']
-let g:syntastic_yaml_checkers = ['jsyaml']
-let g:syntastic_html_tidy_exec = 'tidy5'
-
-" === flake8
-" let g:flake8_show_in_file=1
-
-" ==== snippets
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-" ==== Easymotion
-let g:EasyMotion_do_mapping = 0
-let g:EasyMotion_smartcase = 1
-nmap f <Plug>(easymotion-s)
-
-" ==== moving around
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-
-" ==== disable mouse
-set mouse=c
-
-" ==== disable swap file warning
-set shortmess+=A
-
-" ==== custom commands
-command! JsonPretty execute ":%!python -m json.tool"
-set secure
-
-
-:let leader = "\\"
-let g:slime_target = "tmux"
-
-:inoremap jk <esc>
-:nnoremap <c-p> :find 
-:vnoremap <leader>y "+y
-augroup vim_autocmd
-    autocmd!
-    "    autocmd BufWritePre,BufRead *.html :normal gg=G
-    "    autocmd BufWritePre,BufRead *.py :normal gg=G
-    autocmd FileType python nnoremap <buffer> \\c I# <esc>
-    autocmd FileType javascript nnoremap <buffer> \\c I//<esc>
-    "autocmd Filetype python nnoremap <buffer> <F9> exec '!python' shellescape(@%, 1)<cr>
-    autocmd Filetype python inoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-    autocmd Filetype python nnoremap <F9> <Esc>:w<CR>:!clear;python %<CR>
-    autocmd Filetype python vnoremap <F9> !python <CR>
-    autocmd Filetype python inoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-    autocmd Filetype python nnoremap <F8> <Esc>:w<CR>:!clear;sudo python %<CR>
-    autocmd Filetype php nnoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
-    autocmd Filetype php inoremap <F9> <Esc>:w<CR>:!clear;php %<CR>
-    autocmd Filetype php vnoremap <F9> !php <CR>
-    autocmd Filetype php nnoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
-    autocmd Filetype php inoremap <F8> <Esc>:w<CR>:!clear;sudo php %<CR>
-    autocmd Filetype c inoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype c nnoremap <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-    autocmd Filetype cpp inoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype cpp nnoremap <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-    autocmd Filetype sh inoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
-    autocmd Filetype sh nnoremap <F9> <Esc>:w<CR>:!clear;bash %;<CR>
-    autocmd Filetype sh vnoremap <F9> !sh <CR>
-augroup END
-
-:set hlsearch incsearch
-:inoremap <C-l> <esc>ggVGd
-:nnoremap <C-l> <esc>ggVGd
-:inoremap <C-a> <esc>ggVG
-
-
-:hi CursorLineNr term=none cterm=none ctermfg=202 guifg=Orange
-":set cursorcolumn
-:set cursorline
-:hi CursorLine cterm=none ctermbg=237
-:nnoremap <Leader>c :set cursorline!
-:set nrformats-=octal "fix when <c-a> auto add 07 to 10
-
-" Protect large files from sourcing and other overhead.
-" Files become read only
-if !exists("my_auto_commands_loaded")
-    let my_auto_commands_loaded = 1
-    " Large files are > 10M
-    " Set options:
-    " eventignore+=FileType (no syntax highlighting etc
-    " assumes FileType always on)
-    " noswapfile (save copy of file)
-    " bufhidden=unload (save memory when other file is viewed)
-    " buftype=nowrite (file is read-only)
-    " undolevels=-1 (no undo possible)
-    let g:LargeFile = 1024 * 1024 * 10
-    augroup LargeFile
-        autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload buftype=nowrite undolevels=-1 | else | set eventignore-=FileType | endif
-    augroup END
-endif
-
-set path+=~/**
-set path+=~/.trash/**
-set path+=~/gits/arch_config/.local/bin/statusbar/**
-set wildmenu
-"command! MakeTags !ctags -R .
-let g:netrw_banner=0 " disable banner
-let g:netrw_browser_split=4 " open in prior window
-let g:netrw_altv=1 " open split to the right
-let g:netrw_liststyle=3 " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-nnoremap ,py :0read ~/gits/python/
-
-" auto pastetoggle
-let &t_SI .= "\<Esc>[?2004h"
-let &t_EI .= "\<Esc>[?2004l"
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-function! XTermPasteBegin()
-  set pastetoggle=<Esc>[201~
-  set paste
-  return ""
+let g:is_expandtab_enabled = 1
+map <F2> :call ToggleExpandTab()<CR>
+function ToggleExpandTab()
+	if g:is_expandtab_enabled == 1
+		echo "tab to spaces OFF"
+		set noexpandtab
+		%retab!
+		let g:is_expandtab_enabled = 0
+	else
+		echo "tab to spaces ON"
+		set expandtab
+		retab
+		let g:is_expandtab_enabled = 1
+	endif
 endfunction
+
+" close scratch buffer YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
