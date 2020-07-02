@@ -22,6 +22,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+Plug 'tpope/vim-surround'
 call plug#end()
 
 filetype plugin indent on
@@ -200,7 +201,7 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 "Mode Settings
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[1 q" "SR = REPLACE mode
-let &t_EI.="\e[4 q" "EI = NORMAL mode (ELSE)
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "Cursor settings:
 "  1 -> blinking block
 "  2 -> solid block 
@@ -270,4 +271,3 @@ endfunction
 " close scratch buffer YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-
