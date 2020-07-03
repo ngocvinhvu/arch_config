@@ -51,7 +51,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
-set expandtab
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -258,11 +258,13 @@ function ToggleExpandTab()
 	if g:is_expandtab_enabled == 1
 		echo "tab to spaces OFF"
 		set noexpandtab
+                set tabstop=4
 		%retab!
 		let g:is_expandtab_enabled = 0
 	else
 		echo "tab to spaces ON"
 		set expandtab
+                set tabstop=4
 		retab
 		let g:is_expandtab_enabled = 1
 	endif
