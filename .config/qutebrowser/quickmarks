@@ -57,3 +57,4 @@ mail3 https://mail.google.com/mail/u/3/#inbox
 import csv to mysql https://stackoverflow.com/questions/10154633/load-csv-data-into-mysql-in-python/10154650
 crawl login python https://stackoverflow.com/questions/20039643/how-to-scrape-a-website-that-requires-login-first-with-python
 posts http://localhost:8000/index.php?controller=posts
+mail2 https://mail.google.com/mail/u/2/?tab=wm&ogbl#inbox

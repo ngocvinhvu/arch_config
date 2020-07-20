@@ -122,7 +122,8 @@ settings:
       pr: https://thepiratebay.org/search.php?q={}&cat=0
       re: https://reddit.com/r/{}
       sp: https://shopee.vn/search?keyword={}
-      t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
+      # t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
+      t: https://translate.google.com/m?hl=vi&sl=auto&q={}
       tp: https://www.translatetheweb.com/?from=&to=en&a={}
       tw: https://twitter.com/search?q={}&src=typed_query
       vp: https://vphim.net/tim-kiem/{}
