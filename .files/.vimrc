@@ -176,7 +176,7 @@ map <leader>e :lnext<CR>
 map <leader>r :lprev<CR>
 
 " tag list
-map <C-t> :TagbarToggle<CR>
+map ,t :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>y "+y
@@ -214,14 +214,8 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 " vnoremap <leader>y "+y
 inoremap jk <esc>
 nnoremap <C-t> :tabnew<CR>
-inoremap <C-t> :tabnew<CR>
-nnoremap <C-w> :tabclose<CR>
-nnoremap <C-Tab> gt
-nnoremap <C-S-Tab> gT
-inoremap <C-Tab> gt
-inoremap <C-S-Tab> gT
-vnoremap <C-Tab> gt
-vnoremap <C-S-Tab> gT
+inoremap <C-t> <esc>:tabnew<CR>
+nnoremap <C-Tab> :tabn<CR>
 vnoremap <silent> <leader>t :Trans :vi<CR>
 nnoremap <c-p> :find 
 augroup vim_autocmd
