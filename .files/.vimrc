@@ -217,8 +217,7 @@ nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-Tab> :tabn<CR>
 vnoremap <silent> <leader>t :Trans :vi<CR>
-nnoremap <c-p> :tabnew<CR>:find 
-"nnoremap <c-p> :find 
+nnoremap <c-p> :find 
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
