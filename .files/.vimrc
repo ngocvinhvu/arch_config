@@ -21,7 +21,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
-Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+" Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 call plug#end()
@@ -277,6 +277,8 @@ function ToggleExpandTab()
 endfunction
 
 " close scratch buffer YouCompleteMe
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+"let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_autoclose_preview_window_after_completion = 1
 
+:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
+:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
