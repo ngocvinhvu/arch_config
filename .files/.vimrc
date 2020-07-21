@@ -154,7 +154,7 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeMinimalUI = 1
 let g:nerdtree_open = 0
-map <C-b> :call NERDTreeToggle()<CR>
+map <leader>b :call NERDTreeToggle()<CR>
 function NERDTreeToggle()
 	NERDTreeTabsToggle
 	if g:nerdtree_open == 1
