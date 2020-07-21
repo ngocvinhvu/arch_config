@@ -176,7 +176,7 @@ map <leader>e :lnext<CR>
 map <leader>r :lprev<CR>
 
 " tag list
-map ,t :TagbarToggle<CR>
+map <leader>t :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>y "+y
@@ -213,10 +213,10 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 
 " vnoremap <leader>y "+y
 inoremap jk <esc>
-nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <esc>:tabnew<CR>
+nnoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-Tab> :tabn<CR>
-vnoremap <silent> <leader>t :Trans :vi<CR>
+vnoremap <silent> ,t :Trans :vi<CR>
 nnoremap <c-p> :find 
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
