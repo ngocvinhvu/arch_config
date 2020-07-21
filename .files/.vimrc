@@ -23,6 +23,7 @@ Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
+Plug 'echuraev/translate-shell.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -89,7 +90,7 @@ endfunction
 
 " color scheme
 syntax on
-colorscheme onedark
+" colorscheme onedark
 filetype on
 filetype plugin indent on
 
@@ -212,6 +213,16 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 
 " vnoremap <leader>y "+y
 inoremap jk <esc>
+nnoremap <C-t> :tabnew
+inoremap <C-t> :tabnew
+nnoremap <C-w> :tabclose
+nnoremap <C-Tab> gt
+nnoremap <C-S-Tab> gT
+inoremap <C-Tab> gt
+inoremap <C-S-Tab> gT
+vnoremap <C-Tab> gt
+vnoremap <C-S-Tab> gT
+vnoremap <silent> <leader>t :Trans :vi<CR>
 nnoremap <c-p> :find 
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
@@ -249,8 +260,9 @@ set path+=**
 set hlsearch incsearch
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
 set cursorline
-hi CursorLine	cterm=NONE ctermbg=237
+hi CursorLine	cterm=NONE ctermbg=11
 hi CursorLineNr term=none cterm=none ctermfg=202 
+hi Search term=none cterm=none ctermfg=black ctermbg=red
 
 let g:is_expandtab_enabled = 1
 map <F2> :call ToggleExpandTab()<CR>
@@ -273,3 +285,4 @@ endfunction
 " close scratch buffer YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+

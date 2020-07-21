@@ -110,9 +110,9 @@ static const char *colorname[] = {
 	"#ebdbb2",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#ffffff",   /* 256 -> bg */
-	"#000000",   /* 257 -> fg */
-	"#000000", /* 258 -> cursor */
+	"#282828",   /* 256 -> bg */
+	"#ebdbb2",   /* 257 -> fg */
+	"#add8e6", /* 258 -> cursor */
 	// "green", /* 258 -> cursor */
 };
 
@@ -396,8 +396,8 @@ static Key key[] = {
 	{ XK_Right,         XK_ANY_MOD,     "\033[C",        0,   -1},
 	{ XK_Right,         XK_ANY_MOD,     "\033OC",        0,   +1},
 	{ XK_ISO_Left_Tab,  ShiftMask,      "\033[Z",        0,    0},
-	{ XK_Tab,           ControlMask,    "\033[9;5u",     0,    0},
-	{ XK_Tab,   ControlMask|ShiftMask,  "\033[1;5Z",     0,    0},
+	{ XK_Tab,           ControlMask,    "\033[9;5u",	 0,    0},
+	{ XK_Tab,          ControlMask|ShiftMask,          "\033[1;5Z",   0,  0},
 	{ XK_Return,        Mod1Mask,       "\033\r",        0,    0},
 	{ XK_Return,        XK_ANY_MOD,     "\r",            0,    0},
 	{ XK_Insert,        ShiftMask,      "\033[4l",      -1,    0},

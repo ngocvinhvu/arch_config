@@ -89,7 +89,7 @@ endfunction
 
 " color scheme
 syntax on
-" colorscheme onedark
+colorscheme onedark
 filetype on
 filetype plugin indent on
 
@@ -249,9 +249,8 @@ set path+=**
 set hlsearch incsearch
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
 set cursorline
-hi CursorLine	cterm=NONE ctermbg=11
+hi CursorLine	cterm=NONE ctermbg=237
 hi CursorLineNr term=none cterm=none ctermfg=202 
-hi Search term=none cterm=none ctermfg=black ctermbg=red
 
 let g:is_expandtab_enabled = 1
 map <F2> :call ToggleExpandTab()<CR>
