@@ -216,7 +216,7 @@ inoremap jk <esc>
 inoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-Tab> :tabn<CR>
-vnoremap <silent> ,t :Trans :vi<CR>
+vnoremap <silent> ,, :Trans :vi<CR>
 nnoremap <c-p> :find 
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
