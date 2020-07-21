@@ -213,9 +213,9 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 
 " vnoremap <leader>y "+y
 inoremap jk <esc>
-nnoremap <C-t> :tabnew
-inoremap <C-t> :tabnew
-nnoremap <C-w> :tabclose
+nnoremap <C-t> :tabnew<CR>
+inoremap <C-t> :tabnew<CR>
+nnoremap <C-w> :tabclose<CR>
 nnoremap <C-Tab> gt
 nnoremap <C-S-Tab> gT
 inoremap <C-Tab> gt
