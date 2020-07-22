@@ -104,10 +104,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	// { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	// { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	// { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	// { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ControlMask,           XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ControlMask,           XK_period, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -134,8 +134,8 @@ static Key keys[] = {
         { MODKEY,			XK_m,		            spawn,		SHCMD("xterm -e ranger /mnt/sdb5/videos/tv_series/") },
         { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
         { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
-        { MODKEY,			XK_period,	            spawn,		SHCMD("mpc next") },
-        { MODKEY|ShiftMask,		XK_period,	            spawn,		SHCMD("mpc repeat") },
+		// { MODKEY,			XK_period,	            spawn,		SHCMD("mpc next") },
+		// { MODKEY|ShiftMask,		XK_period,	            spawn,		SHCMD("mpc repeat") },
         { 0,			        XF86XK_ScreenSaver,	    spawn,		SHCMD("i3lock -i /mnt/sdb5/pics/Pictures/gnu_linux1.png") },
         // { 0,	                        XF86XK_AudioMicMute,	    spawn,		SHCMD("pactl set-source-mute 1 toggle") },
         // { 0,	                        XF86XK_AudioMute,	    spawn,		SHCMD("pactl set-sink-mute 0 toggle") },
@@ -156,8 +156,6 @@ static Key keys[] = {
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
         { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
         { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
-        { MODKEY,			XK_period,	            spawn,		SHCMD("mpc next") },
-        { MODKEY|ShiftMask,		XK_period,	            spawn,		SHCMD("mpc repeat") },
         { MODKEY,			XK_w,		            spawn,		SHCMD("$BROWSER") },
 
 };
