@@ -132,8 +132,8 @@ static Key keys[] = {
         { MODKEY|ShiftMask,		XK_bracketright,	    spawn,		SHCMD("mpc seek +120") },
         { MODKEY,			XK_n,		            spawn,		SHCMD("xterm -e ncmpcpp") },
         { MODKEY,			XK_m,		            spawn,		SHCMD("xterm -e ranger /mnt/sdb5/videos/tv_series/") },
-        { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
-        { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
+        // { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
+        // { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
 		// { MODKEY,			XK_period,	            spawn,		SHCMD("mpc next") },
 		// { MODKEY|ShiftMask,		XK_period,	            spawn,		SHCMD("mpc repeat") },
         { 0,			        XF86XK_ScreenSaver,	    spawn,		SHCMD("i3lock -i /mnt/sdb5/pics/Pictures/gnu_linux1.png") },
@@ -154,8 +154,6 @@ static Key keys[] = {
         { MODKEY,			XK_z,	                    spawn,		SHCMD("zathura") },
         { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -drx") },
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
-        { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
-        { MODKEY|ShiftMask,		XK_comma,	            spawn,		SHCMD("mpc seek 0%") },
         { MODKEY,			XK_w,		            spawn,		SHCMD("$BROWSER") },
 
 };
