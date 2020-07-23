@@ -6,6 +6,7 @@ export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT4_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
+export FZF_DEFAULT_COMMAND="find -L"
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 
