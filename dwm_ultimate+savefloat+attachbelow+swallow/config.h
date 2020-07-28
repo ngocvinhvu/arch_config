@@ -126,10 +126,10 @@ static Key keys[] = {
 
 /* Custom keybinding */
         { MODKEY,			XK_p,			    spawn,		SHCMD("mpc toggle") },
-        { MODKEY,			XK_bracketleft,		    spawn,		SHCMD("mpc seek -10") },
-        { MODKEY|ShiftMask,		XK_bracketleft,		    spawn,		SHCMD("mpc seek -120") },
-        { MODKEY,			XK_bracketright,	    spawn,		SHCMD("mpc seek +10") },
-        { MODKEY|ShiftMask,		XK_bracketright,	    spawn,		SHCMD("mpc seek +120") },
+        { MODKEY,			XK_bracketleft,		    spawn,		SHCMD("mpc prev") },
+        { MODKEY|ShiftMask,		XK_bracketleft,		    spawn,		SHCMD("mpc seek -10 ") },
+        { MODKEY,			XK_bracketright,	    spawn,		SHCMD("mpc next") },
+        { MODKEY|ShiftMask,		XK_bracketright,	    spawn,		SHCMD("mpc seek +10") },
         { MODKEY,			XK_n,		            spawn,		SHCMD("xterm -e ncmpcpp") },
         { MODKEY,			XK_m,		            spawn,		SHCMD("xterm -e ranger /mnt/sdb5/videos/tv_series/") },
         // { MODKEY,			XK_comma,	            spawn,		SHCMD("mpc prev") },
