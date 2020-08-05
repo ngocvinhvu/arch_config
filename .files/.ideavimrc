@@ -1,0 +1,26 @@
+inoremap jk <esc>
+set timeoutlen=100
+vnoremap Y "+y
+set laststatus=2
+set t_Co=256
+set t_ut=
+" set relativenumber
+set ttymouse=sgr
+set mouse=a
+vmap Y "+y
+vmap P "+p
+vmap <leader>x "+c
+vmap <C-A-v> <ESC>"+p
+imap <C-A-v> <ESC>"+pa
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+set scrolloff=999999
+set smartcase
+set ignorecase
+set path+=**
+set hlsearch incsearch
+set nrformats-=octal "fix when <c-a> auto add 07 to 10
+set cursorline
+" hi CursorLine	cterm=NONE ctermbg=11
+" hi CursorLineNr term=none cterm=none ctermfg=202 
+" hi Search term=none cterm=none ctermfg=black ctermbg=red
