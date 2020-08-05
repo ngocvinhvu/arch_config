@@ -213,6 +213,7 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 
 " vnoremap <leader>y "+y
 inoremap jk <esc>
+set timeoutlen=100
 inoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-t> <esc>:tabnew<CR>
 nnoremap <C-Tab> :tabn<CR>
