@@ -179,7 +179,7 @@ map <leader>r :lprev<CR>
 map <leader>t :TagbarToggle<CR>
 
 " copy, cut and paste
-vmap <leader>y "+y
+vmap Y "+y
 vmap <leader>x "+c
 vmap <C-A-v> <ESC>"+p
 imap <C-A-v> <ESC>"+pa
