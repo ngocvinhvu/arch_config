@@ -240,3 +240,4 @@ vman() {
     vim -R -c 'set ft=man nomod nolist' -
 }
 
+export FZF_DEFAULT_COMMAND="find -L"

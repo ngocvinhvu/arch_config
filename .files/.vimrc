@@ -24,6 +24,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -283,3 +284,6 @@ endfunction
 
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+
+
+let $FZF_DEFAULT_COMMAND = "find -L"
