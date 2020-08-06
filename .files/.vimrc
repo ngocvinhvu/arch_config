@@ -212,7 +212,8 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
 
-" vnoremap <leader>y "+y
+vnoremap <leader>y "+y
+vnoremap Y "+y
 inoremap jk <esc>
 set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
