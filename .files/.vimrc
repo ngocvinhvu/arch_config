@@ -215,11 +215,12 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 " vnoremap <leader>y "+y
 inoremap jk <esc>
 set timeoutlen=400
-inoremap <C-t> <esc>:tabnew<CR>
-nnoremap <C-t> <esc>:tabnew<CR>
-nnoremap <C-Tab> :tabn<CR>
+" inoremap <C-t> <esc>:tabnew<CR>
+" nnoremap <C-t> <esc>:tabnew<CR>
+map <C-t> <esc>:tabnew<CR>
+" nnoremap <C-Tab> :tabn<CR>
+map <C-Tab> :tabn<CR>
 vnoremap <silent> ,, :Trans :vi<CR>
-"nnoremap <c-p> :find 
 nnoremap <c-p> :FZF ~/<CR>
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
