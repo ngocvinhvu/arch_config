@@ -217,10 +217,10 @@ vnoremap Y "+y
 inoremap jk <esc>
 set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
-nnoremap <silent> <C-n> :tabn<CR>
-nnoremap <silent> <C-p> :tabp<CR>
+nnoremap <silent> ,d :tabclose<CR>
+nnoremap <silent> <C-Tab> :tabn<CR>
 vnoremap <silent> ,, :Trans :vi<CR>
-nnoremap <c-f> :FZF ~/<CR>
+nnoremap ,f :FZF ~/<CR>
 augroup vim_autocmd
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
@@ -280,8 +280,8 @@ function ToggleExpandTab()
 endfunction
 
 " close scratch buffer YouCompleteMe
-"let g:ycm_autoclose_preview_window_after_insertion = 1
-"let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
