@@ -21,7 +21,7 @@ Plug 'majutsushi/tagbar'
 " Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
-Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+" Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 Plug 'junegunn/fzf.vim'
@@ -53,6 +53,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
+set cmdheight=2
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
@@ -72,7 +73,7 @@ nmap <S-Right> w
 " nmap <S-tab> <<
 
 " mouse
-set ttymouse=sgr
+" set ttymouse=sgr
 set mouse=a
 let g:is_mouse_enabled = 1
 noremap <silent> <leader>m :call ToggleMouse()<CR>
@@ -286,3 +287,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 
 let $FZF_DEFAULT_COMMAND = "find -L"
+
+
+" if !has('nvim')
+"   set viminfo+=n~/.local/share/vim/viminfo
+" endif
