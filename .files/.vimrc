@@ -45,6 +45,7 @@ set t_Co=256
 set t_ut=
 
 " turn on line numbering
+set number
 set relativenumber
 
 " sane text files
