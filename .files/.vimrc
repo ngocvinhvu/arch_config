@@ -73,7 +73,7 @@ nmap <S-Right> w
 " nmap <S-tab> <<
 
 " mouse
-" set ttymouse=sgr
+set ttymouse=sgr
 set mouse=a
 let g:is_mouse_enabled = 1
 noremap <silent> <leader>m :call ToggleMouse()<CR>
