@@ -92,7 +92,6 @@ endfunction
 
 
 " color scheme
-syntax on
 " colorscheme onedark
 
 " lightline
