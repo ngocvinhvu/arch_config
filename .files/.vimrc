@@ -18,16 +18,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-" Plug 'vim-scripts/indentpython.vim'
+Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
-" Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 Plug 'junegunn/fzf.vim'
 call plug#end()
 
 filetype plugin indent on
+filetype on
 syntax on
 
 if need_to_install_plugins == 1
@@ -54,7 +55,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
-set cmdheight=2
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
@@ -251,6 +251,7 @@ set scrolloff=999999
 "     set mouse=a
 "     set ttymouse=xterm2
 " endif
+set cmdheight=2
 set smartcase
 set ignorecase
 set path+=**
@@ -288,8 +289,3 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 
 let $FZF_DEFAULT_COMMAND = "find -L"
-
-
-" if !has('nvim')
-"   set viminfo+=n~/.local/share/vim/viminfo
-" endif
