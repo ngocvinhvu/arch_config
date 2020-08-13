@@ -34,12 +34,14 @@ static const Rule rules[] = {
         { "GoldenDict",    NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "firefox",       NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
-        { "chromium",       NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
+        { "chromium",      NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "St",            NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "Gimp",          NULL,       NULL,            0,            0,           0,           0,         -1 },
         // { "Sxiv",       NULL,       NULL,            0,            1,           0,          -1,         -1 },
         { "mpv",           NULL,       NULL,            0,            0,           0,           0,         -1 },
         { NULL,            NULL,       "ncmpcpp",       1 << 7,       0,           0,           1,         -1 },
+     // { NULL,            NULL,"xclip -o | trans :vi", 0,			  1,           1,           1,         -1 },				  	// xterm
+        { NULL,            NULL,	   "trans",			0,			  1,           1,           1,         -1 },					 // urxvt
         { NULL,          NULL,        "Event Tester",   0,            1,           0,           1,         -1 }, /*xev*/
 
 
@@ -104,10 +106,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      togglefullscr,  {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,           XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,           XK_period, tagmon,         {.i = +1 } },
+	// { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	// { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	// { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+	// { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -155,6 +157,8 @@ static Key keys[] = {
         { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -drx") },
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
         { MODKEY,			XK_w,		            spawn,		SHCMD("$BROWSER") },
+        // { MODKEY,			XK_comma,		            spawn,		SHCMD("xterm -hold -e 'xclip -o | trans :vi' ") },
+        { MODKEY,			XK_comma,		            spawn,		SHCMD("trans.sh") },
 
 };
 
