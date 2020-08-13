@@ -35,8 +35,8 @@ URxvt.keysym.C-equal:           perl:font-size:reset
 URxvt.keysym.C-slash:           perl:font-size:show
 URxvt.matcher.button:           1
 ! Url-select
-URxvt.keysym.M-u:               perl:url-select:select_next
-URxvt.url-select.launcher:      /usr/bin/firefox
+URxvt.keysym.C-M-u:               perl:url-select:select_next
+URxvt.url-select.launcher:      /usr/bin/qutebrowser
 URxvt.url-select.underline:     true
 ! Keyboard select
 URxvt.keysym.M-Escape:          perl:keyboard-select:activate

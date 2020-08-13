@@ -40,9 +40,9 @@ static const Rule rules[] = {
         // { "Sxiv",       NULL,       NULL,            0,            1,           0,          -1,         -1 },
         { "mpv",           NULL,       NULL,            0,            0,           0,           0,         -1 },
         { NULL,            NULL,       "ncmpcpp",       1 << 7,       0,           0,           1,         -1 },
-     // { NULL,            NULL,"xclip -o | trans :vi", 0,			  1,           1,           1,         -1 },				  	// xterm
+	    { NULL,            NULL,"xclip -o | trans :vi", 0,			  1,           1,           1,         -1 },				  	// xterm
         { NULL,            NULL,	   "trans",			0,			  1,           1,           1,         -1 },					 // urxvt
-        { NULL,          NULL,        "Event Tester",   0,            1,           0,           1,         -1 }, /*xev*/
+        { NULL,            NULL,       "Event Tester",  0,            1,           0,           1,         -1 }, /*xev*/
 
 
 };
@@ -157,8 +157,8 @@ static Key keys[] = {
         { Mod4Mask,			XK_i,	                    spawn,		SHCMD("ibus-daemon -drx") },
         { Mod4Mask|ShiftMask,           XK_i,	                    spawn,		SHCMD("ibus exit") },
         { MODKEY,			XK_w,		            spawn,		SHCMD("$BROWSER") },
-        // { MODKEY,			XK_comma,		            spawn,		SHCMD("xterm -hold -e 'xclip -o | trans :vi' ") },
-        { MODKEY,			XK_comma,		            spawn,		SHCMD("trans.sh") },
+        { MODKEY,			XK_period,		            spawn,		SHCMD("xterm_trans.sh") },
+        { MODKEY,			XK_comma,		            spawn,		SHCMD("urxvt_trans.sh") },
 
 };
 
