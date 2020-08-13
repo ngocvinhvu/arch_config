@@ -18,7 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-Plug 'vim-scripts/indentpython.vim'
+" Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 Plug 'pangloss/vim-javascript'
 Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
@@ -55,7 +55,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
-set noexpandtab
+" setlocal noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -91,11 +91,10 @@ function ToggleMouse()
 endfunction
 
 
-" color scheme
 " colorscheme onedark
 
 " lightline
-set noshowmode
+" set noshowmode
 let g:lightline = { 'colorscheme': 'onedark' }
 
 " code folding
@@ -220,6 +219,8 @@ nnoremap <silent> <C-Tab> :tabn<CR>
 vnoremap <silent> ,, :Trans :vi<CR>
 nnoremap ,f :FZF ~/<CR>
 augroup vim_autocmd
+	" fix always tabs to spaces when start python file
+	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
 	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
@@ -287,3 +288,4 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 
 let $FZF_DEFAULT_COMMAND = "find -L"
+
