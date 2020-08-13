@@ -55,7 +55,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 " sane editing
-" set noexpandtab
+" setlocal noexpandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -217,15 +217,16 @@ nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> <C-Tab> :tabn<CR>
 vnoremap <silent> ,, :Trans :vi<CR>
-nnoremap ,f :FZF ~/<CR>
+map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
 	" fix always tabs to spaces when start python file
+	" fuck /usr/share/vim/vim74/ftplugin/python.vim
 	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
-	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python<CR>
-	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python<CR>
-	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python<CR>
-	autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python<CR>
-	autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python<CR>
+	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python3<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python3<CR>
+	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python3<CR>
+	autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python3<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python3<CR>
 	autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
 	autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
 	autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
