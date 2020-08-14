@@ -6,6 +6,7 @@
 # Port 25 : smtp
 # Port 80 : http
 # Port 443: https
+# Port 53 : DNS
 # installer
 # qemu-system-x86_64 -m 2048 \
 #  -hda freebsd.qcow2 -enable-kvm \
