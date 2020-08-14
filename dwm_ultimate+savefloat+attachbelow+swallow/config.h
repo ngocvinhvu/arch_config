@@ -159,6 +159,8 @@ static Key keys[] = {
         { MODKEY,			XK_w,		            spawn,		SHCMD("$BROWSER") },
         { MODKEY,			XK_period,		            spawn,		SHCMD("xterm_trans.sh") },
         { MODKEY,			XK_comma,		            spawn,		SHCMD("urxvt_trans.sh") },
+        { MODKEY|ShiftMask,			XK_period,		            spawn,		SHCMD("xterm -e trans :vi --shell") },
+        { MODKEY|ShiftMask,			XK_comma,		            spawn,		SHCMD("urxvt -e trans :vi --shell") },
 
 };
 
