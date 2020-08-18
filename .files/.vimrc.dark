@@ -25,8 +25,6 @@ Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
 Plug 'tpope/vim-surround'
 call plug#end()
 
-filetype plugin indent on
-syntax on
 
 if need_to_install_plugins == 1
 	echo "Installing plugins..."
