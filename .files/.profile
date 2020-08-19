@@ -20,7 +20,7 @@ sudo sh -c "echo 120 > /sys/devices/platform/i8042/serio1/serio2/speed"         
 
 export VISUAL=vim
 export EDITOR=$VISUAL
-export BROWSER=/usr/bin/qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4
+export BROWSER="/usr/bin/qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4"
 
 # ./.fehbg
 [ ! -e ~/.config/mpd/pid ] && mpd
