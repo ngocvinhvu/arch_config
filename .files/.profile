@@ -6,12 +6,11 @@ export XMODIFIERS="@im=ibus"
 export GTK_IM_MODULE="ibus"
 export QT4_IM_MODULE="ibus"
 export QT_IM_MODULE="ibus"
-export FZF_DEFAULT_COMMAND="find -L"
 
-export _JAVA_AWT_WM_NONREPARENTING=1
+# export _JAVA_AWT_WM_NONREPARENTING=1
 
 # From .zshrc
-export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/gits/arch_config/scripts:$HOME/gits/arch_config/.local/bin/statusbar"
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/gits/arch_config/scripts:$HOME/gits/arch_config/.local/bin/statusbar:$HOME/.cargo/bin"
 
 # setxkbmap -option ctrl:swapcaps
 
@@ -21,7 +20,7 @@ sudo sh -c "echo 120 > /sys/devices/platform/i8042/serio1/serio2/speed"         
 
 export VISUAL=vim
 export EDITOR=$VISUAL
-export BROWSER=/usr/bin/qutebrowser
+export BROWSER=/usr/bin/qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4
 
 # ./.fehbg
 [ ! -e ~/.config/mpd/pid ] && mpd
