@@ -133,7 +133,7 @@ static Key keys[] = {
 	{ MODKEY,				XK_bracketright,	    	spawn,	SHCMD("mpc next") },
 	{ MODKEY|ShiftMask,		XK_bracketright,	    	spawn,	SHCMD("mpc seek +10") },
 	{ MODKEY,				XK_n,		            	spawn,	SHCMD("xterm -e ncmpcpp") },
-	{ MODKEY,				XK_m,		            	spawn,	SHCMD("xterm -e ranger /mnt/sdb5/videos/tv_series/") },
+	{ MODKEY,				XK_m,		            	spawn,	SHCMD("xterm -e ranger /mnt/sdb6/videos/tv_series/") },
 	// { MODKEY,			XK_comma,	            	spawn,	SHCMD("mpc prev") },
 	// { MODKEY|ShiftMask,	XK_comma,	            	spawn,	SHCMD("mpc seek 0%") },
 	// { MODKEY,			XK_period,					spawn,	SHCMD("mpc next") },
