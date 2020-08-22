@@ -12,3 +12,7 @@ sysrc mysql_args="--skip-grant-tables"
 mysql -u root -p
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+
+
+
+pkg delete -xi # remove completely
