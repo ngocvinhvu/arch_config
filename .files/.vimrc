@@ -217,7 +217,9 @@ inoremap jk <esc>
 set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
-nnoremap <silent> <C-Tab> :tabn<CR>
+nnoremap <silent> ,D :qa!<CR>
+nnoremap <silent> <C-j> gt
+nnoremap <silent> <C-k> gT
 vnoremap <silent> ,, :Trans :vi<CR>
 map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
