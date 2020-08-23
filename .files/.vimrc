@@ -26,6 +26,7 @@ Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 " Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'vim-scripts/colorizer'
 call plug#end()
 
 filetype plugin indent on
