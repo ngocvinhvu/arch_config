@@ -6,6 +6,8 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias ll='ls -l'
+alias la='ls -la'
 PS1='[\u@\h \W]\$ '
 
 # Customize
@@ -19,6 +21,9 @@ bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-command 'u: undo'
 bind -m vi-command '/: vi-search'
 bind -m vi-insert 'Control-l: clear-screen'
+bind -m vi-insert 'TAB: menu-complete'
+bind -m vi-insert '"\e[Z": menu-complete-backward'
+
 
 
 
@@ -26,11 +31,9 @@ bind -m vi-insert 'Control-l: clear-screen'
 
 # eport field
 export MANPATH="/usr/local/man:$MANPATH"
-export LANG=en_US.UTF-8
-export EDITOR='vim'
-export ARCHFLAGS="-arch x86_64"
 export HISTFILE=~/.bash_history
 export HISTSIZE=999999999
+export HISTCONTROL=ignoreboth:erasedups
 export SAVEHIST=$HISTSIZE
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
@@ -44,6 +47,7 @@ export FZF_DEFAULT_COMMAND="find -L"
 
 # alias field
 alias msfconsole="msfconsole --quiet -x \"db_connect nnd@msf\""
+alias emacs="emacs -nw"
 alias pscpu=" ps -eo cmd,%mem,%cpu --sort=-%cpu| less"
 alias psmem=" ps -eo cmd,%mem,%cpu --sort=-%mem| less"
 alias vi="vim -u NONE"
