@@ -9,24 +9,22 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
 PS1='[\u@\h \W]\$ '
+PS2='> '
 
 # Customize
 set -o vi
-set keyseq-timeout 400
+
+# Bind field
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 bind '"jk":vi-movement-mode'
-
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-command 'u: undo'
 bind -m vi-command '/: vi-search'
 bind -m vi-insert 'Control-l: clear-screen'
 bind -m vi-insert 'TAB: menu-complete'
 bind -m vi-insert '"\e[Z": menu-complete-backward'
-
-
-
-
+bind -m vi-insert 'Control-e: edit-and-execute-command'
 
 
 # eport field
@@ -72,8 +70,8 @@ alias pmsy='sudo pacman -Sy'
 alias pms='sudo pacman -S'
 alias pmr='sudo pacman -R'
 alias i3lock="i3lock -k"
-alias d='~/Downloads'
-alias D='~/Documents'
+alias d='cd ~/Downloads'
+alias D='cd ~/Documents'
 alias mv='mv -iv'
 alias cp='cp -iv'
 alias rm='rm -v'

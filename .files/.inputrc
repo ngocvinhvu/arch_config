@@ -1,19 +1,12 @@
-$include /etc/inputrc
-set editing-mode vi
-$if mode=vi
-
-set show-mode-in-prompt on
-set vi-ins-mode-string \1\e[6 q\2
-set vi-cmd-mode-string \1\e[2 q\2
-
-set keymap vi-command
-# these are for vi-command mode
-Control-l: clear-screen
-Control-a: beginning-of-line
-
-set keymap vi-insert
-# these are for vi-insert mode
-Control-l: clear-screen
-Control-a: beginning-of-line
-
-$endif
+# Color files by types
+# Note that this may cause completion text blink in some terminals (e.g. xterm).
+set colored-stats On
+set visible-stats On						# Append char to indicate type
+set mark-symlinked-directories On			# Mark symlinked directories
+set colored-completion-prefix On			# Color the common prefix
+set menu-complete-display-prefix On			# Color the common prefix in menu-complete
+set echo-control-characters off				# Disable show ^C ^V etc
+set completion-prefix-display-length 2		# Just show Prefix
+set completion-ignore-case on				# [A-Z] like [a-z]
+set keyseq-timeout 400
+set show-all-if-ambiguous on
