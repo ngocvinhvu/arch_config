@@ -8,14 +8,13 @@
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
-PS1='[\u@\h \W]\$ '
+PS1='[\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m]\n\$ '
 PS2='> '
 
 # Customize
 set -o vi
 
 # Bind field
-bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 bind '"jk":vi-movement-mode'
 bind -m vi-command 'Control-l: clear-screen'
@@ -33,13 +32,14 @@ export HISTFILE=~/.bash_history
 export HISTSIZE=999999999
 export HISTCONTROL=ignoreboth:erasedups
 export SAVEHIST=$HISTSIZE
-export LESS_TERMCAP_mb=$'\e[1;32m'
-export LESS_TERMCAP_md=$'\e[1;32m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[01;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;4;31m'
+# color for manpage
+# export LESS_TERMCAP_mb=$'\e[1;32m' # light yellow
+# export LESS_TERMCAP_md=$'\e[1;32m'
+# export LESS_TERMCAP_me=$'\e[0m'
+# export LESS_TERMCAP_se=$'\e[0m'
+# export LESS_TERMCAP_so=$'\e[01;31m' # red # search
+# export LESS_TERMCAP_ue=$'\e[0m'
+# export LESS_TERMCAP_us=$'\e[1;4;33m' # dark yellow
 export FZF_DEFAULT_COMMAND="find -L"
 
 
