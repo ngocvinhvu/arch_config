@@ -7,9 +7,12 @@
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
+alias l='ls -la'
 alias la='ls -la'
 PS1='[\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m]\n\$ '
 PS2='> '
+echo -ne '\e[4 q' # Cursor is underscore instead of Block
+
 
 # Customize
 set -o vi
@@ -53,6 +56,7 @@ alias youtube-dl="youtube-dl --write-auto-sub --external-downloader aria2c --ext
 alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
+alias grep='grep --color=auto'
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
 alias a='cd /home/duy/gits/arch_config'

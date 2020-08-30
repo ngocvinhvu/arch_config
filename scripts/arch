@@ -18,7 +18,7 @@
 # run
 sudo fuser -k 7721/tcp 7722/tcp 7723/tcp 7725/tcp  7780/tcp
 qemu-system-x86_64 -m 6096 \
- -hda /mnt/sdb2/arch.qcow2 -enable-kvm \
+ -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm \
  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23 \
  -device e1000,netdev=mynet0
 
