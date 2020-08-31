@@ -230,26 +230,26 @@ augroup vim_autocmd
 	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python3<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python3<CR>
-	autocmd Filetype python nnoremap <silent> <buffer> <F5> :w<CR>:!python3 %<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F8> :w<CR>:!python3 %<CR>
 	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python3<CR>
-	autocmd Filetype python inoremap <silent> <buffer> <F8> <Esc>:%w !sudo python3<CR>
-	autocmd Filetype python nnoremap <silent> <buffer> <F8> :%w !sudo python3<CR>
+	autocmd Filetype python inoremap <silent> <buffer> <F5> <Esc>:%w !sudo python3<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F5> :%w !sudo python3<CR>
 	autocmd Filetype php inoremap <silent> <buffer> <F9> <Esc>:%w !php<CR>
 	autocmd Filetype php nnoremap <silent> <buffer> <F9> :%w !php<CR>
 	autocmd Filetype php vnoremap <silent> <buffer> <F9> !php<CR>
-	autocmd Filetype php inoremap <silent> <buffer> <F8> <Esc>:%w !sudo php<CR>
-	autocmd Filetype php nnoremap <silent> <buffer> <F8> :%w !sudo php<CR>
+	autocmd Filetype php inoremap <silent> <buffer> <F5> <Esc>:%w !sudo php<CR>
+	autocmd Filetype php nnoremap <silent> <buffer> <F5> :%w !sudo php<CR>
 	autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
 	autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
 	autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
-	autocmd Filetype sh nnoremap <silent> <buffer> <F5> :w<CR>:!bash %<CR>
+	autocmd Filetype sh nnoremap <silent> <buffer> <F8> :w<CR>:!bash %<CR>
 	autocmd Filetype javascript inoremap <silent> <buffer> <F9> <Esc>:%w !node<CR>
 	autocmd Filetype javascript nnoremap <silent> <buffer> <F9> :%w !node<CR>
 	autocmd Filetype javascript vnoremap <silent> <buffer> <F9> !node<CR>
 	autocmd Filetype perl inoremap <silent> <buffer> <F9> <Esc>:%w !perl<CR>
 	autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
 	autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
-	autocmd Filetype perl nnoremap <silent> <buffer> <F5> :w<CR>:!perl %<CR>
+	autocmd Filetype perl nnoremap <silent> <buffer> <F8> :w<CR>:!perl %<CR>
 	autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
 	autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
 	autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
