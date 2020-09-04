@@ -1,0 +1,22 @@
+#!/usr/bin/sh
+# qemu-img create -f qcow2 freebsd.qcow2 15G                # create disk 
+# Port 21 : ftpd
+# Port 22 : sshd
+# Port 23 : telnet
+# Port 25 : smtp
+# Port 80 : http
+# Port 443: https
+# installer
+# qemu-system-x86_64 -m 2048 \
+#  -hda freebsd.qcow2 -enable-kvm \
+#  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22 \
+
+#  -device e1000,netdev=mynet0 \
+#  -cdrom FreeBSD-12.1-RELEASE-amd64-disc1.iso
+
+# run
+sudo fuser -k 6621/tcp 6622/tcp 6623/tcp 6625/tcp  6680/tcp
+qemu-system-x86_64 -m 4096 \
+ -hda /mnt/sdb6/os/centos.qcow2 -enable-kvm \
+ -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23 \
+ -device e1000,netdev=mynet0
