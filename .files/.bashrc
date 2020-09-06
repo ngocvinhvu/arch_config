@@ -9,7 +9,8 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias l='ls -la'
 alias la='ls -la'
-PS1='\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m\n\$ '
+# PS1='\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m\n\$ '
+PS1='\e[0;34m`date '+%r'`:\e[0;32m$PWD\e[m\n\$ '
 PS2='> '
 echo -ne '\e[4 q' # Cursor is underscore instead of Block
 

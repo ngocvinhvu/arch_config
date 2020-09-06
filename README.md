@@ -74,7 +74,7 @@
 
 #pacman -S lightdm lightdm-gtk-greeter
 
-#pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome
+#pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome ttf-nerd-fonts-symbols xorg-mkfontscale terminus-font 
 
 #pacman -S alsa-utils alsa-plugins alsa-lib pavucontrol
 

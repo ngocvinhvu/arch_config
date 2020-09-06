@@ -1,6 +1,7 @@
 # mkdir -p /usr/local/share/kbd/keymaps/
 # vim /usr/local/share/kbd/keymaps/us.map
 # us.map
+# if artix linux: gzip -k us.map; cp us.map.gz /usr/share/kbd/keymaps/i386/qwerty/
 keymaps 0-2,4-6,8-9,12
 alt_is_meta
 include "qwerty-layout"
