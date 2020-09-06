@@ -32,7 +32,7 @@ bind -m vi-insert 'Control-e: edit-and-execute-command'
 
 # export field
 export HISTFILE=~/.bash_history
-export HISTSIZE=999999999
+export HISTSIZE=99999
 export HISTCONTROL=ignoreboth:erasedups
 export SAVEHIST=$HISTSIZE
 # color for manpage
@@ -66,9 +66,12 @@ alias status='sudo systemctl status'
 alias stop='sudo systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
 alias wifi-menu='sudo wifi-menu'
-alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
-alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
-alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-nguyenngocanh'
+# alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
+# alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
+# alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-nguyenngocanh'
+alias rst="connmanctl connect wifi_100ba9094cfc_54656e64615f313036353730_managed_psk"
+alias rsa="connmanctl connect wifi_100ba9094cfc_6162632e78797a_managed_psk"
+alias rsn="connmanctl connect wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk"
 alias pmsyu='sudo pacman -Syu'
 alias pmsy='sudo pacman -Sy'
 alias pms='sudo pacman -S'

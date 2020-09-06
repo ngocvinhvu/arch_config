@@ -1,4 +1,3 @@
-
 "
 # qemu-img create -f qcow2 freebsd.qcow2 15G                # create disk 
 7z x LDOCE6.zip 
@@ -805,7 +804,6 @@ vim
 vim $(which arch)
 vim *nguyenngocanh*
 vim .Xresources 
-vim .bash_history 
 vim .bashr
 vim .bashrc
 vim .bashrc 
@@ -920,4 +918,385 @@ yes | cp ncmpcpp/ ~/.config/ -rf
 yes | sudo cp i3status.conf /etc/
 zsh
 vim .vimrc
+sudo reboot 
+cp .bashrc gits/arch_config/.files/
+cd
+vim .bashrc
+ls
+cp .bash_history gits/arch_config/.files/
+a
+cd .files/
+ls
+vim .zsh_history 
+vim .bashrc
+HISTCONTROL=erasedups
+vim .bash_history 
+history -w
+vim .zsh_history 
+vim .bashrc
+HISTCONTROL=erasedups
+history -w
+vim .bash_history 
+ls
+ls
+vim .bash_history 
+c
+cd
+vim .profile 
+vim .bashrc
+duy
+1
+startx
+exit
+vim .bash_history 
+vim .profile 
+vim .bashrc 
+echo $HISTSIZE
+history -w
+c
+vim .profile 
+vim .bashrc
+duy
+1
+startx
+exit
+vim .profile 
+vim .bashrc 
+echo $HISTSIZE
+vim .bash_history 
+cd .files/
+vim .zsh_history 
+git add . && git commit -m 'update' && git push
+a
+cd misc/
+lsbk
+lsblk
+cd /mnt/sdb6/
+cd musics/
+ka mpd
+pwd
+cd
+cd .config/mpd/
+ls
+mkdir playlists
+sudo fuser -k 6600/tcp
+mpd
+startx
+eit
+exit
+exit
+cd .ssh/
+ls
+rm * -rf
+cd
+ssh-keygen 
+ssh-copy-id duy@localhost
+clear
+pms alsa-utils
+emoji 
+pms ncmpcpp
+pms mpd
+pms mpc
+pulseaudio 
+vim .bashrc 
+echo $HISTSIZE
+history -w
+c
+vim .profile 
+duy
+1
+startx
+exit
+vim .profile 
+vim .bashrc 
+echo $HISTSIZE
+vim .bash_history 
+cd .files/
+vim .zsh_history 
+git add . && git commit -m 'update' && git push
+cd misc/
+lsbk
+lsblk
+cd /mnt/sdb6/
+cd musics/
+ka mpd
+pwd
+cd .config/mpd/
+mkdir playlists
+sudo fuser -k 6600/tcp
+mpd
+startx
+eit
+exit
+cd /etc/ssh/
+vim sshd_config 
+sudo vim sshd_config 
+rc-service start sshd
+rc-service ssh start
+ssh root@locallost
+vim /etchosts
+vim /etc/hosts 
+sudo vim /etc/hosts 
+ssh root@localhost
+rc-update sshd
+who
+whoami
+cat /etc/hostname
+rc-update add ssh
+rc-update add sshd.service
+rc-sstat
+sudo rc-sstat
+rc-update add sshd
+sudo rc-update add sshd
+cudo rc-update add sshd default
+rc-update add sshd default
+sudo rc-update add sshd default
+pms ssh
+sudo rc-update add sshd boot
+rc-service sshd start
+vim /etc/elogind/logind.conf 
+sudo rc-service sshd start
+sudo rc-service sshd status
+cd /etc/init.d/
+ls ssh*
+pms openrc-openssh
+pms openrc-ssh
+pms openssh
+pacman search openssh
+yay search openssh
+yay wget
+sudo pacman -Rcns openssh
+yay openssh
+cd .ssh/
+rm known_hosts 
+ssh duy@localhost
+vim /etc/ssh/sshd_config 
+sudo vim /etc/ssh/sshd_config 
+rc-service sshd restart
+sudo rc-service sshd restart
+vim .bashrc
+man openrc
+man init
+init start sshd
+init status sshd
+which init
+init
+init -h
+whatis init
+init1
+sudo init
+/etc/init.d/sshd stop
+sudo /etc/init.d/sshd stop
+sudo /etc/init.d/sshd start
+cd
+vim /etc/init.d/sshd
+yay net-tools
+pms net-tools
+ifconfig
+iwconfig
+pms iwd
+iw
+pms iw
+cd /etc/connman/
+ls
+vim main.conf 
+vim /etc/conf.d/connmand 
+tatus --crashedim /etc/conf.d/connmand 
+rc-status --crashed
+rc-update -v show
+rc-update -v show | lesss
+rc-update -v show | less
+yay tor
+yay tor-openrc
+sudo rc-service tor start
+rc-status
+sudo rc-service tor restart
+yay apache
+volume
+pms amixer
+a
+cd slstatus/
+vim config.h
+ls /etc/X11/
+ls /etc/modprobe.d/
+pms pavucontrol
+pavucontrol 
+pulseaudio -D
+pulseaudio
+pms amixer
+pms pulse
+pms alsa-plugins
+pms pactl
+pactl list sinks
+startx
+pms pactl
+pactl list sinks
+python3
+pms tk
+cat /etc/modprobe.d/alsa-base.conf 
+pms xorg
+pavucontrol
+pulseaudio 
+pulseaudio -D
+pavucontrol 
+pms alsa
+pms ffmpeg
+pms pavucontrol
+pms xorg-server
+pms xorg-app
+pms xorg-apps
+pms mplayer mpv
+pms ncmpcpp
+pms python
+pmsyu
+vim $(which volume)
+cd
+a
+vim README.md 
+sudo reboot 
+pms pavucontrol
+pms xorg-server
+pms xorg-app
+pms xorg-apps
+pms mplayer mpv
+pms ncmpcpp
+pms python
+pmsyu
+vim $(which volume)
+vim README.md 
+sudo reboot 
+rs-status
+sudo rc-service connmand restart
+ping 1.1.1.1
+cat /etc/resolv.conf 
+cat /etc/hosts 
+cat /etc/hostsname
+screenfetch 
+a
+cd st/
+vim config.h
+clear
+rc-service tor status
+ping google.com
+ip a
+cd /var/lib/connman
+cd wifi_100ba9094cfc_6162632e78797a_managed_psk/
+sudo -s
+pms weechat
+sudo rc-service tor restart
+rc-service tor stop
+sudo rc-service tor stop
+rc-sstat 
+cd /var/log/
+vim rc.log 
+rc.log
+cd
+rc
+sudo rc
+rc-status
+cd /var/lib
+cd connman
+ls
+rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
+sudo rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
+connmanctl 
+ps
+ps
+sudo
+sudo -s
+wifi-menu 
+sudo wifi-menu
+pms wifi-menu
+rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
+sudo rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
+ps
+ps
+cd /var/run/
+cd oprn
+cd openrc/
+ls
+pstree
+lsblk
+connmanctl 
+yay netctl-openrc
+yay netctl
+weather
+pms notify-osd
+rc-service netctl status
+pms netctl
+iwd
+iwctl
+iwctl
+ping ftp.ntua.gr
+ping mirrors.dotsrc.org
+ping artix.wheaton.edu
+pacman -R iwd
+sudo pacman -Rcns iwd
+yay iwd
+clear
+which iwd
+/etc/init.d/iwd 
+iwd
+rc-status
+yay -S netctl
+yay  netctl
+cd /etc/pacman.d/
+vim mirrorlist
+ifconfig
+startx
+yay -S netctl
+yay  netctl
+cd /etc/pacman.d/
+vim mirrorlist
+iw
+ifconfig
+iwconfig
+yay net-tools
+/etc/init.d/iwd start
+sudo /etc/init.d/iwd start
+iwdctl
+cd /etc/init.d/
+ls
+vmi functions.sh 
+vim functions.sh 
+rc-staus
+rc-status
+iwd
+man iwd
+iwctl
+rc-service stop iwd
+sudo rc-service stop iwd
+sudo rc-service iwd stop
+sudo rc-status
+enable wifi
+connmanctl 
+sudo reboot 
+pmsnetctl
+pms netctl
+ping 1.1.1.1
+rc-status
+connmanctl 
+pmsnetctl
+pms netctl
+cd /varlib
+cd /var/lib/
+cd connman
+ls
+rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/
+sudo rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
+cd
+pms openvpn bluez
+pms wpa_supplicant
+k
+ip a
+connmanctl 
+connmanctl 
+cd /var/lib/connman
+vim settings 
+sudo vim settings 
+ls
+sudo rc-service connmand restart
+connmanctl config wifi_100ba9094cfc_54656e64615f313036353730_managed_psk --nameservers 8.8.8.8 4.4.4.4
+connmanctl config wifi_100ba9094cfc_54656e64615f313036353730_managed_psk --ipv4 manual 192.168.5.142 255.255.255.0 192.168.5.1
+cd
 vim .bash_history 
