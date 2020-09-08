@@ -16,14 +16,15 @@ echo -ne '\e[4 q' # Cursor is underscore instead of Block
 
 
 # Customize
-set -o vi
+# set -o vi
 
 # Bind field
-bind 'TAB:menu-complete'
-bind '"jk":vi-movement-mode'
+# bind 'TAB:menu-complete'
+# bind '"jk":vi-movement-mode'
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-command 'u: undo'
-bind -m vi-command '/: vi-search'
+# bind -m vi-command '/: vi-search'
+bind -m vi-insert '"jk":vi-movement-mode'
 bind -m vi-insert 'Control-l: clear-screen'
 bind -m vi-insert 'TAB: menu-complete'
 bind -m vi-insert '"\e[Z": menu-complete-backward'
@@ -34,6 +35,7 @@ bind -m vi-insert 'Control-e: edit-and-execute-command'
 export HISTFILE=~/.bash_history
 export HISTSIZE=99999
 # export HISTCONTROL=ignoreboth:erasedups
+export HISTCONTROL=ignoreboth
 export SAVEHIST=$HISTSIZE
 # color for manpage
 # export LESS_TERMCAP_mb=$'\e[1;32m' # light yellow
