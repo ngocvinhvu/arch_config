@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export BROWSER="/usr/bin/firefox"
 # xdg-settings set default-web-browser firefox.desktop
 
-_aria2c() {
+aria2c_() {
     aria2c -x 8 --seed-time=0 "$*"
 }
 alias t/vpn="cd ~/.trash/vpn"
