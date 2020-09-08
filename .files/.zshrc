@@ -125,14 +125,15 @@ alias lsd="la -p | grep '/'"
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
 alias a='cd /home/duy/gits/arch_config'
-alias start='systemctl start'
-alias restart='systemctl restart'
-alias status='systemctl status'
-alias stop='systemctl stop'
+alias start='sudo systemctl start'
+alias restart='sudo systemctl restart'
+alias status='sudo systemctl status'
+alias stop='sudo systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
 alias wifi-menu='sudo wifi-menu'
 alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
 alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
+alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-nguyenngocanh'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
@@ -240,4 +241,10 @@ vman() {
     vim -R -c 'set ft=man nomod nolist' -
 }
 
+streamlink_() {
+	streamlink -p mpv "$*" best
+}
+
 export FZF_DEFAULT_COMMAND="find -L"
+
+

@@ -34,7 +34,6 @@ bind -m vi-insert 'Control-e: edit-and-execute-command'
 # export field
 export HISTFILE=~/.bash_history
 export HISTSIZE=99999
-# export HISTCONTROL=ignoreboth:erasedups
 export HISTCONTROL=ignoreboth
 export SAVEHIST=$HISTSIZE
 # color for manpage
