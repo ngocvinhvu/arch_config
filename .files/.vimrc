@@ -218,10 +218,8 @@ set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
-nnoremap <silent> <C-j> gt
-nnoremap <silent> <C-k> gT
-nnoremap <silent> <C-h> <C-o>
-nnoremap <silent> <C-l> <C-i>
+nnoremap <silent> <C-tab> gt
+nnoremap <silent> <S-tab> gT
 vnoremap <silent> ,, :Trans :vi<CR>
 map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
@@ -298,4 +296,22 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 
 let $FZF_DEFAULT_COMMAND = "find -L"
+
+
+
+if !exists("my_auto_commands_loaded")
+    let my_auto_commands_loaded = 1
+    " Large files are > 10M
+    " Set options:
+    " eventignore+=FileType (no syntax highlighting etc
+    " assumes FileType always on)
+    " noswapfile (save copy of file)
+    " bufhidden=unload (save memory when other file is viewed)
+    " buftype=nowrite (file is read-only)
+    " undolevels=-1 (no undo possible)
+    let g:LargeFile = 1024 * 1024 * 10
+    augroup LargeFile
+        autocmd BufReadPre * let f=expand("<afile>") | if getfsize(f) > g:LargeFile | set eventignore+=FileType | setlocal noswapfile bufhidden=unload buftype=nowrite undolevels=-1 | else | set eventignore-=FileType | endif
+    augroup END
+endif
 
