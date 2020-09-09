@@ -19,13 +19,12 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t t {clipboard}
-        ',H': hint links spawn mpv --ytdl-format='[height<=?1080]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
-          {hint-url}
-        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
-          {hint-url}
+        ',H': hint links spawn mpv --ytdl-format='[height<=?1080]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
         ',S': spawn streamlink -p mpv {clipboard} best
         ',V': spawn vlc {clipboard}
-        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',a': hint links spawn mpv --ytdl-format=bestaudio {hint-url}
         ',d': hint links spawn aria2c -x8 {hint-url} --dir /tmp
         ',g': spawn bash -c mpvgif.sh
@@ -35,7 +34,6 @@ settings:
         ',s': hint links spawn streamlink -p mpv {hint-url}  best
         ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
-        ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
         <Ctrl+j>: run-with-count 15 scroll down
@@ -62,6 +60,9 @@ settings:
     global: true
     https://www.google.com: true
     https://www.now.vn: true
+  content.headers.user_agent:
+    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/83.0.4103.61 Safari/537.36
   content.host_blocking.enabled:
     global: true
   content.javascript.enabled:
@@ -101,6 +102,16 @@ settings:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
     global: null
+  fonts.default_size:
+    global: 10pt
+  fonts.web.size.default:
+    global: 17
+  fonts.web.size.minimum:
+    global: 16
+  fonts.web.size.minimum_logical:
+    global: 6
+  qt.force_software_rendering:
+    global: none
   scrolling.smooth:
     global: false
   tabs.background:
@@ -118,6 +129,7 @@ settings:
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
       git: https://github.com/search?q={}
       maps: https://www.google.com/maps/place/{}
+      mt: https://translate.google.com/m?hl=vi&sl=auto&q={}
       ph: https://www.pornhub.com/video/search?search={}
       pm: http://www.phimmoi.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
@@ -125,8 +137,7 @@ settings:
       re: https://reddit.com/r/{}
       sc: https://soundcloud.com/search?q={}
       sp: https://shopee.vn/search?keyword={}
-      mt: https://translate.google.com/m?hl=vi&sl=auto&q={}
-      t:  https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
+      t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
       tp: https://www.translatetheweb.com/?from=&to=en&a={}
       tw: https://twitter.com/search?q={}&src=typed_query
       vp: https://vphim.net/tim-kiem/{}
