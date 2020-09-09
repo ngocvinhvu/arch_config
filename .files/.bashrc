@@ -34,6 +34,7 @@ bind -m vi-insert 'Control-e: edit-and-execute-command'
 # export field
 export HISTFILE=~/.bash_history
 export HISTSIZE=99999
+# export HISTCONTROL=ignoreboth:erasedups
 export HISTCONTROL=ignoreboth
 export SAVEHIST=$HISTSIZE
 # color for manpage
@@ -111,3 +112,8 @@ yta()
 streamlink_() {
 	streamlink -p mpv "$*" best
 }
+
+aria2c_() {
+    aria2c -x8 --seed-time=0 $*
+}
+

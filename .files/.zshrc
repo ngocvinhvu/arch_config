@@ -8,8 +8,7 @@ export ZSH="/home/duy/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="maran"
+ZSH_THEME="candy-kingdom"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -103,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # xdg-settings set default-web-browser firefox.desktop
 
 aria2c_() {
-    aria2c -x 8 --seed-time=0 "$*"
+    aria2c -x 8 --seed-time=0 $*
 }
 alias t/vpn="cd ~/.trash/vpn"
 alias sdb5="cd /mnt/sdb5"
@@ -197,7 +196,9 @@ echo -ne '\e[4 q' # Cursor is underscore instead of Block
 # # define right prompt, regardless of whether the theme defined it
 # RPS1='$(vi_mode_prompt_info)'
 # RPS2=$RPS1
-
+#
+# PROMPT='%{$fg[blue]%}%D{[%X]} %{$reset_color%}:%{$fg_bold[green]%}%~%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
+# %(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$ '
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
