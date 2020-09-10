@@ -1,9 +1,5 @@
 #EXTINF:-1 tvg-id="hbo" tvg-name="HBO HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="HBO",HBO HD
 rtp://@225.1.2.233:30120
-#EXTINF:-1 tvg-id="disney-junior" tvg-name="DISNEY JUNIOR HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="DISNEY JU",DISNEY JU HD
-rtp://225.1.1.233:30120
-#EXTINF:-1 tvg-id="vtc3 hd" tvg-name="VTC3 HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="VTC3",VTC3 HD
-rtp://@225.1.2.251:30120
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/FOX_HD.svg/1280px-FOX_HD.svg.png" group-title="Quốc Tế",FOX HD
 http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOX-HD-1080p/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/57/Fox_Family_Movies_logo.png" group-title="Quốc Tế",FOX FAMILY MOVIES HD
@@ -14,6 +10,12 @@ http://htv-drm-live-cdn.fptplay.net/CDN-FPT02/FOXMOVIES-HD-1080p/playlist.m3u8
 https://livecdn.fptplay.net/qnetlive/axnhd_hls.smil/chunklist_b2500000.m3u8
 #EXTINF:-1 tvg-logo="https://static.fptplay.net/static/img/share/channels/icon_channel_cinemaworld_146580871725.png" group-title="Quốc Tế",Cinema World
 https://livecdn.fptplay.net/qnetlive/cinemawork_hls.smil/chunklist_b2500000.m3u8
+#EXTINF:-1 tvg-id="fox sport" tvg-name="FOX Sport HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="FOX SPORT",FOX SPORT HD
+rtp://@225.1.2.229:30120
+#EXTINF:-1 tvg-id="disney-junior" tvg-name="DISNEY JUNIOR HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="DISNEY JU",DISNEY JU HD
+rtp://225.1.1.233:30120
+#EXTINF:-1 tvg-id="vtc3 hd" tvg-name="VTC3 HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="VTC3",VTC3 HD
+rtp://@225.1.2.251:30120
 #EXTINF:-1 tvg-id="vtv1hd" tvg-name="VTV1 HD" tvg-logo="https://i.imgur.com/WpQtg0z.png" group-title="VTV",VTV1 HD
 http://chipcun.dynu.com:333/xemtv47/xemtv47kenh.m3u8?kenh=vtv1
 #EXTINF:-1 tvg-id="vtv2hd" tvg-name="VTV2 HD" tvg-logo="https://i.imgur.com/R7q7HZj.png" group-title="VTV",VTV2 HD
