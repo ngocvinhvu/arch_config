@@ -1,0 +1,145 @@
+### controller information
+megacli -AdpAllInfo -aALL
+megacli -CfgDsply -aALL
+megacli -AdpEventLog -GetEvents -f events.log -aALL && cat events.log
+
+
+## RAID card info
+Vendor:               LSI
+Product:              RAID 5/6 SAS 6G
+Revision:             2.13
+User Capacity:        598,879,502,336 bytes [598 GB]
+Logical block size:   512 bytes
+Logical Unit id:      0x600300570100bbe02557a8f71383222a
+Serial number:        002a228313f7a85725e0bb0001570003
+Device type:          disk
+Local Time is:        Tue Aug 25 11:43:38 2020 +07
+SMART support is:     Unavailable - device lacks SMART capability.
+
+# megacli -EncInfo -aALL
+
+    Number of enclosures on adapter 0 -- 1
+
+    Enclosure 0:
+    Device ID                     : 252
+    Number of Slots               : 8
+    Number of Power Supplies      : 0
+    Number of Fans                : 0
+    Number of Temperature Sensors : 0
+    Number of Alarms              : 0
+    Number of SIM Modules         : 1
+    Number of Physical Drives     : 4
+    Status                        : Normal
+    Position                      : 1
+    Connector Name                : Unavailable
+    Enclosure type                : SGPIO
+    FRU Part Number               : N/A
+    Enclosure Serial Number       : N/A
+    ESM Serial Number             : N/A
+    Enclosure Zoning Mode         : N/A
+    Partner Device Id             : Unavailable
+
+    Inquiry data                  :
+        Vendor Identification     : LSI
+        Product Identification    : SGPIO
+        Product Revision Level    : N/A
+        Vendor Specific           :
+
+
+
+## Virtal Drive info
+#megacli -LDInfo -Lall -aALL
+
+Adapter 0 -- Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name                :
+RAID Level          : Primary-1, Secondary-0, RAID Level Qualifier-0
+Size                : 557.75 GB
+Sector Size         : 512
+Is VD emulated      : No
+Mirror Data         : 557.75 GB
+State               : Optimal
+Strip Size          : 64 KB
+Number Of Drives per span:2
+Span Depth          : 2
+Default Cache Policy: WriteBack, ReadAheadNone, Direct, Write Cache OK if Bad BBU
+Current Cache Policy: WriteBack, ReadAheadNone, Direct, Write Cache OK if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disabled
+Encryption Type     : None
+Bad Blocks Exist: No
+Is VD Cached: No
+
+## Drive info
+# megacli -PDList -aAll | egrep 'Slot\ Number|Device\ Id|Inquiry\ Data|Raw|Firmware\ state' | sed 's/Slot/\nSlot/g'
+
+Slot Number: 0
+Device Id: 10
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: IBM-ESXSVPCA300900EST1 NA3C0LVYDVBANVCXSA3C0
+
+Slot Number: 1
+Device Id: 7
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: HITACHI HUS156030VLS600 E516CVV1450S
+
+Slot Number: 2
+Device Id: 9
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: HITACHI HUS156030VLS600 E516CVVKT2RN
+
+Slot Number: 3
+Device Id: 6
+Raw Size: 279.396 GB [0x22ecb25c Sectors]
+Firmware state: Online, Spun Up
+Inquiry Data: HITACHI HUS156030VLS600 E516CVVKULHN
+
+
+# Rebuild 
+
+1. Make “Failed State” in “Unconfigured(BAD)”
+megacli -pdmarkmissing -physdrv[32:1] -aAll
+
+2. Prepare for removal (this command could fail, not a critical one)
+megacli -pdprprmv -physdrv[32:1] -a0
+
+3. Make the state of the disk “Unconfigured(Good), Spun Up”
+megacli -PDMakeGood -PhysDrv[32:1] -a0
+
+4. Start rebuild (this command could fail) – if the command fails continue with the next step, if not, the rebuild is restarted successfully.
+megacli -PDRbld -Start -PhysDrv[32:1] -a0
+or
+megacli -pdlocate -start -physdrv[32:1] -a0
+
+5. Start rebuild, first clean the foreign configuration and then make the device hot spare (only if 4 the above command failed)
+megacli -CfgForeign -Clear -aALL
+#set global hostspare
+megacli -PDHSP -Set -PhysDrv [32:1] -a0
+
+### Rebuild progress
+megacli -PDRbld -ShowProg -PhysDrv [252:1] -aALL
+
+
+
+
+### delete VM
+# virsh shutdown centos7-vm1
+# virsh undefine centos7-vm1
+# virsh pool-destroy centos7-vm1
+# D=/var/lib/libvirt/images
+# VM=centos7-vm1
+# rm -ri $D/$VM
+
+
+# connect to VM use ssh on virt-manager
+ ssh -X root@server virt-manager
+
+
+# qemu-kvm not run file in /root
+Changing /etc/libvirt/qemu.conf to make things work.
+Uncomment user/group to work as root.
+Then restart libvirtd
