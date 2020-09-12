@@ -17,6 +17,6 @@
 # run
 sudo fuser -k 6621/tcp 6622/tcp 6623/tcp 6625/tcp  6680/tcp
 sudo qemu-system-x86_64 -m 4096 \
- -hda /mnt/sdb6/os/freebsd.qcow2 -enable-kvm \
+ -hda /mnt/sdb1/os/freebsd.qcow2 -enable-kvm \
  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23 \
  -device e1000,netdev=mynet0

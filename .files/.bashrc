@@ -5,10 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias ll='ls -l'
-alias l='ls -la'
-alias la='ls -la'
+alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -l --group-directories-first'
+alias l='ls -la --group-directories-first'
+alias la='ls -la --group-directories-first'
 # PS1='\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m\n\$ '
 PS1='\e[0;34m`date '+%r'`:\e[0;32m$PWD\e[m\n\$ '
 PS2='> '
@@ -59,6 +59,7 @@ alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
 alias a='cd /home/duy/gits/arch_config'
@@ -69,6 +70,7 @@ alias stop='sudo systemctl stop'
 alias wifi='sudo wifi-menu wlp3s0'
 alias wifi-menu='sudo wifi-menu'
 alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
+alias rstt='sudo netctl stop-all && sudo netctl start wlp3s0-TP-Link_73B6'
 alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
 alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-nguyenngocanh'
 # alias rst="connmanctl connect wifi_100ba9094cfc_54656e64615f313036353730_managed_psk"
@@ -90,7 +92,7 @@ alias aircrack="aircrack-ng -w ~/gits/wordlists/wifi-chua.txt"
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
 alias mpvh="mpv --ytdl-format='[height<=1080]'"
 alias mpvm="mpv --ytdl-format='[height<=720]'"
-alias mpvl="mpv --ytdl-format='[height<=360]'"
+alias mpvl="mpv --ytdl-format='[height<=480]'"
 
 # function field
 vman() {
@@ -117,3 +119,5 @@ aria2c_() {
     aria2c -x8 --seed-time=0 $*
 }
 
+yayf() { yay -Fy; yay -Slq | fzf --height=100% --multi --preview 'yay -Si {1}' | xargs -ro yay -S --needed ;}
+pmf() { sudo pacman -Fy; pacman -Slq | fzf --height=100% --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed ;}
