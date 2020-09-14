@@ -1,2 +1,3 @@
+#!bin/bash
 curl rate.sx
 # curl cmc.rjldev.com
