@@ -6,9 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -l --group-directories-first'
-alias l='ls -la --group-directories-first'
-alias la='ls -la --group-directories-first'
+alias ll='ls -l --color=auto --group-directories-first'
+alias l='ls -a --color=auto --group-directories-first'
+alias la='ls -la --color=auto --group-directories-first'
 # PS1='\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m\n\$ '
 PS1='\e[0;34m`date '+%r'`:\e[0;32m$PWD\e[m\n\$ '
 PS2='> '
@@ -49,6 +49,7 @@ export FZF_DEFAULT_COMMAND="find -L"
 
 
 # alias field
+alias openvpn='sudo openvpn --config'
 alias msfconsole="msfconsole --quiet -x \"db_connect nnd@msf\""
 alias emacs="emacs -nw"
 alias pscpu="ps -eo pid,cmd,%mem,%cpu --sort=-%cpu| less"
@@ -111,11 +112,23 @@ yta()
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
 
+ytal()
+{
+    mpv --loop=inf --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
+
+mp3-dl() {
+	youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 "$*"
+}
+
+mp3pl-dl() {
+	youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 "$*"
+}
 streamlink_() {
 	streamlink -p mpv "$*" best
 }
 
-aria2c_() {
+ari() {
     aria2c -x8 --seed-time=0 $*
 }
 
