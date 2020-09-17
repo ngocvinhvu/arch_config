@@ -1,52 +1,36 @@
-
-"
-"| uniq -c
+# g/^cd\|^yay\|^pms\|^rm\|^ls\|^sudo pacman\|^vim\|^cp\|^mv\|^ll\|^killall\|^ka\|^la\|^man/d
 /etc/init.d/iwd 
 /etc/init.d/iwd start
 /etc/init.d/sshd stop
 /etc/init.d/vsftpd 
 /etc/init.d/vsftpd start
 /usr/share/nginx/html/test.php
-1
-4cho $a
-7z x LDOCE6.zip 
 Xorg :0 -configure
 [ ! -f .zshrc ] && echo hello
 [ -f .zshrc ] && echo hello
-a
-a+=" fuck"
-a+=" world"
-a+="hello world"
-a+=hello
-a+=world
-a="(`cat a`)"
-a="(`paste -sd " " a`)"
-a="A 25 27 50
-a="A 25 27 50"
-a="Namibia
-a="hello"
-a=$a:hello
-a=${date}
-a=()
-a=2
-a=`cat a`
-a=`cat a`; echo ${a[@]/*[aA]*/}
-a=`echo $a | tr ' ' '\n' `
-a=`paste -sd " " a`
+`ps -eo pid,cmd,%mem,%cpu --sort=-%cpu
+`ps -eo pid,cmd,%mem,%cpu --sort=-%cpu`
 adminer
+aircrack-ng  NhaTro-EC\:08\:6B\:F8\:9E\:72.cap -w birthdayCompletely.txt 
 aireplay-ng --deauth 0 -a 30:F3:35:7A:B6:CC mon0
 airmon-ng stop mon0
 airodump-ng --help
 airodump-ng mon0
+al
+am a.sh 
 ansible --version
 ansible -V
 ansible -m ping all
 ansible -m shell -a 'df -h' all
 ansible -v
+ansible all  -a ls
+ansible all  -a ls -u root
 ansible all -a 'ls' -u root
 ansible all -a 'ls' -u root -vv
+ansible all -a ls
 ansible all -a ls -u root
 ansible all -a ls -u root -vv
+ansible all -m -a ls
 ansible all -m ping
 ansible all -m ping -u duy
 ansible all -m ping -u root
@@ -56,14 +40,22 @@ ansible all -m shell -a 'ls' -u duy
 ansible all -m shell -a 'ls' -u root
 ansible all -m shell -a 'ls' -u root -vv
 ansible all -m shell -a 'touch abccc' -u root -vv
+ansible arch -a 'ls -a' -u root
+ansible arch -a 'rm /root/.profile' -u root
+ansible arch -a ls -u root
+ansible arch -a st -u root
 ansible freebsd -a 'ls' -u root
 ansible freebsd -a 'touch DUYDEPTRAI' -u root
+ansible freebsd -a ls
+ansible freebsd -a ls -u root
 ansible freebsd -m ping
 ansible freebsd -m ping -u root
 ansible freebsd -m shell -a 'ls'
 ansible freebsd -m shell -a 'ls' -u root
 ansible local -a 'ls'
 ansible local -m ping
+ansible localhost -a ls
+ansible localhost -m ping
 ansible vm -m ping 
 ansible vm -m ping  -u root
 ansible-galaxy  init test1
@@ -75,6 +67,13 @@ ansible-playbook a.yml
 ansible-playbook b.
 ansible-playbook b.yml 
 ansible-playbook b.yml  -vv
+archlinux-java  fix
+archlinux-java  status
+archlinux-java -h
+archlinux-java fix
+archlinux-java get
+archlinux-java get java-8-openjdk/jre
+archlinux-java status
 aria2c  https://raw.githubusercontent.com/laduygaga/arch_config/master/README.md
 aria2c -x8 "http://mirrors.nhanhoa.com/centos/7.8.2003/isos/x86_64/CentOS-7-x86_64-Minimal-2003.iso"
 aria2c -x8 "https://drive.google.com/u/0/uc?export=download&confirm=MnWF&id=1hPkvP0w9K9QX2iarq-6bSnO57V76GOmn"
@@ -190,166 +189,10 @@ cat us.map
 cat us.map  | head
 cat vconsole.conf 
 catlog
-cd
-cd 
-cd $MANPATH 
-cd -
-cd .
-cd ..
-cd ../
-cd ../data/
-cd ../scripts/
-cd ../sdb6/os/
-cd ../sites-available/
-cd ../sites-enabled/
-cd ../slstatus/
-cd ../st
-cd .ansible/
-cd .config/
-cd .config/i3
-cd .config/i3/
-cd .config/mpd
-cd .config/mpd/
-cd .config/ncmpcpp/
-cd .config/qutebrowser/
-cd .config/ranger/
-cd .emacs.d/
-cd .files/
-cd .ssh/
-cd /
-cd / --out %o %u
-cd /boot/grub/
-cd /etc/
-cd /etc/X11/
-cd /etc/X11/xorg.conf.d/
-cd /etc/ansible/
-cd /etc/conf.d/
-cd /etc/connman/
-cd /etc/httpd/
-cd /etc/httpd/conf/
-cd /etc/init.d/
-cd /etc/iwd/
-cd /etc/mn
-cd /etc/netctl
-cd /etc/nginx/
-cd /etc/pacman.d/
-cd /etc/php/
-cd /etc/rc.conf 
-cd /etc/ssh/
-cd /etc/systemd
-cd /etc/systemd/network/
-cd /etc/systemd/system
-cd /etc/systemd/system/
-cd /etc/systemd/system/sleep.target.wants/
-cd /etc/wpa_supplicant/
-cd /etc/xinetd.d/
-cd /mnt/media/
-cd /mnt/sdb6/
-cd /mnt/sdb6/data/
-cd /mnt/sdb6/musics/
-cd /mnt/sdb6/os
-cd /mnt/sdb6/os/
-cd /mnt/usb/
-cd /srv/http/
-cd /sys/
-cd /tmp
-cd /tmp/
-cd /usr/local/share/
-cd /usr/local/share/kbd/keymaps/
-cd /usr/share/bash-completion/
-cd /usr/share/doc/vsftpd/
-cd /usr/share/kbd/
-cd /usr/share/kbd/keymaps/i386/
-cd /usr/share/kbd/keymaps/i386/qwerty/
-cd /usr/share/keyutils/
-cd /usr/share/man/man1/qutebrowser.1.gz 
-cd /usr/share/nginx/
-cd /usr/share/nginx/html/
-cd /usr/share/qutebrowser/
-cd /usr/share/webapps/
-cd /usr/share/webapps/adminer/
-cd /var/cache/pacman/
-cd /var/lib
-cd /var/lib/
-cd /var/lib/connman
-cd /var/lib/pacman/
-cd /var/log/
-cd /var/run/
-cd /varlib
-cd Documents/
-cd adminer/
-cd audisp/
-cd bas
-cd basg
-cd bash/
-cd collection/
-cd completions/
-cd connman
-cd data/
-cd dwm_ultimate+savefloat+attachbelow+swallow/
-cd dwm_ultimate+savefloat+attachbelow/
-cd extra/
-cd fluxion/
-cd fluxion/install/
-cd gits/
-cd gits/arch_config/
-cd gits/arch_config/.files/
-cd gits/arch_config/.fl
-cd gits/fluxion/
-cd gits/handshakes/
-cd html/
-cd i
-cd i3
-cd i386/
-cd i386/qwerty/
-cd install/
-cd inventory1/
-cd ipython/
-cd iwd/
-cd keymaps/
-cd ldoce6/
-cd locale/
-cd misc/
-cd mpd
-cd mpd/
-cd musics/
-cd ncmpcpp/
-cd network
-cd network-online.target.wants/
-cd network/
-cd nginx/
-cd openrc/
-cd oprn
-cd os
-cd pkg/
-cd plugins.d/
-cd qutebrowser/
-cd qwerty
-cd qwerty/
-cd scrip
-cd scripts/
-cd sh
-cd site-e
-cd sites-available/
-cd sites-enabled/
-cd slstatus/
-cd st
-cd st/
-cd sync/
-cd test1/
-cd translate-shell/
-cd ua
-cd ventoy-1.0.20/
-cd ventoy/
-cd wifi_100ba9094cfc_54656e64615f313036353730_managed_psk/
-cd wifi_100ba9094cfc_6162632e78797a_managed_psk/
-cd xinit/
-cd yay/
-cd ~/.ca
-cd ~/.cache/
-cdd
+chkconfig
 chkconfig vsftpd 
 chkconfig vsftpd on
+chromium-bsu
 chsh -s /usr/bin/zsh
 clear
 clera
@@ -368,39 +211,21 @@ connmanctl connect wifi_100ba9094cfc_54656e64615f313036353730_managed_psk
 connmanctl connect wifi_100ba9094cfc_6162632e78797a_managed_psk
 connmanctl connect wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk
 connmanctl scan wifi
-cp * /mnt/sdb6/data/
-cp -rf dwm_ultimate+savefloat+attachbelow+swallow/ ~/.trash/
-cp .bash_history 
-cp .bash_history  .zsh_history 
-cp .bash_history gits/arch_config/.files/
-cp .bashrc  gits/arch_config/.files/
-cp .bashrc .zshrc
-cp .bashrc gits/arch_config/.files/
-cp .bashrc ~/
-cp .inputrc  gits/arch_config/.files/
-cp .vimrc gits/arch_config/.files/
-cp .zshrc ~/
-cp PhoenixOSInstaller_v3.6.1.564_x64.iso /mnt/usb/
-cp a.yml  .trash/
-cp config.h ~/gits/arch_config/dwm_ultimate+savefloat+attachbelow+swallow/
-cp dwm_ultimate+savefloat+attachbelow+swallow/ ~/.trash/
-cp dwm_ultimate+savefloat+attachbelow+swallow/ ~/.trash/ -rf
-cp enp0s25.network wlp3s0.network
-cp freebsd centos
-cp info.txt .trash/
-cp ipython_config.py ~/.ipython/profile_default/
-cp keybindings.py ~/.ipython/profile_default/startup/
-cp ncmpcpp/ ~/.config/ -rf
-cp slstatus/ ~/.trash/ -rf
-cp us.map /usr/local/share/kbd/keymaps/
 cudo rc-update add sshd default
 curl -Ls https://github.com/laduygaga/arch_config/README.md
 curl -Ls https://github.com/laduygaga/arch_config/blob/master/README.md
 curl -Ls https://raw.githubusercontent.com/laduygaga/arch_config/master/README.md
 curl -Ls https://raw.githubusercontent.com/laduygaga/arch_config/master/README.md > readme.md
+curl dict://dict.org/d:endeavour
+curl http://www.dict.org/bin/Dict
 curl https://github.com/laduygaga/arch_config/blob/master/README.md
 curl https://raw.githubusercontent.com/laduygaga/arch_config/master/README.md
+curl ifconfig.me
+curl ipconfig.me
 curl ipinfo.io
+curl ipnfo.io
+curl myip.com
+curl wttr.in | sed 's/\x1b\[[0-9;]*m//g' 
 d
 d 
 date
@@ -426,6 +251,7 @@ datetime
 demo.yaml
 df -h
 dfsdf sdf sd
+dhclient wlp3s0
 dialog
 dialog "echo hello"
 dialog --title "SALI Installation" --inputbox "Enter a name for your computer:" 10 60 "arch-pc" 2> hostname
@@ -436,6 +262,7 @@ docker -s
 docker ps 
 docker-compose 
 docker-compose version
+doukutsu
 ds fads ds fVjk
 du -sh qutebrowser/
 duy
@@ -510,6 +337,7 @@ exec i3
 exit
 fconfig
 fdisk -l
+ffmpeg -i Họ\ Đâu\ Cần\ Tôi\ \ -\ Trung\ Tự-b6g6HHUt24M.mkv -f mp3 -ab 128000 -vn hodaucantoi.mp3
 firebase
 for i in `grep '' a`; do echo $i; done;
 for line in `cat a`; do echo $line; done;
@@ -522,18 +350,38 @@ ftp localhost
 git
 git add .
 git add . && git commit -m 'update' && git push
+git branch new
+git branch new1
+git checkout master
+git checkout new
+git checkout new1
+git clone https://aur.archlinux.org/ncurses5-compat-libs.git
+git clone https://aur.archlinux.org/ttf-perfectdos.git
 git clone https://aur.archlinux.org/yay.git
+git clone https://github.com/LukeSmithxyz/voidrice/
+git clone https://github.com/ansible/ansible-examples
+git clone https://github.com/cirala/lfimg
 git clone https://github.com/laduygaga/arch_config
+git clone https://github.com/laduygaga/handshakes
+git clone https://github.com/lazyhahaha/php
 git clone https://github.com/wi-fi-analyzer/fluxion
 git commit -m 'update'
 git config credential.helper store
 git config pull.rebase
+git log
+git merge origin master
+git merge origin new1
 git pull
 git push
+git push origin --delete new
+git push origin new1
 git reset --hard HEAD
+git reset --hard master 
+git stataus
 git status
 git | less
 go
+gpg --keyserver pgp.mit.edu --recv-keys 702353E0F7E48EDB
 grep -Ev "[aA]" 
 grep -Ev "[aA]" a
 grep -v "[aA]"
@@ -541,6 +389,8 @@ grep -v "[aA]" a
 grep -v [aA] a
 grep -vi a
 grep -vi a a
+grep 6622 .ssh/known_hosts 
+grep ffmpeg `find **`
 gtypist
 gvim
 gzip -k us.map 
@@ -551,9 +401,18 @@ head ipython_config.py
 head keybindings.py 
 head us.map
 head us.map 
+highlight -O  /usr/share/man/man1/ls.1.gz
+highlight -O  /usr/share/man/man1/ls.1.gz 
+highlight -O .zshrc
+highlight -O `man ls`
+highlight -O ansi  --force .zshrc
+highlight -O ansi  .zshrc
+highlight -O ansi a.sh 
+highlight a.sh 
 history
 history -a
 history -w
+hon
 htop
 htop -i
 https://mxlinux.org/?smd_process_download=1&download_id=5069
@@ -565,7 +424,10 @@ ibus-setup
 ifconfi
 ifconfig
 ifconfig  | grep channel
+ifconfig wlp3s0 192.168.68.144 netmask 255.255.255.0
+ifconfig wlp3s0 down
 ifocnfig
+ifup
 init
 init -h
 init 0
@@ -578,14 +440,33 @@ ip
 ip -s 
 ip -s link
 ip a
+ip a 
+ip a ls down
+ip a ls up
+ip a show wlp3s0
+ip link set mon0 up
+ip link set wlp0s26u1u1mon abcmon0
+ip link set wlp0s26u1u1mon mon0
+ip link set wlp0s26u1u1mon name mon0
+ip link set wlp0s26u1u1mon wlanmon
 ip link set wlp3s0 down
+ip link set wlp3s0 up
+ip ls up
+ip route
+ipa
 ipconfig
 ipython
 ipython3
+ipython3 
+ivm a.py
 iw
+iw mon0 del
 iw set wlp3s0 down
+iw wlp0s26u1u1 info
+iw wlp3s0 freq
 iw wlp3s0 info
 iwcnfig
+iwconfg
 iwconfig
 iwconfig  | grep -i channel
 iwconfig wlp3s0 down
@@ -595,143 +476,184 @@ iwctl
 iwd
 iwdctl
 iwlist
+iwlist wlp0s26u1u1 freq
 iwlist wlp3s0 channel
 iwlist wlp3s0 freq
+iwocnifg
+java --version
+jobs
 journalctl -xe
 k
-ka firebase
-ka firebase 
-ka fluxion
-ka goldendict
-ka i
-ka i3
-ka mpd
-ka mpv
-ka mpv 
-ka ncmpccc
-ka ncmpcpp
-ka ncmpppc
-ka numlockx
-ka pacman
-ka ssh-agent
-ka st
 kill -9 849705
 kill -9 850391
-killall bash
-killall httpd
-killall netctl
 kk
 l
 l |s
-la
-la -h
 less *
 libreoffice 
-ll
-ll /etc/ansible/
-ll /usr/bin/vs*
-ll /usr/lib/vsftpd-checkconfig.sh 
 ln -s sites-available/adminer.conf sites-enabled/
 loadkey /usr/share/kbd/keymaps/i386/qwerty/us.map.gz 
 loadkeys /usr/local/share/kbd/keymaps/us.map 
 loadkeys /usr/share/kbd/keymaps/i386/qwerty/us.map.gz 
 localectl list-keymaps
+localhost duy@localhost
 logcat
-ls
-ls 
-ls *.qc*
-ls --color=auto
-ls -a
-ls -la
-ls /etc/X11/
-ls /etc/i3*
-ls /etc/modprobe.d/
-ls /usr/share/keyutils/
-ls /var/lib/connman
-ls completions/ | grep an
-ls libre*
-ls libreo*
-ls ssh*
-ls us*
-ls | grep man
-lsbk
-lsblk
-lsf
-lsof
-lss
-lsuls
-lsusb
 makepkg -si
-man 1 qutebrowser
-man awk
-man column
-man cut
-man date
-man datte
-man dialog
-man egrep
-man gawk
-man grep
-man htop
-man init
-man iwd
-man loadkey
-man loadkeys
-man ls
-man openrc
-man pacman
-man paste
-man paste 
-man ping
-man rc-
-man sed
-man sed 
-man sort
-man sort 
-man top
-man tr
-man uni
-man uniq
-man xargs
-man-recode 
-mand date
-mandb
-mandb --create
-manpath
-manpath 
+mari0
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+md5sum HoNClient.sh 
+md5sum a.sh 
+mimeopen 
 mkdir -p /usr/local/share/kbd/keymaps
 mkdir /etc/nginx/sites-available
 mkdir /mnt/sdb6
+mkdir ScreenShots
+mkdir c++
+mkdir googleRemote
 mkdir ldoce6
 mkdir playlists
+mkfir c++
+mkinitcpio -P
 mktemp a.XXX
+mna ls
+more .profile 
+more /etc/passwd
+mount
+mount | column -t
+mp vlc udp://@225.1.2.210:30120
+mp3-dl
 mpc
 mpc update
 mpd
 mpstat
 mpstat -P all
-mv .vimrc .vimrc.bak
-mv .vimrc.bak .vimrc
-mv adminer_.php adminer_
-mv info.txt .trash/
-mv phpMyAdmin/phpmyadmin
-mv vim a
+mpv `sed -n 2p cab+sctv.m3u`
+mpv http://163.172.179.78:8081/tv/eurosport-2/playlist.m3u8
+mpv http://183.207.248.35/PLTV/2/224/3221226805/1.m3u8
+mpv http://183.207.248.36/PLTV/2/224/3221226795/1.m3u8
+mpv http://183.207.248.37/PLTV/2/224/3221226801/1.m3u8
+mpv http://183.207.248.37/PLTV/2/224/3221226807/1.m3u8
+mpv http://185.59.223.135/espn/index.m3u8
+mpv http://203.150.107.30:8081/tested2iptv/core101/playlist.m3u8
+mpv http://203.150.107.30:8081/tested2iptv/core102/playlist.m3u8
+mpv http://211.245.55.198:1024/m2u/239.192.67.130:49220
+mpv http://223.110.243.138/PLTV/2/224/3221226799/2.m3u8
+mpv http://223.110.243.170/PLTV/2/224/3221226797/index.m3u8
+mpv http://223.110.243.170/PLTV/2/224/3221226803/index.m3u8
+mpv http://87.117.234.107:1935/live/StarSports1FHD/playlist.m3u8
+mpv http://87.117.234.107:1935/live/StarSports2FHD/playlist.m3u8
+mpv http://91.126.39.98:8086/udp/224.168.32.2:3202
+mpv http://adultiptv.net/lists/all.m3u
+mpv http://adultiptv.net/vods.m3u8
+mpv http://cdn.adultiptv.net/bigass.m3u8
+mpv http://cdn.adultiptv.net/bigtits.m3u8
+mpv http://cdn.adultiptv.net/blonde.m3u8
+mpv http://cdn.adultiptv.net/blowjob.m3u8
+mpv http://cdn.adultiptv.net/brunette.m3u8
+mpv http://cdn.adultiptv.net/compilation.m3u8
+mpv http://cdn.adultiptv.net/cuckold.m3u8
+mpv http://cdn.adultiptv.net/fetish.m3u8
+mpv http://cdn.adultiptv.net/hardcore.m3u8
+mpv http://cdn.adultiptv.net/interracial.m3u8
+mpv http://cdn.adultiptv.net/latina.m3u8
+mpv http://cdn.adultiptv.net/livecams.m3u8
+mpv http://cdn.adultiptv.net/milf.m3u8
+mpv http://cdn.adultiptv.net/pornstar.m3u8
+mpv http://cdn.adultiptv.net/rough.m3u8
+mpv http://cdn.adultiptv.net/russian.m3u8
+mpv http://cdn.adultiptv.net/teen.m3u8
+mpv http://cdn.adultiptv.net/threesome.m3u8
+mpv http://dmitry-tv.my1.ru/his/itv_zabava/01/CH_EUROSPORT4K_HLSUHD.m3u8
+mpv http://starshare.live:8080/live/995522/995522/1001.ts
+mpv http://starshare.live:8080/live/995522/995522/19.ts
+mpv http://starshare.live:8080/live/995522/995522/20.ts
+mpv https://bein-xtra-roku.amagi.tv/ingest/playlist1080p.m3u8
+mpv https://cdn-laos.workpoint.news/sd-skynetsports2_480/index.m3u8
+mpv https://live1.90p.tv/5f5f406c58ae7a00191e12b8.html#link2
+mpv https://live1.90p.tv/5f5f406c58ae7a00191e12b8.html#link3
+mpv https://racingvic-i.akamaized.net/hls/live/598695/racingvic/1500.m3u8
+mpv https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
+mpv https://receiver.adjara.com/adjarasport_live/LiveTV/index.m3u8?checkedby
+mpv https://receiver.adjara.com/adjarasport_live/LiveTV2/index.m3u8?checkedby
+mpv https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky1_extreme@569780.m3u8
+mpv https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky2_extreme@569780.m3u8
+mpv https://www.facebook.com/linuxteamvn/videos/2707481546188744/
+mpv https://www.facebook.com/ntuan2812/videos/2670260773238371/
+mpv https://www.facebook.com/trautv/videos/320918949192865/
+mpv https://www.livedoomovies.com/02_PremierHD3_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_PremierHD4_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_PremierHD5_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_SPORTTV_2_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_SPORTTV_3_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_SPORTTV_4_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_SPORTTV_5_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_epl1_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/02_epl2_720p/chunklist.m3u8
+mpv https://www.livedoomovies.com/03_skynetsport1_480p/chunklist.m3u8
+mpv https://www.livedoomovies.com/03_skynetsport3_480p/chunklist.m3u8
+mpv https://www.livedoomovies.com/03_skynetsport4_480p/chunklist.m3u8
+mpv https://www.livedoomovies.com/03_skynetsport5_480p/chunklist.m3u8
+mpv https://www.nonolive.com/69696969?fbclid=IwAR0LcDZbthFXysEl43oitPwhzMmIy4w1SLcvzKg-z5RLYO23XjEPl6-JEB8
+mpv https://youtu.be/KLcaYWl6gec
+mpv https://youtu.be/dn2iU8Dm2NA
+mpv m
+mpv output-audio.aac 
+mpv rtmp://ivi.bupt.edu.cn:1935/livetv/starsports?checkedby
+mpv sport.m3u 
+mpv sudo airodump-ng  --bssid 14:CC:20:33:E6:1E wlp0s26u1u1mon
+mpvl 'Họ Đâu Cần Tôi  - Trung Tự-b6g6HHUt24M.mkv' 
+mpvm https://www.youtube.com/watch?v=VXGMw4N2-XM
+mpvm https://www.youtube.com/watch?v=hTGcMk_QXEg
 mysql -u duy -p
 mysql -u root -p
+nano
+nc localhost 
+nc localhost  22
+ncmpcpp
 ncmpcpp 
+ncmpcppc
 neo
 neofetch 
+neofetch  --asccii-distro gentoo
+neofetch  --asccii-logo gentoo
+neofetch  --ascii-distro gentoo
+neofetch --ascii_distro gentoo
+neon-config 
+netctl stop-all
 netstat -lntu
+news
 nginx -t
+nmap 35.185.163.247
 nmtui
 npm install npm --global
 npm install npn --global
 npm uninstall -g firebase-tools
 numlockx 
+o
 openrc-init 
 openrc-init vsftpd
 openrc-run
+openvpn 
+openvpn "openvpn_download.aspx\?sid\=1600248275098\&udp\=1\&host\=vpn711323259.opengw.net\&port\=1195\&hid\=15952766\&%2Fvpngate_vpn711323259.opengw.net_udp_1195.ovpn"
+openvpn --config https://www.vpngate.net/common/openvpn_download.aspx?sid=1600217559371&tcp=1&host=public-vpn-228.opengw.net&port=443&hid=15134975&/vpngate_public-vpn-228.opengw.net_tcp_443.ovpn
+openvpn https://www.vpngate.net/common/openvpn_download.aspx?sid=1600248275098&tcp=1&host=public-vpn-201.opengw.net&port=443&hid=15134948&/vpngate_public-vpn-201.opengw.net_tcp_443.ovpn
+openvpn openvpn_download.aspx\?sid\=1600248275098\&udp\=1\&host\=vpn711323259.opengw.net\&port\=1195\&hid\=15952766\&%2Fvpngate_vpn711323259.opengw.net_udp_1195.ovpn
+openvpn openvpn_download.aspx\?sid\=1600248275098\&udp\=1\&host\=vpn711323259.opengw.net\&port\=1195\&hid\=15952766\&%2Fvpngate_vpn711323259.opengw.net_udp_1195.ovpn 
+openvpn vpngate__udp_0.1.ovpn 
+openvpn vpngate__udp_0.ovpn 
+openvpn vpngate__udp_1.ovpn 
+openvpn vpngate_public-vpn-201.opengw.net_tcp_443.ovpn 
+openvpn vpngate_vpn127453346.opengw.net_tcp_1385.ovpn 
+openvpn vpngate_vpn559841433.opengw.net_udp_1946.ovpn 
+openvpn vpngate_vpn711323259.opengw.net_udp_1195.ovpn 
+openvpn vpngate_vpn984160303.opengw.net_tcp_443.ovpn 
+openvpn vpngate_vpn984160303.opengw.net_udp_1194.ovpn 
+opsu
+opsu 
+opsu --debu
+opsu --debug
+os-prober
+p
 pacaman -Ss php
 pacman -Q | font
 pacman -Q | grep font
@@ -758,8 +680,11 @@ pacman search gnome
 pacman search openssh
 pacman search php-
 pacman zathura
+pacmf
+pacmtree
 pactl list sinks
 parrot 
+parted -l
 paste -s a
 paste -sd a
 paste -sd"3\n" a
@@ -793,7 +718,11 @@ ping -6 tw.freebsd.org
 ping -I wlp3s0 1.1.1.1
 ping 1.1..1.1
 ping 1.1.1.1
+ping 1.1.1.11
 ping 1.55.207.239
+ping 192.168.1.0
+ping 192.168.1.1
+ping 192.168.1.11
 ping 192.168.10.163
 ping 192.168.10.173
 ping 192.168.10.174
@@ -801,7 +730,11 @@ ping 192.168.10.177
 ping 192.168.10.181
 ping 192.168.10.23
 ping 192.168.5.1
+ping 192.168.68.1
+ping 192.168.68.68
 ping 208.67.222.222
+ping 35.185.163.247
+ping 35.196.162.41
 ping 35.201.131.227
 ping 42.113.1.169
 ping artix.wheaton.edu
@@ -811,14 +744,18 @@ ping ftp.ntua.gr
 ping ftp.tw.freebsd.org
 ping google.com
 ping jp.freebsd.org
+ping livedoomovies.com
 ping mirror.clarkson.edu
 ping mirror1.artixlinux.org
 ping mirrors.dotsrc.org
+ping pornhub.com
 ping ru.freebsd.org
 ping si.freebsd.org
 ping tw.freebsd.org
 ping www2.tw.freebsd.org
 ping1.1.1.1.
+pip3 install --user matplotlib
+pip3 install --user numpy pandas
 pip3 install ipython
 pip3 install ipython3
 pip3 install mpd2
@@ -831,216 +768,88 @@ pip3 uninstall python-jsonschema
 pip3 uninstall python-jsonschema:
 pkill -9 netctl
 play_st.sh 
+pm
+pmc ccd2iso
+pmf
 pmg ffmpeg
 pmg logcat
-pms 
-pms acpi
-pms adminer
-pms alsa
-pms alsa-plugins
-pms alsa-utils
-pms alsa-utils alsa-plugins alsa-lib pavucontrol
-pms amixer
-pms ansible
-pms apache
-pms apache2
-pms aria2 wget curl
-pms aria2c -x8 libreoffice
-pms atool highlight mediainfo w3m ffmpegthumbnailer zathura
-pms base64
-pms bash-complete
-pms bash-completion
-pms bash-complition
-pms beside-ng
-pms chkconfig
-pms cmake
-pms cmake 
-pms cmake2
-pms cowsay
-pms dialog
-pms docker
-pms docker-ce
-pms docker-compose
-pms emacs
-pms eval
-pms ffmpeg
-pms firefox mplayer sxiv mpt-fs gvfs-mtp pulseaudio ibus-unikey ncmpcpp mpd mpc python-pip
-pms firefox mplayer sxiv mptfs gvfs-mtp pulseaudio ibus-unikey ncmpcpp mpd mpc python-pip
-pms firefox mplayer sxiv mtpfs gvfs-mtp pulseaudio ibus-unikey ncmpcpp mpd mpc python-pip
-pms fzf
-pms gcc
-pms gnu-free-fonts
-pms goldendict
-pms gvim
-pms hashcat
-pms hatcat
-pms hcxtools
-pms htop
-pms httpd
-pms i3lock-color
-pms inetutils
-pms install py3status
-pms iw
-pms iwd
-pms iwlist
-pms keymaps
-pms lcalectl
-pms lib32-mesa
-pms libphp
-pms libreoffice
-pms libxfont
-pms libxfonts
-pms loadkey
-pms loadkeys
-pms localectl
-pms lsof
-pms make 
-pms make cmake
-pms make2
-pms man
-pms man 
-pms man-pages
-pms mandb
-pms mandb-pages
-pms mesa
-pms metasploit
-pms mlocate
-pms mlocate2
-pms mpc
-pms mpd
-pms mplayer mpv
-pms mpv
-pms mysql
-pms ncmpcpp
-pms neofetch
-pms net-tools
-pms netcat
-pms netctl
-pms nethack
-pms nethacker
-pms ngin
-pms nginx
-pms nodejs
-pms notify-osd
-pms noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto
-pms npm
-pms opencl-headers
-pms opencl-mesa
-pms openrc
-pms openrc-openssh
-pms openrc-ssh
-pms openssh
-pms openssh apache 
-pms openvpn bluez
-pms pactl
-pms pavucontrol
-pms php
-pms php-apache
-pms php-fpm
-pms php-mcrypt
-pms phpmyadmin
-pms pogresql
-pms posgresql
-pms postgresql
-pms pulse
-pms pwgen
-pms py3status
-pms py3stauts
-pms py3stautus
-pms python
-pms python-ipython
-pms python3-ipython
-pms qemu
-pms qutebrowser
-pms ranger
-pms ruby
-pms rxvt-unicode ranger dmenu urxvt-perls perl-anyevent-i3 perl-json-xs
-pms screenfetch
-pms ssh
-pms ssh-agent
-pms streamlink
-pms streamlink notify-osd
-pms sysstat
-pms tcpdump
-pms terminus-font
-pms tk
-pms tor
-pms tree
-pms ttf-font-awesome
-pms ttf-nerd-fonts-symbols
-pms usbutil
-pms usbutils
-pms vcenter
-pms vsftpd
-pms weechat
-pms wget curl aria2 
-pms wget curl aria2c 
-pms wget libreoffice
-pms whatis
-pms where
-pms whereis
-pms which
-pms who
-pms whois
-pms wifi-menu
-pms wireless-tools
-pms wireless_tools
-pms wpa_supplicant
-pms xclip
-pms xf86-video-intel
-pms xinetd
-pms xorg
-pms xorg-app
-pms xorg-apps
-pms xorg-mkconfiscale
-pms xorg-mkfontscale
-pms xorg-server
-pms xorg-server xorg-apps xorg-xinit i3 numlockx
-pms xreader
-pms xterm
-pms youtube-dl
-pms zathura-mupdf
-pms zhs
-pms zsh
-pms zsh-completion
-pmsnetctl
-pmsy
-pmsyu
 pmy
 ppp
 ps
 ps aux
 ps aux | grep -i telegram
 ps aux | grep netctl
+ps fjx
+ps fjx  | grep ifconfig
 pscpu
 pstree
 pulseaudio
 pulseaudio 
 pulseaudio -D
+pw
 pwd
 python3
 python3 -m http.server
+python3 -m http.server -p 9999
+python3 -m http.server 9999
+python3 a.py 
+python3 stopwatch.py 
+qemu-img create -f qcow2 -b arch.qcow2 arch-snapshot.img
+qemu-img create -f qcow2 -b freebsd.qcow2 freebsd-snapshot.img
 qemu-img create -f qcow2 android.qcow2 15G
+qemu-img create -f qcow2 arch.qcow2 15G
 qemu-img create -f qcow2 artix.qcow2 15G
+qemu-img create -f qcow2 chrome.qcow2 15G
+qemu-img create -f qcow2 freebsd.qcow2 20G
+qemu-img create -f qcow2 mac.qcow2 20G 
 qemu-img create -f qcow2 mx.qcow2 15G
 qemu-img create -f qcow2 pop.qcow2 15G
+qemu-img create -f qcow2 winxp.qcow2 15G
+qemu-img info arch-snapshot.img 
+qemu-system-ppc -L pc-bios -boot d -M mac99 -m 4096 -cdrom mac.iso 
+qemu-system-ppc -L pc-bios -boot d -M mac99 -m 4096 -hda mac.qcow2 -cdrom MacOS_10_0_3.toast__0.sit  -netdev user,id=mynet0 -device sungem,netdev=mynet0
+qemu-system-ppc -L pc-bios -boot d -M mac99 -m 4096 -hda mac.qcow2 -cdrom Mac\ OS\ X\ Install\ CD.toast -netdev user,id=mynet0 -device sungem,netdev=mynet0
+qemu-system-x86_64 -drive format=raw,file=chromiumos_image.img 
+qemu-system-x86_64 -drive format=raw,file=chromiumos_image.img  -hda chrome.qcow2 
+qemu-system-x86_64 -m  4096 -drive format=raw,file=chromiumos_image.img  -enable-kvm
+qemu-system-x86_64 -m  4096 -drive format=raw,file=chromiumos_image.img  -hda chrome.qcow2 
 qemu-system-x86_64 -m 4096  -boot d -cdrom artix-base-openrc-20200214-x86_64.iso -hda /mnt/sdb6/os/artix.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0
 qemu-system-x86_64 -m 4096  -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom Bliss-v11.11--OFFICIAL-20200803-1959_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-ax86-houdini_ax86gms.iso 
+qemu-system-x86_64 -m 4096  -hda /mnt/sdb1/os/freebsd.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom ../iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/android.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom Bliss-v11.11--OFFICIAL-20200803-1959_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-ax86-houdini_ax86gms.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/android.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom PhoenixOSInstaller_v3.6.1.564_x64.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/android.qcow2-enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom PhoenixOSInstaller_v3.6.1.564_x64.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/android.qcow2.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom PhoenixOSInstaller_v3.6.1.564_x64.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/freebsd.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0
+qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/freebsd.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom ../iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/mx.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom MX-19.2_x64.iso 
 qemu-system-x86_64 -m 4096  -hda /mnt/sdb6/os/pop.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0 -cdrom pop-os_20.04_amd64_intel_13.iso 
 qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/artix.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:6622-:22,hostfwd=tcp:127.0.0.1:6680-:80,hostfwd=tcp:127.0.0.1:6625-:25,hostfwd=tcp:127.0.0.1:6621-:21,hostfwd=tcp:127.0.0.1:6623-:23  -device e1000,netdev=mynet0
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm  
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm  -netdev user,id=mynet0
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom Windows\ XP\ Pro\ SP3\ -\ Activated/WXPVOL_EN.iso 
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm -net nic
+qemu-system-x86_64 -m 4096 -hda /mnt/sdb6/os/winxp.qcow2 -enable-kvm -net nic -net user
 qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom /mnt/sdb6/os/archlinux-2020.07.01-x86_64.iso 
+qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device usb-host,hostbus=1,hostaddr=13
+qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -usb -device usb-host,hostbus=1,hostaddr=13
 qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0
+qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=11
+qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=12
+qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=21
+qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/mx.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0  -cdrom /mnt/sdb6/os/archlinux-2020.07.01-x86_64.iso 
+qemu-system-x86_64 -m 6096 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso 
+qlf
 qr2text 
 qutebrowser 50x.html 
 qutebrowser index.php 
+r
 range
+rangeer
 ranger
+ranger tv_series/
 rc
 rc-restart keymaps
 rc-service
@@ -1094,6 +903,18 @@ rc-update add sshd default
 rc-update add sshd.service
 rc-update sshd
 rc.log
+rclone  --dry-run googleRemote
+rclone --dry-run googleRemote:
+rclone -i googleRemote:
+rclone config
+rclone copy ScreenShots googleRemote:/Pictures
+rclone copy googleRemote:/ . -P
+rclone copy googleRemote:/Pictures/ScreenShots ScreenShots
+rclone ls googleRemote:
+rclone ls | grep Screen googleRemote:
+rclone ls | grep ScreengoogleRemote:
+rclone lsd googleRemote
+rclone lsd googleRemote:
 read n; while read line; do echo $line | tr ' ' '\n' | sort | uniq -u; done;
 reboot
 reboot 
@@ -1116,74 +937,82 @@ restart xinetd.service
 restart xinetd.srevice
 retart nginx
 rfkill
-rm * -rf
-rm .bashrc
-rm .bashrc .oh-my-bash/ -rf 
-rm .ssh/*
-rm .ssh/known_hosts 
-rm .zsh_history 
-rm /etc/vconsole.conf 
-rm /usr/share/kbd/keymaps/i386/qwerty/us.map.gz 
-rm 17763.737.190906-2324.rs5_release_svc_refresh_SERVERESSENTIALS_OEM_x64FRE_en-us_1.iso 
-rm Bliss-v11.11--OFFICIAL-20200803-1959_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-ax86-houdini_ax86gms.iso 
-rm Cf5TxCqb 
-rm PhoenixOSInstaller_v3.6.1.564_x64.iso 
-rm README.md
-rm README.md 
-rm Telegram\ Desktop/ -rf
-rm VMware-converter-en-6.2.0-8466193.exe 
-rm a
-rm a.py 
-rm a.sh a.py
-rm a.txt
-rm a.txt 
-rm adminer.conf
-rm adminer_ 
-rm android.qcow2 
-rm arch_config/ -rf
-rm arch_config/ -rf 
-rm artix
-rm artix-base-*
-rm artix.qcow2 
-rm b.txt 
-rm c.*
-rm demo.yaml 
-rm hello.py 
-rm hostname timezone.sali 
-rm inventory1/ -rf
-rm known_hosts 
-rm log.txt 
-rm pop.qcow2 
-rm python3 python3
-rm python3 python3\ a.py 
-rm readme.md 
-rm uc 
-rm wget-log 
-rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/
-rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
-rm xx zz
+rfkill list
 rnager
 rns
 route
+rs
 rs-status
 rsa
+rsb
 rsn
+rsnrsn
 rssa
 rst
+rstt
 s
+sblk
 sbudo mand
+scp -P 6622 a.sh b.sh  root@locahost:/root/
+scp -P 6622 a.sh b.sh  root@localhost:/root/
+scp -P 6622 a.sh b.sh root@localhost:/root/
+scp -P 6622 a.sh root@localhost:/root/
+scp -P 7722 -r /home/duy/gits/arch_config/ root@localhost:/root/
+scp -P 7722 -r fluxion/ root@localhost:/root/
+scp -P 7722 .bashrc .bash_history  root@localhost:/root/
+scp -P 7722 .inputrc root@localhost:/root/
+scp -P 7722 /home/duy/gits/arch_config/ -r root@localhost:/root/
+scp -P 7722 a.sh root@localhost:/root/
+scp -P 7722 fluxion/ root@localhost:/root/
+scp -P 7722 vconsole.conf us.map root@localhost:/
+scp a.sh b.sh -P 6622 root@localhost:/root/
+scp a.sh b.sh -P6622 root@localhost:/root/
 screenfetch
 screenfetch 
+scroll
+sed  '/*6622*/d/' .ssh/known_hosts 
+sed  's/fuck/hellokj/g' a
+sed  -i '$d' a
+sed '/*6622*/d' .ssh/known_hosts 
+sed '/*6622*/d/' .ssh/known_hosts 
+sed '/6622/d'.ssh/known_hosts 
 sed '2;s/\n/ /' a
 sed '3;s/\n/ /' a
 sed 'N;s/\n/ /' a
 sed 'N;s/\n/ /' yourFile
+sed 's/6622/d' .ssh/known_hosts 
+sed -E '/*6622*/d/' .ssh/known_hosts 
+sed -e '/*6622*/d/' .ssh/known_hosts 
+sed -e '/6622/d'.ssh/known_hosts 
+sed -e'/*6622*/d/' .ssh/known_hosts 
+sed -i  '/*6622*/d/g' .ssh/known_hosts 
+sed -i '$d' .ssh/known_hosts 
+sed -i '/*6622*/d' .ssh/known_hosts 
+sed -i '1 s/hello/fuck/g' a
 sed -i '3;s/\n/\t/' a
+sed -i 's/hello/fuck/g' a
+sed -i -E '/*6622*/d' .ssh/known_hosts 
+sed -n 2p cab+sctv.m3u 
+sed -n 2p cab+sctv.m3u  | bash -c mpv
+sed -n 2p cab+sctv.m3u  | bash mpv
+sed -n 2p cab+sctv.m3u  | mpv
+sed -n 2p cab+sctv.m3u  | vlc
+sed -n 2p cab+sctv.m3u | mpv  
+sed -n 2p gits/arch_config/misc/tv/cab+sctv.m3u 
+sed -n 2p gits/arch_config/misc/tv/cab+sctv.m3u  | mpv 
+sed -n 3p cab+sctv.m3u 
+senors
+senosrs
 sensors
+sha1sum FreeBSD-12.1-RELEASE-amd64-disc1.iso 
+sha1sum archlinux-2020.07.01-x86_64.iso 
 shopt
+show commna
 show databases;
 showc
 showcam.sh 
+sicv hp_1.jpg 
+snappy
 sort -k 2 a 
 sort -k2 a 
 sort -k3 a 
@@ -1202,6 +1031,8 @@ sort -t -r -k4 a
 sort -t -rk4 a 
 sort -t"\t" -rk4 a 
 sort -t=\t -rk4 a 
+sort -u .bash_history 
+sport
 sqlite3 community.db 
 ssh 192.168.10.173
 ssh duy@localhost
@@ -1216,9 +1047,11 @@ ssh root@locahost
 ssh root@localhost
 ssh root@localhost -p 6622
 ssh root@localhost -p 7722
+ssh root@localhost -p7722
 ssh root@locallost
 ssh-copy-id duy@localhost
 ssh-copy-id root@localhost
+ssh-copy-id root@localhost  -p 7722
 ssh-copy-id root@localhost -p 6622
 ssh-copy-id root@localhost -p 7722
 ssh-keygen
@@ -1236,6 +1069,7 @@ start mariadb
 start nginx
 start telnet
 start telnet.socket
+start tor
 start xinetd
 startx
 stat
@@ -1270,11 +1104,54 @@ stop netctl
 stop nginx
 stop systemd-networkd
 stop systemd-networkd.socket
+streamlink -p mpv  https://www.facebook.com/ThuyTiennOfficial/videos/4643801565637912/ 720p
+streamlink -p mpv https://www.facebook.com/linuxteamvn/videos/1495127944011742/?fref=gs&dti=337443380108003&hc_location=group best
+streamlink -p mpv https://www.facebook.com/officialmilona/videos/354314565754171 720p+a132k
+streamlink -p mpv https://www.facebook.com/officialmilona/videos/354314565754171/ 720p+132k
+streamlink -p mpv https://www.facebook.com/trautv/videos/320918949192865/ 480p
+streamlink -p mpv https://www.facebook.com/trautv/videos/320918949192865/ 720p
+streamlink -p mpv https://www.twitch.tv/core63_mc best
+streamlink -p mpv https://www.twitch.tv/thijs 
+streamlink -p mpv https://www.twitch.tv/thijs  best
+streamlink -p mpv https://www.twitch.tv/thijs 720p
+streamlink -p vlc https://www.facebook.com/linuxteamvn/videos/1495127944011742/?fref=gs&dti=337443380108003&hc_location=group best
+streamlink https://www.facebook.com/linuxteamvn/videos/1495127944011742/?fref=gs&dti=337443380108003&hc_location=group best
+streamlink https://www.nonolive.com/69696969
+streamlink https://www.nonolive.com/69696969?fbclid=IwAR0LcDZbthFXysEl43oitPwhzMmIy4w1SLcvzKg-z5RLYO23XjEPl6-JEB8
+streamlink_  https://www.facebook.com/ThuyTiennOfficial/videos/4643801565637912/
+streamlink_  https://www.facebook.com/ntuan2812/videos/648704599386854/
+streamlink_  https://www.facebook.com/ntuan2812/videos/684485855512906/
+streamlink_ "https://www.facebook.com/ntuan2812/videos/885091985353300/?notif_id=1600190950042977&notif_t=live_video_explicit&ref=notif"
+streamlink_ https://live1.90p.tv/5f5bc68658ae7a001b078323.html?link=2
+streamlink_ https://www.facebook.com/#
+streamlink_ https://www.facebook.com/bommancsgo/videos/784704989036056/
+streamlink_ https://www.facebook.com/gaming/hearthstone/?hc_ref=ARRGBha476-vnRp8njRYQra3DBFRnhvT9xhSrZqEoYsFNI__E8SSpfakq2xlIH56DdQ&ref=nf_target
+streamlink_ https://www.facebook.com/groups/HearthstoneViet/permalink/2759438040957560/
+streamlink_ https://www.facebook.com/groups/HearthstoneViet/permalink/2760372927530738/
+streamlink_ https://www.facebook.com/ntuan2812/videos/254601575718067/
+streamlink_ https://www.facebook.com/ntuan2812/videos/260417805030994/
+streamlink_ https://www.facebook.com/ntuan2812/videos/263362861336650/
+streamlink_ https://www.facebook.com/ntuan2812/videos/2670260773238371/
+streamlink_ https://www.facebook.com/ntuan2812/videos/317721646218383/
+streamlink_ https://www.facebook.com/ntuan2812/videos/601349083883987/
+streamlink_ https://www.facebook.com/ntuan2812/videos/604992153511304/
+streamlink_ https://www.facebook.com/ntuan2812/videos/668118177157513/
+streamlink_ https://www.facebook.com/ntuan2812/videos/885091985353300/?notif_id=1600190950042977&notif_t=live_video_explicit&ref=notif
+streamlink_ https://www.facebook.com/officialmilona/videos/354314565754171/
+streamlink_ https://www.facebook.com/trautv/videos/320918949192865/
+streamlink_https://www.facebook.com/trautv/videos/320918949192865/
+su
+su 
+sud ifconfig wlp3s0 down
 sudo
+sudo 
 sudo -
 sudo -9 kill 45087
 sudo -s
+sudo -system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device usb-host,hostbus=1,hostaddr=13
+sudo -system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -usb -device usb-host,hostbus=1,hostaddr=13
 sudo ./arch-install.sh 
+sudo ./checkra1n-x86_64 
 sudo ./fluxion.sh 
 sudo ./install/
 sudo /etc/init.d/iwd start
@@ -1286,21 +1163,76 @@ sudo /etc/init.d/vsftpd start
 sudo /etc/init.d/vsftpd status
 sudo 0s
 sudo Xorg :0 -configure
+sudo aircrack-ng  BatGioi-AC\:84\:C6\:87\:88\:EE.cap  -w birthdayCompletely.txt 
 sudo aireplay-ng --deauth 0 -a 30:F3:35:7A:B6:CC mon0
+sudo aireplay-ng -0 0 -a 14:CC:20:33:E6:1E -c D0:B1:28:0E:40:F9 wlp0s26u1u1mon
+sudo aireplay-ng -0 0 -a 14:CC:20:33:E6:1E wlp0s26u1u1mon
 sudo aireplay-ng -0 0 -a 30:F3:35:7A:B6:CC mon0
+sudo airmon-ng start wlp0s26u1u1
+sudo airmon-ng start wlp0s26u1u1 && sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon && sudo aireplay-ng -0 0 -a 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airmon-ng start wlp0s26u1u1 && sudo airodump-ng  --bssid 14:CC:20:33:E6:1E wlp0s26u1u1mon && sudo aireplay-ng -0 0 -a 14:CC:20:33:E6:1E wlp0s26u1u1mon
+sudo airmon-ng start wlp0s26u1u1 && sudo airodump-ng  --bssid 14:CC:20:33:E6:1E wlp0s26u1u1mon -c 1
+sudo airmon-ng start wlp0s29u1u2
 sudo airmon-ng stop mon0
+sudo airmon-ng stop wlp0s26u1u1mon
+sudo airmon-ng stop wlp0s29u1u2mon
 sudo airodump-ng 
+sudo airodump-ng   wlp0s26u1u1mon
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon 
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon  -c 1 
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon & 
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon & ; sleep 2 ; sudo aireplay-ng -0 0 -a 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon && sudo aireplay-ng -0 0 -a 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon &; sleep 2;sudo aireplay-ng -0 0 -a 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airodump-ng  --bssid 04:8D:38:39:89:95 wlp0s26u1u1mon &;sleep 2;sudo aireplay-ng -0 0 -a 04:8D:38:39:89:95 wlp0s26u1u1mon
+sudo airodump-ng  --bssid 14:CC:20:33:E6:1E wlp0s26u1u1mon
+sudo airodump-ng  --bssid 14:CC:20:33:E6:1E wlp0s26u1u1mon -c 1
 sudo airodump-ng  --bssid 30:F3:35:7A:B6:CC --channel 9 mon0 -w /root/honglien
 sudo airodump-ng  --bssid 30:F3:35:7A:B6:CC -c 9 mon0
 sudo airodump-ng  --bssid 30:F3:35:7A:B6:CC -c 9 mon0 -w /root/honglien
 sudo airodump-ng  --bssid 30:F3:35:7A:B6:CC mon0
 sudo airodump-ng  mon0
+sudo airodump-ng --bssid 04:8D:38:39:89:95 wlp0s29u1u2mon
+sudo airodump-ng --bssid 50:D4:F7:83:02:4A  wlp0s29u1u2mon
+sudo airodump-ng --bssid 50:D4:F7:83:02:4A wlp0s29u1u2mon
+sudo airodump-ng --bssid C8:3A:35:16:6C:90 -w vivo mon0
+sudo airodump-ng --bssid CC:32:E5:AF:E7:38 -w vivo mon0
+sudo airodump-ng --bssid D8:A3:15:B3:B2:DF -w vivo mon0
 sudo airodump-ng mon0 start
 sudo airodump-ng start mon0
+sudo airodump-ng wlp0s26u1u1mon
+sudo airodump-ng wlp0s29u1u2mon
 sudo ansible -m ping all
+sudo archlinux-java  fix
+sudo archlinux-java  status
+sudo archlinux-java fix
+sudo archlinux-java set java-14-openjdk
+sudo archlinux-java set java-8-openjdk/jre
+sudo archlinux-java status
+sudo aria2c -x8 http://mirror.macintosharchive.org/max1zzz.co.uk/+Mac%20OS%20X%20selections/+%5BMac%20OSX%20Systems%2010.0%20-%2010.3%5D+/10.0%20''Cheetah''/10.0.3/MacOS_10_0_3.toast__0.sit
 sudo blkid
+sudo cat /etc/netctl/*nguyen*
+sudo cat /etc/netctl/wlp0s26u1u1-AndroidAP2FB3 
+sudo cat /etc/netctl/wlp3s0-nguyenngocanh 
 sudo cat /etc/passwd
+sudo cat android-8.1-r1.conf.bak >>/etc/grub.d/40_custom 
+sudo ccd2iso chromiumos_image.img chrome.iso
+sudo chmod -hR duy:wheel sdb* usb
+sudo chmod 644 *
+sudo chmod 644 */*
+sudo chmod 644 -R demo/
+sudo chmod 755 banners manufacturer/ product/
+sudo chmod 755 demo/
+sudo chown -hR duy:wheel House\ MD\ Season\ 5/
+sudo chown -hR duy:wheel curtainCall Hamilton epicmusic nightcore rapViet The\ Beatles\ \[2009\]\ Greatest\ Hits\ CDRip\ \[Remastered\]\[Bubanee\] musics/
+sudo chown -hR duy:wheel sdb*
+sudo chown -hR duy:wheel sdb* 
+sudo chown -hR duy:wheel sdb* usb
+sudo chown -hR duy:wheel usb
+sudo clean install 
 sudo cp -iv PhoenixOSInstaller_v3.6.1.564_x64.iso /mnt/usb/
+sudo cp -ivrf * /mnt/sdb2
 sudo cp .vimrc_root /root/.vimrc
 sudo cp /mnt/sdb6/os/PhoenixOSInstaller_v3.6.1.564_x64.iso .
 sudo cp /usr/local/share/kbd/keymaps/us.map us.map.gz 
@@ -1312,26 +1244,68 @@ sudo cp us.map /usr/local/share/kbd/keymaps/
 sudo cp us.map.gz /usr/share/kbd/keymaps/i386/qwerty/
 sudo cp vconsole.conf /etc/
 sudo dd bs=4M if=Bliss-v11.11--OFFICIAL-20200803-1959_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-ax86-houdini_ax86gms.iso of=/dev/sdc status=progress
+sudo dd bs=4M if=Camd64OS_R83-13020.B-Vanilla.7z if=/dev/sdd1 status='progress'
+sudo dd bs=4M if=Camd64OS_R83-13020.B-Vanilla.7z of=/dev/sdc status='progress'
+sudo dd bs=4M if=Camd64OS_R83-13020.B-Vanilla.7z of=/dev/sdd1 status='progress'
+sudo dd bs=4M if=FreeBSD-12.1-RELEASE-amd64-disc1.iso of=/dev/sdb status='progress'
+sudo dd bs=4M if=FreeBSD-12.1-RELEASE-amd64-disc1.iso of=/dev/sdc status='progress'
 sudo dd bs=4M if=FreeBSD-12.1-RELEASE-amd64-disc1.iso of=/dev/sdc status=progress
 sudo dd bs=4M if=PhoenixOSInstaller_v3.6.1.564_x64.iso of=/dev/sdc status=progress
 sudo dd bs=4M if=archlinux-2020.07.01-x86_64.iso of=/dev/sdc status=progress
 sudo dd bs=4M if=artix-base-openrc-20200214-x86_64.iso of=/dev/sdc status='progress'
 sudo dd bs=4M if=artix-base-runit-20200214-x86_64.iso of=/dev/sdc status='progress'
+sudo dd bs=4M if=chromiumos_image.img of=chrome.iso status='progress'
 sudo dd bs=4M if=pop-os_20.04_amd64_intel_13.iso of=/dev/sdc status=progress
 sudo dd bs=4m if=FreeBSD-12.1-RELEASE-amd64-disc1.iso of=/dev/sdc status=progress
+sudo dd bs=4m if=chromiumos_image.img of=chrome.iso status='progress'
+sudo dd if=Mac\ OS\ X\ Install\ CD.toast of=/dev/sdc status='progress'
+sudo dd if=mac.iso of=/dev/sdc status='progress'
+sudo df -h
+sudo dhclient wlp3s0
+sudo du -sh .
+sudo du -sh /tmp
+sudo fc-cache -fv
 sudo fdisk -l
+sudo fdisk -l  | less
 sudo fdisk /dev/sda
+sudo fdisk /dev/sdb
 sudo fdisk /dev/sdc
+sudo fdisk a
 sudo fisk /dev/sdc
 sudo fuser -k 6600/tcp
+sudo gparted -l
+sudo grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo hon
 sudo htop
+sudo iat -i chromiumos_image.img -o chrome.iso
+sudo iat chromiumos_image.img chrome.iso
+sudo ifconfig wlp0s26u1u1 down
+sudo ifconfig wlp3s0 192.168.68.144 netmask 255.255.255.0
 sudo ifconfig wlp3s0 down
+sudo ifconfig wlp3s0 up
 sudo init
 sudo init 6
+sudo ip a add 192.168.68.141/24 dev wlp3s0
+sudo ip a add 192.168.68.142/24 dev wlp3s0
+sudo ip a add 192.168.68.142/24 wlp3s0
+sudo ip a del 168.68.106/24 dev wlp3s0
+sudo ip a del 192.168.68.106/24 dev wlp3s0
+sudo ip link set mon0 up
+sudo ip link set up wlp3s0
+sudo ip link set wlp0s26u1u1mon abcmon0
+sudo ip link set wlp0s26u1u1mon down
+sudo ip link set wlp0s26u1u1mon mon0
+sudo ip link set wlp0s26u1u1mon name mon0
+sudo ip link set wlp0s26u1u1mon up
 sudo ip link set wlp3s0 down
+sudo ip link set wlp3s0 up
+sudo iw del mon0
+sudo iw mon0 del
+sudo kill -9  $(pidof ifconfig)
 sudo kill -9 194838
 sudo kill -9 45087
+sudo kill -9 821047
 sudo kill -9 850391
 sudo killall bash
 sudo ln -s ../sites-available/adminer.conf adminer.conf
@@ -1340,8 +1314,17 @@ sudo ln -s /usr/share/webapps/phpMyAdmin/ /usr/share/nginx/html/
 sudo ln -s adminer.conf ../sites-available/adminer.conf 
 sudo ln -s sites-available/adminer.conf sites-enabled/
 sudo loadkeys /usr/local/share/kbd/keymaps/us.map 
+sudo ls
+sudo ls /etc/cron*
+sudo ls /proc/bus/
+sudo ls /proc/bus/usb
+sudo lsblk -a
+sudo lsblk -a | less
+sudo make clean instal
 sudo make clean install
+sudo make clean install 
 sudo make install
+sudo make install 
 sudo mand
 sudo mandb
 sudo mandb --create
@@ -1350,12 +1333,31 @@ sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo mkdir -p /usr/local/share/kbd/keymaps
 sudo mkdir /etc/nginx/sites-available
 sudo mkdir /etc/nginx/sites-enabled
+sudo mkdir /mnt/backup
 sudo mkdir /mnt/sdb6
 sudo mkdir /mnt/usb
+sudo mkdir musics
+sudo mkdir sdb{1..5}
+sudo mkfs.ext4 /dev/sda6
+sudo mkfs.ext4 /dev/sdc1
+sudo mkfs.fat -F32 -I /dev/sdb
+sudo mkfs.fat -F32 /dev/sda6
+sudo mkfs.fat -F32 /dev/sdb
+sudo mkinitcpio -P
+sudo mount /dev/sda5 /mnt/usb/
+sudo mount /dev/sda6 /mnt/backup/
+sudo mount /dev/sda6 /mnt/usb/
+sudo mount /dev/sdb1 /mnt/sdb1
+sudo mount /dev/sdb1/ /mnt/sdb1
 sudo mount /dev/sdb4 /mnt/media/
+sudo mount /dev/sdb4 /mnt/usb/
 sudo mount /dev/sdb5 /mnt/media/
 sudo mount /dev/sdb6 /mnt/sdb6/
+sudo mount /dev/sdc /mnt/usb/
 sudo mount /dev/sdc1 /mnt/usb/
+sudo mount /dev/sdc2 /mnt/usb/
+sudo mount /dev/sdc9 /mnt/usb/
+sudo mv -iv House\ MD\ Season\ 5/ videos/tv_series/ 
 sudo mv adminer-4.7.7.php adminer.php
 sudo mv adminer.php adminer_
 sudo mv adminer.php adminer_.php
@@ -1368,45 +1370,77 @@ sudo netctl --stop-all
 sudo netctl start wlp3s0-abc.xyz
 sudo netctl stop-all
 sudo nginx -t
+sudo nmap  183.81.30.18
+sudo nmap  192.168.1.1
+sudo nmap -A 192.168.1.1
 sudo nmap -Pn 35.201.131.227
+sudo nmap -Ss -A 192.168.1.1
 sudo nmap -Ss 35.201.131.227
+sudo nmap 192.168.1.1
 sudo nmap 192.168.10.177
+sudo nmap 35.196.162.41
 sudo nmap 35.201.131.227
 sudo npm install npm --global
 sudo npm uninstall -g firebase-tools
 sudo openrc-init vsftpd
 sudo openrc-run
-sudo pacman -R firebase
-sudo pacman -R neon-config
-sudo pacman -R vsftp
-sudo pacman -R vsftpd
-sudo pacman -Rcns iwd
-sudo pacman -Rcns openssh
-sudo pacman -S
-sudo pacman -S $(pacman -Ssq ^php-)
-sudo pacman -S aria2c libreoffice
-sudo pacman -S iw
-sudo pacman -S libmcrypt
-sudo pacman -S php
-sudo pacman -S qemu-arch-extra 
-sudo pacman -S ruby
-sudo pacman -S telegram-desktop
-sudo pacman -S zathura-cb
-sudo pacman -S zathura-pdf-mupdf 
-sudo pacman -S zathura-pdf-poppler
-sudo pacman -S zathura-ps 
-sudo pacman -Ss gnome
-sudo pacman -Ss iw
-sudo pacman -Ss iwconfig
-sudo pacman -Ss location
-sudo pacman -Ss mcrypt
-sudo pacman -Ssq ttf
-sudo pacman -Sy
-sudo pacman -Sy -l
-sudo pacman -Syy
-sudo pacman zathura
+sudo openvpn --config "openvpn_download.aspx?sid=1600244789557&tcp=1&host=vpn984160303.opengw.net&port=443&hid=14400182&%2Fvpngate_vpn984160303.opengw.net_tcp_443.ovpn"
+sudo openvpn --config "openvpn_download.aspx\?sid\=1600217559371\&tcp\=1\&host\=public-vpn-228.opengw.net\&port\=443\&hid\=15134975\&%2Fvpngate_public-vpn-228.opengw.net_tcp_443.ovpn"
+sudo openvpn --config "openvpn_download.aspx\?sid\=1600244789557\&tcp\=1\&host\=vpn127453346.opengw.net\&port\=1385\&hid\=14148135\&%2Fvpngate_vpn127453346.opengw.net_tcp_1385.ovpn"
+sudo openvpn --config "openvpn_download.aspx\?sid\=1600244789557\&udp\=1\&host\=161.202.144.236\&port\=1194\&hid\=14400182\&%2Fvpngate_161.202.144.236_udp_1194.ovpn"
+sudo openvpn --config "openvpn_download.aspx\?sid\=1600244789557\&udp\=1\&host\=vpn984160303.opengw.net\&port\=1194\&hid\=14400182\&%2Fvpngate_vpn984160303.opengw.net_udp_1194.ovpn "
+sudo openvpn --config "openvpn_download.aspx\?sid\=1600244789557\&udp\=1\&host\=vpn984160303.opengw.net\&port\=1194\&hid\=14400182\&%2Fvpngate_vpn984160303.opengw.net_udp_1194.ovpn"
+sudo openvpn --config openvpn_download.aspx\?sid\=1600217559371\&tcp\=1\&host\=public-vpn-228.opengw.net\&port\=443\&hid\=15134975\&%2Fvpngate_public-vpn-228.opengw.net_tcp_443.ovpn 
+sudo openvpn --config openvpn_download.aspx\?sid\=1600244431901\&udp\=1\&host\=vpn720759129.opengw.net\&port\=1302\&hid\=15444137\&%2Fvpngate_vpn720759129.opengw.net_udp_1302.ovpn 
+sudo openvpn --config openvpn_download.aspx\?sid\=1600244789557\&tcp\=1\&host\=vpn127453346.opengw.net\&port\=1385\&hid\=14148135\&%2Fvpngate_vpn127453346.opengw.net_tcp_1385.ovpn 
+sudo openvpn --config openvpn_download.aspx\?sid\=1600244789557\&udp\=1\&host\=161.202.144.236\&port\=1194\&hid\=14400182\&%2Fvpngate_161.202.144.236_udp_1194.ovpn 
+sudo openvpn --config openvpn_download.aspx\?sid\=1600244789557\&udp\=1\&host\=vpn984160303.opengw.net\&port\=1194\&hid\=14400182\&%2Fvpngate_vpn984160303.opengw.net_udp_1194.ovpn 
+sudo openvpn --config vpngate_vpn984160303.opengw.net_udp_1194.ovpn 
+sudo opsu
+sudo os-prober
+sudo paman -R kodi
+sudo parted -l
+sudo parted /dev/sdb
+sudo pip3 install --upgrade youtube-dl
+sudo pip3 install keyboard
+sudo pip3 install ueberzug
+sudo pip3 install upgrade youtube-dl
 sudo pip3 uninstall jsonschema
 sudo pip3 uninstall pyrsistent
+sudo python3 -m http.server
+sudo python3 -m http.server 9999
+sudo python3 stopwatch.py 
+sudo qemu-system-x86_64 -m 4096 -hda arch.qcow2 -enable-kvm -usb -device usb-host,hostbus=1,hostaddr=11
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom ../iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom /mn/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom /mnt/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb1/os/freebsd.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom /mnt/sdb1/iso/FreeBSD-12.1-RELEASE-amd64-disc1.iso 
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb3/os/chrome.qcow2 -enable-kvm  -cdrom chromiumos_image.img 
+sudo qemu-system-x86_64 -m 6096  -boot d -hda /mnt/sdb3/os/chrome.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom chromiumos_image.img 
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device -usb usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device -usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device -usb-host,hostbus=bus,hostaddr=addr
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device -usb-usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device usb usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -device_add usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -usb -device usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  -usb usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/MX-19.2_x64.iso -enable-kvm  device_add usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -cdrom /mnt/sdb6/os/mac/mac.iso 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb1/os/arch-snapshot.img -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb1/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0  -cdrom /mnt/sdb1/iso/archlinux-2020.09.01-x86_64.iso 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb1/os/freebsd-snapshot.img -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb3/os/chrome.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -cdrom chromiumos_image.img 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=11
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=12
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/arch.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=13
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/mx.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/mx.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0  -cdrom /mnt/sdb6/os/archlinux-2020.07.01-x86_64.iso 
+sudo qemu-system-x86_64 -m 6096  -hda /mnt/sdb6/os/mx.qcow2 -enable-kvm  -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23  -device e1000,netdev=mynet0 -usb -device usb-host,hostbus=1,hostaddr=13
 sudo rc
 sudo rc-restart keymaps
 sudo rc-service connmand restart
@@ -1446,31 +1480,56 @@ sudo rc-update del vsftpd
 sudo reboo
 sudo reboot
 sudo reboot 
+sudo rf /mnt/sdb*/* -rf
+sudo rm *
+sudo rm /etc/netctl/wlp3s0-nguyenngocanh 
 sudo rm /etc/vconsole.conf 
+sudo rm /mnt/sdb*/* -rf
+sudo rm /mnt/sdb5 -rf
 sudo rm /usr/share/kbd/keymaps/i386/qwerty/us.map.gz 
 sudo rm adminer.conf
 sudo rm adminer_ 
+sudo rm hon/ -rf
+sudo rm sdb6 -rf
 sudo rm wifi_100ba9094cfc_6e677579656e6e676f63616e68_managed_psk/ -rf
 sudo root
 sudo s
 sudo sh -c echo LANG=en_US.UTF-8 > /etc/locale.conf
 sudo sh Ventoy2Disk.sh -I /dev/sdc
 sudo sh Ventoy2Disk.sh -i /dev/sdc
+sudo ssh-copy-id duy@192.168.68.112
+sudo systemctl daemon reload
 sudo systemctl daemon-reload
 sudo systemctl disable connman
+sudo systemctl disable netctl@wlp3s0-nguyenngocanh.service
 sudo systemctl disable systemd- networkd
 sudo systemctl disable systemd-networkd
 sudo systemctl enable i3lock@duy.service
 sudo systemctl enable i3lock@duy.service 
 sudo systemctl enable iwd
 sudo systemctl reenable i3lock@duy.service
+sudo systemctl reenable i3lock@duy.service 
 sudo systemctl reload daemon
 sudo systemctl reload-daemon
 sudo systemctl start i3lock@duy.service 
+sudo systemctl start netctl@nguyenngocanh.service
+sudo systemctl start netctl@wlp3s0-nguyenngocanh.service
 sudo systemctl start php-fpm
+sudo systemctl statu netctl@wlp3s0-nguyenngocanh.service
+sudo systemctl status netctl@nguyenngocanh.service
+sudo systemctl status netctl@wlp3s0-Tenda*.service
+sudo systemctl status netctl@wlp3s0-nguyenngocanh.service
 sudo systemctl status php-fpm
+sudo systemctl stop netctl@nguyenngocanh.service
+sudo systemctl stop netctl@wlp3s0-nguyenngocanh.service
+sudo systemctl stop netctl@wlp3s0\\2xdnguyenngocanh.service
 sudo tcpdump
+sudo tcpdump 
+sudo umount  -l /mnt/usb 
+sudo umount  /mnt/usb 
 sudo umount /mnt/media 
+sudo umount /mnt/usb
+sudo umount /mnt/usb 
 sudo updatedb
 sudo vim 
 sudo vim *T*
@@ -1498,13 +1557,17 @@ sudo vim /etc/locale.gen
 sudo vim /etc/modprobe.d/alsa-base.conf
 sudo vim /etc/my.cnf
 sudo vim /etc/my.cnf.d/mysql-clients.cnf 
+sudo vim /etc/netctl/wlp3s0-nguyenngocanh 
 sudo vim /etc/pacman.conf 
+sudo vim /etc/pacman.d/gnupg/gpg.conf 
 sudo vim /etc/pacman.d/mirrorlist 
 sudo vim /etc/php/php.ini 
+sudo vim /etc/profile.d/jre.sh
 sudo vim /etc/rc.conf 
 sudo vim /etc/resolv.conf
 sudo vim /etc/resolv.conf 
 sudo vim /etc/ssh/sshd_config 
+sudo vim /etc/systemd/system/i3lock@duy.service 
 sudo vim /etc/vsftpd.conf 
 sudo vim /srv/http/index.html
 sudo vim /usr/share/nginx/html/test.php
@@ -1524,13 +1587,19 @@ sudo vim wlp3s0.network
 sudo vsftpd 
 sudo wget https://github.com/vrana/adminer/releases/download/v4.7.7/adminer-4.7.7.php
 sudo wifi-menu
+sudo wifi-menu 
 sudo wifi-menu wlp0s26u1u1 
 sudo wifi-menu wlp0s29u1u2
 sudo wifi-menu wlp0s29u1u2 
 sudo wpa_passphrase abc.xyz n2t8n1995 >> abc.xyz.conf
 suod ./fluxion.sh 
+suod ifconfig wlp3s0 up
+suod ip link set wlp3s0 down
 suod mandb
 suod vim /etc/i3status.conf 
+sxiv -g hp_1.jpg 
+sxiv hp_1.jpg 
+sysctl kern.boottime
 sysstat
 systemctl
 systemctl --failed
@@ -1538,13 +1607,19 @@ systemctl daemon-reload
 systemctl disable connman
 systemctl enable i3lock@duy.service 
 systemctl enable iwd
+systemctl reenable i3lock@duy.service 
 systemctl restart netctl
 systemctl restart sshd
 systemctl start i3lock@duy.service 
 systemctl start iwd
 systemctl start php-fpm
+systemctl status netctl@nguyenngocanh.service
+systemctl status netctl@wlp3s0-nguyenngocanh.service
+systemctl status nguyenngocanh.service
 systemctl status sshd
 systemctl status vsftpd
+systemctl stop netctl@wlp3s0-nguyenngocanh.service
+systemctl stop netctl@wlp3s0\\2xdnguyenngocanh.service
 systemctl stop systemd-networkd
 systemctl stop systemd-networkd.socket
 systemctl suspend
@@ -1555,11 +1630,17 @@ sytemctl
 sytemctl --failed
 szh
 t
+t/o
+t/v
+tar -xvf MacOS_10_0_3.toast__0.sit 
+tar -xvf stuffit520.611linux-i386.tar.gz 
 tar -xvf ventoy-1.0.20-linux.tar.gz 
 tatus --crashedim /etc/conf.d/connmand 
 tcpdump
+tcpdump 
 telegram-desktop 
 telnet 14.231.191.36
+telnet 192.168.1.1
 telnet 192.168.100.1
 telnet 192.168.5.1
 telnet admin 192.168.100.1
@@ -1578,187 +1659,81 @@ telnet root@localhost
 telnet root@localhost 
 telnet192.168.5.1
 time
+time (cat /dev/urandom | tr -dc 'a-zA-Z0-9!@#-$%^&*()=+'  | fold -w 8 >> pass.txt )
+time (for i in {1..1000}; do ./a.out; done;)
+time (for i in {1..1000}; do python3 a.py; done;)
+time ./a.out 
 time bash
+time lf
+time passwd 
+time python3 a.py 
+time ranger
+time vim -u NONE pass.txt 
+time vim -u NONE rockyou.txt 
+time vim pass.txt 
+time vim rockyou.txt 
 time zsh
+tmux
 top
 top -i
 top | grep qute
 touch a
+touch a.mkv
+touch {1..10a..z}
+touch {1..10} {a..z}
+toute
+tr -dc 'a-zA-Z0-9!@#-$%^&*()=+'  | fold -w 8 | head -n 1
+traceroute 192.168.0.1
+traceroute 192.168.1.1
+traceroute 192.168.2.1
+traceroute192.168.2.1
+trans :vi
+trans :vi --shell
 tree
 tree 
+tv
+tv1
+tv1 
 type $a
 type($a)
 ua
 uanme -rns
+uls
 umount /mnt/media 
+umount /mnt/usb 
 uname -rns
+unicode_start .bash_history .bash
+uniq -u .bash_history 
+uniq .bash_history .bash
+unrar --help
+unrar -h
+unrar ls MacOS_10_0_3.toast__0.sit 
 updatedb
 uptime
+urar MacOS_10_0_3.toast__0.sit 
+urxvt 
 usdo airodump-ng mon0  start
 usdo airodump-ng start mon0 
 usdo mv adminer_.php adminer_
 usod tcpdump
 vi
 vi ma
-vim
-vim 
-vim $(which arch)
-vim $(which volume)
-vim $(which weather)
-vim *T&
-vim *grub*
-vim *nguyenngocanh*
-vim --startuptim log.txt
-vim --startuptim3 log.txt
-vim --startuptime log.txt
-vim .Xresources 
-vim .bash_history 
-vim .bashr
-vim .bashrc
-vim .bashrc 
-vim .basrhc
-vim .emacs
-vim .impu
-vim .inputrc 
-vim .profile 
-vim .vimrc
-vim .xinitrc 
-vim .zsh_history 
-vim .zshrc
-vim .zshrc 
-vim /etc/ansible/ansible.cfg 
-vim /etc/ansible/host
-vim /etc/ansible/hosts
-vim /etc/ansible/hosts 
-vim /etc/conf.d/
-vim /etc/conf.d/connmand 
-vim /etc/conf.d/keymaps 
-vim /etc/elogind/logind.conf 
-vim /etc/grub.d/40_custom 
-vim /etc/host.conf 
-vim /etc/hostname
-vim /etc/hosts
-vim /etc/hosts 
-vim /etc/httpd/conf/httpd.conf 
-vim /etc/i3/config
-vim /etc/i3status.conf 
-vim /etc/init.d/sshd
-vim /etc/init.d/vsftpd 
-vim /etc/locale.gen 
-vim /etc/my.cnf
-vim /etc/my.cnf.d/mysql-clients.cnf 
-vim /etc/nginx.con
-vim /etc/nginx.conf
-vim /etc/pacman.conf 
-vim /etc/pacman.d/mirrorlist
-vim /etc/php/php.ini 
-vim /etc/pro
-vim /etc/profile 
-vim /etc/rc.conf 
-vim /etc/ssh/sshd_config 
-vim /etc/vconsole.conf 
-vim /etc/vsftpd.conf 
-vim /etc/wpa_supplicant/abc.xyz.conf 
-vim /etchosts
-vim /usr/lib/vsftpd-checkconfig.sh 
-vim /usr/local/share/kbd/keymaps/us.map
-vim /usr/local/share/kbd/keymaps/us.map 
-vim /usr/share/doc
-vim /usr/share/doc/vsftpd/
-vim /usr/share/kbd/keymaps/i386/
-vim 1.1.1.1
-vim FAQ 
-vim INSTALL 
-vim README 
-vim README.md
-vim README.md 
-vim README.ssl 
-vim TODO 
-vim a
-vim a.
-vim a.c
-vim a.py
-vim a.sh
-vim a.sh 
-vim a.txt
-vim a.yml
-vim a.yml 
-vim access.log 
-vim adminer.conf 
-vim adminer_.php 
-vim android-8.1-r1.conf.bak 
-vim answer.txt 
-vim arch 
-vim autoconfig.yml 
-vim b.
-vim b.sh
-vim b.txt
-vim b.yml
-vim b.yml 
-vim c.sh 
-vim c.txt
-vim centos 
-vim con
-vim conf/httpd.conf 
-vim config 
-vim config h
-vim config.h
-vim demo.yaml
-vim demo.yaml 
-vim enp0s25.network 
-vim fastcgi.conf 
-vim free
-vim freebsd
-vim freebsd 
-vim freebsd_note 
-vim functions.sh 
-vim hostname 
-vim hosts
-vim httpd.conf 
-vim i3
-vim i3lock@duy.service 
-vim i3s
-vim i3status.conf 
-vim in
-vim index.html 
-vim index.php 
-vim info.txt 
-vim keymaps 
-vim log.txt 
-vim main.conf 
-vim mirrorlist
-vim mpd.conf 
-vim nginx.conf 
-vim note
-vim note 
-vim rc.conf 
-vim rc.log 
-vim readme.md 
-vim settings 
-vim shootPeopleOut 
-vim sshd_config 
-vim statu
-vim telnet 
-vim test.sh 
-vim test1/
-vim timezone.sali 
-vim us-acentos.map.gz 
-vim us.map 
-vim us.map.gz 
-vim us1.map.gz 
-vim vim 
-vim vim a
-vim wlp3s0.network 
-vim xterm_trans.sh 
-vim xx
-vim zz
-vimdiff /usr/local/share/kbd/keymaps/us.map us.map.gz 
+vi mmo
 vlc https://www.facebook.com/groups/linuxteamvietnam2018/permalink/933231820529153/?__cft__[0]=AZUNfeEN5KkCicLcKc-9rPMGluJGQGQduNU_iJznm-r451mX0Rvjcy-gm6MiKuUK6zVIaIG2d7Y4gO8g5tehbvFXWywq6_A3nUIwrDjqoEm_fjRmlDZxXug084OHIh4nlZY-2H8hZYNnq7gCNWPzuZV0Yp9HH6XVqNoLdWgWWaPquEQ3NYRd6OpPX68Lg377UyMl_mF0Q7eFegc9Hu1cheOZ78PP_eMk6Q6biwhrbI-POQ&__tn__=%2CO%2CP-R
+vm cab+sctv.m3u 
+vm learn.cpp 
+vm linhngoc.pass 
+vman ls
 vman sort
 vmi functions.sh 
+vmstat
 volume
+vp lfrc ~/.config/lf/
 vsftpd 
+w
 weather
+weather1 
+weatheri3status 
 wfi
 wget https://doc-0g-c8-docs.googleusercontent.com/docs/securesc/c23mqu6o832q29c4mmrsfp0jbdqhenv2/hn8e4mgelpmb24trbrpq0nmuthtu22r5/1599502050000/07070542981120816857/03189687297602804032/1s_Z1-vWVfYTvn43lxkyUt5wLJRzemNTt?e=download&authuser=0&nonce=f0u22ub5qmkac&user=03189687297602804032&hash=i3964uqgnnoj8o4dmtnu130tl495fiit
 wget https://drive.google.com/u/0/uc?export=download&confirm=MnWF&id=1hPkvP0w9K9QX2iarq-6bSnO57V76GOmn
@@ -1802,6 +1777,7 @@ which man
 which scrot
 which vsftpd
 which where
+while 1; do cat /dev/urandom | tr -dc 'a-zA-Z0-9-!$%' | fold -w 8 | head -n 1; done;
 while read line; do echo ${#line}; done < a
 while read line; do if [ ${#line} -lt 10 ]; then echo "Not all scores in line ${line:0:1}"; fi; done < a
 while read line; do if [ ${#line} -lt 11 ]; then echo "Not all scores in line ${line:0:1}"; fi; done < a
@@ -1812,7 +1788,10 @@ whois duy
 whois ls
 whois man
 wifi
+wifi 
 wifi-menu 
+wii
+wiif
 windows
 wpa_passphrase abc.xyz n2t8n1995 >> abc.xyz.conf
 wpa_supplicant 
@@ -1822,47 +1801,9 @@ xprop | grep -i class
 xrandr
 xterm
 xterm -hold -e trans :vi "`xclip -o`"
-yay  netctl
-yay -R vsftpd
-yay -R vsftpd-openrc
-yay -S adminer
-yay -S adminer-git
-yay -S awx
-yay -S ftp
-yay -S gtypist
-yay -S ifuse mtpfs 
-yay -S intel-opencl-runtime
-yay -S libxft-bgra
-yay -S netctl
-yay -S urxvt-font-size-git python-pdftotext scrcpy
-yay -S urxvt-font-size-git python-pdftotext scrcpy ifuse
-yay -Ss ftp
-yay -Ss gnome
-yay -Ss telegram
-yay -Ss telegram-desktop
-yay -Ssq fonts
-yay -Ssq ttf
-yay -Sy
-yay apache
-yay ftp
-yay gnome
-yay iwd
-yay net-tools
-yay netctl
-yay netctl-openrc
-yay openssh
-yay php
-yay search gnome
-yay search openssh
-yay tor
-yay tor-openrc
-yay vsftpd
-yay wget
 yes  | sudo pacman -Sy
 yes cp -rf dwm_ultimate+savefloat+attachbelow+swallow/ ~/.trash/
 yes | cp * /mnt/sdb6/data/ -rf
 yes | cp -rf dwm_ultimate+savefloat+attachbelow+swallow/ ~/.trash/
 yes | cp mpd/ ~/.config/ -rf
 yes | cp ncmpcpp/ ~/.config/ -rf
-yes | sudo cp i3status.conf /etc/
-zsh

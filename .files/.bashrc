@@ -60,6 +60,7 @@ alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
 alias diff='diff --color=auto'
 alias p='cd /home/duy/gits/python'
 alias t='cd /home/duy/.trash'
