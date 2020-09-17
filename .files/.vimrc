@@ -265,9 +265,11 @@ set path+=**
 set hlsearch incsearch
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
 set cursorline
-hi CursorLine	cterm=NONE ctermbg=11
+hi CursorLine	cterm=NONE ctermbg=227
+hi Visual ctermfg=NONE ctermbg=11
+hi MatchParen ctermfg=Black ctermbg=LightCyan
 hi CursorLineNr term=none cterm=none ctermfg=202 
-hi Search term=none cterm=none ctermfg=black ctermbg=red
+hi Search term=none cterm=none ctermfg=Black ctermbg=LightCyan
 
 let g:is_expandtab_enabled = 1
 map <F2> :call ToggleExpandTab()<CR>
