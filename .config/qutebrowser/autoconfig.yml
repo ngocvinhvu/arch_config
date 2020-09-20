@@ -8,6 +8,8 @@ config_version: 2
 settings:
   aliases:
     global:
+      joff: set content.javascript.enabled false
+      jon: set content.javascript.enabled true
       poff: set content.proxy none
       pon: set content.proxy socks://localhost:9050/
       q: close
@@ -19,12 +21,14 @@ settings:
     global:
       normal:
         ',<Ctrl+c>': :open -t t {clipboard}
-        ',H': hint links spawn mpv --ytdl-format='[height<=?1080]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
+        ',H': hint links spawn mpv --ytdl-format='[height<=?1080]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
+        ',M': hint links spawn mpv --ytdl-format='[height<=?360]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
         ',S': spawn streamlink -p mpv {clipboard} best
         ',V': spawn vlc {clipboard}
-        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi {hint-url}
-        ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
+        ',Y': hint links spawn mpv --ytdl-format='[height<=?720]' --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi
+          {hint-url}
         ',a': hint links spawn mpv --ytdl-format=bestaudio {hint-url}
         ',d': hint links spawn aria2c -x8 {hint-url} --dir /tmp
         ',g': spawn bash -c mpvgif.sh
@@ -34,6 +38,7 @@ settings:
         ',s': hint links spawn streamlink -p mpv {hint-url}  best
         ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
+        ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
         <Ctrl+j>: run-with-count 15 scroll down
@@ -71,11 +76,14 @@ settings:
     https://studio.youtube.com: false
     https://www.facebook.com: false
   content.notifications:
+    https://binhluan.live: false
     https://binhluan.tv: false
     https://bizfly.vn: false
     https://dnschecker.org: false
+    https://fptplay.vn: false
     https://hatde.tv: false
     https://helpex.vn: false
+    https://livefootballol.net: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://slutmesh.com: false
@@ -84,9 +92,11 @@ settings:
     https://v.qq.com: false
     https://vn-z.vn: false
     https://webchat.freenode.net: false
+    https://weibo.com: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
     https://www.macworld.co.uk: false
+    https://www.mirror.co.uk: false
     https://www.onworks.net: false
     https://www.pcworld.com: false
     https://www.reddit.com: false
@@ -105,9 +115,9 @@ settings:
   fonts.default_size:
     global: 10pt
   fonts.web.size.default:
-    global: 17
-  fonts.web.size.minimum:
     global: 16
+  fonts.web.size.minimum:
+    global: 0
   fonts.web.size.minimum_logical:
     global: 6
   qt.force_software_rendering:
@@ -148,4 +158,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: 100%
+    global: '125'

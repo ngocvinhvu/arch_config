@@ -1,6 +1,6 @@
 re https://www.reddit.com/
 fa https://www.facebook.com/
-yo https://www.youtube.com/
+yo https://www.youtube.com/?app=desktop&persist_app=1
 f33 https://next.voz.vn/f/diem-bao.33/
 pr https://www.pirateproxy.space/
 tw https://www.twitch.tv/directory
@@ -59,3 +59,9 @@ crawl login python https://stackoverflow.com/questions/20039643/how-to-scrape-a-
 posts http://localhost:8000/index.php?controller=posts
 mail2 https://mail.google.com/mail/u/2/?tab=wm&ogbl#inbox
 linux chall https://cmdchallenge.com/#/dirs_containing_files_with_extension
+grammar English https://www.perfect-english-grammar.com/grammar-exercises.html
+install ansible https://computingforgeeks.com/how-to-install-ansible-awx-on-ubuntu-linux/
+iptv https://truyenhinhfpt.net.vn/link-iptv-moi-nhat.html
+c++ https://www.codecademy.com/learn/learn-c-plus-plus
+ore https://old.reddit.com/
+myo https://m.youtube.com/?app=m&persist_app=1

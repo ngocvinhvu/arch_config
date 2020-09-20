@@ -136,8 +136,8 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # fastest way transfe file 
-sender:     tar c filename | netcat -l -p port -vvv -c
-reciever:   netcat host port | tar x
+sender:     tar czf - filename | netcat -l -p port -vvv -c
+reciever:   netcat host port | tar xz
 ##  misc
 # aria2c --bt-metadata-only=true --bt-save-metadata=true
 
