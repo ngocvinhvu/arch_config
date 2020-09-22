@@ -39,11 +39,12 @@ static const Rule rules[] = {
         { "URxvt",         NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "Gimp",          NULL,       NULL,            0,            0,           0,           0,         -1 },
         // { "Sxiv",       NULL,       NULL,            0,            1,           0,          -1,         -1 },
-        { "mpv",           NULL,       NULL,            0,            0,           0,           0,         -1 },
+        { "mpv",           NULL,       NULL,            0,			  0,           0,           0,         -1 },
         { NULL,            NULL,       "ncmpcpp",       1 << 7,       0,           0,           1,         -1 },
 	    { NULL,            NULL,"xclip -o | trans :vi", 0,			  1,           1,           1,         -1 },				  	// xterm
         { NULL,            NULL,	   "trans",			0,			  1,           1,           1,         -1 },					 // urxvt
         { NULL,            NULL,       "Event Tester",  0,            1,           0,           1,         -1 }, /*xev*/
+		{ "Qemu-system-x86_64",          NULL,       NULL,            1 << 6,		  0,           0,           0,         -1 },
 
 
 };
