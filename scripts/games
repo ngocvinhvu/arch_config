@@ -1,0 +1,7 @@
+#!/bin/bash
+select game in mari0 chromium-bsu doukutsu; do $game; done;
+# case $game in 
+# 	mari0) mari0;;
+# 	chromium-bsu) chromium-bsu;;
+# 	doukutsu) doukutsu;;
+# esac

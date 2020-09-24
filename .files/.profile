@@ -31,13 +31,19 @@ export SHELL=/bin/bash
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export LF_ICONS="di=:\
-fi=📃:\
+fi=:\
 tw=🤝:\
 ow=:\
 ln=:\
 or=❌:\
 ex=🎯:\
-*.txt=✍:\
+*.txt=:\
+*.py=:\
+*.php=:\
+*.php=:\
+*.c=:\
+*.cpp=C++:\
+*.js=:\
 *.mom=✍:\
 *.me=✍:\
 *.ms=✍:\
@@ -75,8 +81,8 @@ ex=🎯:\
 *.ogg=♬:\
 *.m4a=♬:\
 *.flac=:\
-*.mkv=📹:\
-*.mp4=🎬:\
+*.mkv=:\
+*.mp4=:\
 *.webm=🎬:\
 *.mpeg=🎬:\
 *.avi=🎬:\
