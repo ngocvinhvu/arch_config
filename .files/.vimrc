@@ -228,7 +228,7 @@ augroup vim_autocmd
 	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
 	autocmd Filetype python inoremap <silent>  <buffer> <F9> <Esc>:%w !python3<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F9> :%w !python3<CR>
-	autocmd Filetype python nnoremap <silent> <buffer> <F8> :w<CR>:!python3 %<CR>
+	autocmd Filetype python nnoremap <silent> <buffer> <F8> :w<CR>:!clear;python3 %<CR>
 	autocmd Filetype python vnoremap <silent> <buffer> <F9> !python3<CR>
 	autocmd Filetype python inoremap <silent> <buffer> <F5> <Esc>:%w !sudo python3<CR>
 	autocmd Filetype python nnoremap <silent> <buffer> <F5> :%w !sudo python3<CR>
@@ -240,7 +240,7 @@ augroup vim_autocmd
 	autocmd Filetype sh inoremap <silent> <buffer> <F9> <Esc>:%w !bash<CR>
 	autocmd Filetype sh nnoremap <silent> <buffer> <F9> :%w !bash<CR>
 	autocmd Filetype sh vnoremap <silent> <buffer> <F9> !bash<CR>
-	autocmd Filetype sh nnoremap <silent> <buffer> <F8> :w<CR>:!bash %<CR>
+	autocmd Filetype sh nnoremap <silent> <buffer> <F8> :w<CR>:!clear; bash %<CR>
 	autocmd Filetype javascript inoremap <silent> <buffer> <F9> <Esc>:%w !node<CR>
 	autocmd Filetype javascript nnoremap <silent> <buffer> <F9> :%w !node<CR>
 	autocmd Filetype javascript vnoremap <silent> <buffer> <F9> !node<CR>
@@ -248,11 +248,15 @@ augroup vim_autocmd
 	autocmd Filetype perl nnoremap <silent> <buffer> <F9> :%w !perl<CR>
 	autocmd Filetype perl vnoremap <silent> <buffer> <F9> !perl<CR>
 	autocmd Filetype perl nnoremap <silent> <buffer> <F8> :w<CR>:!perl %<CR>
-	autocmd Filetype c inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;gcc %;./a.out<CR>
-	autocmd Filetype c nnoremap <silent> <buffer> <F9> :w<CR>:!clear;gcc %;./a.out<CR>
-	autocmd Filetype cpp inoremap  <silent> <buffer> <F9> <Esc>:w<CR>:!clear;g++ %;./a.out<CR>
-	autocmd Filetype cpp nnoremap  <silent> <buffer> <F9> :w<CR>:!clear;g++ %;./a.out<CR>
-augroup END
+	autocmd Filetype c nnoremap  <F8> :w<CR>:Shell gcc -g % >/dev/null;./a.out<CR><C-w><C-w>
+	autocmd Filetype c inoremap  <F8> <Esc>:w<CR>:Shell gcc -g % >/dev/null;./a.out<CR><C-w><C-w>
+	autocmd Filetype c nnoremap  <F9> :w<CR>:!clear;gcc -g % ;./a.out<CR>
+	autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!clear; gcc -g % ;./a.out<CR>
+	autocmd Filetype cpp nnoremap  <F8> :w<CR>:Shell g++ -g % >/dev/null;./a.out<CR><C-w><C-w>
+	autocmd Filetype cpp inoremap  <F8> <Esc>:w<CR>:Shell g++ -g % >/dev/null;./a.out<CR><C-w><C-w>
+	autocmd Filetype cpp nnoremap  <F9> :w<CR>:!clear;gcc++ -g % ;./a.out<CR>
+	autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear; g++ -g % ;./a.out<CR>
+
 set scrolloff=999999
 " if !has('nvim')
 "     set mouse=a
@@ -317,3 +321,18 @@ if !exists("my_auto_commands_loaded")
     augroup END
 endif
 
+
+function! s:ExecuteInShell(command)
+  let command = join(map(split(a:command), 'expand(v:val)'))
+  let winnr = bufwinnr('^' . command . '$')
+  silent! execute  winnr < 0 ? 'botright new ' . fnameescape(command) : winnr . 'wincmd w'
+  setlocal buftype=nowrite bufhidden=wipe nobuflisted noswapfile nowrap number
+  echo 'Execute ' . command . '...'
+  silent! execute 'silent %!'. command
+  " silent! execute 'resize ' . line('$')
+  silent! redraw
+  silent! execute 'au BufUnload <buffer> execute bufwinnr(' . bufnr('#') . ') . ''wincmd w'''
+  silent! execute 'nnoremap <silent> <buffer> <LocalLeader>r :call <SID>ExecuteInShell(''' . command . ''')<CR>'
+  echo 'Shell command ' . command . ' executed.'
+endfunction
+command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)

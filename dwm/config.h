@@ -59,11 +59,11 @@ static int attachbelow = 1;    /* 1 means attach after the currently active wind
 #include "grid.c"
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
-	{ "HHH",      grid},    
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "HHH",      grid},    
+	{ "|M|",      centeredmaster },
+	{ ">M>",      centeredfloatingmaster },
 	// { "[M]",      monocle },
 };
 
