@@ -168,7 +168,7 @@ static Key keys[] = {
 	{ MODKEY,				XK_period,		            spawn,	SHCMD("xterm_trans.sh") },
 	{ MODKEY,				XK_comma,		            spawn,	SHCMD("xterm_trans1.sh") },
 	{ MODKEY|ShiftMask,		XK_period,		            spawn,	SHCMD("xterm -e trans :vi -b --shell") },
-	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi --shell") },
+	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi -e bing --shell") },
 
 };
 
