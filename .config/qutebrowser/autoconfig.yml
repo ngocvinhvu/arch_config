@@ -41,8 +41,8 @@ settings:
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+h>: :history -t
-        <Ctrl+j>: run-with-count 15 scroll down
-        <Ctrl+k>: run-with-count 15 scroll up
+        <Ctrl+d>: run-with-count 15 scroll down
+        <Ctrl+e>: run-with-count 15 scroll up
         <Ctrl+m>: :messages -t
         g1: tab-focus 1
         g2: tab-focus 2
@@ -66,8 +66,8 @@ settings:
     https://www.google.com: true
     https://www.now.vn: true
   content.headers.user_agent:
-    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
-      Chrome/83.0.4103.61 Safari/537.36
+    global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
+      {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
   content.host_blocking.enabled:
     global: true
   content.javascript.enabled:
@@ -83,11 +83,13 @@ settings:
     https://fptplay.vn: false
     https://hatde.tv: false
     https://helpex.vn: false
+    https://linkviet.xyz: false
     https://livefootballol.net: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://slutmesh.com: false
     https://tinder.com: false
+    https://tintuc.viettelstore.vn: false
     https://tuyencongnhan.vn: false
     https://v.qq.com: false
     https://vn-z.vn: false
@@ -97,6 +99,7 @@ settings:
     https://www.game-debate.com: false
     https://www.macworld.co.uk: false
     https://www.mirror.co.uk: false
+    https://www.networkworld.com: false
     https://www.onworks.net: false
     https://www.pcworld.com: false
     https://www.reddit.com: false
@@ -117,7 +120,7 @@ settings:
   fonts.web.size.default:
     global: 16
   fonts.web.size.minimum:
-    global: 0
+    global: 18
   fonts.web.size.minimum_logical:
     global: 6
   qt.force_software_rendering:
@@ -158,4 +161,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: '125'
+    global: 100%

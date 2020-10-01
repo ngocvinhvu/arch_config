@@ -220,7 +220,7 @@ nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
 nnoremap <silent> <C-tab> gt
 nnoremap <silent> <S-tab> gT
-vnoremap <silent> ,, :Trans :vi<CR>
+vnoremap <silent> ,, :Trans :vi -b<CR> 
 map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
 	" fix always tabs to spaces when start python file

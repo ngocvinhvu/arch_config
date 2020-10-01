@@ -11,7 +11,7 @@ alias l='ls -a --color=auto --group-directories-first'
 alias la='ls -la --color=auto --group-directories-first'
 # PS1='\e[0;34m\u\e[m@\e[0;33m\h\e[m:\e[0;32m$PWD\e[m\n\$ '
 PS1='\e[0;34m`date '+%r'`:\e[0;32m$PWD\e[m\n\$ '
-PS2='> '
+PS2='>>> '
 echo -ne '\e[4 q' # Cursor is underscore instead of Block
 
 
@@ -125,13 +125,14 @@ mp3-dl() {
 mp3pl-dl() {
 	youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 "$*"
 }
-streamlink_() {
+st_() {
 	streamlink -p mpv "$*" best
 }
 
 ari() {
-    aria2c -x8 --seed-time=0 $*
+    aria2c -c -x3 --seed-time=0 "$*"
 }
 
 yayf() { yay -Fy; yay -Slq | fzf --height=100% --multi --preview 'yay -Si {1}' | xargs -ro yay -S --needed ;}
 pmf() { sudo pacman -Fy; pacman -Slq | fzf --height=100% --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed ;}
+
