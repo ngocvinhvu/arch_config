@@ -1,0 +1,11 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+# linux /android-9.0-r2/kernel quiet root=/dev/ram0 vmalloc=192M SRC=/android-9.0-r2
+menuentry "Android" {
+set root='(hd0,gpt5)'
+linux /android-7.1-r4/kernel quiet root=/dev/ram0 androidboot.selinux=permissive vmalloc=192M video=LVDS-1:d video=VGA-0:e video=HDMI-0:e acpi_sleep=s3_bios,s3_mode SRC=/android-7.1-r4
+initrd /android-7.1-r4/initrd.img
+}
