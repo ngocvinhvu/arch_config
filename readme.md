@@ -3,9 +3,9 @@
 dd if=/ARCHLINUX.iso  of=/dev/sdb status="progress" bs=4M
 
 # Format and partition:
- if UEFI:
-    > gpt
-    > create /dev/sdxY (~250-512mb) for EFI filesystem ( fdisk -t) (FAT32 format (mkfs.fat -F32 /dev/sdxY( require dosfstools))
+if UEFI:
+   > gpt
+   > create /dev/sdxY (~250-512mb) for EFI filesystem ( fdisk -t) (FAT32 format (mkfs.fat -F32 /dev/sdxY( require dosfstools))
 mkfs.ext4 /dev/sdaX    - Arch linux partition
 
 mkswap /dev/sdaY       - Swap partition
@@ -51,8 +51,8 @@ mkinitcpio -P
 
 pacman -S grub efibootmgr
 
- mkdir /boot/EFI
- mount /dev/sdaX /boot/EFI  #Mount FAT32 EFI partition 
+mkdir /boot/EFI
+mount /dev/sdaX /boot/EFI  #Mount FAT32 EFI partition 
 
 grub-install --target=i386-pc /dev/sdX # legacy boot
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck #UEFI boot
@@ -135,18 +135,18 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 pacman -S docker
 
- ohmyzsh
+ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
- fastest way transfe file 
+fastest way transfe file 
 sender:     tar czf - filename | netcat -l -p port -vvv -c
 reciever:   netcat host port | tar xz
 #  misc
- aria2c --bt-metadata-only=true --bt-save-metadata=true
+aria2c --bt-metadata-only=true --bt-save-metadata=true
 
- scp
+scp
 scp user@server:/path /path or scp /path user@server:/path
- ssh with tar
+ssh with tar
 tar c | ssh user@server "tar x"                                 # or 
 tar c | ssh user@server "tar x -C /path"                        # -C: changedir to /path
 
