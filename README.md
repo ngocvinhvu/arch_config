@@ -3,9 +3,9 @@
 dd if=/ARCHLINUX.iso  of=/dev/sdb status="progress" bs=4M
 
 # Format and partition:
- if UEFI:
-    > gpt
-    > create /dev/sdxY (~250-512mb) for EFI filesystem ( fdisk -t) (FAT32 format (mkfs.fat -F32 /dev/sdxY( require dosfstools))
+# if UEFI:
+   > gpt
+   > create /dev/sdxY (~250-512mb) for EFI filesystem ( fdisk -t) (FAT32 format (mkfs.fat -F32 /dev/sdxY( require dosfstools))
 mkfs.ext4 /dev/sdaX    - Arch linux partition
 
 mkswap /dev/sdaY       - Swap partition
@@ -51,8 +51,8 @@ mkinitcpio -P
 
 pacman -S grub efibootmgr
 
- mkdir /boot/EFI
- mount /dev/sdaX /boot/EFI  #Mount FAT32 EFI partition 
+mkdir /boot/EFI
+mount /dev/sdaX /boot/EFI  #Mount FAT32 EFI partition 
 
 grub-install --target=i386-pc /dev/sdX # legacy boot
 grub-install --target=x86_64-efi  --bootloader-id=grub_uefi --recheck #UEFI boot
@@ -72,20 +72,19 @@ reboot
 # Install graphical enviroment:
 
 pacman -Syu
-
+# Xorg
 pacman -S xorg-server xorg-apps xorg-xinit i3 numlockx
 
+# DM
 pacman -S lightdm lightdm-gtk-greeter
 
+# fonts
 pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome ttf-nerd-fonts-symbols xorg-mkfontscale terminus-font 
-
+# Audio
 pacman -S alsa-utils alsa-plugins alsa-lib pavucontrol
 
-pacman -S rxvt-unicode ranger rofi conky dmenu urxvt-perls perl-anyevent-i3 perl-json-xs
-
-pacman -S atool highlight mediainfo w3m ffmpegthumbnailer zathura 
-
-pacman -S firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip
+# Tools
+pacman -S rxvt-unicode ranger rofi conky dmenu urxvt-perls perl-anyevent-i3 perl-json-xs atool highlight mediainfo w3m ffmpegthumbnailer zathura fzf firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip
 
 pip install --user python-mpd2 
 
@@ -135,18 +134,18 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 pacman -S docker
 
- ohmyzsh
+# ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
- fastest way transfe file 
+# fastest way transfe file 
 sender:     tar czf - filename | netcat -l -p port -vvv -c
 reciever:   netcat host port | tar xz
 #  misc
- aria2c --bt-metadata-only=true --bt-save-metadata=true
+aria2c --bt-metadata-only=true --bt-save-metadata=true
 
- scp
+# scp
 scp user@server:/path /path or scp /path user@server:/path
- ssh with tar
+ssh with tar
 tar c | ssh user@server "tar x"                                 # or 
 tar c | ssh user@server "tar x -C /path"                        # -C: changedir to /path
 
