@@ -85,7 +85,7 @@ pacman -S alsa alsa-utils alsa-plugins alsa-lib pavucontrol
 
 # Tools
 pacman -S rxvt-unicode ranger rofi conky dmenu urxvt-perls perl-anyevent-i3 perl-json-xs atool highlight mediainfo w3m ffmpegthumbnailer zathura fzf firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip aria2 wget curl openvpn usbutils ctags youtube-dl streamlink 
-perl-image-exiftool xclip xdotool
+perl-image-exiftool xclip xdotool notify-osd
 
 pip install --user python-mpd2 
 
