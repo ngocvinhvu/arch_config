@@ -3,6 +3,8 @@ filetype plugin indent on
 
 inoremap jk <esc>
 
+vnoremap Y "+y
+
 nnoremap ,py :0read ~/gits/python/
 
 vnoremap <leader>y "+y
