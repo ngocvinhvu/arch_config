@@ -21,7 +21,8 @@ sudo sh -c "echo 120 > /sys/devices/platform/i8042/serio1/serio2/speed"         
 
 export VISUAL=vim
 export EDITOR=$VISUAL
-export BROWSER=/usr/bin/qutebrowser
+export BROWSER="/usr/bin/qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization"
+
 export SHELL=/bin/bash
 
 # ./.fehbg

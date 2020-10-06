@@ -30,7 +30,6 @@ set statusline=%F
 set laststatus=2
 set cursorline
 set nrformats-=octal "fix when <c-a> auto add 07 to 10
-set background=dark
 
 
 "command! MakeTags !ctags -R .
@@ -42,7 +41,7 @@ let g:netrw_liststyle=3 " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
-hi CursorLine   cterm=NONE ctermbg=237
+hi CursorLine   cterm=NONE ctermbg=227
 hi CursorLineNr term=none cterm=none ctermfg=202 
 
 augroup vim_autocmd
