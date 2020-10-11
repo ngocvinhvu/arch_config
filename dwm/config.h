@@ -7,6 +7,7 @@ static const int swallowfloating    = 1;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "mono:size=8", "Ionicons:size=8" };
+// static const char *fonts[]          = { "Mononoki Nerd Font:size=8", "Symbola:size=8" };
 static const char dmenufont[]       = "mono:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
