@@ -95,6 +95,7 @@ alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi"
 alias mpvh="mpv --ytdl-format='[height<=?1080]'"
 alias mpvm="mpv --ytdl-format='[height<=?720]'"
 alias mpvl="mpv --ytdl-format='[height<=?480]'"
+alias st_="streamlink -p mpv"
 
 # function field
 vman() {
@@ -125,10 +126,6 @@ mp3-dl() {
 mp3pl-dl() {
 	youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 "$*"
 }
-st_() {
-	streamlink -p mpv "$*" best
-}
-
 ari() {
     aria2c -c -x3 --seed-time=0 "$*"
 }
