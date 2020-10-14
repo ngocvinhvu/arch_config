@@ -35,14 +35,14 @@ settings:
         ',h': hint links spawn mpv {hint-url}
         ',m': hint links spawn mpv --ytdl-format='[height<=?360]' {hint-url}
         ',p': spawn bash -c sxivurl.sh
-        ',s': hint links spawn streamlink -p mpv {hint-url}  best
+        ',s': hint links spawn streamlink -p mpv {hint-url}  720p
         ',v': hint links spawn vlc {hint-url}
         ',w': spawn bash -c weather_notify.sh
         ',y': hint links spawn mpv --ytdl-format='[height<=?720]' {hint-url}
         ',z': hint links spawn zathura {hint-url}
-        <Ctrl+h>: :history -t
         <Ctrl+d>: run-with-count 15 scroll down
         <Ctrl+e>: run-with-count 15 scroll up
+        <Ctrl+h>: :history -t
         <Ctrl+m>: :messages -t
         g1: tab-focus 1
         g2: tab-focus 2
@@ -83,15 +83,20 @@ settings:
     https://fptplay.vn: false
     https://hatde.tv: false
     https://helpex.vn: false
+    https://lieuclub.forumvi.com: false
     https://linkviet.xyz: false
     https://livefootballol.net: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://slutmesh.com: false
+    https://thanhtrungmobile.vn: false
+    https://thptquocgia.edu.vn: false
     https://tinder.com: false
     https://tintuc.viettelstore.vn: false
     https://tuyencongnhan.vn: false
     https://v.qq.com: false
+    https://vietgiaitri.com: false
+    https://viettimes.vn: false
     https://vn-z.vn: false
     https://webchat.freenode.net: false
     https://weibo.com: false
