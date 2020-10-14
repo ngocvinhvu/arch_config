@@ -155,7 +155,7 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeMinimalUI = 1
 let g:nerdtree_open = 0
-map <leader>b :call NERDTreeToggle()<CR>
+map <leader>n :call NERDTreeToggle()<CR>
 function NERDTreeToggle()
 	NERDTreeTabsToggle
 	if g:nerdtree_open == 1
@@ -171,10 +171,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-map <leader>s :SyntasticCheck<CR>
-map <leader>d :SyntasticReset<CR>
-map <leader>e :lnext<CR>
-map <leader>r :lprev<CR>
+" map <leader>s :SyntasticCheck<CR>
+" map <leader>d :SyntasticReset<CR>
+" map <leader>e :lnext<CR>
+" map <leader>r :lprev<CR>
 
 " tag list
 map <leader>t :TagbarToggle<CR>
@@ -210,6 +210,15 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "  4 -> solid underscore
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
+
+map <leader>r :Run<CR>
+map <leader>b :Break<CR>
+map <leader><leader>b :Clear<CR>
+map <leader>s :Step<CR>
+map <leader>c :Continue<CR>
+map <leader>p :Stop<CR>
+map <leader>f :Finish<CR>
+let g:termdebug_wide=1
 
 vnoremap <leader>y "+y
 vnoremap Y "+y
