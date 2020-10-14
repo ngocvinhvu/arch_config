@@ -214,7 +214,7 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 map <leader>r :Run<CR>
 map <leader>b :Break<CR>
 map <leader><leader>b :Clear<CR>
-map <leader>s :Step<CR>
+map <leader>s :Over<CR>
 map <leader>c :Continue<CR>
 map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
@@ -261,10 +261,12 @@ augroup vim_autocmd
 	autocmd Filetype c inoremap  <F8> <Esc>:w<CR>:Shell gcc -g % >/dev/null;./a.out<CR><C-w><C-w>
 	autocmd Filetype c nnoremap  <F9> :w<CR>:!clear;gcc -g % ;./a.out<CR>
 	autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!clear; gcc -g % ;./a.out<CR>
+	autocmd Filetype c nnoremap  <F5> :w<CR>:!gcc -g %<CR>:packadd termdebug<CR>:Termdebug<CR>
 	autocmd Filetype cpp nnoremap  <F8> :w<CR>:Shell g++ -g % >/dev/null;./a.out<CR><C-w><C-w>
 	autocmd Filetype cpp inoremap  <F8> <Esc>:w<CR>:Shell g++ -g % >/dev/null;./a.out<CR><C-w><C-w>
 	autocmd Filetype cpp nnoremap  <F9> :w<CR>:!clear;g++ -g % ;./a.out<CR>
 	autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear; g++ -g % ;./a.out<CR>
+	autocmd Filetype cpp nnoremap  <F5> :w<CR>:!g++ -g %<CR>:packadd termdebug<CR>:Termdebug<CR>
 
 set scrolloff=999999
 " if !has('nvim')
