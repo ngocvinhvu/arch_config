@@ -1,0 +1,22 @@
+## mariadb
+mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+# config 
+CREATE USER 'duy'@'localhost' IDENTIFIED BY '1';
+GRANT ALL PRIVILEGES ON mydb.* TO 'duy'@'localhost';
+FLUSH PRIVILEGES;
+# change password
+ALTER USER 'userName'@'localhost' IDENTIFIED BY 'New-Password-Here';
+
+## In /etc/httpd/conf/httpd.conf, comment the line:
+#LoadModule mpm_event_module modules/mod_mpm_event.so
+and uncomment the line:
+LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
+
+## ADD
+Include conf/extra/httpd-adminer.conf
+# AND
+LoadModule php7_module modules/libphp7.so
+AddHandler php7-script .php
+# AND
+Include conf/extra/php7_module.conf
+
