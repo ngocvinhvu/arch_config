@@ -23,6 +23,8 @@ ping 1.1.1.1 -c 2  # test network
 mount /dev/sdaX /mnt
 
 # Choose mirror repository you like in:
+sudo reflector --country Taiwan --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
 /etc/pacman.d/mirrorlist
 
 # Install base linux linux-firmware 
