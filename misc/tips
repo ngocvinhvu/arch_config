@@ -1,2 +1,4 @@
 # remove colors of output in terminal
 sed 's/\x1b\[[0-9;]*m//g' 
+# spotify-adblock
+https://github.com/abba23/spotify-adblock-linux

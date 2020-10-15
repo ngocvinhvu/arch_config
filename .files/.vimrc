@@ -21,7 +21,8 @@ Plug 'majutsushi/tagbar'
 " Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 " Plug 'pangloss/vim-javascript'
-Plug 'ycm-core/YouCompleteMe' "required npm, libnghttp2
+Plug 'ycm-core/YouCompleteMe' 
+"required npm, libnghttp2; deleting third_party/ycmd/third_party/tern_runtime/node_module dir for javascript compleition
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 " Plug 'junegunn/fzf.vim'
