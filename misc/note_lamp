@@ -2,7 +2,7 @@
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 # config 
 CREATE USER 'duy'@'localhost' IDENTIFIED BY '1';
-GRANT ALL PRIVILEGES ON mydb.* TO 'duy'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'duy'@'localhost';
 FLUSH PRIVILEGES;
 # change password
 ALTER USER 'userName'@'localhost' IDENTIFIED BY 'New-Password-Here';
