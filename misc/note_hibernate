@@ -1,0 +1,9 @@
+# method boot loader
+1/ need swap partition
+2/ configure bootloader (grub)
+add "resume=UUID=id-of-swap-partition" as \
+	parameter of "GRUB_CMDLINE_LINUX_DEFAULT"  in /etc/default/grub
+   then sudo grub-mkconfig -o /boot/grub/grub.cfg 
+3/ Configure the initramfs
+add "resume" to HOOKS=(base udev autodetect keyboard modconf block filesystems resume fsck) in /etc/mkinitcpio.conf
+then mkinitcpio -p linux
