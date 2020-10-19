@@ -7,8 +7,8 @@
  */
 // static char *font = "mono:pixelsize=15:antialias=true:autohint=true";
 // static char *font2[] = { "Inconsolata for Powerline:pixelsize=15:antialias=true:autohint=true" };
-static char *font = "mono:pixelsize=15:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = { "mono:pixelsize=10:antialias=true:autohint=true" };
 
 static int borderpx = 2;
 
@@ -111,8 +111,8 @@ static const char *colorname[] = {
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#282828",   /* 256 -> bg */
-	"#ebdbb2",   /* 257 -> fg */
-	"#add8e6", /* 258 -> cursor */
+	"#18B218",   /* 257 -> fg */
+	"#ffffff", /* 258 -> cursor */
 	// "green", /* 258 -> cursor */
 };
 
@@ -218,18 +218,18 @@ MouseKey mkeys[] = {
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)'| uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
+    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https|ftp)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)'| uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
     "externalpipe", NULL };
 
 static char *copyurlcmd[] = { "/bin/sh", "-c",
-    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' | uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
+    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https|ftp)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./&%?#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' | uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
     "externalpipe", NULL };
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-     	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
@@ -243,15 +243,16 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_v,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_p,           selpaste,       {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
+	{ TERMMOD,              XK_i,           invert,         { }       },
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_k,           zoom,           {.f = +1} },
 	{ TERMMOD,              XK_j,           zoom,           {.f = -1} },
-	{ TERMMOD,               XK_u,           externalpipe,   {.v = openurlcmd } },
-	{ TERMMOD,               XK_l,           externalpipe,   {.v = copyurlcmd } },
-	{ TERMMOD,               XK_o,           externalpipe,   {.v = copyoutput } },
+	{ TERMMOD,              XK_u,           externalpipe,   {.v = openurlcmd } },
+	{ TERMMOD,              XK_l,           externalpipe,   {.v = copyurlcmd } },
+	{ TERMMOD,              XK_o,           externalpipe,   {.v = copyoutput } },
 };
 
 /*
@@ -396,8 +397,8 @@ static Key key[] = {
 	{ XK_Right,         XK_ANY_MOD,     "\033[C",        0,   -1},
 	{ XK_Right,         XK_ANY_MOD,     "\033OC",        0,   +1},
 	{ XK_ISO_Left_Tab,  ShiftMask,      "\033[Z",        0,    0},
-	{ XK_Tab,           ControlMask,    "\033[9;5u",	 0,    0},
-	{ XK_Tab,          ControlMask|ShiftMask,          "\033[1;5Z",   0,  0},
+	{ XK_Tab,           ControlMask,    "\033[9;5u",     0,    0},
+	{ XK_Tab,  ControlMask|ShiftMask,   "\033[1;5Z",     0,    0},
 	{ XK_Return,        Mod1Mask,       "\033\r",        0,    0},
 	{ XK_Return,        XK_ANY_MOD,     "\r",            0,    0},
 	{ XK_Insert,        ShiftMask,      "\033[4l",      -1,    0},
