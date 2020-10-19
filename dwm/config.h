@@ -162,7 +162,7 @@ static Key keys[] = {
 	{ MODKEY,               XK_Delete,	                spawn,	SHCMD("turnoff_screen.sh") },
 	{ MODKEY,				XK_r,	                    spawn,	SHCMD("st -e lf") },
 	{ MODKEY,				XK_g,	                    spawn,	SHCMD("goldendict") },
-	{ MODKEY,				XK_z,	                    spawn,	SHCMD("zathura") },
+	{ MODKEY,				XK_z,	                    spawn,	SHCMD("FBReader") },
 	{ Mod4Mask,				XK_i,	                    spawn,	SHCMD("ibus-daemon -drx") },
 	{ Mod4Mask|ShiftMask,   XK_i,	                    spawn,	SHCMD("ibus exit") },
 	{ MODKEY,				XK_w,						spawn,	SHCMD("$BROWSER") },
