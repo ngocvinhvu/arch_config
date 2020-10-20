@@ -55,6 +55,8 @@ settings:
         g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
+        <Ctrl+j>: scroll-page 0.5 0
+        <Ctrl+k>: scroll-page -0.5 0
   colors.webpage.darkmode.enabled:
     global: false
   content.autoplay:
@@ -72,13 +74,20 @@ settings:
     global: true
   content.javascript.enabled:
     global: true
-  content.media_capture:
+  content.media.audio_capture:
+    https://studio.youtube.com: false
+    https://www.facebook.com: false
+  content.media.audio_video_capture:
+    https://studio.youtube.com: false
+    https://www.facebook.com: false
+  content.media.video_capture:
     https://studio.youtube.com: false
     https://www.facebook.com: false
   content.notifications:
     https://binhluan.live: false
     https://binhluan.tv: false
     https://bizfly.vn: false
+    https://cafeland.vn: false
     https://dnschecker.org: false
     https://fptplay.vn: false
     https://hatde.tv: false
@@ -166,4 +175,4 @@ settings:
   url.start_pages:
     global: about:blank
   zoom.default:
-    global: 100%
+    global: 90%
