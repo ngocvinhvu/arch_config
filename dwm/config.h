@@ -167,9 +167,9 @@ static Key keys[] = {
 	{ Mod4Mask|ShiftMask,   XK_i,	                    spawn,	SHCMD("ibus exit") },
 	{ MODKEY,				XK_w,						spawn,	SHCMD("$BROWSER") },
 	{ MODKEY,				XK_period,		            spawn,	SHCMD("xterm_trans.sh") },
-	{ MODKEY,				XK_comma,		            spawn,	SHCMD("xterm_trans1.sh") },
 	{ MODKEY|ShiftMask,		XK_period,		            spawn,	SHCMD("xterm -e trans :vi -b --shell") },
-	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi -e bing --shell") },
+	{ MODKEY,				XK_comma,		            spawn,	SHCMD("xterm_trans1.sh") },
+	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi --shell") },
 
 };
 
