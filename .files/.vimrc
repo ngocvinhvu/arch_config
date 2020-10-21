@@ -25,6 +25,8 @@ Plug 'ycm-core/YouCompleteMe'
 "required npm, libnghttp2; deleting third_party/ycmd/third_party/tern_runtime/node_module dir for javascript compleition
 Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
+" Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'vim-scripts/colorizer'
 call plug#end()
 
@@ -219,7 +221,6 @@ map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
 let g:termdebug_wide=1
 
-:iabbrev @@ hotboyarsenal@gmail.com
 vnoremap <leader>y "+y
 vnoremap Y "+y
 inoremap jk <esc>
@@ -230,6 +231,7 @@ nnoremap <silent> ,D :qa!<CR>
 nnoremap <silent> <C-tab> gt
 nnoremap <silent> <S-tab> gT
 vnoremap <silent> ,, :Trans :vi -b<CR> 
+map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
 	" fix always tabs to spaces when start python file
 	" fuck /usr/share/vim/vim74/ftplugin/python.vim
@@ -309,6 +311,10 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> -
 :command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+
+
+let $FZF_DEFAULT_COMMAND = "find -L"
+
 
 
 if !exists("my_auto_commands_loaded")
