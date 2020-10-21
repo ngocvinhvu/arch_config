@@ -1141,35 +1141,594 @@
 2019-12-17 04:13:00		Options saved to script.conf
 2019-12-17 04:13:00		Options saved to fset.conf
 2019-12-17 04:13:03		fifo: pipe closed
-2019-12-17 04:13:45		python scripts loaded: autojoin
-2019-12-17 04:13:45		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2019-12-17 04:16:44		fifo: pipe closed
-2019-12-17 04:16:46		python scripts loaded: autojoin
-2019-12-17 04:16:46		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2019-12-17 04:21:55		Option changed: irc.server.freenode.autojoin = "#reddit,#python,#archlinux,##C,#vnluser,#fsociety"  (default if null: "")
-2019-12-17 04:22:04		Layout of buffers+windows stored in "default" (current layout: default)
-2019-12-17 04:22:05		Options saved to sec.conf
-2019-12-17 04:22:05		Options saved to weechat.conf
-2019-12-17 04:22:05		Options saved to plugins.conf
-2019-12-17 04:22:05		Options saved to charset.conf
-2019-12-17 04:22:05		Options saved to logger.conf
-2019-12-17 04:22:05		Options saved to exec.conf
-2019-12-17 04:22:05		Options saved to trigger.conf
-2019-12-17 04:22:05		Options saved to alias.conf
-2019-12-17 04:22:05		Options saved to buflist.conf
-2019-12-17 04:22:05		Options saved to fifo.conf
-2019-12-17 04:22:05		Options saved to xfer.conf
-2019-12-17 04:22:05		Options saved to irc.conf
-2019-12-17 04:22:05		Options saved to relay.conf
-2019-12-17 04:22:05		Options saved to tcl.conf
-2019-12-17 04:22:05		Options saved to guile.conf
-2019-12-17 04:22:05		Options saved to ruby.conf
-2019-12-17 04:22:05		Options saved to python.conf
-2019-12-17 04:22:05		Options saved to lua.conf
-2019-12-17 04:22:05		Options saved to perl.conf
-2019-12-17 04:22:05		Options saved to script.conf
-2019-12-17 04:22:05		Options saved to fset.conf
-2019-12-17 04:23:43		fifo: pipe closed
-2019-12-17 04:24:47		python scripts loaded: autojoin
-2019-12-17 04:24:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
-2019-12-17 04:29:10		fifo: pipe closed
+2019-12-20 11:46:27		python scripts loaded: autojoin
+2019-12-20 11:46:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2019-12-20 11:48:47		python: scripts unloaded
+2020-05-22 23:02:01		python scripts loaded: autojoin
+2020-05-22 23:02:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:04:14		All servers:
+2020-05-22 23:04:14		 * freenode [connected], nick: spamgaga, 0 channels, 0 pv
+2020-05-22 23:07:06		python scripts loaded: autojoin
+2020-05-22 23:07:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:14:01		python scripts loaded: autojoin
+2020-05-22 23:14:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:25:07	=!=	irc: unable to add temporary server "irc.snoonet.org" because the addition of temporary servers with command /connect is currently disabled
+2020-05-22 23:25:07	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-05-22 23:26:27		[core]
+2020-05-22 23:26:27		  away     color    debug    help     key      mute     proxy    repeat   set      uptime   window 
+2020-05-22 23:26:27		  bar      command  eval     history  layout   plugin   quit     save     unset    version
+2020-05-22 23:26:27		  buffer   cursor   filter   input    mouse    print    reload   secure   upgrade  wait   
+2020-05-22 23:26:27		[tcl]
+2020-05-22 23:26:27		  tcl
+2020-05-22 23:26:27		[trigger]
+2020-05-22 23:26:27		  trigger
+2020-05-22 23:26:27		[perl]
+2020-05-22 23:26:27		  perl
+2020-05-22 23:26:27		[exec]
+2020-05-22 23:26:27		  exec
+2020-05-22 23:26:27		[relay]
+2020-05-22 23:26:27		  relay
+2020-05-22 23:26:27		[python]
+2020-05-22 23:26:27		  autojoin  python
+2020-05-22 23:26:27		[guile]
+2020-05-22 23:26:27		  guile
+2020-05-22 23:26:27		[script]
+2020-05-22 23:26:27		  script
+2020-05-22 23:26:27		[spell]
+2020-05-22 23:26:27		  spell
+2020-05-22 23:26:27		[buflist]
+2020-05-22 23:26:27		  buflist
+2020-05-22 23:26:27		[fifo]
+2020-05-22 23:26:27		  fifo
+2020-05-22 23:26:27		[lua]
+2020-05-22 23:26:27		  lua
+2020-05-22 23:26:27		[alias]
+2020-05-22 23:26:27		  AAWAY    BEEP     CHAT     EXIT     K        M        N        SAY      UB       W        WII    
+2020-05-22 23:26:27		  alias    BYE      CL       IG       KB       MSGBUF   Q        SIGNOFF  UMODE    WC       WM     
+2020-05-22 23:26:27		  ANICK    C        CLOSE    J        LEAVE    MUB      REDRAW   T        V        WI       WW     
+2020-05-22 23:26:27		[logger]
+2020-05-22 23:26:27		  logger
+2020-05-22 23:26:27		[fset]
+2020-05-22 23:26:27		  fset
+2020-05-22 23:26:27		[irc]
+2020-05-22 23:26:27		  admin       ctcp        disconnect  kick        me          notify      quiet       samode      squery      unban       wallops   
+2020-05-22 23:26:27		  allchan     cycle       halfop      kickban     mode        op          quote       sanick      squit       unquiet     who       
+2020-05-22 23:26:27		  allpv       dcc         ignore      kill        motd        oper        reconnect   sapart      stats       userhost    whois     
+2020-05-22 23:26:27		  allserv     dehalfop    info        links       msg         part        rehash      saquit      summon      users       whowas    
+2020-05-22 23:26:27		  ban         deop        invite      list        names       ping        remove      server      time        version   
+2020-05-22 23:26:27		  cap         devoice     ison        lusers      nick        pong        restart     service     topic       voice     
+2020-05-22 23:26:27		  connect     die         join        map         notice      query       sajoin      servlist    trace       wallchops 
+2020-05-22 23:26:27		[xfer]
+2020-05-22 23:26:27		  me  xfer
+2020-05-22 23:26:27		[ruby]
+2020-05-22 23:26:27		  ruby
+2020-05-22 23:26:27		[charset]
+2020-05-22 23:26:27		  charset
+2020-05-22 23:26:34		[irc]  /server  list|listfull [<name>]
+2020-05-22 23:26:34		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2020-05-22 23:26:34		                copy|rename <name> <new_name>
+2020-05-22 23:26:34		                reorder <name> [<name>...]
+2020-05-22 23:26:34		                open <name>|-all [<name>...]
+2020-05-22 23:26:34		                del|keep <name>
+2020-05-22 23:26:34		                deloutq|jump
+2020-05-22 23:26:34		                raw [<filter>]
+2020-05-22 23:26:34		list, add or remove IRC servers
+2020-05-22 23:26:34		    list: list servers (without argument, this list is displayed)
+2020-05-22 23:26:34		listfull: list servers with detailed info for each server
+2020-05-22 23:26:34		     add: add a new server
+2020-05-22 23:26:34		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2020-05-22 23:26:34		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2020-05-22 23:26:34		   -temp: add a temporary server (not saved)
+2020-05-22 23:26:34		  option: set option for server (for boolean option, value can be omitted)
+2020-05-22 23:26:34		nooption: set boolean option to 'off' (for example: -nossl)
+2020-05-22 23:26:34		    copy: duplicate a server
+2020-05-22 23:26:34		  rename: rename a server
+2020-05-22 23:26:34		 reorder: reorder list of servers
+2020-05-22 23:26:34		    open: open the server buffer without connecting
+2020-05-22 23:26:34		    keep: keep server in config file (for temporary servers only)
+2020-05-22 23:26:34		     del: delete a server
+2020-05-22 23:26:34		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2020-05-22 23:26:34		    jump: jump to server buffer
+2020-05-22 23:26:34		     raw: open buffer with raw IRC data
+2020-05-22 23:26:34		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2020-05-22 23:26:34		            *       show all messages (no filter)
+2020-05-22 23:26:34		            xxx     show only messages containing "xxx"
+2020-05-22 23:26:34		            s:xxx   show only messages for server "xxx"
+2020-05-22 23:26:34		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2020-05-22 23:26:34		            m:xxx   show only IRC command "xxx"
+2020-05-22 23:26:34		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2020-05-22 23:26:34		Examples:
+2020-05-22 23:26:34		  /server listfull
+2020-05-22 23:26:34		  /server add freenode chat.freenode.net
+2020-05-22 23:26:34		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2020-05-22 23:26:34		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2020-05-22 23:26:34		  /server copy freenode freenode-test
+2020-05-22 23:26:34		  /server rename freenode-test freenode2
+2020-05-22 23:26:34		  /server reorder freenode2 freenode
+2020-05-22 23:26:34		  /server del freenode
+2020-05-22 23:26:34		  /server deloutq
+2020-05-22 23:26:34		  /server raw
+2020-05-22 23:26:34		  /server raw s:freenode
+2020-05-22 23:26:34		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2020-05-22 23:27:16	=!=	irc: unable to add temporary server "irc.snoonet.org" because the addition of temporary servers with command /connect is currently disabled
+2020-05-22 23:27:16	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-05-22 23:27:30	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2020-05-22 23:27:38	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2020-05-22 23:28:10		irc: server added: snoonet
+2020-05-22 23:35:59	=!=	irc: already connected to server "snoonet"!
+2020-05-22 23:36:28	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-05-22 23:38:48		/set irc.server.freenode.autojoin '#archlinux,#python,#reddit,#gentoo'
+2020-05-22 23:38:48		/set irc.server.snoonet.autojoin '#linuxmasterrace'
+2020-05-22 23:39:08	=!=	Error with command "/server store" (help on command: /help server)
+2020-05-22 23:39:14		[irc]  /server  list|listfull [<name>]
+2020-05-22 23:39:14		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2020-05-22 23:39:14		                copy|rename <name> <new_name>
+2020-05-22 23:39:14		                reorder <name> [<name>...]
+2020-05-22 23:39:14		                open <name>|-all [<name>...]
+2020-05-22 23:39:14		                del|keep <name>
+2020-05-22 23:39:14		                deloutq|jump
+2020-05-22 23:39:14		                raw [<filter>]
+2020-05-22 23:39:14		list, add or remove IRC servers
+2020-05-22 23:39:14		    list: list servers (without argument, this list is displayed)
+2020-05-22 23:39:14		listfull: list servers with detailed info for each server
+2020-05-22 23:39:14		     add: add a new server
+2020-05-22 23:39:14		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2020-05-22 23:39:14		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2020-05-22 23:39:14		   -temp: add a temporary server (not saved)
+2020-05-22 23:39:14		  option: set option for server (for boolean option, value can be omitted)
+2020-05-22 23:39:14		nooption: set boolean option to 'off' (for example: -nossl)
+2020-05-22 23:39:14		    copy: duplicate a server
+2020-05-22 23:39:14		  rename: rename a server
+2020-05-22 23:39:14		 reorder: reorder list of servers
+2020-05-22 23:39:14		    open: open the server buffer without connecting
+2020-05-22 23:39:14		    keep: keep server in config file (for temporary servers only)
+2020-05-22 23:39:14		     del: delete a server
+2020-05-22 23:39:14		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2020-05-22 23:39:14		    jump: jump to server buffer
+2020-05-22 23:39:14		     raw: open buffer with raw IRC data
+2020-05-22 23:39:14		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2020-05-22 23:39:14		            *       show all messages (no filter)
+2020-05-22 23:39:14		            xxx     show only messages containing "xxx"
+2020-05-22 23:39:14		            s:xxx   show only messages for server "xxx"
+2020-05-22 23:39:14		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2020-05-22 23:39:14		            m:xxx   show only IRC command "xxx"
+2020-05-22 23:39:14		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2020-05-22 23:39:14		Examples:
+2020-05-22 23:39:14		  /server listfull
+2020-05-22 23:39:14		  /server add freenode chat.freenode.net
+2020-05-22 23:39:14		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2020-05-22 23:39:14		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2020-05-22 23:39:14		  /server copy freenode freenode-test
+2020-05-22 23:39:14		  /server rename freenode-test freenode2
+2020-05-22 23:39:14		  /server reorder freenode2 freenode
+2020-05-22 23:39:14		  /server del freenode
+2020-05-22 23:39:14		  /server deloutq
+2020-05-22 23:39:14		  /server raw
+2020-05-22 23:39:14		  /server raw s:freenode
+2020-05-22 23:39:14		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2020-05-22 23:40:06		Options saved to sec.conf
+2020-05-22 23:40:06		Options saved to weechat.conf
+2020-05-22 23:40:06		Options saved to plugins.conf
+2020-05-22 23:40:06		Options saved to charset.conf
+2020-05-22 23:40:06		Options saved to logger.conf
+2020-05-22 23:40:06		Options saved to exec.conf
+2020-05-22 23:40:06		Options saved to trigger.conf
+2020-05-22 23:40:06		Options saved to spell.conf
+2020-05-22 23:40:06		Options saved to alias.conf
+2020-05-22 23:40:06		Options saved to buflist.conf
+2020-05-22 23:40:06		Options saved to fifo.conf
+2020-05-22 23:40:06		Options saved to xfer.conf
+2020-05-22 23:40:06		Options saved to irc.conf
+2020-05-22 23:40:06		Options saved to relay.conf
+2020-05-22 23:40:06		Options saved to tcl.conf
+2020-05-22 23:40:06		Options saved to perl.conf
+2020-05-22 23:40:06		Options saved to python.conf
+2020-05-22 23:40:06		Options saved to guile.conf
+2020-05-22 23:40:06		Options saved to lua.conf
+2020-05-22 23:40:06		Options saved to ruby.conf
+2020-05-22 23:40:06		Options saved to script.conf
+2020-05-22 23:40:06		Options saved to fset.conf
+2020-05-22 23:40:10		/set irc.server.freenode.autojoin '#archlinux,#python,#reddit,#gentoo'
+2020-05-22 23:40:10		/set irc.server.snoonet.autojoin '#linuxmasterrace'
+2020-05-22 23:40:56		python scripts loaded: autojoin
+2020-05-22 23:40:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:42:53		python scripts loaded: autojoin
+2020-05-22 23:42:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:43:25		All servers:
+2020-05-22 23:43:25		 * freenode [connected], nick: spamgaga, 0 channels, 0 pv
+2020-05-22 23:43:25		   snoonet
+2020-05-22 23:46:02		python: loading script "/home/duy/.weechat/python/autoload/autojoin.py"
+2020-05-22 23:46:02	=!=	python: unable to register script "autojoin" (another script already exists with this name)
+2020-05-22 23:46:02	=!=	python: unable to call function "config_get_plugin", script is not initialized (script: -)
+2020-05-22 23:46:02	=!=	python: function "register" not found (or failed) in file "/home/duy/.weechat/python/autoload/autojoin.py"
+2020-05-22 23:46:57		Unexpected argument: --auto
+2020-05-22 23:47:11		Option changed: irc.server.freenode.autojoin = "#archlinux,#python,#gentoo"  (default if null: "#reddit")
+2020-05-22 23:47:11		Option changed: irc.server.snoonet.autojoin = "#linuxmasterrace"  (default if null: "#reddit")
+2020-05-22 23:47:24		Layout of buffers+windows stored in "default" (current layout: default)
+2020-05-22 23:47:39		Options saved to sec.conf
+2020-05-22 23:47:39		Options saved to weechat.conf
+2020-05-22 23:47:39		Options saved to plugins.conf
+2020-05-22 23:47:39		Options saved to charset.conf
+2020-05-22 23:47:39		Options saved to logger.conf
+2020-05-22 23:47:39		Options saved to exec.conf
+2020-05-22 23:47:39		Options saved to trigger.conf
+2020-05-22 23:47:39		Options saved to spell.conf
+2020-05-22 23:47:39		Options saved to alias.conf
+2020-05-22 23:47:39		Options saved to buflist.conf
+2020-05-22 23:47:39		Options saved to fifo.conf
+2020-05-22 23:47:39		Options saved to xfer.conf
+2020-05-22 23:47:39		Options saved to irc.conf
+2020-05-22 23:47:39		Options saved to relay.conf
+2020-05-22 23:47:39		Options saved to tcl.conf
+2020-05-22 23:47:39		Options saved to perl.conf
+2020-05-22 23:47:39		Options saved to python.conf
+2020-05-22 23:47:39		Options saved to guile.conf
+2020-05-22 23:47:39		Options saved to lua.conf
+2020-05-22 23:47:39		Options saved to ruby.conf
+2020-05-22 23:47:39		Options saved to script.conf
+2020-05-22 23:47:39		Options saved to fset.conf
+2020-05-22 23:47:52		python scripts loaded: autojoin
+2020-05-22 23:47:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-05-22 23:48:23		Option changed: irc.server.freenode.autojoin = "#archlinux,#python,#gentoo"  (default if null: "#reddit")
+2020-05-22 23:48:23		Option changed: irc.server.snoonet.autojoin = "#linuxmasterrace"  (default if null: "#reddit")
+2020-05-22 23:48:34		Layout of buffers+windows stored in "default" (current layout: default)
+2020-05-22 23:48:38		Options saved to sec.conf
+2020-05-22 23:48:38		Options saved to weechat.conf
+2020-05-22 23:48:38		Options saved to plugins.conf
+2020-05-22 23:48:38		Options saved to charset.conf
+2020-05-22 23:48:38		Options saved to logger.conf
+2020-05-22 23:48:38		Options saved to exec.conf
+2020-05-22 23:48:38		Options saved to trigger.conf
+2020-05-22 23:48:38		Options saved to spell.conf
+2020-05-22 23:48:38		Options saved to alias.conf
+2020-05-22 23:48:38		Options saved to buflist.conf
+2020-05-22 23:48:38		Options saved to fifo.conf
+2020-05-22 23:48:38		Options saved to xfer.conf
+2020-05-22 23:48:38		Options saved to irc.conf
+2020-05-22 23:48:38		Options saved to relay.conf
+2020-05-22 23:48:38		Options saved to tcl.conf
+2020-05-22 23:48:38		Options saved to perl.conf
+2020-05-22 23:48:38		Options saved to python.conf
+2020-05-22 23:48:38		Options saved to guile.conf
+2020-05-22 23:48:38		Options saved to lua.conf
+2020-05-22 23:48:38		Options saved to ruby.conf
+2020-05-22 23:48:38		Options saved to script.conf
+2020-05-22 23:48:38		Options saved to fset.conf
+2020-05-22 23:48:48		python scripts loaded: autojoin
+2020-05-22 23:48:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, xfer
+2020-10-06 17:19:52		New key binding (context "default"): meta-B => /buflist toggle
+2020-10-06 17:19:52		python scripts loaded: autojoin
+2020-10-06 17:19:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, trigger, xfer
+2020-10-06 17:26:42		All servers:
+2020-10-06 17:26:42		 * freenode [connected], nick: spamgaga, 2 channels, 0 pv
+2020-10-06 17:26:42		   snoonet
+2020-10-06 17:26:55	=!=	Error with command "/server snoonet" (help on command: /help server)
+2020-10-06 22:34:45		Options reloaded from sec.conf
+2020-10-06 22:34:45		Options reloaded from weechat.conf
+2020-10-06 22:34:45		Options reloaded from plugins.conf
+2020-10-06 22:34:45		Options reloaded from charset.conf
+2020-10-06 22:34:45		Options reloaded from logger.conf
+2020-10-06 22:34:45		Options reloaded from exec.conf
+2020-10-06 22:34:45		Options reloaded from trigger.conf
+2020-10-06 22:34:45		Options reloaded from alias.conf
+2020-10-06 22:34:45		Options reloaded from buflist.conf
+2020-10-06 22:34:45		Options reloaded from fifo.conf
+2020-10-06 22:34:45		Options reloaded from xfer.conf
+2020-10-06 22:34:45		Options reloaded from irc.conf
+2020-10-06 22:34:45		Options reloaded from relay.conf
+2020-10-06 22:34:45		Options reloaded from lua.conf
+2020-10-06 22:34:45		Options reloaded from perl.conf
+2020-10-06 22:34:45		Options reloaded from python.conf
+2020-10-06 22:34:45		Options reloaded from guile.conf
+2020-10-06 22:34:45		Options reloaded from script.conf
+2020-10-06 22:34:45		Options reloaded from fset.conf
+2020-10-06 22:34:45		fifo: pipe closed
+2020-10-06 22:34:45		python: scripts unloaded
+2020-10-20 15:37:59		New key binding (context "default"): meta-B => /buflist toggle
+2020-10-20 15:37:59		python scripts loaded: autojoin
+2020-10-20 15:37:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
+2020-10-20 15:38:03		fifo: pipe closed
+2020-10-20 15:38:03		python: scripts unloaded
+2020-10-20 15:38:10		python scripts loaded: autojoin
+2020-10-20 15:38:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
+2020-10-20 15:39:29		All servers:
+2020-10-20 15:39:29		 * freenode [connected], nick: spamgaga, 3 channels, 0 pv
+2020-10-20 15:39:29		   snoonet
+2020-10-20 23:32:50		Mouse is enabled
+2020-10-20 23:33:07		Mouse is enabled
+2020-10-20 23:33:10	=!=	Error with command "/mouse off" (help on command: /help mouse)
+2020-10-20 23:33:17		[core]  /mouse  enable|disable|toggle [<delay>]
+2020-10-20 23:33:17		mouse control
+2020-10-20 23:33:17		 enable: enable mouse
+2020-10-20 23:33:17		disable: disable mouse
+2020-10-20 23:33:17		 toggle: toggle mouse
+2020-10-20 23:33:17		  delay: delay (in seconds) after which initial mouse state is restored (useful to temporarily disable mouse)
+2020-10-20 23:33:17		The mouse state is saved in option "weechat.look.mouse".
+2020-10-20 23:33:17		Examples:
+2020-10-20 23:33:17		  enable mouse:
+2020-10-20 23:33:17		    /mouse enable
+2020-10-20 23:33:17		  toggle mouse for 5 seconds:
+2020-10-20 23:33:17		    /mouse toggle 5
+2020-10-20 23:33:25		Mouse disabled
+2020-10-20 23:44:06		[core]  /key  list|listdefault|listdiff [<context>]
+2020-10-20 23:44:06		              bind <key> [<command> [<args>]]
+2020-10-20 23:44:06		              bindctxt <context> <key> [<command> [<args>]]
+2020-10-20 23:44:06		              unbind <key>
+2020-10-20 23:44:06		              unbindctxt <context> <key>
+2020-10-20 23:44:06		              reset <key>
+2020-10-20 23:44:06		              resetctxt <context> <key>
+2020-10-20 23:44:06		              resetall -yes [<context>]
+2020-10-20 23:44:06		              missing [<context>]
+2020-10-20 23:44:06		bind/unbind keys
+2020-10-20 23:44:06		       list: list all current keys (without argument, this list is displayed)
+2020-10-20 23:44:06		listdefault: list default keys
+2020-10-20 23:44:06		   listdiff: list differences between current and default keys (keys added, redefined or deleted)
+2020-10-20 23:44:06		    context: name of context ("default" or "search")
+2020-10-20 23:44:06		       bind: bind a command to a key or display command bound to key (for context "default")
+2020-10-20 23:44:06		   bindctxt: bind a command to a key or display command bound to key, for given context
+2020-10-20 23:44:06		    command: command (many commands can be separated by semicolons)
+2020-10-20 23:44:06		     unbind: remove a key binding (for context "default")
+2020-10-20 23:44:06		 unbindctxt: remove a key binding for given context
+2020-10-20 23:44:06		      reset: reset a key to default binding (for context "default")
+2020-10-20 23:44:06		  resetctxt: reset a key to default binding, for given context
+2020-10-20 23:44:06		   resetall: restore bindings to the default values and delete ALL personal bindings (use carefully!)
+2020-10-20 23:44:06		    missing: add missing keys (using default bindings), useful after installing new WeeChat version
+2020-10-20 23:44:06		When binding a command to a key, it is recommended to use key alt+k (or Esc then k), and then press the key to bind: this will insert key code in command line.
+2020-10-20 23:44:06		For context "mouse" (possible in context "cursor" too), key has format: "@area:key" or "@area1>area2:key" where area can be:
+2020-10-20 23:44:06		          *: any area on screen
+2020-10-20 23:44:06		       chat: chat area (any buffer)
+2020-10-20 23:44:06		  chat(xxx): chat area for buffer with name "xxx" (full name including plugin)
+2020-10-20 23:44:06		     bar(*): any bar
+2020-10-20 23:44:06		   bar(xxx): bar "xxx"
+2020-10-20 23:44:06		    item(*): any bar item
+2020-10-20 23:44:06		  item(xxx): bar item "xxx"
+2020-10-20 23:44:06		Wildcard "*" is allowed in key to match many mouse events.
+2020-10-20 23:44:06		A special value for command with format "hsignal:name" can be used for context mouse, this will send the hsignal "name" with the focus hashtable as argument.
+2020-10-20 23:44:06		Another special value "-" can be used to disable key (it will be ignored when looking for keys).
+2020-10-20 23:44:06		Examples:
+2020-10-20 23:44:06		  key alt-t to toggle nicklist bar:
+2020-10-20 23:44:06		    /key bind meta-t /bar toggle nicklist
+2020-10-20 23:44:06		  key alt-r to jump to #weechat IRC channel:
+2020-10-20 23:44:06		    /key bind meta-r /buffer #weechat
+2020-10-20 23:44:06		  restore default binding for key alt-r:
+2020-10-20 23:44:06		    /key reset meta-r
+2020-10-20 23:44:06		  key "tab" to stop search in buffer:
+2020-10-20 23:44:06		    /key bindctxt search ctrl-I /input search_stop
+2020-10-20 23:44:06		  middle button of mouse on a nick to retrieve info on nick:
+2020-10-20 23:44:06		    /key bindctxt mouse @item(buffer_nicklist):button3 /msg nickserv info ${nick}
+2020-10-20 23:44:15		Mouse enabled
+2020-10-20 23:45:15		Mouse disabled
+2020-10-20 23:47:15	=!=	irc: unable to add temporary server "##linuxmasterrace" because the addition of temporary servers with command /connect is currently disabled
+2020-10-20 23:47:15	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-10-20 23:47:30		All servers:
+2020-10-20 23:47:30		 * freenode [connected], nick: spamgaga, 3 channels, 0 pv
+2020-10-20 23:47:30		 * snoonet [connected], nick: w33chat, 0 channels, 0 pv
+2020-10-21 00:08:12		All servers:
+2020-10-21 00:08:12		 * freenode [connected], nick: spamgaga, 3 channels, 0 pv
+2020-10-21 00:08:12		 * snoonet [connected], nick: w33chat, 1 channel, 0 pv
+2020-10-22 00:23:03		fifo: pipe closed
+2020-10-22 00:23:03		python: scripts unloaded
+2020-10-22 00:23:12		python scripts loaded: autojoin
+2020-10-22 00:23:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
+2020-10-22 00:24:13		[irc]  /nick  [-all] <nick>
+2020-10-22 00:24:13		change current nick
+2020-10-22 00:24:13		-all: set new nick for all connected servers
+2020-10-22 00:24:13		nick: new nick
+2020-10-22 00:25:49		Options saved to sec.conf
+2020-10-22 00:25:49		Options saved to weechat.conf
+2020-10-22 00:25:49		Options saved to plugins.conf
+2020-10-22 00:25:49		Options saved to charset.conf
+2020-10-22 00:25:49		Options saved to logger.conf
+2020-10-22 00:25:49		Options saved to exec.conf
+2020-10-22 00:25:49		Options saved to trigger.conf
+2020-10-22 00:25:49		Options saved to alias.conf
+2020-10-22 00:25:49		Options saved to buflist.conf
+2020-10-22 00:25:49		Options saved to fifo.conf
+2020-10-22 00:25:49		Options saved to xfer.conf
+2020-10-22 00:25:49		Options saved to irc.conf
+2020-10-22 00:25:49		Options saved to relay.conf
+2020-10-22 00:25:49		Options saved to lua.conf
+2020-10-22 00:25:49		Options saved to perl.conf
+2020-10-22 00:25:49		Options saved to tcl.conf
+2020-10-22 00:25:49		Options saved to python.conf
+2020-10-22 00:25:49		Options saved to guile.conf
+2020-10-22 00:25:49		Options saved to script.conf
+2020-10-22 00:25:49		Options saved to fset.conf
+2020-10-22 00:26:17	=!=	Error: unknown command "/store" (type /help for help)
+2020-10-22 00:26:21	=!=	No help available, "store" is not a command or an option
+2020-10-22 00:26:28		[core]  /save  [<file> [<file>...]]
+2020-10-22 00:26:28		save configuration files to disk
+2020-10-22 00:26:28		file: configuration file to save (without extension ".conf")
+2020-10-22 00:26:28		Without argument, all files (WeeChat and plugins) are saved.
+2020-10-22 00:26:28		By default all configuration files are saved to disk on /quit command (see option "weechat.look.save_config_on_exit").
+2020-10-22 00:27:32		Option changed: irc.server.freenode.nicks = "lazyhaha"  (default if null: "w33chat")
+2020-10-22 00:28:50		Options saved to sec.conf
+2020-10-22 00:28:50		Options saved to weechat.conf
+2020-10-22 00:28:50		Options saved to plugins.conf
+2020-10-22 00:28:50		Options saved to charset.conf
+2020-10-22 00:28:50		Options saved to logger.conf
+2020-10-22 00:28:50		Options saved to exec.conf
+2020-10-22 00:28:50		Options saved to trigger.conf
+2020-10-22 00:28:50		Options saved to alias.conf
+2020-10-22 00:28:50		Options saved to buflist.conf
+2020-10-22 00:28:50		Options saved to fifo.conf
+2020-10-22 00:28:50		Options saved to xfer.conf
+2020-10-22 00:28:50		Options saved to irc.conf
+2020-10-22 00:28:50		Options saved to relay.conf
+2020-10-22 00:28:50		Options saved to lua.conf
+2020-10-22 00:28:50		Options saved to perl.conf
+2020-10-22 00:28:50		Options saved to tcl.conf
+2020-10-22 00:28:50		Options saved to python.conf
+2020-10-22 00:28:50		Options saved to guile.conf
+2020-10-22 00:28:50		Options saved to script.conf
+2020-10-22 00:28:50		Options saved to fset.conf
+2020-10-22 00:30:28		Mouse enabled
+2020-10-22 00:31:01		fifo: pipe closed
+2020-10-22 00:31:01		python: scripts unloaded
+2020-10-22 00:31:08		python scripts loaded: autojoin
+2020-10-22 00:31:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
+2020-10-22 00:38:52		All servers:
+2020-10-22 00:38:52		 * freenode [connected], nick: lazyhaha, 3 channels, 0 pv
+2020-10-22 00:38:52		 * snoonet [connected], nick: w33chat, 1 channel, 0 pv
+2020-10-22 00:39:01		[irc]  /server  list|listfull [<name>]
+2020-10-22 00:39:01		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2020-10-22 00:39:01		                copy|rename <name> <new_name>
+2020-10-22 00:39:01		                reorder <name> [<name>...]
+2020-10-22 00:39:01		                open <name>|-all [<name>...]
+2020-10-22 00:39:01		                del|keep <name>
+2020-10-22 00:39:01		                deloutq|jump
+2020-10-22 00:39:01		                raw [<filter>]
+2020-10-22 00:39:01		list, add or remove IRC servers
+2020-10-22 00:39:01		    list: list servers (without argument, this list is displayed)
+2020-10-22 00:39:01		listfull: list servers with detailed info for each server
+2020-10-22 00:39:01		     add: add a new server
+2020-10-22 00:39:01		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2020-10-22 00:39:01		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2020-10-22 00:39:01		   -temp: add a temporary server (not saved)
+2020-10-22 00:39:01		  option: set option for server (for boolean option, value can be omitted)
+2020-10-22 00:39:01		nooption: set boolean option to 'off' (for example: -nossl)
+2020-10-22 00:39:01		    copy: duplicate a server
+2020-10-22 00:39:01		  rename: rename a server
+2020-10-22 00:39:01		 reorder: reorder list of servers
+2020-10-22 00:39:01		    open: open the server buffer without connecting
+2020-10-22 00:39:01		    keep: keep server in config file (for temporary servers only)
+2020-10-22 00:39:01		     del: delete a server
+2020-10-22 00:39:01		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2020-10-22 00:39:01		    jump: jump to server buffer
+2020-10-22 00:39:01		     raw: open buffer with raw IRC data
+2020-10-22 00:39:01		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2020-10-22 00:39:01		            *       show all messages (no filter)
+2020-10-22 00:39:01		            xxx     show only messages containing "xxx"
+2020-10-22 00:39:01		            s:xxx   show only messages for server "xxx"
+2020-10-22 00:39:01		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2020-10-22 00:39:01		            m:xxx   show only IRC command "xxx"
+2020-10-22 00:39:01		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2020-10-22 00:39:01		Examples:
+2020-10-22 00:39:01		  /server listfull
+2020-10-22 00:39:01		  /server add freenode chat.freenode.net
+2020-10-22 00:39:01		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2020-10-22 00:39:01		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2020-10-22 00:39:01		  /server copy freenode freenode-test
+2020-10-22 00:39:01		  /server rename freenode-test freenode2
+2020-10-22 00:39:01		  /server reorder freenode2 freenode
+2020-10-22 00:39:01		  /server del freenode
+2020-10-22 00:39:01		  /server deloutq
+2020-10-22 00:39:01		  /server raw
+2020-10-22 00:39:01		  /server raw s:freenode
+2020-10-22 00:39:01		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2020-10-22 00:43:27		All servers:
+2020-10-22 00:43:27		Server: freenode [connected], nick: lazyhaha
+2020-10-22 00:43:27		  addresses. . . . . . : 'freenodeok2gncmy.onion/7000'
+2020-10-22 00:43:27		  proxy. . . . . . . . : 'tor'
+2020-10-22 00:43:27		  ipv6 . . . . . . . . :   (on)
+2020-10-22 00:43:27		  ssl. . . . . . . . . : on
+2020-10-22 00:43:27		  ssl_cert . . . . . . : '%h/certs/freenode.pem'
+2020-10-22 00:43:27		  ssl_password . . . . :   (hidden)
+2020-10-22 00:43:27		  ssl_priorities . . . : 'NORMAL:-VERS-TLS-ALL:+VERS-TLS1.0:+VERS-SSL3.0:%COMPAT'
+2020-10-22 00:43:27		  ssl_dhkey_size . . . :   (2048)
+2020-10-22 00:43:27		  ssl_fingerprint. . . :   ('')
+2020-10-22 00:43:27		  ssl_verify . . . . . : off
+2020-10-22 00:43:27		  password . . . . . . :   (hidden)
+2020-10-22 00:43:27		  capabilities . . . . :   ('')
+2020-10-22 00:43:27		  sasl_mechanism . . . : 'external'
+2020-10-22 00:43:27		  sasl_username. . . . :   ('')
+2020-10-22 00:43:27		  sasl_password. . . . :   (hidden)
+2020-10-22 00:43:27		  sasl_key. .  . . . . :   ('')
+2020-10-22 00:43:27		  sasl_timeout . . . . :   (15 seconds)
+2020-10-22 00:43:27		  sasl_fail. . . . . . :   ('continue')
+2020-10-22 00:43:27		  autoconnect. . . . . : on
+2020-10-22 00:43:27		  autoreconnect. . . . :   (on)
+2020-10-22 00:43:27		  autoreconnect_delay. :   (10 seconds)
+2020-10-22 00:43:27		  nicks. . . . . . . . : 'lazyhaha'
+2020-10-22 00:43:27		  nicks_alternate. . . :   (on)
+2020-10-22 00:43:27		  username . . . . . . :   ('w33chat')
+2020-10-22 00:43:27		  realname . . . . . . :   ('')
+2020-10-22 00:43:27		  local_hostname . . . :   ('')
+2020-10-22 00:43:27		  usermode . . . . . . :   ('')
+2020-10-22 00:43:27		  command. . . . . . . :   ('')
+2020-10-22 00:43:27		  command_delay. . . . :   (0 seconds)
+2020-10-22 00:43:27		  autojoin . . . . . . : '#archlinux,#python,#gentoo'
+2020-10-22 00:43:27		  autorejoin . . . . . :   (off)
+2020-10-22 00:43:27		  autorejoin_delay . . :   (30 seconds)
+2020-10-22 00:43:27		  connection_timeout . :   (60 seconds)
+2020-10-22 00:43:27		  anti_flood_prio_high :   (2 seconds)
+2020-10-22 00:43:27		  anti_flood_prio_low. :   (2 seconds)
+2020-10-22 00:43:27		  away_check . . . . . :   (0 minutes)
+2020-10-22 00:43:27		  away_check_max_nicks :   (25)
+2020-10-22 00:43:27		  msg_kick . . . . . . :   ('')
+2020-10-22 00:43:27		  msg_part . . . . . . :   ('WeeChat ${info:version}')
+2020-10-22 00:43:27		  msg_quit . . . . . . :   ('WeeChat ${info:version}')
+2020-10-22 00:43:27		  notify . . . . . . . :   ('')
+2020-10-22 00:43:27		  split_msg_max_length :   (512)
+2020-10-22 00:43:27		  charset_message. . . :   ('message')
+2020-10-22 00:43:27		Server: snoonet [connected], nick: w33chat
+2020-10-22 00:43:27		  addresses. . . . . . : 'irc.snoonet.org'
+2020-10-22 00:43:27		  proxy. . . . . . . . :   ('')
+2020-10-22 00:43:27		  ipv6 . . . . . . . . :   (on)
+2020-10-22 00:43:27		  ssl. . . . . . . . . :   (off)
+2020-10-22 00:43:27		  ssl_cert . . . . . . :   ('')
+2020-10-22 00:43:27		  ssl_password . . . . :   (hidden)
+2020-10-22 00:43:27		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2020-10-22 00:43:27		  ssl_dhkey_size . . . :   (2048)
+2020-10-22 00:43:27		  ssl_fingerprint. . . :   ('')
+2020-10-22 00:43:27		  ssl_verify . . . . . :   (on)
+2020-10-22 00:43:27		  password . . . . . . :   (hidden)
+2020-10-22 00:43:27		  capabilities . . . . :   ('')
+2020-10-22 00:43:27		  sasl_mechanism . . . :   ('plain')
+2020-10-22 00:43:27		  sasl_username. . . . :   ('')
+2020-10-22 00:43:27		  sasl_password. . . . :   (hidden)
+2020-10-22 00:43:27		  sasl_key. .  . . . . :   ('')
+2020-10-22 00:43:27		  sasl_timeout . . . . :   (15 seconds)
+2020-10-22 00:43:27		  sasl_fail. . . . . . :   ('continue')
+2020-10-22 00:43:27		  autoconnect. . . . . :   (off)
+2020-10-22 00:43:27		  autoreconnect. . . . :   (on)
+2020-10-22 00:43:27		  autoreconnect_delay. :   (10 seconds)
+2020-10-22 00:43:27		  nicks. . . . . . . . :   ('w33chat')
+2020-10-22 00:43:27		  nicks_alternate. . . :   (on)
+2020-10-22 00:43:27		  username . . . . . . :   ('w33chat')
+2020-10-22 00:43:27		  realname . . . . . . :   ('')
+2020-10-22 00:43:27		  local_hostname . . . :   ('')
+2020-10-22 00:43:27		  usermode . . . . . . :   ('')
+2020-10-22 00:43:27		  command. . . . . . . :   ('')
+2020-10-22 00:43:27		  command_delay. . . . :   (0 seconds)
+2020-10-22 00:43:27		  autojoin . . . . . . : '#linuxmasterrace'
+2020-10-22 00:43:27		  autorejoin . . . . . :   (off)
+2020-10-22 00:43:27		  autorejoin_delay . . :   (30 seconds)
+2020-10-22 00:43:27		  connection_timeout . :   (60 seconds)
+2020-10-22 00:43:27		  anti_flood_prio_high :   (2 seconds)
+2020-10-22 00:43:27		  anti_flood_prio_low. :   (2 seconds)
+2020-10-22 00:43:27		  away_check . . . . . :   (0 minutes)
+2020-10-22 00:43:27		  away_check_max_nicks :   (25)
+2020-10-22 00:43:27		  msg_kick . . . . . . :   ('')
+2020-10-22 00:43:27		  msg_part . . . . . . :   ('WeeChat ${info:version}')
+2020-10-22 00:43:27		  msg_quit . . . . . . :   ('WeeChat ${info:version}')
+2020-10-22 00:43:27		  notify . . . . . . . :   ('')
+2020-10-22 00:43:27		  split_msg_max_length :   (512)
+2020-10-22 00:43:27		  charset_message. . . :   ('message')
+2020-10-22 00:45:05		Option changed: irc.server.snoonet.nicks = "lazyhaha"  (default if null: "w33chat")
+2020-10-22 00:45:14		Options saved to sec.conf
+2020-10-22 00:45:14		Options saved to weechat.conf
+2020-10-22 00:45:14		Options saved to plugins.conf
+2020-10-22 00:45:14		Options saved to charset.conf
+2020-10-22 00:45:14		Options saved to logger.conf
+2020-10-22 00:45:14		Options saved to exec.conf
+2020-10-22 00:45:14		Options saved to trigger.conf
+2020-10-22 00:45:14		Options saved to alias.conf
+2020-10-22 00:45:14		Options saved to buflist.conf
+2020-10-22 00:45:14		Options saved to fifo.conf
+2020-10-22 00:45:14		Options saved to xfer.conf
+2020-10-22 00:45:14		Options saved to irc.conf
+2020-10-22 00:45:14		Options saved to relay.conf
+2020-10-22 00:45:14		Options saved to lua.conf
+2020-10-22 00:45:14		Options saved to perl.conf
+2020-10-22 00:45:14		Options saved to tcl.conf
+2020-10-22 00:45:14		Options saved to python.conf
+2020-10-22 00:45:14		Options saved to guile.conf
+2020-10-22 00:45:14		Options saved to script.conf
+2020-10-22 00:45:14		Options saved to fset.conf
+2020-10-22 00:45:16		fifo: pipe closed
+2020-10-22 00:45:16		python: scripts unloaded
+2020-10-22 00:45:39		python scripts loaded: autojoin
+2020-10-22 00:45:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, tcl, trigger, xfer
+2020-10-22 00:46:37		Mouse disabled
+2020-10-22 00:47:13		Mouse enabled
