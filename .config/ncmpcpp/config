@@ -10,7 +10,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 ## MPD clients (eg. ncmpc) also use that location.
 ##
 #
-lyrics_directory = ~/.local/share/lyrics
+lyrics_directory = /home/duy/.config/ncmpcpp/lyrics
 #
 ##### connection settings #####
 #
