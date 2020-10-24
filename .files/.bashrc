@@ -56,7 +56,7 @@ alias pscpu="ps -eo pid,cmd,%mem,%cpu --sort=-%cpu| less"
 alias psmem="ps -eo pid,cmd,%mem,%cpu --sort=-%mem| less"
 alias vi="vim -u NONE"
 alias youtube-dl="youtube-dl --write-auto-sub --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
-alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
+alias emoji="cat ~/gits/arch_config/.local/share/emoji"
 alias lsf="ls -ap | grep -v '/'"
 alias lsd="la -p | grep '/'"
 alias grep='grep --color=auto'
@@ -132,4 +132,3 @@ ari() {
 
 yays() { yay -Fy; yay -Slq | fzf --height=100% --multi --preview 'yay -Si {1}' | xargs -ro yay -S --needed ;}
 pmss() { sudo pacman -Fy; pacman -Slq | fzf --height=100% --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed ;}
-
