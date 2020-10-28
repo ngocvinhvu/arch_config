@@ -34,7 +34,7 @@ static const Rule rules[] = {
         { "qutebrowser",   NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "GoldenDict",    NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
-        { "firefox",       NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
+        // { "firefox",       NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "chromium",      NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "St",            NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "URxvt",         NULL,       NULL,            0,            0,           1,           1,         -1 },
