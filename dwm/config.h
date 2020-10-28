@@ -34,13 +34,15 @@ static const Rule rules[] = {
         { "qutebrowser",   NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "GoldenDict",    NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
+        { "Evince",        NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
+        { "FBReader",      NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         // { "firefox",       NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "chromium",      NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "St",            NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "URxvt",         NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "Gimp",          NULL,       NULL,            0,            0,           0,           0,         -1 },
         // { "Sxiv",       NULL,       NULL,            0,            1,           0,          -1,         -1 },
-        { "mpv",           NULL,       NULL,            0,			  0,           0,           0,         -1 },
+        { "mpv",           NULL,       NULL,            1 << 7,		  0,           0,           0,         -1 },
         { NULL,            NULL,       "ncmpcpp",       1 << 7,       0,           0,           1,         -1 },
 	    { NULL,            NULL,"xclip -o | trans :vi", 0,			  1,           1,           1,         -1 },				  	// xterm
         { NULL,            NULL,	   "trans",			0,			  1,           1,           1,         -1 },					 // urxvt
