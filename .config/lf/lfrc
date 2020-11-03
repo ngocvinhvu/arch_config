@@ -2,6 +2,8 @@ set previewer ~/.config/lf/pv.sh
 set ratios 1:2:3
 # map zr set reverse!
 set info size:time
+set sortby time
+set reverse!
 # map zs set info size
 # map zt set info time
 # map za set info size:time
@@ -59,7 +61,7 @@ cmd open ${{
         video/*) mpv $fx >/dev/null 2>&1 &;;
         image/gif) mpv --loop=inf $fx;;
         image/*) sxiv -b $fx;;
-        application/pdf) FBReader $fx >/dev/null 2>&1 &;;
+        application/pdf) zathura $fx >/dev/null 2>&1 &;;
         application/epub+zip) FBReader $fx >/dev/null 2>&1 &;;
         application/vnd.openxmlformats-officedocument.wordprocessingml.document) libreoffice $fx;;
         application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) libreoffice $fx;;
