@@ -1,7 +1,7 @@
 set previewer ~/.config/lf/pv.sh
 set ratios 1:2:3
 # map zr set reverse!
-set info size
+set info size:time
 # map zs set info size
 # map zt set info time
 # map za set info size:time

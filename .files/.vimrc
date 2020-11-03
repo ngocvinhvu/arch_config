@@ -224,7 +224,7 @@ let g:termdebug_wide=1
 vnoremap <leader>y "+y
 vnoremap Y "+y
 inoremap jk <esc>
-set timeoutlen=400
+set timeoutlen=300
 nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
