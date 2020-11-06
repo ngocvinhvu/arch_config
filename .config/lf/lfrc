@@ -16,7 +16,7 @@ set reverse!
 # map gh cd ~
 # map <space> :toggle; down
 
-map D $rm -rf $f
+map D $rm -rf $fx
 map x extract $f
 map . set hidden!
 # interpreter for shell commands (needs to be POSIX compatible)
@@ -101,9 +101,12 @@ cmd extract ${{
         *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
         *.tar.gz|*.tgz) tar xzvf $f;;
         *.tar.xz|*.txz) tar xJvf $f;;
+		*.tar) tar xf $f;;
         *.zip) unzip $f;;
         *.rar) 7z x $f;;
         *.7z) 7z x $f;;
+        *.7z) 7z x $f;;
+		*.gz) gunzip -k $f;;
     esac
 }}
 
