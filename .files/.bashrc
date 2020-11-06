@@ -94,6 +94,7 @@ alias aircrack="aircrack-ng -w ~/gits/wordlists/wifi-chua.txt"
 alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi" 
 alias mpvh="mpv --ytdl-format='[height<=?1080]'"
 alias mpvm="mpv --ytdl-format='[height<=?720]'"
+alias mpvc="proxychains mpv --ytdl-format='[height<=?720]'"
 alias mpvl="mpv --ytdl-format='[height<=?480]'"
 alias st_="streamlink -p mpv"
 
