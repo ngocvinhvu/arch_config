@@ -43,7 +43,11 @@ settings:
         <Ctrl+d>: run-with-count 15 scroll down
         <Ctrl+e>: run-with-count 15 scroll up
         <Ctrl+h>: :history -t
+        <Ctrl+j>: scroll-page 0.5 0
+        <Ctrl+k>: scroll-page -0.5 0
         <Ctrl+m>: :messages -t
+        g$: tab-focus -1
+        g0: tab-focus 1
         g1: tab-focus 1
         g2: tab-focus 2
         g3: tab-focus 3
@@ -55,8 +59,6 @@ settings:
         g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
-        <Ctrl+j>: scroll-page 0.5 0
-        <Ctrl+k>: scroll-page -0.5 0
   colors.webpage.darkmode.enabled:
     global: false
   content.autoplay:
@@ -86,6 +88,7 @@ settings:
   content.notifications:
     https://binhluan.live: false
     https://binhluan.tv: false
+    https://binhluan.vip: false
     https://bizfly.vn: false
     https://cafeland.vn: false
     https://dnschecker.org: false
@@ -95,11 +98,13 @@ settings:
     https://lieuclub.forumvi.com: false
     https://linkviet.xyz: false
     https://livefootballol.net: false
+    https://reviewcongty.com: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
     https://slutmesh.com: false
     https://thanhtrungmobile.vn: false
     https://thptquocgia.edu.vn: false
+    https://thuvienhoasen.org: false
     https://tinder.com: false
     https://tintuc.viettelstore.vn: false
     https://tuyencongnhan.vn: false
@@ -109,6 +114,7 @@ settings:
     https://vn-z.vn: false
     https://webchat.freenode.net: false
     https://weibo.com: false
+    https://www.csoonline.com: false
     https://www.facebook.com: false
     https://www.game-debate.com: false
     https://www.macworld.co.uk: false
@@ -121,6 +127,7 @@ settings:
     https://www.weibo.com: false
     https://www.youtube.com: false
     https://www1.thepiratebay3.to: false
+    https://xem.binhluanvidammethoidung.online: false
   content.plugins:
     global: true
   content.proxy:
@@ -154,11 +161,12 @@ settings:
       dp: https://www.dongphim.net/content/search?t=kw&q={}
       eb: https://www.ebay.com/sch/{}
       fa: https://www.facebook.com/search/top/?q={}&epa=SEARCH_BOX
+      gg: https://google.com/search?q={}
       git: https://github.com/search?q={}
       maps: https://www.google.com/maps/place/{}
       mt: https://translate.google.com/m?hl=vi&sl=auto&q={}
       ph: https://www.pornhub.com/video/search?search={}
-      pm: http://www.phimmoi.net/tim-kiem/{}/
+      pm: http://www.phimmoizz.net/tim-kiem/{}/
       pn: https://phimnhe.net/search/{}
       pr: https://thepiratebay.org/search.php?q={}&cat=0
       re: https://reddit.com/r/{}
