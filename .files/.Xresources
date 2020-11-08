@@ -21,6 +21,8 @@ URxvt*underlineColor:                   yellow
 URxvt.saveLines:                        99999
 URxvt.cursorBlink:                      false
 URxvt.utf8:                             true
+URxvt.iso14755:							false
+URxvt.iso14755_52:						false
 URxvt.locale:                           true
 URxvt.letterSpace:              -1
 URxvt.font:             xft:monospace:pixelsize=16:style=regular
