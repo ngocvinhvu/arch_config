@@ -171,6 +171,7 @@ settings:
       pr: https://thepiratebay.org/search.php?q={}&cat=0
       re: https://reddit.com/r/{}
       sc: https://soundcloud.com/search?q={}
+      sub: https://subscene.com/subtitles/searchbytitle?query={}
       sp: https://shopee.vn/search?keyword={}
       t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
       tp: https://www.translatetheweb.com/?from=&to=en&a={}
