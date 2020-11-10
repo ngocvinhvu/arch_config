@@ -1,2 +1,2 @@
-read s
-curl qrenco.de/$s
+#!/bin/bash
+curl qrenco.de/"$*"

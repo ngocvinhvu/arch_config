@@ -19,7 +19,7 @@
 sudo fuser -k 5521/tcp 5522/tcp 5523/tcp 5525/tcp  5580/tcp
 sudo qemu-system-x86_64 -m 4096 \
  -hda /mnt/sdb1/os/debian.qcow2 -enable-kvm \
- -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:5522-:22,hostfwd=tcp:127.0.0.1:5580-:80,hostfwd=tcp:127.0.0.1:5525-:25,hostfwd=tcp:127.0.0.1:5521-:21,hostfwd=tcp:127.0.0.1:5523-:23 \
+ -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:5522-:22,hostfwd=tcp:127.0.0.1:5580-:80,hostfwd=tcp:127.0.0.1:5525-:25,hostfwd=tcp:127.0.0.1:5521-:21,hostfwd=tcp:127.0.0.1:5523-:23,hostfwd=tcp:127.0.0.1:8080-:8080 \
  -device e1000,netdev=mynet0
 
 
