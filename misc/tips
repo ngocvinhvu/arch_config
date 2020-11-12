@@ -2,3 +2,16 @@
 sed 's/\x1b\[[0-9;]*m//g' 
 # spotify-adblock
 https://github.com/abba23/spotify-adblock-linux
+# Import mitm certificate to CA in arch linux
+After installing mitmproxy run it (just type mitmproxy) in a terminal session
+and quit. This will create the necessaries certificates files at ~/.mitmproxy.
+Extract the certificate to .crt format:
+$ openssl x509 -in ~/.mitmproxy/mitmproxy-ca.pem -inform PEM -out ca.crt
+Trust the certificate into CA:
+$ sudo trust anchor ca.crt
+Run the mitmproxy again
+Open another terminal session and set the proxy:
+$ export http_proxy='http://localhost:8080'
+$ export https_proxy='http://localhost:8080'
+Run a curl to an https site and it should work:
+$ curl https://www.google.com

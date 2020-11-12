@@ -136,6 +136,15 @@ settings:
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
     global: null
+  editor.command:
+    global:
+    - st
+    - -e
+    - vim
+    - -f
+    - '{file}'
+    - -c
+    - normal {line}G{column0}l
   fonts.default_size:
     global: 10pt
   fonts.web.size.default:
@@ -171,8 +180,8 @@ settings:
       pr: https://thepiratebay.org/search.php?q={}&cat=0
       re: https://reddit.com/r/{}
       sc: https://soundcloud.com/search?q={}
-      sub: https://subscene.com/subtitles/searchbytitle?query={}
       sp: https://shopee.vn/search?keyword={}
+      sub: https://subscene.com/subtitles/searchbytitle?query={}
       t: https://translate.google.com/#view=home&op=translate&sl=auto&tl=vi&text={}
       tp: https://www.translatetheweb.com/?from=&to=en&a={}
       tw: https://twitter.com/search?q={}&src=typed_query
