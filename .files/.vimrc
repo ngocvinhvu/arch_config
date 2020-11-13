@@ -232,8 +232,13 @@ set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
-nnoremap <silent> <C-tab> gt
-nnoremap <silent> <S-tab> gT
+" Magic, Make Ctrl-S-Tab, Ctrl-Tab work on alacritty from https://stackoverflow.com/posts/31959285/revisions
+set <F13>=[27;5;9~
+nnoremap <F13> gt
+set <F14>=[27;6;9~
+nnoremap <F14> gT
+" nnoremap <silent> <C-tab> gt
+" nnoremap <silent> <S-tab> gT
 vnoremap <silent> ,, :Trans :vi -b<CR> 
 map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
