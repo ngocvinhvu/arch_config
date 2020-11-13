@@ -97,6 +97,11 @@ alias mpvm="mpv --ytdl-format='[height<=?720]'"
 alias mpvc="proxychains mpv --ytdl-format='[height<=?720]'"
 alias mpvl="mpv --ytdl-format='[height<=?480]'"
 alias st_="streamlink -p mpv"
+# mpv ascii
+# mpv --vo=caca 
+# mpv tct
+# mpv --vo=tct --profile=sw-fast 
+
 
 # function field
 vman() {
