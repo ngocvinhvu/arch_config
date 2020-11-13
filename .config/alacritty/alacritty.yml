@@ -81,5 +81,5 @@ key_bindings:
   - { key: K,   mods: Control|Alt, action: IncreaseFontSize }
   - { key: H,   mods: Control|Alt, action: ResetFontSize}
   - { key: U,   mods: Control|Alt, action: ToggleViMode}
-
-
+  - { key: Tab, mods: Control,        chars: "\x1b[27;5;9~" }
+  - { key: Tab, mods: Control|Shift,  chars: "\x1b[27;6;9~" }
