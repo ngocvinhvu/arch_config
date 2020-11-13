@@ -47,6 +47,9 @@ set laststatus=2
 " enable 256 colors
 set t_Co=256
 set t_ut=
+" windows
+set winheight=25
+set winwidth=80
 
 " turn on line numbering
 set number
@@ -78,6 +81,7 @@ nmap <S-Right> w
 
 " mouse
 set ttymouse=sgr
+
 set mouse=a
 let g:is_mouse_enabled = 1
 noremap <silent> <leader>m :call ToggleMouse()<CR>
@@ -224,7 +228,7 @@ let g:termdebug_wide=1
 vnoremap <leader>y "+y
 vnoremap Y "+y
 inoremap jk <esc>
-set timeoutlen=300
+set timeoutlen=400
 nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
@@ -348,3 +352,8 @@ function! s:ExecuteInShell(command)
   echo 'Shell command ' . command . ' executed.'
 endfunction
 command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
+
+
+
+" round all number:
+" perldo s/(\d+\.\d+)/sprintf "%.0f", $1/eg
