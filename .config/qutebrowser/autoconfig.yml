@@ -42,7 +42,7 @@ settings:
         ',z': hint links spawn zathura {hint-url}
         <Ctrl+d>: run-with-count 15 scroll down
         <Ctrl+e>: run-with-count 15 scroll up
-        <Ctrl+h>: :history -t
+        <Ctrl+h>: spawn q.sh
         <Ctrl+j>: scroll-page 0.5 0
         <Ctrl+k>: scroll-page -0.5 0
         <Ctrl+m>: :messages -t
