@@ -117,6 +117,9 @@ makepkg -si
 yay -Syyuu
 
 yay -S urxvt-font-size-git python-pdftotext scrcpy libxft-bgra-git  ttf-symbola
+# urls filter
+
+yay -S xurls
 
 # Config files:
 
