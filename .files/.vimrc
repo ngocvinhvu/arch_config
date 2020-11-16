@@ -8,7 +8,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'tpope/vim-sensible'
+" Plug 'tpope/vim-sensible'
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'ap/vim-buftabline'
@@ -111,7 +111,7 @@ set foldlevel=99
 " zR open all and set highest foldlevel
 nnoremap <space> za
 " wrap toggle
-setlocal nowrap
+" setlocal nowrap
 noremap <silent> ,w :call ToggleWrap()<CR>
 function ToggleWrap()
 	if &wrap
