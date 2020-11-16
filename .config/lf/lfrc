@@ -61,7 +61,7 @@ cmd open ${{
         image/*) sxiv -b $fx;;
         application/pdf) zathura $fx >/dev/null 2>&1 &;;
         application/epub+zip) FBReader $fx >/dev/null 2>&1 &;;
-        application/vnd.openxmlformats-officedocument.wordprocessingml.document) libreoffice $fx;;
+        application/vnd.openxmlformats-officedocument.wordprocessingml.document) wps $fx;;
         application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) libreoffice $fx;;
         # *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
