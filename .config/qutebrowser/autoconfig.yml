@@ -77,14 +77,12 @@ settings:
   content.javascript.enabled:
     global: true
   content.media.audio_capture:
-    https://studio.youtube.com: false
-    https://www.facebook.com: false
+    global: ask
   content.media.audio_video_capture:
-    https://studio.youtube.com: false
-    https://www.facebook.com: false
+    global: ask
+    https://meet.google.com: true
   content.media.video_capture:
-    https://studio.youtube.com: false
-    https://www.facebook.com: false
+    global: ask
   content.notifications:
     https://binhluan.live: false
     https://binhluan.tv: false
@@ -98,6 +96,7 @@ settings:
     https://lieuclub.forumvi.com: false
     https://linkviet.xyz: false
     https://livefootballol.net: false
+    https://meet.google.com: false
     https://reviewcongty.com: false
     https://sbgamehacker.download: false
     https://shopee.vn: false
@@ -133,6 +132,7 @@ settings:
   content.proxy:
     global: none
   content.register_protocol_handler:
+    https://calendar.google.com?cid=%25s: true
     https://mail.google.com?extsrc=mailto&url=%25s: false
   content.user_stylesheets:
     global: null
