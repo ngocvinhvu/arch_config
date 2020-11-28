@@ -59,6 +59,7 @@ settings:
         g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
+        m: enter-mode set_mark
   colors.webpage.darkmode.enabled:
     global: false
   content.autoplay:
@@ -93,6 +94,7 @@ settings:
     https://fptplay.vn: false
     https://hatde.tv: false
     https://helpex.vn: false
+    https://jira.vccloud.vn: false
     https://lieuclub.forumvi.com: false
     https://linkviet.xyz: false
     https://livefootballol.net: false
