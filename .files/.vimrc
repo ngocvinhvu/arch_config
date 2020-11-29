@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
+Plug 'mattn/emmet-vim'
 " Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
 " Plug 'pangloss/vim-javascript'
@@ -27,7 +28,8 @@ Plug 'tpope/vim-surround'
 Plug 'echuraev/translate-shell.vim'
 " Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'vim-scripts/colorizer'
+" Plug 'vim-scripts/colorizer' "this slowdown vim
+" Plug 'gko/vim-coloresque' " show white/black in hex and others in string
 call plug#end()
 
 filetype plugin indent on
@@ -50,6 +52,7 @@ set t_ut=
 " windows
 set winheight=25
 set winwidth=80
+set fo+=t
 
 " turn on line numbering
 set number
@@ -233,12 +236,12 @@ nnoremap <silent> ,t :tabnew<CR>
 nnoremap <silent> ,d :tabclose<CR>
 nnoremap <silent> ,D :qa!<CR>
 " Magic, Make Ctrl-S-Tab, Ctrl-Tab work on alacritty from https://stackoverflow.com/posts/31959285/revisions
-set <F13>=[27;5;9~
-nnoremap <F13> gt
-set <F14>=[27;6;9~
-nnoremap <F14> gT
-" nnoremap <silent> <C-tab> gt
-" nnoremap <silent> <S-tab> gT
+" set <F13>=[27;5;9~
+" nnoremap <F13> gt
+" set <F14>=[27;6;9~
+" nnoremap <F14> gT
+nnoremap <silent> <Tab> gt
+nnoremap <silent> <S-Tab> gT
 vnoremap <silent> ,, :Trans :vi -b<CR> 
 map ,f ,t:FZF ~/<CR>
 augroup vim_autocmd
