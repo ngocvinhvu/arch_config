@@ -13,9 +13,9 @@ and uncomment the line:
 LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 
 ## ADD
-Include conf/extra/httpd-adminer.conf
+Include conf/extra/httpd-adminer.conf 
 # AND
-LoadModule php7_module modules/libphp7.so
+LoadModule php7_module modules/libphp7.so # required php-apache
 AddHandler php7-script .php
 # AND
 Include conf/extra/php7_module.conf
