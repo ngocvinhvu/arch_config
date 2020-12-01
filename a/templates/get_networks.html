@@ -1,9 +1,0 @@
-<form method="POST" action="/get_ssids">
-	<p>Select Network: </p>
-	<select name="network_id" required>
-		{% for key, value in network_data.items() %}
-			<option value="{{ key }}"> {{ value }} </option>
-		{% endfor %}
-	</select>
-	<input type="submit" value="Submit">
-</form>
