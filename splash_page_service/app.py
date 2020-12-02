@@ -3,7 +3,6 @@ import requests
 
 app = Flask(__name__)
 app.secret_key = 'hello'
-# api_key = "50afdb8906f5b437142bdbf3decc04fce7556b5c"
 org_data = {
         'name':'',
         'id':''
