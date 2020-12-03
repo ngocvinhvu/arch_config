@@ -1,9 +1,0 @@
-<form method="POST" action="/get_splash_settings">
-	<p>Select SSID: </p>
-	<select name="number" required>
-		{% for key, value in ssids_data.items() %}
-			<option value="{{ key }}"> {{ value }} </option>
-		{% endfor %}
-	</select>
-	<input type="submit" value="Submit">
-</form>
