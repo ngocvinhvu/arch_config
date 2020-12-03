@@ -16,7 +16,7 @@ curl http://localhost:5000/get_networks/50afdb8906f5b437142bdbf3decc04fce7556b5c
 curl -i -X POST -H "Content-Type: application/json" -d '{"network_id":"N_572520102629493826"}' http://127.0.0.1:5000/set_network/duy
 
 # get ssid_data
-curl http://localhost:5000/get_ssids/NETWORK_ID
+curl http://localhost:5000/get_ssids/N_572520102629493826
 curl -i -X POST -H "Content-Type: application/json" -d '{"ssid_number":"0"}' http://127.0.0.1:5000/set_ssid/duy
 
 curl -i -X POST -H "Content-Type: application/json" -d '{"splash_url":"http://localhost:5000"}' http://127.0.0.1:5000/set_splash_page/duy
