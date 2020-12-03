@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<form action="/get_api_key" method = "POST">
+			<input type= "text" name = "api_key">
+			<input type = "submit" value = "Load API key">
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			<ul class=flashes>
+				{% for message in messages %}
+				<li>{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+			{% endwith %}
+		</form>
+	</body>
+</html>

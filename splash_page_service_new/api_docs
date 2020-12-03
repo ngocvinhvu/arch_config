@@ -1,0 +1,27 @@
+# add user
+curl -i -X POST -H "Content-Type: application/json" -d '{"username":"USERNAME","password":"PASSWORD"}' http://127.0.0.1:5000/api/users
+
+# set api_key
+curl -i -X POST -H "Content-Type: application/json" -d '{"api_key":"API_KEY"}' http://127.0.0.1:5000/set_api/USERNAME
+
+# get org_data by api_key
+GET /get_orgs/API_KEY
+
+# set org_id
+curl -i -X POST -H "Content-Type: application/json" -d '{"org_id":"111353"}' http://127.0.0.1:5000/set_org/USERNAME
+
+# get network_data(NETWORK_ID + NETWORD_NAME) by api_key + org_id 
+GET /get_networks/API_KEY/ORG_ID
+
+# set network
+curl -i -X POST -H "Content-Type: application/json" -d '{"network_id":"NETWORK_ID"}' http://127.0.0.1:5000/set_network/USERNAME
+
+# get ssid (NUBMER:NAME)
+GET /get_ssids/API_KEY/ORG_ID/NETWORK_ID
+
+# set ssid
+curl -i -X POST -H "Content-Type: application/json" -d '{"ssid_number":"NUMBER"}' http://127.0.0.1:5000/set_ssid/USERNAME
+
+# set splash url
+curl -i -X POST -H "Content-Type: application/json" -d '{"splash_url":"SPLASH_URL"}' http://127.0.0.1:5000/set_splash_page/USERNAME
+
