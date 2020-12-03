@@ -1,0 +1,27 @@
+# add user
+curl -i -X POST -H "Content-Type: application/json" -d '{"user_id":1}' http://127.0.0.1:5000/api/users
+# add router_brand
+curl -i -X POST -H "Content-Type: application/json" -d '{"brandname":"meraki"}' 'http://127.0.0.1:5000/api/router/1'
+
+# set api_key 
+curl -i -X POST -H "Content-Type: application/json" -d '{"api_key":"50afdb8906f5b437142bdbf3decc04fce7556b5c"}' 'http://127.0.0.1:5000/api/user/1/config/api'
+
+# get org_data
+curl "http://127.0.0.1:5000/api/user/1/organizations"
+
+# set org_id
+curl -i -X POST -H "Content-Type: application/json" -d '{"org_id":"111353"}' 'http://127.0.0.1:5000/api/user/1/config/organizations'
+# get networks data
+curl http://localhost:5000/api/user/1/networks
+
+# set network
+curl -i -X POST -H "Content-Type: application/json" -d '{"network_id":"N_572520102629493826"}' 'http://127.0.0.1:5000/api/user/1/config/networks'
+
+# get ssid_data {NUMBER:NAME}
+curl http://localhost:5000/api/user/1/ssids
+
+# set ssid
+curl -i -X POST -H "Content-Type: application/json" -d '{"ssid_number":"0"}' 'http://127.0.0.1:5000/api/user/1/config/ssids'
+
+curl -i -X POST -H "Content-Type: application/json" -d '{"splash_url":"http://localhost:5000"}' http://127.0.0.1:5000/api/user/1/config/splash_url
+

@@ -1,6 +1,9 @@
 # add user
 curl -i -X POST -H "Content-Type: application/json" -d '{"username":"USERNAME","password":"PASSWORD"}' http://127.0.0.1:5000/api/users
 
+# set router_brand
+curl -i -X POST -H "Content-Type: application/json" -d '{"router_brand":"ROUTER_BRAND_NAME"}' http://127.0.0.1:5000/set_router_brand/USERNAME
+
 # set api_key
 curl -i -X POST -H "Content-Type: application/json" -d '{"api_key":"API_KEY"}' http://127.0.0.1:5000/set_api/USERNAME
 
@@ -8,7 +11,7 @@ curl -i -X POST -H "Content-Type: application/json" -d '{"api_key":"API_KEY"}' h
 GET /get_orgs/API_KEY
 
 # set org_id
-curl -i -X POST -H "Content-Type: application/json" -d '{"org_id":"111353"}' http://127.0.0.1:5000/set_org/USERNAME
+curl -i -X POST -H "Content-Type: application/json" -d '{"org_id":"ORG_ID"}' http://127.0.0.1:5000/set_org/USERNAME
 
 # get network_data(NETWORK_ID + NETWORD_NAME) by api_key + org_id 
 GET /get_networks/API_KEY/ORG_ID
