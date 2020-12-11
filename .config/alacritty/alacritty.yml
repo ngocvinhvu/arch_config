@@ -1,37 +1,37 @@
 # Colors (One Light)
 colors:
   primary:
-    foreground: '#ededcc'
-    background: '#000000'
-  #ffffff:
+    background: '#ededcc'
+    foreground: '#000000'
+  cursor:
     text:       CellBackground
-    #ffffff:     '#000000' # syntax-#ffffff-color
+    cursor:     '#000000' # syntax-cursor-color
   selection:
     text:       CellForeground
-    foreground: '#ecf024' # syntax-selection-color
+    background : '#ecf024' # syntax-selection-color
   search:
     # Allowed values are CellForeground and CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
     matches:
-      background: '#000000'
-      foreground: '#ecf024'
+      foreground: '#000000'
+      background: '#ecf024'
     focused_match:
-      background: CellBackground
-      foreground: CellForeground
+      foreground: CellBackground
+      background: CellForeground
 
     bar:
-      foreground: '#c5c8c6'
-      background: '#1d1f21'
+      background: '#c5c8c6'
+      foreground: '#1d1f21'
 
   normal:
-    white:      '#696c77' # mono-2
-    cyan:        '#e45649' # cyan 1
-    magenta:      '#50a14f'
-    blue:     '#c18401' # orange 2
-    yellow:       '#199aa6'
-    green:    '#a626a4'
-    red:       '#0184bc'
-    black:      '#a0a1a7' # mono-3
+    black:      '#696c77' # mono-2
+    red:        '#e45649' # red 1
+    green:      '#50a14f'
+    yellow:     '#c18401' # orange 2
+    blue:       '#199aa6'
+    magenta:    '#a626a4'
+    cyan:       '#0184bc'
+    white:      '#a0a1a7' # mono-3
 
 font:
   normal:
@@ -55,7 +55,7 @@ font:
     x: -1
     y: -1
 
-# foreground_opacity: 0.92
+# background_opacity: 0.92
 
 #bell:
 #  animation: EaseOutExpo
