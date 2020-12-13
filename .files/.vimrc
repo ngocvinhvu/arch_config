@@ -102,6 +102,19 @@ endfunction
 
 
 " colorscheme onedark
+let g:is_enable_colorscheme = 0
+function ToggleColorscheme()
+	if g:is_enable_colorscheme == 0
+		echo "colorscheme onedark"
+		colorscheme onedark
+		let g:is_enable_colorscheme = 1
+	else
+		echo "colorscheme default"
+		colorscheme default
+		let g:is_enable_colorscheme = 0
+	endif
+endfunction
+
 
 " lightline
 " set noshowmode
@@ -301,6 +314,7 @@ hi Search term=none cterm=none ctermfg=Black ctermbg=LightCyan
 
 let g:is_expandtab_enabled = 1
 map <F2> :call ToggleExpandTab()<CR>
+map <F4> :call ToggleColorscheme()<CR>
 function ToggleExpandTab()
 	if g:is_expandtab_enabled == 1
 		echo "tab to spaces OFF"
