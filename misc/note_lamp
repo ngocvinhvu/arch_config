@@ -20,3 +20,18 @@ AddHandler php7-script .php
 # AND
 Include conf/extra/php7_module.conf
 
+# add mongodb extension for php
+pms php-mongodb
+sudo echo "extension=mongodb.so" >> /etc/php/php.ini
+restart httpd
+# create mongodb user
+db.createUser(
+  {
+    user: "duy",
+    pwd: "1",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+  }
+)
+# append  to /etc/mongodb.conf
+security:
+  authorization: "enabled"
