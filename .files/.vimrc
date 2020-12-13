@@ -368,17 +368,15 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 " round all number:
 " perldo s/(\d+\.\d+)/sprintf "%.0f", $1/eg
-"
-" open file vertically to the right
-augroup netrw_mappings
-    autocmd!
-    autocmd filetype netrw call Netrw_mappings()
-augroup END
-function! OpenToRight()
-  :rightbelow vnew
-  :wincmd p
-  :normal P
+
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+let g:netrw_list_hide = '^\..*'
+let g:netrw_hide = 1
+
+" Toggle Vexplore with Ctrl-E
+function! ToggleVExplorer()
+      Lexplore
+      vertical resize 30
 endfunction
-function! Netrw_mappings()
-    noremap V :call OpenToRight()<cr>
-endfunction
+map <silent> <C-E> :call ToggleVExplorer()<CR>
