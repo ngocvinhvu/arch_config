@@ -13,11 +13,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'ap/vim-buftabline'
 Plug 'airblade/vim-gitgutter'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
+" emmet-vim html faster
 Plug 'mattn/emmet-vim'
 " Plug 'vim-scripts/indentpython.vim'
 Plug 'lepture/vim-jinja'
@@ -158,34 +157,24 @@ function ToggleWrap()
 	endif
 endfunction
 
-" move through split windows
-" nmap <leader><Up> :wincmd k<CR>
-" nmap <leader><Down> :wincmd j<CR>
-" nmap <leader><Left> :wincmd h<CR>
-" nmap <leader><Right> :wincmd l<CR>
-
-" move through buffers
-" nmap <leader>[ :bp!<CR>
-" nmap <leader>] :bn!<CR>
-" nmap <leader>x :bd<CR>
 
 " restore place in file from previous session
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " file browser
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let NERDTreeMinimalUI = 1
-let g:nerdtree_open = 0
-map <leader>n :call NERDTreeToggle()<CR>
-function NERDTreeToggle()
-	NERDTreeTabsToggle
-	if g:nerdtree_open == 1
-		let g:nerdtree_open = 0
-	else
-		let g:nerdtree_open = 1
-		wincmd p
-	endif
-endfunction
+" let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+" let NERDTreeMinimalUI = 1
+" let g:nerdtree_open = 0
+" map <leader>n :call NERDTreeToggle()<CR>
+" function NERDTreeToggle()
+" 	NERDTreeTabsToggle
+" 	if g:nerdtree_open == 1
+" 		let g:nerdtree_open = 0
+" 	else
+" 		let g:nerdtree_open = 1
+" 		wincmd p
+" 	endif
+" endfunction
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -294,7 +283,7 @@ augroup vim_autocmd
 	autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear; g++ -g % ;./a.out<CR>
 	autocmd Filetype cpp nnoremap  <F5> :w<CR>:!g++ -g %<CR>:packadd termdebug<CR>:Termdebug<CR>
 
-set scrolloff=999999
+set scrolloff=999
 " if !has('nvim')
 "     set mouse=a
 "     set ttymouse=xterm2
@@ -379,3 +368,17 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 " round all number:
 " perldo s/(\d+\.\d+)/sprintf "%.0f", $1/eg
+"
+" open file vertically to the right
+augroup netrw_mappings
+    autocmd!
+    autocmd filetype netrw call Netrw_mappings()
+augroup END
+function! OpenToRight()
+  :rightbelow vnew
+  :wincmd p
+  :normal P
+endfunction
+function! Netrw_mappings()
+    noremap V :call OpenToRight()<cr>
+endfunction
