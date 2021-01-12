@@ -31,7 +31,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class           instance    title            tags mask     isfloating   isterminal  noswallow  monitor */
-        { "qutebrowser",   NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
+        { "qutebrowser",   NULL,       NULL,            1 << 6,       0,           0,           1,         -1 },
+        { "TelegramDesktop",   NULL,       NULL,            1 << 7,       0,           0,           1,         -1 },
+        { "battle.net.exe",   NULL,       NULL,            1 << 5,       0,           0,           1,         -1 },
+        { "explorer.exe",   NULL,       NULL,            1 << 5,       0,           0,           1,         -1 },
         { "GoldenDict",    NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "Evince",        NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
@@ -168,11 +171,12 @@ static Key keys[] = {
 	{ MODKEY,               XK_Delete,	                spawn,	SHCMD("turnoff_screen.sh") },
 	{ MODKEY,				XK_r,	                    spawn,	SHCMD("st -e lf") },
 	{ MODKEY,				XK_g,	                    spawn,	SHCMD("goldendict") },
-	{ MODKEY,				XK_z,	                    spawn,	SHCMD("FBReader") },
+	// { MODKEY,				XK_z,	                    spawn,	SHCMD("FBReader") },
 	{ Mod4Mask,				XK_i,	                    spawn,	SHCMD("ibus-daemon -drx") },
 	{ Mod4Mask|ShiftMask,   XK_i,	                    spawn,	SHCMD("ibus exit") },
 	{ MODKEY,				XK_w,						spawn,	SHCMD("$BROWSER") },
 	{ MODKEY,				XK_period,		            spawn,	SHCMD("xterm_trans.sh") },
+	{ MODKEY,				XK_z,		            spawn,	SHCMD("xterm_trans.sh") },
 	{ MODKEY|ShiftMask,		XK_period,		            spawn,	SHCMD("xterm -e trans :vi -b --shell") },
 	{ MODKEY,				XK_comma,		            spawn,	SHCMD("xterm_trans1.sh") },
 	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi --shell") },
