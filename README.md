@@ -25,8 +25,6 @@ mount /dev/sdaX /mnt
 # Choose mirror repository you like in:
 sudo reflector --country Taiwan --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
-/etc/pacman.d/mirrorlist
-
 # Install base linux linux-firmware 
 pacstrap /mnt base base-devel linux linux-firmware 
 
@@ -73,20 +71,21 @@ reboot
 
 # Install graphical enviroment:
 
-pacman -Syu
+sudo pacman -Syu
 # Xorg
-pacman -S xorg-server xorg-apps xorg-xinit i3 numlockx
+sudo pacman -S xorg-server xorg-apps xorg-xinit i3 numlockx
 
 # DM
-pacman -S lightdm lightdm-gtk-greeter
+sudo pacman -S lightdm lightdm-gtk-greeter
 
 # fonts
-pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome ttf-nerd-fonts-symbols xorg-mkfontscale terminus-font 
+sudo pacman -S noto-fonts noto-fonts-emoji ttf-ubuntu-font-family ttf-dejavu ttf-freefont ttf-liberation ttf-droid ttf-inconsolata ttf-roboto terminus-font ttf-font-awesome ttf-nerd-fonts-symbols xorg-mkfontscale terminus-font 
 # Audio
-pacman -S alsa alsa-utils alsa-plugins alsa-lib pavucontrol
+sudo pacman -S alsa alsa-utils alsa-plugins alsa-lib pavucontrol
 
 # Tools
-pacman -S rxvt-unicode ranger rofi conky dmenu urxvt-perls perl-anyevent-i3 perl-json-xs atool highlight mediainfo w3m ffmpegthumbnailer zathura fzf firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip aria2 wget curl openvpn usbutils ctags youtube-dl streamlink i3lock-color perl-file-mimeinfo perl-image-exiftool xclip xdotool notify-osd crda geoip p7zip xbindkeys python2-wheel python-wheel re2
+sudo pacman -S archlinux-keyring
+sudo pacman -S rxvt-unicode ranger rofi conky dmenu urxvt-perls perl-anyevent-i3 perl-json-xs atool highlight mediainfo w3m ffmpegthumbnailer zathura fzf firefox mpv mplayer feh sxiv scrot mtpfs gvfs-mtp pulseaudio git ibus-unikey ncmpcpp mpd mpc python-pip aria2 wget curl openvpn usbutils ctags youtube-dl streamlink  perl-file-mimeinfo perl-image-exiftool xclip xdotool notify-osd crda geoip p7zip xbindkeys python2-wheel python-wheel re2 fbreader  bash-completion zathura-pdf-mupdf zathura-djvu zathura-cb
 
 pip install --user python-mpd2 
 
