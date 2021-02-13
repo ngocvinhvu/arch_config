@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+
+python3 ~/gits/arch_config/scripts/solar2lunar.py
