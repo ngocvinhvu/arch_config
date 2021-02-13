@@ -161,10 +161,10 @@ static Key keys[] = {
 	// { 0,	                XF86XK_AudioMute,			spawn,	SHCMD("pactl set-sink-mute 0 toggle") },
 	// { 0,	                XF86XK_AudioRaiseVolume,    spawn,	SHCMD("pactl set-sink-volume 0 +5%") },
 	// { 0,	                XF86XK_AudioLowerVolume,    spawn,	SHCMD("pactl set-sink-volume 0 -5%") },
-	{ 0,	                XF86XK_AudioMicMute,	    spawn,	SHCMD("amixer -D pulse -q set Capture toggle") },
-	{ 0,	                XF86XK_AudioMute,			spawn,	SHCMD("amixer -D pulse -q set Master toggle" ) },
-	{ 0,	                XF86XK_AudioRaiseVolume,    spawn,	SHCMD("amixer -D pulse -q set Master 5%+    ") },
-	{ 0,	                XF86XK_AudioLowerVolume,    spawn,	SHCMD("amixer -D pulse -q set Master 5%-    ") },
+	// { MODKEY,	            XK_F9,	    spawn,	SHCMD("amixer -D pulse -q set Capture toggle") },
+	{ MODKEY,	            XK_F10,			spawn,	SHCMD("amixer -D pulse -q set Master toggle" ) },
+	{ MODKEY,	            XK_F11,    spawn,	SHCMD("amixer -D pulse -q set Master 5%+    ") },
+	{ MODKEY,	            XK_F9,    spawn,	SHCMD("amixer -D pulse -q set Master 5%-    ") },
 	{ MODKEY,               XK_F8,	                    spawn,	SHCMD("touchpad_toggle.sh") },
 	{ 0,					XK_Print,					spawn,	SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
 	{ MODKEY,				XK_Print,	            	spawn,	SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
@@ -180,6 +180,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_period,		            spawn,	SHCMD("xterm -e trans :vi -b --shell") },
 	{ MODKEY,				XK_comma,		            spawn,	SHCMD("xterm_trans1.sh") },
 	{ MODKEY|ShiftMask,		XK_comma,		            spawn,	SHCMD("xterm -e trans :vi --shell") },
+	{ MODKEY,				XK_F1,						spawn,	SHCMD("keylog.sh") },
+	{ MODKEY|ShiftMask,		XK_F1,						spawn,	SHCMD("sudo killall python3") },
 
 };
 

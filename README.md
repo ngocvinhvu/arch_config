@@ -126,7 +126,7 @@ git clone https://github.com/laduygaga/arch_config
 
 # Connect to android device and iphone
 
-pacman -S mtpfs ifuse android-file-transfer
+yay -S mtpfs ifuse android-file-transfer
 
 yay -S jmtpfs
 
