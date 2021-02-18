@@ -69,6 +69,7 @@ set shiftwidth=4
 set softtabstop=4
 set colorcolumn=80
 set viminfo='25,\"50,n~/.viminfo
+set autoread
 
 " word movement
 imap <S-Left> <Esc>bi
@@ -156,7 +157,7 @@ let g:syntastic_check_on_wq = 0
 " map <leader>r :lprev<CR>
 
 " tag list
-map <C-y> :TagbarToggle<CR>
+nnoremap <C-y> :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>x "+c
@@ -340,7 +341,7 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-let g:netrw_list_hide = '^\..*'
+" let g:netrw_list_hide = '^\..*'
 let g:netrw_hide = 1
 
 " Toggle Vexplore with Ctrl-E
@@ -348,4 +349,4 @@ function! ToggleVExplorer()
       Lexplore
       vertical resize 30
 endfunction
-map <silent> <C-E> :call ToggleVExplorer()<CR>
+map <silent> <leader>e :call ToggleVExplorer()<CR>
