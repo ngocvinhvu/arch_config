@@ -341,7 +341,8 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-" let g:netrw_list_hide = '^\..*'
+" switch between normal file and hiding file: key: a
+let g:netrw_list_hide = '^\..*'
 let g:netrw_hide = 1
 
 " Toggle Vexplore with Ctrl-E
