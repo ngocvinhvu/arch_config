@@ -351,4 +351,4 @@ function! ToggleVExplorer()
       Lexplore
       vertical resize 30
 endfunction
-map <silent> <leader>e :call ToggleVExplorer()<CR>
+map <silent> ,e :call ToggleVExplorer()<CR>
