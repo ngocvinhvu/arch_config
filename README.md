@@ -28,7 +28,7 @@ sudo reflector --country Taiwan --age 12 --protocol https --sort rate --save /et
 # Install base linux linux-firmware 
 pacstrap /mnt base base-devel linux linux-firmware 
 
-# Create fstab partition:
+# Create fstab file:
 genfstab -U /mnt >> /mnt/etc/fstab
 
 # Chroot to new system:
