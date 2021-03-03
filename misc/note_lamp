@@ -6,6 +6,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'duy'@'localhost';
 FLUSH PRIVILEGES;
 # change password
 ALTER USER 'userName'@'localhost' IDENTIFIED BY 'New-Password-Here';
+# make root accessed by adminer
+sudo mysql_secure_installation
+
 
 ## In /etc/httpd/conf/httpd.conf, comment the line:
 #LoadModule mpm_event_module modules/mod_mpm_event.so
