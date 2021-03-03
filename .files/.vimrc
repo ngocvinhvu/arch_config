@@ -158,7 +158,7 @@ let g:syntastic_check_on_wq = 0
 " map <leader>r :lprev<CR>
 
 " tag list
-nnoremap <C-y> :TagbarToggle<CR>
+nnoremap <leader>y :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>x "+c
