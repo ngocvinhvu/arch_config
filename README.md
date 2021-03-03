@@ -160,3 +160,12 @@ tar c | ssh user@server "tar x -C /path"                        # -C: changedir 
 /save            # to save your setting
 # qemu boot from usb
 sudo qemu-system-x86_64 -m 4096 -enable-kvm -usb -device usb-host,hostbus=1,hostaddr=21
+
+# Encrypt LVM on LUKS
+https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS
+# config /etc/mkinipico.conf
+# vim /etc/mkinitcpio.conf
+Add 'ext4' to MODULES
+Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
+# /etc/default/grub
+GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:luks:allow-discards"
