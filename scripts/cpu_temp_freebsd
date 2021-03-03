@@ -1,0 +1,2 @@
+#!/usr/local/bin/bash
+sysctl -a | grep dev.cpu.1.temperature | cut -d " " -f2
