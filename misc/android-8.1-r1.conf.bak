@@ -5,8 +5,8 @@ linux /android-8.1-rc1/kernel quiet root=/dev/ram0 androidboot.selinux=permissiv
 initrd /android-8.1-rc1/initrd.img
 }
 
-menuentry "FreeBSD" {
-    insmod ufs2
-    set root=(hd0,gpt8)
-    kfreebsd /boot/loader
+menuentry "FreeBSD 11.0" {
+insmod ufs2
+set root=(hd0,2)
+kfreebsd /boot/loader
 }
