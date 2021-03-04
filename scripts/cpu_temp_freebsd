@@ -1,2 +1,5 @@
 #!/usr/local/bin/bash
-sysctl -a | grep dev.cpu.1.temperature | cut -d " " -f2
+a=`sysctl -a | grep dev.cpu.1.temperature | cut -d " " -f2`
+b=`sysctl -a | grep hw.acpi.thermal.tz1.temperature | cut -d " " -f2`
+[[ $a != '' ]] && echo $a
+[[ $a = '' ]] && echo $b
