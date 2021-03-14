@@ -225,11 +225,11 @@ MouseKey mkeys[] = {
 //     "externalpipe", NULL };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-    "xurls | uniq | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
+    "xurls | sort | uniq | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
     "externalpipe", NULL };
 
 static char *copyurlcmd[] = { "/bin/sh", "-c",
-    "xurls | uniq | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
+    "xurls | sort | uniq | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
     "externalpipe", NULL };
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };

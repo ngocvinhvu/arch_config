@@ -7,7 +7,7 @@
  */
 // static char *font = "mono:pixelsize=15:antialias=true:autohint=true";
 // static char *font2[] = { "Inconsolata for Powerline:pixelsize=15:antialias=true:autohint=true" };
-static char *font = "monospace:pixelsize=16:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=17:antialias=true:autohint=true";
 static char *font2[] = { "monospace:pixelsize=10:antialias=true:autohint=true" };
 
 static int borderpx = 2;
@@ -243,11 +243,11 @@ MouseKey mkeys[] = {
 //     "externalpipe", NULL };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
-    "xurls | uniq | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
+    "xurls | sort | uniq | dmenu -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
     "externalpipe", NULL };
 
 static char *copyurlcmd[] = { "/bin/sh", "-c",
-    "xurls | uniq | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
+    "xurls | sort | uniq | dmenu -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
     "externalpipe", NULL };
 
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
