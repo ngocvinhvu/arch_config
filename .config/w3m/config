@@ -112,14 +112,14 @@ show_srch_str 1
 show_lnum 0
 fold_line 0
 image_map_list 1
-imgdisplay /usr/bin/display
+# imgdisplay /usr/bin/display
 image_scale 100
 ext_image_viewer 1
 max_load_image 4
 auto_image 1
 display_image 1
 view_unseenobject 1
-ignore_null_img_alt 1
+# ignore_null_img_alt 1
 display_ins_del 1
 fold_textarea 0
 graphic_char 0
