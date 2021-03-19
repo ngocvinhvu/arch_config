@@ -126,7 +126,6 @@ set foldlevel=99
 " zM close all and set foldlevel to 0
 " zR open all and set highest foldlevel
 nnoremap <space> za
-nnoremap ' `
 " wrap toggle
 " setlocal nowrap
 noremap <silent> ,w :call ToggleWrap()<CR>
@@ -158,7 +157,7 @@ let g:syntastic_check_on_wq = 0
 " map <leader>r :lprev<CR>
 
 " tag list
-nnoremap <leader>y :TagbarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>x "+c
@@ -342,7 +341,6 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-" switch between normal file and hiding file: key: a
 let g:netrw_list_hide = '^\..*'
 let g:netrw_hide = 1
 
