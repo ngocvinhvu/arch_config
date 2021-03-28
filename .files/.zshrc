@@ -156,6 +156,8 @@ alias mpvi="mpv --ytdl-raw-options=write-sub=,write-auto-sub=,sub-lang=vi"
 alias mpvh="mpv --ytdl-format='[height<=1080]'"
 alias mpvm="mpv --ytdl-format='[height<=720]'"
 alias mpvl="mpv --ytdl-format='[height<=360]'"
+alias mpvc="proxychains mpv --ytdl-format='[height<=?720]'"
+
 
 # alias gvim='gvim -u NONE'
 # set -o vi
