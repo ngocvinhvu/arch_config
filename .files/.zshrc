@@ -8,7 +8,7 @@ export ZSH="/home/duy/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="candy-kingdom"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,7 +132,7 @@ alias wifi='sudo wifi-menu wlp3s0'
 alias wifi-menu='sudo wifi-menu'
 alias rst='sudo netctl stop-all && sudo netctl start wlp3s0-Tenda_106570'
 alias rsa='sudo netctl stop-all && sudo netctl start wlp3s0-abc.xyz'
-alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-nguyenngocanh'
+alias rsn='sudo netctl stop-all && sudo netctl start wlp3s0-TP-LINK_F946'
 alias emacs='emacs -nw'
 alias -s gif='mpv --loop=0'
 alias -s webm='mpv --loop=0'
@@ -140,7 +140,7 @@ alias pmsyu='sudo pacman -Syu'
 alias pmsy='sudo pacman -Sy'
 alias pms='sudo pacman -S'
 alias pmr='sudo pacman -R'
-alias i3lock="i3lock -ti /home/duy/Pictures/my_liberty.png"
+# alias i3lock="i3lock -ti /home/duy/Pictures/my_liberty.png"
 alias d='~/Downloads'
 alias D='~/Documents'
 alias mv='mv -iv'
@@ -168,7 +168,7 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 export KEYTIMEOUT=10
 bindkey -M viins '^r' history-incremental-search-backward
-echo -ne '\e[4 q' # Cursor is underscore instead of Block
+# echo -ne '\e[4 q' # Cursor is underscore instead of Block
 # Cursor settings:
 #   1 -> blinking block
 #   2 -> solid block 
@@ -178,24 +178,24 @@ echo -ne '\e[4 q' # Cursor is underscore instead of Block
 #   6 -> solid vertical bar
 
 # Change cursor color
-# echo -ne "\033]12;Black\007" 
+#  echo -ne "\033]12;Neon\007" 
 
 # Show vim mode
 # Updates editor information when the keymap changes.
-# function zle-keymap-select() {
-#   zle reset-prompt
-#   zle -R
-# }
-# 
-# zle -N zle-keymap-select
-# 
-# function vi_mode_prompt_info() {
-#   echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
-# }
+function zle-keymap-select() {
+  zle reset-prompt
+  zle -R
+}
+
+zle -N zle-keymap-select
+
+function vi_mode_prompt_info() {
+  echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
+}
 # 
 # # define right prompt, regardless of whether the theme defined it
-# RPS1='$(vi_mode_prompt_info)'
-# RPS2=$RPS1
+RPS1='$(vi_mode_prompt_info)'
+RPS2=$RPS1
 #
 # PROMPT='%{$fg[blue]%}%D{[%X]} %{$reset_color%}:%{$fg_bold[green]%}%~%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 # %(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )$ '
@@ -245,6 +245,21 @@ vman() {
 streamlink_() {
 	streamlink -p mpv "$*" best
 }
+
+mp3-dl() {
+	youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 "$*"
+}
+
+mp3pl-dl() {
+	youtube-dl -ict --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 "$*"
+}
+ari() {
+    aria2c -c -x3 --seed-time=0 "$*"
+}
+
+yays() { yay -Fy; yay -Slq | fzf --height=100% --multi --preview 'yay -Si {1}' | xargs -ro yay -S --needed ;}
+pmss() { sudo pacman -Fy; pacman -Slq | fzf --height=100% --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed ;}
+
 
 export FZF_DEFAULT_COMMAND="find -L"
 
