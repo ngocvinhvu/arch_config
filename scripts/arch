@@ -16,10 +16,11 @@
 #  -cdrom FreeBSD-12.1-RELEASE-amd64-disc1.iso
 
 # run
-sudo fuser -k 7721/tcp 7722/tcp 7723/tcp 7725/tcp  7780/tcp
+sudo fuser -k 7721/tcp 7722/tcp 7723/tcp 7725/tcp  7780/tcp 8080/tcp 8443/tcp
 sudo qemu-system-x86_64 -m 6096 \
- -hda /mnt/sdb1/os/arch.qcow2 -enable-kvm \
- -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:7725-:25,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:7723-:23 \
+ -smp 3 \
+ -hda /mnt/sda1/os/snapshot4.img -enable-kvm \
+ -netdev user,id=mynet0,hostfwd=tcp:127.0.0.1:7722-:22,hostfwd=tcp:127.0.0.1:7780-:80,hostfwd=tcp:127.0.0.1:8443-:8443,hostfwd=tcp:127.0.0.1:7721-:21,hostfwd=tcp:127.0.0.1:8080-:8080 \
  -device e1000,netdev=mynet0
 
 
