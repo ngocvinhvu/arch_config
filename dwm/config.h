@@ -39,7 +39,7 @@ static const Rule rules[] = {
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "Evince",        NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "FBReader",      NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
-        { "firefox",       NULL,       NULL,            1 << 7,       0,           0,           1,         -1 },
+        { "firefox",       NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "chromium",      NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "St",            NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "Alacritty",     NULL,       NULL,            0,            0,           1,           1,         -1 },
