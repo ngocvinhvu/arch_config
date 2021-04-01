@@ -29,6 +29,8 @@ Plug 'echuraev/translate-shell.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'vim-scripts/colorizer' "this slowdown vim
 " Plug 'gko/vim-coloresque' " show white/black in hex and others in string
+Plug 'pamacs/vim-srt-sync'
+
 call plug#end()
 
 filetype plugin indent on
@@ -69,6 +71,7 @@ set shiftwidth=4
 set softtabstop=4
 set colorcolumn=80
 set viminfo='25,\"50,n~/.viminfo
+set autoread
 
 " word movement
 imap <S-Left> <Esc>bi
@@ -125,9 +128,10 @@ set foldlevel=99
 " zM close all and set foldlevel to 0
 " zR open all and set highest foldlevel
 nnoremap <space> za
+nnoremap ' `
 " wrap toggle
 " setlocal nowrap
-noremap <silent> ,w :call ToggleWrap()<CR>
+noremap <silent> <leader>w :call ToggleWrap()<CR>
 function ToggleWrap()
 	if &wrap
 		echo "Wrap OFF"
@@ -156,7 +160,7 @@ let g:syntastic_check_on_wq = 0
 " map <leader>r :lprev<CR>
 
 " tag list
-map <C-y> :TagbarToggle<CR>
+nnoremap <leader>T :TagbarToggle<CR>
 
 " copy, cut and paste
 vmap <leader>x "+c
@@ -203,9 +207,9 @@ vnoremap <leader>y "+y
 vnoremap Y "+y
 inoremap jk <esc>
 set timeoutlen=400
-nnoremap <silent> ,t :tabnew<CR>
-nnoremap <silent> ,d :tabclose<CR>
-nnoremap <silent> ,D :qa!<CR>
+nnoremap <silent> <leader>t :tabnew<CR>
+nnoremap <silent> <leader>d :tabclose<CR>
+nnoremap <silent> <leader>D :qa!<CR>
 " Magic, Make Ctrl-S-Tab, Ctrl-Tab work on alacritty from https://stackoverflow.com/posts/31959285/revisions
 " set <F13>=[27;5;9~
 " nnoremap <F13> gt
@@ -213,8 +217,8 @@ nnoremap <silent> ,D :qa!<CR>
 " nnoremap <F14> gT
 nnoremap <silent> <Tab> gt
 nnoremap <silent> <S-Tab> gT
-vnoremap <silent> ,, :Trans :vi -b<CR> 
-map ,f ,t:FZF ~/<CR>
+vnoremap <silent> <leader>,, :Trans :vi -b<CR> 
+map <leader><leader>f <leader>t:FZF ~/<CR>
 augroup vim_autocmd
 	" fix always tabs to spaces when start python file
 	" fuck /usr/share/vim/vim74/ftplugin/python.vim
@@ -340,6 +344,7 @@ command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+" switch between normal file and hiding file: key: a
 let g:netrw_list_hide = '^\..*'
 let g:netrw_hide = 1
 
@@ -348,4 +353,4 @@ function! ToggleVExplorer()
       Lexplore
       vertical resize 30
 endfunction
-map <silent> <C-E> :call ToggleVExplorer()<CR>
+map <silent> <leader>e :call ToggleVExplorer()<CR>
