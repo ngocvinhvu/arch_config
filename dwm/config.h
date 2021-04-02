@@ -6,9 +6,9 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "mono:size=8", "Ionicons:size=8" };
+static const char *fonts[]          = { "mono:size=10", "Ionicons:size=10" };
 // static const char *fonts[]          = { "Mononoki Nerd Font:size=8", "Symbola:size=8" };
-static const char dmenufont[]       = "mono:size=10";
+static const char dmenufont[]       = "mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -39,7 +39,7 @@ static const Rule rules[] = {
         { "Zathura",       NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "Evince",        NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
         { "FBReader",      NULL,       NULL,            1 << 8,       0,           0,           1,         -1 },
-        { "firefox",       NULL,       NULL,            1 << 7,       0,           0,           1,         -1 },
+        { "firefox",       NULL,       NULL,            1 << 2,       0,           0,           1,         -1 },
         { "chromium",      NULL,       NULL,            1 << 1,       0,           0,           1,         -1 },
         { "St",            NULL,       NULL,            0,            0,           1,           1,         -1 },
         { "Alacritty",     NULL,       NULL,            0,            0,           1,           1,         -1 },
@@ -157,13 +157,13 @@ static Key keys[] = {
 	// { MODKEY|ShiftMask,	XK_period,	            	spawn,	SHCMD("mpc repeat") },
 	// { 0,					XF86XK_ScreenSaver,	    	spawn,	SHCMD("i3lock -k") },
 	{ MODKEY,				XK_F2,						spawn,	SHCMD("i3lock -k") },
-	{ 0,	                XF86XK_AudioMicMute,	    spawn,	SHCMD("pactl set-source-mute 1 toggle") },
-	{ 0,	                XF86XK_AudioMute,			spawn,	SHCMD("pactl set-sink-mute 0 toggle") },
-	{ 0,	                XF86XK_AudioRaiseVolume,    spawn,	SHCMD("pactl set-sink-volume 0 +5%") },
-	{ 0,	                XF86XK_AudioLowerVolume,    spawn,	SHCMD("pactl set-sink-volume 0 -5%") },
-	// { MODKEY,	            XK_F10,			spawn,	SHCMD("amixer -D pulse -q set Master toggle" ) },
-	// { MODKEY,	            XK_F11,    spawn,	SHCMD("amixer -D pulse -q set Master 5%+    ") },
-	// { MODKEY,	            XK_F9,    spawn,	SHCMD("amixer -D pulse -q set Master 5%-    ") },
+	// { 0,	                XF86XK_AudioMicMute,	    spawn,	SHCMD("pactl set-source-mute 1 toggle") },
+	// { 0,	                XF86XK_AudioMute,			spawn,	SHCMD("pactl set-sink-mute 0 toggle") },
+	// { 0,	                XF86XK_AudioRaiseVolume,    spawn,	SHCMD("pactl set-sink-volume 0 +5%") },
+	// { 0,	                XF86XK_AudioLowerVolume,    spawn,	SHCMD("pactl set-sink-volume 0 -5%") },
+	{ MODKEY,	            XK_F10,						spawn,	SHCMD("amixer -D pulse -q set Master toggle" ) },
+	{ MODKEY,	            XK_F11,						spawn,	SHCMD("amixer -D pulse -q set Master 5%+    ") },
+	{ MODKEY,	            XK_F9,						spawn,	SHCMD("amixer -D pulse -q set Master 5%-    ") },
 	{ MODKEY,               XK_F8,	                    spawn,	SHCMD("touchpad_toggle.sh") },
 	{ 0,					XK_Print,					spawn,	SHCMD("scrot ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
 	{ MODKEY,				XK_Print,	            	spawn,	SHCMD("scrot -s ~/Pictures/ScreenShots/%b%d:%H%M%S.png") },
