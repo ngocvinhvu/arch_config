@@ -111,7 +111,7 @@ alias pscpu=" ps -eo cmd,%mem,%cpu --sort=-%cpu| less"
 alias psmem=" ps -eo cmd,%mem,%cpu --sort=-%mem| less"
 alias vi="vim -u NONE"
 alias youtube-dl="youtube-dl --write-auto-sub --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
-alias emoji="cat ~/gits/arch_config/.local/share/larbs/emoji"
+alias emoji="cat ~/gits/arch_config/.local/share/emoji"
 push(){
     git pull && git add . && git commit -m "$*"  && git push;
 }
@@ -191,8 +191,11 @@ function zle-keymap-select() {
 
 zle -N zle-keymap-select
 
+# function vi_mode_prompt_info() {
+#   echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
+# }
 function vi_mode_prompt_info() {
-  echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%}"
+	[[ $? -ne 0 ]] && echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%} :(" || echo "${${KEYMAP/vicmd/[% NORMAL]%}/(main|viins)/[% INSERT]%} :)"
 }
 # 
 # # define right prompt, regardless of whether the theme defined it
@@ -266,3 +269,4 @@ pmss() { sudo pacman -Fy; pacman -Slq | fzf --height=100% --multi --preview 'pac
 export FZF_DEFAULT_COMMAND="find -L"
 
 
+# export KUBECONFIG=/home/duy/cluster1.kubeconfig
