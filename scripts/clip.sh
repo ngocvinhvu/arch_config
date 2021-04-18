@@ -9,10 +9,10 @@ fi
 touch $file
 if [ "$1" == "paste" ]; then
     shift
-    sel_file=$(cat $file | uniq | dmenu -l 10 ${1+"$@"})
+    sel_file=$(awk '!x[$0]++' $file | uniq | dmenu -l 10 ${1+"$@"})
 fi
 if [ "$1" == "clear" ]; then
-	echo > $file
+	echo -n > $file
 fi
 [ "$sel_clip" == "" ] && exit 1
 sed "/^$sel_file$/d" -i $file
