@@ -95,6 +95,9 @@ static const char *termcmd[]  = { "st", NULL};
 static Key keys[] = {
 	/* modifier             key				function			argument */
 	{ MODKEY,               XK_d,          	spawn,          	{.v = dmenucmd } },
+	{ MODKEY|ControlMask,	XK_y,          	spawn,          	SHCMD("clip.sh copy") },
+	{ MODKEY|ControlMask,	XK_p,          	spawn,          	SHCMD("clip.sh paste") },
+	{ MODKEY|ControlMask,	XK_l,          	spawn,          	SHCMD("clip.sh clear") },
 	{ Mod4Mask|ControlMask, XK_c,          	spawn,          	SHCMD("clipboard_manager.sh grab") },
 	{ Mod4Mask|ControlMask, XK_v,          	spawn,          	SHCMD("clipboard_manager.sh select2paste") },
 	{ MODKEY,               XK_Return,     	spawn,          	{.v = termcmd } },
