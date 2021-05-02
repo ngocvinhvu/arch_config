@@ -203,8 +203,8 @@ map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
 let g:termdebug_wide=1
 
-vnoremap <leader>y "+y
 vnoremap Y "+y
+set clipboard=unnamed
 inoremap jk <esc>
 set timeoutlen=400
 nnoremap <silent> <leader>t :tabnew<CR>
