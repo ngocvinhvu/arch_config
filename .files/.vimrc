@@ -215,7 +215,7 @@ nnoremap <silent> <leader>D :qa!<CR>
 " nnoremap <F13> gt
 " set <F14>=[27;6;9~
 " nnoremap <F14> gT
-nnoremap <silent> <Tab> gt
+nnoremap <silent> <C-Tab> gt
 nnoremap <silent> <S-Tab> gT
 vnoremap <silent> <leader>,, :Trans :vi -b<CR> 
 map <leader><leader>f <leader>t:FZF ~/<CR>
