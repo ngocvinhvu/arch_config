@@ -726,11 +726,11 @@ c.zoom.default = '90%'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#ff0000'
+c.colors.tabs.selected.odd.bg = '#34eb3a'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#ff0000'
+c.colors.tabs.selected.even.bg = '#34eb3a'
 
 # Render all web contents using a dark theme. Example configurations
 # from Chromium's `chrome://flags`:  - "With simple HSL/CIELAB/RGB-based
