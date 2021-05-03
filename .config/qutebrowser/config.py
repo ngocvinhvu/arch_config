@@ -16,6 +16,7 @@ config.set(
         "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
         "https://www.malwaredomainlist.com/hostslist/hosts.txt",
         "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+		"https://raw.githubusercontent.com/nmtrung/FMSF-2.0/master/fmsf_2.0.txt",
     ],
 )
 
