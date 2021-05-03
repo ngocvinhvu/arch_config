@@ -228,8 +228,14 @@ ytv()
 }
 yta()
 {
-    mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+    mpv --loop=inf --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
+
+ytal()
+{
+    mpv --loop=inf --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
+
 
 # color for manpages
 # export LESS_TERMCAP_mb=$'\e[1;32m'
