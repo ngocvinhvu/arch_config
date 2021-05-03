@@ -203,8 +203,8 @@ map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
 let g:termdebug_wide=1
 
-vnoremap <leader>y "+y
 vnoremap Y "+y
+set clipboard=unnamed
 inoremap jk <esc>
 set timeoutlen=400
 nnoremap <silent> <leader>t :tabnew<CR>
@@ -215,11 +215,13 @@ nnoremap <silent> <leader>D :qa!<CR>
 " nnoremap <F13> gt
 " set <F14>=[27;6;9~
 " nnoremap <F14> gT
-nnoremap <silent> <Tab> gt
+nnoremap <silent> <C-Tab> gt
 nnoremap <silent> <S-Tab> gT
 vnoremap <silent> <leader>,, :Trans :vi -b<CR> 
 map <leader><leader>f <leader>t:FZF ~/<CR>
 augroup vim_autocmd
+	" Prevent Vim from clearing the clipboard on exit
+	autocmd VimLeave * call system("xsel -ib", getreg('+'))
 	" fix always tabs to spaces when start python file
 	" fuck /usr/share/vim/vim74/ftplugin/python.vim
 	autocmd FileType python setlocal ts=4 sts=4 sw=4 noexpandtab
