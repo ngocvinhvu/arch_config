@@ -202,7 +202,7 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/53
 
 # Enable the ad/host blocker
 # Type: Bool
-c.content.blocking.enabled = True
+c.content.blocking.enabled = False
 
 # A list of patterns that should always be loaded, despite being blocked
 # by the ad-/host-blocker. Local domains are always exempt from
