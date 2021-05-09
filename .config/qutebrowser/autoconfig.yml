@@ -60,10 +60,18 @@ settings:
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
         m: enter-mode set_mark
+  colors.tabs.selected.even.bg:
+    global: '#ebd534'
+  colors.tabs.selected.odd.bg:
+    global: '#ebd534'
   colors.webpage.darkmode.enabled:
     global: false
   content.autoplay:
     global: false
+  content.blocking.enabled:
+    global: true
+  content.blocking.method:
+    global: adblock
   content.fullscreen.window:
     global: true
   content.geolocation:
@@ -73,8 +81,6 @@ settings:
   content.headers.user_agent:
     global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
       {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
-  content.host_blocking.enabled:
-    global: true
   content.javascript.enabled:
     global: true
   content.media.audio_capture:
@@ -84,7 +90,7 @@ settings:
     https://meet.google.com: true
   content.media.video_capture:
     global: ask
-  content.notifications:
+  content.notifications.enabled:
     https://binhluan.live: false
     https://binhluan.tv: false
     https://binhluan.vip: false
