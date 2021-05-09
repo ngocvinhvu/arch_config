@@ -204,6 +204,7 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/53
 # Enable the ad/host blocker
 # Type: Bool
 c.content.blocking.enabled = False
+c.content.blocking.method = 'adblock'
 
 # A list of patterns that should always be loaded, despite being blocked
 # by the ad-/host-blocker. Local domains are always exempt from
@@ -689,7 +690,7 @@ c.tabs.background = True
 #   - bottom
 #   - left
 #   - right
-c.tabs.position = 'left'
+c.tabs.position = 'top'
 
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
@@ -727,11 +728,11 @@ c.zoom.default = '90%'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#34eb3a'
+c.colors.tabs.selected.odd.bg = '#ebd534'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#34eb3a'
+c.colors.tabs.selected.even.bg = '#ebd534'
 
 # Render all web contents using a dark theme. Example configurations
 # from Chromium's `chrome://flags`:  - "With simple HSL/CIELAB/RGB-based
