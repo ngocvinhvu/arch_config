@@ -171,7 +171,7 @@ settings:
   tabs.background:
     global: true
   url.default_page:
-    global: https://google.com/search
+    global: about:blank
   url.searchengines:
     global:
       DEFAULT: https://google.com/search?q={}
