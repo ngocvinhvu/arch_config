@@ -59,7 +59,7 @@ settings:
         g9: tab-focus 9
         j: scroll-page 0 0.5
         k: scroll-page 0 -0.5
-        m: enter-mode set_mark
+        m: mode-enter set_mark
   colors.tabs.selected.even.bg:
     global: '#fcba03'
   colors.tabs.selected.odd.bg:
