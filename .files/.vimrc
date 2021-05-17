@@ -257,12 +257,12 @@ augroup vim_autocmd
 	" autocmd Filetype cpp nnoremap  <F9> :w<CR>:!clear;g++ -g % ;./a.out<CR>
 	" autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear; g++ -g % ;./a.out<CR>
 	" autocmd Filetype cpp nnoremap  <F5> :w<CR>:!g++ -g %<CR>:packadd termdebug<CR>:Termdebug<CR>
-	autocmd Filetype c nnoremap  <F9> :w<CR>:!gcc -o %:r %<CR>:!clear; ./%:r<CR>
-	autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!gcc -o %:r %<CR>:!clear; ./%:r<CR>
-	autocmd Filetype cpp nnoremap  <F9> :w<CR>:!g++ -o %:r %<CR>:!clear; ./%:r<CR>
-	autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!g++ -o %:r %<CR>:!clear; ./%:r<CR>
-	autocmd Filetype rust nnoremap  <F9> :w<CR>:!rustc % <CR>:!clear; ./%:r<CR>
-	autocmd Filetype rust inoremap  <F9> <Esc>:w<CR>:!rustc % <CR>:!clear; ./%:r<CR>
+	autocmd Filetype c nnoremap  <F9> :w<CR>:!clear;gcc -o %:r %<CR>:!./%:r<CR>
+	autocmd Filetype c inoremap  <F9> <Esc>:w<CR>:!clear;gcc -o %:r %<CR>:!./%:r<CR>
+	autocmd Filetype cpp nnoremap  <F9> :w<CR>:!clear;g++ -o %:r %<CR>:!./%:r<CR>
+	autocmd Filetype cpp inoremap  <F9> <Esc>:w<CR>:!clear;g++ -o %:r %<CR>:!./%:r<CR>
+	autocmd Filetype rust nnoremap  <F9> :w<CR>:!clear; rustc % <CR>:!./%:r<CR>
+	autocmd Filetype rust inoremap  <F9> <Esc>:w<CR>:!clear; rustc % <CR>:!./%:r<CR>
 
 set scrolloff=999
 " if !has('nvim')
