@@ -203,7 +203,7 @@ map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
 let g:termdebug_wide=1
 
-vnoremap Y "+y
+vnoremap Y "*y
 set clipboard=unnamed
 inoremap jk <esc>
 set timeoutlen=400
