@@ -87,18 +87,18 @@ nmap <S-Right> w
 " mouse
 set ttymouse=sgr
 
-set mouse=a
-let g:is_mouse_enabled = 1
+set mouse=
+let g:is_mouse_enabled = 0
 noremap <silent> <leader>m :call ToggleMouse()<CR>
 function ToggleMouse()
-	if g:is_mouse_enabled == 1
-		echo "Mouse OFF"
-		set mouse=
-		let g:is_mouse_enabled = 0
-	else
+	if g:is_mouse_enabled == 0
 		echo "Mouse ON"
 		set mouse=a
 		let g:is_mouse_enabled = 1
+	else
+		echo "Mouse OFF"
+		set mouse=
+		let g:is_mouse_enabled = 0
 	endif
 endfunction
 
@@ -203,7 +203,7 @@ map <leader>p :Stop<CR>
 map <leader>f :Finish<CR>
 let g:termdebug_wide=1
 
-vnoremap Y "*y
+vnoremap Y "+y
 set clipboard=unnamed
 inoremap jk <esc>
 set timeoutlen=400
